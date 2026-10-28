@@ -2,6 +2,8 @@
 
 Guía para el trabajo de grado *Framework automatizado para la evaluación de la calidad de datos en registros administrativos del sector energético en Colombia* (Grupo 03; dirección del trabajo). Referencia: DAMA International (2017), *DAMA-DMBOK2*, capítulo 13.
 
+Actualización del 27 de octubre de 2026: el profesor exige medir las ocho dimensiones en EPM y CHEC. La especificación vigente está en [la matriz OE1](hito3/matriz_oe1.md). Este resumen describe antecedentes del Hito 2; R11/R12 no acreditan exactitud y la oportunidad ya no se excluye.
+
 ## 1. Definición y propósito
 
 - **Calidad de datos** en DMBOK es *aptitud para el uso* (fitness for purpose): los datos son de calidad si sirven para lo que sus consumidores necesitan. No es una propiedad absoluta del archivo.
@@ -14,12 +16,12 @@ DMBOK2 consolida las dimensiones de Strong y Wang, English, Loshin y DAMA UK (20
 
 | Dimensión | Qué mide | En el proyecto |
 |---|---|---|
-| Exactitud (accuracy) | Grado en que el dato representa la realidad | R11 serial de Excel, R12 magnitud anómala, cartas, modelo ML |
+| Exactitud (accuracy) | Grado en que el dato representa la realidad | EXA01: contraste muestral con publicación oficial; R11/R12 y modelos solo generan sospechas |
 | Completitud (completeness) | Presencia de los datos requeridos | R01 período presente, R10 importes en cero |
 | Consistencia (consistency) | Coherencia entre valores dentro y entre conjuntos | R06 etiqueta canónica, R08 orden EPM ≥ Compartido ≥ Cliente, R09 columnas por nivel |
-| Integridad (integrity) | Integridad referencial y estructural | No se evalúa: la clave categoría + período no está declarada como tal |
+| Integridad (integrity) | Integridad referencial y estructural | INT01/INT02 propuestos: esquema y referencias a catálogos; no confundir unicidad de clave con integridad completa |
 | Razonabilidad (reasonability) | El patrón del dato cumple expectativas | Cartas I-MR y detección de anomalías: es aquí donde encajan, no solo en exactitud |
-| Oportunidad (timeliness) | El dato está disponible cuando se necesita | No aplica a un histórico cerrado; declararlo fuera de alcance |
+| Oportunidad (timeliness) | El dato está disponible cuando se necesita | OPO01: disponibilidad real frente a plazo documentado; evidencia externa pendiente y evaluación obligatoria |
 | Unicidad (uniqueness) | Ninguna entidad aparece más de una vez | R04 duplicado exacto, R05 clave repetida |
 | Validez (validity) | Valores dentro del dominio, tipo, formato y rango definidos | R02 año y mes, R03 formato numérico, R07 no negatividad |
 
@@ -40,7 +42,7 @@ DMBOK2 (siguiendo a Loshin) clasifica las reglas de calidad en diez tipos. Cada 
 7. Reglas de consistencia entre atributos: R08, R09.
 8. Verificación de exactitud contra una fuente de referencia: pendiente, requiere la publicación original de EPM o la resolución CREG.
 9. Verificación de unicidad: R04, R05.
-10. Validación de oportunidad: fuera de alcance.
+10. Validación de oportunidad: OPO01; dentro del alcance obligatorio, pendiente de evidencia temporal verificable.
 
 ## 4. Cómo se define una métrica
 

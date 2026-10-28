@@ -20,9 +20,10 @@ Sin fechas: la secuencia es la propuesta y el calendario lo fija el director con
 ### Actividades
 
 1. **Matriz dimensión → métrica → indicador → regla (OE1).**
-   - Ocho dimensiones de DMBOK2 cap. 13 con definición propia para tarifas; las 12 reglas clasificadas en los 10 tipos de regla.
-   - Plantilla por indicador: fórmula como cociente, unidad, umbral, severidad, frecuencia, responsable y tendencia.
-   - Añadir integridad (clave categoría + período) y razonabilidad (cartas); excluir oportunidad por escrito. Relación explícita con ISO/IEC 25012.
+   - Ocho dimensiones de DAMA-DMBOK2 (2017), cap. 13, obligatorias para EPM y CHEC. Clasificar R01–R12 en la taxonomía de diez tipos; no confundir tipos con número de reglas.
+   - Plantilla por indicador: población, numerador, denominador, fórmula como cociente, unidad, umbral y fundamento, severidad, frecuencia, responsable, tendencia y aplicabilidad por fuente.
+   - Incluir integridad estructural/referencial y razonabilidad (cartas). **Oportunidad no se excluye**: requiere evidencia de disponibilidad real y plazo esperado. Exactitud requiere contraste documental; las alertas no la sustituyen. Relación conceptual y delimitada con ISO/IEC 25012.
+   - Entregable documental del punto 1: [matriz y fichas OE1](hito3/matriz_oe1.md), [YAML](hito3/matriz_oe1.yaml) y [CSV por fuente](hito3/matriz_oe1.csv). Incluye R01–R12 y siete controles complementarios. Umbrales propuestos, catálogos y evidencia externa pendientes de validación; no se declara medición de las ocho dimensiones ni cierre del Hito 3.
 2. **Ficha de caracterización por fuente (OE2).**
    - EPM sfcd-b3ey: 3.623 filas, 12 columnas, dic-2016 a dic-2021; 202 series posibles, 83 con 49 meses o más.
    - Superservicios vfjy-6fka: 5.396 filas, 16 columnas, 8 períodos. Consumidores del dato, datos críticos, unidades y significado de Rango de Consumo (2.143 ausentes).
