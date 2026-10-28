@@ -2,7 +2,7 @@ version: '1.0'
 fecha: '2026-10-27'
 objetivo: OE1
 hito: 3, actividad 1
-estado: Especificación documental elaborada; indicadores aún no medidos por este entregable.
+estado: Especificacion documental con linea base medida sobre los CSV conservados; controles con evidencia externa pendiente siguen sin medir.
 fuentes:
   epm:
     id: sfcd-b3ey
@@ -199,7 +199,7 @@ indicadores:
   aplicabilidad:
     epm: year y mes no vacíos.
     chec: costounitariotarifa_ano y costounitariotarifa_mes no vacíos.
-  estado_medicion: pendiente_no_ejecutado_en_este_entregable
+  estado_medicion: medido
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
@@ -207,9 +207,17 @@ indicadores:
   - conteos elegibles, evaluados, excluidos y fallidos
   naturaleza: regla_base
   resultado:
-    numerador: null
-    denominador: null
-    valor: null
+    epm:
+      numerador: 3622
+      denominador: 3623
+      valor: 99.9724
+      estado: medido
+    chec:
+      numerador: 40609
+      denominador: 40609
+      valor: 100.0
+      estado: medido
+    medido_utc: '2026-10-28T22:04:08Z'
 - id: R02
   nombre: Período válido
   dimension: validez
@@ -240,7 +248,7 @@ indicadores:
   aplicabilidad:
     epm: Mapear nombres de mes mediante catálogo explícito; validar year como entero sin truncar.
     chec: Validar año y mes enteros; mes de 1 a 12.
-  estado_medicion: pendiente_no_ejecutado_en_este_entregable
+  estado_medicion: medido
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
@@ -248,9 +256,17 @@ indicadores:
   - conteos elegibles, evaluados, excluidos y fallidos
   naturaleza: regla_base
   resultado:
-    numerador: null
-    denominador: null
-    valor: null
+    epm:
+      numerador: 3622
+      denominador: 3622
+      valor: 100.0
+      estado: medido
+    chec:
+      numerador: 40609
+      denominador: 40609
+      valor: 100.0
+      estado: medido
+    medido_utc: '2026-10-28T22:04:08Z'
   tipos_secundarios:
   - T05
 - id: R03
@@ -283,7 +299,7 @@ indicadores:
   aplicabilidad:
     epm: Cinco columnas monetarias; preservar texto original y evitar conversión ambigua de separadores.
     chec: Diez medidas declaradas texto; convertir con convención explícita y conservar original.
-  estado_medicion: pendiente_no_ejecutado_en_este_entregable
+  estado_medicion: provisional
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
@@ -291,9 +307,19 @@ indicadores:
   - conteos elegibles, evaluados, excluidos y fallidos
   naturaleza: regla_base
   resultado:
-    numerador: null
-    denominador: null
-    valor: null
+    epm:
+      numerador: 18110
+      denominador: 18110
+      valor: 100.0
+      estado: provisional
+      nota: 'Sin matriz de aplicabilidad por concepto: se evaluan todas las celdas informadas.'
+    chec:
+      numerador: 406035
+      denominador: 406035
+      valor: 100.0
+      estado: provisional
+      nota: 'Sin matriz de aplicabilidad por concepto: se evaluan todas las celdas informadas.'
+    medido_utc: '2026-10-28T22:04:08Z'
 - id: R04
   nombre: Ausencia de duplicados exactos adicionales
   dimension: unicidad
@@ -323,7 +349,7 @@ indicadores:
   aplicabilidad:
     epm: Comparar las 12 columnas originales.
     chec: Comparar las 24 columnas originales.
-  estado_medicion: pendiente_no_ejecutado_en_este_entregable
+  estado_medicion: medido
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
@@ -331,9 +357,17 @@ indicadores:
   - conteos elegibles, evaluados, excluidos y fallidos
   naturaleza: regla_base
   resultado:
-    numerador: null
-    denominador: null
-    valor: null
+    epm:
+      numerador: 3613
+      denominador: 3623
+      valor: 99.724
+      estado: medido
+    chec:
+      numerador: 40609
+      denominador: 40609
+      valor: 100.0
+      estado: medido
+    medido_utc: '2026-10-28T22:04:08Z'
 - id: R05
   nombre: Clave tarifaria sin multiplicidad
   dimension: unicidad
@@ -365,7 +399,7 @@ indicadores:
     epm: Cinco categorías normalizadas + fecha mensual.
     chec: Doce categorías originales como clave provisional + fecha; revisar dependencias código-nombre antes de fijar
       clave final.
-  estado_medicion: pendiente_no_ejecutado_en_este_entregable
+  estado_medicion: provisional
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
@@ -373,9 +407,18 @@ indicadores:
   - conteos elegibles, evaluados, excluidos y fallidos
   naturaleza: regla_base
   resultado:
-    numerador: null
-    denominador: null
-    valor: null
+    epm:
+      numerador: 3612
+      denominador: 3612
+      valor: 100.0
+      estado: medido
+    chec:
+      numerador: 35914
+      denominador: 40609
+      valor: 88.4385
+      estado: provisional
+      nota: 'Clave provisional: dependencias codigo-nombre sin revisar.'
+    medido_utc: '2026-10-28T22:04:08Z'
 - id: R06
   nombre: Representación canónica
   dimension: consistencia
@@ -406,7 +449,7 @@ indicadores:
   aplicabilidad:
     epm: Tipo de tarifa, tipo de dato y rango de consumo; conservar variantes originales.
     chec: Código/nombre, modalidad, clase, estrato y rangos según catálogo de cada campo.
-  estado_medicion: pendiente_no_ejecutado_en_este_entregable
+  estado_medicion: provisional
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
@@ -414,9 +457,19 @@ indicadores:
   - conteos elegibles, evaluados, excluidos y fallidos
   naturaleza: regla_base
   resultado:
-    numerador: null
-    denominador: null
-    valor: null
+    epm:
+      numerador: 8626
+      denominador: 8726
+      valor: 98.854
+      estado: provisional
+      nota: 'Sin catalogo canonico aprobado: canonica = forma mas frecuente; no detecta sinonimos.'
+    chec:
+      numerador: 340215
+      denominador: 340215
+      valor: 100.0
+      estado: provisional
+      nota: 'Sin catalogo canonico aprobado: canonica = forma mas frecuente; no detecta sinonimos.'
+    medido_utc: '2026-10-28T22:04:08Z'
 - id: R07
   nombre: Signo y rango por concepto
   dimension: validez
@@ -446,7 +499,7 @@ indicadores:
   aplicabilidad:
     epm: Revisar restricciones por separado; no aplicar no negatividad general a todos los conceptos.
     chec: Definir dominio de cada componente; subcon y cureal requieren definición antes de evaluar.
-  estado_medicion: pendiente_no_ejecutado_en_este_entregable
+  estado_medicion: provisional
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
@@ -454,9 +507,19 @@ indicadores:
   - conteos elegibles, evaluados, excluidos y fallidos
   naturaleza: regla_base
   resultado:
-    numerador: null
-    denominador: null
-    valor: null
+    epm:
+      numerador: 18110
+      denominador: 18110
+      valor: 100.0
+      estado: provisional
+      nota: 'Dominio por concepto sin documentar: no negatividad salvo Restricciones (EPM).'
+    chec:
+      numerador: 401948
+      denominador: 406035
+      valor: 98.9934
+      estado: provisional
+      nota: 'Dominio por concepto sin documentar: no negatividad salvo Restricciones (EPM).'
+    medido_utc: '2026-10-28T22:04:08Z'
 - id: R08
   nombre: Orden entre tarifas por propiedad
   dimension: consistencia
@@ -488,7 +551,7 @@ indicadores:
     epm: Propiedad EPM >= compartida >= cliente en la misma fila del nivel I; contrastar fundamento documental.
     chec: Alinear filas por las demás categorías y propiedad; confirmar las tres etiquetas y variable comparada antes
       de exigir el orden.
-  estado_medicion: pendiente_no_ejecutado_en_este_entregable
+  estado_medicion: medido_parcial
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
@@ -496,9 +559,19 @@ indicadores:
   - conteos elegibles, evaluados, excluidos y fallidos
   naturaleza: regla_base
   resultado:
-    numerador: null
-    denominador: null
-    valor: null
+    epm:
+      numerador: 2146
+      denominador: 2148
+      valor: 99.9069
+      estado: provisional
+      nota: 'Orden del codigo del Hito 2; fundamento documental sin contrastar.'
+    chec:
+      numerador: null
+      denominador: null
+      valor: null
+      estado: no_medible
+      nota: 'Requiere confirmar las tres etiquetas de propiedad y la variable comparada.'
+    medido_utc: '2026-10-28T22:04:08Z'
 - id: R09
   nombre: Estructura de importes según categoría
   dimension: consistencia
@@ -529,7 +602,7 @@ indicadores:
     epm: 'Revisar patrón del código: nivel I usa propiedad; otros niveles usan punta/fuera de punta. Validar si cero
       significa no aplica.'
     chec: Comprobar combinaciones nivel-propiedad-modalidad-concepto; no exigir columnas punta/fuera de punta inexistentes.
-  estado_medicion: pendiente_no_ejecutado_en_este_entregable
+  estado_medicion: medido_parcial
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
@@ -537,9 +610,19 @@ indicadores:
   - conteos elegibles, evaluados, excluidos y fallidos
   naturaleza: regla_base
   resultado:
-    numerador: null
-    denominador: null
-    valor: null
+    epm:
+      numerador: 3623
+      denominador: 3623
+      valor: 100.0
+      estado: provisional
+      nota: 'Pendiente decidir si cero significa ''no aplica''; patron tomado del codigo.'
+    chec:
+      numerador: null
+      denominador: null
+      valor: null
+      estado: no_medible
+      nota: 'Requiere matriz de combinaciones nivel-propiedad-modalidad-concepto.'
+    medido_utc: '2026-10-28T22:04:08Z'
 - id: R10
   nombre: Importes requeridos disponibles
   dimension: completitud
@@ -570,7 +653,7 @@ indicadores:
   aplicabilidad:
     epm: Evaluar columnas aplicables por nivel y concepto.
     chec: Evaluar tarifa/CU y componentes requeridos por el concepto; no exigir todo campo en toda fila.
-  estado_medicion: pendiente_no_ejecutado_en_este_entregable
+  estado_medicion: provisional
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
@@ -578,9 +661,19 @@ indicadores:
   - conteos elegibles, evaluados, excluidos y fallidos
   naturaleza: regla_base
   resultado:
-    numerador: null
-    denominador: null
-    valor: null
+    epm:
+      numerador: 3621
+      denominador: 3623
+      valor: 99.9448
+      estado: provisional
+      nota: 'Conjunto de medidas requeridas sin definir: se exige al menos un importe distinto de cero. La unidad fila no detecta columnas enteras en cero.'
+    chec:
+      numerador: 40609
+      denominador: 40609
+      valor: 100.0
+      estado: provisional
+      nota: 'Conjunto de medidas requeridas sin definir: se exige al menos un importe distinto de cero. La unidad fila no detecta columnas enteras en cero.'
+    medido_utc: '2026-10-28T22:04:08Z'
   diferencia_codigo_actual: El Hito 2 alerta filas con todos los importes en cero. Conservar ese hallazgo como sospecha,
     pero no medirlo como ausencia confirmada.
 - id: R11
@@ -612,7 +705,7 @@ indicadores:
   aplicabilidad:
     epm: Intervalo heredado [36526, 47483]; no confirma error.
     chec: Misma heurística solo tras revisar escala y unidad; los valores legítimos pueden caer en el intervalo.
-  estado_medicion: pendiente_no_ejecutado_en_este_entregable
+  estado_medicion: medido
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
@@ -620,9 +713,19 @@ indicadores:
   - conteos elegibles, evaluados, excluidos y fallidos
   naturaleza: regla_base
   resultado:
-    numerador: null
-    denominador: null
-    valor: null
+    epm:
+      numerador: 3
+      denominador: 18110
+      valor: 0.0166
+      estado: medido
+      nota: 'Prevalencia: no confirma error.'
+    chec:
+      numerador: 0
+      denominador: 406035
+      valor: 0.0
+      estado: medido
+      nota: 'Prevalencia: no confirma error.'
+    medido_utc: '2026-10-28T22:04:08Z'
   parametros:
     serial_min: 36526
     serial_max: 47483
@@ -659,7 +762,7 @@ indicadores:
   aplicabilidad:
     epm: Serie = categorías + columna monetaria.
     chec: Serie = categorías + variable monetaria; no mezclar CU y tarifa.
-  estado_medicion: pendiente_no_ejecutado_en_este_entregable
+  estado_medicion: provisional
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
@@ -667,9 +770,19 @@ indicadores:
   - conteos elegibles, evaluados, excluidos y fallidos
   naturaleza: regla_base
   resultado:
-    numerador: null
-    denominador: null
-    valor: null
+    epm:
+      numerador: 4
+      denominador: 9379
+      valor: 0.0426
+      estado: provisional
+      nota: 'Factor 10 sin calibrar y mediana sobre la serie completa, no sobre una ventana de referencia separada de la vigilancia.'
+    chec:
+      numerador: 0
+      denominador: 355289
+      valor: 0.0
+      estado: provisional
+      nota: 'Factor 10 sin calibrar y mediana sobre la serie completa, no sobre una ventana de referencia separada de la vigilancia.'
+    medido_utc: '2026-10-28T22:04:08Z'
   parametros:
     factor: 10
     sensibilidad:
@@ -708,7 +821,7 @@ indicadores:
   aplicabilidad:
     epm: Doce columnas oficiales, con cinco medidas numéricas.
     chec: Veinticuatro columnas oficiales; texto monetario es compatible si existe conversión definida.
-  estado_medicion: pendiente_no_ejecutado_en_este_entregable
+  estado_medicion: medido
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
@@ -716,9 +829,17 @@ indicadores:
   - conteos elegibles, evaluados, excluidos y fallidos
   naturaleza: control_complementario
   resultado:
-    numerador: null
-    denominador: null
-    valor: null
+    epm:
+      numerador: 12
+      denominador: 12
+      valor: 100.0
+      estado: medido
+    chec:
+      numerador: 24
+      denominador: 24
+      valor: 100.0
+      estado: medido
+    medido_utc: '2026-10-28T22:04:08Z'
 - id: INT02
   nombre: Referencias categóricas resolubles
   dimension: integridad
@@ -749,7 +870,7 @@ indicadores:
   aplicabilidad:
     epm: Relacionar combinación tarifaria con catálogo de modalidades, conceptos, nivel y rangos autorizado.
     chec: Comercializador, mercado y clase código-nombre; combinaciones permitidas de nivel/propiedad/estrato.
-  estado_medicion: pendiente_no_ejecutado_en_este_entregable
+  estado_medicion: medido_parcial
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
@@ -757,9 +878,19 @@ indicadores:
   - conteos elegibles, evaluados, excluidos y fallidos
   naturaleza: control_complementario
   resultado:
-    numerador: null
-    denominador: null
-    valor: null
+    epm:
+      numerador: null
+      denominador: null
+      valor: null
+      estado: no_medible
+      nota: 'La fuente no publica pares codigo-nombre.'
+    chec:
+      numerador: 25
+      denominador: 26
+      valor: 96.1538
+      estado: provisional
+      nota: 'Sin catalogo externo versionado: se evalua consistencia interna codigo-nombre.'
+    medido_utc: '2026-10-28T22:04:08Z'
 - id: EXA01
   nombre: Concordancia documental de importes
   dimension: exactitud
@@ -792,7 +923,7 @@ indicadores:
   aplicabilidad:
     epm: Publicación tarifaria original EPM con concepto, nivel, propiedad y franja equivalentes.
     chec: Publicación CHEC con mercado, estrato, nivel, propiedad, concepto y período equivalentes.
-  estado_medicion: pendiente_no_ejecutado_en_este_entregable
+  estado_medicion: medido_parcial
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
@@ -800,9 +931,19 @@ indicadores:
   - conteos elegibles, evaluados, excluidos y fallidos
   naturaleza: control_complementario
   resultado:
-    numerador: null
-    denominador: null
-    valor: null
+    epm:
+      numerador: null
+      denominador: null
+      valor: null
+      estado: no_medible
+      nota: 'Sin traslape temporal con la referencia disponible; requiere la publicacion tarifaria original de la entidad.'
+    chec:
+      numerador: 756
+      denominador: 756
+      valor: 100.0
+      estado: provisional
+      nota: 'Contraste con Superservicios - Costo Unitario Prestacion del Servicio (td8k-vhq9), publicador distinto, descargado 2026-10-28T21:59:07Z. Alcance: 756 celdas de 7 componentes en 6 combinaciones nivel-propiedad del ano 2023. Tolerancia 0,1 % relativa. Prueba de control: 99.6 % de los valores falsos inyectados fueron rechazados. No cubre cureal, subcon ni valor_tarifa, que no tienen contraparte en la referencia.'
+    medido_utc: '2026-10-28T22:04:08Z'
   parametros:
     tamano_muestra_por_fuente: null
     semilla: 2026
@@ -843,7 +984,7 @@ indicadores:
   aplicabilidad:
     epm: Reconstruir evidencia temporal de publicaciones EPM, sin usar year/mes como fecha de publicación.
     chec: Reconstruir evidencia de publicaciones CHEC; fecha de carga del dataset no prueba cada período.
-  estado_medicion: pendiente_no_ejecutado_en_este_entregable
+  estado_medicion: no_medible
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
@@ -851,9 +992,19 @@ indicadores:
   - conteos elegibles, evaluados, excluidos y fallidos
   naturaleza: control_complementario
   resultado:
-    numerador: null
-    denominador: null
-    valor: null
+    epm:
+      numerador: null
+      denominador: null
+      valor: null
+      estado: no_medible
+      nota: 'La fuente no publica fecha de disponibilidad por periodo; year/mes no es fecha de publicacion.'
+    chec:
+      numerador: null
+      denominador: null
+      valor: null
+      estado: no_medible
+      nota: 'La fuente no publica fecha de disponibilidad por periodo; year/mes no es fecha de publicacion.'
+    medido_utc: '2026-10-28T22:04:08Z'
   parametros:
     plazo_documentado: null
     zona_horaria: America/Bogota
@@ -889,7 +1040,7 @@ indicadores:
   aplicabilidad:
     epm: Validar por escrito equivalencias como variantes de 0-CS; no asumirlas solo por similitud.
     chec: Validar etiquetas de propiedad, clase y mercado; no fusionar códigos distintos por nombre parecido.
-  estado_medicion: pendiente_no_ejecutado_en_este_entregable
+  estado_medicion: no_medible
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
@@ -897,9 +1048,19 @@ indicadores:
   - conteos elegibles, evaluados, excluidos y fallidos
   naturaleza: control_complementario
   resultado:
-    numerador: null
-    denominador: null
-    valor: null
+    epm:
+      numerador: null
+      denominador: null
+      valor: null
+      estado: no_medible
+      nota: 'Requiere validacion escrita de las equivalencias.'
+    chec:
+      numerador: null
+      denominador: null
+      valor: null
+      estado: no_medible
+      nota: 'Requiere validacion escrita de las equivalencias.'
+    medido_utc: '2026-10-28T22:04:08Z'
 - id: DEF01
   nombre: Semántica de variables críticas documentada
   dimension: consistencia
@@ -930,7 +1091,7 @@ indicadores:
   aplicabilidad:
     epm: Tipo de dato y cinco importes; distinguir COP/kWh y otros cargos según concepto.
     chec: CU, tarifa, componentes; confirmar tipomed, cureal y subcon si intervienen en controles.
-  estado_medicion: pendiente_no_ejecutado_en_este_entregable
+  estado_medicion: no_medible
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
@@ -938,9 +1099,19 @@ indicadores:
   - conteos elegibles, evaluados, excluidos y fallidos
   naturaleza: control_complementario
   resultado:
-    numerador: null
-    denominador: null
-    valor: null
+    epm:
+      numerador: null
+      denominador: null
+      valor: null
+      estado: no_medible
+      nota: 'Requiere semantica y unidad aprobadas por la fuente.'
+    chec:
+      numerador: null
+      denominador: null
+      valor: null
+      estado: no_medible
+      nota: 'Requiere semantica y unidad aprobadas por la fuente.'
+    medido_utc: '2026-10-28T22:04:08Z'
 - id: CART01
   nombre: Tasa de alertas de cartas I-MR
   dimension: razonabilidad
@@ -974,7 +1145,7 @@ indicadores:
   aplicabilidad:
     epm: Categorías EPM y variable monetaria; agrupar dependencia por categoría en evaluación.
     chec: Categorías CHEC y CU/tarifa por separado; no sumar como réplicas independientes.
-  estado_medicion: pendiente_no_ejecutado_en_este_entregable
+  estado_medicion: no_medible
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
@@ -982,9 +1153,19 @@ indicadores:
   - conteos elegibles, evaluados, excluidos y fallidos
   naturaleza: control_complementario
   resultado:
-    numerador: null
-    denominador: null
-    valor: null
+    epm:
+      numerador: null
+      denominador: null
+      valor: null
+      estado: no_medible
+      nota: 'Requiere las cartas en cambios logaritmicos de la actividad 5 del Hito 3.'
+    chec:
+      numerador: null
+      denominador: null
+      valor: null
+      estado: no_medible
+      nota: 'Requiere las cartas en cambios logaritmicos de la actividad 5 del Hito 3.'
+    medido_utc: '2026-10-28T22:04:08Z'
   parametros:
     cambios_referencia_base: 36
     min_cambios_vigilancia: 12

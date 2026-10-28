@@ -72,7 +72,7 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 - **EPM:** year y mes no vacíos.
 - **CHEC:** costounitariotarifa_ano y costounitariotarifa_mes no vacíos.
 - **Precondiciones:** N/A no es un período válido; distinguir presencia de validez.
-- **Estado:** especificado, pendiente de medición.
+- **Estado:** EPM 99.97 % (3622/3623, medido); CHEC 100 % (40609/40609, medido).
 
 ### R02 · Período válido
 
@@ -89,7 +89,7 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 - **EPM:** Mapear nombres de mes mediante catálogo explícito; validar year como entero sin truncar.
 - **CHEC:** Validar año y mes enteros; mes de 1 a 12.
 - **Precondiciones:** No rechazar nuevas fechas solo por exceder la cobertura de la descarga previa. Reportar excluidos por ausencia en R01.
-- **Estado:** especificado, pendiente de medición.
+- **Estado:** EPM 100 % (3622/3622, medido); CHEC 100 % (40609/40609, medido).
 
 ### R03 · Importes numéricos y finitos
 
@@ -106,7 +106,7 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 - **EPM:** Cinco columnas monetarias; preservar texto original y evitar conversión ambigua de separadores.
 - **CHEC:** Diez medidas declaradas texto; convertir con convención explícita y conservar original.
 - **Precondiciones:** Matriz de aplicabilidad por concepto; nulos se reportan en completitud. No aceptar NaN o infinito como importes válidos.
-- **Estado:** especificado, pendiente de medición.
+- **Estado:** EPM 100 % (18110/18110, provisional); CHEC 100 % (406035/406035, provisional).
 
 ### R04 · Ausencia de duplicados exactos adicionales
 
@@ -123,7 +123,7 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 - **EPM:** Comparar las 12 columnas originales.
 - **CHEC:** Comparar las 24 columnas originales.
 - **Precondiciones:** Una clase de n filas idénticas aporta n-1 duplicados; no usar esa cifra para R05.
-- **Estado:** especificado, pendiente de medición.
+- **Estado:** EPM 99.72 % (3613/3623, medido); CHEC 100 % (40609/40609, medido).
 
 ### R05 · Clave tarifaria sin multiplicidad
 
@@ -140,7 +140,7 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 - **EPM:** Cinco categorías normalizadas + fecha mensual.
 - **CHEC:** Doce categorías originales como clave provisional + fecha; revisar dependencias código-nombre antes de fijar clave final.
 - **Precondiciones:** Versionar la clave y las equivalencias. Todas las filas de una clave multiplicada incumplen; separar redundancia semántica y valores en conflicto.
-- **Estado:** especificado, pendiente de medición.
+- **Estado:** EPM 100 % (3612/3612, medido); CHEC 88.44 % (35914/40609, provisional).
 
 ### R06 · Representación canónica
 
@@ -157,7 +157,7 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 - **EPM:** Tipo de tarifa, tipo de dato y rango de consumo; conservar variantes originales.
 - **CHEC:** Código/nombre, modalidad, clase, estrato y rangos según catálogo de cada campo.
 - **Precondiciones:** Una variante no canónica es advertencia de estandarización, no necesariamente valor incorrecto. No convertir la moda observada en referencia oficial; medir cobertura de catálogo aparte.
-- **Estado:** especificado, pendiente de medición.
+- **Estado:** EPM 98.85 % (8626/8726, provisional); CHEC 100 % (340215/340215, provisional).
 
 ### R07 · Signo y rango por concepto
 
@@ -174,7 +174,7 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 - **EPM:** Revisar restricciones por separado; no aplicar no negatividad general a todos los conceptos.
 - **CHEC:** Definir dominio de cada componente; subcon y cureal requieren definición antes de evaluar.
 - **Precondiciones:** Excluir solo con causa explícita cuando falte el dominio; eso no aprueba el control.
-- **Estado:** especificado, pendiente de medición.
+- **Estado:** EPM 100 % (18110/18110, provisional); CHEC 98.99 % (401948/406035, provisional).
 
 ### R08 · Orden entre tarifas por propiedad
 
@@ -191,7 +191,7 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 - **EPM:** Propiedad EPM >= compartida >= cliente en la misma fila del nivel I; contrastar fundamento documental.
 - **CHEC:** Alinear filas por las demás categorías y propiedad; confirmar las tres etiquetas y variable comparada antes de exigir el orden.
 - **Precondiciones:** No comparar filas con estrato, modalidad o rango diferentes. Falta de un miembro de comparación se registra como falta de cobertura, no cumplimiento.
-- **Estado:** especificado, pendiente de medición.
+- **Estado:** EPM 99.91 % (2146/2148, provisional); CHEC sin medir (no_medible).
 
 ### R09 · Estructura de importes según categoría
 
@@ -208,7 +208,7 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 - **EPM:** Revisar patrón del código: nivel I usa propiedad; otros niveles usan punta/fuera de punta. Validar si cero significa no aplica.
 - **CHEC:** Comprobar combinaciones nivel-propiedad-modalidad-concepto; no exigir columnas punta/fuera de punta inexistentes.
 - **Precondiciones:** En CHEC este es un adaptador semántico, no una copia literal del código EPM.
-- **Estado:** especificado, pendiente de medición.
+- **Estado:** EPM 100 % (3623/3623, provisional); CHEC sin medir (no_medible).
 
 ### R10 · Importes requeridos disponibles
 
@@ -225,7 +225,7 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 - **EPM:** Evaluar columnas aplicables por nivel y concepto.
 - **CHEC:** Evaluar tarifa/CU y componentes requeridos por el concepto; no exigir todo campo en toda fila.
 - **Precondiciones:** Cambio propuesto frente al código: todos ceros no prueba incompletitud. Un cero informado cuenta como presente salvo documentación que lo defina como ausencia.
-- **Estado:** especificado, pendiente de medición.
+- **Estado:** EPM 99.94 % (3621/3623, provisional); CHEC 100 % (40609/40609, provisional).
 - **Cambio frente al código:** El Hito 2 alerta filas con todos los importes en cero. Conservar ese hallazgo como sospecha, pero no medirlo como ausencia confirmada.
 
 ### R11 · Sospecha de serial de fecha en importe
@@ -243,7 +243,7 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 - **EPM:** Intervalo heredado [36526, 47483]; no confirma error.
 - **CHEC:** Misma heurística solo tras revisar escala y unidad; los valores legítimos pueden caer en el intervalo.
 - **Precondiciones:** No es indicador de exactitud confirmada ni criterio automático de cuarentena.
-- **Estado:** especificado, pendiente de medición.
+- **Estado:** EPM 0.0166 % (3/18110, medido); CHEC 0 % (0/406035, medido).
 - **Cambio frente al código:** Reclasificación propuesta de Exactitud a Validez y severidad de sospecha; no se cambió el motor.
 - **Parámetros:** {"serial_min": 36526, "serial_max": 47483}.
 
@@ -262,7 +262,7 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 - **EPM:** Serie = categorías + columna monetaria.
 - **CHEC:** Serie = categorías + variable monetaria; no mezclar CU y tarifa.
 - **Precondiciones:** Mediana de referencia estrictamente positiva; no estimarla con vigilancia. Factor 10 heredado, pendiente sensibilidad 5/10/20. No sustituye valoración de inflación, subsidio o cambio regulatorio.
-- **Estado:** especificado, pendiente de medición.
+- **Estado:** EPM 0.0426 % (4/9379, provisional); CHEC 0 % (0/355289, provisional).
 - **Cambio frente al código:** El código usa mediana de toda la serie y severidad Error; se propone referencia temporal y Advertencia.
 - **Parámetros:** {"factor": 10, "sensibilidad": [5, 10, 20]}.
 
@@ -281,7 +281,7 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 - **EPM:** Doce columnas oficiales, con cinco medidas numéricas.
 - **CHEC:** Veinticuatro columnas oficiales; texto monetario es compatible si existe conversión definida.
 - **Precondiciones:** Columnas extra se reportan aparte como deriva de esquema, sin suponer pérdida. Este control no demuestra integridad referencial por sí solo.
-- **Estado:** especificado, pendiente de medición.
+- **Estado:** EPM 100 % (12/12, medido); CHEC 100 % (24/24, medido).
 
 ### INT02 · Referencias categóricas resolubles
 
@@ -298,7 +298,7 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 - **EPM:** Relacionar combinación tarifaria con catálogo de modalidades, conceptos, nivel y rangos autorizado.
 - **CHEC:** Comercializador, mercado y clase código-nombre; combinaciones permitidas de nivel/propiedad/estrato.
 - **Precondiciones:** El catálogo debe tener referencia documental; no basta extraer todos los valores del mismo CSV. Una referencia sin clave es fallo si la clave es obligatoria; catálogo ausente es falta de evidencia.
-- **Estado:** especificado, pendiente de medición.
+- **Estado:** EPM sin medir (no_medible); CHEC 96.15 % (25/26, provisional).
 
 ### EXA01 · Concordancia documental de importes
 
@@ -315,7 +315,7 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 - **EPM:** Publicación tarifaria original EPM con concepto, nivel, propiedad y franja equivalentes.
 - **CHEC:** Publicación CHEC con mercado, estrato, nivel, propiedad, concepto y período equivalentes.
 - **Precondiciones:** Seleccionar muestra antes de buscar concordancia; registrar semilla, estratos y universo. Separar muestra aleatoria de alertas seleccionadas por conveniencia. Usar Decimal y regla de redondeo documentada a precisión comparable; no elegir tolerancia después de observar diferencias. Publicación original es referencia de concordancia, no prueba independiente de tarifa económicamente correcta.
-- **Estado:** especificado, pendiente de medición.
+- **Estado:** EPM sin medir (no_medible); CHEC 100 % (756/756, provisional).
 - **Parámetros:** {"tamano_muestra_por_fuente": null, "semilla": 2026, "precision_comparacion": null, "regla_redondeo": null}.
 
 ### OPO01 · Publicaciones disponibles dentro del plazo
@@ -333,7 +333,7 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 - **EPM:** Reconstruir evidencia temporal de publicaciones EPM, sin usar year/mes como fecha de publicación.
 - **CHEC:** Reconstruir evidencia de publicaciones CHEC; fecha de carga del dataset no prueba cada período.
 - **Precondiciones:** Definir primero consumidor, obligación o plazo operativo y zona horaria. Primera observación en un rastreo solo acota disponibilidad: clasificar como indeterminado si el intervalo cruza el plazo. Ausencia de evidencia no demuestra ni puntualidad ni retraso. Un seguimiento prospectivo se declara aparte; no valida el histórico retrospectivamente.
-- **Estado:** especificado, pendiente de medición.
+- **Estado:** EPM sin medir (no_medible); CHEC sin medir (no_medible).
 - **Parámetros:** {"plazo_documentado": null, "zona_horaria": "America/Bogota", "periodo_inicio": null, "periodo_fin": null}.
 
 ### MAP01 · Equivalencias de etiquetas verificadas
@@ -351,7 +351,7 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 - **EPM:** Validar por escrito equivalencias como variantes de 0-CS; no asumirlas solo por similitud.
 - **CHEC:** Validar etiquetas de propiedad, clase y mercado; no fusionar códigos distintos por nombre parecido.
 - **Precondiciones:** Sin equivalencias usadas, denominador cero se reporta sin unidades, no como 100 %. R06 mide representación original; MAP01 verifica que normalizar no cambie significado.
-- **Estado:** especificado, pendiente de medición.
+- **Estado:** EPM sin medir (no_medible); CHEC sin medir (no_medible).
 
 ### DEF01 · Semántica de variables críticas documentada
 
@@ -368,7 +368,7 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 - **EPM:** Tipo de dato y cinco importes; distinguir COP/kWh y otros cargos según concepto.
 - **CHEC:** CU, tarifa, componentes; confirmar tipomed, cureal y subcon si intervienen en controles.
 - **Precondiciones:** Indicador de preparación semántica del contrato; no es exactitud de los valores. No excluir del denominador una variable solo porque su significado aún no se conoce.
-- **Estado:** especificado, pendiente de medición.
+- **Estado:** EPM sin medir (no_medible); CHEC sin medir (no_medible).
 
 ### CART01 · Tasa de alertas de cartas I-MR
 
@@ -385,8 +385,129 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 - **EPM:** Categorías EPM y variable monetaria; agrupar dependencia por categoría en evaluación.
 - **CHEC:** Categorías CHEC y CU/tarifa por separado; no sumar como réplicas independientes.
 - **Precondiciones:** Solo valores positivos, únicos y meses consecutivos; no interpolar para ocultar huecos. Referencia base propuesta de 36 cambios y al menos 12 de vigilancia (49 observaciones). Excluir cambios que tocan valores en cuarentena; MR exige cambios válidos adyacentes. Contrastar alertas sistémicas con contexto; no clasificarlas automáticamente como error ni como cambio regulatorio confirmado.
-- **Estado:** especificado, pendiente de medición.
+- **Estado:** EPM sin medir (no_medible); CHEC sin medir (no_medible).
 - **Parámetros:** {"cambios_referencia_base": 36, "min_cambios_vigilancia": 12, "sensibilidad_referencia": [24, 36, 48], "constante_I": 2.66, "constante_MR": 3.267}.
+
+<!-- INICIO LINEA BASE -->
+## Línea base medida
+
+Valores calculados por [`medir_matriz_oe1.py`](medir_matriz_oe1.py) sobre los CSV de
+`fuentes_datos/datos/`, aplicando las definiciones de población, numerador y denominador
+de esta misma matriz. Última ejecución: 2026-10-28T22:04:08Z.
+
+| Archivo medido | Filas | SHA-256 |
+|---|---|---|
+| `fuentes_datos/datos/epm_sfcd-b3ey.csv` | 3623 | `98acd40e8d2b92433b1dfc60422228f26f53ab331fd600631f03f830e7ba38f4` |
+| `fuentes_datos/datos/chec_c698-wqig.csv` | 40609 | `05865b094a4cc4eb9f822ed2af686a11a8905d6606f40bb554f5bb5258e3c53f` |
+
+> Estos hashes no coinciden con `fuentes_datos/verificaciones/manifiesto_archivos.json`.
+> La causa está identificada y no es corrupción: el repositorio no declara política de fin
+> de línea y `core.autocrlf` convierte LF a CRLF al extraer en Windows, lo que añade un byte
+> por línea. Convirtiendo el archivo de EPM a LF se obtiene exactamente el hash del manifiesto.
+> Un hash de archivo de texto solo es verificable si la política de fin de línea está declarada.
+
+### Resultado por control
+
+| Control | EPM | CHEC | Estado EPM / CHEC |
+|---|---|---|---|
+| R01 | 99.97 %<br><sub>3622/3623</sub> | 100 %<br><sub>40609/40609</sub> | medido / medido |
+| R02 | 100 %<br><sub>3622/3622</sub> | 100 %<br><sub>40609/40609</sub> | medido / medido |
+| R03 | 100 %<br><sub>18110/18110</sub> | 100 %<br><sub>406035/406035</sub> | provisional / provisional |
+| R04 | 99.72 %<br><sub>3613/3623</sub> | 100 %<br><sub>40609/40609</sub> | medido / medido |
+| R05 | 100 %<br><sub>3612/3612</sub> | 88.44 %<br><sub>35914/40609</sub> | medido / provisional |
+| R06 | 98.85 %<br><sub>8626/8726</sub> | 100 %<br><sub>340215/340215</sub> | provisional / provisional |
+| R07 | 100 %<br><sub>18110/18110</sub> | 98.99 %<br><sub>401948/406035</sub> | provisional / provisional |
+| R08 | 99.91 %<br><sub>2146/2148</sub> | — | provisional / no_medible |
+| R09 | 100 %<br><sub>3623/3623</sub> | — | provisional / no_medible |
+| R10 | 99.94 %<br><sub>3621/3623</sub> | 100 %<br><sub>40609/40609</sub> | provisional / provisional |
+| R11 | 0.0166 %<br><sub>3/18110</sub> | 0 %<br><sub>0/406035</sub> | medido / medido |
+| R12 | 0.0426 %<br><sub>4/9379</sub> | 0 %<br><sub>0/355289</sub> | provisional / provisional |
+| INT01 | 100 %<br><sub>12/12</sub> | 100 %<br><sub>24/24</sub> | medido / medido |
+| INT02 | — | 96.15 %<br><sub>25/26</sub> | no_medible / provisional |
+| EXA01 | — | 100 %<br><sub>756/756</sub> | no_medible / provisional |
+| OPO01 | — | — | no_medible / no_medible |
+| MAP01 | — | — | no_medible / no_medible |
+| DEF01 | — | — | no_medible / no_medible |
+| CART01 | — | — | no_medible / no_medible |
+
+### Observación de apoyo: continuidad de cobertura
+
+| Fuente | Períodos presentes | Esperados en la ventana | Ventana |
+|---|---|---|---|
+| EPM | 61 | 61 | 2016-12 a 2021-12 |
+| CHEC | 225 | 225 | 2008-01 a 2026-09 |
+
+**No acredita OPO01 y no debe presentarse como tal.** OPO01 exige evidencia de que cada
+publicación estuvo disponible dentro de un plazo documentado, y su propia especificación
+prohíbe usar `year`/`mes` como fecha de publicación. La continuidad solo muestra que no
+faltan períodos dentro de la ventana, que es una propiedad distinta.
+
+### Lo que cambia al aplicar las definiciones de esta matriz
+
+**R05 en EPM da 100 %.** La población exige conservar una fila por clase de copia exacta
+antes de evaluar la clave. Con ese paso no queda ninguna clave repetida: las repeticiones
+de clave en EPM son las mismas filas que ya detecta R04. Medir R05 sin deduplicar primero
+reporta como defecto de unicidad lo que ya se contó una vez.
+
+**R07 en EPM da 100 %.** Los 15 importes negativos
+están todos en el concepto con excepción documentada: 15 en Restricciones: Rm. Ningún otro concepto presenta
+negativos, de modo que la excepción describe el dato en lugar de relajarlo.
+
+**R03 en EPM da 100 %.** El denominador de esta matriz son las celdas *informadas*. Las
+celdas vacías no entran y se reportan en completitud; contarlas como fallo de formato
+mezcla dos dimensiones.
+
+### Hallazgos que surgen de medir
+
+**R10 con unidad de observación «fila» no detecta columnas vacías.** El control da
+99.94 % en EPM y 100 % en CHEC porque toda fila
+tiene al menos un importe informado. El detalle por columna en CHEC muestra otra realidad:
+
+| Columna | Ceros | % de filas | Negativos | Vacías |
+|---|---|---|---|---|
+| `cureal` | 33871 | 83.4 % | 0 | 0 |
+| `subcon` | 16854 | 41.5 % | 3360 | 11 |
+| `generacion` | 11 | 0.0 % | 0 | 0 |
+| `restricciones` | 0 | 0.0 % | 727 | 11 |
+| `distribucion` | 0 | 0.0 % | 0 | 11 |
+| `comercializacion` | 0 | 0.0 % | 0 | 11 |
+| `perdidas` | 0 | 0.0 % | 0 | 11 |
+
+Se propone cambiar la unidad de observación de R10 de fila a celda por columna. Es un cambio
+en la especificación, no en el código, y sin él un scorecard declararía a CHEC completo.
+
+**`cureal` y `subcon` necesitan DEF01 antes de que R07 y R10 signifiquen algo.** Un 83 % de
+ceros en una columna y un 41 % en otra no se interpretan sin saber qué representan. La matriz
+ya lo advierte; la medición lo cuantifica.
+
+**INT02 encuentra su primer caso en CHEC.**
+
+- `claseservicio_codigo = 'RS'` resuelve a 7 descripciones: Residencial Estrato 4 (4560) · Residencial Estrato 5 (2955) · Residencial Estrato 6 (2907) · Residencial (1800) · Residencial Estrato 2 (1092) · Residencial Estrato 3 (1073) · Residencial Estrato 1 (956)
+
+El estrato ya viaja en `claseservicio_estrato` y la descripción lo duplica en la mayoría de
+las filas pero no en todas. Es denormalización inconsistente, que es el defecto que INT02
+existe para detectar.
+
+**R06 no detecta sinónimos.** Sin catálogo canónico aprobado, la medición toma como forma
+canónica la variante más frecuente tras normalizar mayúsculas y espacios. Con ese criterio
+CHEC da 100 %: no hay variantes de capitalización. No significa que esté limpio en
+consistencia, sino que este criterio solo ve diferencias de forma. Los sinónimos son
+competencia de MAP01, que sigue sin evidencia.
+
+### Qué sigue sin poder medirse
+
+| Control | Qué falta |
+|---|---|
+| EXA01 | La publicación tarifaria original de cada entidad. Las alertas de R11, R12 y las cartas solo generan sospechas. |
+| OPO01 | Evidencia de la fecha real de disponibilidad por período y un plazo esperado documentado. |
+| MAP01 | Validación escrita de que dos etiquetas significan lo mismo. |
+| DEF01 | Significado, unidad y uso aprobados por la fuente. |
+| CART01 | Las cartas en cambios logarítmicos de la actividad 5 del Hito 3. |
+| R08 y R09 en CHEC | Matriz de combinaciones nivel-propiedad-modalidad-concepto y confirmación de las etiquetas de propiedad. |
+
+Cinco de los diecinueve controles dependen de evidencia externa a los conjuntos. Esa es la
+brecha real del punto 1, y no se cierra midiendo mejor.
+<!-- FIN LINEA BASE -->
 
 ## Evidencia externa y cierre
 
