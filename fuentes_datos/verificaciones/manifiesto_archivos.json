@@ -1,0 +1,18 @@
+[
+  {
+    "dataset_id": "sfcd-b3ey",
+    "archivo": "datos/epm_sfcd-b3ey.csv",
+    "sha256": "b974a37a171b9178476fbd2baba21470e8845076af105ef9c178e80690f09920",
+    "bytes": 423202,
+    "registro_manifiesto_utc": "2026-10-28T00:35:33.116981+00:00",
+    "nota": "Fecha de registro del manifiesto, no fecha probada de publicación ni de descarga original."
+  },
+  {
+    "dataset_id": "c698-wqig",
+    "archivo": "datos/chec_c698-wqig.csv",
+    "sha256": "1f34f85ada431220a39b2bacf10a1dd09bd440b3e7eab61b61d53094508af08c",
+    "bytes": 9586122,
+    "registro_manifiesto_utc": "2026-10-28T00:35:33.121805+00:00",
+    "nota": "Fecha de registro del manifiesto, no fecha probada de publicación ni de descarga original."
+  }
+]

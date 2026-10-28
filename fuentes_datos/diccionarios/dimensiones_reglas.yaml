@@ -1,0 +1,84 @@
+version: '1.0'
+alcance: EPM y CHEC; propuesta documental, no configuración ejecutada.
+requisito: Evaluar ocho dimensiones en cada fuente; no evaluable no acredita cumplimiento final.
+reglas:
+- id: R01
+  nombre: Año y mes presentes
+  dimension_propuesta: completitud
+  criterio: Campos de período obligatorios en ambas fuentes.
+  estado: existente_en_codigo_EPM_requiere_revision_y_adaptacion_CHEC
+- id: R02
+  nombre: Año y mes válidos
+  dimension_propuesta: validez
+  criterio: EPM requiere catálogo de meses de texto; CHEC mes entero 1 a 12.
+  estado: existente_en_codigo_EPM_requiere_revision_y_adaptacion_CHEC
+- id: R03
+  nombre: Formato numérico de medidas
+  dimension_propuesta: validez
+  criterio: Validar valores finitos; CHEC declara sus medidas como texto en el esquema.
+  estado: existente_en_codigo_EPM_requiere_revision_y_adaptacion_CHEC
+- id: R04
+  nombre: Duplicados exactos
+  dimension_propuesta: unicidad
+  criterio: Comparar columnas originales; no usar posición de fila como identificador.
+  estado: existente_en_codigo_EPM_requiere_revision_y_adaptacion_CHEC
+- id: R05
+  nombre: Clave categoría-período repetida
+  dimension_propuesta: unicidad
+  criterio: Clave candidata pendiente de cierre; no eliminar conflictos automáticamente.
+  estado: existente_en_codigo_EPM_requiere_revision_y_adaptacion_CHEC
+- id: R06
+  nombre: Etiquetas y catálogos canónicos
+  dimension_propuesta: consistencia
+  criterio: Conservar original y normalizado; documentar equivalencias por fuente.
+  estado: existente_en_codigo_EPM_requiere_revision_y_adaptacion_CHEC
+- id: R07
+  nombre: Signo y dominio numérico
+  dimension_propuesta: validez
+  criterio: Excepciones por concepto, especialmente restricciones; validar antes de aplicar no negatividad general.
+  estado: existente_en_codigo_EPM_requiere_revision_y_adaptacion_CHEC
+- id: R08
+  nombre: Coherencia de tarifas por propiedad
+  dimension_propuesta: consistencia
+  criterio: EPM compara columnas del nivel I. CHEC requiere alinear filas equivalentes por propiedad y confirmar
+    el orden esperado.
+  estado: existente_en_codigo_EPM_requiere_revision_y_adaptacion_CHEC
+- id: R09
+  nombre: Aplicabilidad según nivel y modalidad
+  dimension_propuesta: consistencia
+  criterio: EPM distingue columnas por nivel. CHEC requiere matriz de conceptos/categorías; no puede copiarse literalmente.
+  estado: existente_en_codigo_EPM_requiere_revision_y_adaptacion_CHEC
+- id: R10
+  nombre: Ausencia de importes informativos
+  dimension_propuesta: completitud
+  criterio: Identificar registros sin importes utilizables; cero no equivale por sí mismo a faltante.
+  estado: existente_en_codigo_EPM_requiere_revision_y_adaptacion_CHEC
+- id: R11
+  nombre: Posible serial de fecha en importe
+  dimension_propuesta: validez
+  criterio: Heurística de sospecha; no demuestra exactitud ni debe producir cuarentena automática sin confirmación.
+  estado: existente_en_codigo_EPM_requiere_revision_y_adaptacion_CHEC
+- id: R12
+  nombre: Magnitud atípica respecto a serie
+  dimension_propuesta: razonabilidad
+  criterio: Advertencia; umbral 10× del código actual pendiente de sensibilidad y ajuste. Evitar mediana cero y
+    fuga temporal.
+  estado: existente_en_codigo_EPM_requiere_revision_y_adaptacion_CHEC
+nota_clasificacion: Se propone distinguir R11/validez y R12/razonabilidad de exactitud. El código actual las etiqueta
+  Exactitud; no se modificó.
+controles_complementarios:
+- dimension: integridad
+  control: INT01 control complementario propuesto
+  requisito: Verificar estructura y relaciones código-nombre/catálogos. Separar de unicidad; falta implementar y
+    validar.
+  estado: pendiente
+- dimension: exactitud
+  control: EXA01 control complementario propuesto
+  requisito: Contrastar muestra con documentos tarifarios oficiales equivalentes; reportar tamaño de muestra y concordancia,
+    no extrapolar sin diseño.
+  estado: pendiente
+- dimension: oportunidad
+  control: OPO01 control complementario propuesto
+  requisito: Medir fecha real de disponibilidad frente a plazo esperado documentado. No sustituir por mes de vigencia,
+    fecha de descarga ni última modificación global del dataset.
+  estado: pendiente

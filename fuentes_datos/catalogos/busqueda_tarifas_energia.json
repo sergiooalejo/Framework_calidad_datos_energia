@@ -1,0 +1,27 @@
+{
+  "descripcion": "Catálogo curado de las dos fuentes seleccionadas; no es la respuesta íntegra de una búsqueda.",
+  "fecha_seleccion": "2026-10-27",
+  "results": [
+    {
+      "resource": {
+        "id": "sfcd-b3ey",
+        "name": "Histórico de Tarifas de Energía Eléctrica – EPM (2016-2021)",
+        "attribution": "E.S.P. Empresas Públicas de Medellín - EPM, Antioquia"
+      },
+      "link": "https://www.datos.gov.co/d/sfcd-b3ey",
+      "datos": "datos/epm_sfcd-b3ey.csv",
+      "diccionario": "diccionarios/epm.yaml"
+    },
+    {
+      "resource": {
+        "id": "c698-wqig",
+        "name": "Información Costo unitario de tarifas de energía CHEC",
+        "attribution": "E.S.P. Central Hidroeléctrica de Caldas, Caldas"
+      },
+      "link": "https://www.datos.gov.co/d/c698-wqig",
+      "datos": "datos/chec_c698-wqig.csv",
+      "diccionario": "diccionarios/chec.yaml"
+    }
+  ],
+  "resultSetSize": 2
+}

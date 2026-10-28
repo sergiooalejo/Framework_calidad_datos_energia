@@ -1,0 +1,1100 @@
+{
+  "id": "sfcd-b3ey",
+  "name": "Histórico de Tarifas de Energía Eléctrica – EPM (2016-2021)",
+  "assetType": "dataset",
+  "attribution": "E.S.P. Empresas Públicas de Medellín - EPM, Antioquia",
+  "attributionLink": "https://www.epm.com.co/clientesyusuarios/energia/tarifas-energia/",
+  "averageRating": 0,
+  "category": "Función pública",
+  "createdAt": 1484317111,
+  "description": "Empresas Públicas de Medellín E.S.P. informa: Tarifas y Costo de Energía Eléctrica - Mercado Regulado - para los meses: Diciembre de 2016 - Diciembre de 2021.",
+  "diciBackend": false,
+  "displayType": "table",
+  "downloadCount": 2609,
+  "hideFromCatalog": false,
+  "hideFromDataJson": false,
+  "indexUpdatedAt": 1543936450,
+  "licenseId": "CC_40_BY_SA",
+  "locked": false,
+  "newBackend": true,
+  "numberOfComments": 0,
+  "oid": 29329295,
+  "provenance": "official",
+  "publicationAppendEnabled": false,
+  "publicationDate": 1532366395,
+  "publicationGroup": 13997101,
+  "publicationStage": "published",
+  "rowsUpdatedAt": 1742354995,
+  "tableId": 15401099,
+  "totalTimesRated": 0,
+  "viewCount": 53926,
+  "viewLastModified": 1781848456,
+  "viewType": "tabular",
+  "approvals": [
+    {
+      "reviewedAt": 1532366395,
+      "reviewedAutomatically": true,
+      "state": "approved",
+      "submissionId": 841875,
+      "submissionObject": "public_audience_request",
+      "submissionOutcome": "change_audience",
+      "submittedAt": 1532366395,
+      "targetAudience": "public",
+      "workflowId": 2188,
+      "submissionDetails": {
+        "permissionType": "READ"
+      },
+      "submissionOutcomeApplication": {
+        "failureCount": 0,
+        "status": "success"
+      },
+      "submitter": {
+        "id": "2hkq-c8bw",
+        "displayName": "EPM"
+      }
+    }
+  ],
+  "clientContext": {
+    "clientContextVariables": [],
+    "inheritedVariables": {}
+  },
+  "columns": [
+    {
+      "id": 368023345,
+      "name": "Tipo de Información",
+      "dataTypeName": "text",
+      "description": "Tarifa Monomia Horaria \n\n-Franjas Aplicadas: \n\nHoras de punta: 9 a.m. - 12 m; 6 p.m - 9 p.m.\n\nHoras fuera de punta: \n12 p.m - 9 a.m.; 12 m - 6 p.m y 9 p.m - 12 p.m.",
+      "fieldName": "tipodeinformacion",
+      "position": 1,
+      "renderTypeName": "text",
+      "tableColumnId": 42718310,
+      "width": 328,
+      "cachedContents": {
+        "largest": "Monomia",
+        "non_null": "3623",
+        "null": "0",
+        "top": [
+          {
+            "item": "Horaria",
+            "count": "2441"
+          },
+          {
+            "item": "Monomia",
+            "count": "1182"
+          }
+        ],
+        "smallest": "Horaria",
+        "not_null": "2147",
+        "count": "3623",
+        "cardinality": "3623"
+      },
+      "format": {}
+    },
+    {
+      "id": 368023346,
+      "name": "Tipo de Tarifa",
+      "dataTypeName": "text",
+      "description": "",
+      "fieldName": "tipodetarifa",
+      "position": 2,
+      "renderTypeName": "text",
+      "tableColumnId": 42718311,
+      "width": 268,
+      "cachedContents": {
+        "largest": "Tarifa",
+        "non_null": "3623",
+        "null": "0",
+        "top": [
+          {
+            "item": "Costo Unitario",
+            "count": "1358"
+          },
+          {
+            "item": "Tarifa",
+            "count": "1211"
+          },
+          {
+            "item": "Residencial",
+            "count": "511"
+          },
+          {
+            "item": "No Residencial",
+            "count": "381"
+          },
+          {
+            "item": "Áreas Comunes",
+            "count": "122"
+          },
+          {
+            "item": "No residencial",
+            "count": "40"
+          }
+        ],
+        "smallest": "Áreas Comunes",
+        "not_null": "2147",
+        "count": "3623",
+        "cardinality": "3623"
+      },
+      "format": {}
+    },
+    {
+      "id": 368023347,
+      "name": "Tipo de Dato",
+      "dataTypeName": "text",
+      "description": "B.T.: Baja Tensión (Nivel 1, < 1 kV).\n\nCfm,j ($/factura) para diciembre 2016 -  5,660 - enero 2017 - 5,642 - febrero 2017 - 5,699. \nmarzo 2017 - 5,757\nabril 2017 - 5,784\n\n",
+      "fieldName": "tipodedato",
+      "position": 3,
+      "renderTypeName": "text",
+      "tableColumnId": 42718312,
+      "width": 244,
+      "cachedContents": {
+        "largest": "Sin Contribución",
+        "non_null": "3623",
+        "null": "0",
+        "top": [
+          {
+            "item": "Cargo transporte STN: Tm",
+            "count": "365"
+          },
+          {
+            "item": "Restricciones: Rm",
+            "count": "365"
+          },
+          {
+            "item": "Industrial y Comercial",
+            "count": "363"
+          },
+          {
+            "item": "Margen comercialización: CVm,i,j",
+            "count": "346"
+          },
+          {
+            "item": "Cargo transporte SDL: Dn,m",
+            "count": "346"
+          },
+          {
+            "item": "Oficial y Exentos",
+            "count": "301"
+          },
+          {
+            "item": "Costo G,T, pérdidas: PRn,m",
+            "count": "247"
+          },
+          {
+            "item": "Costo compra: Gm, i",
+            "count": "246"
+          },
+          {
+            "item": "Estrato 1",
+            "count": "125"
+          },
+          {
+            "item": "Estrato 2",
+            "count": "124"
+          },
+          {
+            "item": "Estrato 3",
+            "count": "124"
+          },
+          {
+            "item": "Costo G, T, pérdidas: PRn,m",
+            "count": "100"
+          },
+          {
+            "item": "Costo compra: Gm,i",
+            "count": "100"
+          },
+          {
+            "item": "Estrato 4",
+            "count": "62"
+          },
+          {
+            "item": "Oficial y Exentos de Contribución",
+            "count": "61"
+          },
+          {
+            "item": "ESPD",
+            "count": "60"
+          },
+          {
+            "item": "Estrato 5 y 6",
+            "count": "48"
+          },
+          {
+            "item": "Con contribución",
+            "count": "41"
+          },
+          {
+            "item": "Sin contribución",
+            "count": "41"
+          },
+          {
+            "item": "Costo G, T, pérdidas: PRn, m",
+            "count": "20"
+          }
+        ],
+        "smallest": "Cargo transporte SDL: Dn,m",
+        "not_null": "2147",
+        "count": "3623",
+        "cardinality": "3623"
+      },
+      "format": {}
+    },
+    {
+      "id": 368023348,
+      "name": "Rango de Consumo",
+      "dataTypeName": "text",
+      "description": "B.T.: Baja Tensión (Nivel 1, < 1 kV). \nC.S.: Consumo Subsidiado",
+      "fieldName": "rangodeconsumo",
+      "position": 4,
+      "renderTypeName": "text",
+      "tableColumnId": 42718313,
+      "width": 292,
+      "cachedContents": {
+        "largest": "Todo el consumo",
+        "non_null": "3623",
+        "null": "0",
+        "top": [
+          {
+            "item": "N/A",
+            "count": "2143"
+          },
+          {
+            "item": "Fuera de Punta",
+            "count": "486"
+          },
+          {
+            "item": "Punta",
+            "count": "483"
+          },
+          {
+            "item": "Rango 0 - CS",
+            "count": "144"
+          },
+          {
+            "item": "Rango > CS",
+            "count": "144"
+          },
+          {
+            "item": "Todo el consumo",
+            "count": "138"
+          },
+          {
+            "item": "0-CS",
+            "count": "43"
+          },
+          {
+            "item": "Mayor CS",
+            "count": "42"
+          }
+        ],
+        "smallest": "0-CS",
+        "not_null": "2147",
+        "count": "3623",
+        "cardinality": "3623"
+      },
+      "format": {}
+    },
+    {
+      "id": 368023349,
+      "name": "Nivel",
+      "dataTypeName": "text",
+      "description": "",
+      "fieldName": "nivel",
+      "position": 5,
+      "renderTypeName": "text",
+      "tableColumnId": 42718314,
+      "width": 160,
+      "cachedContents": {
+        "largest": "IV",
+        "non_null": "3623",
+        "null": "0",
+        "top": [
+          {
+            "item": "I",
+            "count": "2154"
+          },
+          {
+            "item": "III",
+            "count": "493"
+          },
+          {
+            "item": "II",
+            "count": "489"
+          },
+          {
+            "item": "IV",
+            "count": "487"
+          }
+        ],
+        "smallest": "I",
+        "not_null": "2147",
+        "count": "3623",
+        "cardinality": "3623"
+      },
+      "format": {}
+    },
+    {
+      "id": 368023350,
+      "name": "Propiedad Epm",
+      "dataTypeName": "number",
+      "description": "",
+      "fieldName": "propiedadepm",
+      "position": 6,
+      "renderTypeName": "number",
+      "tableColumnId": 42718315,
+      "width": 256,
+      "cachedContents": {
+        "largest": "742.14",
+        "non_null": "3622",
+        "average": "164.4142559109875",
+        "null": "1",
+        "top": [
+          {
+            "item": "0.00",
+            "count": "1471"
+          },
+          {
+            "item": "567.36",
+            "count": "53"
+          },
+          {
+            "item": "680.83",
+            "count": "27"
+          },
+          {
+            "item": "506.30",
+            "count": "12"
+          },
+          {
+            "item": "474.47",
+            "count": "10"
+          },
+          {
+            "item": "680.60",
+            "count": "9"
+          },
+          {
+            "item": "482.26",
+            "count": "9"
+          },
+          {
+            "item": "682.53",
+            "count": "9"
+          },
+          {
+            "item": "568.78",
+            "count": "9"
+          },
+          {
+            "item": "624.10",
+            "count": "9"
+          },
+          {
+            "item": "567.17",
+            "count": "9"
+          },
+          {
+            "item": "607.15",
+            "count": "7"
+          },
+          {
+            "item": "520.20",
+            "count": "7"
+          },
+          {
+            "item": "495.22",
+            "count": "7"
+          },
+          {
+            "item": "597.55",
+            "count": "6"
+          },
+          {
+            "item": "44.87",
+            "count": "6"
+          },
+          {
+            "item": "539.21",
+            "count": "6"
+          },
+          {
+            "item": "500.31",
+            "count": "6"
+          },
+          {
+            "item": "473.08",
+            "count": "6"
+          },
+          {
+            "item": "534.86",
+            "count": "6"
+          }
+        ],
+        "smallest": "-1.61",
+        "not_null": "2146",
+        "count": "3623",
+        "sum": "236427.70",
+        "cardinality": "3623"
+      },
+      "format": {
+        "precisionStyle": "currency",
+        "currencyStyle": "USD",
+        "precision": "2"
+      }
+    },
+    {
+      "id": 368023351,
+      "name": "Compartido",
+      "dataTypeName": "number",
+      "description": "",
+      "fieldName": "compartido",
+      "position": 7,
+      "renderTypeName": "number",
+      "tableColumnId": 42718316,
+      "width": 220,
+      "cachedContents": {
+        "largest": "205151.00",
+        "non_null": "3622",
+        "average": "300.8404311543811",
+        "null": "1",
+        "top": [
+          {
+            "item": "0.00",
+            "count": "1471"
+          },
+          {
+            "item": "544.30",
+            "count": "54"
+          },
+          {
+            "item": "653.16",
+            "count": "27"
+          },
+          {
+            "item": "487.78",
+            "count": "12"
+          },
+          {
+            "item": "456.82",
+            "count": "10"
+          },
+          {
+            "item": "598.73",
+            "count": "9"
+          },
+          {
+            "item": "545.72",
+            "count": "9"
+          },
+          {
+            "item": "462.66",
+            "count": "9"
+          },
+          {
+            "item": "544.11",
+            "count": "9"
+          },
+          {
+            "item": "652.93",
+            "count": "9"
+          },
+          {
+            "item": "654.86",
+            "count": "9"
+          },
+          {
+            "item": "477.37",
+            "count": "7"
+          },
+          {
+            "item": "468.88",
+            "count": "7"
+          },
+          {
+            "item": "509.53",
+            "count": "6"
+          },
+          {
+            "item": "50.32",
+            "count": "6"
+          },
+          {
+            "item": "449.91",
+            "count": "6"
+          },
+          {
+            "item": "480.13",
+            "count": "6"
+          },
+          {
+            "item": "501.78",
+            "count": "6"
+          },
+          {
+            "item": "563.07",
+            "count": "6"
+          },
+          {
+            "item": "506.70",
+            "count": "6"
+          }
+        ],
+        "smallest": "-1.61",
+        "not_null": "2146",
+        "count": "3623",
+        "sum": "432608.54",
+        "cardinality": "3623"
+      },
+      "format": {
+        "precisionStyle": "currency",
+        "currencyStyle": "USD",
+        "precision": "2"
+      }
+    },
+    {
+      "id": 368023352,
+      "name": "Propiedad del Cliente",
+      "dataTypeName": "number",
+      "description": "",
+      "fieldName": "propiedaddelcliente",
+      "position": 8,
+      "renderTypeName": "number",
+      "tableColumnId": 42718317,
+      "width": 352,
+      "cachedContents": {
+        "largest": "681.96",
+        "non_null": "3622",
+        "average": "152.5578859527121",
+        "null": "1",
+        "top": [
+          {
+            "item": "0.00",
+            "count": "1470"
+          },
+          {
+            "item": "521.24",
+            "count": "54"
+          },
+          {
+            "item": "625.49",
+            "count": "27"
+          },
+          {
+            "item": "469.27",
+            "count": "12"
+          },
+          {
+            "item": "522.66",
+            "count": "10"
+          },
+          {
+            "item": "439.17",
+            "count": "10"
+          },
+          {
+            "item": "521.05",
+            "count": "9"
+          },
+          {
+            "item": "443.05",
+            "count": "9"
+          },
+          {
+            "item": "625.26",
+            "count": "9"
+          },
+          {
+            "item": "627.19",
+            "count": "9"
+          },
+          {
+            "item": "573.37",
+            "count": "9"
+          },
+          {
+            "item": "459.53",
+            "count": "7"
+          },
+          {
+            "item": "482.08",
+            "count": "7"
+          },
+          {
+            "item": "476.04",
+            "count": "6"
+          },
+          {
+            "item": "532.80",
+            "count": "6"
+          },
+          {
+            "item": "451.06",
+            "count": "6"
+          },
+          {
+            "item": "563.13",
+            "count": "6"
+          },
+          {
+            "item": "548.98",
+            "count": "6"
+          },
+          {
+            "item": "553.37",
+            "count": "6"
+          },
+          {
+            "item": "523.85",
+            "count": "6"
+          }
+        ],
+        "smallest": "-1.61",
+        "not_null": "2146",
+        "count": "3623",
+        "sum": "219378.24",
+        "cardinality": "3623"
+      },
+      "format": {
+        "precisionStyle": "currency",
+        "currencyStyle": "USD",
+        "precision": "2"
+      }
+    },
+    {
+      "id": 368023353,
+      "name": "Punta",
+      "dataTypeName": "number",
+      "description": "Tarifa Monomia Horaria -Franjas Aplicadas: Horas de punta: 9 a.m. - 12 m; 6 p.m - 9 p.m.\nHoras fuera de punta: 12 p.m - 9 a.m.; 12 m - 6 p.m y 9 p.m - 12 p.m.",
+      "fieldName": "punta",
+      "position": 9,
+      "renderTypeName": "number",
+      "tableColumnId": 42718318,
+      "width": 160,
+      "cachedContents": {
+        "largest": "43577.00",
+        "non_null": "3622",
+        "average": "55.69721835883171",
+        "null": "1",
+        "top": [
+          {
+            "item": "0.00",
+            "count": "2153"
+          },
+          {
+            "item": "464.73",
+            "count": "9"
+          },
+          {
+            "item": "417.16",
+            "count": "9"
+          },
+          {
+            "item": "557.68",
+            "count": "9"
+          },
+          {
+            "item": "383.21",
+            "count": "9"
+          },
+          {
+            "item": "459.85",
+            "count": "9"
+          },
+          {
+            "item": "347.64",
+            "count": "9"
+          },
+          {
+            "item": "33.10",
+            "count": "6"
+          },
+          {
+            "item": "11.46",
+            "count": "6"
+          },
+          {
+            "item": "44.87",
+            "count": "6"
+          },
+          {
+            "item": "196.25",
+            "count": "6"
+          },
+          {
+            "item": "40.48",
+            "count": "6"
+          },
+          {
+            "item": "50.32",
+            "count": "6"
+          },
+          {
+            "item": "38.71",
+            "count": "6"
+          },
+          {
+            "item": "36.07",
+            "count": "6"
+          },
+          {
+            "item": "44.73",
+            "count": "6"
+          },
+          {
+            "item": "40.56",
+            "count": "6"
+          },
+          {
+            "item": "32.85",
+            "count": "4"
+          },
+          {
+            "item": "52.93",
+            "count": "4"
+          },
+          {
+            "item": "23.53",
+            "count": "4"
+          }
+        ],
+        "smallest": "-1.61",
+        "not_null": "2146",
+        "count": "3623",
+        "sum": "80092.60",
+        "cardinality": "3623"
+      },
+      "format": {
+        "precisionStyle": "currency",
+        "currencyStyle": "USD",
+        "precision": "2"
+      }
+    },
+    {
+      "id": 368023354,
+      "name": "Fuera de Punta",
+      "dataTypeName": "number",
+      "description": "Tarifa Monomia Horaria -Franjas Aplicadas: Horas de punta: 9 a.m. - 12 m; 6 p.m - 9 p.m.\nHoras fuera de punta: 12 p.m - 9 a.m.; 12 m - 6 p.m y 9 p.m - 12 p.m.",
+      "fieldName": "fueradepunta",
+      "position": 10,
+      "renderTypeName": "number",
+      "tableColumnId": 42718319,
+      "width": 268,
+      "cachedContents": {
+        "largest": "43577.00",
+        "non_null": "3622",
+        "average": "52.61438108484006",
+        "null": "1",
+        "top": [
+          {
+            "item": "0.00",
+            "count": "2160"
+          },
+          {
+            "item": "463.40",
+            "count": "9"
+          },
+          {
+            "item": "415.61",
+            "count": "9"
+          },
+          {
+            "item": "381.89",
+            "count": "9"
+          },
+          {
+            "item": "346.34",
+            "count": "9"
+          },
+          {
+            "item": "556.08",
+            "count": "9"
+          },
+          {
+            "item": "458.27",
+            "count": "9"
+          },
+          {
+            "item": "39.62",
+            "count": "6"
+          },
+          {
+            "item": "50.32",
+            "count": "6"
+          },
+          {
+            "item": "193.63",
+            "count": "6"
+          },
+          {
+            "item": "28.92",
+            "count": "6"
+          },
+          {
+            "item": "44.87",
+            "count": "6"
+          },
+          {
+            "item": "13.42",
+            "count": "6"
+          },
+          {
+            "item": "40.48",
+            "count": "6"
+          },
+          {
+            "item": "31.60",
+            "count": "6"
+          },
+          {
+            "item": "5.27",
+            "count": "6"
+          },
+          {
+            "item": "28.60",
+            "count": "4"
+          },
+          {
+            "item": "168.79",
+            "count": "4"
+          },
+          {
+            "item": "24.37",
+            "count": "4"
+          },
+          {
+            "item": "42.96",
+            "count": "4"
+          }
+        ],
+        "smallest": "0.00",
+        "not_null": "2146",
+        "count": "3623",
+        "sum": "75659.48",
+        "cardinality": "3623"
+      },
+      "format": {
+        "precisionStyle": "currency",
+        "currencyStyle": "USD",
+        "precision": "2"
+      }
+    },
+    {
+      "id": 368023355,
+      "name": "Año",
+      "dataTypeName": "text",
+      "description": "año",
+      "fieldName": "year",
+      "position": 11,
+      "renderTypeName": "text",
+      "tableColumnId": 44189122,
+      "width": 100,
+      "cachedContents": {
+        "largest": "2021",
+        "non_null": "3622",
+        "null": "1",
+        "top": [
+          {
+            "item": "2017",
+            "count": "724"
+          },
+          {
+            "item": "2018",
+            "count": "710"
+          },
+          {
+            "item": "2021",
+            "count": "709"
+          },
+          {
+            "item": "2020",
+            "count": "708"
+          },
+          {
+            "item": "2019",
+            "count": "708"
+          },
+          {
+            "item": "2016",
+            "count": "63"
+          }
+        ],
+        "smallest": "2016",
+        "not_null": "2146",
+        "count": "3623",
+        "cardinality": "3623"
+      },
+      "format": {}
+    },
+    {
+      "id": 368023356,
+      "name": "Mes",
+      "dataTypeName": "text",
+      "description": "mes",
+      "fieldName": "mes",
+      "position": 12,
+      "renderTypeName": "text",
+      "tableColumnId": 44189174,
+      "width": 100,
+      "cachedContents": {
+        "largest": "Septiembre",
+        "non_null": "3622",
+        "null": "1",
+        "top": [
+          {
+            "item": "Diciembre",
+            "count": "358"
+          },
+          {
+            "item": "Enero",
+            "count": "300"
+          },
+          {
+            "item": "Febrero",
+            "count": "299"
+          },
+          {
+            "item": "Marzo",
+            "count": "297"
+          },
+          {
+            "item": "Noviembre",
+            "count": "297"
+          },
+          {
+            "item": "Septiembre",
+            "count": "296"
+          },
+          {
+            "item": "Agosto",
+            "count": "296"
+          },
+          {
+            "item": "Mayo",
+            "count": "296"
+          },
+          {
+            "item": "Abril",
+            "count": "296"
+          },
+          {
+            "item": "Octubre",
+            "count": "296"
+          },
+          {
+            "item": "Junio",
+            "count": "296"
+          },
+          {
+            "item": "Julio",
+            "count": "295"
+          }
+        ],
+        "smallest": "Abril",
+        "not_null": "2146",
+        "count": "3623",
+        "cardinality": "3623"
+      },
+      "format": {}
+    }
+  ],
+  "grants": [
+    {
+      "inherited": false,
+      "type": "viewer",
+      "flags": [
+        "public"
+      ]
+    }
+  ],
+  "license": {
+    "name": "Creative Commons Attribution | Share Alike 4.0 International",
+    "logoUrl": "images/licenses/cc30bysa.png",
+    "termsLink": "http://creativecommons.org/licenses/by-sa/4.0/legalcode"
+  },
+  "metadata": {
+    "jsonQuery": {
+      "order": [
+        {
+          "columnFieldName": "tipodetarifa",
+          "ascending": true
+        }
+      ]
+    },
+    "custom_fields": {
+      "Información de la Entidad": {
+        "Municipio": "Medellín",
+        "Nombre de la Entidad": "E.S.P. Empresas Públicas de Medellín - EPM, Antioquia",
+        "DIVIPOLA Municipio": "5001",
+        "Orden": "Territorial",
+        "Sector": "Educación",
+        "Área o dependencia": "Energía",
+        "Departamento": "Antioquia"
+      },
+      "Información de Datos": {
+        "Cobertura Geográfica": "Municipal",
+        "Idioma": "Español",
+        "Frecuencia de Actualización": "Mensual"
+      }
+    },
+    "availableDisplayTypes": [
+      "table",
+      "fatrow",
+      "page"
+    ]
+  },
+  "owner": {
+    "id": "2hkq-c8bw",
+    "displayName": "EPM",
+    "profileImageUrlLarge": "/api/users/2hkq-c8bw/profile_images/LARGE",
+    "profileImageUrlMedium": "/api/users/2hkq-c8bw/profile_images/THUMB",
+    "profileImageUrlSmall": "/api/users/2hkq-c8bw/profile_images/TINY",
+    "screenName": "EPM",
+    "type": "interactive",
+    "flags": [
+      "acceptedEula",
+      "mayBeStoriesCoOwner"
+    ]
+  },
+  "query": {
+    "orderBys": [
+      {
+        "ascending": true,
+        "expression": {
+          "columnId": 368023346,
+          "type": "column"
+        }
+      }
+    ]
+  },
+  "rights": [
+    "read"
+  ],
+  "tableAuthor": {
+    "id": "2hkq-c8bw",
+    "displayName": "EPM",
+    "profileImageUrlLarge": "/api/users/2hkq-c8bw/profile_images/LARGE",
+    "profileImageUrlMedium": "/api/users/2hkq-c8bw/profile_images/THUMB",
+    "profileImageUrlSmall": "/api/users/2hkq-c8bw/profile_images/TINY",
+    "screenName": "EPM",
+    "type": "interactive",
+    "flags": [
+      "acceptedEula",
+      "mayBeStoriesCoOwner"
+    ]
+  },
+  "tags": [
+    "tarifa",
+    "servicio",
+    "energía",
+    "hogares",
+    "epm.",
+    "servicios públicos"
+  ],
+  "flags": [
+    "default",
+    "ownerMayBeContacted",
+    "restorable",
+    "restorePossibleForType"
+  ]
+}

@@ -1,0 +1,433 @@
+version: '1.0'
+dataset:
+  id: c698-wqig
+  nombre: Información Costo unitario de tarifas de energía CHEC
+  publicador: E.S.P. Central Hidroeléctrica de Caldas, Caldas
+  url_portal: https://www.datos.gov.co/d/c698-wqig
+  url_csv_completo: https://www.datos.gov.co/api/views/c698-wqig/rows.csv?accessType=DOWNLOAD
+  archivo_csv: datos/chec_c698-wqig.csv
+  filas_verificadas: 40609
+  columnas: 24
+  cobertura: 2008-01 a 2026-09
+  contiene_consumo_observado: false
+  licencia_portal: CC_40_BY_SA
+  estado: Seleccionado como caso de estudio; cobertura de las ocho dimensiones aún pendiente de completar.
+advertencia: Diccionario documental y propuesta de controles; no es un motor ejecutable ni demuestra reglas implementadas.
+granularidad: Registro tarifario por categoría y período; verificar clave y multiplicidad antes de generar series.
+clave_candidata:
+  categorias:
+  - comercializador_codigo
+  - comercializador_nombre
+  - mercado_codigo
+  - mercado_nombre
+  - costounitariotarifa_tipomed
+  - nivel_tension_codigo
+  - modalidadcobro_propiedad
+  - claseservicio_codigo
+  - claseservicio_descri
+  - claseservicio_estrato
+  - costounitariotarifa_rangoconsumo
+  - costounitariotarifa_tipomercado
+  periodo:
+  - costounitariotarifa_ano
+  - costounitariotarifa_mes
+  estado: Pendiente de validación; no asumir unicidad.
+series:
+  clave: Categorías + variable monetaria, con fecha mensual derivada.
+  variables_prioritarias:
+  - costounitariotarifa_cu
+  - costounitariotarifa_valor_tarifa
+  condiciones:
+  - No mezclar conceptos, categorías o unidades.
+  - Exigir continuidad temporal y resolver conflictos de clave.
+  - Aplicar logaritmos solo a valores positivos; no unir meses a través de huecos.
+  - Separar referencia de vigilancia; no ajustar límites con vigilancia.
+  - Controlar dependencia entre series para intervalos y remuestreo.
+variables:
+- columna: costounitariotarifa_ano
+  nombre_portal: costounitariotarifa_ano
+  descripcion: Año de vigencia o reporte tarifario; no prueba cuándo se publicó el dato.
+  descripcion_oficial: Año
+  tipo_portal: number
+  tipo_recomendado: entero_o_mes_normalizado
+  rol: periodo
+  unidad: Año calendario
+  reglas_relacionadas:
+  - R01
+  - R02
+  - R05
+  nulos_y_ceros: Validar según catálogo y aplicabilidad; no reemplazar N/A sin estudiar su significado.
+- columna: costounitariotarifa_mes
+  nombre_portal: costounitariotarifa_mes
+  descripcion: Mes de vigencia o reporte. Validar entero entre 1 y 12.
+  descripcion_oficial: Mes
+  tipo_portal: number
+  tipo_recomendado: entero_o_mes_normalizado
+  rol: periodo
+  unidad: Mes calendario
+  reglas_relacionadas:
+  - R01
+  - R02
+  - R05
+  nulos_y_ceros: Validar según catálogo y aplicabilidad; no reemplazar N/A sin estudiar su significado.
+- columna: comercializador_codigo
+  nombre_portal: comercializador_codigo
+  descripcion: Identificador del comercializador. Conservar como texto, sin conversiones que pierdan ceros.
+  descripcion_oficial: Código del comercializador
+  tipo_portal: text
+  tipo_recomendado: texto
+  rol: identificador
+  unidad: Código
+  reglas_relacionadas:
+  - R05
+  - R06
+  nulos_y_ceros: Validar según catálogo y aplicabilidad; no reemplazar N/A sin estudiar su significado.
+- columna: comercializador_nombre
+  nombre_portal: comercializador_nombre
+  descripcion: Nombre del comercializador; contrastar su correspondencia con el código.
+  descripcion_oficial: Nombre del comercializador
+  tipo_portal: text
+  tipo_recomendado: texto
+  rol: descripcion
+  unidad: No aplica
+  reglas_relacionadas:
+  - R05
+  - R06
+  nulos_y_ceros: Validar según catálogo y aplicabilidad; no reemplazar N/A sin estudiar su significado.
+- columna: mercado_codigo
+  nombre_portal: mercado_codigo
+  descripcion: Identificador del mercado tarifario.
+  descripcion_oficial: Código de mercado
+  tipo_portal: text
+  tipo_recomendado: texto
+  rol: identificador
+  unidad: Código
+  reglas_relacionadas:
+  - R05
+  - R06
+  nulos_y_ceros: Validar según catálogo y aplicabilidad; no reemplazar N/A sin estudiar su significado.
+- columna: mercado_nombre
+  nombre_portal: mercado_nombre
+  descripcion: Nombre del mercado; verificar correspondencia con su código.
+  descripcion_oficial: Nombre de mercado
+  tipo_portal: text
+  tipo_recomendado: texto
+  rol: descripcion
+  unidad: No aplica
+  reglas_relacionadas:
+  - R05
+  - R06
+  nulos_y_ceros: Validar según catálogo y aplicabilidad; no reemplazar N/A sin estudiar su significado.
+- columna: costounitariotarifa_tipomed
+  nombre_portal: costounitariotarifa_tipomed
+  descripcion: Código tipomed. El metadato solo indica tipomed; significado y códigos pendientes de confirmar con
+    CHEC. No expandir siglas por conjetura.
+  descripcion_oficial: tipomed
+  tipo_portal: text
+  tipo_recomendado: texto
+  rol: categoria
+  unidad: Código pendiente de definición
+  reglas_relacionadas:
+  - R05
+  - R06
+  - R09
+  nulos_y_ceros: Validar según catálogo y aplicabilidad; no reemplazar N/A sin estudiar su significado.
+- columna: nivel_tension_codigo
+  nombre_portal: nivel_tension_codigo
+  descripcion: Código del nivel de tensión. Usarlo como categoría para comparar registros equivalentes.
+  descripcion_oficial: Código del nivel de tensión
+  tipo_portal: text
+  tipo_recomendado: texto
+  rol: categoria_critica
+  unidad: Código de nivel; no voltaje medido
+  reglas_relacionadas:
+  - R05
+  - R09
+  nulos_y_ceros: Validar según catálogo y aplicabilidad; no reemplazar N/A sin estudiar su significado.
+- columna: modalidadcobro_propiedad
+  nombre_portal: modalidadcobro_propiedad
+  descripcion: Categoría de modalidad de cobro/propiedad; se observan etiquetas como 100% OR y 50% OR. Validar equivalencias
+    con publicación original.
+  descripcion_oficial: Modalidad de cobro
+  tipo_portal: text
+  tipo_recomendado: texto
+  rol: categoria_critica
+  unidad: Etiqueta
+  reglas_relacionadas:
+  - R05
+  - R06
+  - R08
+  nulos_y_ceros: Validar según catálogo y aplicabilidad; no reemplazar N/A sin estudiar su significado.
+- columna: claseservicio_codigo
+  nombre_portal: claseservicio_codigo
+  descripcion: Código de clase de servicio.
+  descripcion_oficial: Código de la clase del servicio
+  tipo_portal: text
+  tipo_recomendado: texto
+  rol: identificador
+  unidad: Código
+  reglas_relacionadas:
+  - R05
+  - R06
+  nulos_y_ceros: Validar según catálogo y aplicabilidad; no reemplazar N/A sin estudiar su significado.
+- columna: claseservicio_descri
+  nombre_portal: claseservicio_descri
+  descripcion: Descripción de clase de servicio; debe corresponder al código.
+  descripcion_oficial: Descripción de la clase de servicio
+  tipo_portal: text
+  tipo_recomendado: texto
+  rol: descripcion
+  unidad: No aplica
+  reglas_relacionadas:
+  - R05
+  - R06
+  nulos_y_ceros: Validar según catálogo y aplicabilidad; no reemplazar N/A sin estudiar su significado.
+- columna: claseservicio_estrato
+  nombre_portal: claseservicio_estrato
+  descripcion: Estrato asociado a la clase de servicio. Puede contener etiquetas no aplicables en clases no residenciales.
+  descripcion_oficial: Estrato de la clase de servicio
+  tipo_portal: text
+  tipo_recomendado: texto
+  rol: categoria
+  unidad: Categoría, no magnitud continua
+  reglas_relacionadas:
+  - R05
+  - R06
+  nulos_y_ceros: Validar según catálogo y aplicabilidad; no reemplazar N/A sin estudiar su significado.
+- columna: costounitariotarifa_rangoconsumo
+  nombre_portal: costounitariotarifa_rangoconsumo
+  descripcion: Código o etiqueta del tramo de consumo; no representa kWh efectivamente consumidos.
+  descripcion_oficial: Rango de consumo
+  tipo_portal: text
+  tipo_recomendado: texto
+  rol: categoria
+  unidad: Código de rango; confirmar catálogo
+  reglas_relacionadas:
+  - R05
+  - R06
+  nulos_y_ceros: Validar según catálogo y aplicabilidad; no reemplazar N/A sin estudiar su significado.
+- columna: costounitariotarifa_tipomercado
+  nombre_portal: costounitariotarifa_tipomercado
+  descripcion: Código del tipo de mercado. El significado de cada código requiere catálogo oficial.
+  descripcion_oficial: Tipo de mercado
+  tipo_portal: text
+  tipo_recomendado: texto
+  rol: categoria
+  unidad: Código
+  reglas_relacionadas:
+  - R05
+  - R06
+  nulos_y_ceros: Validar según catálogo y aplicabilidad; no reemplazar N/A sin estudiar su significado.
+- columna: costounitariotarifa_generacion
+  nombre_portal: costounitariotarifa_generacion
+  descripcion: Componente de generación del costo unitario.
+  descripcion_oficial: Generación
+  tipo_portal: text
+  tipo_recomendado: decimal_nullable
+  rol: medida
+  unidad: COP/kWh propuesto; confirmar en ficha/publicación
+  reglas_relacionadas:
+  - R03
+  - R07
+  - R10
+  - R11
+  - R12
+  nulos_y_ceros: Preservar original. Definir aplicabilidad por categoría; no convertir cero en nulo automáticamente.
+- columna: costounitariotarifa_transmision
+  nombre_portal: costounitariotarifa_transmision
+  descripcion: Componente de transmisión del costo unitario.
+  descripcion_oficial: Transmisión
+  tipo_portal: text
+  tipo_recomendado: decimal_nullable
+  rol: medida
+  unidad: COP/kWh propuesto; confirmar en ficha/publicación
+  reglas_relacionadas:
+  - R03
+  - R07
+  - R10
+  - R11
+  - R12
+  nulos_y_ceros: Preservar original. Definir aplicabilidad por categoría; no convertir cero en nulo automáticamente.
+- columna: costounitariotarifa_distribucion
+  nombre_portal: costounitariotarifa_distribucion
+  descripcion: Componente de distribución, condicionado por nivel de tensión y propiedad.
+  descripcion_oficial: Distribución
+  tipo_portal: text
+  tipo_recomendado: decimal_nullable
+  rol: medida
+  unidad: COP/kWh propuesto; confirmar en ficha/publicación
+  reglas_relacionadas:
+  - R03
+  - R07
+  - R08
+  - R09
+  - R10
+  - R11
+  - R12
+  nulos_y_ceros: Preservar original. Definir aplicabilidad por categoría; no convertir cero en nulo automáticamente.
+- columna: costounitariotarifa_comercializacion
+  nombre_portal: costounitariotarifa_comercializacion
+  descripcion: Componente de comercialización del costo unitario; confirmar alcance exacto y fórmula.
+  descripcion_oficial: Comercialización
+  tipo_portal: text
+  tipo_recomendado: decimal_nullable
+  rol: medida
+  unidad: COP/kWh propuesto; confirmar concepto
+  reglas_relacionadas:
+  - R03
+  - R07
+  - R10
+  - R11
+  - R12
+  nulos_y_ceros: Preservar original. Definir aplicabilidad por categoría; no convertir cero en nulo automáticamente.
+- columna: costounitariotarifa_perdidas
+  nombre_portal: costounitariotarifa_perdidas
+  descripcion: Componente monetario por pérdidas; no es consumo perdido ni porcentaje de pérdidas.
+  descripcion_oficial: Pérdidas
+  tipo_portal: text
+  tipo_recomendado: decimal_nullable
+  rol: medida
+  unidad: COP/kWh propuesto; confirmar concepto
+  reglas_relacionadas:
+  - R03
+  - R07
+  - R10
+  - R11
+  - R12
+  nulos_y_ceros: Preservar original. Definir aplicabilidad por categoría; no convertir cero en nulo automáticamente.
+- columna: costounitariotarifa_restricciones
+  nombre_portal: costounitariotarifa_restricciones
+  descripcion: Componente de restricciones. No considerar automáticamente todo valor negativo como error.
+  descripcion_oficial: Restricciones
+  tipo_portal: text
+  tipo_recomendado: decimal_nullable
+  rol: medida
+  unidad: COP/kWh propuesto; confirmar concepto
+  reglas_relacionadas:
+  - R03
+  - R07
+  - R10
+  - R11
+  - R12
+  nulos_y_ceros: Preservar original. Definir aplicabilidad por categoría; no convertir cero en nulo automáticamente.
+- columna: costounitariotarifa_cu
+  nombre_portal: costounitariotarifa_cu
+  descripcion: Costo unitario declarado. Variable principal recomendada para cartas; contrastar su composición antes
+    de exigir identidad contable.
+  descripcion_oficial: Costo unitario
+  tipo_portal: text
+  tipo_recomendado: decimal_nullable
+  rol: medida_critica
+  unidad: COP/kWh propuesto; confirmar publicación
+  reglas_relacionadas:
+  - R03
+  - R07
+  - R08
+  - R10
+  - R11
+  - R12
+  nulos_y_ceros: Preservar original. Definir aplicabilidad por categoría; no convertir cero en nulo automáticamente.
+- columna: costounitariotarifa_cureal
+  nombre_portal: costounitariotarifa_cureal
+  descripcion: Costo unitario real según nombre oficial. Definición y relación con CU pendientes; contiene numerosos
+    ceros, no imputarlos automáticamente.
+  descripcion_oficial: Costo unitario real
+  tipo_portal: text
+  tipo_recomendado: decimal_nullable
+  rol: medida
+  unidad: Pendiente de confirmar
+  reglas_relacionadas:
+  - R03
+  - R07
+  - R10
+  - R11
+  - R12
+  nulos_y_ceros: Preservar original. Definir aplicabilidad por categoría; no convertir cero en nulo automáticamente.
+- columna: costounitariotarifa_subcon
+  nombre_portal: costounitariotarifa_subcon
+  descripcion: Campo Subcon en el metadato. Posible relación con subsidio/contribución a confirmar; no interpretar
+    como monto o porcentaje sin documentación.
+  descripcion_oficial: Subcon
+  tipo_portal: text
+  tipo_recomendado: decimal_nullable
+  rol: medida
+  unidad: 'Pendiente: factor, proporción o importe'
+  reglas_relacionadas:
+  - R03
+  - R07
+  - R10
+  nulos_y_ceros: Preservar original. Definir aplicabilidad por categoría; no convertir cero en nulo automáticamente.
+- columna: costounitariotarifa_valor_tarifa
+  nombre_portal: costounitariotarifa_valor_tarifa
+  descripcion: Tarifa declarada para la categoría; segunda variable principal para cartas. Validar tratamiento de
+    subsidios/contribuciones con la fuente.
+  descripcion_oficial: Valor de la tarifa
+  tipo_portal: text
+  tipo_recomendado: decimal_nullable
+  rol: medida_critica
+  unidad: COP/kWh propuesto; confirmar publicación
+  reglas_relacionadas:
+  - R03
+  - R07
+  - R08
+  - R10
+  - R11
+  - R12
+  nulos_y_ceros: Preservar original. Definir aplicabilidad por categoría; no convertir cero en nulo automáticamente.
+campos_externos_necesarios:
+- campo: referencia_publicacion_original
+  presente_en_csv: false
+  descripcion: Documento oficial, página y valor contrastado para exactitud.
+- campo: fecha_disponibilidad_real
+  presente_en_csv: false
+  descripcion: Evidencia histórica de cuándo estuvo disponible cada publicación; pendiente.
+- campo: fecha_limite_esperada
+  presente_en_csv: false
+  descripcion: Plazo documentado para cada publicación; pendiente.
+- campo: evidencia_temporal
+  presente_en_csv: false
+  descripcion: URL, archivo o registro que respalda la fecha real; pendiente.
+trazabilidad:
+  campos_generados:
+  - sha256_archivo
+  - fecha_descarga_utc
+  - dataset_id
+  - clave_contenido_hallazgo
+  precaucion: La fecha de descarga y timestamps globales del portal no prueban publicación puntual por período.
+dimensiones:
+  completitud:
+    control: R01/R10 y cobertura temporal definida
+    requisito: Medir nulos y presencia esperada por categoría; no confundir meses anteriores a creación de categoría
+      con faltantes.
+    estado: propuesto_pendiente_de_implementacion_o_validacion
+  validez:
+    control: R02/R03/R07/R11
+    requisito: Dominios por concepto y fuente; R11 es detección heurística.
+    estado: propuesto_pendiente_de_implementacion_o_validacion
+  unicidad:
+    control: R04/R05
+    requisito: Definir entidad y clave antes de calificar duplicación.
+    estado: propuesto_pendiente_de_implementacion_o_validacion
+  consistencia:
+    control: R06/R08/R09
+    requisito: Adaptar relaciones y catálogo a cada fuente.
+    estado: propuesto_pendiente_de_implementacion_o_validacion
+  integridad:
+    control: INT01 control complementario propuesto
+    requisito: Verificar estructura y relaciones código-nombre/catálogos. Separar de unicidad; falta implementar
+      y validar.
+    estado: propuesto_pendiente_de_implementacion_o_validacion
+  razonabilidad:
+    control: R12 y cartas I-MR/modelos
+    requisito: Evaluar patrones y alertas; anomalía no equivale a error confirmado.
+    estado: propuesto_pendiente_de_implementacion_o_validacion
+  exactitud:
+    control: EXA01 control complementario propuesto
+    requisito: Contrastar muestra con documentos tarifarios oficiales equivalentes; reportar tamaño de muestra y
+      concordancia, no extrapolar sin diseño.
+    estado: propuesto_pendiente_de_implementacion_o_validacion
+  oportunidad:
+    control: OPO01 control complementario propuesto
+    requisito: Medir fecha real de disponibilidad frente a plazo esperado documentado. No sustituir por mes de vigencia,
+      fecha de descarga ni última modificación global del dataset.
+    estado: propuesto_pendiente_de_implementacion_o_validacion
