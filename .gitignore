@@ -1,0 +1,22 @@
+# Entorno de Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# CSV de trabajo en la raiz: no se versionan (se descargan del portal)
+/*.csv
+/*.xlsx
+
+# Excepcion: los datos curados de fuentes_datos SI se versionan
+!fuentes_datos/datos/*.csv
+
+# Salidas generadas por el pipeline
+salida/
+figuras/
+
+# Sistema y editor
+.DS_Store
+Thumbs.db
+.vscode/
