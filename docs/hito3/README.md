@@ -1,4 +1,14 @@
-# Hito 3 · Punto 1 · Matriz OE1
+# Hito 3 · Puntos 1 y 2
+
+| Punto | Entregable | Documento |
+|---|---|---|
+| 1 | Matriz OE1 con plantilla llena por regla | [`matriz_oe1.md`](matriz_oe1.md) |
+| 2 | Fichas de caracterización por fuente | [`fichas_caracterizacion.md`](fichas_caracterizacion.md) |
+
+Las fichas del punto 2 son condición del punto 1: los umbrales de la matriz se sostienen
+sobre el consumidor del dato que allí se declare. Ese bloque sigue pendiente de decisión.
+
+## Punto 1 · Matriz OE1
 
 El punto 1 queda desarrollado como especificación documental para EPM y CHEC. No se modificó el código del Hito 2.
 
