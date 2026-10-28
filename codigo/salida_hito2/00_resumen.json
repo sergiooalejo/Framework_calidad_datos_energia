@@ -1,0 +1,40 @@
+{
+  "sha256": "8d792b49c1f15ded30183d1488199c5230b63e856be53723d65b665ca2b797e8",
+  "filas": 3623,
+  "columnas": 12,
+  "filas_en_duplicados": 20,
+  "duplicados_adicionales": 10,
+  "clave_repetida_filas": 2,
+  "duplicados_semanticos_retirados": 1,
+  "filas_cuarentena": 4,
+  "series_total": 202,
+  "series_completas_49": 83,
+  "series_utiles": 83,
+  "series_limpias": 77,
+  "series_con_valores_en_cuarentena": 6,
+  "meses_monitoreados_reales": 1992,
+  "alertas_imr_reales": 234,
+  "casos_inyectados": 8282,
+  "meses_monitoreo_limpios": 1848,
+  "tasa_fa_imr": 0.11417748917748918,
+  "tasa_fa_if_umbral_propio": 0.034443817052512704,
+  "tasa_fa_if_cv": 0.11970638057594579,
+  "ic95": {
+    "imr": [
+      0.7727336011672201,
+      0.8228713472577813
+    ],
+    "if_cv": [
+      0.7853815387991042,
+      0.8196827738658906
+    ],
+    "reglas_imr": [
+      0.8566841178595579,
+      0.8952963183940251
+    ],
+    "dif": [
+      -0.01367246651413299,
+      0.022791371087833405
+    ]
+  }
+}

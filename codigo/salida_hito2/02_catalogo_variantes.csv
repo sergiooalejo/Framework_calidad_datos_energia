@@ -1,0 +1,12 @@
+columna,variante,canonico,filas,tipo
+Tipo de Tarifa,No residencial,No Residencial,40,mayúsculas/espacios
+Tipo de Dato,"Costo compra: Gm,i","Costo compra: Gm, i",100,mayúsculas/espacios
+Tipo de Dato,"Costo G, T, pérdidas: PRn,m","Costo G,T, pérdidas: PRn,m",100,mayúsculas/espacios
+Tipo de Dato,Con Contribución,Con contribución,20,mayúsculas/espacios
+Tipo de Dato,"Costo Compra: Gm, i","Costo compra: Gm, i",20,mayúsculas/espacios
+Tipo de Dato,Sin Contribución,Sin contribución,20,mayúsculas/espacios
+Tipo de Dato,"Costo G, T, pérdidas: PRn, m","Costo G,T, pérdidas: PRn,m",20,mayúsculas/espacios
+Tipo de Dato,"Cargo transporte SDL: Dn, m","Cargo transporte SDL: Dn,m",20,mayúsculas/espacios
+Tipo de Dato,"Margen comercialización: CVm, i, j","Margen comercialización: CVm,i,j",20,mayúsculas/espacios
+Rango de Consumo,0-CS,Rango 0 - CS,43,sinónimo propuesto
+Rango de Consumo,Mayor CS,Rango > CS,42,sinónimo propuesto
