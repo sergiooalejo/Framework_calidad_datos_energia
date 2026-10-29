@@ -488,6 +488,189 @@ cada lectura de significado marcada como inferida. No se inventaron catálogos n
 
 ---
 
+# Ficha 4 · SSPD-NR — Información comercial no residencial
+
+Esta ficha cubre la cuarta fuente. Entra para resolver la limitación declarada de la
+Ficha 3: aquella aporta los 59 meses que exigen las cartas pero es de Zonas No
+Interconectadas, mientras esta es del **Sistema Interconectado Nacional** y trae la tarifa
+aplicada y el eje de propiedad. Ninguna de las dos sola cubre lo que cubren juntas.
+
+## Bloque 1 · Identificación y estructura
+
+| | |
+|---|---|
+| Conjunto | `bnkp-xdb7` |
+| Publicador | Superintendencia de Servicios Públicos Domiciliarios |
+| Portal | https://www.datos.gov.co/d/bnkp-xdb7 |
+| Filas | **402.500** |
+| Columnas en origen | 48 |
+| Naturaleza | Registro de facturación **no residencial** |
+| Ámbito | **Sistema Interconectado Nacional.** 28 prestadores en 14 departamentos |
+| Periodicidad declarada | Semestral |
+| Última carga de datos | 26 de mayo de 2023 |
+
+Los prestadores principales son Electrificadora del Meta (137.846 registros), Energía de
+Casanare (126.947), Electrificadora del Huila (61.715) y Energía del Bajo Putumayo
+(36.052). El territorio es el de los Llanos y la Amazonía: Meta, Casanare, Huila, Putumayo,
+Guaviare y Caquetá.
+
+**La copia conservada está normalizada.** El censo completo pesa 137,6 MB y GitHub bloquea
+archivos de más de 100 MB. El peso venía de columnas denormalizadas: el nombre de la empresa
+repetido en cada fila ocupaba 15,8 MB por sí solo. Por eso se conservan dos archivos:
+
+| Archivo | Contenido |
+|---|---|
+| `sspd_bnkp-xdb7.csv` | Las 402.500 filas con las 27 columnas analíticas, 71 MB |
+| `sspd_bnkp-xdb7_catalogos.csv` | Los 569 pares código-nombre observados, con su conteo |
+
+No se pierde evidencia: si un código resuelve a varios nombres, el catálogo trae una fila
+por cada uno, que es justamente lo que INT02 necesita medir.
+
+**Lo que aporta y las otras no tienen:**
+
+- **`tarifa_aplicada`**, promedio 758,98 $/kWh. Es el costo unitario que EPM y CHEC publican
+  como especificación, aquí aplicado a facturas concretas.
+- **`car_t440_car_inver`** con valores 100, 50 y 0: el eje de propiedad del activo. Por eso
+  **R08 y R09 vuelven a aplicarse**, cuando en la Ficha 3 quedaron `no_aplica`.
+- **Energía reactiva**, hasta 650.764.
+- **Pares código-nombre**, que devuelven a INT02 un caso donde medirse.
+
+## Bloque 2 · Cobertura temporal y series
+
+| | |
+|---|---|
+| Ventana | julio 2021 a junio 2022 |
+| Períodos presentes | **12** |
+| Períodos esperados | 12 |
+| Huecos internos | ninguno |
+
+**Doce períodos no alcanzan.** El protocolo exige 49, así que **CART01 no es ejecutable
+sobre esta fuente** y así queda registrado. Para las cartas sirve la Ficha 3.
+
+Y hay un defecto de completitud que la descripción del portal no menciona: **el volumen se
+desploma dentro de la propia ventana.**
+
+```
+2021-07   101.608          2022-01    18.934
+2021-08   101.986          2022-02    18.901
+2021-09    72.384          2022-03    19.087
+2021-10    24.936          2022-04     4.644
+2021-11    18.346          2022-05       977
+2021-12    19.709          2022-06       988
+```
+
+De 101.608 a 977. Los últimos tres períodos están prácticamente vacíos, de modo que los
+períodos **útiles son unos nueve**, no doce. Cualquier agregado por período debe declararlo
+o comparará cosas incomparables.
+
+## Bloque 3 · Datos críticos
+
+Resultados medidos sobre el censo completo:
+
+| Control | Resultado | Qué dice |
+|---|---|---|
+| R05 | 99,99 % | 53 identificadores de factura repetidos sobre 402.500 |
+| **R08** | **92,24 %** | 202 de 219 grupos respetan el orden de tarifa por propiedad |
+| **R09** | **98,60 %** | 336.682 de 341.474 facturas reconcilian |
+| **INT02** | **98,75 %** | 555 de 562 claves resuelven a un único nombre |
+| R11 | 1,17 % | 51.878 importes caen en el rango de serial de fecha |
+| R12 | 8,33 % | 28.458 consumos superan diez veces la mediana |
+
+R11 y R12 son indicadores de **prevalencia**: un valor alto señala más sospecha, no mejor
+calidad. En esta fuente ambos son bastante más altos que en las otras tres, lo que es
+esperable en consumo no residencial, mucho más disperso que el residencial.
+
+### El hallazgo más útil: la relación de la contribución
+
+Al formular R09 supuse que `facturacion_por_consumo = consumos × tarifa_aplicada`. Daba
+**12,99 %**, lo que habría sido un defecto enorme. No lo era: el criterio estaba mal.
+
+La razón entre lo facturado y el producto es exactamente **0,833**, que es 1/1,2. La
+relación real es:
+
+> **consumos × tarifa_aplicada = facturacion_por_consumo × (1 + contribución)**
+
+`tarifa_aplicada` ya incluye la **contribución de solidaridad**, y la facturación por
+consumo no. Lo confirma el propio dato: de las facturas con razón 0,833, el **99,4 % tiene
+`valor_de_la_contribucion` igual al 20 % de lo facturado**. Y la tasa varía por sector:
+
+| Sector | Razón dominante | Contribución implícita |
+|---|---|---|
+| C · comercial | 0,833 (85 %) | 20 % |
+| I · industrial | 0,833 (54 %) | 20 % |
+| O · oficial | 1,0 (87 %) | exento |
+| AP · alumbrado público | 1,0 (89 %) | exento |
+| AC · áreas comunes | 1,0 (94 %) | exento |
+| IA | 0,909 (80 %) | 10 % |
+
+Con el criterio corregido R09 da **98,60 %**. Queda en `provisional` por una razón
+explícita: **la tasa por sector se infirió de los datos, no la documenta la fuente.**
+
+Vale la pena señalar lo que ocurrió aquí, porque es metodológico: un control mal formulado
+produjo un 13 % que parecía un defecto grave de la fuente. El defecto estaba en el control.
+Antes de reportar un incumplimiento masivo conviene verificar que la regla es correcta.
+
+## Bloque 4 · Unidades y significado
+
+### El mismo vacío de la Ficha 3
+
+**Ninguna de las 48 columnas trae descripción** en el metadato del portal. DEF01 da **0 %**
+sobre las 28 variables críticas documentadas, en estado `medido`.
+
+Con esto el patrón queda en cuatro fuentes y tres publicadores:
+
+| Fuente | Defecto de definición |
+|---|---|
+| EPM | Documenta el concepto Cfm,j, que no publica en ninguna fila |
+| CHEC | Define de forma circular: `tipomed` se describe como «tipomed» |
+| SSPD | No define ninguna de sus 29 columnas |
+| SSPD-NR | No define ninguna de sus 48 columnas |
+
+### Corrupción de codificación en los nombres
+
+Las 7 claves que rompen INT02 no son errores de referencia: son **el mismo nombre publicado
+dos veces, una correcta y otra con la codificación dañada**.
+
+```
+identificador_empresa 564  → 'EMPRESAS PÚBLICAS DE MEDELLIN E.S.P.'
+                           → 'EMPRESAS P�BLICAS DE MEDELLIN E.S.P.'
+car_t440_dane 18150000     → 'CAQUETÁ'  /  'CAQUETA'
+car_t440_dane 86568033     → 'LA CABAÑA'  /  'LA CABA�A'
+```
+
+Dos variantes de defecto conviviendo en el mismo campo: mojibake y tildes inconsistentes.
+Es material directo para consistencia, y es exactamente el tipo de defecto que un framework
+automatizado debe detectar sin intervención humana.
+
+### Otros rangos que exigen confirmación
+
+- **`car_t440_dias_fact` llega a 152 días.** Un ciclo de facturación de cinco meses.
+- **`car_t440_dias_mora` llega a 9.540 días**, unos 26 años de mora.
+- **`tarifa_aplicada` tiene mínimo 0.** Hay registros con consumo pero sin tarifa informada.
+- **`valor_total_facturado` tiene 1.443 registros negativos.**
+
+Todo quedó en [`sspd_nr.yaml`](../../fuentes_datos/diccionarios/sspd_nr.yaml), con cada
+lectura de significado marcada como inferida.
+
+### Una nota sobre oportunidad, para no ilusionarse
+
+Esta fuente trae `car_t440_fec_exp`, fecha de expedición de la factura, y permite medir el
+rezago entre el período facturado y la emisión. **Eso es oportunidad del servicio, no del
+dato.** OPO01 está especificado sobre la disponibilidad de la publicación, y la propia
+matriz prohíbe usar el período como fecha de publicación. Por eso OPO01 sigue en
+`no_medible` también aquí: cerrarlo exige reespecificar el control o registrar este rezago
+como un indicador distinto. No se fuerza.
+
+Hay además una incoherencia en esas fechas: los períodos 2022-01, 2022-02 y 2022-03 tienen
+facturas expedidas el 08-01-**2021**, el 10-02-**2021** y el 10-03-**2021**. Facturas
+emitidas un año antes del período que declaran; parece error de año en el origen.
+
+## Bloque 5 · Consumidor del dato
+
+**Pendiente de decisión del equipo.** Ver la sección siguiente.
+
+---
+
 # Bloque 5 común · Consumidor del dato
 
 Es el único bloque que no se mide. Y es el que habilita los umbrales de la matriz OE1, que
@@ -538,13 +721,17 @@ del trabajo.
 
 # Estado del punto 2
 
-| Bloque | EPM | CHEC | SSPD |
-|---|---|---|---|
-| 1 · Identificación y estructura | Completo | Completo | Completo, con alcance de copia declarado |
-| 2 · Cobertura y series | Completo | Completo, con advertencia de independencia | Completo, con advertencia de independencia |
-| 3 · Datos críticos | Completo | Completo | Completo |
-| 4 · Unidades y significado | Documentado, con tres carencias de la fuente | Documentado, con tres carencias de la fuente | Documentado; la fuente no define ninguna columna |
-| 5 · Consumidor del dato | **Pendiente de decisión** | **Pendiente de decisión** | **Pendiente de decisión** |
+| Bloque | EPM | CHEC | SSPD | SSPD-NR |
+|---|---|---|---|---|
+| 1 · Identificación y estructura | Completo | Completo | Completo, con alcance de copia declarado | Completo, con copia normalizada declarada |
+| 2 · Cobertura y series | Completo | Completo, con advertencia de independencia | Completo, con advertencia de independencia | Completo; 12 períodos no habilitan cartas |
+| 3 · Datos críticos | Completo | Completo | Completo | Completo |
+| 4 · Unidades y significado | Documentado, con tres carencias de la fuente | Documentado, con tres carencias de la fuente | Documentado; la fuente no define ninguna columna | Documentado; la fuente no define ninguna columna |
+| 5 · Consumidor del dato | **Pendiente de decisión** | **Pendiente de decisión** | **Pendiente de decisión** | **Pendiente de decisión** |
+
+**Las dos fuentes de consumo son complementarias.** SSPD aporta los 59 períodos que las
+cartas exigen; SSPD-NR aporta el régimen interconectado, la tarifa aplicada y el eje de
+propiedad. R08, R09 e INT02 quedan `no_aplica` en la primera y medidos en la segunda.
 
 ## Pendientes
 

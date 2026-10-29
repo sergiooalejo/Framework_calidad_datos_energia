@@ -1,0 +1,278 @@
+version: '1.0'
+dataset:
+  id: bnkp-xdb7
+  nombre: Superservicios - Información Comercial No Residencial
+  publicador: Superintendencia de Servicios Públicos Domiciliarios (SSPD)
+  url_portal: https://www.datos.gov.co/d/bnkp-xdb7
+  url_csv_completo: https://www.datos.gov.co/api/views/bnkp-xdb7/rows.csv?accessType=DOWNLOAD
+  filas: 402500
+  columnas: 48
+  cobertura: 2021-07 a 2022-06 (12 períodos mensuales)
+  periodicidad_declarada: Semestral
+  ultima_carga_de_datos: '2023-05-26'
+  contiene_consumo_observado: true
+  ambito: >-
+    Sistema Interconectado Nacional. 32 prestadores en 14 departamentos de los Llanos y la
+    Amazonía: Meta, Casanare, Huila, Putumayo, Guaviare y Caquetá, entre otros. Encabezan
+    Electrificadora del Meta y Electrificadora del Huila.
+  estado: >-
+    Cuarta fuente. Entra por el régimen interconectado, la tarifa aplicada y el eje de
+    propiedad, que la fuente ZNI no tiene. No reemplaza a ninguna de las tres anteriores.
+advertencia: >-
+  Diccionario documental. Como en las otras fuentes de este publicador, el portal no
+  declara descripción para sus columnas. Toda lectura de significado aquí es inferida y
+  está marcada como tal.
+por_que_entra:
+  - Es del Sistema Interconectado Nacional, de modo que le aplica el régimen de la
+    Resolución CREG 119 de 2007, a diferencia de la fuente ZNI.
+  - Publica `tarifa_aplicada`, que es el costo unitario que EPM y CHEC publican como
+    especificación. Es el puente entre el dominio tarifario y el consumo observado.
+  - Publica `car_t440_car_inver` con valores 100, 50 y 0, que es el eje de propiedad del
+    activo. Por eso R08 y R09 sí aplican aquí.
+  - Publica energía reactiva, que ninguna de las otras tres fuentes tiene.
+  - Publica fecha de expedición de factura, que habilita una medida de rezago.
+limitaciones_declaradas:
+  periodos: >-
+    Solo 12 períodos mensuales. No alcanza el mínimo de 49 que exige el protocolo de cartas
+    de control, de modo que CART01 no es ejecutable sobre esta fuente.
+  caida_de_volumen: >-
+    El volumen se desploma dentro de la propia ventana: 101.608 registros en 2021-07 frente
+    a 977 en 2022-05 y 988 en 2022-06. Los últimos tres períodos están prácticamente vacíos,
+    de modo que los períodos útiles son unos nueve. Es un defecto de completitud de la
+    fuente, no del recorte, y debe declararse en cualquier agregado por período.
+  oportunidad: >-
+    `car_t440_fec_exp` mide el rezago entre el período facturado y la expedición de la
+    factura. Eso es oportunidad del servicio, no del dato. OPO01 está especificado sobre la
+    disponibilidad de la publicación, así que esta evidencia NO lo cierra tal como está
+    escrito: o se reespecifica el control, o se registra como indicador distinto.
+granularidad: >-
+  Registro de facturación por usuario (NIU) y período mensual. Las fechas que trae son de
+  factura, no de consumo: `car_t440_dias_fact` muestra ciclos de 28 a 32 días, de modo que
+  cada fila cubre un mes de consumo y no un día.
+clave_candidata:
+  identificador:
+  - id_factura
+  - niu
+  periodo:
+  - car_carg_ano
+  - car_carg_mes
+  empresa:
+  - identificador_empresa
+  estado: Pendiente de validación; no asumir unicidad.
+series:
+  clave: identificador_empresa + car_t440_sector + período mensual.
+  variables_prioritarias:
+  - consumos
+  - tarifa_aplicada
+  - valor_total_facturado
+  condiciones:
+  - Doce períodos no habilitan cartas de control; se usa para reglas de fila y perfilamiento.
+  - La caída de volumen hace que los agregados de los últimos meses no sean comparables.
+hallazgos_de_dominio_observados:
+  descripcion: Medidos sobre el conjunto completo. Son observaciones, no juicios.
+  rangos_sospechosos:
+  - campo: car_t440_dias_fact
+    detalle: Rango de 1 a 152 días. Un ciclo de facturación de 152 días no corresponde a un mes.
+  - campo: car_t440_dias_mora
+    detalle: Máximo de 9.540 días, unos 26 años de mora. Requiere confirmación de la fuente.
+  - campo: valor_total_facturado
+    detalle: 1.443 registros negativos; mínimo -12.964.850.
+  - campo: tarifa_aplicada
+    detalle: Mínimo 0. Hay registros sin tarifa informada pese a tener consumo.
+  fechas_incoherentes:
+  - detalle: >-
+      Los períodos 2022-01, 2022-02 y 2022-03 tienen facturas con fecha de expedición en
+      2021-01-08, 2021-02-10 y 2021-03-10. Son facturas expedidas un año antes del período
+      que declaran; parece error de año en el dato de origen.
+  dominios:
+  - campo: car_t440_sector
+    detalle: 10 valores (C, O, I, P, AP, AC, EE, IA, DR, EA) sin catálogo publicado.
+  - campo: codigo_de_zona_especial
+    detalle: 60 valores; el 99,8 % de las filas lleva '0'.
+  nota_sobre_variantes: >-
+    A diferencia de la fuente ZNI, aquí no se detectaron variantes por espacio final ni por
+    capitalización en las categóricas evaluadas.
+variables:
+- columna: identificador_empresa
+  descripcion_oficial: null
+  descripcion_inferida: Código del prestador que reporta.
+  tipo_portal: text
+  rol: entidad
+  reglas_relacionadas: [R06, INT02]
+- columna: are_esp_nombre
+  descripcion_oficial: null
+  descripcion_inferida: Nombre del prestador. Forma el par código-nombre con identificador_empresa.
+  tipo_portal: text
+  rol: entidad
+  reglas_relacionadas: [INT02]
+- columna: car_carg_ano
+  descripcion_oficial: null
+  descripcion_inferida: Año del período facturado.
+  tipo_portal: number
+  rol: periodo
+  reglas_relacionadas: [R01, R02]
+- columna: car_carg_mes
+  descripcion_oficial: null
+  descripcion_inferida: Mes del período facturado.
+  tipo_portal: number
+  rol: periodo
+  reglas_relacionadas: [R01, R02]
+- columna: niu
+  descripcion_oficial: null
+  descripcion_inferida: Número único de identificación del usuario.
+  tipo_portal: text
+  rol: identificador
+  reglas_relacionadas: [R04, R05]
+- columna: id_factura
+  descripcion_oficial: null
+  descripcion_inferida: Identificador de la factura.
+  tipo_portal: text
+  rol: identificador
+  reglas_relacionadas: [R04, R05]
+- columna: car_t440_car_inver
+  descripcion_oficial: null
+  descripcion_inferida: >-
+    Porcentaje de propiedad del activo, con valores 100, 50 y 0. Equivale al eje
+    modalidadcobro_propiedad de CHEC y a las columnas de propiedad de EPM.
+  tipo_portal: text
+  rol: categoria
+  dominio_observado: ['100', '50', '0']
+  reglas_relacionadas: [R06, R08, R09]
+- columna: car_t440_tip_tarifa
+  descripcion_oficial: null
+  descripcion_inferida: Tipo de tarifa. Valores observados R y NR, presumiblemente regulado y no regulado.
+  tipo_portal: text
+  rol: categoria
+  reglas_relacionadas: [R06, R09]
+- columna: car_t440_sector
+  descripcion_oficial: null
+  descripcion_inferida: Sector de uso. Diez valores sin catálogo publicado.
+  tipo_portal: text
+  rol: categoria
+  reglas_relacionadas: [R06, MAP01]
+- columna: car_t440_ubic
+  descripcion_oficial: null
+  descripcion_inferida: Ubicación. Valores observados U, R y C.
+  tipo_portal: text
+  rol: categoria
+  reglas_relacionadas: [R06]
+- columna: car_t440_tipo_lect
+  descripcion_oficial: null
+  descripcion_inferida: Modo de obtención de la lectura. Valores observados R, E y N.
+  tipo_portal: text
+  rol: categoria
+  reglas_relacionadas: [R06]
+- columna: car_t440_tipo_fact
+  descripcion_oficial: null
+  descripcion_inferida: Tipo de factura. Valores observados I y L.
+  tipo_portal: text
+  rol: categoria
+  reglas_relacionadas: [R06]
+- columna: nom_mercado
+  descripcion_oficial: null
+  descripcion_inferida: Nombre del mercado de comercialización. Forma par con car_t440_id_mercado.
+  tipo_portal: text
+  rol: categoria
+  reglas_relacionadas: [INT02]
+- columna: dane_nom_dpto
+  descripcion_oficial: null
+  descripcion_inferida: Departamento según codificación DANE.
+  tipo_portal: text
+  rol: categoria
+  reglas_relacionadas: [INT02]
+- columna: dane_nom_mpio
+  descripcion_oficial: null
+  descripcion_inferida: Municipio según codificación DANE.
+  tipo_portal: text
+  rol: categoria
+  reglas_relacionadas: [INT02]
+- columna: car_t440_fec_exp
+  descripcion_oficial: null
+  descripcion_inferida: Fecha de expedición de la factura. Es fecha de factura, no de consumo.
+  tipo_portal: calendar_date
+  rol: fecha
+  reglas_relacionadas: [R02, OPO01]
+- columna: car_t440_fec_ini
+  descripcion_oficial: null
+  descripcion_inferida: Fecha de inicio del período facturado.
+  tipo_portal: calendar_date
+  rol: fecha
+  reglas_relacionadas: [R02]
+- columna: car_t440_dias_fact
+  descripcion_oficial: null
+  descripcion_inferida: Días que cubre la factura.
+  tipo_portal: number
+  rol: medida
+  rango_observado: 1 a 152
+  reglas_relacionadas: [R07, R12]
+- columna: consumos
+  descripcion_oficial: null
+  descripcion_inferida: Consumo facturado. Unidad no declarada por el publicador; se presume kWh.
+  tipo_portal: number
+  rol: medida
+  unidad: no declarada
+  rango_observado: 0 a 29.337.848
+  reglas_relacionadas: [R03, R07, R10, R12]
+- columna: consumo_promedio_mensual
+  descripcion_oficial: null
+  descripcion_inferida: Consumo promedio mensual del usuario.
+  tipo_portal: number
+  rol: medida
+  reglas_relacionadas: [R03, R07, R12]
+- columna: consumo_energia_reactiva
+  descripcion_oficial: null
+  descripcion_inferida: Consumo de energía reactiva. No existe en ninguna otra fuente del proyecto.
+  tipo_portal: number
+  rol: medida
+  rango_observado: 0 a 650.764
+  reglas_relacionadas: [R03, R07, R10]
+- columna: tarifa_aplicada
+  descripcion_oficial: null
+  descripcion_inferida: >-
+    Tarifa aplicada al usuario. Es el costo unitario que EPM y CHEC publican como
+    especificación; aquí aparece aplicado a una factura concreta.
+  tipo_portal: number
+  rol: medida
+  rango_observado: 0 a 885,955
+  reglas_relacionadas: [R03, R07, R08, R09, EXA01]
+- columna: facturacion_por_consumo
+  descripcion_oficial: null
+  descripcion_inferida: Valor facturado por el consumo.
+  tipo_portal: number
+  rol: medida
+  reglas_relacionadas: [R03, R07, R09]
+- columna: refacturacion_por_consumo
+  descripcion_oficial: null
+  descripcion_inferida: Refacturación del consumo. Señal de corrección publicada por la propia fuente.
+  tipo_portal: number
+  rol: medida
+  reglas_relacionadas: [R07, R12]
+- columna: valor_total_facturado
+  descripcion_oficial: null
+  descripcion_inferida: Valor total de la factura.
+  tipo_portal: number
+  rol: medida
+  rango_observado: -12.964.850 a 4.927.304.504
+  reglas_relacionadas: [R03, R07, R09, R12]
+- columna: valor_subsidio
+  descripcion_oficial: null
+  descripcion_inferida: Valor del subsidio aplicado.
+  tipo_portal: number
+  rol: medida
+  reglas_relacionadas: [R07, R09]
+- columna: valor_de_la_contribucion
+  descripcion_oficial: null
+  descripcion_inferida: Valor de la contribución aplicada.
+  tipo_portal: number
+  rol: medida
+  reglas_relacionadas: [R07, R09]
+- columna: car_t440_dias_mora
+  descripcion_oficial: null
+  descripcion_inferida: Días de mora del usuario.
+  tipo_portal: number
+  rol: medida
+  rango_observado: 0 a 9.540
+  reglas_relacionadas: [R07, R12]
+nota_sobre_variables_no_listadas: >-
+  El conjunto tiene 48 columnas; aquí se documentan las que participan en los controles.
+  Las restantes están en el metadato conservado y tampoco traen descripción oficial.

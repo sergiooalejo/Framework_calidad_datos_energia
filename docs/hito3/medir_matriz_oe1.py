@@ -94,8 +94,18 @@ SSPD = dict(
     propia=True,
 )
 
-# Orden en el que las tres fuentes aparecen en CSV, YAML y Markdown.
-FUENTES = (EPM, CHEC, SSPD)
+# Cuarta fuente. Tambien del SSPD, pero del Sistema Interconectado y no residencial.
+# Entra porque trae el eje de propiedad y la tarifa aplicada, que la fuente ZNI no tiene,
+# de modo que R08, R09 e INT02 vuelven a ser aplicables. Su medicion vive en
+# medir_sspd_nr.py por la misma razon que la anterior: esquema distinto.
+SSPD_NR = dict(
+    fuente="SSPD-NR", clave="sspd_nr", dataset_id="bnkp-xdb7",
+    archivo=DATOS / "sspd_bnkp-xdb7.csv",
+    propia=True,
+)
+
+# Orden en el que las cuatro fuentes aparecen en CSV, YAML y Markdown.
+FUENTES = (EPM, CHEC, SSPD, SSPD_NR)
 
 
 def numero(texto):
@@ -679,11 +689,15 @@ brecha real del punto 1, y no se cierra midiendo mejor.
 
 def main():
     from medir_sspd import medir_sspd
+    from medir_sspd_nr import medir_sspd_nr
+
+    PROPIAS = {"SSPD": medir_sspd, "SSPD-NR": medir_sspd_nr}
 
     sello = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     med, proc = {}, {}
     for cfg in FUENTES:
-        med[cfg["fuente"]] = medir_sspd() if cfg.get("propia") else medir(cfg)
+        med[cfg["fuente"]] = (PROPIAS[cfg["fuente"]]() if cfg.get("propia")
+                              else medir(cfg))
         proc[cfg["fuente"]] = dict(
             archivo=str(cfg["archivo"].relative_to(RAIZ)).replace("\\", "/"),
             filas=med[cfg["fuente"]][1]["filas"], sha256=sha256(cfg["archivo"]))

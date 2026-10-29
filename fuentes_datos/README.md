@@ -1,13 +1,20 @@
-# Fuentes seleccionadas: EPM, CHEC y SSPD
+# Fuentes seleccionadas: EPM, CHEC, SSPD y SSPD-NR
 
-Esta carpeta conserva las dos fuentes tarifarias eléctricas acordadas y una tercera de
-facturación, incorporada para cubrir el consumo observado que a las dos primeras les falta.
+Esta carpeta conserva las dos fuentes tarifarias eléctricas acordadas y dos de facturación,
+incorporadas para cubrir el consumo observado que a las dos primeras les falta.
 
-| Fuente | CSV | Diccionario YAML | Portal |
-|---|---|---|---|
-| EPM: 3.623 filas, 12 columnas | [epm_sfcd-b3ey.csv](datos/epm_sfcd-b3ey.csv) | [epm.yaml](diccionarios/epm.yaml) | https://www.datos.gov.co/d/sfcd-b3ey |
-| CHEC: 40.609 filas, 24 columnas | [chec_c698-wqig.csv](datos/chec_c698-wqig.csv) | [chec.yaml](diccionarios/chec.yaml) | https://www.datos.gov.co/d/c698-wqig |
-| SSPD: 11.905.557 filas en origen, 29 columnas | [mensual](datos/sspd_ebby-cjha_mensual.csv) · [detalle](datos/sspd_ebby-cjha_detalle.csv) | [sspd.yaml](diccionarios/sspd.yaml) | https://www.datos.gov.co/d/ebby-cjha |
+| Fuente | Qué aporta | CSV | Diccionario | Portal |
+|---|---|---|---|---|
+| **EPM** · 3.623 filas, 12 col. | Tarifa, forma larga | [csv](datos/epm_sfcd-b3ey.csv) | [epm.yaml](diccionarios/epm.yaml) | https://www.datos.gov.co/d/sfcd-b3ey |
+| **CHEC** · 40.609 filas, 24 col. | Tarifa, forma ancha | [csv](datos/chec_c698-wqig.csv) | [chec.yaml](diccionarios/chec.yaml) | https://www.datos.gov.co/d/c698-wqig |
+| **SSPD** · 11.905.557 filas en origen, 29 col. | Consumo y **59 meses** para las cartas | [mensual](datos/sspd_ebby-cjha_mensual.csv) · [detalle](datos/sspd_ebby-cjha_detalle.csv) | [sspd.yaml](diccionarios/sspd.yaml) | https://www.datos.gov.co/d/ebby-cjha |
+| **SSPD-NR** · 402.500 filas, 48 col. | Consumo, **tarifa aplicada**, propiedad y régimen interconectado | [csv](datos/sspd_bnkp-xdb7.csv) | [sspd_nr.yaml](diccionarios/sspd_nr.yaml) | https://www.datos.gov.co/d/bnkp-xdb7 |
+
+**Las dos fuentes de consumo se complementan y no se reemplazan.** SSPD aporta la
+profundidad temporal —59 períodos consecutivos, los únicos que alcanzan el mínimo de 49 que
+exigen las cartas— pero es de Zonas No Interconectadas. SSPD-NR es del Sistema
+Interconectado y trae la tarifa aplicada y el eje de propiedad del activo, pero solo tiene
+12 períodos. Ninguna de las dos sola cubre lo que cubren juntas.
 
 **La tercera fuente no se conserva íntegra.** Pesa unos 9,7 GB en origen, que no es
 versionable. En su lugar se conservan **dos censos declarados, no muestras**: uno mensual

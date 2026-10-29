@@ -1,0 +1,4148 @@
+{
+ "id": "bnkp-xdb7",
+ "name": "Superservicios - Información Comercial No Residencial",
+ "assetType": "dataset",
+ "attribution": "Superintendencia de Servicios Públicos Domiciliarios - SUPERSERVICIOS, Bogotá D.C.",
+ "averageRating": 0,
+ "category": "Minas y Energía",
+ "createdAt": 1663077460,
+ "description": "Energía - Formato 3 - Información Comercial No Residencial Resolución 20102400008055 del 16 de marzo de 2010",
+ "diciBackend": false,
+ "displayType": "table",
+ "downloadCount": 255,
+ "hideFromCatalog": false,
+ "hideFromDataJson": false,
+ "licenseId": "CC_40_BY_SA",
+ "locked": false,
+ "newBackend": true,
+ "numberOfComments": 0,
+ "oid": 38854079,
+ "provenance": "official",
+ "publicationAppendEnabled": false,
+ "publicationDate": 1663084164,
+ "publicationGroup": 18866967,
+ "publicationStage": "published",
+ "rowsUpdatedAt": 1685105742,
+ "tableId": 18866967,
+ "totalTimesRated": 0,
+ "viewCount": 889,
+ "viewLastModified": 1779127950,
+ "viewType": "tabular",
+ "approvals": [
+  {
+   "reviewedAt": 1663196261,
+   "reviewedAutomatically": false,
+   "state": "approved",
+   "submissionId": 4972179,
+   "submissionObject": "public_audience_request",
+   "submissionOutcome": "change_audience",
+   "submittedAt": 1663084239,
+   "targetAudience": "public",
+   "workflowId": 2188,
+   "reviewer": {
+    "id": "vc9x-zjzh",
+    "displayName": "soporteccc"
+   },
+   "submissionDetails": {
+    "permissionType": "read"
+   },
+   "submissionOutcomeApplication": {
+    "endedAt": 1663196261,
+    "failureCount": 0,
+    "startedAt": 1663196261,
+    "status": "success"
+   },
+   "submitter": {
+    "id": "g6rs-w75b",
+    "displayName": "SUPERSERVICIOS-GSEG"
+   }
+  }
+ ],
+ "clientContext": {
+  "clientContextVariables": [],
+  "inheritedVariables": {}
+ },
+ "columns": [
+  {
+   "id": 565511258,
+   "name": "NIU",
+   "dataTypeName": "text",
+   "description": "",
+   "fieldName": "niu",
+   "position": 1,
+   "renderTypeName": "text",
+   "tableColumnId": 143615576,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "999997807919259099997807",
+    "null": "0",
+    "top": [
+     {
+      "item": "1845331253313357684533125",
+      "count": "15"
+     },
+     {
+      "item": "897895449862704989789544",
+      "count": "12"
+     },
+     {
+      "item": "9761221067704974076122106",
+      "count": "12"
+     },
+     {
+      "item": "8500770579220793850077057",
+      "count": "12"
+     },
+     {
+      "item": "7684341883657448468434188",
+      "count": "12"
+     },
+     {
+      "item": "4180938208771094518093820",
+      "count": "12"
+     },
+     {
+      "item": "182619966651049118261996",
+      "count": "12"
+     },
+     {
+      "item": "7769797498940250576979749",
+      "count": "12"
+     },
+     {
+      "item": "978548893958522497854889",
+      "count": "12"
+     },
+     {
+      "item": "490880781244273449088078",
+      "count": "12"
+     },
+     {
+      "item": "2933242124353125193324212",
+      "count": "12"
+     },
+     {
+      "item": "480837637930142948083763",
+      "count": "12"
+     },
+     {
+      "item": "8808975192806562480897519",
+      "count": "12"
+     },
+     {
+      "item": "3765259123899084076525912",
+      "count": "12"
+     },
+     {
+      "item": "4479961071074562247996107",
+      "count": "12"
+     },
+     {
+      "item": "2193527405082100919352740",
+      "count": "12"
+     },
+     {
+      "item": "9743320002907332174332000",
+      "count": "12"
+     },
+     {
+      "item": "7216474496854969121647449",
+      "count": "12"
+     },
+     {
+      "item": "7104500582646801810450058",
+      "count": "12"
+     },
+     {
+      "item": "603516257461347243516257",
+      "count": "12"
+     }
+    ],
+    "smallest": "100009569384881369569",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511330,
+   "name": "CAR_T440_DANE",
+   "dataTypeName": "text",
+   "description": "",
+   "fieldName": "car_t440_dane",
+   "position": 2,
+   "renderTypeName": "text",
+   "tableColumnId": 143615648,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "95025001",
+    "null": "0",
+    "top": [
+     {
+      "item": "50001000",
+      "count": "79590"
+     },
+     {
+      "item": "85001000",
+      "count": "66293"
+     },
+     {
+      "item": "41001000",
+      "count": "27408"
+     },
+     {
+      "item": "86568000",
+      "count": "16259"
+     },
+     {
+      "item": "50006000",
+      "count": "13148"
+     },
+     {
+      "item": "50313000",
+      "count": "10974"
+     },
+     {
+      "item": "85010000",
+      "count": "10895"
+     },
+     {
+      "item": "85440000",
+      "count": "9829"
+     },
+     {
+      "item": "86865000",
+      "count": "9505"
+     },
+     {
+      "item": "85250000",
+      "count": "9461"
+     },
+     {
+      "item": "41551000",
+      "count": "9065"
+     },
+     {
+      "item": "95001000",
+      "count": "7030"
+     },
+     {
+      "item": "18150000",
+      "count": "6869"
+     },
+     {
+      "item": "86001000",
+      "count": "6761"
+     },
+     {
+      "item": "85410000",
+      "count": "6552"
+     },
+     {
+      "item": "50568000",
+      "count": "5210"
+     },
+     {
+      "item": "86320000",
+      "count": "4789"
+     },
+     {
+      "item": "50573000",
+      "count": "4691"
+     },
+     {
+      "item": "85162000",
+      "count": "4472"
+     },
+     {
+      "item": "41298000",
+      "count": "3984"
+     }
+    ],
+    "smallest": "15667000",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511320,
+   "name": "CAR_T440_UBIC",
+   "dataTypeName": "text",
+   "description": "",
+   "fieldName": "car_t440_ubic",
+   "position": 3,
+   "renderTypeName": "text",
+   "tableColumnId": 143615638,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "U",
+    "null": "0",
+    "top": [
+     {
+      "item": "U",
+      "count": "360236"
+     },
+     {
+      "item": "R",
+      "count": "38301"
+     },
+     {
+      "item": "C",
+      "count": "3963"
+     }
+    ],
+    "smallest": "C",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511251,
+   "name": "ID_FACTURA",
+   "dataTypeName": "text",
+   "description": "",
+   "fieldName": "id_factura",
+   "position": 4,
+   "renderTypeName": "text",
+   "tableColumnId": 143615569,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "999991213241782465999991213",
+    "null": "0",
+    "top": [
+     {
+      "item": "38256284966844452382562849",
+      "count": "21"
+     },
+     {
+      "item": "241979790153511160241979790",
+      "count": "3"
+     },
+     {
+      "item": "716468427458426169716468427",
+      "count": "3"
+     },
+     {
+      "item": "6935168726132408269351687",
+      "count": "2"
+     },
+     {
+      "item": "3600349273144733236003492",
+      "count": "2"
+     },
+     {
+      "item": "786961570549564095786961570",
+      "count": "2"
+     },
+     {
+      "item": "304588943941444360304588943",
+      "count": "2"
+     },
+     {
+      "item": "291540205196408709291540205",
+      "count": "2"
+     },
+     {
+      "item": "721478153977876960721478153",
+      "count": "2"
+     },
+     {
+      "item": "786674266728974208786674266",
+      "count": "2"
+     },
+     {
+      "item": "6601769483807688366017694",
+      "count": "2"
+     },
+     {
+      "item": "735346301109319590735346301",
+      "count": "2"
+     },
+     {
+      "item": "470090087502952959470090087",
+      "count": "2"
+     },
+     {
+      "item": "89854424346351747898544243",
+      "count": "2"
+     },
+     {
+      "item": "45513127569816914455131275",
+      "count": "2"
+     },
+     {
+      "item": "137430989570965043137430989",
+      "count": "2"
+     },
+     {
+      "item": "915765418875496380915765418",
+      "count": "2"
+     },
+     {
+      "item": "577510489232067124577510489",
+      "count": "2"
+     },
+     {
+      "item": "38921257868939273892125",
+      "count": "2"
+     },
+     {
+      "item": "465450123152407722465450123",
+      "count": "2"
+     }
+    ],
+    "smallest": "100000321129539186100000321",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511237,
+   "name": "CAR_T440_FEC_EXP",
+   "dataTypeName": "calendar_date",
+   "description": "",
+   "fieldName": "car_t440_fec_exp",
+   "position": 5,
+   "renderTypeName": "calendar_date",
+   "tableColumnId": 143615555,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "2022-06-30T00:00:00.000",
+    "null": "0",
+    "top": [
+     {
+      "item": "2021-07-13T00:00:00.000",
+      "count": "11837"
+     },
+     {
+      "item": "2022-03-01T00:00:00.000",
+      "count": "10612"
+     },
+     {
+      "item": "2021-07-07T00:00:00.000",
+      "count": "10546"
+     },
+     {
+      "item": "2021-12-01T00:00:00.000",
+      "count": "9965"
+     },
+     {
+      "item": "2021-09-01T00:00:00.000",
+      "count": "9899"
+     },
+     {
+      "item": "2021-10-01T00:00:00.000",
+      "count": "9890"
+     },
+     {
+      "item": "2021-07-15T00:00:00.000",
+      "count": "9841"
+     },
+     {
+      "item": "2021-07-01T00:00:00.000",
+      "count": "9755"
+     },
+     {
+      "item": "2022-02-01T00:00:00.000",
+      "count": "9425"
+     },
+     {
+      "item": "2021-08-01T00:00:00.000",
+      "count": "9058"
+     },
+     {
+      "item": "2021-11-01T00:00:00.000",
+      "count": "8926"
+     },
+     {
+      "item": "2021-08-13T00:00:00.000",
+      "count": "8891"
+     },
+     {
+      "item": "2022-01-02T00:00:00.000",
+      "count": "8456"
+     },
+     {
+      "item": "2021-09-12T00:00:00.000",
+      "count": "7781"
+     },
+     {
+      "item": "2021-08-23T00:00:00.000",
+      "count": "6773"
+     },
+     {
+      "item": "2021-07-22T00:00:00.000",
+      "count": "6772"
+     },
+     {
+      "item": "2021-08-05T00:00:00.000",
+      "count": "6612"
+     },
+     {
+      "item": "2021-08-17T00:00:00.000",
+      "count": "6236"
+     },
+     {
+      "item": "2021-09-04T00:00:00.000",
+      "count": "5747"
+     },
+     {
+      "item": "2021-09-15T00:00:00.000",
+      "count": "5682"
+     }
+    ],
+    "smallest": "2021-01-08T00:00:00.000",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511239,
+   "name": "CAR_T440_FEC_INI",
+   "dataTypeName": "calendar_date",
+   "description": "",
+   "fieldName": "car_t440_fec_ini",
+   "position": 6,
+   "renderTypeName": "calendar_date",
+   "tableColumnId": 143615557,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "2022-06-01T00:00:00.000",
+    "null": "0",
+    "top": [
+     {
+      "item": "2021-07-01T00:00:00.000",
+      "count": "13109"
+     },
+     {
+      "item": "2021-06-01T00:00:00.000",
+      "count": "12283"
+     },
+     {
+      "item": "2021-08-01T00:00:00.000",
+      "count": "10143"
+     },
+     {
+      "item": "2021-10-01T00:00:00.000",
+      "count": "9841"
+     },
+     {
+      "item": "2021-09-01T00:00:00.000",
+      "count": "9714"
+     },
+     {
+      "item": "2021-12-01T00:00:00.000",
+      "count": "9447"
+     },
+     {
+      "item": "2021-11-01T00:00:00.000",
+      "count": "9368"
+     },
+     {
+      "item": "2021-06-10T00:00:00.000",
+      "count": "9132"
+     },
+     {
+      "item": "2022-02-01T00:00:00.000",
+      "count": "8905"
+     },
+     {
+      "item": "2022-01-02T00:00:00.000",
+      "count": "8394"
+     },
+     {
+      "item": "2021-07-17T00:00:00.000",
+      "count": "8241"
+     },
+     {
+      "item": "2021-06-04T00:00:00.000",
+      "count": "8008"
+     },
+     {
+      "item": "2021-07-05T00:00:00.000",
+      "count": "7837"
+     },
+     {
+      "item": "2021-08-11T00:00:00.000",
+      "count": "7789"
+     },
+     {
+      "item": "2021-07-11T00:00:00.000",
+      "count": "7786"
+     },
+     {
+      "item": "2021-07-07T00:00:00.000",
+      "count": "6835"
+     },
+     {
+      "item": "2021-08-05T00:00:00.000",
+      "count": "6586"
+     },
+     {
+      "item": "2021-06-17T00:00:00.000",
+      "count": "6509"
+     },
+     {
+      "item": "2021-07-13T00:00:00.000",
+      "count": "6425"
+     },
+     {
+      "item": "2021-08-07T00:00:00.000",
+      "count": "6117"
+     }
+    ],
+    "smallest": "2018-03-21T00:00:00.000",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511322,
+   "name": "CAR_T440_DIAS_FACT",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "car_t440_dias_fact",
+   "position": 7,
+   "renderTypeName": "number",
+   "tableColumnId": 143615640,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "152",
+    "null": "0",
+    "top": [
+     {
+      "item": "30",
+      "count": "189222"
+     },
+     {
+      "item": "31",
+      "count": "105998"
+     },
+     {
+      "item": "29",
+      "count": "59975"
+     },
+     {
+      "item": "32",
+      "count": "22821"
+     },
+     {
+      "item": "28",
+      "count": "14472"
+     },
+     {
+      "item": "91",
+      "count": "1787"
+     },
+     {
+      "item": "90",
+      "count": "1290"
+     },
+     {
+      "item": "27",
+      "count": "697"
+     },
+     {
+      "item": "62",
+      "count": "669"
+     },
+     {
+      "item": "61",
+      "count": "652"
+     },
+     {
+      "item": "33",
+      "count": "644"
+     },
+     {
+      "item": "152",
+      "count": "493"
+     },
+     {
+      "item": "60",
+      "count": "470"
+     },
+     {
+      "item": "26",
+      "count": "456"
+     },
+     {
+      "item": "121",
+      "count": "365"
+     },
+     {
+      "item": "59",
+      "count": "334"
+     },
+     {
+      "item": "34",
+      "count": "296"
+     },
+     {
+      "item": "63",
+      "count": "282"
+     },
+     {
+      "item": "58",
+      "count": "231"
+     },
+     {
+      "item": "57",
+      "count": "150"
+     }
+    ],
+    "smallest": "1",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511234,
+   "name": "CAR_T440_SECTOR",
+   "dataTypeName": "text",
+   "description": "",
+   "fieldName": "car_t440_sector",
+   "position": 8,
+   "renderTypeName": "text",
+   "tableColumnId": 143615552,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "P",
+    "null": "0",
+    "top": [
+     {
+      "item": "C",
+      "count": "344581"
+     },
+     {
+      "item": "O",
+      "count": "32206"
+     },
+     {
+      "item": "I",
+      "count": "8904"
+     },
+     {
+      "item": "P",
+      "count": "7042"
+     },
+     {
+      "item": "AP",
+      "count": "3958"
+     },
+     {
+      "item": "AC",
+      "count": "3169"
+     },
+     {
+      "item": "EE",
+      "count": "1588"
+     },
+     {
+      "item": "IA",
+      "count": "637"
+     },
+     {
+      "item": "DR",
+      "count": "230"
+     },
+     {
+      "item": "EA",
+      "count": "185"
+     }
+    ],
+    "smallest": "AC",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511326,
+   "name": "CAR_T440_TIP_TARIFA",
+   "dataTypeName": "text",
+   "description": "",
+   "fieldName": "car_t440_tip_tarifa",
+   "position": 9,
+   "renderTypeName": "text",
+   "tableColumnId": 143615644,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "R",
+    "null": "0",
+    "top": [
+     {
+      "item": "R",
+      "count": "399789"
+     },
+     {
+      "item": "NR",
+      "count": "2711"
+     }
+    ],
+    "smallest": "NR",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511317,
+   "name": "CAR_T440_TIPO_LECT",
+   "dataTypeName": "text",
+   "description": "",
+   "fieldName": "car_t440_tipo_lect",
+   "position": 10,
+   "renderTypeName": "text",
+   "tableColumnId": 143615635,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "R",
+    "null": "0",
+    "top": [
+     {
+      "item": "R",
+      "count": "386753"
+     },
+     {
+      "item": "E",
+      "count": "10295"
+     },
+     {
+      "item": "N",
+      "count": "5452"
+     }
+    ],
+    "smallest": "E",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511240,
+   "name": "CAR_T440_CAR_INVER",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "car_t440_car_inver",
+   "position": 11,
+   "renderTypeName": "number",
+   "tableColumnId": 143615558,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "100",
+    "null": "0",
+    "top": [
+     {
+      "item": "100",
+      "count": "222970"
+     },
+     {
+      "item": "0",
+      "count": "176070"
+     },
+     {
+      "item": "50",
+      "count": "3460"
+     }
+    ],
+    "smallest": "0",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511246,
+   "name": "CAR_T440_ID_MERCADO",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "car_t440_id_mercado",
+   "position": 12,
+   "renderTypeName": "number",
+   "tableColumnId": 143615564,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "705",
+    "null": "0",
+    "top": [
+     {
+      "item": "175",
+      "count": "138484"
+     },
+     {
+      "item": "703",
+      "count": "127886"
+     },
+     {
+      "item": "170",
+      "count": "62113"
+     },
+     {
+      "item": "601",
+      "count": "36084"
+     },
+     {
+      "item": "461",
+      "count": "15451"
+     },
+     {
+      "item": "681",
+      "count": "10959"
+     },
+     {
+      "item": "705",
+      "count": "6869"
+     },
+     {
+      "item": "481",
+      "count": "3714"
+     },
+     {
+      "item": "301",
+      "count": "940"
+     }
+    ],
+    "smallest": "170",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511252,
+   "name": "CONSUMOS",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "consumos",
+   "position": 13,
+   "renderTypeName": "number",
+   "tableColumnId": 143615570,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "29337848",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "60871"
+     },
+     {
+      "item": "1",
+      "count": "5394"
+     },
+     {
+      "item": "2",
+      "count": "3314"
+     },
+     {
+      "item": "3",
+      "count": "2722"
+     },
+     {
+      "item": "4",
+      "count": "2369"
+     },
+     {
+      "item": "5",
+      "count": "2169"
+     },
+     {
+      "item": "6",
+      "count": "2043"
+     },
+     {
+      "item": "7",
+      "count": "1835"
+     },
+     {
+      "item": "8",
+      "count": "1777"
+     },
+     {
+      "item": "9",
+      "count": "1679"
+     },
+     {
+      "item": "10",
+      "count": "1667"
+     },
+     {
+      "item": "11",
+      "count": "1659"
+     },
+     {
+      "item": "12",
+      "count": "1610"
+     },
+     {
+      "item": "13",
+      "count": "1534"
+     },
+     {
+      "item": "15",
+      "count": "1490"
+     },
+     {
+      "item": "14",
+      "count": "1488"
+     },
+     {
+      "item": "16",
+      "count": "1467"
+     },
+     {
+      "item": "18",
+      "count": "1424"
+     },
+     {
+      "item": "19",
+      "count": "1424"
+     },
+     {
+      "item": "24",
+      "count": "1389"
+     }
+    ],
+    "smallest": "0",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511235,
+   "name": "CONSUMO_PROMEDIO_MENSUAL",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "consumo_promedio_mensual",
+   "position": 14,
+   "renderTypeName": "number",
+   "tableColumnId": 143615553,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "29837440",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "53692"
+     },
+     {
+      "item": "1",
+      "count": "6379"
+     },
+     {
+      "item": "2",
+      "count": "3575"
+     },
+     {
+      "item": "3",
+      "count": "2996"
+     },
+     {
+      "item": "4",
+      "count": "2625"
+     },
+     {
+      "item": "6",
+      "count": "2333"
+     },
+     {
+      "item": "5",
+      "count": "2296"
+     },
+     {
+      "item": "7",
+      "count": "2072"
+     },
+     {
+      "item": "8",
+      "count": "1966"
+     },
+     {
+      "item": "11",
+      "count": "1841"
+     },
+     {
+      "item": "10",
+      "count": "1783"
+     },
+     {
+      "item": "9",
+      "count": "1757"
+     },
+     {
+      "item": "12",
+      "count": "1731"
+     },
+     {
+      "item": "13",
+      "count": "1686"
+     },
+     {
+      "item": "17",
+      "count": "1640"
+     },
+     {
+      "item": "16",
+      "count": "1594"
+     },
+     {
+      "item": "14",
+      "count": "1587"
+     },
+     {
+      "item": "15",
+      "count": "1552"
+     },
+     {
+      "item": "19",
+      "count": "1532"
+     },
+     {
+      "item": "18",
+      "count": "1517"
+     }
+    ],
+    "smallest": "0",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511325,
+   "name": "FACTURACION_POR_CONSUMO",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "facturacion_por_consumo",
+   "position": 15,
+   "renderTypeName": "number",
+   "tableColumnId": 143615643,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "4920849926",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "61014"
+     },
+     {
+      "item": "639",
+      "count": "622"
+     },
+     {
+      "item": "645",
+      "count": "586"
+     },
+     {
+      "item": "652",
+      "count": "570"
+     },
+     {
+      "item": "1278",
+      "count": "357"
+     },
+     {
+      "item": "1290",
+      "count": "348"
+     },
+     {
+      "item": "1303",
+      "count": "316"
+     },
+     {
+      "item": "640",
+      "count": "304"
+     },
+     {
+      "item": "1955",
+      "count": "281"
+     },
+     {
+      "item": "646",
+      "count": "275"
+     },
+     {
+      "item": "1936",
+      "count": "270"
+     },
+     {
+      "item": "1917",
+      "count": "256"
+     },
+     {
+      "item": "2555",
+      "count": "251"
+     },
+     {
+      "item": "2581",
+      "count": "249"
+     },
+     {
+      "item": "2607",
+      "count": "237"
+     },
+     {
+      "item": "3194",
+      "count": "217"
+     },
+     {
+      "item": "3910",
+      "count": "215"
+     },
+     {
+      "item": "3258",
+      "count": "214"
+     },
+     {
+      "item": "3871",
+      "count": "213"
+     },
+     {
+      "item": "3226",
+      "count": "209"
+     }
+    ],
+    "smallest": "0",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511328,
+   "name": "REFACTURACION_POR_CONSUMO",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "refacturacion_por_consumo",
+   "position": 16,
+   "renderTypeName": "number",
+   "tableColumnId": 143615646,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "165080066",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "401963"
+     },
+     {
+      "item": "432455",
+      "count": "2"
+     },
+     {
+      "item": "1467558",
+      "count": "2"
+     },
+     {
+      "item": "4827589",
+      "count": "2"
+     },
+     {
+      "item": "137989",
+      "count": "2"
+     },
+     {
+      "item": "2593343",
+      "count": "2"
+     },
+     {
+      "item": "240915",
+      "count": "2"
+     },
+     {
+      "item": "1145828",
+      "count": "2"
+     },
+     {
+      "item": "3299963",
+      "count": "2"
+     },
+     {
+      "item": "3982977",
+      "count": "2"
+     },
+     {
+      "item": "933549",
+      "count": "2"
+     },
+     {
+      "item": "-1643931",
+      "count": "1"
+     },
+     {
+      "item": "-2768923",
+      "count": "1"
+     },
+     {
+      "item": "-1556026",
+      "count": "1"
+     },
+     {
+      "item": "-1854584",
+      "count": "1"
+     },
+     {
+      "item": "-1925634",
+      "count": "1"
+     },
+     {
+      "item": "-2774662",
+      "count": "1"
+     },
+     {
+      "item": "-4476801",
+      "count": "1"
+     },
+     {
+      "item": "-2192808",
+      "count": "1"
+     },
+     {
+      "item": "-1048385",
+      "count": "1"
+     }
+    ],
+    "smallest": "-17273282",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511284,
+   "name": "VALOR_REFACTURACION_CONSUMO",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "valor_refacturacion_consumo",
+   "position": 17,
+   "renderTypeName": "number",
+   "tableColumnId": 143615602,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "165080066",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "401963"
+     },
+     {
+      "item": "432455",
+      "count": "2"
+     },
+     {
+      "item": "1467558",
+      "count": "2"
+     },
+     {
+      "item": "4827589",
+      "count": "2"
+     },
+     {
+      "item": "137989",
+      "count": "2"
+     },
+     {
+      "item": "2593343",
+      "count": "2"
+     },
+     {
+      "item": "240915",
+      "count": "2"
+     },
+     {
+      "item": "1145828",
+      "count": "2"
+     },
+     {
+      "item": "3299963",
+      "count": "2"
+     },
+     {
+      "item": "3982977",
+      "count": "2"
+     },
+     {
+      "item": "933549",
+      "count": "2"
+     },
+     {
+      "item": "-1643931",
+      "count": "1"
+     },
+     {
+      "item": "-2768923",
+      "count": "1"
+     },
+     {
+      "item": "-1556026",
+      "count": "1"
+     },
+     {
+      "item": "-1854584",
+      "count": "1"
+     },
+     {
+      "item": "-1925634",
+      "count": "1"
+     },
+     {
+      "item": "-2774662",
+      "count": "1"
+     },
+     {
+      "item": "-4476801",
+      "count": "1"
+     },
+     {
+      "item": "-2192808",
+      "count": "1"
+     },
+     {
+      "item": "-1048385",
+      "count": "1"
+     }
+    ],
+    "smallest": "-17273282",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511256,
+   "name": "CONSUMO_ENERGIA_REACTIVA",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "consumo_energia_reactiva",
+   "position": 18,
+   "renderTypeName": "number",
+   "tableColumnId": 143615574,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "650764",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "397941"
+     },
+     {
+      "item": "40",
+      "count": "73"
+     },
+     {
+      "item": "120",
+      "count": "68"
+     },
+     {
+      "item": "30",
+      "count": "67"
+     },
+     {
+      "item": "60",
+      "count": "65"
+     },
+     {
+      "item": "20",
+      "count": "61"
+     },
+     {
+      "item": "1",
+      "count": "57"
+     },
+     {
+      "item": "240",
+      "count": "45"
+     },
+     {
+      "item": "300",
+      "count": "38"
+     },
+     {
+      "item": "80",
+      "count": "37"
+     },
+     {
+      "item": "4",
+      "count": "37"
+     },
+     {
+      "item": "220",
+      "count": "37"
+     },
+     {
+      "item": "180",
+      "count": "35"
+     },
+     {
+      "item": "100",
+      "count": "35"
+     },
+     {
+      "item": "3",
+      "count": "31"
+     },
+     {
+      "item": "280",
+      "count": "30"
+     },
+     {
+      "item": "160",
+      "count": "30"
+     },
+     {
+      "item": "5",
+      "count": "29"
+     },
+     {
+      "item": "6",
+      "count": "26"
+     },
+     {
+      "item": "10",
+      "count": "26"
+     }
+    ],
+    "smallest": "0",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511329,
+   "name": "FACT_CONSUMO_ENERGIA_REACTIVA",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "fact_consumo_energia_reactiva",
+   "position": 19,
+   "renderTypeName": "number",
+   "tableColumnId": 143615647,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "393862330",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "398056"
+     },
+     {
+      "item": "4710",
+      "count": "10"
+     },
+     {
+      "item": "10030",
+      "count": "9"
+     },
+     {
+      "item": "1",
+      "count": "7"
+     },
+     {
+      "item": "14131",
+      "count": "7"
+     },
+     {
+      "item": "9421",
+      "count": "7"
+     },
+     {
+      "item": "12853",
+      "count": "6"
+     },
+     {
+      "item": "3748",
+      "count": "6"
+     },
+     {
+      "item": "16124",
+      "count": "6"
+     },
+     {
+      "item": "9046",
+      "count": "6"
+     },
+     {
+      "item": "24187",
+      "count": "6"
+     },
+     {
+      "item": "4031",
+      "count": "6"
+     },
+     {
+      "item": "15045",
+      "count": "6"
+     },
+     {
+      "item": "29991",
+      "count": "6"
+     },
+     {
+      "item": "7065",
+      "count": "5"
+     },
+     {
+      "item": "5860",
+      "count": "5"
+     },
+     {
+      "item": "11243",
+      "count": "5"
+     },
+     {
+      "item": "14664",
+      "count": "5"
+     },
+     {
+      "item": "3721",
+      "count": "5"
+     },
+     {
+      "item": "7416",
+      "count": "5"
+     }
+    ],
+    "smallest": "0",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511236,
+   "name": "REFACTURACION_ENERGIA_REACTIVA",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "refacturacion_energia_reactiva",
+   "position": 20,
+   "renderTypeName": "number",
+   "tableColumnId": 143615554,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "72826",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "402478"
+     },
+     {
+      "item": "487",
+      "count": "2"
+     },
+     {
+      "item": "-14656",
+      "count": "1"
+     },
+     {
+      "item": "-10258",
+      "count": "1"
+     },
+     {
+      "item": "-6836",
+      "count": "1"
+     },
+     {
+      "item": "-1998",
+      "count": "1"
+     },
+     {
+      "item": "-1194",
+      "count": "1"
+     },
+     {
+      "item": "93",
+      "count": "1"
+     },
+     {
+      "item": "110",
+      "count": "1"
+     },
+     {
+      "item": "522",
+      "count": "1"
+     },
+     {
+      "item": "578",
+      "count": "1"
+     },
+     {
+      "item": "734",
+      "count": "1"
+     },
+     {
+      "item": "897",
+      "count": "1"
+     },
+     {
+      "item": "2436",
+      "count": "1"
+     },
+     {
+      "item": "4440",
+      "count": "1"
+     },
+     {
+      "item": "8119",
+      "count": "1"
+     },
+     {
+      "item": "8185",
+      "count": "1"
+     },
+     {
+      "item": "24033",
+      "count": "1"
+     },
+     {
+      "item": "50011",
+      "count": "1"
+     },
+     {
+      "item": "-17088",
+      "count": "1"
+     }
+    ],
+    "smallest": "-17088",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511245,
+   "name": "VALOR_REFAC_ENERGIA_REACTIVA",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "valor_refac_energia_reactiva",
+   "position": 21,
+   "renderTypeName": "number",
+   "tableColumnId": 143615563,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "15195177",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "389938"
+     },
+     {
+      "item": "3",
+      "count": "227"
+     },
+     {
+      "item": "1",
+      "count": "153"
+     },
+     {
+      "item": "7",
+      "count": "122"
+     },
+     {
+      "item": "2",
+      "count": "121"
+     },
+     {
+      "item": "11",
+      "count": "113"
+     },
+     {
+      "item": "6",
+      "count": "107"
+     },
+     {
+      "item": "4",
+      "count": "102"
+     },
+     {
+      "item": "15",
+      "count": "98"
+     },
+     {
+      "item": "9",
+      "count": "83"
+     },
+     {
+      "item": "5",
+      "count": "81"
+     },
+     {
+      "item": "10",
+      "count": "79"
+     },
+     {
+      "item": "18",
+      "count": "78"
+     },
+     {
+      "item": "12",
+      "count": "76"
+     },
+     {
+      "item": "30",
+      "count": "72"
+     },
+     {
+      "item": "13",
+      "count": "72"
+     },
+     {
+      "item": "17",
+      "count": "69"
+     },
+     {
+      "item": "19",
+      "count": "69"
+     },
+     {
+      "item": "14",
+      "count": "68"
+     },
+     {
+      "item": "8",
+      "count": "67"
+     }
+    ],
+    "smallest": "-2298183",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511324,
+   "name": "REPLACE(CAR_T440_VAL_MORA,',','.')",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "replace_car_t440_val_mora",
+   "position": 22,
+   "renderTypeName": "number",
+   "tableColumnId": 143615642,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "2596077874",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "345312"
+     },
+     {
+      "item": "500",
+      "count": "639"
+     },
+     {
+      "item": "11",
+      "count": "421"
+     },
+     {
+      "item": "3",
+      "count": "326"
+     },
+     {
+      "item": "1000",
+      "count": "303"
+     },
+     {
+      "item": "4",
+      "count": "248"
+     },
+     {
+      "item": "22",
+      "count": "220"
+     },
+     {
+      "item": "2",
+      "count": "215"
+     },
+     {
+      "item": "1",
+      "count": "209"
+     },
+     {
+      "item": "10",
+      "count": "204"
+     },
+     {
+      "item": "12",
+      "count": "199"
+     },
+     {
+      "item": "7",
+      "count": "191"
+     },
+     {
+      "item": "6",
+      "count": "153"
+     },
+     {
+      "item": "9",
+      "count": "144"
+     },
+     {
+      "item": "8",
+      "count": "140"
+     },
+     {
+      "item": "30",
+      "count": "139"
+     },
+     {
+      "item": "15",
+      "count": "136"
+     },
+     {
+      "item": "5",
+      "count": "126"
+     },
+     {
+      "item": "20",
+      "count": "122"
+     },
+     {
+      "item": "33",
+      "count": "116"
+     }
+    ],
+    "smallest": "0",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511241,
+   "name": "CAR_T440_DIAS_MORA",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "car_t440_dias_mora",
+   "position": 23,
+   "renderTypeName": "number",
+   "tableColumnId": 143615559,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "9540",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "339200"
+     },
+     {
+      "item": "30",
+      "count": "20096"
+     },
+     {
+      "item": "60",
+      "count": "6152"
+     },
+     {
+      "item": "90",
+      "count": "2550"
+     },
+     {
+      "item": "17",
+      "count": "1985"
+     },
+     {
+      "item": "120",
+      "count": "1911"
+     },
+     {
+      "item": "150",
+      "count": "1142"
+     },
+     {
+      "item": "210",
+      "count": "1142"
+     },
+     {
+      "item": "180",
+      "count": "1047"
+     },
+     {
+      "item": "14",
+      "count": "959"
+     },
+     {
+      "item": "240",
+      "count": "766"
+     },
+     {
+      "item": "300",
+      "count": "729"
+     },
+     {
+      "item": "18",
+      "count": "615"
+     },
+     {
+      "item": "15",
+      "count": "590"
+     },
+     {
+      "item": "270",
+      "count": "518"
+     },
+     {
+      "item": "16",
+      "count": "501"
+     },
+     {
+      "item": "480",
+      "count": "482"
+     },
+     {
+      "item": "360",
+      "count": "442"
+     },
+     {
+      "item": "450",
+      "count": "408"
+     },
+     {
+      "item": "510",
+      "count": "397"
+     }
+    ],
+    "smallest": "0",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511238,
+   "name": "VALOR_COMPENSADO",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "valor_compensado",
+   "position": 24,
+   "renderTypeName": "number",
+   "tableColumnId": 143615556,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "31163344",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "373846"
+     },
+     {
+      "item": "2",
+      "count": "64"
+     },
+     {
+      "item": "33",
+      "count": "60"
+     },
+     {
+      "item": "4",
+      "count": "59"
+     },
+     {
+      "item": "1",
+      "count": "54"
+     },
+     {
+      "item": "17",
+      "count": "52"
+     },
+     {
+      "item": "66",
+      "count": "52"
+     },
+     {
+      "item": "3",
+      "count": "50"
+     },
+     {
+      "item": "9",
+      "count": "47"
+     },
+     {
+      "item": "23",
+      "count": "46"
+     },
+     {
+      "item": "13",
+      "count": "45"
+     },
+     {
+      "item": "29",
+      "count": "45"
+     },
+     {
+      "item": "10",
+      "count": "44"
+     },
+     {
+      "item": "6",
+      "count": "43"
+     },
+     {
+      "item": "15",
+      "count": "40"
+     },
+     {
+      "item": "34",
+      "count": "40"
+     },
+     {
+      "item": "5",
+      "count": "40"
+     },
+     {
+      "item": "99",
+      "count": "37"
+     },
+     {
+      "item": "86",
+      "count": "36"
+     },
+     {
+      "item": "166",
+      "count": "36"
+     }
+    ],
+    "smallest": "0",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511257,
+   "name": "REFACTURACION_COMPENSACION",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "refacturacion_compensacion",
+   "position": 25,
+   "renderTypeName": "number",
+   "tableColumnId": 143615575,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "0",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "402500"
+     }
+    ],
+    "smallest": "0",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511263,
+   "name": "VALOR_DE_LA_CONTRIBUCION",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "valor_de_la_contribucion",
+   "position": 26,
+   "renderTypeName": "number",
+   "tableColumnId": 143615581,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "55177679",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "99695"
+     },
+     {
+      "item": "129",
+      "count": "1349"
+     },
+     {
+      "item": "130",
+      "count": "607"
+     },
+     {
+      "item": "128",
+      "count": "594"
+     },
+     {
+      "item": "259",
+      "count": "574"
+     },
+     {
+      "item": "387",
+      "count": "449"
+     },
+     {
+      "item": "255",
+      "count": "378"
+     },
+     {
+      "item": "261",
+      "count": "296"
+     },
+     {
+      "item": "391",
+      "count": "286"
+     },
+     {
+      "item": "511",
+      "count": "242"
+     },
+     {
+      "item": "383",
+      "count": "240"
+     },
+     {
+      "item": "521",
+      "count": "238"
+     },
+     {
+      "item": "516",
+      "count": "232"
+     },
+     {
+      "item": "639",
+      "count": "207"
+     },
+     {
+      "item": "652",
+      "count": "206"
+     },
+     {
+      "item": "645",
+      "count": "205"
+     },
+     {
+      "item": "775",
+      "count": "204"
+     },
+     {
+      "item": "782",
+      "count": "204"
+     },
+     {
+      "item": "767",
+      "count": "196"
+     },
+     {
+      "item": "912",
+      "count": "191"
+     }
+    ],
+    "smallest": "0",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511261,
+   "name": "REFACTURACION_CONTRIBUCION",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "refacturacion_contribucion",
+   "position": 27,
+   "renderTypeName": "number",
+   "tableColumnId": 143615579,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "3778991",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "374121"
+     },
+     {
+      "item": "15",
+      "count": "62"
+     },
+     {
+      "item": "234",
+      "count": "59"
+     },
+     {
+      "item": "103",
+      "count": "57"
+     },
+     {
+      "item": "158",
+      "count": "57"
+     },
+     {
+      "item": "144",
+      "count": "54"
+     },
+     {
+      "item": "110",
+      "count": "54"
+     },
+     {
+      "item": "193",
+      "count": "53"
+     },
+     {
+      "item": "124",
+      "count": "52"
+     },
+     {
+      "item": "118",
+      "count": "51"
+     },
+     {
+      "item": "172",
+      "count": "51"
+     },
+     {
+      "item": "14",
+      "count": "50"
+     },
+     {
+      "item": "138",
+      "count": "48"
+     },
+     {
+      "item": "275",
+      "count": "47"
+     },
+     {
+      "item": "207",
+      "count": "46"
+     },
+     {
+      "item": "351",
+      "count": "46"
+     },
+     {
+      "item": "303",
+      "count": "46"
+     },
+     {
+      "item": "282",
+      "count": "44"
+     },
+     {
+      "item": "12",
+      "count": "43"
+     },
+     {
+      "item": "433",
+      "count": "43"
+     }
+    ],
+    "smallest": "-22668475",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511255,
+   "name": "FAC_FOES",
+   "dataTypeName": "text",
+   "description": "",
+   "fieldName": "fac_foes",
+   "position": 28,
+   "renderTypeName": "text",
+   "tableColumnId": 143615573,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "9993722635922336999937226",
+    "null": "0",
+    "top": [
+     {
+      "item": "983628450395438321983628450",
+      "count": "137846"
+     },
+     {
+      "item": "756205900984848640756205900",
+      "count": "126947"
+     },
+     {
+      "item": "300311488995667177300311488",
+      "count": "61710"
+     },
+     {
+      "item": "702499162344845666702499162",
+      "count": "36052"
+     },
+     {
+      "item": "9993722635922336999937226",
+      "count": "15367"
+     },
+     {
+      "item": "982070862541476093982070862",
+      "count": "10959"
+     },
+     {
+      "item": "152429934322615532152429934",
+      "count": "6869"
+     },
+     {
+      "item": "52730758830769802527307588",
+      "count": "3714"
+     },
+     {
+      "item": "962806832984854878962806832",
+      "count": "1057"
+     },
+     {
+      "item": "38256284966844452382562849",
+      "count": "940"
+     },
+     {
+      "item": "1433689685810197714336896",
+      "count": "464"
+     },
+     {
+      "item": "823174929279349578823174929",
+      "count": "118"
+     },
+     {
+      "item": "5161442949861542451614429",
+      "count": "61"
+     },
+     {
+      "item": "961616214326264660961616214",
+      "count": "51"
+     },
+     {
+      "item": "25379530683138586253795306",
+      "count": "46"
+     },
+     {
+      "item": "259165279848966870259165279",
+      "count": "36"
+     },
+     {
+      "item": "860740249313685782860740249",
+      "count": "35"
+     },
+     {
+      "item": "499306677710332699499306677",
+      "count": "33"
+     },
+     {
+      "item": "735525575616623169735525575",
+      "count": "33"
+     },
+     {
+      "item": "915765418875496380915765418",
+      "count": "30"
+     }
+    ],
+    "smallest": "120826667597708361120826667",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511265,
+   "name": "FOES_APLICADO",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "foes_aplicado",
+   "position": 29,
+   "renderTypeName": "number",
+   "tableColumnId": 143615583,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "32941",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "402449"
+     },
+     {
+      "item": "16897",
+      "count": "9"
+     },
+     {
+      "item": "13934",
+      "count": "7"
+     },
+     {
+      "item": "14939",
+      "count": "5"
+     },
+     {
+      "item": "12840",
+      "count": "4"
+     },
+     {
+      "item": "11823",
+      "count": "3"
+     },
+     {
+      "item": "12072",
+      "count": "3"
+     },
+     {
+      "item": "14046",
+      "count": "2"
+     },
+     {
+      "item": "4921",
+      "count": "1"
+     },
+     {
+      "item": "5196",
+      "count": "1"
+     },
+     {
+      "item": "5234",
+      "count": "1"
+     },
+     {
+      "item": "5604",
+      "count": "1"
+     },
+     {
+      "item": "5862",
+      "count": "1"
+     },
+     {
+      "item": "5969",
+      "count": "1"
+     },
+     {
+      "item": "7952",
+      "count": "1"
+     },
+     {
+      "item": "13478",
+      "count": "1"
+     },
+     {
+      "item": "17768",
+      "count": "1"
+     },
+     {
+      "item": "18124",
+      "count": "1"
+     },
+     {
+      "item": "32941",
+      "count": "1"
+     },
+     {
+      "item": "731",
+      "count": "1"
+     }
+    ],
+    "smallest": "0",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511248,
+   "name": "REFACTURACION_FOES",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "refacturacion_foes",
+   "position": 30,
+   "renderTypeName": "number",
+   "tableColumnId": 143615566,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "0",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "402500"
+     }
+    ],
+    "smallest": "0",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511321,
+   "name": "VALOR_TOTAL_FACTURADO",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "valor_total_facturado",
+   "position": 31,
+   "renderTypeName": "number",
+   "tableColumnId": 143615639,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "4927304504",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "36475"
+     },
+     {
+      "item": "500",
+      "count": "7159"
+     },
+     {
+      "item": "3",
+      "count": "382"
+     },
+     {
+      "item": "10",
+      "count": "287"
+     },
+     {
+      "item": "5",
+      "count": "264"
+     },
+     {
+      "item": "-2",
+      "count": "250"
+     },
+     {
+      "item": "-3",
+      "count": "241"
+     },
+     {
+      "item": "15740",
+      "count": "232"
+     },
+     {
+      "item": "59100",
+      "count": "208"
+     },
+     {
+      "item": "2",
+      "count": "207"
+     },
+     {
+      "item": "1",
+      "count": "203"
+     },
+     {
+      "item": "766",
+      "count": "180"
+     },
+     {
+      "item": "-4",
+      "count": "176"
+     },
+     {
+      "item": "4",
+      "count": "171"
+     },
+     {
+      "item": "-1",
+      "count": "170"
+     },
+     {
+      "item": "785",
+      "count": "168"
+     },
+     {
+      "item": "773",
+      "count": "167"
+     },
+     {
+      "item": "774",
+      "count": "165"
+     },
+     {
+      "item": "510",
+      "count": "155"
+     },
+     {
+      "item": "775",
+      "count": "140"
+     }
+    ],
+    "smallest": "-12964850",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511259,
+   "name": "CODIGO_DE_ZONA_ESPECIAL",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "codigo_de_zona_especial",
+   "position": 32,
+   "renderTypeName": "number",
+   "tableColumnId": 143615577,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "7758",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "401511"
+     },
+     {
+      "item": "803",
+      "count": "447"
+     },
+     {
+      "item": "135",
+      "count": "102"
+     },
+     {
+      "item": "138",
+      "count": "87"
+     },
+     {
+      "item": "110",
+      "count": "27"
+     },
+     {
+      "item": "237",
+      "count": "27"
+     },
+     {
+      "item": "122",
+      "count": "27"
+     },
+     {
+      "item": "238",
+      "count": "21"
+     },
+     {
+      "item": "118",
+      "count": "18"
+     },
+     {
+      "item": "105",
+      "count": "12"
+     },
+     {
+      "item": "123",
+      "count": "12"
+     },
+     {
+      "item": "1137",
+      "count": "10"
+     },
+     {
+      "item": "121",
+      "count": "9"
+     },
+     {
+      "item": "116",
+      "count": "9"
+     },
+     {
+      "item": "225",
+      "count": "9"
+     },
+     {
+      "item": "2034",
+      "count": "7"
+     },
+     {
+      "item": "1009",
+      "count": "7"
+     },
+     {
+      "item": "1068",
+      "count": "7"
+     },
+     {
+      "item": "120",
+      "count": "6"
+     },
+     {
+      "item": "109",
+      "count": "6"
+     }
+    ],
+    "smallest": "0",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511244,
+   "name": "CONTRIB_NO_RECAUDADAS_6_MESES",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "contrib_no_recaudadas_6_meses",
+   "position": 33,
+   "renderTypeName": "number",
+   "tableColumnId": 143615562,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "528402",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "402329"
+     },
+     {
+      "item": "135.88",
+      "count": "3"
+     },
+     {
+      "item": "132.7",
+      "count": "2"
+     },
+     {
+      "item": "141.37",
+      "count": "2"
+     },
+     {
+      "item": "139.55",
+      "count": "2"
+     },
+     {
+      "item": "117",
+      "count": "2"
+     },
+     {
+      "item": "128.26",
+      "count": "2"
+     },
+     {
+      "item": "1033",
+      "count": "2"
+     },
+     {
+      "item": "4432",
+      "count": "2"
+     },
+     {
+      "item": "129.14",
+      "count": "2"
+     },
+     {
+      "item": "17304.22",
+      "count": "2"
+     },
+     {
+      "item": "132.36",
+      "count": "1"
+     },
+     {
+      "item": "115",
+      "count": "1"
+     },
+     {
+      "item": "70.94",
+      "count": "1"
+     },
+     {
+      "item": "234",
+      "count": "1"
+     },
+     {
+      "item": "114",
+      "count": "1"
+     },
+     {
+      "item": "233",
+      "count": "1"
+     },
+     {
+      "item": "231",
+      "count": "1"
+     },
+     {
+      "item": "125.5",
+      "count": "1"
+     },
+     {
+      "item": "140.89",
+      "count": "1"
+     }
+    ],
+    "smallest": "0",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511260,
+   "name": "CONTRIBUCIONES_RECAUDADAS",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "contribuciones_recaudadas",
+   "position": 34,
+   "renderTypeName": "number",
+   "tableColumnId": 143615578,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "1344632",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "402365"
+     },
+     {
+      "item": "8311",
+      "count": "4"
+     },
+     {
+      "item": "13817",
+      "count": "4"
+     },
+     {
+      "item": "2778",
+      "count": "3"
+     },
+     {
+      "item": "10000",
+      "count": "3"
+     },
+     {
+      "item": "18282",
+      "count": "2"
+     },
+     {
+      "item": "4596",
+      "count": "2"
+     },
+     {
+      "item": "15266",
+      "count": "2"
+     },
+     {
+      "item": "265.4",
+      "count": "1"
+     },
+     {
+      "item": "845.16",
+      "count": "1"
+     },
+     {
+      "item": "132.7",
+      "count": "1"
+     },
+     {
+      "item": "916",
+      "count": "1"
+     },
+     {
+      "item": "1016.83",
+      "count": "1"
+     },
+     {
+      "item": "1366",
+      "count": "1"
+     },
+     {
+      "item": "106",
+      "count": "1"
+     },
+     {
+      "item": "808.92",
+      "count": "1"
+     },
+     {
+      "item": "2436",
+      "count": "1"
+     },
+     {
+      "item": "645.68",
+      "count": "1"
+     },
+     {
+      "item": "129.14",
+      "count": "1"
+     },
+     {
+      "item": "2261.92",
+      "count": "1"
+     }
+    ],
+    "smallest": "0",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511309,
+   "name": "TARIFA_APLICADA",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "tarifa_aplicada",
+   "position": 35,
+   "renderTypeName": "number",
+   "tableColumnId": 143615628,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "885.955",
+    "null": "0",
+    "top": [
+     {
+      "item": "782",
+      "count": "36708"
+     },
+     {
+      "item": "774",
+      "count": "36632"
+     },
+     {
+      "item": "767",
+      "count": "36570"
+     },
+     {
+      "item": "768.511",
+      "count": "18881"
+     },
+     {
+      "item": "775.4276",
+      "count": "18490"
+     },
+     {
+      "item": "841.2118",
+      "count": "9803"
+     },
+     {
+      "item": "792.6926",
+      "count": "9711"
+     },
+     {
+      "item": "758.1209",
+      "count": "9596"
+     },
+     {
+      "item": "875.1967",
+      "count": "9453"
+     },
+     {
+      "item": "858.036",
+      "count": "9397"
+     },
+     {
+      "item": "824.7174",
+      "count": "9347"
+     },
+     {
+      "item": "808.5466",
+      "count": "9320"
+     },
+     {
+      "item": "777.1496",
+      "count": "9259"
+     },
+     {
+      "item": "773.2832",
+      "count": "9218"
+     },
+     {
+      "item": "732",
+      "count": "6195"
+     },
+     {
+      "item": "739",
+      "count": "6185"
+     },
+     {
+      "item": "725",
+      "count": "6112"
+     },
+     {
+      "item": "711.1041",
+      "count": "5518"
+     },
+     {
+      "item": "717.5041",
+      "count": "5474"
+     },
+     {
+      "item": "640.4258",
+      "count": "3235"
+     }
+    ],
+    "smallest": "0",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511247,
+   "name": "FECHA_DE_REGISTRO_CONTABLE",
+   "dataTypeName": "calendar_date",
+   "description": "",
+   "fieldName": "fecha_de_registro_contable",
+   "position": 36,
+   "renderTypeName": "calendar_date",
+   "tableColumnId": 143615565,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "2022-06-30T00:00:00.000",
+    "null": "0",
+    "top": [
+     {
+      "item": "2021-09-30T00:00:00.000",
+      "count": "67912"
+     },
+     {
+      "item": "2021-07-31T00:00:00.000",
+      "count": "51008"
+     },
+     {
+      "item": "2021-08-31T00:00:00.000",
+      "count": "50694"
+     },
+     {
+      "item": "2021-08-30T00:00:00.000",
+      "count": "45958"
+     },
+     {
+      "item": "2021-07-30T00:00:00.000",
+      "count": "45827"
+     },
+     {
+      "item": "2021-10-31T00:00:00.000",
+      "count": "20366"
+     },
+     {
+      "item": "2021-12-31T00:00:00.000",
+      "count": "19329"
+     },
+     {
+      "item": "2022-03-31T00:00:00.000",
+      "count": "18466"
+     },
+     {
+      "item": "2022-02-28T00:00:00.000",
+      "count": "18274"
+     },
+     {
+      "item": "2022-01-31T00:00:00.000",
+      "count": "18259"
+     },
+     {
+      "item": "2021-11-30T00:00:00.000",
+      "count": "17367"
+     },
+     {
+      "item": "2022-04-30T00:00:00.000",
+      "count": "4065"
+     },
+     {
+      "item": "2021-10-16T00:00:00.000",
+      "count": "3879"
+     },
+     {
+      "item": "2021-09-16T00:00:00.000",
+      "count": "3869"
+     },
+     {
+      "item": "2021-08-16T00:00:00.000",
+      "count": "3842"
+     },
+     {
+      "item": "2021-07-16T00:00:00.000",
+      "count": "3817"
+     },
+     {
+      "item": "2022-03-01T00:00:00.000",
+      "count": "1153"
+     },
+     {
+      "item": "2022-06-30T00:00:00.000",
+      "count": "988"
+     },
+     {
+      "item": "2021-09-01T00:00:00.000",
+      "count": "586"
+     },
+     {
+      "item": "2021-12-01T00:00:00.000",
+      "count": "585"
+     }
+    ],
+    "smallest": "2021-01-31T00:00:00.000",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511242,
+   "name": "TARIFA_ENERGIA_REACTIVA",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "tarifa_energia_reactiva",
+   "position": 37,
+   "renderTypeName": "number",
+   "tableColumnId": 143615560,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "674.622",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "353813"
+     },
+     {
+      "item": "224.412",
+      "count": "2955"
+     },
+     {
+      "item": "209.052",
+      "count": "2937"
+     },
+     {
+      "item": "203.88",
+      "count": "2926"
+     },
+     {
+      "item": "206.352",
+      "count": "2908"
+     },
+     {
+      "item": "211.596",
+      "count": "2896"
+     },
+     {
+      "item": "302.772",
+      "count": "2889"
+     },
+     {
+      "item": "285.312",
+      "count": "2875"
+     },
+     {
+      "item": "282.612",
+      "count": "2872"
+     },
+     {
+      "item": "300.9",
+      "count": "2867"
+     },
+     {
+      "item": "282.624",
+      "count": "2862"
+     },
+     {
+      "item": "175.799",
+      "count": "729"
+     },
+     {
+      "item": "180.924",
+      "count": "717"
+     },
+     {
+      "item": "235.51",
+      "count": "444"
+     },
+     {
+      "item": "169.9",
+      "count": "394"
+     },
+     {
+      "item": "174.21",
+      "count": "394"
+     },
+     {
+      "item": "187.01",
+      "count": "393"
+     },
+     {
+      "item": "171.96",
+      "count": "391"
+     },
+     {
+      "item": "176.33",
+      "count": "390"
+     },
+     {
+      "item": "252.31",
+      "count": "389"
+     }
+    ],
+    "smallest": "0",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511319,
+   "name": "CAR_T440_TIPO_FACT",
+   "dataTypeName": "text",
+   "description": "",
+   "fieldName": "car_t440_tipo_fact",
+   "position": 38,
+   "renderTypeName": "text",
+   "tableColumnId": 143615637,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "L",
+    "null": "0",
+    "top": [
+     {
+      "item": "I",
+      "count": "397923"
+     },
+     {
+      "item": "L",
+      "count": "4577"
+     }
+    ],
+    "smallest": "I",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511318,
+   "name": "VALOR_SUBSIDIO",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "valor_subsidio",
+   "position": 39,
+   "renderTypeName": "number",
+   "tableColumnId": 143615636,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "278387022",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "402347"
+     },
+     {
+      "item": "1754",
+      "count": "1"
+     },
+     {
+      "item": "74623",
+      "count": "1"
+     },
+     {
+      "item": "26345",
+      "count": "1"
+     },
+     {
+      "item": "32661",
+      "count": "1"
+     },
+     {
+      "item": "38125",
+      "count": "1"
+     },
+     {
+      "item": "45674",
+      "count": "1"
+     },
+     {
+      "item": "53095",
+      "count": "1"
+     },
+     {
+      "item": "65351",
+      "count": "1"
+     },
+     {
+      "item": "65771",
+      "count": "1"
+     },
+     {
+      "item": "71111",
+      "count": "1"
+     },
+     {
+      "item": "71728",
+      "count": "1"
+     },
+     {
+      "item": "73338",
+      "count": "1"
+     },
+     {
+      "item": "73798",
+      "count": "1"
+     },
+     {
+      "item": "12114",
+      "count": "1"
+     },
+     {
+      "item": "79764",
+      "count": "1"
+     },
+     {
+      "item": "80719",
+      "count": "1"
+     },
+     {
+      "item": "94245",
+      "count": "1"
+     },
+     {
+      "item": "103551",
+      "count": "1"
+     },
+     {
+      "item": "1250",
+      "count": "1"
+     }
+    ],
+    "smallest": "0",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511243,
+   "name": "REFACTURACION_SUBSIDIO",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "refacturacion_subsidio",
+   "position": 40,
+   "renderTypeName": "number",
+   "tableColumnId": 143615561,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "0",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "402499"
+     },
+     {
+      "item": "-215363",
+      "count": "1"
+     }
+    ],
+    "smallest": "-215363",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511327,
+   "name": "IDENTIFICADOR_EMPRESA",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "identificador_empresa",
+   "position": 41,
+   "renderTypeName": "number",
+   "tableColumnId": 143615645,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "50205",
+    "null": "0",
+    "top": [
+     {
+      "item": "600",
+      "count": "137846"
+     },
+     {
+      "item": "3370",
+      "count": "126947"
+     },
+     {
+      "item": "1014",
+      "count": "61715"
+     },
+     {
+      "item": "2371",
+      "count": "36052"
+     },
+     {
+      "item": "2016",
+      "count": "15403"
+     },
+     {
+      "item": "3076",
+      "count": "10959"
+     },
+     {
+      "item": "569",
+      "count": "6869"
+     },
+     {
+      "item": "1846",
+      "count": "3714"
+     },
+     {
+      "item": "2322",
+      "count": "1118"
+     },
+     {
+      "item": "694",
+      "count": "940"
+     },
+     {
+      "item": "2020",
+      "count": "464"
+     },
+     {
+      "item": "597",
+      "count": "118"
+     },
+     {
+      "item": "564",
+      "count": "51"
+     },
+     {
+      "item": "23330",
+      "count": "46"
+     },
+     {
+      "item": "41335",
+      "count": "36"
+     },
+     {
+      "item": "536",
+      "count": "35"
+     },
+     {
+      "item": "480",
+      "count": "33"
+     },
+     {
+      "item": "26641",
+      "count": "33"
+     },
+     {
+      "item": "27691",
+      "count": "30"
+     },
+     {
+      "item": "48305",
+      "count": "28"
+     }
+    ],
+    "smallest": "480",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511250,
+   "name": "ARE_ESP_NOMBRE",
+   "dataTypeName": "text",
+   "description": "",
+   "fieldName": "are_esp_nombre",
+   "position": 42,
+   "renderTypeName": "text",
+   "tableColumnId": 143615568,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "VATIA S.A. E.S.P.",
+    "null": "0",
+    "top": [
+     {
+      "item": "ELECTRIFICADORA DEL META S.A. E.S.P.",
+      "count": "137846"
+     },
+     {
+      "item": "EMPRESA DE ENERGIA DE CASANARE SA ESP",
+      "count": "126947"
+     },
+     {
+      "item": "ELECTRIFICADORA DEL HUILA S.A. E.S.P.",
+      "count": "61715"
+     },
+     {
+      "item": "EMPRESA DE ENERGIA DEL BAJO PUTUMAYO  S.A.  E.S.P.",
+      "count": "36052"
+     },
+     {
+      "item": "EMPRESA DE ENERGIA DEL PUTUMAYO S.A. ESP",
+      "count": "15403"
+     },
+     {
+      "item": "EMPRESA DE ENERGIA ELECTRICA DEL DEPARTAMENTO DEL GUAVIARE SA ESP",
+      "count": "10959"
+     },
+     {
+      "item": "EMPRESA MUNICIPAL DE SERVICIOS PUBLICOS DE CARTAGENA DEL CHAIRA",
+      "count": "6869"
+     },
+     {
+      "item": "EMPRESA DE ENERGIA DEL VALLE DE SIBUNDOY S.A. E.S.P.",
+      "count": "3714"
+     },
+     {
+      "item": "VATIA S.A. E.S.P.",
+      "count": "1118"
+     },
+     {
+      "item": "EMPRESA MUNICIPAL DE ENERGÍA ELÉCTRICA S.A-E.S.P",
+      "count": "508"
+     },
+     {
+      "item": "DISTRIBUIDORA Y COMERCIALIZADORA DE ENERGIA ELECTRICA S.A. E.S.P.",
+      "count": "464"
+     },
+     {
+      "item": "EMPRESA MUNICIPAL DE ENERG�A EL�CTRICA S.A-E.S.P",
+      "count": "432"
+     },
+     {
+      "item": "ENEL COLOMBIA S.A. E.S.P.",
+      "count": "118"
+     },
+     {
+      "item": "EMPRESAS P�BLICAS DE MEDELLIN E.S.P.",
+      "count": "45"
+     },
+     {
+      "item": "PROFESIONALES EN ENERG�A S.A E.S.P",
+      "count": "43"
+     },
+     {
+      "item": "CELSIA COLOMBIA S.A. E.S.P.",
+      "count": "35"
+     },
+     {
+      "item": "SPECTRUM RENOVAVEIS SAS ESP",
+      "count": "33"
+     },
+     {
+      "item": "ISAGEN S.A. E.S.P.",
+      "count": "33"
+     },
+     {
+      "item": "QI ENERGY SAS ESP",
+      "count": "30"
+     },
+     {
+      "item": "CARIBEMAR DE LA COSTA S.A.S. E.S.P.",
+      "count": "28"
+     }
+    ],
+    "smallest": "CARIBEMAR DE LA COSTA S.A.S. E.S.P.",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511262,
+   "name": "CAR_CARG_ANO",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "car_carg_ano",
+   "position": 43,
+   "renderTypeName": "number",
+   "tableColumnId": 143615580,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "2022",
+    "null": "0",
+    "top": [
+     {
+      "item": "2021",
+      "count": "338969"
+     },
+     {
+      "item": "2022",
+      "count": "63531"
+     }
+    ],
+    "smallest": "2021",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511253,
+   "name": "CAR_CARG_MES",
+   "dataTypeName": "number",
+   "description": "",
+   "fieldName": "car_carg_mes",
+   "position": 44,
+   "renderTypeName": "number",
+   "tableColumnId": 143615571,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "12",
+    "null": "0",
+    "top": [
+     {
+      "item": "8",
+      "count": "101986"
+     },
+     {
+      "item": "7",
+      "count": "101608"
+     },
+     {
+      "item": "9",
+      "count": "72384"
+     },
+     {
+      "item": "10",
+      "count": "24936"
+     },
+     {
+      "item": "12",
+      "count": "19709"
+     },
+     {
+      "item": "3",
+      "count": "19087"
+     },
+     {
+      "item": "1",
+      "count": "18934"
+     },
+     {
+      "item": "2",
+      "count": "18901"
+     },
+     {
+      "item": "11",
+      "count": "18346"
+     },
+     {
+      "item": "4",
+      "count": "4644"
+     },
+     {
+      "item": "6",
+      "count": "988"
+     },
+     {
+      "item": "5",
+      "count": "977"
+     }
+    ],
+    "smallest": "1",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511264,
+   "name": "DANE_NOM_DPTO",
+   "dataTypeName": "text",
+   "description": "",
+   "fieldName": "dane_nom_dpto",
+   "position": 45,
+   "renderTypeName": "text",
+   "tableColumnId": 143615582,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "TOLIMA",
+    "null": "0",
+    "top": [
+     {
+      "item": "META",
+      "count": "141523"
+     },
+     {
+      "item": "CASANARE",
+      "count": "125729"
+     },
+     {
+      "item": "HUILA",
+      "count": "62039"
+     },
+     {
+      "item": "PUTUMAYO",
+      "count": "54970"
+     },
+     {
+      "item": "GUAVIARE",
+      "count": "9987"
+     },
+     {
+      "item": "CAQUETÁ",
+      "count": "3449"
+     },
+     {
+      "item": "CAQUETA",
+      "count": "3424"
+     },
+     {
+      "item": "CAUCA",
+      "count": "1279"
+     },
+     {
+      "item": "BOYACA",
+      "count": "58"
+     },
+     {
+      "item": "BOYACÁ",
+      "count": "29"
+     },
+     {
+      "item": "TOLIMA",
+      "count": "10"
+     },
+     {
+      "item": "CESAR",
+      "count": "1"
+     },
+     {
+      "item": "SUCRE",
+      "count": "1"
+     },
+     {
+      "item": "CALDAS",
+      "count": "1"
+     }
+    ],
+    "smallest": "BOYACA",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511323,
+   "name": "DANE_NOM_MPIO",
+   "dataTypeName": "text",
+   "description": "",
+   "fieldName": "dane_nom_mpio",
+   "position": 46,
+   "renderTypeName": "text",
+   "tableColumnId": 143615641,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "YOPAL",
+    "null": "0",
+    "top": [
+     {
+      "item": "VILLAVICENCIO",
+      "count": "79590"
+     },
+     {
+      "item": "YOPAL",
+      "count": "66293"
+     },
+     {
+      "item": "NEIVA",
+      "count": "27408"
+     },
+     {
+      "item": "PUERTO ASIS",
+      "count": "17212"
+     },
+     {
+      "item": "ACACIAS",
+      "count": "13148"
+     },
+     {
+      "item": "GRANADA",
+      "count": "10974"
+     },
+     {
+      "item": "AGUAZUL",
+      "count": "10895"
+     },
+     {
+      "item": "VALLE DEL GUAMUEZ",
+      "count": "10434"
+     },
+     {
+      "item": "VILLANUEVA",
+      "count": "9829"
+     },
+     {
+      "item": "PAZ DE ARIPORO",
+      "count": "9461"
+     },
+     {
+      "item": "PITALITO",
+      "count": "9065"
+     },
+     {
+      "item": "SAN JOSE DEL GUAVIARE",
+      "count": "7030"
+     },
+     {
+      "item": "MOCOA",
+      "count": "7027"
+     },
+     {
+      "item": "CARTAGENA DEL CHAIRA",
+      "count": "6869"
+     },
+     {
+      "item": "TAURAMENA",
+      "count": "6552"
+     },
+     {
+      "item": "ORITO",
+      "count": "5408"
+     },
+     {
+      "item": "PUERTO GAITAN",
+      "count": "5210"
+     },
+     {
+      "item": "PUERTO LOPEZ",
+      "count": "4691"
+     },
+     {
+      "item": "MONTERREY",
+      "count": "4472"
+     },
+     {
+      "item": "SAN MIGUEL",
+      "count": "4014"
+     }
+    ],
+    "smallest": "ACACIAS",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511249,
+   "name": "DANE_NOM_POBLAD",
+   "dataTypeName": "text",
+   "description": "",
+   "fieldName": "dane_nom_poblad",
+   "position": 47,
+   "renderTypeName": "text",
+   "tableColumnId": 143615567,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "YOPAL",
+    "null": "0",
+    "top": [
+     {
+      "item": "VILLAVICENCIO",
+      "count": "79590"
+     },
+     {
+      "item": "YOPAL",
+      "count": "66293"
+     },
+     {
+      "item": "NEIVA",
+      "count": "27408"
+     },
+     {
+      "item": "PUERTO ASIS",
+      "count": "16259"
+     },
+     {
+      "item": "ACACIAS",
+      "count": "13148"
+     },
+     {
+      "item": "GRANADA",
+      "count": "10974"
+     },
+     {
+      "item": "AGUAZUL",
+      "count": "10895"
+     },
+     {
+      "item": "VILLANUEVA",
+      "count": "9829"
+     },
+     {
+      "item": "LA HORMIGA",
+      "count": "9505"
+     },
+     {
+      "item": "PAZ DE ARIPORO",
+      "count": "9461"
+     },
+     {
+      "item": "PITALITO",
+      "count": "9065"
+     },
+     {
+      "item": "SAN JOSE DEL GUAVIARE",
+      "count": "7030"
+     },
+     {
+      "item": "CARTAGENA DEL CHAIRA",
+      "count": "6869"
+     },
+     {
+      "item": "MOCOA",
+      "count": "6761"
+     },
+     {
+      "item": "TAURAMENA",
+      "count": "6552"
+     },
+     {
+      "item": "PUERTO GAITAN",
+      "count": "5210"
+     },
+     {
+      "item": "ORITO",
+      "count": "4789"
+     },
+     {
+      "item": "PUERTO LOPEZ",
+      "count": "4691"
+     },
+     {
+      "item": "MONTERREY",
+      "count": "4472"
+     },
+     {
+      "item": "GARZON",
+      "count": "3984"
+     }
+    ],
+    "smallest": "ACACIAS",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  },
+  {
+   "id": 565511254,
+   "name": "NOM_MERCADO",
+   "dataTypeName": "text",
+   "description": "",
+   "fieldName": "nom_mercado",
+   "position": 48,
+   "renderTypeName": "text",
+   "tableColumnId": 143615572,
+   "cachedContents": {
+    "non_null": "402500",
+    "largest": "SIBUNDOY",
+    "null": "0",
+    "top": [
+     {
+      "item": "META",
+      "count": "138484"
+     },
+     {
+      "item": "CASANARE",
+      "count": "127886"
+     },
+     {
+      "item": "HUILA",
+      "count": "62113"
+     },
+     {
+      "item": "BAJO PUTUMAYO",
+      "count": "36084"
+     },
+     {
+      "item": "PUTUMAYO",
+      "count": "15451"
+     },
+     {
+      "item": "GUAVIARE",
+      "count": "10959"
+     },
+     {
+      "item": "CHAIRA (Solo reporta INFO EMSERPUCAR)",
+      "count": "6869"
+     },
+     {
+      "item": "SIBUNDOY",
+      "count": "3714"
+     },
+     {
+      "item": "POPAYAN - PURACE",
+      "count": "940"
+     }
+    ],
+    "smallest": "BAJO PUTUMAYO",
+    "count": "402500",
+    "cardinality": "402500"
+   },
+   "format": {}
+  }
+ ],
+ "grants": [
+  {
+   "inherited": false,
+   "type": "viewer",
+   "flags": [
+    "public"
+   ]
+  }
+ ],
+ "license": {
+  "name": "Creative Commons Attribution | Share Alike 4.0 International",
+  "logoUrl": "images/licenses/cc30bysa.png",
+  "termsLink": "http://creativecommons.org/licenses/by-sa/4.0/legalcode"
+ },
+ "metadata": {
+  "custom_fields": {
+   "Información de la Entidad": {
+    "Municipio": "Bogotá D.C.",
+    "Nombre de la Entidad": "Superintendencia de Servicios Públicos Domiciliarios - SUPERSERVICIOS, Bogotá D.C.",
+    "DIVIPOLA Municipio": "11001",
+    "Orden": "Nacional",
+    "Sector": "Planeación",
+    "Departamento": "Bogotá D.C."
+   },
+   "Información de Datos": {
+    "Cobertura Geográfica": "Nacional",
+    "Idioma": "Español",
+    "Frecuencia de Actualización": "Semestral"
+   }
+  }
+ },
+ "owner": {
+  "id": "bfay-vveq",
+  "displayName": "Superintendencia de Servicios Públicos Domiciliarios - Planeación",
+  "screenName": "Superintendencia de Servicios Públicos Domiciliarios - Planeación",
+  "type": "interactive",
+  "flags": [
+   "acceptedEula",
+   "mayBeStoriesCoOwner"
+  ]
+ },
+ "query": {},
+ "rights": [
+  "read"
+ ],
+ "tableAuthor": {
+  "id": "bfay-vveq",
+  "displayName": "Superintendencia de Servicios Públicos Domiciliarios - Planeación",
+  "screenName": "Superintendencia de Servicios Públicos Domiciliarios - Planeación",
+  "type": "interactive",
+  "flags": [
+   "acceptedEula",
+   "mayBeStoriesCoOwner"
+  ]
+ },
+ "flags": [
+  "default",
+  "ownerMayBeContacted",
+  "restorable",
+  "restorePossibleForType"
+ ]
+}

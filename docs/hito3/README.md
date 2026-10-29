@@ -10,14 +10,14 @@ sobre el consumidor del dato que allí se declare. Ese bloque sigue pendiente de
 
 ## Punto 1 · Matriz OE1
 
-El punto 1 queda desarrollado como especificación documental para EPM, CHEC y SSPD. No se modificó el código del Hito 2.
+El punto 1 queda desarrollado como especificación documental para cuatro fuentes: EPM, CHEC, SSPD (Zonas No Interconectadas) y SSPD-NR (no residencial del Sistema Interconectado). No se modificó el código del Hito 2.
 
 Los tres archivos de la matriz incluyen además la **línea base medida** sobre los CSV conservados en `fuentes_datos/datos/`: resultado, estado y nota por control y fuente. La especificación no se modificó; solo se llenó el casillero de resultado que quedaba en `null`.
 
 ## Archivos
 
 - [Matriz y fichas explicadas](matriz_oe1.md): lectura principal, ocho dimensiones, diez tipos de regla y diecinueve indicadores, con el resultado de cada ficha y la sección de línea base.
-- [Matriz CSV](matriz_oe1.csv): 57 filas (19 controles × 3 fuentes), legible en Excel con UTF-8 y separador coma; incluye las columnas de resultado.
+- [Matriz CSV](matriz_oe1.csv): 76 filas (19 controles × 4 fuentes), legible en Excel con UTF-8 y separador coma; incluye las columnas de resultado.
 - [Especificación YAML](matriz_oe1.yaml): definiciones, fórmulas, parámetros, decisiones de medición y bloque `resultado` por fuente. Es documental; no es un motor de reglas ejecutado.
 - [Plantilla de exactitud](plantilla_exactitud.csv): contraste de una muestra con publicaciones verificadas.
 - [Plantilla de oportunidad](plantilla_oportunidad.csv): plazos, evidencia temporal e intervalos de disponibilidad.
@@ -40,7 +40,9 @@ La especificación la elaboró el entregable anterior; esta entrega añade el re
 
 Cobertura actual: **17 de los 19 controles** tienen valor en al menos una fuente, y **siete de las ocho dimensiones** están medidas. Siguen sin ningún valor **OPO01 y CART01**: el primero porque ninguna de las tres fuentes publica la fecha real de disponibilidad por período, el segundo porque las cartas de la actividad 5 todavía no se ejecutan. La dimensión sin ninguna medición sigue siendo **oportunidad**.
 
-La tercera fuente añadió valor a **MAP01 y DEF01**, que antes no tenían ninguno. DEF01 da 0 % sobre SSPD y queda en `medido`: no falta evidencia para evaluarlo, la evidencia existe y dice que el publicador no define ninguna de sus 29 columnas.
+La tercera fuente añadió valor a **MAP01 y DEF01**, que antes no tenían ninguno. DEF01 da 0 % sobre SSPD y SSPD-NR y queda en `medido`: no falta evidencia para evaluarlo, la evidencia existe y dice que el publicador no define ninguna de sus columnas.
+
+La cuarta fuente devolvió a **R08, R09 e INT02** un caso donde medirse. En SSPD quedaron `no_aplica` porque su esquema no tiene eje de propiedad ni pares código-nombre; SSPD-NR sí los tiene, y los mide en 92,24 %, 98,60 % y 98,75 % respectivamente.
 
 Cada valor va acompañado de su numerador, su denominador y una nota que declara los supuestos aplicados. Las cifras se recalculan ejecutando el script; no se transcriben a mano.
 

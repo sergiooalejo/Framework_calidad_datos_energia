@@ -67,6 +67,60 @@ A cambio aporta algo que las otras dos no tienen: **91 publicadores en un mismo 
 Validar el framework en dos empresas grandes y después en 91 operadores pequeños con poca
 capacidad de reporte es un argumento de transferibilidad bastante más fuerte.
 
+## SSPD-NR — Información comercial no residencial
+
+- Portal: https://www.datos.gov.co/d/bnkp-xdb7
+- CSV: `datos/sspd_bnkp-xdb7.csv`. Diccionario: `diccionarios/sspd_nr.yaml`.
+- Volumen: **402.500 filas y 48 columnas**, conservadas íntegras.
+- Cobertura: **julio de 2021 a junio de 2022, 12 períodos mensuales.**
+
+Entra para resolver la limitación declarada de la fuente anterior. SSPD aporta los 59 meses
+que las cartas necesitan pero es de Zonas No Interconectadas; esta es del **Sistema
+Interconectado Nacional** —32 prestadores en Meta, Casanare, Huila, Putumayo, Guaviare y
+Caquetá, encabezados por Electrificadora del Meta y Electrificadora del Huila—, de modo que
+le aplica el mismo régimen regulatorio que a EPM y CHEC.
+
+Aporta además tres cosas que ninguna otra fuente del proyecto tiene:
+
+1. **`tarifa_aplicada`**, con promedio de 758,98 $/kWh. Es el costo unitario que EPM y CHEC
+   publican como especificación, aquí aplicado a una factura concreta. Es el puente entre el
+   dominio tarifario y el consumo observado.
+2. **`car_t440_car_inver` con valores 100, 50 y 0**: el eje de propiedad del activo. Por eso
+   **R08 y R09 vuelven a ser aplicables**, cuando en la fuente ZNI quedaron `no_aplica`.
+3. **Energía reactiva** y **pares código-nombre** (empresa y mercado), que devuelven a INT02
+   un caso donde medirse.
+
+**Su limitación es el espejo de la anterior.** Solo tiene 12 períodos, por debajo de los 49
+que exige el protocolo, así que CART01 no es ejecutable sobre ella. Y el volumen se desploma
+dentro de la propia ventana: 101.608 registros en 2021-07 frente a 977 en 2022-05, de modo
+que los períodos útiles son unos nueve. Eso es un defecto de completitud de la fuente y está
+declarado como tal, no disimulado.
+
+**Sobre la oportunidad, una precisión que conviene no perder.** La fuente trae
+`car_t440_fec_exp`, fecha de expedición de la factura. Permite medir el rezago entre el
+período facturado y la emisión, pero eso es **oportunidad del servicio, no del dato**. OPO01
+está especificado sobre la disponibilidad de la publicación, así que esta evidencia no lo
+cierra tal como está escrito: habría que reespecificar el control o registrarlo como un
+indicador distinto. No se fuerza.
+
+## Por qué cuatro fuentes y no tres
+
+Las dos fuentes de consumo cubren huecos opuestos y ninguna sola basta:
+
+| | SSPD (ZNI) | SSPD-NR (interconectado) |
+|---|---|---|
+| Períodos mensuales | **59** | 12 |
+| Régimen | Zonas No Interconectadas | **Sistema Interconectado** |
+| Tarifa aplicada | no | **sí** |
+| Eje de propiedad | no | **sí** |
+| Pares código-nombre | no | **sí** |
+| Energía reactiva | no | **sí** |
+
+Con la primera se pueden construir las series que exigen las cartas; con la segunda se
+sostiene que el framework se aplicó al mismo régimen regulatorio de EPM y CHEC. El costo es
+real y conviene decirlo: cada fuente añadida arrastra la obligación de evaluarle las ocho
+dimensiones, y esa obligación todavía no está cerrada en ninguna.
+
 ## Utilidad de la pareja
 
 Mantiene el dominio del trabajo realizado y permite contrastar dos estructuras tarifarias. Se propone un núcleo común y adaptadores por fuente. R08 y R09 deben traducirse al esquema de CHEC: copiar literalmente el código EPM no sería una réplica válida.

@@ -1,0 +1,570 @@
+campo_codigo,campo_nombre,codigo,nombre,n_registros
+car_t440_dane,dane_nom_dpto,15667000,BOYACA,58
+car_t440_dane,dane_nom_dpto,15667000,BOYACÁ,29
+car_t440_dane,dane_nom_dpto,17380000,CALDAS,1
+car_t440_dane,dane_nom_dpto,18150000,CAQUETA,3420
+car_t440_dane,dane_nom_dpto,18150000,CAQUETÁ,3449
+car_t440_dane,dane_nom_dpto,18753000,CAQUETA,4
+car_t440_dane,dane_nom_dpto,19001000,CAUCA,505
+car_t440_dane,dane_nom_dpto,19517000,CAUCA,60
+car_t440_dane,dane_nom_dpto,19533000,CAUCA,199
+car_t440_dane,dane_nom_dpto,19533001,CAUCA,12
+car_t440_dane,dane_nom_dpto,19533003,CAUCA,48
+car_t440_dane,dane_nom_dpto,19533005,CAUCA,20
+car_t440_dane,dane_nom_dpto,19585000,CAUCA,435
+car_t440_dane,dane_nom_dpto,20621000,CESAR,1
+car_t440_dane,dane_nom_dpto,41001000,HUILA,27408
+car_t440_dane,dane_nom_dpto,41006000,HUILA,888
+car_t440_dane,dane_nom_dpto,41013000,HUILA,430
+car_t440_dane,dane_nom_dpto,41016000,HUILA,754
+car_t440_dane,dane_nom_dpto,41020000,HUILA,889
+car_t440_dane,dane_nom_dpto,41026000,HUILA,320
+car_t440_dane,dane_nom_dpto,41078000,HUILA,282
+car_t440_dane,dane_nom_dpto,41132000,HUILA,1439
+car_t440_dane,dane_nom_dpto,41206000,HUILA,227
+car_t440_dane,dane_nom_dpto,41244000,HUILA,124
+car_t440_dane,dane_nom_dpto,41298000,HUILA,3984
+car_t440_dane,dane_nom_dpto,41306000,HUILA,1182
+car_t440_dane,dane_nom_dpto,41319000,HUILA,668
+car_t440_dane,dane_nom_dpto,41349000,HUILA,294
+car_t440_dane,dane_nom_dpto,41357000,HUILA,338
+car_t440_dane,dane_nom_dpto,41359000,HUILA,843
+car_t440_dane,dane_nom_dpto,41378000,HUILA,252
+car_t440_dane,dane_nom_dpto,41396000,HUILA,2331
+car_t440_dane,dane_nom_dpto,41483000,HUILA,245
+car_t440_dane,dane_nom_dpto,41503000,HUILA,232
+car_t440_dane,dane_nom_dpto,41518000,HUILA,210
+car_t440_dane,dane_nom_dpto,41524000,HUILA,2130
+car_t440_dane,dane_nom_dpto,41530000,HUILA,343
+car_t440_dane,dane_nom_dpto,41548000,HUILA,475
+car_t440_dane,dane_nom_dpto,41551000,HUILA,9065
+car_t440_dane,dane_nom_dpto,41615000,HUILA,1070
+car_t440_dane,dane_nom_dpto,41660000,HUILA,368
+car_t440_dane,dane_nom_dpto,41668000,HUILA,1190
+car_t440_dane,dane_nom_dpto,41676000,HUILA,422
+car_t440_dane,dane_nom_dpto,41770000,HUILA,568
+car_t440_dane,dane_nom_dpto,41791000,HUILA,538
+car_t440_dane,dane_nom_dpto,41797000,HUILA,404
+car_t440_dane,dane_nom_dpto,41799000,HUILA,296
+car_t440_dane,dane_nom_dpto,41801000,HUILA,355
+car_t440_dane,dane_nom_dpto,41807000,HUILA,733
+car_t440_dane,dane_nom_dpto,41872000,HUILA,289
+car_t440_dane,dane_nom_dpto,41885000,HUILA,453
+car_t440_dane,dane_nom_dpto,50001000,META,79590
+car_t440_dane,dane_nom_dpto,50006000,META,13148
+car_t440_dane,dane_nom_dpto,50110000,META,2071
+car_t440_dane,dane_nom_dpto,50124000,META,549
+car_t440_dane,dane_nom_dpto,50150000,META,1695
+car_t440_dane,dane_nom_dpto,50223000,META,917
+car_t440_dane,dane_nom_dpto,50226000,META,2687
+car_t440_dane,dane_nom_dpto,50245000,META,6
+car_t440_dane,dane_nom_dpto,50251000,META,632
+car_t440_dane,dane_nom_dpto,50270000,META,287
+car_t440_dane,dane_nom_dpto,50287000,META,1145
+car_t440_dane,dane_nom_dpto,50313000,META,10974
+car_t440_dane,dane_nom_dpto,50318000,META,2571
+car_t440_dane,dane_nom_dpto,50330000,META,860
+car_t440_dane,dane_nom_dpto,50370000,META,549
+car_t440_dane,dane_nom_dpto,50400000,META,1264
+car_t440_dane,dane_nom_dpto,50450000,META,972
+car_t440_dane,dane_nom_dpto,50568000,META,5210
+car_t440_dane,dane_nom_dpto,50573000,META,4691
+car_t440_dane,dane_nom_dpto,50577000,META,1032
+car_t440_dane,dane_nom_dpto,50590000,META,1077
+car_t440_dane,dane_nom_dpto,50606000,META,2562
+car_t440_dane,dane_nom_dpto,50680000,META,1238
+car_t440_dane,dane_nom_dpto,50683000,META,842
+car_t440_dane,dane_nom_dpto,50689000,META,3118
+car_t440_dane,dane_nom_dpto,50711000,META,1836
+car_t440_dane,dane_nom_dpto,70215000,SUCRE,1
+car_t440_dane,dane_nom_dpto,73024000,TOLIMA,4
+car_t440_dane,dane_nom_dpto,73067000,TOLIMA,5
+car_t440_dane,dane_nom_dpto,73555000,TOLIMA,1
+car_t440_dane,dane_nom_dpto,85001000,CASANARE,66293
+car_t440_dane,dane_nom_dpto,85010000,CASANARE,10895
+car_t440_dane,dane_nom_dpto,85015000,CASANARE,389
+car_t440_dane,dane_nom_dpto,85125000,CASANARE,1985
+car_t440_dane,dane_nom_dpto,85136000,CASANARE,261
+car_t440_dane,dane_nom_dpto,85139000,CASANARE,3944
+car_t440_dane,dane_nom_dpto,85162000,CASANARE,4472
+car_t440_dane,dane_nom_dpto,85225000,CASANARE,1128
+car_t440_dane,dane_nom_dpto,85230000,CASANARE,2307
+car_t440_dane,dane_nom_dpto,85250000,CASANARE,9461
+car_t440_dane,dane_nom_dpto,85263000,CASANARE,1891
+car_t440_dane,dane_nom_dpto,85279000,CASANARE,279
+car_t440_dane,dane_nom_dpto,85300000,CASANARE,741
+car_t440_dane,dane_nom_dpto,85315000,CASANARE,365
+car_t440_dane,dane_nom_dpto,85325000,CASANARE,1178
+car_t440_dane,dane_nom_dpto,85400000,CASANARE,648
+car_t440_dane,dane_nom_dpto,85410000,CASANARE,6552
+car_t440_dane,dane_nom_dpto,85430000,CASANARE,3111
+car_t440_dane,dane_nom_dpto,85440000,CASANARE,9829
+car_t440_dane,dane_nom_dpto,86001000,PUTUMAYO,6761
+car_t440_dane,dane_nom_dpto,86001002,PUTUMAYO,28
+car_t440_dane,dane_nom_dpto,86001003,PUTUMAYO,51
+car_t440_dane,dane_nom_dpto,86001004,PUTUMAYO,93
+car_t440_dane,dane_nom_dpto,86001006,PUTUMAYO,23
+car_t440_dane,dane_nom_dpto,86001014,PUTUMAYO,13
+car_t440_dane,dane_nom_dpto,86001018,PUTUMAYO,28
+car_t440_dane,dane_nom_dpto,86001019,PUTUMAYO,30
+car_t440_dane,dane_nom_dpto,86219000,PUTUMAYO,566
+car_t440_dane,dane_nom_dpto,86219001,PUTUMAYO,96
+car_t440_dane,dane_nom_dpto,86320000,PUTUMAYO,4789
+car_t440_dane,dane_nom_dpto,86320001,PUTUMAYO,86
+car_t440_dane,dane_nom_dpto,86320004,PUTUMAYO,57
+car_t440_dane,dane_nom_dpto,86320008,PUTUMAYO,24
+car_t440_dane,dane_nom_dpto,86320009,PUTUMAYO,60
+car_t440_dane,dane_nom_dpto,86320010,PUTUMAYO,206
+car_t440_dane,dane_nom_dpto,86320011,PUTUMAYO,100
+car_t440_dane,dane_nom_dpto,86320014,PUTUMAYO,8
+car_t440_dane,dane_nom_dpto,86320015,PUTUMAYO,10
+car_t440_dane,dane_nom_dpto,86320016,PUTUMAYO,64
+car_t440_dane,dane_nom_dpto,86320017,PUTUMAYO,4
+car_t440_dane,dane_nom_dpto,86568000,PUTUMAYO,16259
+car_t440_dane,dane_nom_dpto,86568019,PUTUMAYO,445
+car_t440_dane,dane_nom_dpto,86568020,PUTUMAYO,130
+car_t440_dane,dane_nom_dpto,86568026,PUTUMAYO,132
+car_t440_dane,dane_nom_dpto,86568027,PUTUMAYO,18
+car_t440_dane,dane_nom_dpto,86568029,PUTUMAYO,50
+car_t440_dane,dane_nom_dpto,86568032,PUTUMAYO,106
+car_t440_dane,dane_nom_dpto,86568033,PUTUMAYO,32
+car_t440_dane,dane_nom_dpto,86568034,PUTUMAYO,40
+car_t440_dane,dane_nom_dpto,86569000,PUTUMAYO,2927
+car_t440_dane,dane_nom_dpto,86569001,PUTUMAYO,110
+car_t440_dane,dane_nom_dpto,86569002,PUTUMAYO,60
+car_t440_dane,dane_nom_dpto,86569003,PUTUMAYO,130
+car_t440_dane,dane_nom_dpto,86569004,PUTUMAYO,20
+car_t440_dane,dane_nom_dpto,86571000,PUTUMAYO,397
+car_t440_dane,dane_nom_dpto,86571001,PUTUMAYO,8
+car_t440_dane,dane_nom_dpto,86571002,PUTUMAYO,40
+car_t440_dane,dane_nom_dpto,86571007,PUTUMAYO,34
+car_t440_dane,dane_nom_dpto,86571008,PUTUMAYO,55
+car_t440_dane,dane_nom_dpto,86571011,PUTUMAYO,8
+car_t440_dane,dane_nom_dpto,86571013,PUTUMAYO,4
+car_t440_dane,dane_nom_dpto,86749000,PUTUMAYO,1588
+car_t440_dane,dane_nom_dpto,86749001,PUTUMAYO,12
+car_t440_dane,dane_nom_dpto,86755000,PUTUMAYO,699
+car_t440_dane,dane_nom_dpto,86757000,PUTUMAYO,3396
+car_t440_dane,dane_nom_dpto,86757001,PUTUMAYO,516
+car_t440_dane,dane_nom_dpto,86757015,PUTUMAYO,10
+car_t440_dane,dane_nom_dpto,86757018,PUTUMAYO,69
+car_t440_dane,dane_nom_dpto,86757028,PUTUMAYO,23
+car_t440_dane,dane_nom_dpto,86760000,PUTUMAYO,663
+car_t440_dane,dane_nom_dpto,86760001,PUTUMAYO,90
+car_t440_dane,dane_nom_dpto,86865000,PUTUMAYO,9505
+car_t440_dane,dane_nom_dpto,86865003,PUTUMAYO,376
+car_t440_dane,dane_nom_dpto,86865004,PUTUMAYO,182
+car_t440_dane,dane_nom_dpto,86865005,PUTUMAYO,50
+car_t440_dane,dane_nom_dpto,86865008,PUTUMAYO,42
+car_t440_dane,dane_nom_dpto,86865010,PUTUMAYO,20
+car_t440_dane,dane_nom_dpto,86865011,PUTUMAYO,71
+car_t440_dane,dane_nom_dpto,86865012,PUTUMAYO,26
+car_t440_dane,dane_nom_dpto,86865014,PUTUMAYO,72
+car_t440_dane,dane_nom_dpto,86865018,PUTUMAYO,20
+car_t440_dane,dane_nom_dpto,86865021,PUTUMAYO,50
+car_t440_dane,dane_nom_dpto,86865022,PUTUMAYO,20
+car_t440_dane,dane_nom_dpto,86885000,PUTUMAYO,2905
+car_t440_dane,dane_nom_dpto,86885001,PUTUMAYO,188
+car_t440_dane,dane_nom_dpto,86885002,PUTUMAYO,28
+car_t440_dane,dane_nom_dpto,86885004,PUTUMAYO,12
+car_t440_dane,dane_nom_dpto,86885005,PUTUMAYO,8
+car_t440_dane,dane_nom_dpto,86885008,PUTUMAYO,16
+car_t440_dane,dane_nom_dpto,86885009,PUTUMAYO,203
+car_t440_dane,dane_nom_dpto,86885011,PUTUMAYO,4
+car_t440_dane,dane_nom_dpto,86885012,PUTUMAYO,4
+car_t440_dane,dane_nom_dpto,95001000,GUAVIARE,7030
+car_t440_dane,dane_nom_dpto,95015000,GUAVIARE,1239
+car_t440_dane,dane_nom_dpto,95025000,GUAVIARE,1189
+car_t440_dane,dane_nom_dpto,95025001,GUAVIARE,529
+car_t440_dane,dane_nom_mpio,15667000,SAN LUIS DE GACENO,87
+car_t440_dane,dane_nom_mpio,17380000,LA DORADA,1
+car_t440_dane,dane_nom_mpio,18150000,CARTAGENA DEL CHAIRA,6869
+car_t440_dane,dane_nom_mpio,18753000,SAN VICENTE DEL CAGUAN,4
+car_t440_dane,dane_nom_mpio,19001000,POPAYAN,505
+car_t440_dane,dane_nom_mpio,19517000,PAEZ,60
+car_t440_dane,dane_nom_mpio,19533000,PIAMONTE,199
+car_t440_dane,dane_nom_mpio,19533001,PIAMONTE,12
+car_t440_dane,dane_nom_mpio,19533003,PIAMONTE,48
+car_t440_dane,dane_nom_mpio,19533005,PIAMONTE,20
+car_t440_dane,dane_nom_mpio,19585000,PURACE,435
+car_t440_dane,dane_nom_mpio,20621000,LA PAZ,1
+car_t440_dane,dane_nom_mpio,41001000,NEIVA,27408
+car_t440_dane,dane_nom_mpio,41006000,ACEVEDO,888
+car_t440_dane,dane_nom_mpio,41013000,AGRADO,430
+car_t440_dane,dane_nom_mpio,41016000,AIPE,754
+car_t440_dane,dane_nom_mpio,41020000,ALGECIRAS,889
+car_t440_dane,dane_nom_mpio,41026000,ALTAMIRA,320
+car_t440_dane,dane_nom_mpio,41078000,BARAYA,282
+car_t440_dane,dane_nom_mpio,41132000,CAMPOALEGRE,1439
+car_t440_dane,dane_nom_mpio,41206000,COLOMBIA,227
+car_t440_dane,dane_nom_mpio,41244000,ELIAS,124
+car_t440_dane,dane_nom_mpio,41298000,GARZON,3984
+car_t440_dane,dane_nom_mpio,41306000,GIGANTE,1182
+car_t440_dane,dane_nom_mpio,41319000,GUADALUPE,668
+car_t440_dane,dane_nom_mpio,41349000,HOBO,294
+car_t440_dane,dane_nom_mpio,41357000,IQUIRA,338
+car_t440_dane,dane_nom_mpio,41359000,ISNOS,843
+car_t440_dane,dane_nom_mpio,41378000,LA ARGENTINA,252
+car_t440_dane,dane_nom_mpio,41396000,LA PLATA,2331
+car_t440_dane,dane_nom_mpio,41483000,NATAGA,245
+car_t440_dane,dane_nom_mpio,41503000,OPORAPA,232
+car_t440_dane,dane_nom_mpio,41518000,PAICOL,210
+car_t440_dane,dane_nom_mpio,41524000,PALERMO,2130
+car_t440_dane,dane_nom_mpio,41530000,PALESTINA,343
+car_t440_dane,dane_nom_mpio,41548000,PITAL,475
+car_t440_dane,dane_nom_mpio,41551000,PITALITO,9065
+car_t440_dane,dane_nom_mpio,41615000,RIVERA,1070
+car_t440_dane,dane_nom_mpio,41660000,SALADOBLANCO,368
+car_t440_dane,dane_nom_mpio,41668000,SAN AGUSTIN,1190
+car_t440_dane,dane_nom_mpio,41676000,SANTA MARIA,422
+car_t440_dane,dane_nom_mpio,41770000,SUAZA,568
+car_t440_dane,dane_nom_mpio,41791000,TARQUI,538
+car_t440_dane,dane_nom_mpio,41797000,TESALIA,404
+car_t440_dane,dane_nom_mpio,41799000,TELLO,296
+car_t440_dane,dane_nom_mpio,41801000,TERUEL,355
+car_t440_dane,dane_nom_mpio,41807000,TIMANA,733
+car_t440_dane,dane_nom_mpio,41872000,VILLAVIEJA,289
+car_t440_dane,dane_nom_mpio,41885000,YAGUARA,453
+car_t440_dane,dane_nom_mpio,50001000,VILLAVICENCIO,79590
+car_t440_dane,dane_nom_mpio,50006000,ACACIAS,13148
+car_t440_dane,dane_nom_mpio,50110000,BARRANCA DE UPIA,2071
+car_t440_dane,dane_nom_mpio,50124000,CABUYARO,549
+car_t440_dane,dane_nom_mpio,50150000,CASTILLA LA NUEVA,1695
+car_t440_dane,dane_nom_mpio,50223000,CUBARRAL,917
+car_t440_dane,dane_nom_mpio,50226000,CUMARAL,2687
+car_t440_dane,dane_nom_mpio,50245000,EL CALVARIO,6
+car_t440_dane,dane_nom_mpio,50251000,EL CASTILLO,632
+car_t440_dane,dane_nom_mpio,50270000,EL DORADO,287
+car_t440_dane,dane_nom_mpio,50287000,FUENTE DE ORO,1145
+car_t440_dane,dane_nom_mpio,50313000,GRANADA,10974
+car_t440_dane,dane_nom_mpio,50318000,GUAMAL,2571
+car_t440_dane,dane_nom_mpio,50330000,MESETAS,860
+car_t440_dane,dane_nom_mpio,50370000,URIBE,549
+car_t440_dane,dane_nom_mpio,50400000,LEJANIAS,1264
+car_t440_dane,dane_nom_mpio,50450000,PUERTO CONCORDIA,972
+car_t440_dane,dane_nom_mpio,50568000,PUERTO GAITAN,5210
+car_t440_dane,dane_nom_mpio,50573000,PUERTO LOPEZ,4691
+car_t440_dane,dane_nom_mpio,50577000,PUERTO LLERAS,1032
+car_t440_dane,dane_nom_mpio,50590000,PUERTO RICO,1077
+car_t440_dane,dane_nom_mpio,50606000,RESTREPO,2562
+car_t440_dane,dane_nom_mpio,50680000,SAN CARLOS DE GUAROA,1238
+car_t440_dane,dane_nom_mpio,50683000,SAN JUAN DE ARAMA,842
+car_t440_dane,dane_nom_mpio,50689000,SAN MARTIN,3118
+car_t440_dane,dane_nom_mpio,50711000,VISTAHERMOSA,1836
+car_t440_dane,dane_nom_mpio,70215000,COROZAL,1
+car_t440_dane,dane_nom_mpio,73024000,ALPUJARRA,4
+car_t440_dane,dane_nom_mpio,73067000,ATACO,5
+car_t440_dane,dane_nom_mpio,73555000,PLANADAS,1
+car_t440_dane,dane_nom_mpio,85001000,YOPAL,66293
+car_t440_dane,dane_nom_mpio,85010000,AGUAZUL,10895
+car_t440_dane,dane_nom_mpio,85015000,CHAMEZA,389
+car_t440_dane,dane_nom_mpio,85125000,HATO COROZAL,1985
+car_t440_dane,dane_nom_mpio,85136000,LA SALINA,261
+car_t440_dane,dane_nom_mpio,85139000,MANI,3944
+car_t440_dane,dane_nom_mpio,85162000,MONTERREY,4472
+car_t440_dane,dane_nom_mpio,85225000,NUNCHIA,1128
+car_t440_dane,dane_nom_mpio,85230000,OROCUE,2307
+car_t440_dane,dane_nom_mpio,85250000,PAZ DE ARIPORO,9461
+car_t440_dane,dane_nom_mpio,85263000,PORE,1891
+car_t440_dane,dane_nom_mpio,85279000,RECETOR,279
+car_t440_dane,dane_nom_mpio,85300000,SABANALARGA,741
+car_t440_dane,dane_nom_mpio,85315000,SACAMA,365
+car_t440_dane,dane_nom_mpio,85325000,SAN LUIS DE PALENQUE,1178
+car_t440_dane,dane_nom_mpio,85400000,TAMARA,648
+car_t440_dane,dane_nom_mpio,85410000,TAURAMENA,6552
+car_t440_dane,dane_nom_mpio,85430000,TRINIDAD,3111
+car_t440_dane,dane_nom_mpio,85440000,VILLANUEVA,9829
+car_t440_dane,dane_nom_mpio,86001000,MOCOA,6761
+car_t440_dane,dane_nom_mpio,86001002,MOCOA,28
+car_t440_dane,dane_nom_mpio,86001003,MOCOA,51
+car_t440_dane,dane_nom_mpio,86001004,MOCOA,93
+car_t440_dane,dane_nom_mpio,86001006,MOCOA,23
+car_t440_dane,dane_nom_mpio,86001014,MOCOA,13
+car_t440_dane,dane_nom_mpio,86001018,MOCOA,28
+car_t440_dane,dane_nom_mpio,86001019,MOCOA,30
+car_t440_dane,dane_nom_mpio,86219000,COLON,566
+car_t440_dane,dane_nom_mpio,86219001,COLON,96
+car_t440_dane,dane_nom_mpio,86320000,ORITO,4789
+car_t440_dane,dane_nom_mpio,86320001,ORITO,86
+car_t440_dane,dane_nom_mpio,86320004,ORITO,57
+car_t440_dane,dane_nom_mpio,86320008,ORITO,24
+car_t440_dane,dane_nom_mpio,86320009,ORITO,60
+car_t440_dane,dane_nom_mpio,86320010,ORITO,206
+car_t440_dane,dane_nom_mpio,86320011,ORITO,100
+car_t440_dane,dane_nom_mpio,86320014,ORITO,8
+car_t440_dane,dane_nom_mpio,86320015,ORITO,10
+car_t440_dane,dane_nom_mpio,86320016,ORITO,64
+car_t440_dane,dane_nom_mpio,86320017,ORITO,4
+car_t440_dane,dane_nom_mpio,86568000,PUERTO ASIS,16259
+car_t440_dane,dane_nom_mpio,86568019,PUERTO ASIS,445
+car_t440_dane,dane_nom_mpio,86568020,PUERTO ASIS,130
+car_t440_dane,dane_nom_mpio,86568026,PUERTO ASIS,132
+car_t440_dane,dane_nom_mpio,86568027,PUERTO ASIS,18
+car_t440_dane,dane_nom_mpio,86568029,PUERTO ASIS,50
+car_t440_dane,dane_nom_mpio,86568032,PUERTO ASIS,106
+car_t440_dane,dane_nom_mpio,86568033,PUERTO ASIS,32
+car_t440_dane,dane_nom_mpio,86568034,PUERTO ASIS,40
+car_t440_dane,dane_nom_mpio,86569000,PUERTO CAICEDO,2927
+car_t440_dane,dane_nom_mpio,86569001,PUERTO CAICEDO,110
+car_t440_dane,dane_nom_mpio,86569002,PUERTO CAICEDO,60
+car_t440_dane,dane_nom_mpio,86569003,PUERTO CAICEDO,130
+car_t440_dane,dane_nom_mpio,86569004,PUERTO CAICEDO,20
+car_t440_dane,dane_nom_mpio,86571000,PUERTO GUZMAN,397
+car_t440_dane,dane_nom_mpio,86571001,PUERTO GUZMAN,8
+car_t440_dane,dane_nom_mpio,86571002,PUERTO GUZMAN,40
+car_t440_dane,dane_nom_mpio,86571007,PUERTO GUZMAN,34
+car_t440_dane,dane_nom_mpio,86571008,PUERTO GUZMAN,55
+car_t440_dane,dane_nom_mpio,86571011,PUERTO GUZMAN,8
+car_t440_dane,dane_nom_mpio,86571013,PUERTO GUZMAN,4
+car_t440_dane,dane_nom_mpio,86749000,SIBUNDOY,1588
+car_t440_dane,dane_nom_mpio,86749001,SIBUNDOY,12
+car_t440_dane,dane_nom_mpio,86755000,SAN FRANCISCO,699
+car_t440_dane,dane_nom_mpio,86757000,SAN MIGUEL,3396
+car_t440_dane,dane_nom_mpio,86757001,SAN MIGUEL,516
+car_t440_dane,dane_nom_mpio,86757015,SAN MIGUEL,10
+car_t440_dane,dane_nom_mpio,86757018,SAN MIGUEL,69
+car_t440_dane,dane_nom_mpio,86757028,SAN MIGUEL,23
+car_t440_dane,dane_nom_mpio,86760000,SANTIAGO,663
+car_t440_dane,dane_nom_mpio,86760001,SANTIAGO,90
+car_t440_dane,dane_nom_mpio,86865000,VALLE DEL GUAMUEZ,9505
+car_t440_dane,dane_nom_mpio,86865003,VALLE DEL GUAMUEZ,376
+car_t440_dane,dane_nom_mpio,86865004,VALLE DEL GUAMUEZ,182
+car_t440_dane,dane_nom_mpio,86865005,VALLE DEL GUAMUEZ,50
+car_t440_dane,dane_nom_mpio,86865008,VALLE DEL GUAMUEZ,42
+car_t440_dane,dane_nom_mpio,86865010,VALLE DEL GUAMUEZ,20
+car_t440_dane,dane_nom_mpio,86865011,VALLE DEL GUAMUEZ,71
+car_t440_dane,dane_nom_mpio,86865012,VALLE DEL GUAMUEZ,26
+car_t440_dane,dane_nom_mpio,86865014,VALLE DEL GUAMUEZ,72
+car_t440_dane,dane_nom_mpio,86865018,VALLE DEL GUAMUEZ,20
+car_t440_dane,dane_nom_mpio,86865021,VALLE DEL GUAMUEZ,50
+car_t440_dane,dane_nom_mpio,86865022,VALLE DEL GUAMUEZ,20
+car_t440_dane,dane_nom_mpio,86885000,VILLAGARZON,2905
+car_t440_dane,dane_nom_mpio,86885001,VILLAGARZON,188
+car_t440_dane,dane_nom_mpio,86885002,VILLAGARZON,28
+car_t440_dane,dane_nom_mpio,86885004,VILLAGARZON,12
+car_t440_dane,dane_nom_mpio,86885005,VILLAGARZON,8
+car_t440_dane,dane_nom_mpio,86885008,VILLAGARZON,16
+car_t440_dane,dane_nom_mpio,86885009,VILLAGARZON,203
+car_t440_dane,dane_nom_mpio,86885011,VILLAGARZON,4
+car_t440_dane,dane_nom_mpio,86885012,VILLAGARZON,4
+car_t440_dane,dane_nom_mpio,95001000,SAN JOSE DEL GUAVIARE,7030
+car_t440_dane,dane_nom_mpio,95015000,CALAMAR,1239
+car_t440_dane,dane_nom_mpio,95025000,EL RETORNO,1189
+car_t440_dane,dane_nom_mpio,95025001,EL RETORNO,529
+car_t440_dane,dane_nom_poblad,15667000,SAN LUIS DE GACENO,87
+car_t440_dane,dane_nom_poblad,17380000,LA DORADA,1
+car_t440_dane,dane_nom_poblad,18150000,CARTAGENA DEL CHAIRA,6869
+car_t440_dane,dane_nom_poblad,18753000,SAN VICENTE DEL CAGUAN,4
+car_t440_dane,dane_nom_poblad,19001000,POPAYAN,505
+car_t440_dane,dane_nom_poblad,19517000,BELALCAZAR,60
+car_t440_dane,dane_nom_poblad,19533000,PIAMONTE,199
+car_t440_dane,dane_nom_poblad,19533001,CAMPO ALEGRE,12
+car_t440_dane,dane_nom_poblad,19533003,MIRAFLOR,48
+car_t440_dane,dane_nom_poblad,19533005,LAS PALMERAS 1.,20
+car_t440_dane,dane_nom_poblad,19585000,COCONUCO,435
+car_t440_dane,dane_nom_poblad,20621000,ROBLES,1
+car_t440_dane,dane_nom_poblad,41001000,NEIVA,27408
+car_t440_dane,dane_nom_poblad,41006000,ACEVEDO,888
+car_t440_dane,dane_nom_poblad,41013000,AGRADO,430
+car_t440_dane,dane_nom_poblad,41016000,AIPE,754
+car_t440_dane,dane_nom_poblad,41020000,ALGECIRAS,889
+car_t440_dane,dane_nom_poblad,41026000,ALTAMIRA,320
+car_t440_dane,dane_nom_poblad,41078000,BARAYA,282
+car_t440_dane,dane_nom_poblad,41132000,CAMPOALEGRE,1439
+car_t440_dane,dane_nom_poblad,41206000,COLOMBIA,227
+car_t440_dane,dane_nom_poblad,41244000,ELIAS,124
+car_t440_dane,dane_nom_poblad,41298000,GARZON,3984
+car_t440_dane,dane_nom_poblad,41306000,GIGANTE,1182
+car_t440_dane,dane_nom_poblad,41319000,GUADALUPE,668
+car_t440_dane,dane_nom_poblad,41349000,HOBO,294
+car_t440_dane,dane_nom_poblad,41357000,IQUIRA,338
+car_t440_dane,dane_nom_poblad,41359000,SAN JOSE DE ISNOS,843
+car_t440_dane,dane_nom_poblad,41378000,LA ARGENTINA,252
+car_t440_dane,dane_nom_poblad,41396000,LA PLATA,2331
+car_t440_dane,dane_nom_poblad,41483000,NATAGA,245
+car_t440_dane,dane_nom_poblad,41503000,OPORAPA,232
+car_t440_dane,dane_nom_poblad,41518000,PAICOL,210
+car_t440_dane,dane_nom_poblad,41524000,PALERMO,2130
+car_t440_dane,dane_nom_poblad,41530000,PALESTINA,343
+car_t440_dane,dane_nom_poblad,41548000,PITAL,475
+car_t440_dane,dane_nom_poblad,41551000,PITALITO,9065
+car_t440_dane,dane_nom_poblad,41615000,RIVERA,1070
+car_t440_dane,dane_nom_poblad,41660000,SALADOBLANCO,368
+car_t440_dane,dane_nom_poblad,41668000,SAN AGUSTIN,1190
+car_t440_dane,dane_nom_poblad,41676000,SANTA MARIA,422
+car_t440_dane,dane_nom_poblad,41770000,SUAZA,568
+car_t440_dane,dane_nom_poblad,41791000,TARQUI,538
+car_t440_dane,dane_nom_poblad,41797000,TESALIA,404
+car_t440_dane,dane_nom_poblad,41799000,TELLO,296
+car_t440_dane,dane_nom_poblad,41801000,TERUEL,355
+car_t440_dane,dane_nom_poblad,41807000,TIMANA,733
+car_t440_dane,dane_nom_poblad,41872000,VILLAVIEJA,289
+car_t440_dane,dane_nom_poblad,41885000,YAGUARA,453
+car_t440_dane,dane_nom_poblad,50001000,VILLAVICENCIO,79590
+car_t440_dane,dane_nom_poblad,50006000,ACACIAS,13148
+car_t440_dane,dane_nom_poblad,50110000,BARRANCA DE UPIA,2071
+car_t440_dane,dane_nom_poblad,50124000,CABUYARO,549
+car_t440_dane,dane_nom_poblad,50150000,CASTILLA LA NUEVA,1695
+car_t440_dane,dane_nom_poblad,50223000,CUBARRAL,917
+car_t440_dane,dane_nom_poblad,50226000,CUMARAL,2687
+car_t440_dane,dane_nom_poblad,50245000,EL CALVARIO,6
+car_t440_dane,dane_nom_poblad,50251000,EL CASTILLO,632
+car_t440_dane,dane_nom_poblad,50270000,EL DORADO,287
+car_t440_dane,dane_nom_poblad,50287000,FUENTE DE ORO,1145
+car_t440_dane,dane_nom_poblad,50313000,GRANADA,10974
+car_t440_dane,dane_nom_poblad,50318000,GUAMAL,2571
+car_t440_dane,dane_nom_poblad,50330000,MESETAS,860
+car_t440_dane,dane_nom_poblad,50370000,URIBE,549
+car_t440_dane,dane_nom_poblad,50400000,LEJANIAS,1264
+car_t440_dane,dane_nom_poblad,50450000,PUERTO CONCORDIA,972
+car_t440_dane,dane_nom_poblad,50568000,PUERTO GAITAN,5210
+car_t440_dane,dane_nom_poblad,50573000,PUERTO LOPEZ,4691
+car_t440_dane,dane_nom_poblad,50577000,PUERTO LLERAS,1032
+car_t440_dane,dane_nom_poblad,50590000,PUERTO RICO,1077
+car_t440_dane,dane_nom_poblad,50606000,RESTREPO,2562
+car_t440_dane,dane_nom_poblad,50680000,SAN CARLOS DE GUAROA,1238
+car_t440_dane,dane_nom_poblad,50683000,SAN JUAN DE ARAMA,842
+car_t440_dane,dane_nom_poblad,50689000,SAN MARTIN,3118
+car_t440_dane,dane_nom_poblad,50711000,VISTAHERMOSA,1836
+car_t440_dane,dane_nom_poblad,70215000,COROZAL,1
+car_t440_dane,dane_nom_poblad,73024000,ALPUJARRA,4
+car_t440_dane,dane_nom_poblad,73067000,ATACO,5
+car_t440_dane,dane_nom_poblad,73555000,PLANADAS,1
+car_t440_dane,dane_nom_poblad,85001000,YOPAL,66293
+car_t440_dane,dane_nom_poblad,85010000,AGUAZUL,10895
+car_t440_dane,dane_nom_poblad,85015000,CHAMEZA,389
+car_t440_dane,dane_nom_poblad,85125000,HATO COROZAL,1985
+car_t440_dane,dane_nom_poblad,85136000,LA SALINA,261
+car_t440_dane,dane_nom_poblad,85139000,MANI,3944
+car_t440_dane,dane_nom_poblad,85162000,MONTERREY,4472
+car_t440_dane,dane_nom_poblad,85225000,NUNCHIA,1128
+car_t440_dane,dane_nom_poblad,85230000,OROCUE,2307
+car_t440_dane,dane_nom_poblad,85250000,PAZ DE ARIPORO,9461
+car_t440_dane,dane_nom_poblad,85263000,PORE,1891
+car_t440_dane,dane_nom_poblad,85279000,RECETOR,279
+car_t440_dane,dane_nom_poblad,85300000,SABANALARGA,741
+car_t440_dane,dane_nom_poblad,85315000,SACAMA,365
+car_t440_dane,dane_nom_poblad,85325000,SAN LUIS DE PALENQUE,1178
+car_t440_dane,dane_nom_poblad,85400000,TAMARA,648
+car_t440_dane,dane_nom_poblad,85410000,TAURAMENA,6552
+car_t440_dane,dane_nom_poblad,85430000,TRINIDAD,3111
+car_t440_dane,dane_nom_poblad,85440000,VILLANUEVA,9829
+car_t440_dane,dane_nom_poblad,86001000,MOCOA,6761
+car_t440_dane,dane_nom_poblad,86001002,EL PEPINO,28
+car_t440_dane,dane_nom_poblad,86001003,PUEBLO VIEJO,51
+car_t440_dane,dane_nom_poblad,86001004,PUERTO LIMON,93
+car_t440_dane,dane_nom_poblad,86001006,SAN ANTONIO,23
+car_t440_dane,dane_nom_poblad,86001014,LA TEBAIDA,13
+car_t440_dane,dane_nom_poblad,86001018,PLANADAS,28
+car_t440_dane,dane_nom_poblad,86001019,RAMIYACO,30
+car_t440_dane,dane_nom_poblad,86219000,COLON,566
+car_t440_dane,dane_nom_poblad,86219001,SAN PEDRO,96
+car_t440_dane,dane_nom_poblad,86320000,ORITO,4789
+car_t440_dane,dane_nom_poblad,86320001,LA TESALIA,86
+car_t440_dane,dane_nom_poblad,86320004,LUCITANIA (CHURUYACO),57
+car_t440_dane,dane_nom_poblad,86320008,BUENOS AIRES,24
+car_t440_dane,dane_nom_poblad,86320009,SAN VICENTE DE LUZON,60
+car_t440_dane,dane_nom_poblad,86320010,SIBERIA,206
+car_t440_dane,dane_nom_poblad,86320011,SIMON BOLIVAR,100
+car_t440_dane,dane_nom_poblad,86320014,EL L�BANO,8
+car_t440_dane,dane_nom_poblad,86320015,EL PARAISO,10
+car_t440_dane,dane_nom_poblad,86320016,EL YARUMO,64
+car_t440_dane,dane_nom_poblad,86320017,MONSERRATE,4
+car_t440_dane,dane_nom_poblad,86568000,PUERTO ASIS,16259
+car_t440_dane,dane_nom_poblad,86568019,SANTANA,445
+car_t440_dane,dane_nom_poblad,86568020,PUERTO VEGA,130
+car_t440_dane,dane_nom_poblad,86568026,LA CARMELITA,132
+car_t440_dane,dane_nom_poblad,86568027,LA LIBERTAD,18
+car_t440_dane,dane_nom_poblad,86568029,CAMPO ALEGRE,50
+car_t440_dane,dane_nom_poblad,86568032,BRISAS DEL HONG KONG,106
+car_t440_dane,dane_nom_poblad,86568033,LA CABAÑA,16
+car_t440_dane,dane_nom_poblad,86568033,LA CABA�A,16
+car_t440_dane,dane_nom_poblad,86568034,PLANADAS,40
+car_t440_dane,dane_nom_poblad,86569000,PUERTO CAICEDO,2927
+car_t440_dane,dane_nom_poblad,86569001,SAN PEDRO,110
+car_t440_dane,dane_nom_poblad,86569002,VILLA FLOR,60
+car_t440_dane,dane_nom_poblad,86569003,EL CEDRAL,130
+car_t440_dane,dane_nom_poblad,86569004,EL VENADO,20
+car_t440_dane,dane_nom_poblad,86571000,PUERTO GUZMAN,397
+car_t440_dane,dane_nom_poblad,86571001,EL CEDRO,8
+car_t440_dane,dane_nom_poblad,86571002,SANTA LUCIA,40
+car_t440_dane,dane_nom_poblad,86571007,EL JUANO,34
+car_t440_dane,dane_nom_poblad,86571008,PUERTO ROSARIO,55
+car_t440_dane,dane_nom_poblad,86571011,EL BOMBON,8
+car_t440_dane,dane_nom_poblad,86571013,LA PATRIA,4
+car_t440_dane,dane_nom_poblad,86749000,SIBUNDOY,1588
+car_t440_dane,dane_nom_poblad,86749001,EL EGIDO,12
+car_t440_dane,dane_nom_poblad,86755000,SAN FRANCISCO,699
+car_t440_dane,dane_nom_poblad,86757000,LA DORADA,3396
+car_t440_dane,dane_nom_poblad,86757001,PUERTO COLON,516
+car_t440_dane,dane_nom_poblad,86757015,EL MAIZAL,10
+car_t440_dane,dane_nom_poblad,86757018,JORDAN ORTIZ,69
+car_t440_dane,dane_nom_poblad,86757028,MESAS DEL SABALITO,23
+car_t440_dane,dane_nom_poblad,86760000,SANTIAGO,663
+car_t440_dane,dane_nom_poblad,86760001,SAN ANDRES,90
+car_t440_dane,dane_nom_poblad,86865000,LA HORMIGA,9505
+car_t440_dane,dane_nom_poblad,86865003,EL TIGRE,376
+car_t440_dane,dane_nom_poblad,86865004,EL PLACER,182
+car_t440_dane,dane_nom_poblad,86865005,SAN ANTONIO,50
+car_t440_dane,dane_nom_poblad,86865008,JORDAN DE GUISIA,42
+car_t440_dane,dane_nom_poblad,86865010,BRISAS DEL PALMAR,20
+car_t440_dane,dane_nom_poblad,86865011,EL CAIRO,71
+car_t440_dane,dane_nom_poblad,86865012,EL VENADO,26
+car_t440_dane,dane_nom_poblad,86865014,LA CONCORDIA,72
+car_t440_dane,dane_nom_poblad,86865018,NUEVA PALESTINA,20
+car_t440_dane,dane_nom_poblad,86865021,VILLADUARTE,50
+car_t440_dane,dane_nom_poblad,86865022,LA ISLA,20
+car_t440_dane,dane_nom_poblad,86885000,VILLAGARZON,2905
+car_t440_dane,dane_nom_poblad,86885001,PUERTO UMBRIA,188
+car_t440_dane,dane_nom_poblad,86885002,LA CASTELLANA,28
+car_t440_dane,dane_nom_poblad,86885004,ALBANIA,12
+car_t440_dane,dane_nom_poblad,86885005,ALTO SINAI,8
+car_t440_dane,dane_nom_poblad,86885008,NARANJITO,16
+car_t440_dane,dane_nom_poblad,86885009,PORVENIR,203
+car_t440_dane,dane_nom_poblad,86885011,SANTA ROSA DE JUANAMBU,4
+car_t440_dane,dane_nom_poblad,86885012,VILLARRICA,4
+car_t440_dane,dane_nom_poblad,95001000,SAN JOSE DEL GUAVIARE,7030
+car_t440_dane,dane_nom_poblad,95015000,CALAMAR,1239
+car_t440_dane,dane_nom_poblad,95025000,EL RETORNO,1189
+car_t440_dane,dane_nom_poblad,95025001,LA LIBERTAD,529
+car_t440_id_mercado,nom_mercado,170,HUILA,62113
+car_t440_id_mercado,nom_mercado,175,META,138484
+car_t440_id_mercado,nom_mercado,301,POPAYAN - PURACE,940
+car_t440_id_mercado,nom_mercado,461,PUTUMAYO,15451
+car_t440_id_mercado,nom_mercado,481,SIBUNDOY,3714
+car_t440_id_mercado,nom_mercado,601,BAJO PUTUMAYO,36084
+car_t440_id_mercado,nom_mercado,681,GUAVIARE,10959
+car_t440_id_mercado,nom_mercado,703,CASANARE,127886
+car_t440_id_mercado,nom_mercado,705,CHAIRA (Solo reporta INFO EMSERPUCAR),6869
+identificador_empresa,are_esp_nombre,1014,ELECTRIFICADORA DEL HUILA S.A. E.S.P.,61715
+identificador_empresa,are_esp_nombre,1737,RUITOQUE S.A. E.S.P.,7
+identificador_empresa,are_esp_nombre,1846,EMPRESA DE ENERGIA DEL VALLE DE SIBUNDOY S.A. E.S.P.,3714
+identificador_empresa,are_esp_nombre,2016,EMPRESA DE ENERGIA DEL PUTUMAYO S.A. ESP,15403
+identificador_empresa,are_esp_nombre,2020,DISTRIBUIDORA Y COMERCIALIZADORA DE ENERGIA ELECTRICA S.A. E.S.P.,464
+identificador_empresa,are_esp_nombre,20437,ENERTOTAL S.A. E.S.P.,6
+identificador_empresa,are_esp_nombre,2322,VATIA S.A. E.S.P.,1118
+identificador_empresa,are_esp_nombre,23330,PROFESIONALES EN ENERGÍA S.A E.S.P,3
+identificador_empresa,are_esp_nombre,23330,PROFESIONALES EN ENERG�A S.A E.S.P,43
+identificador_empresa,are_esp_nombre,2371,EMPRESA DE ENERGIA DEL BAJO PUTUMAYO  S.A.  E.S.P.,36052
+identificador_empresa,are_esp_nombre,2378,DICELER S.A E.S.P.,8
+identificador_empresa,are_esp_nombre,2438,EMPRESAS MUNICIPALES DE CALI   E.I.C.E  E.S.P,7
+identificador_empresa,are_esp_nombre,25984,ITALCOL ENERGIA S.A. ESP.,5
+identificador_empresa,are_esp_nombre,26641,SPECTRUM RENOVAVEIS SAS ESP,33
+identificador_empresa,are_esp_nombre,27691,QI ENERGY SAS ESP,30
+identificador_empresa,are_esp_nombre,3076,EMPRESA DE ENERGIA ELECTRICA DEL DEPARTAMENTO DEL GUAVIARE SA ESP,10959
+identificador_empresa,are_esp_nombre,3370,EMPRESA DE ENERGIA DE CASANARE SA ESP,126947
+identificador_empresa,are_esp_nombre,41335,ECOPETROL ENERGÍA S.A.S. E.S.P.,14
+identificador_empresa,are_esp_nombre,41335,ECOPETROL ENERG�A S.A.S. E.S.P.,22
+identificador_empresa,are_esp_nombre,480,ISAGEN S.A. E.S.P.,33
+identificador_empresa,are_esp_nombre,48305,CARIBEMAR DE LA COSTA S.A.S. E.S.P.,28
+identificador_empresa,are_esp_nombre,48663,GREENYELLOW COMERCIALIZADORA SAS ESP,3
+identificador_empresa,are_esp_nombre,500,EMPRESA DE ENERGIA DE BOYACA S.A. E.S.P. EMPRESA DE SERVICIOS PUBLICOS,18
+identificador_empresa,are_esp_nombre,50205,GAP ENERGY GROUP S.A.S ESP,9
+identificador_empresa,are_esp_nombre,536,CELSIA COLOMBIA S.A. E.S.P.,35
+identificador_empresa,are_esp_nombre,564,EMPRESAS PÚBLICAS DE MEDELLIN E.S.P.,6
+identificador_empresa,are_esp_nombre,564,EMPRESAS P�BLICAS DE MEDELLIN E.S.P.,45
+identificador_empresa,are_esp_nombre,569,EMPRESA MUNICIPAL DE SERVICIOS PUBLICOS DE CARTAGENA DEL CHAIRA,6869
+identificador_empresa,are_esp_nombre,597,ENEL COLOMBIA S.A. E.S.P.,118
+identificador_empresa,are_esp_nombre,600,ELECTRIFICADORA DEL META S.A. E.S.P.,137846
+identificador_empresa,are_esp_nombre,694,EMPRESA MUNICIPAL DE ENERGÍA ELÉCTRICA S.A-E.S.P,508
+identificador_empresa,are_esp_nombre,694,EMPRESA MUNICIPAL DE ENERG�A EL�CTRICA S.A-E.S.P,432
