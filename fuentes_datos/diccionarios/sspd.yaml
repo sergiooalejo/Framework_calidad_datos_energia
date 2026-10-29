@@ -1,0 +1,217 @@
+version: '1.0'
+dataset:
+  id: ebby-cjha
+  nombre: Superservicios-Información Comercial para el Sector Residencial y No Residencial
+  publicador: Superintendencia de Servicios Públicos Domiciliarios (SSPD)
+  url_portal: https://www.datos.gov.co/d/ebby-cjha
+  url_csv_completo: https://www.datos.gov.co/api/views/ebby-cjha/rows.csv?accessType=DOWNLOAD
+  filas_en_origen: 11905557
+  columnas: 29
+  cobertura: 2017-07 a 2022-05 (59 períodos mensuales consecutivos)
+  periodicidad_declarada: Anual
+  ultima_carga_de_datos: '2023-10-28'
+  contiene_consumo_observado: true
+  ambito: Zonas No Interconectadas (ZNI). Ninguna de las 91 empresas pertenece al Sistema Interconectado Nacional.
+  estado: Tercera fuente incorporada para cubrir consumo observado; no reemplaza a EPM ni a CHEC.
+advertencia: >-
+  Diccionario documental. El publicador NO declara descripción para ninguna de las 29 columnas,
+  y la descripción del conjunto repite su propio título. Toda lectura de significado aquí es
+  inferida y está marcada como tal; no se presenta como definición oficial.
+alcance_de_la_copia_conservada:
+  motivo: El volumen en origen supera los 9 GB; versionarlo íntegro no es viable.
+  criterio: Se conservan dos censos completos y declarados, no muestras aleatorias.
+  censo_mensual:
+    archivo: datos/sspd_ebby-cjha_mensual.csv
+    universo: Las 91 empresas y los 59 períodos, sin excepción.
+    dimensiones:
+    - identificador_empresa
+    - anio
+    - periodo
+    - estrato_sector
+    - ubicacion
+    - tipo_conexion
+    - tipo_lectura
+    - tipo_factura
+    medidas: Conteo de registros, suma/mínimo/máximo de consumo básico, suma de consumo
+      complementario y mayor a 800, facturación, valor total, subsidio y días facturados.
+    uso: Series mensuales por empresa y categoría; completitud, dominios y consistencia de etiquetas.
+  censo_detalle:
+    archivo: datos/sspd_ebby-cjha_detalle.csv
+    universo: Todos los registros de la empresa 28111, en sus 57 períodos.
+    uso: Reglas de nivel de fila (unicidad, formato, clave) que el agregado no puede sostener.
+    advertencia: Es un censo de una empresa, no una muestra del conjunto. No generalizar sin declararlo.
+granularidad: Registro de facturación por usuario (NIU) y período mensual.
+clave_candidata:
+  identificador:
+  - id_factura
+  - niu
+  periodo:
+  - anio
+  - periodo
+  empresa:
+  - identificador_empresa
+  estado: Pendiente de validación; no asumir unicidad de id_factura ni de niu.
+series:
+  clave: identificador_empresa + estrato_sector + período mensual.
+  variables_prioritarias:
+  - consumo_basico
+  - consumo_complementario
+  - valor_total
+  condiciones:
+  - 59 períodos consecutivos permiten 36 de referencia y 23 de vigilancia.
+  - Faltan 2017-01 a 2017-06; no unir meses a través de ese hueco.
+  - Aplicar logaritmos solo a valores positivos; hay consumo y valor total negativos.
+  - No mezclar empresas; son 91 operadores con capacidad de reporte muy distinta.
+hallazgos_de_dominio_observados:
+  descripcion: Medidos sobre el conjunto en origen antes de acotar la copia. Son observaciones, no juicios.
+  variantes_de_etiqueta:
+  - campo: tipo_categoria
+    detalle: L con 7.241.395 registros, C con 4.642.672 y la minúscula l con 21.490.
+  - campo: tipo_conexion
+    detalle: P con 6.756.922, T con 5.148.631 y la variante P con espacio final, 4 registros.
+  - campo: tipo_factura
+    detalle: N con 11.900.840, SC, AC y la variante N con espacio final, 4 registros.
+  dominios_mezclados:
+  - campo: estrato_sector
+    detalle: 11 valores que mezclan estratos 1 a 6 con las letras C, O y P.
+  - campo: codigo_conexion
+    detalle: 60 valores que mezclan códigos, el texto No Aplica y nombres de municipio como TIERRALTA.
+  - campo: tension
+    detalle: 40 valores distintos, uno de ellos la cadena None.
+  signos_y_rangos:
+  - campo: consumo_basico
+    detalle: Mínimo -43. Un registro con consumo negativo.
+  - campo: valor_total
+    detalle: 103.136 registros negativos; mínimo -115.676.002.
+  - campo: porcentaje_subsidio
+    detalle: Rango observado de -1 a 0.
+  - campo: dias_facturados
+    detalle: Rango observado de 0 a 33. El 33 excede cualquier mes del calendario.
+  completitud_temporal:
+  - detalle: 59 de los 65 períodos posibles entre 2017-01 y 2022-05. Faltan los seis primeros meses de 2017.
+variables:
+- columna: identificador_empresa
+  descripcion_oficial: null
+  descripcion_inferida: Código de la empresa prestadora que reporta.
+  tipo_portal: text
+  rol: entidad
+  reglas_relacionadas: [R06, INT02]
+- columna: anio
+  descripcion_oficial: null
+  descripcion_inferida: Año del período facturado.
+  tipo_portal: text
+  rol: periodo
+  reglas_relacionadas: [R01, R02]
+- columna: periodo
+  descripcion_oficial: null
+  descripcion_inferida: Mes del período facturado, de 1 a 12.
+  tipo_portal: text
+  rol: periodo
+  reglas_relacionadas: [R01, R02]
+- columna: niu
+  descripcion_oficial: null
+  descripcion_inferida: Número único de identificación del usuario.
+  tipo_portal: text
+  rol: identificador
+  reglas_relacionadas: [R04, R05]
+- columna: id_factura
+  descripcion_oficial: null
+  descripcion_inferida: Identificador de la factura.
+  tipo_portal: text
+  rol: identificador
+  reglas_relacionadas: [R04, R05]
+- columna: estrato_sector
+  descripcion_oficial: null
+  descripcion_inferida: Estrato socioeconómico o sector. Dominio mixto sin catálogo publicado.
+  tipo_portal: text
+  rol: categoria
+  dominio_observado: 11 valores; estratos 1 a 6 junto con C, O y P.
+  reglas_relacionadas: [R06, INT02, MAP01]
+- columna: tension
+  descripcion_oficial: null
+  descripcion_inferida: Nivel o valor de tensión. Semántica no declarada; conviven magnitudes y la cadena None.
+  tipo_portal: text
+  rol: categoria
+  reglas_relacionadas: [R06, DEF01]
+- columna: ubicacion
+  descripcion_oficial: null
+  descripcion_inferida: Ubicación del usuario. Valores observados R y U, presumiblemente rural y urbana.
+  tipo_portal: text
+  rol: categoria
+  reglas_relacionadas: [R06]
+- columna: tipo_conexion
+  descripcion_oficial: null
+  descripcion_inferida: Tipo de conexión. Valores observados P, T y la variante con espacio final.
+  tipo_portal: text
+  rol: categoria
+  reglas_relacionadas: [R06, MAP01]
+- columna: tipo_lectura
+  descripcion_oficial: null
+  descripcion_inferida: Modo de obtención de la lectura. Valores observados N, R, E y M.
+  tipo_portal: text
+  rol: categoria
+  reglas_relacionadas: [R06]
+- columna: tipo_factura
+  descripcion_oficial: null
+  descripcion_inferida: Tipo de factura. Valores observados N, SC, AC y la variante con espacio final.
+  tipo_portal: text
+  rol: categoria
+  reglas_relacionadas: [R06, MAP01]
+- columna: dias_facturados
+  descripcion_oficial: null
+  descripcion_inferida: Días comprendidos en el período facturado.
+  tipo_portal: number
+  rol: medida
+  rango_observado: 0 a 33
+  reglas_relacionadas: [R07, R12]
+- columna: consumo_basico
+  descripcion_oficial: null
+  descripcion_inferida: Consumo del rango básico o de subsistencia. Unidad no declarada por el publicador; se presume kWh.
+  tipo_portal: number
+  rol: medida
+  unidad: no declarada
+  rango_observado: -43 a 531.168
+  reglas_relacionadas: [R03, R07, R10, R12, CART01]
+- columna: consumo_complementario
+  descripcion_oficial: null
+  descripcion_inferida: Consumo por encima del rango básico. Unidad no declarada.
+  tipo_portal: number
+  rol: medida
+  reglas_relacionadas: [R03, R07, R10, R12]
+- columna: consumo_reside_mayor800
+  descripcion_oficial: null
+  descripcion_inferida: Consumo residencial superior a 800 kWh. El umbral está en el nombre, no en una definición.
+  tipo_portal: number
+  rol: medida
+  reglas_relacionadas: [R03, R07, R10]
+- columna: facturacion_consumo_basico
+  descripcion_oficial: null
+  descripcion_inferida: Valor facturado por el consumo básico.
+  tipo_portal: number
+  rol: medida
+  reglas_relacionadas: [R03, R07, R09]
+- columna: valor_total
+  descripcion_oficial: null
+  descripcion_inferida: Valor total facturado.
+  tipo_portal: number
+  rol: medida
+  rango_observado: -115.676.002 a 3.553.467.518
+  reglas_relacionadas: [R03, R07, R09, R12]
+- columna: valor_subsidio
+  descripcion_oficial: null
+  descripcion_inferida: Valor del subsidio aplicado.
+  tipo_portal: number
+  rol: medida
+  reglas_relacionadas: [R07, R09]
+- columna: porcentaje_subsidio
+  descripcion_oficial: null
+  descripcion_inferida: Porcentaje de subsidio. El signo no está explicado por el publicador.
+  tipo_portal: number
+  rol: medida
+  rango_observado: -1 a 0
+  reglas_relacionadas: [R07]
+nota_sobre_variables_no_listadas: >-
+  El conjunto tiene 29 columnas; aquí se documentan las que participan en los controles.
+  Las restantes (codigo_localidad, codigo_conexion, fecha_expedicion, fecha_inicio_periodo,
+  facturacion_complementario, facturacion_reside_mayor800, valor_refacturacion, valor_mora,
+  interes_mora, tipo_categoria) están en el metadato conservado y tampoco traen descripción oficial.

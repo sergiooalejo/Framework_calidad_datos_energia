@@ -1,0 +1,2721 @@
+{
+ "id": "ebby-cjha",
+ "name": "Superservicios-Información Comercial para el Sector Residencial y No Residencial",
+ "assetType": "dataset",
+ "attribution": "Superintendencia de Servicios Públicos Domiciliarios - SUPERSERVICIOS, Bogotá D.C.",
+ "averageRating": 0,
+ "category": "Minas y Energía",
+ "createdAt": 1520875893,
+ "description": "Información Comercial para el Sector Residencial y No Residencial",
+ "diciBackend": false,
+ "displayType": "table",
+ "downloadCount": 917,
+ "hideFromCatalog": false,
+ "hideFromDataJson": false,
+ "indexUpdatedAt": 1555433119,
+ "licenseId": "CC_40_BY_SA",
+ "locale": "en_US",
+ "locked": false,
+ "newBackend": true,
+ "numberOfComments": 0,
+ "oid": 28196636,
+ "provenance": "official",
+ "publicationAppendEnabled": false,
+ "publicationDate": 1521652979,
+ "publicationGroup": 14931273,
+ "publicationStage": "published",
+ "rowsUpdatedAt": 1698512688,
+ "tableId": 14931273,
+ "totalTimesRated": 0,
+ "viewCount": 2979,
+ "viewLastModified": 1779130263,
+ "viewType": "tabular",
+ "approvals": [
+  {
+   "reviewedAt": 1600196243,
+   "reviewedAutomatically": false,
+   "state": "approved",
+   "submissionId": 2686626,
+   "submissionObject": "public_audience_request",
+   "submissionOutcome": "change_audience",
+   "submittedAt": 1600121141,
+   "targetAudience": "public",
+   "workflowId": 2188,
+   "reviewer": {
+    "id": "r4qn-dwdd",
+    "displayName": "Ministerio de Tecnologías de la Información y las Comunicaciones - Datos Abiertos"
+   },
+   "submissionDetails": {
+    "permissionType": "read"
+   },
+   "submissionOutcomeApplication": {
+    "endedAt": 1600196243,
+    "failureCount": 0,
+    "startedAt": 1600196243,
+    "status": "success"
+   },
+   "submitter": {
+    "id": "b7d6-mh4s",
+    "displayName": "Superintendencia de Servicios Públicos Domiciliarios"
+   }
+  }
+ ],
+ "clientContext": {
+  "clientContextVariables": [],
+  "inheritedVariables": {}
+ },
+ "columns": [
+  {
+   "id": 349342939,
+   "name": "IDENTIFICADOR_EMPRESA",
+   "dataTypeName": "text",
+   "fieldName": "identificador_empresa",
+   "position": 1,
+   "renderTypeName": "text",
+   "tableColumnId": 62313923,
+   "width": 352,
+   "cachedContents": {
+    "largest": "59450",
+    "non_null": "11905557",
+    "null": "0",
+    "top": [
+     {
+      "item": "1720",
+      "count": "1333049"
+     },
+     {
+      "item": "23430",
+      "count": "673446"
+     },
+     {
+      "item": "2331",
+      "count": "467649"
+     },
+     {
+      "item": "3212",
+      "count": "434251"
+     },
+     {
+      "item": "25681",
+      "count": "342228"
+     },
+     {
+      "item": "26717",
+      "count": "341532"
+     },
+     {
+      "item": "21597",
+      "count": "325668"
+     },
+     {
+      "item": "1892",
+      "count": "323128"
+     },
+     {
+      "item": "32194",
+      "count": "272746"
+     },
+     {
+      "item": "1930",
+      "count": "257204"
+     },
+     {
+      "item": "26810",
+      "count": "247649"
+     },
+     {
+      "item": "34833",
+      "count": "235317"
+     },
+     {
+      "item": "25965",
+      "count": "234288"
+     },
+     {
+      "item": "1759",
+      "count": "234239"
+     },
+     {
+      "item": "1895",
+      "count": "212029"
+     },
+     {
+      "item": "37735",
+      "count": "211281"
+     },
+     {
+      "item": "23423",
+      "count": "190753"
+     },
+     {
+      "item": "22941",
+      "count": "187203"
+     },
+     {
+      "item": "22594",
+      "count": "186384"
+     },
+     {
+      "item": "1811",
+      "count": "182200"
+     }
+    ],
+    "smallest": "1720",
+    "not_null": "4635075",
+    "count": "11905557",
+    "cardinality": "11905557"
+   },
+   "format": {}
+  },
+  {
+   "id": 349342940,
+   "name": "ANIO",
+   "dataTypeName": "text",
+   "fieldName": "anio",
+   "position": 2,
+   "renderTypeName": "text",
+   "tableColumnId": 62313924,
+   "width": 148,
+   "cachedContents": {
+    "largest": "2022",
+    "non_null": "11905557",
+    "null": "0",
+    "top": [
+     {
+      "item": "2019",
+      "count": "2628597"
+     },
+     {
+      "item": "2020",
+      "count": "2556257"
+     },
+     {
+      "item": "2021",
+      "count": "2522302"
+     },
+     {
+      "item": "2018",
+      "count": "2426934"
+     },
+     {
+      "item": "2017",
+      "count": "1163975"
+     },
+     {
+      "item": "2022",
+      "count": "607492"
+     }
+    ],
+    "smallest": "2017",
+    "not_null": "4635075",
+    "count": "11905557",
+    "cardinality": "11905557"
+   },
+   "format": {
+    "decimalSeparator": ".",
+    "groupSeparator": ","
+   }
+  },
+  {
+   "id": 349342941,
+   "name": "PERIODO",
+   "dataTypeName": "text",
+   "fieldName": "periodo",
+   "position": 3,
+   "renderTypeName": "text",
+   "tableColumnId": 62313925,
+   "width": 184,
+   "cachedContents": {
+    "largest": "9",
+    "non_null": "11905557",
+    "null": "0",
+    "top": [
+     {
+      "item": "10",
+      "count": "1050813"
+     },
+     {
+      "item": "12",
+      "count": "1046253"
+     },
+     {
+      "item": "11",
+      "count": "1042600"
+     },
+     {
+      "item": "9",
+      "count": "1041752"
+     },
+     {
+      "item": "8",
+      "count": "1039916"
+     },
+     {
+      "item": "7",
+      "count": "1037421"
+     },
+     {
+      "item": "1",
+      "count": "1035244"
+     },
+     {
+      "item": "3",
+      "count": "1034543"
+     },
+     {
+      "item": "2",
+      "count": "1033298"
+     },
+     {
+      "item": "5",
+      "count": "852191"
+     },
+     {
+      "item": "4",
+      "count": "848373"
+     },
+     {
+      "item": "6",
+      "count": "843153"
+     }
+    ],
+    "smallest": "1",
+    "not_null": "4635075",
+    "count": "11905557",
+    "cardinality": "11905557"
+   },
+   "format": {
+    "decimalSeparator": ".",
+    "groupSeparator": ","
+   }
+  },
+  {
+   "id": 349342942,
+   "name": "NIU",
+   "dataTypeName": "text",
+   "fieldName": "niu",
+   "position": 4,
+   "renderTypeName": "text",
+   "tableColumnId": 62313926,
+   "width": 136,
+   "cachedContents": {
+    "largest": "999998529231244084999998529",
+    "non_null": "11905557",
+    "null": "0",
+    "top": [
+     {
+      "item": "141329081537211806141329081",
+      "count": "3616"
+     },
+     {
+      "item": "111134305147651360111134305",
+      "count": "1660"
+     },
+     {
+      "item": "547141692467932494547141692",
+      "count": "716"
+     },
+     {
+      "item": "278350718525662250278350718",
+      "count": "536"
+     },
+     {
+      "item": "242176362866553337242176362",
+      "count": "438"
+     },
+     {
+      "item": "60121727232451338601217272",
+      "count": "364"
+     },
+     {
+      "item": "368463045373827949368463045",
+      "count": "325"
+     },
+     {
+      "item": "74450446649288657744504466",
+      "count": "314"
+     },
+     {
+      "item": "571187908385003799571187908",
+      "count": "313"
+     },
+     {
+      "item": "905765146776799821905765146",
+      "count": "244"
+     },
+     {
+      "item": "464301922860873851464301922",
+      "count": "232"
+     },
+     {
+      "item": "42092603725598847420926037",
+      "count": "227"
+     },
+     {
+      "item": "964110398225082235964110398",
+      "count": "209"
+     },
+     {
+      "item": "245973531484844468245973531",
+      "count": "207"
+     },
+     {
+      "item": "69080142294760535690801422",
+      "count": "204"
+     },
+     {
+      "item": "156967878432057744156967878",
+      "count": "198"
+     },
+     {
+      "item": "673351205800936766673351205",
+      "count": "192"
+     },
+     {
+      "item": "395104502968614456395104502",
+      "count": "192"
+     },
+     {
+      "item": "921651571926730561921651571",
+      "count": "192"
+     },
+     {
+      "item": "697512960139720788697512960",
+      "count": "192"
+     }
+    ],
+    "smallest": "100001390530530753100001390",
+    "not_null": "4635075",
+    "count": "11905557",
+    "cardinality": "11905557"
+   },
+   "format": {
+    "decimalSeparator": ".",
+    "groupSeparator": ","
+   }
+  },
+  {
+   "id": 349342943,
+   "name": "CODIGO_LOCALIDAD",
+   "dataTypeName": "text",
+   "fieldName": "codigo_localidad",
+   "position": 5,
+   "renderTypeName": "text",
+   "tableColumnId": 62313927,
+   "width": 292,
+   "cachedContents": {
+    "largest": "9977302000001",
+    "non_null": "11905557",
+    "null": "0",
+    "top": [
+     {
+      "item": "8800100000001",
+      "count": "1194233"
+     },
+     {
+      "item": "9100100000013",
+      "count": "621102"
+     },
+     {
+      "item": "9400100000058",
+      "count": "339984"
+     },
+     {
+      "item": "9900100100001",
+      "count": "312927"
+     },
+     {
+      "item": "2700600000013",
+      "count": "190687"
+     },
+     {
+      "item": "8657300000013",
+      "count": "173199"
+     },
+     {
+      "item": "2707500000001",
+      "count": "166635"
+     },
+     {
+      "item": "8856400000002",
+      "count": "138816"
+     },
+     {
+      "item": "1931800000024",
+      "count": "138614"
+     },
+     {
+      "item": "2780000000017",
+      "count": "134128"
+     },
+     {
+      "item": "9952400000004",
+      "count": "102021"
+     },
+     {
+      "item": "9700100100029",
+      "count": "98665"
+     },
+     {
+      "item": "2707700000051",
+      "count": "84482"
+     },
+     {
+      "item": "2749500000012",
+      "count": "77053"
+     },
+     {
+      "item": "1980900000001",
+      "count": "74719"
+     },
+     {
+      "item": "2700600300011",
+      "count": "69516"
+     },
+     {
+      "item": "5249000000107",
+      "count": "68000"
+     },
+     {
+      "item": "9977300000003",
+      "count": "58420"
+     },
+     {
+      "item": "5252000000017",
+      "count": "54708"
+     },
+     {
+      "item": "5225000000061",
+      "count": "53358"
+     }
+    ],
+    "smallest": "0547500000001",
+    "not_null": "4635075",
+    "count": "11905557",
+    "cardinality": "11905557"
+   },
+   "format": {
+    "decimalSeparator": ".",
+    "groupSeparator": ","
+   }
+  },
+  {
+   "id": 349342944,
+   "name": "UBICACION",
+   "dataTypeName": "text",
+   "fieldName": "ubicacion",
+   "position": 6,
+   "renderTypeName": "text",
+   "tableColumnId": 62313928,
+   "width": 208,
+   "cachedContents": {
+    "largest": "U",
+    "non_null": "11905557",
+    "null": "0",
+    "top": [
+     {
+      "item": "R",
+      "count": "7185770"
+     },
+     {
+      "item": "U",
+      "count": "4719787"
+     }
+    ],
+    "smallest": "R",
+    "not_null": "4635075",
+    "count": "11905557",
+    "cardinality": "11905557"
+   },
+   "format": {}
+  },
+  {
+   "id": 349342945,
+   "name": "TIPO_CONEXION",
+   "dataTypeName": "text",
+   "fieldName": "tipo_conexion",
+   "position": 7,
+   "renderTypeName": "text",
+   "tableColumnId": 62313929,
+   "width": 256,
+   "cachedContents": {
+    "largest": "T",
+    "non_null": "11905557",
+    "null": "0",
+    "top": [
+     {
+      "item": "P",
+      "count": "6756922"
+     },
+     {
+      "item": "T",
+      "count": "5148631"
+     },
+     {
+      "item": "P ",
+      "count": "4"
+     }
+    ],
+    "smallest": "P",
+    "not_null": "4635075",
+    "count": "11905557",
+    "cardinality": "11905557"
+   },
+   "format": {}
+  },
+  {
+   "id": 349342946,
+   "name": "CODIGO_CONEXION",
+   "dataTypeName": "text",
+   "fieldName": "codigo_conexion",
+   "position": 8,
+   "renderTypeName": "text",
+   "tableColumnId": 62313930,
+   "width": 280,
+   "cachedContents": {
+    "largest": "zy526",
+    "non_null": "11905556",
+    "null": "1",
+    "top": [
+     {
+      "item": "1",
+      "count": "4742477"
+     },
+     {
+      "item": "CN",
+      "count": "166809"
+     },
+     {
+      "item": "CSL",
+      "count": "125824"
+     },
+     {
+      "item": "No Aplica",
+      "count": "115927"
+     },
+     {
+      "item": "CL",
+      "count": "113760"
+     },
+     {
+      "item": "CB",
+      "count": "100441"
+     },
+     {
+      "item": "CJ23",
+      "count": "82668"
+     },
+     {
+      "item": "CBR",
+      "count": "54773"
+     },
+     {
+      "item": "00-000",
+      "count": "49651"
+     },
+     {
+      "item": "CSW",
+      "count": "48042"
+     },
+     {
+      "item": "CT",
+      "count": "42546"
+     },
+     {
+      "item": "C20J",
+      "count": "41437"
+     },
+     {
+      "item": "CA",
+      "count": "39398"
+     },
+     {
+      "item": "TIERRALTA",
+      "count": "37800"
+     },
+     {
+      "item": "NO APLICA",
+      "count": "36333"
+     },
+     {
+      "item": "01-001",
+      "count": "29172"
+     },
+     {
+      "item": "0",
+      "count": "23698"
+     },
+     {
+      "item": "CC",
+      "count": "18220"
+     },
+     {
+      "item": "5",
+      "count": "16751"
+     },
+     {
+      "item": "6",
+      "count": "16561"
+     }
+    ],
+    "smallest": "0",
+    "not_null": "4635074",
+    "count": "11905557",
+    "cardinality": "11905557"
+   },
+   "format": {
+    "decimalSeparator": ".",
+    "groupSeparator": ","
+   }
+  },
+  {
+   "id": 349342947,
+   "name": "ID_FACTURA",
+   "dataTypeName": "text",
+   "fieldName": "id_factura",
+   "position": 9,
+   "renderTypeName": "text",
+   "tableColumnId": 62313931,
+   "width": 220,
+   "cachedContents": {
+    "largest": "999999807171365070999999807",
+    "non_null": "11905557",
+    "null": "0",
+    "top": [
+     {
+      "item": "538255848621180884538255848",
+      "count": "6884"
+     },
+     {
+      "item": "872766445274927610872766445",
+      "count": "5360"
+     },
+     {
+      "item": "17219358118216876172193581",
+      "count": "4221"
+     },
+     {
+      "item": "4580248775024436145802487",
+      "count": "3595"
+     },
+     {
+      "item": "42092603725598847420926037",
+      "count": "1752"
+     },
+     {
+      "item": "61865733663720630618657336",
+      "count": "1267"
+     },
+     {
+      "item": "523143803101831129523143803",
+      "count": "474"
+     },
+     {
+      "item": "242978957488540541242978957",
+      "count": "474"
+     },
+     {
+      "item": "379116781862436735379116781",
+      "count": "400"
+     },
+     {
+      "item": "757861616341867291757861616",
+      "count": "314"
+     },
+     {
+      "item": "544904581641145051544904581",
+      "count": "314"
+     },
+     {
+      "item": "243872534248526488243872534",
+      "count": "301"
+     },
+     {
+      "item": "632690663882532004632690663",
+      "count": "289"
+     },
+     {
+      "item": "22562327176338396225623271",
+      "count": "288"
+     },
+     {
+      "item": "627804587587982791627804587",
+      "count": "282"
+     },
+     {
+      "item": "715739790721976412715739790",
+      "count": "281"
+     },
+     {
+      "item": "975145314717070544975145314",
+      "count": "264"
+     },
+     {
+      "item": "809803567105197799809803567",
+      "count": "253"
+     },
+     {
+      "item": "245158546565950712245158546",
+      "count": "253"
+     },
+     {
+      "item": "137888535329141360137888535",
+      "count": "247"
+     }
+    ],
+    "smallest": "100000126613991578100000126",
+    "not_null": "4635075",
+    "count": "11905557",
+    "cardinality": "11905557"
+   },
+   "format": {
+    "decimalSeparator": ".",
+    "groupSeparator": ","
+   }
+  },
+  {
+   "id": 349342948,
+   "name": "FECHA_EXPEDICION",
+   "dataTypeName": "calendar_date",
+   "fieldName": "fecha_expedicion",
+   "position": 10,
+   "renderTypeName": "calendar_date",
+   "tableColumnId": 62313932,
+   "width": 292,
+   "cachedContents": {
+    "largest": "8716-06-20T00:00:00.000",
+    "non_null": "11905557",
+    "null": "0",
+    "top": [
+     {
+      "item": "2019-09-30T00:00:00.000",
+      "count": "146720"
+     },
+     {
+      "item": "2019-06-30T00:00:00.000",
+      "count": "134486"
+     },
+     {
+      "item": "2020-11-30T00:00:00.000",
+      "count": "133197"
+     },
+     {
+      "item": "2021-04-30T00:00:00.000",
+      "count": "131852"
+     },
+     {
+      "item": "2020-06-30T00:00:00.000",
+      "count": "131597"
+     },
+     {
+      "item": "2021-06-30T00:00:00.000",
+      "count": "131073"
+     },
+     {
+      "item": "2019-11-30T00:00:00.000",
+      "count": "129920"
+     },
+     {
+      "item": "2019-04-30T00:00:00.000",
+      "count": "129228"
+     },
+     {
+      "item": "2021-09-30T00:00:00.000",
+      "count": "129022"
+     },
+     {
+      "item": "2021-11-30T00:00:00.000",
+      "count": "127891"
+     },
+     {
+      "item": "2020-04-30T00:00:00.000",
+      "count": "127380"
+     },
+     {
+      "item": "2020-09-30T00:00:00.000",
+      "count": "125727"
+     },
+     {
+      "item": "2018-11-30T00:00:00.000",
+      "count": "121194"
+     },
+     {
+      "item": "2021-07-30T00:00:00.000",
+      "count": "115020"
+     },
+     {
+      "item": "2018-09-30T00:00:00.000",
+      "count": "115016"
+     },
+     {
+      "item": "2020-10-30T00:00:00.000",
+      "count": "113663"
+     },
+     {
+      "item": "2020-12-30T00:00:00.000",
+      "count": "113198"
+     },
+     {
+      "item": "2020-08-30T00:00:00.000",
+      "count": "113094"
+     },
+     {
+      "item": "2021-08-30T00:00:00.000",
+      "count": "112679"
+     },
+     {
+      "item": "2021-03-30T00:00:00.000",
+      "count": "112240"
+     }
+    ],
+    "smallest": "2016-07-30T00:00:00.000",
+    "not_null": "4635075",
+    "count": "11905557",
+    "cardinality": "11905557"
+   },
+   "format": {
+    "view": "date"
+   }
+  },
+  {
+   "id": 349342949,
+   "name": "FECHA_INICIO_PERIODO",
+   "dataTypeName": "calendar_date",
+   "fieldName": "fecha_inicio_periodo",
+   "position": 11,
+   "renderTypeName": "calendar_date",
+   "tableColumnId": 62313933,
+   "width": 340,
+   "cachedContents": {
+    "largest": "2022-04-28T00:00:00.000",
+    "non_null": "11905557",
+    "null": "0",
+    "top": [
+     {
+      "item": "2021-09-30T00:00:00.000",
+      "count": "133814"
+     },
+     {
+      "item": "2021-04-30T00:00:00.000",
+      "count": "131372"
+     },
+     {
+      "item": "2021-06-30T00:00:00.000",
+      "count": "130843"
+     },
+     {
+      "item": "2021-11-30T00:00:00.000",
+      "count": "129159"
+     },
+     {
+      "item": "2020-11-30T00:00:00.000",
+      "count": "122301"
+     },
+     {
+      "item": "2020-09-30T00:00:00.000",
+      "count": "121932"
+     },
+     {
+      "item": "2019-08-30T00:00:00.000",
+      "count": "121914"
+     },
+     {
+      "item": "2020-07-30T00:00:00.000",
+      "count": "121496"
+     },
+     {
+      "item": "2019-06-30T00:00:00.000",
+      "count": "120599"
+     },
+     {
+      "item": "2019-09-30T00:00:00.000",
+      "count": "119706"
+     },
+     {
+      "item": "2019-04-30T00:00:00.000",
+      "count": "119063"
+     },
+     {
+      "item": "2020-08-30T00:00:00.000",
+      "count": "118672"
+     },
+     {
+      "item": "2019-11-30T00:00:00.000",
+      "count": "117125"
+     },
+     {
+      "item": "2020-04-30T00:00:00.000",
+      "count": "116761"
+     },
+     {
+      "item": "2020-06-30T00:00:00.000",
+      "count": "116654"
+     },
+     {
+      "item": "2020-10-30T00:00:00.000",
+      "count": "113575"
+     },
+     {
+      "item": "2021-08-30T00:00:00.000",
+      "count": "112624"
+     },
+     {
+      "item": "2019-12-30T00:00:00.000",
+      "count": "112138"
+     },
+     {
+      "item": "2021-03-30T00:00:00.000",
+      "count": "111894"
+     },
+     {
+      "item": "2021-05-30T00:00:00.000",
+      "count": "111391"
+     }
+    ],
+    "smallest": "2016-07-30T00:00:00.000",
+    "not_null": "4635075",
+    "count": "11905557",
+    "cardinality": "11905557"
+   },
+   "format": {
+    "view": "date"
+   }
+  },
+  {
+   "id": 349342950,
+   "name": "DIAS_FACTURADOS",
+   "dataTypeName": "number",
+   "fieldName": "dias_facturados",
+   "position": 12,
+   "renderTypeName": "number",
+   "tableColumnId": 62313934,
+   "width": 280,
+   "cachedContents": {
+    "largest": "33",
+    "non_null": "11905557",
+    "average": "30.00245337696785",
+    "null": "0",
+    "top": [
+     {
+      "item": "30",
+      "count": "6610499"
+     },
+     {
+      "item": "31",
+      "count": "3891220"
+     },
+     {
+      "item": "28",
+      "count": "735206"
+     },
+     {
+      "item": "29",
+      "count": "354061"
+     },
+     {
+      "item": "32",
+      "count": "162146"
+     },
+     {
+      "item": "27",
+      "count": "44144"
+     },
+     {
+      "item": "0",
+      "count": "28428"
+     },
+     {
+      "item": "15",
+      "count": "12792"
+     },
+     {
+      "item": "25",
+      "count": "12581"
+     },
+     {
+      "item": "23",
+      "count": "9248"
+     },
+     {
+      "item": "1",
+      "count": "7779"
+     },
+     {
+      "item": "26",
+      "count": "6834"
+     },
+     {
+      "item": "13",
+      "count": "6690"
+     },
+     {
+      "item": "14",
+      "count": "5180"
+     },
+     {
+      "item": "18",
+      "count": "4770"
+     },
+     {
+      "item": "7",
+      "count": "3061"
+     },
+     {
+      "item": "19",
+      "count": "1779"
+     },
+     {
+      "item": "33",
+      "count": "1391"
+     },
+     {
+      "item": "10",
+      "count": "1157"
+     },
+     {
+      "item": "24",
+      "count": "1120"
+     }
+    ],
+    "smallest": "0",
+    "not_null": "4635075",
+    "count": "11905557",
+    "sum": "84563835",
+    "cardinality": "11905557"
+   },
+   "format": {
+    "decimalSeparator": ".",
+    "groupSeparator": ","
+   }
+  },
+  {
+   "id": 349342951,
+   "name": "ESTRATO_SECTOR",
+   "dataTypeName": "text",
+   "fieldName": "estrato_sector",
+   "position": 13,
+   "renderTypeName": "text",
+   "tableColumnId": 62313935,
+   "width": 268,
+   "cachedContents": {
+    "largest": "P",
+    "non_null": "11905557",
+    "null": "0",
+    "top": [
+     {
+      "item": "1",
+      "count": "9687919"
+     },
+     {
+      "item": "2",
+      "count": "977860"
+     },
+     {
+      "item": "3",
+      "count": "524498"
+     },
+     {
+      "item": "C",
+      "count": "445685"
+     },
+     {
+      "item": "O",
+      "count": "94563"
+     },
+     {
+      "item": "4",
+      "count": "69400"
+     },
+     {
+      "item": "P",
+      "count": "45002"
+     },
+     {
+      "item": "5",
+      "count": "41121"
+     },
+     {
+      "item": "I",
+      "count": "12315"
+     },
+     {
+      "item": "6",
+      "count": "7190"
+     },
+     {
+      "item": "1 ",
+      "count": "4"
+     }
+    ],
+    "smallest": "1",
+    "not_null": "4635075",
+    "count": "11905557",
+    "cardinality": "11905557"
+   },
+   "format": {
+    "decimalSeparator": ".",
+    "groupSeparator": ","
+   }
+  },
+  {
+   "id": 349342952,
+   "name": "TENSION",
+   "dataTypeName": "text",
+   "fieldName": "tension",
+   "position": 14,
+   "renderTypeName": "text",
+   "tableColumnId": 62313936,
+   "width": 184,
+   "cachedContents": {
+    "largest": "380",
+    "non_null": "597565",
+    "null": "11307992",
+    "top": [
+     {
+      "item": "110",
+      "count": "323229"
+     },
+     {
+      "item": "220",
+      "count": "154726"
+     },
+     {
+      "item": "380",
+      "count": "38567"
+     },
+     {
+      "item": "120",
+      "count": "37934"
+     },
+     {
+      "item": "208",
+      "count": "26894"
+     },
+     {
+      "item": "115",
+      "count": "13632"
+     },
+     {
+      "item": "13200",
+      "count": "1548"
+     },
+     {
+      "item": "111",
+      "count": "278"
+     },
+     {
+      "item": "221",
+      "count": "134"
+     },
+     {
+      "item": "176",
+      "count": "96"
+     },
+     {
+      "item": "148",
+      "count": "67"
+     },
+     {
+      "item": "112",
+      "count": "30"
+     },
+     {
+      "item": "113",
+      "count": "25"
+     },
+     {
+      "item": "114",
+      "count": "19"
+     },
+     {
+      "item": "117",
+      "count": "19"
+     },
+     {
+      "item": "116",
+      "count": "16"
+     },
+     {
+      "item": "118",
+      "count": "12"
+     },
+     {
+      "item": "121",
+      "count": "10"
+     },
+     {
+      "item": "123",
+      "count": "8"
+     },
+     {
+      "item": "122",
+      "count": "8"
+     }
+    ],
+    "smallest": "110",
+    "not_null": "241369",
+    "count": "11905557",
+    "cardinality": "11905557"
+   },
+   "format": {}
+  },
+  {
+   "id": 349342953,
+   "name": "TIPO_FACTURA",
+   "dataTypeName": "text",
+   "fieldName": "tipo_factura",
+   "position": 15,
+   "renderTypeName": "text",
+   "tableColumnId": 62313937,
+   "width": 244,
+   "cachedContents": {
+    "largest": "SC",
+    "non_null": "11905557",
+    "null": "0",
+    "top": [
+     {
+      "item": "N",
+      "count": "11900840"
+     },
+     {
+      "item": "SC",
+      "count": "4267"
+     },
+     {
+      "item": "AC",
+      "count": "446"
+     },
+     {
+      "item": "N ",
+      "count": "4"
+     }
+    ],
+    "smallest": "AC",
+    "not_null": "4635075",
+    "count": "11905557",
+    "cardinality": "11905557"
+   },
+   "format": {}
+  },
+  {
+   "id": 349342954,
+   "name": "TIPO_LECTURA",
+   "dataTypeName": "text",
+   "fieldName": "tipo_lectura",
+   "position": 16,
+   "renderTypeName": "text",
+   "tableColumnId": 62313938,
+   "width": 244,
+   "cachedContents": {
+    "largest": "R",
+    "non_null": "11905557",
+    "null": "0",
+    "top": [
+     {
+      "item": "N",
+      "count": "6299773"
+     },
+     {
+      "item": "R",
+      "count": "4516952"
+     },
+     {
+      "item": "E",
+      "count": "1086587"
+     },
+     {
+      "item": "M",
+      "count": "2245"
+     }
+    ],
+    "smallest": "E",
+    "not_null": "4635075",
+    "count": "11905557",
+    "cardinality": "11905557"
+   },
+   "format": {}
+  },
+  {
+   "id": 349342955,
+   "name": "CONSUMO_BASICO",
+   "dataTypeName": "number",
+   "fieldName": "consumo_basico",
+   "position": 17,
+   "renderTypeName": "number",
+   "tableColumnId": 62313939,
+   "width": 268,
+   "cachedContents": {
+    "largest": "531168",
+    "non_null": "11905557",
+    "average": "139.4898163355524",
+    "null": "0",
+    "top": [
+     {
+      "item": "45",
+      "count": "2034394"
+     },
+     {
+      "item": "76",
+      "count": "809813"
+     },
+     {
+      "item": "0",
+      "count": "716645"
+     },
+     {
+      "item": "187",
+      "count": "573753"
+     },
+     {
+      "item": "173",
+      "count": "526420"
+     },
+     {
+      "item": "33",
+      "count": "385067"
+     },
+     {
+      "item": "40.5",
+      "count": "85814"
+     },
+     {
+      "item": "33.6",
+      "count": "80023"
+     },
+     {
+      "item": "5.76",
+      "count": "79667"
+     },
+     {
+      "item": "30",
+      "count": "36281"
+     },
+     {
+      "item": "1",
+      "count": "35562"
+     },
+     {
+      "item": "100",
+      "count": "34631"
+     },
+     {
+      "item": "42",
+      "count": "33990"
+     },
+     {
+      "item": "35",
+      "count": "31665"
+     },
+     {
+      "item": "171",
+      "count": "30780"
+     },
+     {
+      "item": "27",
+      "count": "30113"
+     },
+     {
+      "item": "43",
+      "count": "30077"
+     },
+     {
+      "item": "65",
+      "count": "28266"
+     },
+     {
+      "item": "40",
+      "count": "27747"
+     },
+     {
+      "item": "25",
+      "count": "26491"
+     }
+    ],
+    "smallest": "-43",
+    "not_null": "4635075",
+    "count": "11905557",
+    "sum": "393160974.69",
+    "cardinality": "11905557"
+   },
+   "format": {
+    "decimalSeparator": ".",
+    "groupSeparator": ","
+   }
+  },
+  {
+   "id": 349342956,
+   "name": "CONSUMO_COMPLEMENTARIO",
+   "dataTypeName": "number",
+   "fieldName": "consumo_complementario",
+   "position": 18,
+   "renderTypeName": "number",
+   "tableColumnId": 62313940,
+   "width": 364,
+   "cachedContents": {
+    "largest": "20124",
+    "non_null": "11905557",
+    "average": "20.26917979510134",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "10635168"
+     },
+     {
+      "item": "613",
+      "count": "30215"
+     },
+     {
+      "item": "627",
+      "count": "25224"
+     },
+     {
+      "item": "2",
+      "count": "11719"
+     },
+     {
+      "item": "1",
+      "count": "11657"
+     },
+     {
+      "item": "7",
+      "count": "8255"
+     },
+     {
+      "item": "3",
+      "count": "8180"
+     },
+     {
+      "item": "27",
+      "count": "8087"
+     },
+     {
+      "item": "17",
+      "count": "8036"
+     },
+     {
+      "item": "4",
+      "count": "7825"
+     },
+     {
+      "item": "6",
+      "count": "7254"
+     },
+     {
+      "item": "12",
+      "count": "7235"
+     },
+     {
+      "item": "5",
+      "count": "7135"
+     },
+     {
+      "item": "11",
+      "count": "6900"
+     },
+     {
+      "item": "15",
+      "count": "6861"
+     },
+     {
+      "item": "8",
+      "count": "6770"
+     },
+     {
+      "item": "10",
+      "count": "6663"
+     },
+     {
+      "item": "31",
+      "count": "6635"
+     },
+     {
+      "item": "9",
+      "count": "6630"
+     },
+     {
+      "item": "13",
+      "count": "6503"
+     }
+    ],
+    "smallest": "0",
+    "not_null": "4635075",
+    "count": "11905557",
+    "sum": "57129980.48",
+    "cardinality": "11905557"
+   },
+   "format": {
+    "decimalSeparator": ".",
+    "groupSeparator": ","
+   }
+  },
+  {
+   "id": 349342957,
+   "name": "CONSUMO_RESIDE_MAYOR800",
+   "dataTypeName": "number",
+   "fieldName": "consumo_reside_mayor800",
+   "position": 19,
+   "renderTypeName": "number",
+   "tableColumnId": 62313941,
+   "width": 376,
+   "cachedContents": {
+    "largest": "999199",
+    "non_null": "11905557",
+    "average": "7.700657040251703",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "11846752"
+     },
+     {
+      "item": "200",
+      "count": "259"
+     },
+     {
+      "item": "25",
+      "count": "204"
+     },
+     {
+      "item": "8",
+      "count": "200"
+     },
+     {
+      "item": "20",
+      "count": "187"
+     },
+     {
+      "item": "40",
+      "count": "183"
+     },
+     {
+      "item": "1",
+      "count": "183"
+     },
+     {
+      "item": "10",
+      "count": "183"
+     },
+     {
+      "item": "46",
+      "count": "183"
+     },
+     {
+      "item": "7",
+      "count": "177"
+     },
+     {
+      "item": "18",
+      "count": "174"
+     },
+     {
+      "item": "22",
+      "count": "174"
+     },
+     {
+      "item": "3",
+      "count": "173"
+     },
+     {
+      "item": "2",
+      "count": "173"
+     },
+     {
+      "item": "19",
+      "count": "173"
+     },
+     {
+      "item": "27",
+      "count": "172"
+     },
+     {
+      "item": "6",
+      "count": "171"
+     },
+     {
+      "item": "15",
+      "count": "170"
+     },
+     {
+      "item": "12",
+      "count": "170"
+     },
+     {
+      "item": "5",
+      "count": "170"
+     }
+    ],
+    "smallest": "0",
+    "not_null": "4635075",
+    "count": "11905557",
+    "sum": "21704794.71",
+    "cardinality": "11905557"
+   },
+   "format": {
+    "decimalSeparator": ".",
+    "groupSeparator": ","
+   }
+  },
+  {
+   "id": 349342958,
+   "name": "FACTURACION_CONSUMO_BASICO",
+   "dataTypeName": "number",
+   "fieldName": "facturacion_consumo_basico",
+   "position": 20,
+   "renderTypeName": "number",
+   "tableColumnId": 62313942,
+   "width": 412,
+   "cachedContents": {
+    "largest": "1319180656",
+    "non_null": "11905557",
+    "average": "147280.8237463013",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "863174"
+     },
+     {
+      "item": "179367",
+      "count": "20936"
+     },
+     {
+      "item": "170318",
+      "count": "20660"
+     },
+     {
+      "item": "252421.89",
+      "count": "19653"
+     },
+     {
+      "item": "267642.42",
+      "count": "16945"
+     },
+     {
+      "item": "178233",
+      "count": "11151"
+     },
+     {
+      "item": "175004",
+      "count": "11102"
+     },
+     {
+      "item": "187166",
+      "count": "10985"
+     },
+     {
+      "item": "177519",
+      "count": "10978"
+     },
+     {
+      "item": "179584",
+      "count": "10938"
+     },
+     {
+      "item": "179196",
+      "count": "10761"
+     },
+     {
+      "item": "176588",
+      "count": "10748"
+     },
+     {
+      "item": "181755",
+      "count": "10655"
+     },
+     {
+      "item": "179075",
+      "count": "10620"
+     },
+     {
+      "item": "175636",
+      "count": "10590"
+     },
+     {
+      "item": "176709",
+      "count": "10553"
+     },
+     {
+      "item": "156843",
+      "count": "10509"
+     },
+     {
+      "item": "167109",
+      "count": "10444"
+     },
+     {
+      "item": "175802",
+      "count": "10442"
+     },
+     {
+      "item": "185517",
+      "count": "10430"
+     }
+    ],
+    "smallest": "0",
+    "not_null": "4635075",
+    "count": "11905557",
+    "sum": "415120427701.67",
+    "cardinality": "11905557"
+   },
+   "format": {
+    "decimalSeparator": ".",
+    "groupSeparator": ","
+   }
+  },
+  {
+   "id": 349342959,
+   "name": "FACTURACION_COMPLEMENTARIO",
+   "dataTypeName": "number",
+   "fieldName": "facturacion_complementario",
+   "position": 21,
+   "renderTypeName": "number",
+   "tableColumnId": 62313943,
+   "width": 412,
+   "cachedContents": {
+    "largest": "687842752",
+    "non_null": "11905557",
+    "average": "22632.06098659104",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "10489682"
+     },
+     {
+      "item": "125136.78",
+      "count": "8732"
+     },
+     {
+      "item": "109704.49",
+      "count": "7859"
+     },
+     {
+      "item": "133289.72",
+      "count": "7853"
+     },
+     {
+      "item": "136697.95",
+      "count": "7829"
+     },
+     {
+      "item": "127253.46",
+      "count": "7540"
+     },
+     {
+      "item": "123685.45",
+      "count": "7529"
+     },
+     {
+      "item": "128745.14",
+      "count": "7468"
+     },
+     {
+      "item": "122759.85",
+      "count": "6241"
+     },
+     {
+      "item": "120682.78",
+      "count": "6228"
+     },
+     {
+      "item": "121658.66",
+      "count": "6227"
+     },
+     {
+      "item": "117655",
+      "count": "5091"
+     },
+     {
+      "item": "120188",
+      "count": "5089"
+     },
+     {
+      "item": "116244",
+      "count": "5075"
+     },
+     {
+      "item": "144211.07",
+      "count": "4800"
+     },
+     {
+      "item": "110560.11",
+      "count": "4512"
+     },
+     {
+      "item": "111055.05",
+      "count": "4496"
+     },
+     {
+      "item": "110944.28",
+      "count": "4490"
+     },
+     {
+      "item": "114014",
+      "count": "4069"
+     },
+     {
+      "item": "112574",
+      "count": "2978"
+     }
+    ],
+    "smallest": "0",
+    "not_null": "4635075",
+    "count": "11905557",
+    "sum": "63789912342.61",
+    "cardinality": "11905557"
+   },
+   "format": {
+    "decimalSeparator": ".",
+    "groupSeparator": ","
+   }
+  },
+  {
+   "id": 349342960,
+   "name": "FACTURACION_RESIDE_MAYOR800",
+   "dataTypeName": "number",
+   "fieldName": "facturacion_reside_mayor800",
+   "position": 22,
+   "renderTypeName": "number",
+   "tableColumnId": 62313944,
+   "width": 424,
+   "cachedContents": {
+    "largest": "965945657",
+    "non_null": "11905557",
+    "average": "6497.417275062762",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "11845537"
+     },
+     {
+      "item": "3974",
+      "count": "19"
+     },
+     {
+      "item": "49183",
+      "count": "14"
+     },
+     {
+      "item": "46041",
+      "count": "12"
+     },
+     {
+      "item": "18224",
+      "count": "12"
+     },
+     {
+      "item": "19207",
+      "count": "11"
+     },
+     {
+      "item": "16306",
+      "count": "10"
+     },
+     {
+      "item": "40286",
+      "count": "10"
+     },
+     {
+      "item": "5465",
+      "count": "10"
+     },
+     {
+      "item": "58291",
+      "count": "10"
+     },
+     {
+      "item": "62845",
+      "count": "10"
+     },
+     {
+      "item": "64265",
+      "count": "10"
+     },
+     {
+      "item": "28775",
+      "count": "10"
+     },
+     {
+      "item": "26413",
+      "count": "10"
+     },
+     {
+      "item": "19590",
+      "count": "9"
+     },
+     {
+      "item": "118121",
+      "count": "9"
+     },
+     {
+      "item": "7666",
+      "count": "9"
+     },
+     {
+      "item": "10019",
+      "count": "8"
+     },
+     {
+      "item": "2546",
+      "count": "8"
+     },
+     {
+      "item": "1000",
+      "count": "8"
+     }
+    ],
+    "smallest": "0",
+    "not_null": "4635075",
+    "count": "11905557",
+    "sum": "18313386424.47",
+    "cardinality": "11905557"
+   },
+   "format": {
+    "decimalSeparator": ".",
+    "groupSeparator": ","
+   }
+  },
+  {
+   "id": 349342961,
+   "name": "VALOR_REFACTURACION",
+   "dataTypeName": "number",
+   "fieldName": "valor_refacturacion",
+   "position": 23,
+   "renderTypeName": "number",
+   "tableColumnId": 62313945,
+   "width": 328,
+   "cachedContents": {
+    "largest": "2954923449",
+    "non_null": "11905557",
+    "average": "-94.00105628256091",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "11738384"
+     },
+     {
+      "item": "33112",
+      "count": "408"
+     },
+     {
+      "item": "-287",
+      "count": "308"
+     },
+     {
+      "item": "-286",
+      "count": "305"
+     },
+     {
+      "item": "-543",
+      "count": "253"
+     },
+     {
+      "item": "-383",
+      "count": "242"
+     },
+     {
+      "item": "-545",
+      "count": "183"
+     },
+     {
+      "item": "-384",
+      "count": "148"
+     },
+     {
+      "item": "-240",
+      "count": "136"
+     },
+     {
+      "item": "-385",
+      "count": "136"
+     },
+     {
+      "item": "1",
+      "count": "85"
+     },
+     {
+      "item": "2",
+      "count": "83"
+     },
+     {
+      "item": "-572",
+      "count": "81"
+     },
+     {
+      "item": "-769",
+      "count": "77"
+     },
+     {
+      "item": "3",
+      "count": "77"
+     },
+     {
+      "item": "4",
+      "count": "73"
+     },
+     {
+      "item": "5",
+      "count": "72"
+     },
+     {
+      "item": "6",
+      "count": "70"
+     },
+     {
+      "item": "-1629",
+      "count": "69"
+     },
+     {
+      "item": "7",
+      "count": "68"
+     }
+    ],
+    "smallest": "-202437154",
+    "not_null": "4635075",
+    "count": "11905557",
+    "sum": "-264947993.20",
+    "cardinality": "11905557"
+   },
+   "format": {
+    "decimalSeparator": ".",
+    "groupSeparator": ","
+   }
+  },
+  {
+   "id": 349342962,
+   "name": "VALOR_MORA",
+   "dataTypeName": "number",
+   "fieldName": "valor_mora",
+   "position": 24,
+   "renderTypeName": "number",
+   "tableColumnId": 62313946,
+   "width": 220,
+   "cachedContents": {
+    "largest": "3477066200",
+    "non_null": "11905557",
+    "average": "94229.34116494073",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "10545964"
+     },
+     {
+      "item": "360200",
+      "count": "5564"
+     },
+     {
+      "item": "158100",
+      "count": "5032"
+     },
+     {
+      "item": "241091",
+      "count": "4565"
+     },
+     {
+      "item": "820",
+      "count": "4304"
+     },
+     {
+      "item": "1700",
+      "count": "3145"
+     },
+     {
+      "item": "1",
+      "count": "2361"
+     },
+     {
+      "item": "1267.73",
+      "count": "1964"
+     },
+     {
+      "item": "2588.37",
+      "count": "1964"
+     },
+     {
+      "item": "3558.94",
+      "count": "1964"
+     },
+     {
+      "item": "2905.9",
+      "count": "1964"
+     },
+     {
+      "item": "1594.1",
+      "count": "1964"
+     },
+     {
+      "item": "3231.87",
+      "count": "1964"
+     },
+     {
+      "item": "1926.86",
+      "count": "1964"
+     },
+     {
+      "item": "2259.46",
+      "count": "1964"
+     },
+     {
+      "item": "2",
+      "count": "1804"
+     },
+     {
+      "item": "17315.96",
+      "count": "1702"
+     },
+     {
+      "item": "34835.11",
+      "count": "1682"
+     },
+     {
+      "item": "20207.38",
+      "count": "1509"
+     },
+     {
+      "item": "26943.17",
+      "count": "1508"
+     }
+    ],
+    "smallest": "0",
+    "not_null": "4635075",
+    "count": "11905557",
+    "sum": "265591428751.22",
+    "cardinality": "11905557"
+   },
+   "format": {
+    "decimalSeparator": ".",
+    "groupSeparator": ","
+   }
+  },
+  {
+   "id": 349342963,
+   "name": "INTERES_MORA",
+   "dataTypeName": "number",
+   "fieldName": "interes_mora",
+   "position": 25,
+   "renderTypeName": "number",
+   "tableColumnId": 62313947,
+   "width": 244,
+   "cachedContents": {
+    "largest": "447240919",
+    "non_null": "11905557",
+    "average": "1223.595662539506",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "10690254"
+     },
+     {
+      "item": "0.02",
+      "count": "68142"
+     },
+     {
+      "item": "5475",
+      "count": "5554"
+     },
+     {
+      "item": "1",
+      "count": "5158"
+     },
+     {
+      "item": "11",
+      "count": "5147"
+     },
+     {
+      "item": "2403",
+      "count": "5040"
+     },
+     {
+      "item": "10",
+      "count": "4841"
+     },
+     {
+      "item": "2",
+      "count": "4704"
+     },
+     {
+      "item": "6",
+      "count": "4512"
+     },
+     {
+      "item": "8",
+      "count": "4259"
+     },
+     {
+      "item": "7",
+      "count": "4245"
+     },
+     {
+      "item": "9",
+      "count": "4147"
+     },
+     {
+      "item": "14",
+      "count": "4107"
+     },
+     {
+      "item": "12",
+      "count": "4027"
+     },
+     {
+      "item": "13",
+      "count": "3945"
+     },
+     {
+      "item": "16",
+      "count": "3903"
+     },
+     {
+      "item": "5",
+      "count": "3893"
+     },
+     {
+      "item": "17",
+      "count": "3870"
+     },
+     {
+      "item": "20",
+      "count": "3837"
+     },
+     {
+      "item": "4",
+      "count": "3735"
+     }
+    ],
+    "smallest": "-34338688",
+    "not_null": "4635075",
+    "count": "11905557",
+    "sum": "3448782684.99",
+    "cardinality": "11905557"
+   },
+   "format": {
+    "decimalSeparator": ".",
+    "groupSeparator": ","
+   }
+  },
+  {
+   "id": 349342964,
+   "name": "VALOR_SUBSIDIO",
+   "dataTypeName": "number",
+   "fieldName": "valor_subsidio",
+   "position": 26,
+   "renderTypeName": "number",
+   "tableColumnId": 62313948,
+   "width": 268,
+   "cachedContents": {
+    "largest": "0",
+    "non_null": "11905557",
+    "average": "-100134.3145137276",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "557455"
+     },
+     {
+      "item": "-117560.24",
+      "count": "9195"
+     },
+     {
+      "item": "-260320.31",
+      "count": "9011"
+     },
+     {
+      "item": "-107617.63",
+      "count": "8932"
+     },
+     {
+      "item": "-110720.82",
+      "count": "8834"
+     },
+     {
+      "item": "-160762.16",
+      "count": "8346"
+     },
+     {
+      "item": "-114629.16",
+      "count": "8053"
+     },
+     {
+      "item": "-109437.98",
+      "count": "7740"
+     },
+     {
+      "item": "-106369.49",
+      "count": "7729"
+     },
+     {
+      "item": "-245686.1",
+      "count": "6944"
+     },
+     {
+      "item": "-105573.47",
+      "count": "6441"
+     },
+     {
+      "item": "-103787.19",
+      "count": "6428"
+     },
+     {
+      "item": "-104626.45",
+      "count": "6427"
+     },
+     {
+      "item": "-224092.2",
+      "count": "6129"
+     },
+     {
+      "item": "-63108.9",
+      "count": "5862"
+     },
+     {
+      "item": "-237412.11",
+      "count": "5471"
+     },
+     {
+      "item": "-47254.5",
+      "count": "5200"
+     },
+     {
+      "item": "-99970",
+      "count": "5114"
+     },
+     {
+      "item": "-103362",
+      "count": "5092"
+     },
+     {
+      "item": "-101183",
+      "count": "5090"
+     }
+    ],
+    "smallest": "-199843251",
+    "not_null": "4635075",
+    "count": "11905557",
+    "sum": "-282234974053.07",
+    "cardinality": "11905557"
+   },
+   "format": {
+    "decimalSeparator": ".",
+    "groupSeparator": ","
+   }
+  },
+  {
+   "id": 349342965,
+   "name": "PORCENTAJE_SUBSIDIO",
+   "dataTypeName": "number",
+   "fieldName": "porcentaje_subsidio",
+   "position": 27,
+   "renderTypeName": "number",
+   "tableColumnId": 62313949,
+   "width": 328,
+   "cachedContents": {
+    "largest": "0",
+    "non_null": "11905557",
+    "average": "-0.6810391365957984",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "1554109"
+     },
+     {
+      "item": "-0.82",
+      "count": "1256350"
+     },
+     {
+      "item": "-0.83",
+      "count": "1101317"
+     },
+     {
+      "item": "-0.84",
+      "count": "958165"
+     },
+     {
+      "item": "-0.85",
+      "count": "902243"
+     },
+     {
+      "item": "-0.86",
+      "count": "822122"
+     },
+     {
+      "item": "-0.81",
+      "count": "797359"
+     },
+     {
+      "item": "-0.8",
+      "count": "632619"
+     },
+     {
+      "item": "-0.79",
+      "count": "412007"
+     },
+     {
+      "item": "-0.87",
+      "count": "258218"
+     },
+     {
+      "item": "-0.78",
+      "count": "246581"
+     },
+     {
+      "item": "-0.77",
+      "count": "240685"
+     },
+     {
+      "item": "-0.76",
+      "count": "236090"
+     },
+     {
+      "item": "-0.75",
+      "count": "163564"
+     },
+     {
+      "item": "-0.73",
+      "count": "135602"
+     },
+     {
+      "item": "-0.74",
+      "count": "127131"
+     },
+     {
+      "item": "-0.72",
+      "count": "93415"
+     },
+     {
+      "item": "-0.59",
+      "count": "89736"
+     },
+     {
+      "item": "-0.57",
+      "count": "80943"
+     },
+     {
+      "item": "-0.55",
+      "count": "74222"
+     }
+    ],
+    "smallest": "-1",
+    "not_null": "4635075",
+    "count": "11905557",
+    "sum": "-1919552.393",
+    "cardinality": "11905557"
+   },
+   "format": {
+    "decimalSeparator": ".",
+    "groupSeparator": ","
+   }
+  },
+  {
+   "id": 349342966,
+   "name": "VALOR_TOTAL",
+   "dataTypeName": "number",
+   "fieldName": "valor_total",
+   "position": 28,
+   "renderTypeName": "number",
+   "tableColumnId": 62313950,
+   "width": 232,
+   "cachedContents": {
+    "largest": "3553467518.02",
+    "non_null": "11905557",
+    "average": "171634.9232654252",
+    "null": "0",
+    "top": [
+     {
+      "item": "0",
+      "count": "349361"
+     },
+     {
+      "item": "10094.4",
+      "count": "66956"
+     },
+     {
+      "item": "6985",
+      "count": "54227"
+     },
+     {
+      "item": "17048.32",
+      "count": "52619"
+     },
+     {
+      "item": "11385",
+      "count": "40952"
+     },
+     {
+      "item": "11383.65",
+      "count": "40488"
+     },
+     {
+      "item": "10470.15",
+      "count": "22790"
+     },
+     {
+      "item": "11142",
+      "count": "21775"
+     },
+     {
+      "item": "11445.75",
+      "count": "21539"
+     },
+     {
+      "item": "10910.7",
+      "count": "21450"
+     },
+     {
+      "item": "11464.2",
+      "count": "21425"
+     },
+     {
+      "item": "12508.65",
+      "count": "21408"
+     },
+     {
+      "item": "10296.45",
+      "count": "21255"
+     },
+     {
+      "item": "11229.75",
+      "count": "20937"
+     },
+     {
+      "item": "11199.6",
+      "count": "20930"
+     },
+     {
+      "item": "11217.6",
+      "count": "20929"
+     },
+     {
+      "item": "11258.1",
+      "count": "20361"
+     },
+     {
+      "item": "7402.56",
+      "count": "20090"
+     },
+     {
+      "item": "11305.8",
+      "count": "20027"
+     },
+     {
+      "item": "11377.35",
+      "count": "20019"
+     }
+    ],
+    "smallest": "-115676002",
+    "not_null": "4635075",
+    "count": "11905557",
+    "sum": "483764015858.69",
+    "cardinality": "11905557"
+   },
+   "format": {}
+  },
+  {
+   "id": 349342967,
+   "name": "TIPO_CATEGORIA",
+   "dataTypeName": "text",
+   "fieldName": "tipo_categoria",
+   "position": 29,
+   "renderTypeName": "text",
+   "tableColumnId": 62313951,
+   "width": 268,
+   "cachedContents": {
+    "largest": "L",
+    "non_null": "11905557",
+    "null": "0",
+    "top": [
+     {
+      "item": "L",
+      "count": "7241395"
+     },
+     {
+      "item": "C",
+      "count": "4642672"
+     },
+     {
+      "item": "l",
+      "count": "21490"
+     }
+    ],
+    "smallest": "C",
+    "not_null": "4635075",
+    "count": "11905557",
+    "cardinality": "11905557"
+   },
+   "format": {}
+  }
+ ],
+ "grants": [
+  {
+   "inherited": false,
+   "type": "viewer",
+   "flags": [
+    "public"
+   ]
+  }
+ ],
+ "license": {
+  "name": "Creative Commons Attribution | Share Alike 4.0 International",
+  "logoUrl": "images/licenses/cc30bysa.png",
+  "termsLink": "http://creativecommons.org/licenses/by-sa/4.0/legalcode"
+ },
+ "metadata": {
+  "custom_fields": {
+   "Información de la Entidad": {
+    "Municipio": "Bogotá D.C.",
+    "Nombre de la Entidad": "Superintendencia de Servicios Públicos Domiciliarios - SUPERSERVICIOS, Bogotá D.C.",
+    "DIVIPOLA Municipio": "11001",
+    "Orden": "Nacional",
+    "Sector": "Planeación",
+    "Departamento": "Bogotá D.C."
+   },
+   "Información de Datos": {
+    "Cobertura Geográfica": "Nacional",
+    "Idioma": "Español",
+    "Frecuencia de Actualización": "Anual"
+   }
+  }
+ },
+ "owner": {
+  "id": "b7d6-mh4s",
+  "displayName": "Superintendencia de Servicios Públicos Domiciliarios",
+  "profileImageUrlLarge": "/api/users/b7d6-mh4s/profile_images/LARGE",
+  "profileImageUrlMedium": "/api/users/b7d6-mh4s/profile_images/THUMB",
+  "profileImageUrlSmall": "/api/users/b7d6-mh4s/profile_images/TINY",
+  "screenName": "Superintendencia de Servicios Públicos Domiciliarios",
+  "type": "interactive",
+  "flags": [
+   "acceptedEula",
+   "mayBeStoriesCoOwner"
+  ]
+ },
+ "query": {},
+ "rights": [
+  "read"
+ ],
+ "tableAuthor": {
+  "id": "b7d6-mh4s",
+  "displayName": "Superintendencia de Servicios Públicos Domiciliarios",
+  "profileImageUrlLarge": "/api/users/b7d6-mh4s/profile_images/LARGE",
+  "profileImageUrlMedium": "/api/users/b7d6-mh4s/profile_images/THUMB",
+  "profileImageUrlSmall": "/api/users/b7d6-mh4s/profile_images/TINY",
+  "screenName": "Superintendencia de Servicios Públicos Domiciliarios",
+  "type": "interactive",
+  "flags": [
+   "acceptedEula",
+   "mayBeStoriesCoOwner"
+  ]
+ },
+ "flags": [
+  "default",
+  "ownerMayBeContacted",
+  "restorable",
+  "restorePossibleForType"
+ ]
+}

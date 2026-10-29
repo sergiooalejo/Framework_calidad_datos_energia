@@ -10,14 +10,14 @@ sobre el consumidor del dato que allí se declare. Ese bloque sigue pendiente de
 
 ## Punto 1 · Matriz OE1
 
-El punto 1 queda desarrollado como especificación documental para EPM y CHEC. No se modificó el código del Hito 2.
+El punto 1 queda desarrollado como especificación documental para EPM, CHEC y SSPD. No se modificó el código del Hito 2.
 
 Los tres archivos de la matriz incluyen además la **línea base medida** sobre los CSV conservados en `fuentes_datos/datos/`: resultado, estado y nota por control y fuente. La especificación no se modificó; solo se llenó el casillero de resultado que quedaba en `null`.
 
 ## Archivos
 
 - [Matriz y fichas explicadas](matriz_oe1.md): lectura principal, ocho dimensiones, diez tipos de regla y diecinueve indicadores, con el resultado de cada ficha y la sección de línea base.
-- [Matriz CSV](matriz_oe1.csv): 38 filas (19 controles × 2 fuentes), legible en Excel con UTF-8 y separador coma; incluye las columnas de resultado.
+- [Matriz CSV](matriz_oe1.csv): 57 filas (19 controles × 3 fuentes), legible en Excel con UTF-8 y separador coma; incluye las columnas de resultado.
 - [Especificación YAML](matriz_oe1.yaml): definiciones, fórmulas, parámetros, decisiones de medición y bloque `resultado` por fuente. Es documental; no es un motor de reglas ejecutado.
 - [Plantilla de exactitud](plantilla_exactitud.csv): contraste de una muestra con publicaciones verificadas.
 - [Plantilla de oportunidad](plantilla_oportunidad.csv): plazos, evidencia temporal e intervalos de disponibilidad.
@@ -36,8 +36,11 @@ La especificación la elaboró el entregable anterior; esta entrega añade el re
 | `medido` | La definición de la matriz se aplica sin supuestos añadidos. El valor no cambia salvo que cambien los datos. |
 | `provisional` | Hay valor, pero depende de una decisión documental todavía abierta (catálogo canónico, dominio por concepto, conjunto de medidas requeridas, factor de R12, clave definitiva de CHEC). El valor puede cambiar cuando esa decisión se cierre. |
 | `no_medible` | No hay numerador posible con la evidencia disponible. No es falta de definición, es falta de evidencia. |
+| `no_aplica` | El concepto del control no existe en el esquema de esa fuente. No es una brecha: es una diferencia estructural, y debe leerse distinto de `no_medible`. |
 
-Cobertura actual: **15 de los 19 controles** tienen valor en al menos una fuente, y **siete de las ocho dimensiones** están medidas. La única sin ninguna medición es **oportunidad**, porque ninguna de las dos fuentes publica la fecha real de disponibilidad por período.
+Cobertura actual: **17 de los 19 controles** tienen valor en al menos una fuente, y **siete de las ocho dimensiones** están medidas. Siguen sin ningún valor **OPO01 y CART01**: el primero porque ninguna de las tres fuentes publica la fecha real de disponibilidad por período, el segundo porque las cartas de la actividad 5 todavía no se ejecutan. La dimensión sin ninguna medición sigue siendo **oportunidad**.
+
+La tercera fuente añadió valor a **MAP01 y DEF01**, que antes no tenían ninguno. DEF01 da 0 % sobre SSPD y queda en `medido`: no falta evidencia para evaluarlo, la evidencia existe y dice que el publicador no define ninguna de sus 29 columnas.
 
 Cada valor va acompañado de su numerador, su denominador y una nota que declara los supuestos aplicados. Las cifras se recalculan ejecutando el script; no se transcriben a mano.
 

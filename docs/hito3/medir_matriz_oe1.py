@@ -84,6 +84,19 @@ CHEC = dict(
     ],
 )
 
+# Tercera fuente. No pasa por medir(): su esquema es de facturación, no tarifario,
+# así que tiene su propia función en medir_sspd.py. Entra aquí solo para que los
+# escritores la traten como a las otras dos.
+SSPD = dict(
+    fuente="SSPD", clave="sspd", dataset_id="ebby-cjha",
+    archivo=DATOS / "sspd_ebby-cjha_detalle.csv",
+    archivo_mensual=DATOS / "sspd_ebby-cjha_mensual.csv",
+    propia=True,
+)
+
+# Orden en el que las tres fuentes aparecen en CSV, YAML y Markdown.
+FUENTES = (EPM, CHEC, SSPD)
+
 
 def numero(texto):
     s = (texto or "").strip()
@@ -448,8 +461,11 @@ def escribir_csv(med, sello):
         w.writerows(filas)
 
 
-def estado_control(a, b):
-    est = {a["estado"], b["estado"]}
+def estado_control(*ds):
+    # `no_aplica` no cuenta como falta de medición: el concepto no existe en esa fuente.
+    est = {d["estado"] for d in ds if d["estado"] != "no_aplica"}
+    if not est:
+        return "no_aplica"
     if est == {"medido"}:
         return "medido"
     if est == {"no_medible"}:
@@ -461,12 +477,12 @@ def estado_control(a, b):
 
 def escribir_yaml(med, sello):
     txt = MATRIZ_YAML.read_text(encoding="utf-8")
-    epm, chec = med["EPM"][0], med["CHEC"][0]
+    porf = [(c["clave"], med[c["fuente"]][0]) for c in FUENTES if c["fuente"] in med]
 
     def bloque(control):
-        a, b = epm[control], chec[control]
         out = ["  resultado:"]
-        for cfg_clave, d in (("epm", a), ("chec", b)):
+        for cfg_clave, m in porf:
+            d = m[control]
             out.append(f"    {cfg_clave}:")
             out.append(f"      numerador: {'null' if d['numerador'] is None else d['numerador']}")
             out.append(f"      denominador: {'null' if d['denominador'] is None else d['denominador']}")
@@ -490,7 +506,7 @@ def escribir_yaml(med, sello):
 
     def sub_estado(_m):
         c = pendientes_est.pop(0)
-        return f"  estado_medicion: {estado_control(epm[c], chec[c])}"
+        return f"  estado_medicion: {estado_control(*[m[c] for _, m in porf])}"
 
     txt = re.sub(r"^  estado_medicion: .*$", sub_estado, txt, flags=re.M)
 
@@ -505,16 +521,16 @@ def escribir_md(med, sello, proc):
     txt = MATRIZ_MD.read_text(encoding="utf-8")
     epm, chec = med["EPM"][0], med["CHEC"][0]
     xe, xc = med["EPM"][1], med["CHEC"][1]
+    nombres = [c["fuente"] for c in FUENTES if c["fuente"] in med]
+    porf = [(c["fuente"], med[c["fuente"]][0]) for c in FUENTES if c["fuente"] in med]
 
     def linea(control):
-        a, b = epm[control], chec[control]
-
         def uno(nombre, d):
             if d["valor"] is None:
-                return f"{nombre} sin medir ({d['estado']})"
+                return f"{nombre} {'no aplica' if d['estado'] == 'no_aplica' else 'sin medir'} ({d['estado']})"
             return f"{nombre} {d['valor']:.4g} % ({d['numerador']}/{d['denominador']}, {d['estado']})"
 
-        return f"- **Estado:** {uno('EPM', a)}; {uno('CHEC', b)}."
+        return "- **Estado:** " + "; ".join(uno(n, m[control]) for n, m in porf) + "."
 
     pendientes = list(ORDEN)
 
@@ -524,12 +540,16 @@ def escribir_md(med, sello, proc):
     txt = re.sub(r"^- \*\*Estado:\*\* .*$", sub, txt, flags=re.M)
 
     # Sección de línea base, regenerada en cada ejecución.
+    def celda_md(d):
+        if d["valor"] is None:
+            return "n/a" if d["estado"] == "no_aplica" else "—"
+        return f"{d['valor']:.4g} %<br><sub>{d['numerador']}/{d['denominador']}</sub>"
+
     filas_tabla = []
     for c in ORDEN:
-        a, b = epm[c], chec[c]
-        va = "—" if a["valor"] is None else f"{a['valor']:.4g} %<br><sub>{a['numerador']}/{a['denominador']}</sub>"
-        vb = "—" if b["valor"] is None else f"{b['valor']:.4g} %<br><sub>{b['numerador']}/{b['denominador']}</sub>"
-        filas_tabla.append(f"| {c} | {va} | {vb} | {a['estado']} / {b['estado']} |")
+        celdas = " | ".join(celda_md(m[c]) for _, m in porf)
+        estados = " / ".join(m[c]["estado"] for _, m in porf)
+        filas_tabla.append(f"| {c} | {celdas} | {estados} |")
 
     col = xc["por_columna"]
     filas_col = []
@@ -546,6 +566,11 @@ def escribir_md(med, sello, proc):
     cob_e, cob_c = xe["cobertura"], xc["cobertura"]
     neg_e = " · ".join(f"{v} en {k}" for k, v in xe["negativos_por_concepto"].most_common())
 
+    def fila_cobertura(nombre):
+        c = med[nombre][1]["cobertura"]
+        return (f"| {nombre} | {c['presentes']} | {c['esperados']} | "
+                f"{c['ini'][0]}-{c['ini'][1]:02d} a {c['fin'][0]}-{c['fin'][1]:02d} |")
+
     seccion = f"""<!-- INICIO LINEA BASE -->
 ## Línea base medida
 
@@ -555,8 +580,7 @@ de esta misma matriz. Última ejecución: {sello}.
 
 | Archivo medido | Filas | SHA-256 |
 |---|---|---|
-| `{proc['EPM']['archivo']}` | {proc['EPM']['filas']} | `{proc['EPM']['sha256']}` |
-| `{proc['CHEC']['archivo']}` | {proc['CHEC']['filas']} | `{proc['CHEC']['sha256']}` |
+{chr(10).join(f"| `{proc[n]['archivo']}` | {proc[n]['filas']} | `{proc[n]['sha256']}` |" for n in nombres)}
 
 > Estos hashes no coinciden con `fuentes_datos/verificaciones/manifiesto_archivos.json`.
 > La causa está identificada y no es corrupción: el repositorio no declara política de fin
@@ -566,16 +590,18 @@ de esta misma matriz. Última ejecución: {sello}.
 
 ### Resultado por control
 
-| Control | EPM | CHEC | Estado EPM / CHEC |
-|---|---|---|---|
+| Control | {" | ".join(nombres)} | Estado {" / ".join(nombres)} |
+|---|{"---|" * (len(nombres) + 1)}
 {chr(10).join(filas_tabla)}
+
+`n/a` significa que el control no aplica a esa fuente porque el concepto no existe en su
+esquema. Es distinto de `—`, que es falta de evidencia.
 
 ### Observación de apoyo: continuidad de cobertura
 
 | Fuente | Períodos presentes | Esperados en la ventana | Ventana |
 |---|---|---|---|
-| EPM | {cob_e['presentes']} | {cob_e['esperados']} | {cob_e['ini'][0]}-{cob_e['ini'][1]:02d} a {cob_e['fin'][0]}-{cob_e['fin'][1]:02d} |
-| CHEC | {cob_c['presentes']} | {cob_c['esperados']} | {cob_c['ini'][0]}-{cob_c['ini'][1]:02d} a {cob_c['fin'][0]}-{cob_c['fin'][1]:02d} |
+{chr(10).join(fila_cobertura(n) for n in nombres)}
 
 **No acredita OPO01 y no debe presentarse como tal.** OPO01 exige evidencia de que cada
 publicación estuvo disponible dentro de un plazo documentado, y su propia especificación
@@ -652,10 +678,12 @@ brecha real del punto 1, y no se cierra midiendo mejor.
 
 
 def main():
+    from medir_sspd import medir_sspd
+
     sello = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     med, proc = {}, {}
-    for cfg in (EPM, CHEC):
-        med[cfg["fuente"]] = medir(cfg)
+    for cfg in FUENTES:
+        med[cfg["fuente"]] = medir_sspd() if cfg.get("propia") else medir(cfg)
         proc[cfg["fuente"]] = dict(
             archivo=str(cfg["archivo"].relative_to(RAIZ)).replace("\\", "/"),
             filas=med[cfg["fuente"]][1]["filas"], sha256=sha256(cfg["archivo"]))
@@ -664,15 +692,16 @@ def main():
     escribir_yaml(med, sello)
     escribir_md(med, sello, proc)
 
-    epm, chec = med["EPM"][0], med["CHEC"][0]
+    nombres = [c["fuente"] for c in FUENTES]
     print(f"Medición {sello}\n")
-    print(f"  {'control':<8} {'EPM':>22}   {'CHEC':>22}")
+    print("  " + f"{'control':<8}" + "".join(f"{n:>24}" for n in nombres))
     for c in ORDEN:
         def celda(d):
             if d["valor"] is None:
-                return f"{'-':>10}  {d['estado']:<10}"
-            return f"{d['valor']:>10.4f}  {d['estado']:<10}"
-        print(f"  {c:<8} {celda(epm[c])}   {celda(chec[c])}")
+                marca = "n/a" if d["estado"] == "no_aplica" else "-"
+                return f"{marca:>10}  {d['estado']:<12}"
+            return f"{d['valor']:>10.4f}  {d['estado']:<12}"
+        print(f"  {c:<8}" + "".join(celda(med[n][0][c]) for n in nombres))
     print("\nActualizados: matriz_oe1.csv, matriz_oe1.yaml, matriz_oe1.md")
 
 

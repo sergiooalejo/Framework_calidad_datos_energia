@@ -351,6 +351,143 @@ documentado del control INT02.
 
 ---
 
+# Ficha 3 · SSPD — Información comercial residencial y no residencial
+
+Esta ficha cubre la tercera fuente, incorporada para cerrar la carencia que el propio
+`fuentes_datos/README.md` declaraba: *«Ambos contienen tarifas/costos, no consumo
+observado»*. Es la única fuente del proyecto con consumo medido.
+
+## Bloque 1 · Identificación y estructura
+
+| | |
+|---|---|
+| Conjunto | `ebby-cjha` |
+| Publicador | Superintendencia de Servicios Públicos Domiciliarios |
+| Portal | https://www.datos.gov.co/d/ebby-cjha |
+| Filas en origen | **11.905.557** |
+| Columnas | 29 |
+| Naturaleza | Registro de **facturación**, no tarifario |
+| Ámbito | **Zonas No Interconectadas.** 91 empresas; ninguna del Sistema Interconectado Nacional |
+| Periodicidad declarada | Anual |
+| Última carga de datos | 28 de octubre de 2023 |
+
+**Por qué no se conserva íntegro.** En origen pesa unos 9,7 GB, que no es versionable. Se
+conservan dos **censos declarados**, no muestras aleatorias:
+
+| Archivo | Filas | Universo |
+|---|---|---|
+| `sspd_ebby-cjha_mensual.csv` | 15.075 | Las 91 empresas y los 59 períodos, agregados por ocho dimensiones |
+| `sspd_ebby-cjha_detalle.csv` | 91.840 | Todos los registros de la empresa 28111, en sus 57 períodos |
+
+El agregado sostiene cobertura, dominios y series; el detalle sostiene las reglas de fila.
+Cada uno declara su universo, de modo que ningún resultado se presenta como si cubriera
+algo que no cubre.
+
+**Diferencia estructural con EPM y CHEC.** Las dos fuentes anteriores publican el costo
+unitario por categoría tarifaria. Esta publica la factura por usuario y período. No comparte
+los ejes de propiedad del activo ni los componentes de la Resolución CREG 119 de 2007, y por
+eso los controles R08, R09 e INT02 quedan marcados `no_aplica` en la matriz: el concepto no
+existe en su esquema, que es distinto de faltar evidencia.
+
+## Bloque 2 · Cobertura temporal y series
+
+| | |
+|---|---|
+| Ventana | julio 2017 a mayo 2022 |
+| Períodos presentes | **59** |
+| Períodos esperados en la ventana | 59 |
+| Huecos internos | **ninguno** |
+| Series empresa × estrato | 207 |
+| Series con 49 meses o más | **136** |
+
+Los 59 períodos son consecutivos. Antes de julio de 2017 el conjunto no publica: los seis
+primeros meses de 2017 no existen, de modo que la ventana empieza ahí y no se cruza ese
+hueco al construir series.
+
+Con 59 meses caben 36 cambios de referencia y 23 de vigilancia, por encima del mínimo de 49
+que exige el protocolo de cartas. Las 136 series aptas son material suficiente para la
+actividad 5, aunque las cartas todavía no se han ejecutado y CART01 sigue en `no_medible`.
+
+**Advertencia de independencia.** Las 207 series no son réplicas independientes: comparten
+empresa, y las empresas comparten régimen regulatorio y operador. Vale la misma precaución
+que ya se declaró para CHEC.
+
+## Bloque 3 · Datos críticos
+
+Las medidas de consumo, que son la razón de incorporar esta fuente:
+
+| Variable | Qué aporta |
+|---|---|
+| `consumo_basico` | Consumo del rango básico o de subsistencia |
+| `consumo_complementario` | Consumo por encima del rango básico |
+| `consumo_reside_mayor800` | Consumo residencial superior a 800 kWh |
+| `facturacion_consumo_basico` | Valor facturado por ese consumo |
+| `valor_total` | Valor total de la factura |
+| `valor_subsidio` y `porcentaje_subsidio` | Subsidio aplicado |
+
+Lo que la medición encontró, sin necesidad de ejecutar el pipeline completo:
+
+- **R05 da 91,63 %.** Hay **7.686 identificadores de factura repetidos** sobre filas que no
+  son copias exactas. La clave `id_factura` es provisional y requiere decisión.
+- **R07 encuentra negativos reales.** `valor_total` tiene **103.136 registros negativos**, con
+  mínimo de −115.676.002. `consumo_basico` tiene un registro en −43.
+- **R06 detecta tres variantes de escritura** entre las 91 empresas, todas por espacio final:
+  `'P'` frente a `'P '` en `tipo_conexion`, `'1'` frente a `'1 '` en `estrato_sector` y `'N'`
+  frente a `'N '` en `tipo_factura`. Son cuatro registros cada una; el porcentaje redondea a
+  100 % y por eso el conteo se registra en la nota del control.
+- **R11 marca 457 importes** dentro del rango de serial de fecha de Excel.
+- **`dias_facturados` llega a 33.** Ningún mes del calendario tiene 33 días.
+- **`porcentaje_subsidio` va de −1 a 0.** El signo no está explicado.
+
+## Bloque 4 · Unidades y significado
+
+Aquí esta fuente establece un caso extremo que conviene documentar tal cual.
+
+### El publicador no define absolutamente nada
+
+De las **29 columnas, ninguna trae descripción** en el metadato oficial del portal. Y la
+descripción del conjunto es su propio título repetido palabra por palabra:
+
+> Nombre: «Información Comercial para el Sector Residencial y No Residencial»
+> Descripción: «Información Comercial para el Sector Residencial y No Residencial»
+
+Por eso DEF01 da **0 %** y queda en estado `medido`: no es que falte evidencia para
+evaluarlo, es que la evidencia existe y dice que no hay ninguna definición.
+
+Esto completa un patrón en las tres fuentes del proyecto:
+
+| Fuente | Defecto de definición |
+|---|---|
+| EPM | Documenta un concepto, Cfm,j, que no publica en ninguna fila |
+| CHEC | Define de forma circular: `tipomed` se describe como «tipomed» |
+| SSPD | **No define ninguna de sus 29 columnas** |
+
+Tres publicadores distintos, tres formas de la misma falla. Deja de ser una anécdota de una
+fuente y pasa a ser un patrón del sector, que es un argumento bastante más fuerte para el
+marco.
+
+### Consecuencias concretas de esa ausencia
+
+- **La unidad del consumo no está declarada.** Se presume kWh por el nombre de
+  `consumo_reside_mayor800`, pero es una inferencia del equipo, no un dato de la fuente.
+- **La convención de signo del subsidio no está declarada.** Los datos muestran que la fuente
+  lo registra negativo de forma sistemática: 90.469 de los 91.840 registros del censo de
+  detalle. R07 lo excluye a propósito, porque contarlo como defecto sería confundir una
+  convención no documentada con un error. La ambigüedad se registra en DEF01, que es su sitio.
+- **`codigo_conexion` mezcla tres cosas distintas** en un mismo campo: códigos como `1` o
+  `CN`, el texto `No Aplica` y nombres de municipio como `TIERRALTA`.
+- **`estrato_sector` mezcla dominios**: estratos 1 a 6 junto con las letras C, O, P e I.
+- **`tension` tiene 40 valores distintos**, uno de ellos la cadena literal `None`.
+
+Todo esto quedó registrado en [`sspd.yaml`](../../fuentes_datos/diccionarios/sspd.yaml), con
+cada lectura de significado marcada como inferida. No se inventaron catálogos ni unidades.
+
+## Bloque 5 · Consumidor del dato
+
+**Pendiente de decisión del equipo.** Ver la sección siguiente.
+
+---
+
 # Bloque 5 común · Consumidor del dato
 
 Es el único bloque que no se mide. Y es el que habilita los umbrales de la matriz OE1, que
@@ -401,13 +538,13 @@ del trabajo.
 
 # Estado del punto 2
 
-| Bloque | EPM | CHEC |
-|---|---|---|
-| 1 · Identificación y estructura | Completo | Completo |
-| 2 · Cobertura y series | Completo | Completo, con advertencia de independencia |
-| 3 · Datos críticos | Completo | Completo |
-| 4 · Unidades y significado | Documentado, con tres carencias de la fuente | Documentado, con tres carencias de la fuente |
-| 5 · Consumidor del dato | **Pendiente de decisión** | **Pendiente de decisión** |
+| Bloque | EPM | CHEC | SSPD |
+|---|---|---|---|
+| 1 · Identificación y estructura | Completo | Completo | Completo, con alcance de copia declarado |
+| 2 · Cobertura y series | Completo | Completo, con advertencia de independencia | Completo, con advertencia de independencia |
+| 3 · Datos críticos | Completo | Completo | Completo |
+| 4 · Unidades y significado | Documentado, con tres carencias de la fuente | Documentado, con tres carencias de la fuente | Documentado; la fuente no define ninguna columna |
+| 5 · Consumidor del dato | **Pendiente de decisión** | **Pendiente de decisión** | **Pendiente de decisión** |
 
 ## Pendientes
 
@@ -423,9 +560,14 @@ del trabajo.
 - **A la matriz OE1:** el denominador de completitud debe excluir los casos no aplicables
   por nivel; R10 requiere matriz de aplicabilidad por concepto; MAP01 cuenta con respaldo
   documental parcial a partir de la definición de C.S.; INT02 tiene su primer caso
-  documentado; DEF01 queda sustentado por la circularidad del metadato de CHEC.
-- **Al punto 3 (replicación):** las dos fuentes no comparten estructura. CHEC carece de
+  documentado; DEF01 queda sustentado por la circularidad del metadato de CHEC y, en el
+  extremo, por la ausencia total de definiciones en SSPD.
+- **Al punto 3 (replicación):** las tres fuentes no comparten estructura. CHEC carece de
   columnas de propiedad equivalentes y de rangos de consumo comparables, de modo que R08 y
-  R09 no se trasladan literalmente.
+  R09 no se trasladan literalmente. SSPD va más lejos: es un registro de facturación y no
+  tiene los ejes tarifarios en absoluto, de modo que R08, R09 e INT02 quedan `no_aplica`.
+  El informe de diferencias debe distinguir «no aplica» de «no medible».
+- **Al consumo observado:** SSPD es la única fuente con consumo medido. Permite cruzar el
+  precio que publican EPM y CHEC con una cantidad, cosa que ninguna de las dos sostiene sola.
 - **A los resultados del Hito 4:** el remuestreo en CHEC debe hacerse por mercado y nivel, no
   por serie, y la limitación de independencia debe declararse.

@@ -32,6 +32,41 @@ Con 61 observaciones se pueden reservar 48 cambios de referencia y 12 de vigilan
 
 CHEC tampoco contiene consumo observado. Las medidas están declaradas como texto en el esquema; definiciones como `tipomed`, `cureal` y `subcon` requieren confirmación. El diccionario no inventa catálogos ni unidades faltantes.
 
+## SSPD — Información comercial residencial y no residencial
+
+- Portal: https://www.datos.gov.co/d/ebby-cjha
+- CSV: `datos/sspd_ebby-cjha_mensual.csv` y `datos/sspd_ebby-cjha_detalle.csv`.
+  Diccionario: `diccionarios/sspd.yaml`.
+- Volumen en origen: **11.905.557 filas y 29 columnas**.
+- Cobertura: **julio de 2017 a mayo de 2022, 59 períodos mensuales consecutivos.**
+
+Se incorpora por una razón explícita: este mismo documento y el README declaraban que EPM y
+CHEC **no contienen consumo observado**. Esta fuente lo aporta, en `consumo_basico`,
+`consumo_complementario` y `consumo_reside_mayor800`.
+
+Se evaluaron todas las alternativas del catálogo nacional antes de elegirla. De 2.138 fichas
+revisadas, 128 de energía y 24 con alguna columna de consumo, **es la única con profundidad
+mensual suficiente para cartas de control**: las demás tienen once o doce períodos. Con 59
+meses caben 36 cambios de referencia y 23 de vigilancia, y 136 de sus 207 series
+empresa-estrato alcanzan el mínimo de 49.
+
+**Se relaja un criterio y se declara.** La fuente no se actualiza desde el 28 de octubre de
+2023 y declara periodicidad anual. Se aceptó porque las cartas requieren una serie mensual
+histórica, no un flujo vivo: que no lleguen períodos nuevos no afecta un análisis sobre 59
+meses ya publicados. Además, una fuente que declara una frecuencia y no la cumple es materia
+de la dimensión de oportunidad, no una razón para descartarla.
+
+**Dos limitaciones que no se ocultan.** La primera: es de **Zonas No Interconectadas**. Se
+verificaron las 91 empresas contra el directorio de Superservicios y ninguna es del Sistema
+Interconectado Nacional, de modo que no aplica la fórmula de la Resolución CREG 119 de 2007
+ni comparte los ejes tarifarios de EPM y CHEC. Por eso R08, R09 e INT02 quedan `no_aplica`.
+La segunda: en origen pesa unos 9,7 GB, así que se conservan dos censos declarados en lugar
+del conjunto íntegro, con su universo escrito en el diccionario.
+
+A cambio aporta algo que las otras dos no tienen: **91 publicadores en un mismo esquema**.
+Validar el framework en dos empresas grandes y después en 91 operadores pequeños con poca
+capacidad de reporte es un argumento de transferibilidad bastante más fuerte.
+
 ## Utilidad de la pareja
 
 Mantiene el dominio del trabajo realizado y permite contrastar dos estructuras tarifarias. Se propone un núcleo común y adaptadores por fuente. R08 y R09 deben traducirse al esquema de CHEC: copiar literalmente el código EPM no sería una réplica válida.
