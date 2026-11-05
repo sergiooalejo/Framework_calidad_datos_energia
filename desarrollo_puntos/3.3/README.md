@@ -1,5 +1,7 @@
 # Hito 3 · Puntos 1 y 2
 
+El estado de cierre y la transición al Hito 4 están documentados en [CIERRE_HITO3.md](CIERRE_HITO3.md).
+
 | Punto | Entregable | Documento |
 |---|---|---|
 | 1 | Matriz OE1 con plantilla llena por regla | [`matriz_oe1.md`](matriz_oe1.md) |
@@ -25,6 +27,21 @@ Los tres archivos de la matriz incluyen la línea base disponible sobre los dato
 - [Plantilla de catálogos](plantilla_catalogos.csv): dominios, equivalencias y relaciones con fundamento documental.
 - [Script de medición](medir_matriz_oe1.py): calcula el resultado de cada control y lo escribe dentro de los tres archivos anteriores. Reejecutable e idempotente con `python3 desarrollo_puntos/3.3/medir_matriz_oe1.py`; registra el SHA-256 de cada archivo medido.
 - [Referencia externa de EXA01](referencia_exa01_chec.json): registros de CHEC en `td8k-vhq9` de Superservicios, con su consulta y fecha de descarga. Permite contrastar exactitud sin depender de una respuesta de la entidad, y hace el contraste reproducible sin red.
+- [Trazabilidad estable](../../fuentes_datos/verificaciones/trazabilidad_filas/README.md):
+  SHA-256 por archivo, fecha de ejecución, clave de contenido e identificador estable de
+  fila para los cuatro datasets; también genera copias trazables de hallazgos y alertas.
+- [Bootstrap por categoría](bootstrap/README.md):
+  intervalos de confianza del 95 % para la tasa descriptiva de señales de CART01,
+  remuestreando series dentro de cada categoría y sin mezclar fuentes. Incluye la semilla,
+  el número de repeticiones y la unidad de remuestreo para reproducibilidad.
+- [Informe de diferencias entre fuentes](INFORME_DIFERENCIAS_FUENTES.md): comparación de
+  estructura, aplicabilidad, estados de medición y restricciones de interpretación.
+- [Pendientes de aprobación del Hito 3](PENDIENTES_APROBACION_HITO3.md): documento único con
+  roles, umbrales, catálogos, evidencia externa, reproducibilidad y decisiones estadísticas.
+- [Evidencia de exactitud y oportunidad](EVIDENCIA_EXACTITUD_OPORTUNIDAD.md): procedimiento,
+  evidencia disponible y plantillas para cerrar EXA01 y OPO01.
+- [Reproducibilidad del Hito 3](REPRODUCIBILIDAD_HITO3.md): prueba ejecutada, hashes y requisito
+  de una segunda versión independiente.
 
 Las tres plantillas contienen solo cabeceras: están pendientes de diligenciar con evidencia real. No existen referencias o fechas de publicación inventadas.
 
@@ -58,12 +75,17 @@ La oportunidad pasa de excluida a obligatoria por instrucción del profesor. Se 
 
 Las metas de conformidad del 100 % son propuestas del proyecto; los umbrales de tasas de alertas requieren calibración y no se fijan en cero. Deben validarse antes de declarar cumplimiento. El documento distingue cambios propuestos al código (especialmente R10/R11/R12) de su comportamiento actual.
 
-## Pendientes para ejecutar y cerrar
+## Pendientes residuales después del cierre documental
 
 1. Asignar nombres a los roles y validar los criterios/umbrales con el equipo y dirección.
 2. Confirmar catálogos, unidades, semántica, clave candidata y adaptaciones R08/R09 para CHEC.
 3. Completar la evidencia de exactitud y oportunidad. EXA01 ya tiene un contraste parcial en CHEC contra otro publicador; falta cubrir EPM, que no tiene traslape temporal con esa referencia, y falta por completo la evidencia de oportunidad en ambas fuentes. «No evaluable» no acredita el requisito de ocho dimensiones.
-4. Generar scorecards; corresponde a las actividades posteriores. La línea base ya cubre 15 de los 19 controles, a la espera de las decisiones de los puntos 1 a 3.
+4. Generar scorecards y análisis de sensibilidad en el Hito 4.
 5. Revisar dos propuestas que surgen de medir: cambiar la unidad de observación de R10 de fila a celda por columna, y declarar la política de fin de línea de los CSV para que sus hashes sean verificables.
+
+6. Interpretar el bootstrap por categoría junto con la matriz: el intervalo cuantifica la
+   variabilidad entre series, no demuestra por sí solo que una señal sea un error. El grupo
+   XM y cualquier categoría con una sola serie tienen un intervalo degenerado; deben reportarse
+   como evidencia descriptiva y no como inferencia poblacional.
 
 La actividad cuenta con su entregable documental; la validación metodológica, implementación, medición y cierre del Hito 3 siguen pendientes. El plan detallado en Markdown y esta matriz contienen el alcance actualizado; las imágenes del plan son una representación anterior y no deben usarse para excluir oportunidad.

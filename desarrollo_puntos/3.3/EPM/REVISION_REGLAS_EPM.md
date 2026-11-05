@@ -16,6 +16,9 @@ La medición se ejecuta con `python3 desarrollo_puntos/3.3/medir_matriz_oe1.py`.
   individuales, sus períodos, valores anterior/actual y límites. La columna
   `clasificacion` queda como `pendiente_revision` hasta contrastar cada señal con su
   publicación mensual; no se convierten automáticamente en errores.
+- `cuarentena.py` genera `cuarentena_registros.csv` con 9 filas derivadas de R08, R11,
+  R12 y R07-error. `cartas_log_epm.py` las excluye por `clave_contenido`, sin modificar
+  el CSV fuente ni interpolar valores.
 - Los metadatos oficiales locales se usan para DEF01. La cobertura es parcial: describen
   7 de 12 columnas, pero no fijan la unidad y semántica completa de todos los importes.
 - `fuentes_datos/catalogos/EPM/epm_etiquetas.yaml` documenta las equivalencias aprobadas

@@ -21,6 +21,8 @@ Estudiantes: Grupo 03 · Director del trabajo
 
 Hito 2 entregado. El plan de los hitos 3 a 6 está en `desarrollo_puntos/3.3/plan_hitos_3-6_detallado.md`, trazado a los cuatro objetivos específicos del anteproyecto.
 
+Para entender el trabajo realizado hasta el Hito 3, consultar la [guía explicativa del proyecto](GUIA_EXPLICATIVA_PROYECTO.md).
+
 ## Datos
 
 Las fuentes seleccionadas son EPM, CHEC, SSPD ZNI y XM/SIMEM. Los datos y su documentación están organizados por fuente en `fuentes_datos/`; los archivos grandes se conservan comprimidos cuando corresponde.

@@ -317,7 +317,7 @@ indicadores:
       denominador: 61
       valor: 100.0
       estado: medido
-    medido_utc: '2026-11-05T12:20:13Z'
+    medido_utc: '2026-11-05T19:46:12Z'
 - id: R04
   nombre: Ausencia de duplicados exactos adicionales
   dimension: unicidad
@@ -377,7 +377,7 @@ indicadores:
       denominador: 61
       valor: 100.0
       estado: medido
-    medido_utc: '2026-11-05T12:20:13Z'
+    medido_utc: '2026-11-05T19:46:12Z'
 - id: R06
   nombre: Representación canónica
   dimension: consistencia
@@ -442,7 +442,7 @@ indicadores:
       valor: 100.0
       estado: medido
       nota: 'demanda_kwh convertible a número finito.'
-    medido_utc: '2026-11-05T12:20:13Z'
+    medido_utc: '2026-11-05T19:46:12Z'
 - id: R07
   nombre: Signo y rango por concepto
   dimension: validez
@@ -502,7 +502,7 @@ indicadores:
       denominador: 61
       valor: 100.0
       estado: medido
-    medido_utc: '2026-11-05T12:20:13Z'
+    medido_utc: '2026-11-05T19:46:12Z'
 - id: R08
   nombre: Orden entre tarifas por propiedad
   dimension: consistencia
@@ -567,7 +567,7 @@ indicadores:
       valor: 100.0
       estado: medido
       nota: 'Clave agente-mercado-sistema-período mensual.'
-    medido_utc: '2026-11-05T12:20:13Z'
+    medido_utc: '2026-11-05T19:46:12Z'
 - id: R09
   nombre: Estructura de importes según categoría
   dimension: consistencia
@@ -632,7 +632,7 @@ indicadores:
       valor: 100.0
       estado: provisional
       nota: 'No hay catálogo canónico externo aprobado; solo se verificó presencia.'
-    medido_utc: '2026-11-05T12:20:13Z'
+    medido_utc: '2026-11-05T19:46:12Z'
 - id: R10
   nombre: Importes requeridos disponibles
   dimension: completitud
@@ -697,7 +697,7 @@ indicadores:
       valor: 100.0
       estado: provisional
       nota: 'Dominio no negativo de demanda; confirmar con el diccionario XM.'
-    medido_utc: '2026-11-05T12:20:13Z'
+    medido_utc: '2026-11-05T19:46:12Z'
   diferencia_codigo_actual: El Hito 2 alerta filas con todos los importes en cero. Conservar ese hallazgo como sospecha,
     pero no medirlo como ausencia confirmada.
 - id: R11
@@ -763,7 +763,7 @@ indicadores:
       valor: 100.0
       estado: provisional
       nota: 'Adaptado: coherencia de agente, mercado y sistema; no es orden de tarifas por propiedad.'
-    medido_utc: '2026-11-05T12:20:13Z'
+    medido_utc: '2026-11-05T19:46:12Z'
   parametros:
     serial_min: 36526
     serial_max: 47483
@@ -834,7 +834,7 @@ indicadores:
       valor: 100.0
       estado: provisional
       nota: 'Adaptado: variable, valor, unidad, versión, fecha-hora y duración compatibles.'
-    medido_utc: '2026-11-05T12:20:13Z'
+    medido_utc: '2026-11-05T19:46:12Z'
   parametros:
     factor: 10
     sensibilidad:
@@ -907,7 +907,7 @@ indicadores:
       valor: 100.0
       estado: medido
       nota: 'Medidas requeridas del agregado mensual presentes.'
-    medido_utc: '2026-11-05T12:20:13Z'
+    medido_utc: '2026-11-05T19:46:12Z'
 - id: INT02
   nombre: Referencias categóricas resolubles
   dimension: integridad
@@ -972,7 +972,7 @@ indicadores:
       valor: null
       estado: no_aplica
       nota: 'No hay importes tarifarios; la demanda se controla como medida energética.'
-    medido_utc: '2026-11-05T12:20:13Z'
+    medido_utc: '2026-11-05T19:46:12Z'
 - id: EXA01
   nombre: Concordancia documental de importes
   dimension: exactitud
@@ -1039,7 +1039,7 @@ indicadores:
       valor: 0.0
       estado: provisional
       nota: 'Prevalencia provisional; factor 10 y partición temporal requieren sensibilidad.'
-    medido_utc: '2026-11-05T12:20:13Z'
+    medido_utc: '2026-11-05T19:46:12Z'
   parametros:
     tamano_muestra_por_fuente: null
     semilla: 2026
@@ -1112,7 +1112,7 @@ indicadores:
       valor: 100.0
       estado: medido
       nota: 'Contrato crudo de nueve columnas presente.'
-    medido_utc: '2026-11-05T12:20:13Z'
+    medido_utc: '2026-11-05T19:46:12Z'
   parametros:
     plazo_documentado: null
     zona_horaria: America/Bogota
@@ -1182,7 +1182,7 @@ indicadores:
       valor: 100.0
       estado: provisional_interno
       nota: 'El piloto conserva tres códigos fijos (agente, mercado y sistema); la aprobación es interna porque falta catálogo externo versionado.'
-    medido_utc: '2026-11-05T12:20:13Z'
+    medido_utc: '2026-11-05T19:46:12Z'
 - id: DEF01
   nombre: Semántica de variables críticas documentada
   dimension: consistencia
@@ -1247,7 +1247,7 @@ indicadores:
       valor: null
       estado: no_medible
       nota: 'No existe aún referencia horaria/mensual equivalente para contraste documental.'
-    medido_utc: '2026-11-05T12:20:13Z'
+    medido_utc: '2026-11-05T19:46:12Z'
 - id: CART01
   nombre: Tasa de alertas de cartas I-MR
   dimension: razonabilidad
@@ -1315,7 +1315,7 @@ indicadores:
       valor: 98.3607
       estado: provisional_proxy
       nota: 'Proxy de trazabilidad: 60/61 meses tienen fecha declarada; no mide cumplimiento de un plazo porque falta fecha límite independiente.'
-    medido_utc: '2026-11-05T12:20:13Z'
+    medido_utc: '2026-11-05T19:46:12Z'
   parametros:
     cambios_referencia_base: 36
     min_cambios_vigilancia: 12

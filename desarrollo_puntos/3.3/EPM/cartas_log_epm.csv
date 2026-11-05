@@ -32,12 +32,12 @@ Horaria|Costo Unitario|Restricciones: Rm|Fuera de Punta|I,propiedaddelcliente,61
 Monomia|No Residencial|Industrial y Comercial|N/A|I,propiedadepm,60,36,12,-0.07327374,0.07869527,1
 Monomia|No Residencial|Industrial y Comercial|N/A|I,compartido,60,36,12,-0.07608332,0.08151976,1
 Monomia|No Residencial|Industrial y Comercial|N/A|I,propiedaddelcliente,60,36,12,-0.07911314,0.08456673,0
-Monomia|No Residencial|ESPD|N/A|I,propiedadepm,60,36,12,-0.07328116,0.07870234,1
-Monomia|No Residencial|ESPD|N/A|I,compartido,60,36,12,-0.07608451,0.08152008,1
-Monomia|No Residencial|ESPD|N/A|I,propiedaddelcliente,60,36,12,-0.07911261,0.08456594,0
-Monomia|No Residencial|Oficial y Exentos de Contribución|N/A|I,propiedadepm,61,36,12,-0.07152239,0.07684373,1
-Monomia|No Residencial|Oficial y Exentos de Contribución|N/A|I,compartido,61,36,12,-0.07426227,0.07959705,1
-Monomia|No Residencial|Oficial y Exentos de Contribución|N/A|I,propiedaddelcliente,61,36,12,-0.07720275,0.08255078,0
+Monomia|No Residencial|ESPD|N/A|I,propiedadepm,59,36,12,-0.07482984,0.08805627,0
+Monomia|No Residencial|ESPD|N/A|I,compartido,59,36,12,-0.07613384,0.08925263,0
+Monomia|No Residencial|ESPD|N/A|I,propiedaddelcliente,59,36,12,-0.07767324,0.09067607,0
+Monomia|No Residencial|Oficial y Exentos de Contribución|N/A|I,propiedadepm,60,36,12,-0.07293937,0.07836011,1
+Monomia|No Residencial|Oficial y Exentos de Contribución|N/A|I,compartido,60,36,12,-0.07571019,0.08114706,1
+Monomia|No Residencial|Oficial y Exentos de Contribución|N/A|I,propiedaddelcliente,60,36,12,-0.07868067,0.08413367,0
 Horaria|No Residencial|Industrial y Comercial|Punta|I,propiedadepm,60,36,12,-0.09229099,0.09407205,0
 Horaria|No Residencial|Industrial y Comercial|Punta|I,compartido,60,36,12,-0.09283256,0.09497486,0
 Horaria|No Residencial|Industrial y Comercial|Punta|I,propiedaddelcliente,60,36,12,-0.09918280,0.10006537,0
@@ -55,7 +55,7 @@ Horaria|Tarifa|Industrial y Comercial|N/A|III,punta,61,36,12,-0.09077271,0.09013
 Horaria|Tarifa|Industrial y Comercial|N/A|III,fueradepunta,61,36,12,-0.07856304,0.08310309,1
 Horaria|Tarifa|Oficial y Exentos|N/A|III,punta,61,36,12,-0.09076245,0.09012236,0
 Horaria|Tarifa|Oficial y Exentos|N/A|III,fueradepunta,61,36,12,-0.07770495,0.08224527,1
-Horaria|Tarifa|Industrial y Comercial|N/A|IV,punta,61,36,12,-0.09898178,0.10239519,0
-Horaria|Tarifa|Industrial y Comercial|N/A|IV,fueradepunta,61,36,12,-0.09608605,0.10051767,0
+Horaria|Tarifa|Industrial y Comercial|N/A|IV,punta,60,36,12,-0.09921018,0.10390128,0
+Horaria|Tarifa|Industrial y Comercial|N/A|IV,fueradepunta,60,36,12,-0.09640446,0.10208922,0
 Horaria|Tarifa|Oficial y Exentos|N/A|IV,punta,60,36,12,-0.09889472,0.10358760,0
 Horaria|Tarifa|Oficial y Exentos|N/A|IV,fueradepunta,60,36,12,-0.09598492,0.10166845,0

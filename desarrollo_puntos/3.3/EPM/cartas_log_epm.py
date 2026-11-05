@@ -4,18 +4,25 @@ La referencia son los primeros 36 cambios de cada serie y la vigilancia los
 12 siguientes; no se imputan meses ni se cruzan huecos. El CSV resultante es
 una evidencia reproducible para CART01, no una corrección del dato original.
 """
-import csv, math, statistics
+import csv, hashlib, json, math, statistics
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
 src = ROOT / "fuentes_datos/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv"
 out = Path(__file__).resolve().parent / "cartas_log_epm.csv"
+quar_path = Path(__file__).resolve().parent / "cuarentena_registros.csv"
+quarantined = {r["clave_contenido"] for r in csv.DictReader(quar_path.open(encoding="utf-8"))} if quar_path.exists() else set()
 months = {m:i for i,m in enumerate(("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"),1)}
 cats = ("tipodeinformacion","tipodetarifa","tipodedato","rangodeconsumo","nivel")
 measures = ("propiedadepm","compartido","propiedaddelcliente","punta","fueradepunta")
 rows = list(csv.DictReader(open(src, encoding="utf-8-sig")))
+def row_key(row):
+    payload=json.dumps(row,ensure_ascii=False,sort_keys=True,separators=(",", ":"))
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 series = {}
 for r in rows:
+    if row_key(r) in quarantined:
+        continue
     if not r.get("year") or r.get("mes") not in months:
         continue
     key = tuple(r.get(c,"") for c in cats)

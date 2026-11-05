@@ -387,7 +387,7 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 - **EPM:** Categorías EPM y variable monetaria; agrupar dependencia por categoría en evaluación.
 - **CHEC:** Categorías CHEC y CU/tarifa por separado; no sumar como réplicas independientes.
 - **Precondiciones:** Solo valores positivos, únicos y meses consecutivos; no interpolar para ocultar huecos. Referencia base propuesta de 36 cambios y al menos 12 de vigilancia (49 observaciones). Excluir cambios que tocan valores en cuarentena; MR exige cambios válidos adyacentes. Contrastar alertas sistémicas con contexto; no clasificarlas automáticamente como error ni como cambio regulatorio confirmado.
-- **Estado:** EPM 93.06 % (670/720, provisional); CHEC 98.88 % (3275/3312, provisional); SSPD 96.7 % (4189/4332, provisional); XM 0 % (0/12, provisional).
+- **Estado:** EPM 93.33 % (672/720, provisional); CHEC 98.88 % (3275/3312, provisional); SSPD 96.7 % (4189/4332, provisional); XM 0 % (0/12, provisional).
 - **Parámetros:** {"cambios_referencia_base": 36, "min_cambios_vigilancia": 12, "sensibilidad_referencia": [24, 36, 48], "constante_I": 2.66, "constante_MR": 3.267}.
 
 <!-- INICIO LINEA BASE -->
@@ -395,7 +395,7 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 
 Valores calculados por [`medir_matriz_oe1.py`](medir_matriz_oe1.py) sobre los CSV de
 `fuentes_datos/datos/`, aplicando las definiciones de población, numerador y denominador
-de esta misma matriz. Última ejecución: 2026-11-05T12:20:13Z.
+de esta misma matriz. Última ejecución: 2026-11-05T19:46:12Z.
 
 | Archivo medido | Filas | SHA-256 |
 |---|---|---|
@@ -432,7 +432,7 @@ de esta misma matriz. Última ejecución: 2026-11-05T12:20:13Z.
 | OPO01 | 100 %<br><sub>61/61</sub> | 100 %<br><sub>225/225</sub> | 90.77 %<br><sub>59/65</sub> | 98.36 %<br><sub>60/61</sub> | provisional_proxy / provisional_proxy / provisional_proxy / provisional_proxy |
 | MAP01 | 100 %<br><sub>2/2</sub> | 100 %<br><sub>3/3</sub> | 100 %<br><sub>3/3</sub> | 100 %<br><sub>3/3</sub> | provisional_interno / provisional_interno / provisional_interno / provisional_interno |
 | DEF01 | 100 %<br><sub>12/12</sub> | 100 %<br><sub>24/24</sub> | 100 %<br><sub>19/19</sub> | 100 %<br><sub>10/10</sub> | provisional_interno / provisional_interno / provisional_interno / provisional_interno |
-| CART01 | 93.06 %<br><sub>670/720</sub> | 98.88 %<br><sub>3275/3312</sub> | 96.7 %<br><sub>4189/4332</sub> | 0 %<br><sub>0/12</sub> | provisional / provisional / provisional / provisional |
+| CART01 | 93.33 %<br><sub>672/720</sub> | 98.88 %<br><sub>3275/3312</sub> | 96.7 %<br><sub>4189/4332</sub> | 0 %<br><sub>0/12</sub> | provisional / provisional / provisional / provisional |
 
 `n/a` significa que el control no aplica a esa fuente porque el concepto no existe en su
 esquema. Es distinto de `—`, que es falta de evidencia.
