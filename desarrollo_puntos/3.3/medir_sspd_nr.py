@@ -16,7 +16,20 @@ import re
 AQUI = Path(__file__).resolve().parent
 RAIZ = AQUI.parents[1]
 DATOS = RAIZ / "fuentes_datos" / "datos"
-ARCHIVO = DATOS / "sspd_bnkp-xdb7.csv"
+
+def dato(nombre):
+    """Ruta de un CSV de datos, lo busque donde lo busque.
+
+    La carpeta se reorganizo el 2 de noviembre de 2026 y los archivos quedaron en
+    subcarpetas. Buscar por nombre evita que el script se rompa en la proxima mudanza.
+    """
+    directo = DATOS / nombre
+    if directo.exists():
+        return directo
+    encontrados = sorted(DATOS.rglob(nombre))
+    return encontrados[0] if encontrados else directo
+
+ARCHIVO = dato("sspd_bnkp-xdb7.csv")
 
 AUSENTES = {"", "N/A", "NA", "null", "None"}
 
@@ -35,7 +48,7 @@ SOLO_POSITIVOS = ["car_t440_dias_fact", "car_t440_dias_mora", "consumos",
                   "consumo_promedio_mensual", "consumo_energia_reactiva", "tarifa_aplicada",
                   "facturacion_por_consumo", "valor_subsidio", "valor_de_la_contribucion"]
 
-CATALOGOS = DATOS / "sspd_bnkp-xdb7_catalogos.csv"
+CATALOGOS = dato("sspd_bnkp-xdb7_catalogos.csv")
 
 # Columnas del contrato de la copia conservada. El conjunto en origen trae 48; la copia
 # conserva las 27 analiticas y mueve los nombres denormalizados al archivo de catalogos,

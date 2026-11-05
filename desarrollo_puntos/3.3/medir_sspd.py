@@ -18,8 +18,21 @@ AQUI = Path(__file__).resolve().parent
 RAIZ = AQUI.parents[1]
 DATOS = RAIZ / "fuentes_datos" / "datos"
 
-MENSUAL = DATOS / "sspd_ebby-cjha_mensual.csv"
-DETALLE = DATOS / "sspd_ebby-cjha_detalle.csv"
+def dato(nombre):
+    """Ruta de un CSV de datos, lo busque donde lo busque.
+
+    La carpeta se reorganizo el 2 de noviembre de 2026 y los archivos quedaron en
+    subcarpetas. Buscar por nombre evita que el script se rompa en la proxima mudanza.
+    """
+    directo = DATOS / nombre
+    if directo.exists():
+        return directo
+    encontrados = sorted(DATOS.rglob(nombre))
+    return encontrados[0] if encontrados else directo
+
+
+MENSUAL = dato("sspd_ebby-cjha_mensual.csv")
+DETALLE = dato("sspd_ebby-cjha_detalle.csv")
 
 AUSENTES = {"", "N/A", "NA", "null", "None"}
 

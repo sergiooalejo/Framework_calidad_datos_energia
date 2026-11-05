@@ -28,6 +28,22 @@ AQUI = Path(__file__).resolve().parent
 RAIZ = AQUI.parents[1]
 DATOS = RAIZ / "fuentes_datos" / "datos"
 
+
+def dato(nombre):
+    """Ruta de un CSV de datos, lo busque donde lo busque.
+
+    La carpeta se reorganizo el 2 de noviembre de 2026 y los archivos quedaron en
+    subcarpetas (`Datos_seleccionados`, `Datos_en_revision`). Buscar por nombre en
+    lugar de fijar la subcarpeta evita que el script se rompa en la proxima mudanza.
+    """
+    directo = DATOS / nombre
+    if directo.exists():
+        return directo
+    encontrados = sorted(DATOS.rglob(nombre))
+    if encontrados:
+        return encontrados[0]
+    return directo          # que falle con el nombre esperado, no con uno inventado
+
 MATRIZ_CSV = AQUI / "matriz_oe1.csv"
 MATRIZ_YAML = AQUI / "matriz_oe1.yaml"
 MATRIZ_MD = AQUI / "matriz_oe1.md"
@@ -45,7 +61,7 @@ ORDEN = ["R01", "R02", "R03", "R04", "R05", "R06", "R07", "R08", "R09", "R10",
 
 EPM = dict(
     fuente="EPM", clave="epm", dataset_id="sfcd-b3ey",
-    archivo=DATOS / "epm_sfcd-b3ey.csv",
+    archivo=dato("epm_sfcd-b3ey.csv"),
     periodo=("year", "mes"), mes_es_texto=True,
     categorias=["tipodeinformacion", "tipodetarifa", "tipodedato", "rangodeconsumo", "nivel"],
     medidas=["propiedadepm", "compartido", "propiedaddelcliente", "punta", "fueradepunta"],
@@ -56,7 +72,7 @@ EPM = dict(
 
 CHEC = dict(
     fuente="CHEC", clave="chec", dataset_id="c698-wqig",
-    archivo=DATOS / "chec_c698-wqig.csv",
+    archivo=dato("chec_c698-wqig.csv"),
     periodo=("costounitariotarifa_ano", "costounitariotarifa_mes"), mes_es_texto=False,
     categorias=[
         "comercializador_codigo", "comercializador_nombre", "mercado_codigo", "mercado_nombre",
@@ -89,8 +105,8 @@ CHEC = dict(
 # escritores la traten como a las otras dos.
 SSPD = dict(
     fuente="SSPD", clave="sspd", dataset_id="ebby-cjha",
-    archivo=DATOS / "sspd_ebby-cjha_detalle.csv",
-    archivo_mensual=DATOS / "sspd_ebby-cjha_mensual.csv",
+    archivo=dato("sspd_ebby-cjha_detalle.csv"),
+    archivo_mensual=dato("sspd_ebby-cjha_mensual.csv"),
     propia=True,
 )
 
@@ -100,7 +116,7 @@ SSPD = dict(
 # medir_sspd_nr.py por la misma razon que la anterior: esquema distinto.
 SSPD_NR = dict(
     fuente="SSPD-NR", clave="sspd_nr", dataset_id="bnkp-xdb7",
-    archivo=DATOS / "sspd_bnkp-xdb7.csv",
+    archivo=dato("sspd_bnkp-xdb7.csv"),
     propia=True,
 )
 
