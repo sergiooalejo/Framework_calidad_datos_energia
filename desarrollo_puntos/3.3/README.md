@@ -10,7 +10,7 @@ sobre el consumidor del dato que allí se declare. Ese bloque sigue pendiente de
 
 ## Punto 1 · Matriz OE1
 
-El punto 1 queda desarrollado como especificación documental para cuatro fuentes: EPM, CHEC, SSPD (Zonas No Interconectadas) y SSPD-NR (no residencial del Sistema Interconectado). No se modificó el código del Hito 2.
+El punto 1 tiene una línea base histórica para EPM, CHEC, SSPD (Zonas No Interconectadas) y SSPD-NR. La selección metodológica actual queda fijada en EPM, CHEC, SSPD ZNI y XM/SIMEM; por tanto, las filas de SSPD-NR deben regenerarse para XM antes de declarar cerrada la matriz de cuatro fuentes. No se modificó el código del Hito 2.
 
 Los tres archivos de la matriz incluyen además la **línea base medida** sobre los CSV conservados en `fuentes_datos/datos/`: resultado, estado y nota por control y fuente. La especificación no se modificó; solo se llenó el casillero de resultado que quedaba en `null`.
 
@@ -40,9 +40,9 @@ La especificación la elaboró el entregable anterior; esta entrega añade el re
 
 Cobertura actual: **17 de los 19 controles** tienen valor en al menos una fuente, y **siete de las ocho dimensiones** están medidas. Siguen sin ningún valor **OPO01 y CART01**: el primero porque ninguna de las tres fuentes publica la fecha real de disponibilidad por período, el segundo porque las cartas de la actividad 5 todavía no se ejecutan. La dimensión sin ninguna medición sigue siendo **oportunidad**.
 
-La tercera fuente añadió valor a **MAP01 y DEF01**, que antes no tenían ninguno. DEF01 da 0 % sobre SSPD y SSPD-NR y queda en `medido`: no falta evidencia para evaluarlo, la evidencia existe y dice que el publicador no define ninguna de sus columnas.
+En la línea base histórica, la tercera fuente añadió valor a **MAP01 y DEF01**, que antes no tenían ninguno. DEF01 da 0 % sobre SSPD y SSPD-NR y queda en `medido`: no falta evidencia para evaluarlo, la evidencia existe y dice que el publicador no define ninguna de sus columnas. Esta observación corresponde al corte anterior de la matriz; al sustituir SSPD-NR por XM debe recalcularse.
 
-La cuarta fuente devolvió a **R08, R09 e INT02** un caso donde medirse. En SSPD quedaron `no_aplica` porque su esquema no tiene eje de propiedad ni pares código-nombre; SSPD-NR sí los tiene, y los mide en 92,24 %, 98,60 % y 98,75 % respectivamente.
+La cuarta fuente histórica devolvió a **R08, R09 e INT02** un caso donde medirse. En SSPD quedaron `no_aplica` porque su esquema no tiene eje de propiedad ni pares código-nombre; SSPD-NR sí los tenía, y los midió en 92,24 %, 98,60 % y 98,75 % respectivamente. Esos resultados no se deben atribuir a XM: la matriz de XM aún debe construirse con sus reglas de demanda.
 
 Cada valor va acompañado de su numerador, su denominador y una nota que declara los supuestos aplicados. Las cifras se recalculan ejecutando el script; no se transcriben a mano.
 

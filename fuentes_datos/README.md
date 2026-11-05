@@ -1,14 +1,16 @@
-# Fuentes seleccionadas: EPM, CHEC, SSPD y SSPD-NR
+# Fuentes seleccionadas: EPM, CHEC, SSPD ZNI y XM/SIMEM
 
 Esta carpeta conserva las dos fuentes tarifarias eléctricas acordadas y dos de facturación,
 incorporadas para cubrir el consumo observado que a las dos primeras les falta.
+
+**Revisión del 4 de noviembre:** la fuente SSPD-NR queda en revisión porque solo aporta 12 meses y no cubre las cartas mensuales actuales. La selección principal pasa a ser EPM, CHEC, SSPD ZNI y un piloto histórico de XM. Esta decisión no declara completada la evaluación de las ocho dimensiones ni sustituye automáticamente la matriz medida.
 
 | Fuente | Qué aporta | CSV | Diccionario | Portal |
 |---|---|---|---|---|
 | **EPM** · 3.623 filas, 12 col. | Tarifa, forma larga | [csv](datos/Datos_seleccionados/epm_sfcd-b3ey.csv) | [epm.yaml](diccionarios/epm.yaml) | https://www.datos.gov.co/d/sfcd-b3ey |
 | **CHEC** · 40.609 filas, 24 col. | Tarifa, forma ancha | [csv](datos/Datos_seleccionados/chec_c698-wqig.csv) | [chec.yaml](diccionarios/chec.yaml) | https://www.datos.gov.co/d/c698-wqig |
 | **SSPD** · 11.905.557 filas en origen, 29 col. | Consumo y **59 meses** para las cartas | [mensual](datos/Datos_en_revision/sspd_ebby-cjha_mensual.csv) · [detalle .zip](datos/Datos_en_revision/sspd_ebby-cjha_detalle-compressed.zip) | [sspd.yaml](diccionarios/sspd.yaml) | https://www.datos.gov.co/d/ebby-cjha |
-| **SSPD-NR** · 402.500 filas, 48 col. | Consumo, **tarifa aplicada**, propiedad y régimen interconectado | [resumen](datos/Datos_en_revision/sspd_bnkp-xdb7_resumen.csv) · [catálogos](datos/Datos_en_revision/sspd_bnkp-xdb7_catalogos.csv) · [completo .zip](datos/Datos_en_revision/sspd_bnkp-xdb7-compressed.zip) | [sspd_nr.yaml](diccionarios/sspd_nr.yaml) | https://www.datos.gov.co/d/bnkp-xdb7 |
+| **XM/SIMEM** · 119.928 registros crudos, 61 meses derivados | Demanda horaria y versiones de publicación | [piloto](datos/Datos_en_revision/XM_piloto/xm_demanda_mensual_piloto.csv) · [crudo](datos/Datos_en_revision/XM_piloto/xm_demanda_epmc_epmd_str02_202001_202501.csv) | [`ficha XM`](../desarrollo_puntos/3.2/Ficha_caracterizacion_04_xm_c1b851.md) | https://www.simem.co/ |
 
 ## Por qué hay archivos comprimidos
 
@@ -34,13 +36,13 @@ renderiza como tabla:
 - [`sspd_bnkp-xdb7_catalogos.csv`](datos/Datos_en_revision/sspd_bnkp-xdb7_catalogos.csv) ·
   569 pares código-nombre, donde se ven las siete claves con el nombre corrupto.
 
-**Las dos fuentes de consumo se complementan y no se reemplazan.** SSPD aporta la
-profundidad temporal —59 períodos consecutivos, los únicos que alcanzan el mínimo de 49 que
-exigen las cartas— pero es de Zonas No Interconectadas. SSPD-NR es del Sistema
-Interconectado y trae la tarifa aplicada y el eje de propiedad del activo, pero solo tiene
-12 períodos. Ninguna de las dos sola cubre lo que cubren juntas.
+**Las fuentes de consumo se mantienen diferenciadas.** SSPD ZNI aporta la profundidad
+temporal —59 períodos consecutivos— y se selecciona para las cartas. SSPD-NR queda en
+revisión porque aporta tarifa aplicada, propiedad y régimen interconectado, pero solo tiene
+12 períodos. XM se incorpora como cuarto caso histórico de demanda, con 61 meses derivados
+mediante una política de selección de versiones documentada.
 
-**La tercera fuente no se conserva íntegra.** Pesa unos 9,7 GB en origen, que no es
+**La fuente SSPD ZNI no se conserva íntegra.** Pesa unos 9,7 GB en origen, que no es
 versionable. En su lugar se conservan **dos censos declarados, no muestras**: uno mensual
 agregado que cubre las 91 empresas y los 59 períodos (15.075 filas), y uno de detalle con
 todos los registros de la empresa 28111 (91.840 filas). El alcance de cada uno está escrito

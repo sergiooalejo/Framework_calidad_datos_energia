@@ -1,5 +1,12 @@
 # Salidas de la ejecución del Hito 2
 
+## Fichas de caracterización
+
+- [CHEC](Ficha_caracterizacion_01_chec_c698-wqig.md).
+- [EPM](Ficha_caracterizacion_02_epm_sfcd-b3ey.md).
+- [Superservicios ZNI](Ficha_caracterizacion_03_sspd_ebby-cjha.md).
+- [XM/SIMEM](Ficha_caracterizacion_04_xm_c1b851.md). Son las fichas de las fuentes incorporadas al conjunto metodológico actual.
+
 Archivos que produce `codigo/codigo_hasta_hito2.py` al correr de principio a fin. Se
 versionan porque el plan de hitos los nombra como **insumo** de los hitos 3 y 4, y sin
 ellos esas actividades no se pueden iniciar.

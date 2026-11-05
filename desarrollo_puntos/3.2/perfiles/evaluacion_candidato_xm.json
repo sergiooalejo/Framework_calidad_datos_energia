@@ -1,0 +1,1024 @@
+{
+  "fecha_consulta": "2026-11-04",
+  "candidato": "XM/SIMEM — histórico de demanda real por agente",
+  "dataset_historico": "c1b851",
+  "estado": "Candidato para piloto, no selección aprobada ni cobertura integral demostrada",
+  "consultas": [
+    {
+      "parameters": {
+        "idDataset": "c1b851",
+        "startDate": "2020-01-01",
+        "endDate": "2020-01-02",
+        "columnDestinyName": null,
+        "values": []
+      },
+      "nombre": "--- Deprecated --- Datos soporte del proceso de Demandas por Código sic agente, Mercado comercialización, Sistema transmisión, versión y horaria",
+      "metadata": {
+        "description": "--- Deprecated --- Este conjunto está en proceso de deprecación, puede encontrar equivalente en los conjuntos DemandaReal y DdaRealYPerdidasOR.\nContiene la información soporte a la liquidación realizada por el Administrador del Sistema de Intercambios Comerciales (ASIC) del proceso de Demandas por Código sic agente, Mercado comercialización, Sistema transmisión, versión y horaria",
+        "creationDate": "2023-09-29 01:25:41",
+        "lastUpdate": "2026-09-17 21:09:09",
+        "nextUpdateDate": "2026-05-17 04:00:00",
+        "entity": "XM",
+        "category": "--- Deprecated --- Datos soporte del proceso de Demandas por Código sic agente, Mercado comercialización, Sistema transmisión, versión y horaria",
+        "periodicity": "Diaria",
+        "granularity": "Horaria",
+        "historicData": "NA",
+        "private": false,
+        "ultimaNovedad": {
+          "titulo": "Finalización de conjunto de datos con corte al 2026-06-30",
+          "subtitulo": "Finalización de conjunto de datos con corte al 2026-06-30",
+          "descripcion": "Como parte del proceso de mejora continua en la actualización y consulta de variables relacionadas con el Mercado de Energía Mayorista y la operación del Sistema Interconectado Nacional, SIMEM informa que a partir del 2026-06-30 quedarán finalizados los siguientes conjuntos de datos:  •\tDatos soporte del proceso de Demandas por Código sic agente, Mercado comercialización, Sistema transmisión, versión y horaria •\tDatos soporte del proceso de Contratos por Código sic agente, Recurso, versión y horaria •\tDatos soporte del proceso de liquidación por versión y diaria •\tDatos soporte del proceso de Demandas por Recurso, versión y diaria •\tDatos soporte del proceso de liquidación por Código sic agente, Recurso, Tipo combustible, versión y mensual •\tCostoServiciosASICCND •\tDatos soporte del proceso de liquidación por Recurso, versión y horaria •\tDatos soporte del proceso de Demandas por Recurso, versión y horaria •\tDatos soporte del proceso de liquidación por Recurso, versión y diaria •\tDatos soporte del proceso de Demandas por versión y diaria •\tCosto promedio ponderado en contratos de largo plazo MC •\tDatos soporte del proceso de liquidación por descripción convocatoria, Código convocatoria subasta, Fecha asignación subasta, versión y mensual •\tDatos soporte del proceso de Contratos por Recurso, versión y diaria •\tDatos soporte del proceso de liquidación por versión y mensual",
+          "fechaPublicacion": "2026-06-17",
+          "urlNovedad": "https://www.simem.co/pages/novedadesDetalle;id=4A4AC48E-F005-446A-7DFB-08DECCA14937"
+        }
+      },
+      "columns": [
+        {
+          "nameColumn": "CodigoVariable",
+          "dataType": "texto",
+          "description": "Código de la variable"
+        },
+        {
+          "nameColumn": "Valor",
+          "dataType": "decimal",
+          "description": "Valor de la variable (escala de 4 cifras)"
+        },
+        {
+          "nameColumn": "MercadoComercializacion",
+          "dataType": "texto",
+          "description": "Mercado de comercialización operativo"
+        },
+        {
+          "nameColumn": "UnidadMedida",
+          "dataType": "texto",
+          "description": "Unidad de medida en la que se encuentra la variable"
+        },
+        {
+          "nameColumn": "CodigoSICAgente",
+          "dataType": "texto",
+          "description": "Código del agente asignado por el ASIC"
+        },
+        {
+          "nameColumn": "SistemaTransmision",
+          "dataType": "texto",
+          "description": "Sistema de transmisión"
+        },
+        {
+          "nameColumn": "Version",
+          "dataType": "texto",
+          "description": "Versión de la liquidación"
+        },
+        {
+          "nameColumn": "FechaHora",
+          "dataType": "fecha hora",
+          "description": "Fecha y hora de representación del dato"
+        },
+        {
+          "nameColumn": "CodigoDuracion",
+          "dataType": "texto",
+          "description": "Código de duración de la variable en formato ISO8601"
+        }
+      ],
+      "registros_respuesta": 17472,
+      "sha256_respuesta": "b1144c08985c32b5d953f11105fbfdaaff3d66e6f605298acf4201724ad692a0",
+      "ejemplos": [
+        {
+          "CodigoVariable": "DdaReal",
+          "FechaHora": "2020-01-02 17:00:00",
+          "CodigoDuracion": "PT1H",
+          "UnidadMedida": "kWh",
+          "CodigoSICAgente": "NRCC",
+          "MercadoComercializacion": "EPMD",
+          "SistemaTransmision": "STR02",
+          "Version": "TX5",
+          "Valor": 2221.8501
+        },
+        {
+          "CodigoVariable": "DdaReal",
+          "FechaHora": "2020-01-02 18:00:00",
+          "CodigoDuracion": "PT1H",
+          "UnidadMedida": "kWh",
+          "CodigoSICAgente": "NRCC",
+          "MercadoComercializacion": "EPMD",
+          "SistemaTransmision": "STR02",
+          "Version": "TX5",
+          "Valor": 2046.15
+        }
+      ],
+      "unidades": {
+        "kWh": 17472
+      },
+      "variables": {
+        "DdaReal": 17472
+      },
+      "agentes_distintos": 56,
+      "versiones": {
+        "TX5": 17472
+      },
+      "fecha_hora_min": "2020-01-01 00:00:00",
+      "fecha_hora_max": "2020-01-02 23:00:00"
+    },
+    {
+      "parameters": {
+        "idDataset": "c1b851",
+        "startDate": "2025-01-01",
+        "endDate": "2025-01-02",
+        "columnDestinyName": null,
+        "values": []
+      },
+      "nombre": "--- Deprecated --- Datos soporte del proceso de Demandas por Código sic agente, Mercado comercialización, Sistema transmisión, versión y horaria",
+      "metadata": {
+        "description": "--- Deprecated --- Este conjunto está en proceso de deprecación, puede encontrar equivalente en los conjuntos DemandaReal y DdaRealYPerdidasOR.\nContiene la información soporte a la liquidación realizada por el Administrador del Sistema de Intercambios Comerciales (ASIC) del proceso de Demandas por Código sic agente, Mercado comercialización, Sistema transmisión, versión y horaria",
+        "creationDate": "2023-09-29 01:25:41",
+        "lastUpdate": "2026-09-17 21:09:09",
+        "nextUpdateDate": "2026-05-17 04:00:00",
+        "entity": "XM",
+        "category": "--- Deprecated --- Datos soporte del proceso de Demandas por Código sic agente, Mercado comercialización, Sistema transmisión, versión y horaria",
+        "periodicity": "Diaria",
+        "granularity": "Horaria",
+        "historicData": "NA",
+        "private": false,
+        "ultimaNovedad": {
+          "titulo": "Finalización de conjunto de datos con corte al 2026-06-30",
+          "subtitulo": "Finalización de conjunto de datos con corte al 2026-06-30",
+          "descripcion": "Como parte del proceso de mejora continua en la actualización y consulta de variables relacionadas con el Mercado de Energía Mayorista y la operación del Sistema Interconectado Nacional, SIMEM informa que a partir del 2026-06-30 quedarán finalizados los siguientes conjuntos de datos:  •\tDatos soporte del proceso de Demandas por Código sic agente, Mercado comercialización, Sistema transmisión, versión y horaria •\tDatos soporte del proceso de Contratos por Código sic agente, Recurso, versión y horaria •\tDatos soporte del proceso de liquidación por versión y diaria •\tDatos soporte del proceso de Demandas por Recurso, versión y diaria •\tDatos soporte del proceso de liquidación por Código sic agente, Recurso, Tipo combustible, versión y mensual •\tCostoServiciosASICCND •\tDatos soporte del proceso de liquidación por Recurso, versión y horaria •\tDatos soporte del proceso de Demandas por Recurso, versión y horaria •\tDatos soporte del proceso de liquidación por Recurso, versión y diaria •\tDatos soporte del proceso de Demandas por versión y diaria •\tCosto promedio ponderado en contratos de largo plazo MC •\tDatos soporte del proceso de liquidación por descripción convocatoria, Código convocatoria subasta, Fecha asignación subasta, versión y mensual •\tDatos soporte del proceso de Contratos por Recurso, versión y diaria •\tDatos soporte del proceso de liquidación por versión y mensual",
+          "fechaPublicacion": "2026-06-17",
+          "urlNovedad": "https://www.simem.co/pages/novedadesDetalle;id=4A4AC48E-F005-446A-7DFB-08DECCA14937"
+        }
+      },
+      "columns": [
+        {
+          "nameColumn": "CodigoVariable",
+          "dataType": "texto",
+          "description": "Código de la variable"
+        },
+        {
+          "nameColumn": "Valor",
+          "dataType": "decimal",
+          "description": "Valor de la variable (escala de 4 cifras)"
+        },
+        {
+          "nameColumn": "MercadoComercializacion",
+          "dataType": "texto",
+          "description": "Mercado de comercialización operativo"
+        },
+        {
+          "nameColumn": "UnidadMedida",
+          "dataType": "texto",
+          "description": "Unidad de medida en la que se encuentra la variable"
+        },
+        {
+          "nameColumn": "CodigoSICAgente",
+          "dataType": "texto",
+          "description": "Código del agente asignado por el ASIC"
+        },
+        {
+          "nameColumn": "SistemaTransmision",
+          "dataType": "texto",
+          "description": "Sistema de transmisión"
+        },
+        {
+          "nameColumn": "Version",
+          "dataType": "texto",
+          "description": "Versión de la liquidación"
+        },
+        {
+          "nameColumn": "FechaHora",
+          "dataType": "fecha hora",
+          "description": "Fecha y hora de representación del dato"
+        },
+        {
+          "nameColumn": "CodigoDuracion",
+          "dataType": "texto",
+          "description": "Código de duración de la variable en formato ISO8601"
+        }
+      ],
+      "registros_respuesta": 106632,
+      "sha256_respuesta": "9040d3aafc56b6ba038025cadea4f4b4e4d584d4a386c344a5a3f6e53b984552",
+      "ejemplos": [
+        {
+          "CodigoVariable": "DdaReal",
+          "FechaHora": "2025-01-02 17:00:00",
+          "CodigoDuracion": "PT1H",
+          "UnidadMedida": "kWh",
+          "CodigoSICAgente": "GNYC",
+          "MercadoComercializacion": "EMID",
+          "SistemaTransmision": "STR02",
+          "Version": "TX3",
+          "Valor": 226.87
+        },
+        {
+          "CodigoVariable": "DdaReal",
+          "FechaHora": "2025-01-02 18:00:00",
+          "CodigoDuracion": "PT1H",
+          "UnidadMedida": "kWh",
+          "CodigoSICAgente": "GNYC",
+          "MercadoComercializacion": "EMID",
+          "SistemaTransmision": "STR02",
+          "Version": "TX3",
+          "Valor": 96.24
+        }
+      ],
+      "unidades": {
+        "kWh": 106632
+      },
+      "variables": {
+        "DdaReal": 106632
+      },
+      "agentes_distintos": 64,
+      "versiones": {
+        "TX3": 21096,
+        "TX4": 21096,
+        "TX2": 21096,
+        "TXR": 21096,
+        "TXF": 21096,
+        "TX1": 1152
+      },
+      "fecha_hora_min": "2025-01-01 00:00:00",
+      "fecha_hora_max": "2025-01-02 23:00:00"
+    },
+    {
+      "parameters": {
+        "idDataset": "14fabb",
+        "startDate": "2020-01-01",
+        "endDate": "2020-01-02",
+        "columnDestinyName": null,
+        "values": []
+      },
+      "nombre": "Demanda real nacional",
+      "metadata": {
+        "description": "Corresponde a la diferencia entre la generación real del sistema y las pérdidas reales en el Sistema de Transmisión Nacional, en kWh.",
+        "creationDate": "2025-10-14 16:22:33",
+        "lastUpdate": "2026-11-04 04:35:23",
+        "nextUpdateDate": "2026-11-05 04:00:00",
+        "entity": "XM",
+        "category": "Demanda real nacional",
+        "periodicity": "Diaria",
+        "granularity": "Horaria",
+        "historicData": "NA",
+        "private": false,
+        "ultimaNovedad": null
+      },
+      "columns": [
+        {
+          "nameColumn": "CodigoVariable",
+          "dataType": "texto",
+          "description": "Código de la variable"
+        },
+        {
+          "nameColumn": "Valor",
+          "dataType": "decimal",
+          "description": "Valor de la variable (escala de 4 cifras)"
+        },
+        {
+          "nameColumn": "UnidadMedida",
+          "dataType": "texto",
+          "description": "Unidad de medida en la que se encuentra la variable"
+        },
+        {
+          "nameColumn": "CodigoSICAgente",
+          "dataType": "texto",
+          "description": "Código del agente asignado por el ASIC"
+        },
+        {
+          "nameColumn": "Version",
+          "dataType": "texto",
+          "description": "Versión de la liquidación"
+        },
+        {
+          "nameColumn": "FechaHora",
+          "dataType": "fecha hora",
+          "description": "Fecha y hora de representación del dato"
+        },
+        {
+          "nameColumn": "TipoMercado",
+          "dataType": "texto",
+          "description": "Tipo de Mercado Regulado o No Regulado"
+        },
+        {
+          "nameColumn": "CodigoDuracion",
+          "dataType": "texto",
+          "description": "Código de duración de la variable en formato ISO8601"
+        }
+      ],
+      "registros_respuesta": 0,
+      "sha256_respuesta": "5e02a149dcfbf53a352bbf8e24b2d0aa081683b369a831a97c97b70f1b50afe7",
+      "ejemplos": []
+    },
+    {
+      "parameters": {
+        "idDataset": "14fabb",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-02",
+        "columnDestinyName": null,
+        "values": []
+      },
+      "nombre": "Demanda real nacional",
+      "metadata": {
+        "description": "Corresponde a la diferencia entre la generación real del sistema y las pérdidas reales en el Sistema de Transmisión Nacional, en kWh.",
+        "creationDate": "2025-10-14 16:22:33",
+        "lastUpdate": "2026-11-04 04:35:23",
+        "nextUpdateDate": "2026-11-05 04:00:00",
+        "entity": "XM",
+        "category": "Demanda real nacional",
+        "periodicity": "Diaria",
+        "granularity": "Horaria",
+        "historicData": "NA",
+        "private": false,
+        "ultimaNovedad": null
+      },
+      "columns": [
+        {
+          "nameColumn": "CodigoVariable",
+          "dataType": "texto",
+          "description": "Código de la variable"
+        },
+        {
+          "nameColumn": "Valor",
+          "dataType": "decimal",
+          "description": "Valor de la variable (escala de 4 cifras)"
+        },
+        {
+          "nameColumn": "UnidadMedida",
+          "dataType": "texto",
+          "description": "Unidad de medida en la que se encuentra la variable"
+        },
+        {
+          "nameColumn": "CodigoSICAgente",
+          "dataType": "texto",
+          "description": "Código del agente asignado por el ASIC"
+        },
+        {
+          "nameColumn": "Version",
+          "dataType": "texto",
+          "description": "Versión de la liquidación"
+        },
+        {
+          "nameColumn": "FechaHora",
+          "dataType": "fecha hora",
+          "description": "Fecha y hora de representación del dato"
+        },
+        {
+          "nameColumn": "TipoMercado",
+          "dataType": "texto",
+          "description": "Tipo de Mercado Regulado o No Regulado"
+        },
+        {
+          "nameColumn": "CodigoDuracion",
+          "dataType": "texto",
+          "description": "Código de duración de la variable en formato ISO8601"
+        }
+      ],
+      "registros_respuesta": 4512,
+      "sha256_respuesta": "fbaf0e6799a7c631954c11b42eee11650727c19b55338a45b4b30acc080b70e5",
+      "ejemplos": [
+        {
+          "CodigoVariable": "DdaReal",
+          "FechaHora": "2026-10-02 17:00:00",
+          "CodigoSICAgente": "NEUC",
+          "TipoMercado": "No Regulado",
+          "Version": "TX2",
+          "Valor": 44398.16,
+          "UnidadMedida": "kWh",
+          "CodigoDuracion": "PT1H"
+        },
+        {
+          "CodigoVariable": "DdaReal",
+          "FechaHora": "2026-10-02 18:00:00",
+          "CodigoSICAgente": "NEUC",
+          "TipoMercado": "No Regulado",
+          "Version": "TX2",
+          "Valor": 44139.66,
+          "UnidadMedida": "kWh",
+          "CodigoDuracion": "PT1H"
+        }
+      ],
+      "unidades": {
+        "kWh": 4512
+      },
+      "variables": {
+        "DdaReal": 4512
+      },
+      "agentes_distintos": 66,
+      "versiones": {
+        "TX2": 4512
+      },
+      "fecha_hora_min": "2026-10-01 00:00:00",
+      "fecha_hora_max": "2026-10-02 23:00:00"
+    }
+  ],
+  "fechas_publicacion_mensual_2020": [
+    {
+      "Version": "TX5",
+      "FechaInicio": "2020-01-01",
+      "FechaFin": "2020-01-31",
+      "FechaPublicacion": "2021-08-16",
+      "esMaximaVersion": 1
+    }
+  ],
+  "fechas_publicacion_mensual_2025": [
+    {
+      "Version": "TX4",
+      "FechaInicio": "2025-01-01",
+      "FechaFin": "2025-01-31",
+      "FechaPublicacion": "2025-07-18",
+      "esMaximaVersion": 1
+    },
+    {
+      "Version": "TX3",
+      "FechaInicio": "2025-01-01",
+      "FechaFin": "2025-01-31",
+      "FechaPublicacion": "2025-03-21",
+      "esMaximaVersion": 0
+    },
+    {
+      "Version": "TXF",
+      "FechaInicio": "2025-01-01",
+      "FechaFin": "2025-01-31",
+      "FechaPublicacion": "2025-02-10",
+      "esMaximaVersion": 0
+    },
+    {
+      "Version": "TXR",
+      "FechaInicio": "2025-01-01",
+      "FechaFin": "2025-01-31",
+      "FechaPublicacion": "2025-02-05",
+      "esMaximaVersion": 0
+    }
+  ],
+  "versiones_diarias_octubre2026": [
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-17",
+      "FechaFin": "2026-10-17",
+      "FechaPublicacion": "2026-10-21"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-19",
+      "FechaFin": "2026-10-19",
+      "FechaPublicacion": "2026-10-21"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-10",
+      "FechaFin": "2026-10-10",
+      "FechaPublicacion": "2026-10-14"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-12",
+      "FechaFin": "2026-10-12",
+      "FechaPublicacion": "2026-10-14"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-03",
+      "FechaFin": "2026-10-03",
+      "FechaPublicacion": "2026-10-07"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-05",
+      "FechaFin": "2026-10-05",
+      "FechaPublicacion": "2026-10-07"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-04",
+      "FechaFin": "2026-10-04",
+      "FechaPublicacion": "2026-10-06"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-02",
+      "FechaFin": "2026-10-02",
+      "FechaPublicacion": "2026-10-06"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-09-30",
+      "FechaFin": "2026-09-30",
+      "FechaPublicacion": "2026-10-02"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-09-28",
+      "FechaFin": "2026-09-28",
+      "FechaPublicacion": "2026-10-02"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-09-29",
+      "FechaFin": "2026-09-29",
+      "FechaPublicacion": "2026-10-02"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-09-29",
+      "FechaFin": "2026-09-29",
+      "FechaPublicacion": "2026-10-01"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-09-27",
+      "FechaFin": "2026-09-27",
+      "FechaPublicacion": "2026-10-01"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-29",
+      "FechaFin": "2026-10-29",
+      "FechaPublicacion": "2026-10-31"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-27",
+      "FechaFin": "2026-10-27",
+      "FechaPublicacion": "2026-10-31"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-05",
+      "FechaFin": "2026-10-05",
+      "FechaPublicacion": "2026-10-09"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-07",
+      "FechaFin": "2026-10-07",
+      "FechaPublicacion": "2026-10-09"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-08",
+      "FechaFin": "2026-10-08",
+      "FechaPublicacion": "2026-10-09"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-22",
+      "FechaFin": "2026-10-22",
+      "FechaPublicacion": "2026-10-26"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-24",
+      "FechaFin": "2026-10-24",
+      "FechaPublicacion": "2026-10-26"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-16",
+      "FechaFin": "2026-10-16",
+      "FechaPublicacion": "2026-10-20"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-18",
+      "FechaFin": "2026-10-18",
+      "FechaPublicacion": "2026-10-20"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-16",
+      "FechaFin": "2026-10-16",
+      "FechaPublicacion": "2026-10-18"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-14",
+      "FechaFin": "2026-10-14",
+      "FechaPublicacion": "2026-10-18"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-11",
+      "FechaFin": "2026-10-11",
+      "FechaPublicacion": "2026-10-13"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-09",
+      "FechaFin": "2026-10-09",
+      "FechaPublicacion": "2026-10-13"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-25",
+      "FechaFin": "2026-10-25",
+      "FechaPublicacion": "2026-10-27"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-23",
+      "FechaFin": "2026-10-23",
+      "FechaPublicacion": "2026-10-27"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-20",
+      "FechaFin": "2026-10-20",
+      "FechaPublicacion": "2026-10-22"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-18",
+      "FechaFin": "2026-10-18",
+      "FechaPublicacion": "2026-10-22"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-06",
+      "FechaFin": "2026-10-06",
+      "FechaPublicacion": "2026-10-10"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-26",
+      "FechaFin": "2026-10-26",
+      "FechaPublicacion": "2026-10-28"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-24",
+      "FechaFin": "2026-10-24",
+      "FechaPublicacion": "2026-10-28"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-13",
+      "FechaFin": "2026-10-13",
+      "FechaPublicacion": "2026-10-15"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-11",
+      "FechaFin": "2026-10-11",
+      "FechaPublicacion": "2026-10-15"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-23",
+      "FechaFin": "2026-10-23",
+      "FechaPublicacion": "2026-10-25"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-21",
+      "FechaFin": "2026-10-21",
+      "FechaPublicacion": "2026-10-25"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-28",
+      "FechaFin": "2026-10-28",
+      "FechaPublicacion": "2026-10-30"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-26",
+      "FechaFin": "2026-10-26",
+      "FechaPublicacion": "2026-10-30"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-02",
+      "FechaFin": "2026-10-02",
+      "FechaPublicacion": "2026-10-04"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-22",
+      "FechaFin": "2026-10-22",
+      "FechaPublicacion": "2026-10-24"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-20",
+      "FechaFin": "2026-10-20",
+      "FechaPublicacion": "2026-10-24"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-15",
+      "FechaFin": "2026-10-15",
+      "FechaPublicacion": "2026-10-19"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-17",
+      "FechaFin": "2026-10-17",
+      "FechaPublicacion": "2026-10-19"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-21",
+      "FechaFin": "2026-10-21",
+      "FechaPublicacion": "2026-10-23"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-19",
+      "FechaFin": "2026-10-19",
+      "FechaPublicacion": "2026-10-23"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-04",
+      "FechaFin": "2026-10-04",
+      "FechaPublicacion": "2026-10-08"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-06",
+      "FechaFin": "2026-10-06",
+      "FechaPublicacion": "2026-10-08"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-08",
+      "FechaFin": "2026-10-08",
+      "FechaPublicacion": "2026-10-12"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-10",
+      "FechaFin": "2026-10-10",
+      "FechaPublicacion": "2026-10-12"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-09",
+      "FechaFin": "2026-10-09",
+      "FechaPublicacion": "2026-10-11"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-07",
+      "FechaFin": "2026-10-07",
+      "FechaPublicacion": "2026-10-11"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-01",
+      "FechaFin": "2026-10-01",
+      "FechaPublicacion": "2026-10-05"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-03",
+      "FechaFin": "2026-10-03",
+      "FechaPublicacion": "2026-10-05"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-27",
+      "FechaFin": "2026-10-27",
+      "FechaPublicacion": "2026-10-29"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-25",
+      "FechaFin": "2026-10-25",
+      "FechaPublicacion": "2026-10-29"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-15",
+      "FechaFin": "2026-10-15",
+      "FechaPublicacion": "2026-10-17"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-13",
+      "FechaFin": "2026-10-13",
+      "FechaPublicacion": "2026-10-17"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-14",
+      "FechaFin": "2026-10-14",
+      "FechaPublicacion": "2026-10-16"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-10-12",
+      "FechaFin": "2026-10-12",
+      "FechaPublicacion": "2026-10-16"
+    },
+    {
+      "Version": "TX1",
+      "FechaInicio": "2026-10-01",
+      "FechaFin": "2026-10-01",
+      "FechaPublicacion": "2026-10-03"
+    },
+    {
+      "Version": "TX2",
+      "FechaInicio": "2026-09-30",
+      "FechaFin": "2026-09-30",
+      "FechaPublicacion": "2026-10-03"
+    }
+  ],
+  "metadatos_versiones": {
+    "24914f": {
+      "parameters": {
+        "idDataset": "24914F",
+        "startDate": "2026-09-01",
+        "endDate": "2026-09-01",
+        "columnDestinyName": null,
+        "values": null
+      },
+      "success": true,
+      "result": {
+        "idDataset": "24914F",
+        "name": "Versiones de factura para la liquidación mensual",
+        "metadata": {
+          "description": "Contiene las versiones mensuales de liquidación que han sido publicadas por el ASIC",
+          "creationDate": "2024-11-18 10:20:48",
+          "lastUpdate": "2026-11-04 09:13:57",
+          "nextUpdateDate": "2026-10-25 09:00:00",
+          "entity": "XM",
+          "category": "Versiones de factura para la liquidación mensual",
+          "periodicity": "Diaria",
+          "granularity": "Diaria",
+          "historicData": "NA",
+          "private": false,
+          "ultimaNovedad": null
+        },
+        "filterDate": "FechaInicio",
+        "records": null,
+        "variables": [],
+        "columns": [
+          {
+            "nameColumn": "FechaFin",
+            "dataType": "fecha",
+            "description": "Fecha final de vigencia del dato"
+          },
+          {
+            "nameColumn": "FechaPublicacion",
+            "dataType": "fecha",
+            "description": "Fecha de publicación del dato en el SIMEM"
+          },
+          {
+            "nameColumn": "esMaximaVersion",
+            "dataType": "entero",
+            "description": "Última versión disponible del dato. Si es la última =1, si no =0"
+          },
+          {
+            "nameColumn": "FechaInicio",
+            "dataType": "fecha",
+            "description": "Fecha de inicio del dato"
+          },
+          {
+            "nameColumn": "Version",
+            "dataType": "texto",
+            "description": "Versión de la liquidación"
+          }
+        ],
+        "tags": [
+          {
+            "id": "530ec525-c601-4858-87a8-2548add786c0",
+            "name": "Liquidación",
+            "estado": true
+          },
+          {
+            "id": "551395c9-c094-413a-a029-deadb59b926f",
+            "name": "SIMEM",
+            "estado": true
+          }
+        ]
+      }
+    },
+    "7a30a3": {
+      "parameters": {
+        "idDataset": "7a30a3",
+        "startDate": "2026-11-03",
+        "endDate": "2026-11-03",
+        "columnDestinyName": null,
+        "values": null
+      },
+      "success": true,
+      "result": {
+        "idDataset": "7a30a3",
+        "name": "Versiones de factura para la liquidación diaria",
+        "metadata": {
+          "description": "Contiene las versiones de liqudiación diaria TX1 y TX2 que publica el ASIC y la fecha de publicación",
+          "creationDate": "2025-03-13 13:57:17",
+          "lastUpdate": "2026-11-04 09:13:21",
+          "nextUpdateDate": "2026-11-05 09:00:00",
+          "entity": "XM",
+          "category": "Versiones de factura para la liquidación diaria",
+          "periodicity": "Diaria",
+          "granularity": "Diaria",
+          "historicData": "NA",
+          "private": false,
+          "ultimaNovedad": null
+        },
+        "filterDate": "FechaPublicacion",
+        "records": null,
+        "variables": [],
+        "columns": [
+          {
+            "nameColumn": "FechaFin",
+            "dataType": "fecha",
+            "description": "Fecha final de vigencia del dato"
+          },
+          {
+            "nameColumn": "FechaPublicacion",
+            "dataType": "fecha",
+            "description": "Fecha de publicación del dato en el SIMEM"
+          },
+          {
+            "nameColumn": "FechaInicio",
+            "dataType": "fecha",
+            "description": "Fecha de inicio del dato"
+          },
+          {
+            "nameColumn": "Version",
+            "dataType": "texto",
+            "description": "Versión de la liquidación"
+          }
+        ],
+        "tags": [
+          {
+            "id": "530ec525-c601-4858-87a8-2548add786c0",
+            "name": "Liquidación",
+            "estado": true
+          },
+          {
+            "id": "551395c9-c094-413a-a029-deadb59b926f",
+            "name": "SIMEM",
+            "estado": true
+          }
+        ]
+      }
+    }
+  },
+  "alternativas_tarifarias_descartadas": {
+    "td8k-vhq9": [
+      {
+        "car_carg_ano": "2023",
+        "car_carg_periodo": "1",
+        "filas": "2133"
+      },
+      {
+        "car_carg_ano": "2023",
+        "car_carg_periodo": "4",
+        "filas": "2273"
+      },
+      {
+        "car_carg_ano": "2023",
+        "car_carg_periodo": "3",
+        "filas": "2165"
+      },
+      {
+        "car_carg_ano": "2023",
+        "car_carg_periodo": "2",
+        "filas": "2050"
+      },
+      {
+        "car_carg_ano": "2023",
+        "car_carg_periodo": "5",
+        "filas": "1960"
+      },
+      {
+        "car_carg_ano": "2023",
+        "car_carg_periodo": "6",
+        "filas": "2026"
+      }
+    ],
+    "4is2-3nif": [
+      {
+        "car_carg_ano": "2023",
+        "car_carg_periodo": "1",
+        "filas": "2926"
+      },
+      {
+        "car_carg_ano": "2023",
+        "car_carg_periodo": "4",
+        "filas": "3713"
+      },
+      {
+        "car_carg_ano": "2023",
+        "car_carg_periodo": "3",
+        "filas": "2835"
+      },
+      {
+        "car_carg_ano": "2023",
+        "car_carg_periodo": "5",
+        "filas": "3007"
+      },
+      {
+        "car_carg_ano": "2023",
+        "car_carg_periodo": "2",
+        "filas": "2315"
+      },
+      {
+        "car_carg_ano": "2023",
+        "car_carg_periodo": "6",
+        "filas": "3010"
+      }
+    ]
+  }
+}

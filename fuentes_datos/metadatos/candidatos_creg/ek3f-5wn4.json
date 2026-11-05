@@ -1,0 +1,1197 @@
+{
+  "id" : "ek3f-5wn4",
+  "name" : "Tarifas aplicadas de Gas Natural",
+  "assetType" : "dataset",
+  "attribution" : "Comisión de Regulación de Energía y Gas - CREG, Bogotá D.C.",
+  "attributionLink" : "https://www.datos.gov.co/d/ek3f-5wn4",
+  "averageRating" : 0,
+  "category" : "Minas y Energía",
+  "createdAt" : 1477491147,
+  "description" : "Información reportada por las empresas distribuidoras de gas natural, reguladas por la CREG.  información actualizada los 20 de cada mes.",
+  "diciBackend" : false,
+  "displayType" : "table",
+  "downloadCount" : 7559,
+  "hideFromCatalog" : false,
+  "hideFromDataJson" : false,
+  "indexUpdatedAt" : 1548253376,
+  "licenseId" : "CC_40_BY_SA",
+  "locked" : false,
+  "newBackend" : true,
+  "numberOfComments" : 4,
+  "oid" : 29418904,
+  "provenance" : "official",
+  "publicationAppendEnabled" : false,
+  "publicationDate" : 1533303955,
+  "publicationGroup" : 13871739,
+  "publicationStage" : "published",
+  "rowsUpdatedAt" : 1700166395,
+  "tableId" : 15425589,
+  "totalTimesRated" : 0,
+  "viewCount" : 157280,
+  "viewLastModified" : 1779128761,
+  "viewType" : "tabular",
+  "approvals" : [ {
+    "reviewedAt" : 1533303955,
+    "reviewedAutomatically" : true,
+    "state" : "approved",
+    "submissionId" : 842364,
+    "submissionObject" : "public_audience_request",
+    "submissionOutcome" : "change_audience",
+    "submittedAt" : 1533303955,
+    "targetAudience" : "public",
+    "workflowId" : 2188,
+    "submissionDetails" : {
+      "permissionType" : "READ"
+    },
+    "submissionOutcomeApplication" : {
+      "failureCount" : 0,
+      "status" : "success"
+    },
+    "submitter" : {
+      "id" : "ave8-ghcx",
+      "displayName" : "Comisión de Regulación de Energía y Gas"
+    }
+  } ],
+  "clientContext" : {
+    "clientContextVariables" : [ ],
+    "inheritedVariables" : { }
+  },
+  "columns" : [ {
+    "id" : 369759906,
+    "name" : "ANO",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "ano",
+    "position" : 1,
+    "renderTypeName" : "text",
+    "tableColumnId" : 39649597,
+    "width" : 136,
+    "cachedContents" : {
+      "largest" : "2023",
+      "non_null" : "165360",
+      "null" : "0",
+      "top" : [ {
+        "item" : "2018",
+        "count" : "14372"
+      }, {
+        "item" : "2019",
+        "count" : "13769"
+      }, {
+        "item" : "2021",
+        "count" : "13670"
+      }, {
+        "item" : "2020",
+        "count" : "13518"
+      }, {
+        "item" : "2022",
+        "count" : "13425"
+      }, {
+        "item" : "2017",
+        "count" : "12403"
+      }, {
+        "item" : "2016",
+        "count" : "11896"
+      }, {
+        "item" : "2015",
+        "count" : "11229"
+      }, {
+        "item" : "2014",
+        "count" : "10933"
+      }, {
+        "item" : "2023",
+        "count" : "9356"
+      }, {
+        "item" : "2013",
+        "count" : "8800"
+      }, {
+        "item" : "2012",
+        "count" : "6953"
+      }, {
+        "item" : "2011",
+        "count" : "5604"
+      }, {
+        "item" : "2010",
+        "count" : "4413"
+      }, {
+        "item" : "2009",
+        "count" : "3723"
+      }, {
+        "item" : "2008",
+        "count" : "3053"
+      }, {
+        "item" : "2007",
+        "count" : "2528"
+      }, {
+        "item" : "2006",
+        "count" : "2201"
+      }, {
+        "item" : "2005",
+        "count" : "1978"
+      }, {
+        "item" : "2004",
+        "count" : "1536"
+      } ],
+      "smallest" : "2004",
+      "not_null" : "109487",
+      "count" : "165360",
+      "cardinality" : "165360"
+    },
+    "format" : { }
+  }, {
+    "id" : 369759907,
+    "name" : "MES",
+    "dataTypeName" : "number",
+    "description" : "",
+    "fieldName" : "mes",
+    "position" : 2,
+    "renderTypeName" : "number",
+    "tableColumnId" : 39649598,
+    "width" : 136,
+    "cachedContents" : {
+      "largest" : "12",
+      "non_null" : "165360",
+      "average" : "6.440069653712605",
+      "null" : "0",
+      "top" : [ {
+        "item" : "8",
+        "count" : "14380"
+      }, {
+        "item" : "9",
+        "count" : "14217"
+      }, {
+        "item" : "6",
+        "count" : "14122"
+      }, {
+        "item" : "7",
+        "count" : "14070"
+      }, {
+        "item" : "4",
+        "count" : "13878"
+      }, {
+        "item" : "3",
+        "count" : "13724"
+      }, {
+        "item" : "2",
+        "count" : "13686"
+      }, {
+        "item" : "5",
+        "count" : "13669"
+      }, {
+        "item" : "10",
+        "count" : "13546"
+      }, {
+        "item" : "1",
+        "count" : "13476"
+      }, {
+        "item" : "12",
+        "count" : "13382"
+      }, {
+        "item" : "11",
+        "count" : "13210"
+      } ],
+      "smallest" : "1",
+      "not_null" : "109487",
+      "count" : "165360",
+      "sum" : "617622",
+      "cardinality" : "165360"
+    },
+    "format" : { }
+  }, {
+    "id" : 369759908,
+    "name" : "EMPRESA",
+    "dataTypeName" : "text",
+    "description" : "Nombre de la empresa prestadora del servicio de Gas Natural\n",
+    "fieldName" : "empresa",
+    "position" : 3,
+    "renderTypeName" : "text",
+    "tableColumnId" : 39649599,
+    "width" : 184,
+    "cachedContents" : {
+      "largest" : "SURTIDORA DE GAS DEL CARIBE S.A. E.S.P",
+      "non_null" : "165360",
+      "null" : "0",
+      "top" : [ {
+        "item" : "ALCANOS DE COLOMBIA S.A. E.S.P.",
+        "count" : "21705"
+      }, {
+        "item" : "EMPRESAS PUBLICAS DE MEDELLIN E.S.P.",
+        "count" : "17703"
+      }, {
+        "item" : "GASES DEL LLANO S.A.  E.S.P.",
+        "count" : "12859"
+      }, {
+        "item" : "SURTIDORA DE GAS DEL CARIBE S.A. E.S.P",
+        "count" : "10482"
+      }, {
+        "item" : "GASES DEL CARIBE S.A. E.S.P.",
+        "count" : "8705"
+      }, {
+        "item" : "SURCOLOMBIANA DE GAS S.A. E.S.P.",
+        "count" : "8364"
+      }, {
+        "item" : "GASES DEL CUSIANA S.A. E.S.P",
+        "count" : "7013"
+      }, {
+        "item" : "MADIGAS INGENIEROS S.A. E.S.P.",
+        "count" : "6981"
+      }, {
+        "item" : "METROGAS DE COLOMBIA S.A. E.S.P",
+        "count" : "6900"
+      }, {
+        "item" : "GASES DE OCCIDENTE S.A. E.S.P.",
+        "count" : "6046"
+      }, {
+        "item" : "EFIGAS GAS NATURAL S.A. E.S.P.",
+        "count" : "5082"
+      }, {
+        "item" : "GASES DEL SUR DE SANTANDER S.A. E.S.P.",
+        "count" : "4991"
+      }, {
+        "item" : "PROMOTORA DE SERVICIOS PYBLICOS S.A. E.S.P.",
+        "count" : "4617"
+      }, {
+        "item" : "GAS NATURAL DEL ORIENTE  S.A.  E.S.P.",
+        "count" : "4034"
+      }, {
+        "item" : "GAS NATURAL S.A  E.S.P",
+        "count" : "3946"
+      }, {
+        "item" : "GASES DEL ORIENTE S.A. E.S.P.",
+        "count" : "3818"
+      }, {
+        "item" : "HEGA S.A. E.S.P.",
+        "count" : "3678"
+      }, {
+        "item" : "INGENIERIA Y SERVICIOS S.A. E.S.P.",
+        "count" : "3224"
+      }, {
+        "item" : "GASES DE LA GUAJIRA S.A. E.S.P.",
+        "count" : "2610"
+      }, {
+        "item" : "EMPRESA DE ENERGIA DE CASANARE S.A. E.S.P.",
+        "count" : "2514"
+      } ],
+      "smallest" : "ALCANOS DE COLOMBIA S.A. E.S.P.",
+      "not_null" : "109487",
+      "count" : "165360",
+      "cardinality" : "165360"
+    },
+    "format" : { }
+  }, {
+    "id" : 369759909,
+    "name" : "MUNICIPIOS",
+    "dataTypeName" : "text",
+    "description" : "Municipios del mercado relevante de Gas Natural",
+    "fieldName" : "municipios",
+    "position" : 4,
+    "renderTypeName" : "text",
+    "tableColumnId" : 39649600,
+    "width" : 220,
+    "cachedContents" : {
+      "largest" : "ZAPATOCA",
+      "non_null" : "165360",
+      "null" : "0",
+      "top" : [ {
+        "item" : "AGUAZUL - MONTERREY - VILLANUEVA",
+        "count" : "6332"
+      }, {
+        "item" : "CANTAGALLO - SAN PABLO - BUCARAMANGA - GIRON - LEBRIJA - PIEDECUESTA - PUERTO WILCHES - SABANA DE TORRES",
+        "count" : "2979"
+      }, {
+        "item" : "ACACIAS",
+        "count" : "2607"
+      }, {
+        "item" : "FLORIDABLANCA",
+        "count" : "2561"
+      }, {
+        "item" : "FUSAGASUGA - SILVANIA - AIPE - ALGECIRAS - BARAYA - CAMPOALEGRE - GARZON - GIGANTE - HOBO - LA PLATA - NEIVA - PAICOL - PALERMO - RIVERA - TARQUI - TELLO - TERUEL - TESALIA - VILLAVIEJA - YAGUARA - CHAPARRAL - COELLO - GUAMO - NATAGAIMA - ORTEGA - PURIFICACION - SALDANA",
+        "count" : "2400"
+      }, {
+        "item" : "EL SANTUARIO - GUARNE - MARINILLA - RIONEGRO",
+        "count" : "2169"
+      }, {
+        "item" : "ARCABUCO - CHITARAQUE - SAN JOSE DE PARE - SANTANA - TOGUI - BARBOSA - BOLIVAR - CHIPATA - JESUS MARIA - SUCRE",
+        "count" : "2154"
+      }, {
+        "item" : "SAN MARTIN",
+        "count" : "1961"
+      }, {
+        "item" : "AGUACHICA - AGUSTIN CODAZZI - BECERRIL - CHIRIGUANA - CURUMANI - GAMARRA - LA GLORIA - LA JAGUA DE IBIRICO - PAILITAS - PELAYA - SAN ALBERTO - SAN DIEGO - TAMALAMEQUE - EL BANCO - LA ESPERANZA",
+        "count" : "1880"
+      }, {
+        "item" : "YONDO - BARRANCABERMEJA",
+        "count" : "1845"
+      }, {
+        "item" : "LA UNION",
+        "count" : "1830"
+      }, {
+        "item" : "PARATEBUENO - CASTILLA LA NUEVA - FUENTE DE ORO - GUAMAL - PUERTO LOPEZ",
+        "count" : "1823"
+      }, {
+        "item" : "BogotA, Distrito Capital1 - SIBATE - SOACHA",
+        "count" : "1448"
+      }, {
+        "item" : "ARMENIA - CALARCA - CIRCASIA - FILANDIA - LA TEBAIDA - MONTENEGRO - QUIMBAYA - SALENTO",
+        "count" : "1428"
+      }, {
+        "item" : "BALBOA - DOSQUEBRADAS - LA CELIA - LA VIRGINIA - MARSELLA - PEREIRA - SANTA ROSA DE CABAL",
+        "count" : "1428"
+      }, {
+        "item" : "PUERTO BOYACA - LA DORADA - MANZANARES - VICTORIA - GIRARDOT - PUERTO SALGAR - RICAURTE - ALVARADO - AMBALEMA - GUAYABAL - ESPINAL - FLANDES - FRESNO - HERVEO - HONDA - IBAGUE - LERIDA - LIBANO - PIEDRAS - SAN LUIS - SAN SEBASTIAN DE MARIQUITA - VENADILLO",
+        "count" : "1422"
+      }, {
+        "item" : "CAQUEZA - CHIPAQUE - FOSCA - GUAYABETAL - QUETAME - UNE - CUMARAL - RESTREPO - VILLAVICENCIO",
+        "count" : "1421"
+      }, {
+        "item" : "CAUCASIA - ARJONA - CARTAGENA DE INDIAS - CICUCO - CLEMENCIA - EL CARMEN DE BOLIVAR - MAGANGUE - MARIA LA BAJA - MOMPOS - SAN JACINTO - SAN JUAN NEPOMUCENO - SANTA CATALINA - SANTA ROSA DE LIMA - TALAIGUA NUEVO - TURBACO - TURBANA - VILLANUEVA - AYAPEL - BUENAVISTA - CERETE - CHIMA - CHINU - CIENAGA DE ORO - SANTA CRUZ DE LORICA - MOMIL - MONTELIBANO - MONTERIA - PLANETA RICA - PUEBLO NUEVO - PURISIMA - SAHAGUN - SAN ANDRES DE SOTAVENTO - SAN ANTERO - SAN CARLOS - SAN PELAYO - SANTA ANA - BUENAVISTA - COROZAL - COVENAS - GALERAS - LOS PALMITOS - MORROA - OVEJAS - SAMPUES - BETULIA - SINCE - SAN MARCOS - SAN ONOFRE - SAN PEDRO - SANTIAGO DE TOLU - SINCELEJO - TOLU VIEJO",
+        "count" : "1416"
+      }, {
+        "item" : "BARBOSA - BELLO - CALDAS - COPACABANA - ENVIGADO - GIRARDOTA - ITAGUI - LA ESTRELLA - MEDELLIN - SABANETA",
+        "count" : "1404"
+      }, {
+        "item" : "EL BAGRE - SAN JUAN DE URABA - SEGOVIA - ZARAGOZA",
+        "count" : "1404"
+      } ],
+      "smallest" : "ABEJORRAL - ANGELOPOLIS - BELMIRA - BETANIA - BETULIA - CARAMANTA - CAROLINA - COCORNA - CONCORDIA - GOMEZ PLATA - GRANADA - GUADALUPE - HISPANIA - MONTEBELLO - MUTATA - PUEBLORRICO - PUERTO NARE - SALGAR - SAN CARLOS - SAN LUIS - SAN PEDRO DE URABA - SAN RAFAEL - TAMESIS - TARSO - TITIRIBI - URRAO - VALPARAISO - VENECIA",
+      "not_null" : "109487",
+      "count" : "165360",
+      "cardinality" : "165360"
+    },
+    "format" : { }
+  }, {
+    "id" : 369759910,
+    "name" : "NIT",
+    "dataTypeName" : "text",
+    "description" : "Número de identificación tributaria",
+    "fieldName" : "nit",
+    "position" : 5,
+    "renderTypeName" : "text",
+    "tableColumnId" : 39649601,
+    "width" : 136,
+    "cachedContents" : {
+      "largest" : "9010428147",
+      "non_null" : "165360",
+      "null" : "0",
+      "top" : [ {
+        "item" : "8911015774",
+        "count" : "21705"
+      }, {
+        "item" : "8909049961",
+        "count" : "17703"
+      }, {
+        "item" : "8000212729",
+        "count" : "12859"
+      }, {
+        "item" : "8904008699",
+        "count" : "10482"
+      }, {
+        "item" : "8901016912",
+        "count" : "8705"
+      }, {
+        "item" : "8305107171",
+        "count" : "8364"
+      }, {
+        "item" : "8002186822",
+        "count" : "7013"
+      }, {
+        "item" : "8220010734",
+        "count" : "6981"
+      }, {
+        "item" : "8902083166",
+        "count" : "6900"
+      }, {
+        "item" : "8001676435",
+        "count" : "6046"
+      }, {
+        "item" : "8002023953",
+        "count" : "5082"
+      }, {
+        "item" : "8040028019",
+        "count" : "4991"
+      }, {
+        "item" : "8040135788",
+        "count" : "4617"
+      }, {
+        "item" : "8902059527",
+        "count" : "4034"
+      }, {
+        "item" : "8000078135",
+        "count" : "3946"
+      }, {
+        "item" : "8905039002",
+        "count" : "3818"
+      }, {
+        "item" : "9001976404",
+        "count" : "3678"
+      }, {
+        "item" : "8040118001",
+        "count" : "3224"
+      }, {
+        "item" : "8921150366",
+        "count" : "2610"
+      }, {
+        "item" : "8440045760",
+        "count" : "2514"
+      } ],
+      "smallest" : "8000078135",
+      "not_null" : "109487",
+      "count" : "165360",
+      "cardinality" : "165360"
+    },
+    "format" : { }
+  }, {
+    "id" : 369759911,
+    "name" : "ID MERCADO",
+    "dataTypeName" : "number",
+    "description" : "Código de un grupo de municipios que se definen por Resolución CREG",
+    "fieldName" : "id_mercado",
+    "position" : 6,
+    "renderTypeName" : "number",
+    "tableColumnId" : 39649602,
+    "width" : 220,
+    "cachedContents" : {
+      "largest" : "1825",
+      "non_null" : "165360",
+      "average" : "96.77329176355276",
+      "null" : "0",
+      "top" : [ {
+        "item" : "10",
+        "count" : "6332"
+      }, {
+        "item" : "11",
+        "count" : "3411"
+      }, {
+        "item" : "57",
+        "count" : "2607"
+      }, {
+        "item" : "9",
+        "count" : "2561"
+      }, {
+        "item" : "24",
+        "count" : "2400"
+      }, {
+        "item" : "41",
+        "count" : "2169"
+      }, {
+        "item" : "32",
+        "count" : "2154"
+      }, {
+        "item" : "21",
+        "count" : "1916"
+      }, {
+        "item" : "16",
+        "count" : "1845"
+      }, {
+        "item" : "29",
+        "count" : "1823"
+      }, {
+        "item" : "169",
+        "count" : "1602"
+      }, {
+        "item" : "23",
+        "count" : "1448"
+      }, {
+        "item" : "166",
+        "count" : "1428"
+      }, {
+        "item" : "167",
+        "count" : "1428"
+      }, {
+        "item" : "170",
+        "count" : "1422"
+      }, {
+        "item" : "30",
+        "count" : "1421"
+      }, {
+        "item" : "20",
+        "count" : "1416"
+      }, {
+        "item" : "12",
+        "count" : "1404"
+      }, {
+        "item" : "190",
+        "count" : "1404"
+      }, {
+        "item" : "27",
+        "count" : "1398"
+      } ],
+      "smallest" : "9",
+      "not_null" : "109487",
+      "count" : "165360",
+      "sum" : "9280849",
+      "cardinality" : "165360"
+    },
+    "format" : { }
+  }, {
+    "id" : 369759912,
+    "name" : "ID_EMPRESA",
+    "dataTypeName" : "number",
+    "description" : "Código asignado al prestador de Gas Natural asignado por el SUI administrado por la Superintencia de Servicios Públicos SSPD",
+    "fieldName" : "id_empresa",
+    "position" : 7,
+    "renderTypeName" : "number",
+    "tableColumnId" : 39649603,
+    "width" : 220,
+    "cachedContents" : {
+      "largest" : "37253",
+      "non_null" : "165360",
+      "average" : "4773.347788911713",
+      "null" : "0",
+      "top" : [ {
+        "item" : "618",
+        "count" : "21705"
+      }, {
+        "item" : "564",
+        "count" : "17703"
+      }, {
+        "item" : "620",
+        "count" : "12859"
+      }, {
+        "item" : "498",
+        "count" : "10482"
+      }, {
+        "item" : "484",
+        "count" : "8705"
+      }, {
+        "item" : "20518",
+        "count" : "8364"
+      }, {
+        "item" : "541",
+        "count" : "7013"
+      }, {
+        "item" : "2097",
+        "count" : "6981"
+      }, {
+        "item" : "1173",
+        "count" : "6900"
+      }, {
+        "item" : "629",
+        "count" : "6046"
+      }, {
+        "item" : "1887",
+        "count" : "5082"
+      }, {
+        "item" : "1601",
+        "count" : "4991"
+      }, {
+        "item" : "3227",
+        "count" : "4617"
+      }, {
+        "item" : "526",
+        "count" : "4034"
+      }, {
+        "item" : "488",
+        "count" : "3946"
+      }, {
+        "item" : "1302",
+        "count" : "3818"
+      }, {
+        "item" : "26035",
+        "count" : "3678"
+      }, {
+        "item" : "22910",
+        "count" : "3224"
+      }, {
+        "item" : "978",
+        "count" : "2610"
+      }, {
+        "item" : "3370",
+        "count" : "2514"
+      } ],
+      "smallest" : "484",
+      "not_null" : "109487",
+      "count" : "165360",
+      "sum" : "457778373",
+      "cardinality" : "165360"
+    },
+    "format" : { }
+  }, {
+    "id" : 369759913,
+    "name" : "ESTRATO",
+    "dataTypeName" : "number",
+    "description" : "Estrato socio-economico residencial de los usuarios de Gas Natural",
+    "fieldName" : "estrato",
+    "position" : 8,
+    "renderTypeName" : "number",
+    "tableColumnId" : 39649604,
+    "width" : 184,
+    "cachedContents" : {
+      "largest" : "6",
+      "non_null" : "165360",
+      "average" : "3.356933568292963",
+      "null" : "0",
+      "top" : [ {
+        "item" : "3",
+        "count" : "30074"
+      }, {
+        "item" : "2",
+        "count" : "29943"
+      }, {
+        "item" : "1",
+        "count" : "29860"
+      }, {
+        "item" : "4",
+        "count" : "26200"
+      }, {
+        "item" : "5",
+        "count" : "24788"
+      }, {
+        "item" : "6",
+        "count" : "24495"
+      } ],
+      "smallest" : "1",
+      "not_null" : "109487",
+      "count" : "165360",
+      "sum" : "321940",
+      "cardinality" : "165360"
+    },
+    "format" : { }
+  }, {
+    "id" : 369759914,
+    "name" : "CONEXION",
+    "dataTypeName" : "number",
+    "description" : "Valor (cantidad monetaria) de conexión del servicio de Gas Natural para un usuario, según su estrato",
+    "fieldName" : "conexion",
+    "position" : 9,
+    "renderTypeName" : "number",
+    "tableColumnId" : 39649605,
+    "width" : 196,
+    "cachedContents" : {
+      "largest" : "1870000",
+      "non_null" : "165360",
+      "average" : "510822.5831512257",
+      "null" : "0",
+      "top" : [ {
+        "item" : "540798",
+        "count" : "4435"
+      }, {
+        "item" : "1300000",
+        "count" : "3752"
+      }, {
+        "item" : "489125",
+        "count" : "2214"
+      }, {
+        "item" : "510780",
+        "count" : "2211"
+      }, {
+        "item" : "644881",
+        "count" : "1872"
+      }, {
+        "item" : "610567",
+        "count" : "1866"
+      }, {
+        "item" : "580190",
+        "count" : "1866"
+      }, {
+        "item" : "562309",
+        "count" : "1818"
+      }, {
+        "item" : "501060",
+        "count" : "1806"
+      }, {
+        "item" : "627208",
+        "count" : "1794"
+      }, {
+        "item" : "510800",
+        "count" : "1736"
+      }, {
+        "item" : "641178",
+        "count" : "1716"
+      }, {
+        "item" : "621417",
+        "count" : "1584"
+      }, {
+        "item" : "665543",
+        "count" : "1578"
+      }, {
+        "item" : "540790",
+        "count" : "1563"
+      }, {
+        "item" : "470289",
+        "count" : "1560"
+      }, {
+        "item" : "676258",
+        "count" : "1554"
+      }, {
+        "item" : "529200",
+        "count" : "1554"
+      }, {
+        "item" : "617165",
+        "count" : "1494"
+      }, {
+        "item" : "565000",
+        "count" : "1452"
+      } ],
+      "smallest" : "0",
+      "not_null" : "109487",
+      "count" : "165360",
+      "sum" : "48989418191.952",
+      "cardinality" : "165360"
+    },
+    "format" : { }
+  }, {
+    "id" : 369759915,
+    "name" : "REINSTALACION",
+    "dataTypeName" : "number",
+    "description" : "Valor (cantidad monetaria) de reinstalacion del servicio de Gas Natural para un usuario, según su estrato",
+    "fieldName" : "reinstalacion",
+    "position" : 10,
+    "renderTypeName" : "number",
+    "tableColumnId" : 39649606,
+    "width" : 256,
+    "cachedContents" : {
+      "largest" : "9826062",
+      "non_null" : "165360",
+      "average" : "162255.4972906374",
+      "null" : "0",
+      "top" : [ {
+        "item" : "219000",
+        "count" : "5755"
+      }, {
+        "item" : "330000",
+        "count" : "4616"
+      }, {
+        "item" : "0",
+        "count" : "3254"
+      }, {
+        "item" : "486936",
+        "count" : "2940"
+      }, {
+        "item" : "300000",
+        "count" : "2508"
+      }, {
+        "item" : "312270",
+        "count" : "2471"
+      }, {
+        "item" : "194214",
+        "count" : "1962"
+      }, {
+        "item" : "208005",
+        "count" : "1944"
+      }, {
+        "item" : "159419",
+        "count" : "1890"
+      }, {
+        "item" : "223232",
+        "count" : "1872"
+      }, {
+        "item" : "162059",
+        "count" : "1872"
+      }, {
+        "item" : "211354",
+        "count" : "1866"
+      }, {
+        "item" : "200390",
+        "count" : "1866"
+      }, {
+        "item" : "80000",
+        "count" : "1752"
+      }, {
+        "item" : "74659",
+        "count" : "1716"
+      }, {
+        "item" : "186583",
+        "count" : "1716"
+      }, {
+        "item" : "152868",
+        "count" : "1632"
+      }, {
+        "item" : "111843",
+        "count" : "1606"
+      }, {
+        "item" : "72358",
+        "count" : "1584"
+      }, {
+        "item" : "77496",
+        "count" : "1578"
+      } ],
+      "smallest" : "0",
+      "not_null" : "109487",
+      "count" : "165360",
+      "sum" : "15560788956.664",
+      "cardinality" : "165360"
+    },
+    "format" : { }
+  }, {
+    "id" : 369759916,
+    "name" : "RECONEXION",
+    "dataTypeName" : "text",
+    "description" : "Valor (cantidad monetaria) de reconexion del servicio de Gas Natural para un usuario, según su estrato",
+    "fieldName" : "reconexion",
+    "position" : 11,
+    "renderTypeName" : "text",
+    "tableColumnId" : 39649607,
+    "width" : 220,
+    "cachedContents" : {
+      "largest" : "9900",
+      "non_null" : "165360",
+      "null" : "0",
+      "top" : [ {
+        "item" : "20000",
+        "count" : "4607"
+      }, {
+        "item" : "35000",
+        "count" : "4561"
+      }, {
+        "item" : "30000",
+        "count" : "2232"
+      }, {
+        "item" : "0",
+        "count" : "2134"
+      }, {
+        "item" : "25000",
+        "count" : "2016"
+      }, {
+        "item" : "15000",
+        "count" : "2013"
+      }, {
+        "item" : "23115",
+        "count" : "1962"
+      }, {
+        "item" : "35650",
+        "count" : "1944"
+      }, {
+        "item" : "33000",
+        "count" : "1932"
+      }, {
+        "item" : "47000",
+        "count" : "1890"
+      }, {
+        "item" : "38260",
+        "count" : "1872"
+      }, {
+        "item" : "36813",
+        "count" : "1872"
+      }, {
+        "item" : "23850",
+        "count" : "1866"
+      }, {
+        "item" : "36224",
+        "count" : "1866"
+      }, {
+        "item" : "34410",
+        "count" : "1794"
+      }, {
+        "item" : "27171",
+        "count" : "1716"
+      }, {
+        "item" : "22207",
+        "count" : "1716"
+      }, {
+        "item" : "23000",
+        "count" : "1674"
+      }, {
+        "item" : "41636",
+        "count" : "1605"
+      }, {
+        "item" : "18974",
+        "count" : "1591"
+      } ],
+      "smallest" : "0",
+      "not_null" : "109487",
+      "count" : "165360",
+      "cardinality" : "165360"
+    },
+    "format" : { }
+  }, {
+    "id" : 369759917,
+    "name" : "CARGO_FIJO",
+    "dataTypeName" : "number",
+    "description" : "Valor (cantidad monetaria) de la tarifa fija del servicio de Gas Natural para un usuario, según su estrato",
+    "fieldName" : "cargo_fijo",
+    "position" : 12,
+    "renderTypeName" : "number",
+    "tableColumnId" : 39649608,
+    "width" : 220,
+    "cachedContents" : {
+      "largest" : "3723696",
+      "non_null" : "165360",
+      "average" : "1981.556404570660",
+      "null" : "0",
+      "top" : [ {
+        "item" : "0",
+        "count" : "58625"
+      }, {
+        "item" : "1476",
+        "count" : "500"
+      }, {
+        "item" : "1230",
+        "count" : "496"
+      }, {
+        "item" : "3200",
+        "count" : "230"
+      }, {
+        "item" : "3840",
+        "count" : "228"
+      }, {
+        "item" : "1200",
+        "count" : "217"
+      }, {
+        "item" : "1440",
+        "count" : "191"
+      }, {
+        "item" : "3360",
+        "count" : "150"
+      }, {
+        "item" : "2800",
+        "count" : "148"
+      }, {
+        "item" : "1885",
+        "count" : "126"
+      }, {
+        "item" : "2262",
+        "count" : "123"
+      }, {
+        "item" : "4766.69",
+        "count" : "120"
+      }, {
+        "item" : "5720.03",
+        "count" : "120"
+      }, {
+        "item" : "2600",
+        "count" : "83"
+      }, {
+        "item" : "3120",
+        "count" : "82"
+      }, {
+        "item" : "3550",
+        "count" : "71"
+      }, {
+        "item" : "4459",
+        "count" : "70"
+      }, {
+        "item" : "3500",
+        "count" : "64"
+      }, {
+        "item" : "2615",
+        "count" : "64"
+      }, {
+        "item" : "3050",
+        "count" : "62"
+      } ],
+      "smallest" : "-1009.71",
+      "not_null" : "109487",
+      "count" : "165360",
+      "sum" : "190037203.86754",
+      "cardinality" : "165360"
+    },
+    "format" : { }
+  }, {
+    "id" : 369759918,
+    "name" : "RANGO_0",
+    "dataTypeName" : "number",
+    "description" : "Valor (cantidad monetaria) del pago servicio de Gas Natural para un usuario, según su estrato y su consumo (si es menor a 20M3)",
+    "fieldName" : "rango_0",
+    "position" : 13,
+    "renderTypeName" : "number",
+    "tableColumnId" : 39649609,
+    "width" : 184,
+    "cachedContents" : {
+      "largest" : "5119020.5",
+      "non_null" : "165360",
+      "average" : "1164.357280097599",
+      "null" : "0",
+      "top" : [ {
+        "item" : "0",
+        "count" : "499"
+      }, {
+        "item" : "2418.77",
+        "count" : "78"
+      }, {
+        "item" : "2015.64",
+        "count" : "78"
+      }, {
+        "item" : "370",
+        "count" : "67"
+      }, {
+        "item" : "461",
+        "count" : "64"
+      }, {
+        "item" : "662",
+        "count" : "62"
+      }, {
+        "item" : "308",
+        "count" : "62"
+      }, {
+        "item" : "870",
+        "count" : "61"
+      }, {
+        "item" : "384",
+        "count" : "58"
+      }, {
+        "item" : "504",
+        "count" : "57"
+      }, {
+        "item" : "313",
+        "count" : "56"
+      }, {
+        "item" : "480",
+        "count" : "56"
+      }, {
+        "item" : "420",
+        "count" : "55"
+      }, {
+        "item" : "581",
+        "count" : "55"
+      }, {
+        "item" : "394",
+        "count" : "52"
+      }, {
+        "item" : "1562.94",
+        "count" : "52"
+      }, {
+        "item" : "1581.3",
+        "count" : "52"
+      }, {
+        "item" : "1701.51",
+        "count" : "52"
+      }, {
+        "item" : "1531.21",
+        "count" : "52"
+      }, {
+        "item" : "1837.45",
+        "count" : "52"
+      } ],
+      "smallest" : "0",
+      "not_null" : "109487",
+      "count" : "165360",
+      "sum" : "111665356.23320",
+      "cardinality" : "165360"
+    },
+    "format" : { }
+  }, {
+    "id" : 369759919,
+    "name" : "RANGO_21",
+    "dataTypeName" : "number",
+    "description" : "Valor (cantidad monetaria) del pago servicio de Gas Natural para un usuario, según su estrato y su consumo (si es mayor a 20M3)",
+    "fieldName" : "rango_21",
+    "position" : 14,
+    "renderTypeName" : "number",
+    "tableColumnId" : 39649610,
+    "width" : 196,
+    "cachedContents" : {
+      "largest" : "157525",
+      "non_null" : "165360",
+      "average" : "1174.561417616133",
+      "null" : "0",
+      "top" : [ {
+        "item" : "0",
+        "count" : "25625"
+      }, {
+        "item" : "1894.88",
+        "count" : "130"
+      }, {
+        "item" : "313",
+        "count" : "120"
+      }, {
+        "item" : "1562.94",
+        "count" : "104"
+      }, {
+        "item" : "1701.51",
+        "count" : "104"
+      }, {
+        "item" : "1985.19",
+        "count" : "104"
+      }, {
+        "item" : "2358.44",
+        "count" : "104"
+      }, {
+        "item" : "1581.3",
+        "count" : "104"
+      }, {
+        "item" : "308",
+        "count" : "104"
+      }, {
+        "item" : "1531.21",
+        "count" : "104"
+      }, {
+        "item" : "2416.46",
+        "count" : "100"
+      }, {
+        "item" : "2595.42",
+        "count" : "100"
+      }, {
+        "item" : "2052.61",
+        "count" : "100"
+      }, {
+        "item" : "384",
+        "count" : "98"
+      }, {
+        "item" : "662",
+        "count" : "96"
+      }, {
+        "item" : "325",
+        "count" : "92"
+      }, {
+        "item" : "380",
+        "count" : "86"
+      }, {
+        "item" : "420",
+        "count" : "84"
+      }, {
+        "item" : "581",
+        "count" : "82"
+      }, {
+        "item" : "465",
+        "count" : "78"
+      } ],
+      "smallest" : "0",
+      "not_null" : "109487",
+      "count" : "165360",
+      "sum" : "112643963.63364",
+      "cardinality" : "165360"
+    },
+    "format" : { }
+  } ],
+  "grants" : [ {
+    "inherited" : false,
+    "type" : "viewer",
+    "flags" : [ "public" ]
+  } ],
+  "license" : {
+    "name" : "Creative Commons Attribution | Share Alike 4.0 International",
+    "logoUrl" : "images/licenses/cc30bysa.png",
+    "termsLink" : "http://creativecommons.org/licenses/by-sa/4.0/legalcode"
+  },
+  "metadata" : {
+    "custom_fields" : {
+      "Información de la Entidad" : {
+        "Municipio" : "Bogotá D.C.",
+        "Nombre de la Entidad" : "Comisión de Regulación de Energía y Gas - CREG, Bogotá D.C.",
+        "DIVIPOLA Municipio" : "11001",
+        "Orden" : "Nacional",
+        "Sector" : "Minas y Energía",
+        "Departamento" : "Bogotá D.C."
+      },
+      "Información de Datos" : {
+        "Cobertura Geográfica" : "Nacional",
+        "Idioma" : "Español",
+        "Frecuencia de Actualización" : "Mensual"
+      }
+    }
+  },
+  "owner" : {
+    "id" : "ave8-ghcx",
+    "displayName" : "Comisión de Regulación de Energía y Gas",
+    "profileImageUrlLarge" : "/api/users/ave8-ghcx/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/ave8-ghcx/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/ave8-ghcx/profile_images/TINY",
+    "screenName" : "Comisión de Regulación de Energía y Gas",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "query" : { },
+  "rights" : [ "read" ],
+  "tableAuthor" : {
+    "id" : "ave8-ghcx",
+    "displayName" : "Comisión de Regulación de Energía y Gas",
+    "profileImageUrlLarge" : "/api/users/ave8-ghcx/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/ave8-ghcx/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/ave8-ghcx/profile_images/TINY",
+    "screenName" : "Comisión de Regulación de Energía y Gas",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "tags" : [ "tarifas gas", "creg", "tarifas aplicadas de gas" ],
+  "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+}
