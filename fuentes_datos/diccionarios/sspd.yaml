@@ -21,7 +21,7 @@ alcance_de_la_copia_conservada:
   motivo: El volumen en origen supera los 9 GB; versionarlo íntegro no es viable.
   criterio: Se conservan dos censos completos y declarados, no muestras aleatorias.
   censo_mensual:
-    archivo: datos/sspd_ebby-cjha_mensual.csv
+    archivo: datos/Datos_en_revision/sspd_ebby-cjha_mensual.csv
     universo: Las 91 empresas y los 59 períodos, sin excepción.
     dimensiones:
     - identificador_empresa
@@ -36,7 +36,7 @@ alcance_de_la_copia_conservada:
       complementario y mayor a 800, facturación, valor total, subsidio y días facturados.
     uso: Series mensuales por empresa y categoría; completitud, dominios y consistencia de etiquetas.
   censo_detalle:
-    archivo: datos/sspd_ebby-cjha_detalle.csv
+    archivo: datos/Datos_en_revision/sspd_ebby-cjha_detalle-compressed.zip
     universo: Todos los registros de la empresa 28111, en sus 57 períodos.
     uso: Reglas de nivel de fila (unicidad, formato, clave) que el agregado no puede sostener.
     advertencia: Es un censo de una empresa, no una muestra del conjunto. No generalizar sin declararlo.

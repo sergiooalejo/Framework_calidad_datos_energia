@@ -14,6 +14,8 @@ from pathlib import Path
 import csv
 import re
 
+from lector_datos import leer
+
 AQUI = Path(__file__).resolve().parent
 RAIZ = AQUI.parents[1]
 DATOS = RAIZ / "fuentes_datos" / "datos"
@@ -31,8 +33,8 @@ def dato(nombre):
     return encontrados[0] if encontrados else directo
 
 
-MENSUAL = dato("sspd_ebby-cjha_mensual.csv")
-DETALLE = dato("sspd_ebby-cjha_detalle.csv")
+MENSUAL = "sspd_ebby-cjha_mensual.csv"
+DETALLE = "sspd_ebby-cjha_detalle.csv"
 
 AUSENTES = {"", "N/A", "NA", "null", "None"}
 
@@ -89,8 +91,8 @@ def _vacio(estado, nota):
 
 
 def medir_sspd():
-    det = list(csv.DictReader(open(DETALLE, encoding="utf-8", newline="")))
-    men = list(csv.DictReader(open(MENSUAL, encoding="utf-8", newline="")))
+    det = leer(DETALLE)
+    men = leer(MENSUAL)
     n = len(det)
     cols = list(det[0].keys()) if det else []
 

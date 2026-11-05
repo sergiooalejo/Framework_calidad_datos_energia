@@ -5,10 +5,34 @@ incorporadas para cubrir el consumo observado que a las dos primeras les falta.
 
 | Fuente | Qué aporta | CSV | Diccionario | Portal |
 |---|---|---|---|---|
-| **EPM** · 3.623 filas, 12 col. | Tarifa, forma larga | [csv](datos/epm_sfcd-b3ey.csv) | [epm.yaml](diccionarios/epm.yaml) | https://www.datos.gov.co/d/sfcd-b3ey |
-| **CHEC** · 40.609 filas, 24 col. | Tarifa, forma ancha | [csv](datos/chec_c698-wqig.csv) | [chec.yaml](diccionarios/chec.yaml) | https://www.datos.gov.co/d/c698-wqig |
-| **SSPD** · 11.905.557 filas en origen, 29 col. | Consumo y **59 meses** para las cartas | [mensual](datos/sspd_ebby-cjha_mensual.csv) · [detalle](datos/sspd_ebby-cjha_detalle.csv) | [sspd.yaml](diccionarios/sspd.yaml) | https://www.datos.gov.co/d/ebby-cjha |
-| **SSPD-NR** · 402.500 filas, 48 col. | Consumo, **tarifa aplicada**, propiedad y régimen interconectado | [csv](datos/sspd_bnkp-xdb7.csv) | [sspd_nr.yaml](diccionarios/sspd_nr.yaml) | https://www.datos.gov.co/d/bnkp-xdb7 |
+| **EPM** · 3.623 filas, 12 col. | Tarifa, forma larga | [csv](datos/Datos_seleccionados/epm_sfcd-b3ey.csv) | [epm.yaml](diccionarios/epm.yaml) | https://www.datos.gov.co/d/sfcd-b3ey |
+| **CHEC** · 40.609 filas, 24 col. | Tarifa, forma ancha | [csv](datos/Datos_seleccionados/chec_c698-wqig.csv) | [chec.yaml](diccionarios/chec.yaml) | https://www.datos.gov.co/d/c698-wqig |
+| **SSPD** · 11.905.557 filas en origen, 29 col. | Consumo y **59 meses** para las cartas | [mensual](datos/Datos_en_revision/sspd_ebby-cjha_mensual.csv) · [detalle .zip](datos/Datos_en_revision/sspd_ebby-cjha_detalle-compressed.zip) | [sspd.yaml](diccionarios/sspd.yaml) | https://www.datos.gov.co/d/ebby-cjha |
+| **SSPD-NR** · 402.500 filas, 48 col. | Consumo, **tarifa aplicada**, propiedad y régimen interconectado | [resumen](datos/Datos_en_revision/sspd_bnkp-xdb7_resumen.csv) · [catálogos](datos/Datos_en_revision/sspd_bnkp-xdb7_catalogos.csv) · [completo .zip](datos/Datos_en_revision/sspd_bnkp-xdb7-compressed.zip) | [sspd_nr.yaml](diccionarios/sspd_nr.yaml) | https://www.datos.gov.co/d/bnkp-xdb7 |
+
+## Por qué hay archivos comprimidos
+
+GitHub avisa sobre los 50 MB y bloquea sobre los 100 MB, así que los dos CSV grandes se
+conservan como `.zip`, siguiendo el convenio que ya usaba `supers_icnr-l4iw-compressed.zip`:
+
+| Archivo | Sin comprimir | Comprimido |
+|---|---|---|
+| `sspd_bnkp-xdb7-compressed.zip` | 74,1 MB | **17,6 MB** |
+| `sspd_ebby-cjha_detalle-compressed.zip` | 18,5 MB | **2,7 MB** |
+
+**No hay que descomprimirlos a mano.** Los scripts de medición los leen directamente: el
+módulo `desarrollo_puntos/3.3/lector_datos.py` busca cada archivo por nombre y acepta tanto
+el CSV suelto como el ZIP que lo contiene. Verificado: las 76 cifras de la matriz son
+idénticas antes y después de comprimir.
+
+Para leer los datos **en el navegador**, sin descargar nada, están estos dos, que GitHub
+renderiza como tabla:
+
+- [`sspd_bnkp-xdb7_resumen.csv`](datos/Datos_en_revision/sspd_bnkp-xdb7_resumen.csv) · 885
+  filas: consumo, energía reactiva, facturación y tarifa promedio por empresa, período,
+  sector, tipo de tarifa y porcentaje de propiedad.
+- [`sspd_bnkp-xdb7_catalogos.csv`](datos/Datos_en_revision/sspd_bnkp-xdb7_catalogos.csv) ·
+  569 pares código-nombre, donde se ven las siete claves con el nombre corrupto.
 
 **Las dos fuentes de consumo se complementan y no se reemplazan.** SSPD aporta la
 profundidad temporal —59 períodos consecutivos, los únicos que alcanzan el mínimo de 49 que

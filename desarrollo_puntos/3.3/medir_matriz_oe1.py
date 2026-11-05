@@ -24,25 +24,12 @@ import statistics as st
 from datetime import datetime, timezone
 from pathlib import Path
 
+from lector_datos import dato, leer
+
 AQUI = Path(__file__).resolve().parent
 RAIZ = AQUI.parents[1]
 DATOS = RAIZ / "fuentes_datos" / "datos"
 
-
-def dato(nombre):
-    """Ruta de un CSV de datos, lo busque donde lo busque.
-
-    La carpeta se reorganizo el 2 de noviembre de 2026 y los archivos quedaron en
-    subcarpetas (`Datos_seleccionados`, `Datos_en_revision`). Buscar por nombre en
-    lugar de fijar la subcarpeta evita que el script se rompa en la proxima mudanza.
-    """
-    directo = DATOS / nombre
-    if directo.exists():
-        return directo
-    encontrados = sorted(DATOS.rglob(nombre))
-    if encontrados:
-        return encontrados[0]
-    return directo          # que falle con el nombre esperado, no con uno inventado
 
 MATRIZ_CSV = AQUI / "matriz_oe1.csv"
 MATRIZ_YAML = AQUI / "matriz_oe1.yaml"
@@ -217,7 +204,7 @@ def exactitud_chec(filas):
 
 def medir(cfg):
     """Devuelve {control: dict(num, den, valor, estado, nota)} para una fuente."""
-    filas = list(csv.DictReader(open(cfg["archivo"], encoding="utf-8-sig", newline="")))
+    filas = leer(cfg["archivo"].name, encoding="utf-8-sig")
     n = len(filas)
     campo_ano, campo_mes = cfg["periodo"]
     medidas, categorias = cfg["medidas"], cfg["categorias"]

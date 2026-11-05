@@ -393,14 +393,14 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 
 Valores calculados por [`medir_matriz_oe1.py`](medir_matriz_oe1.py) sobre los CSV de
 `fuentes_datos/datos/`, aplicando las definiciones de población, numerador y denominador
-de esta misma matriz. Última ejecución: 2026-11-05T00:02:30Z.
+de esta misma matriz. Última ejecución: 2026-11-05T00:11:26Z.
 
 | Archivo medido | Filas | SHA-256 |
 |---|---|---|
 | `fuentes_datos/datos/Datos_seleccionados/epm_sfcd-b3ey.csv` | 3623 | `98acd40e8d2b92433b1dfc60422228f26f53ab331fd600631f03f830e7ba38f4` |
 | `fuentes_datos/datos/Datos_seleccionados/chec_c698-wqig.csv` | 40609 | `05865b094a4cc4eb9f822ed2af686a11a8905d6606f40bb554f5bb5258e3c53f` |
-| `fuentes_datos/datos/Datos_en_revision/sspd_ebby-cjha_detalle.csv` | 91840 | `08ae8b9faf9f59db1288b54f424c33afba6fa6d6fdf5fc5a13cbde69b7fef669` |
-| `fuentes_datos/datos/Datos_en_revision/sspd_bnkp-xdb7.csv` | 402500 | `66af41fc2bbe08ef02ddf44bf50ded01a347c79b73e768517c3d36e462779a40` |
+| `fuentes_datos/datos/Datos_en_revision/sspd_ebby-cjha_detalle-compressed.zip` | 91840 | `ac2231358b78eeadb7a2bd99b5311e8a34467130d34d246efb19cb05bbcd3257` |
+| `fuentes_datos/datos/Datos_en_revision/sspd_bnkp-xdb7-compressed.zip` | 402500 | `80342adf79bbedd5576c9d722753ee774eb8028f774c8c9d3cdc8fbebcface7e` |
 
 > Estos hashes no coinciden con `fuentes_datos/verificaciones/manifiesto_archivos.json`.
 > La causa está identificada y no es corrupción: el repositorio no declara política de fin

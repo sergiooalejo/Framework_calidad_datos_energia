@@ -94,8 +94,8 @@ fuentes:
     ambito: Zonas No Interconectadas; 91 empresas, ninguna del Sistema Interconectado Nacional.
     naturaleza: Registro de facturación, no tarifario. Por eso algunos controles no aplican.
     archivos:
-    - datos/sspd_ebby-cjha_mensual.csv
-    - datos/sspd_ebby-cjha_detalle.csv
+    - datos/Datos_en_revision/sspd_ebby-cjha_mensual.csv
+    - datos/Datos_en_revision/sspd_ebby-cjha_detalle-compressed.zip
     alcance: >-
       El conjunto en origen supera los 9 GB. Se conservan dos censos declarados: el mensual
       cubre las 91 empresas y los 59 períodos de forma agregada; el de detalle cubre todos
@@ -149,7 +149,7 @@ fuentes:
       Registro de facturación no residencial. A diferencia de la fuente ZNI, trae el eje de
       propiedad del activo y la tarifa aplicada, de modo que R08, R09 e INT02 sí aplican.
     archivos:
-    - datos/sspd_bnkp-xdb7.csv
+    - datos/Datos_en_revision/sspd_bnkp-xdb7-compressed.zip
     limitacion: >-
       Solo 12 períodos mensuales, por debajo de los 49 que exige el protocolo de cartas, y el
       volumen cae de 101.608 registros en 2021-07 a 977 en 2022-05.
@@ -353,7 +353,7 @@ indicadores:
       denominador: 402500
       valor: 100.0
       estado: medido
-    medido_utc: '2026-11-05T00:02:30Z'
+    medido_utc: '2026-11-05T00:11:26Z'
 - id: R02
   nombre: Período válido
   dimension: validez
@@ -414,7 +414,7 @@ indicadores:
       denominador: 402500
       valor: 100.0
       estado: medido
-    medido_utc: '2026-11-05T00:02:30Z'
+    medido_utc: '2026-11-05T00:11:26Z'
   tipos_secundarios:
   - T05
 - id: R03
@@ -481,7 +481,7 @@ indicadores:
       valor: 100.0
       estado: medido
       nota: 'Denominador: celdas informadas de las 13 medidas numericas.'
-    medido_utc: '2026-11-05T00:02:30Z'
+    medido_utc: '2026-11-05T00:11:26Z'
 - id: R04
   nombre: Ausencia de duplicados exactos adicionales
   dimension: unicidad
@@ -541,7 +541,7 @@ indicadores:
       denominador: 402500
       valor: 100.0
       estado: medido
-    medido_utc: '2026-11-05T00:02:30Z'
+    medido_utc: '2026-11-05T00:11:26Z'
 - id: R05
   nombre: Clave tarifaria sin multiplicidad
   dimension: unicidad
@@ -606,7 +606,7 @@ indicadores:
       valor: 99.98683229813665
       estado: provisional
       nota: 'Clave provisional id_factura; 53 identificadores repetidos.'
-    medido_utc: '2026-11-05T00:02:30Z'
+    medido_utc: '2026-11-05T00:11:26Z'
 - id: R06
   nombre: Representación canónica
   dimension: consistencia
@@ -671,7 +671,7 @@ indicadores:
       valor: 100.0
       estado: provisional
       nota: '0 grupos con mas de una forma de escritura. Catalogo canonico no acordado.'
-    medido_utc: '2026-11-05T00:02:30Z'
+    medido_utc: '2026-11-05T00:11:26Z'
 - id: R07
   nombre: Signo y rango por concepto
   dimension: validez
@@ -735,7 +735,7 @@ indicadores:
       valor: 100.0
       estado: provisional
       nota: 'Dominio de signo por concepto sin acordar; negativos en ninguno.'
-    medido_utc: '2026-11-05T00:02:30Z'
+    medido_utc: '2026-11-05T00:11:26Z'
 - id: R08
   nombre: Orden entre tarifas por propiedad
   dimension: consistencia
@@ -801,7 +801,7 @@ indicadores:
       valor: 92.23744292237443
       estado: provisional
       nota: 'Eje de propiedad disponible (100/50/0). Orden dominante observado: mayor_propiedad_mayor_tarifa. El sentido esperado no esta documentado por la fuente; misma decision pendiente que en CHEC.'
-    medido_utc: '2026-11-05T00:02:30Z'
+    medido_utc: '2026-11-05T00:11:26Z'
 - id: R09
   nombre: Estructura de importes según categoría
   dimension: consistencia
@@ -866,7 +866,7 @@ indicadores:
       valor: 98.59667207459425
       estado: provisional
       nota: 'Relacion verificada: consumos x tarifa_aplicada = facturacion_por_consumo x (1 + contribucion), con contribucion de 0, 10 o 20 % y conciliada contra valor_de_la_contribucion. Tasas halladas -> 20 %: 291,661, 0 %: 44,371, 10 %: 650. La tasa por sector se infirio de los datos; la fuente no la documenta.'
-    medido_utc: '2026-11-05T00:02:30Z'
+    medido_utc: '2026-11-05T00:11:26Z'
 - id: R10
   nombre: Importes requeridos disponibles
   dimension: completitud
@@ -931,7 +931,7 @@ indicadores:
       valor: 100.0
       estado: provisional
       nota: 'Conjunto obligatorio propuesto: consumos, tarifa_aplicada, valor_total_facturado.'
-    medido_utc: '2026-11-05T00:02:30Z'
+    medido_utc: '2026-11-05T00:11:26Z'
   diferencia_codigo_actual: El Hito 2 alerta filas con todos los importes en cero. Conservar ese hallazgo como sospecha,
     pero no medirlo como ausencia confirmada.
 - id: R11
@@ -997,7 +997,7 @@ indicadores:
       valor: 1.1717221908526256
       estado: medido
       nota: 'Prevalencia, no conformidad.'
-    medido_utc: '2026-11-05T00:02:30Z'
+    medido_utc: '2026-11-05T00:11:26Z'
   parametros:
     serial_min: 36526
     serial_max: 47483
@@ -1068,7 +1068,7 @@ indicadores:
       valor: 8.330089073234415
       estado: provisional
       nota: 'Prevalencia, no conformidad. Factor 10 sobre la mediana de consumos.'
-    medido_utc: '2026-11-05T00:02:30Z'
+    medido_utc: '2026-11-05T00:11:26Z'
   parametros:
     factor: 10
     sensibilidad:
@@ -1139,7 +1139,7 @@ indicadores:
       valor: 100.0
       estado: medido
       nota: '27 columnas en la copia conservada, que declara 27. En origen el conjunto trae 48; los nombres denormalizados viven en el archivo de catalogos.'
-    medido_utc: '2026-11-05T00:02:30Z'
+    medido_utc: '2026-11-05T00:11:26Z'
 - id: INT02
   nombre: Referencias categóricas resolubles
   dimension: integridad
@@ -1204,7 +1204,7 @@ indicadores:
       valor: 98.75444839857651
       estado: medido
       nota: '7 claves resuelven a mas de un nombre; las diferencias son de codificacion de caracteres y de tildes.'
-    medido_utc: '2026-11-05T00:02:30Z'
+    medido_utc: '2026-11-05T00:11:26Z'
 - id: EXA01
   nombre: Concordancia documental de importes
   dimension: exactitud
@@ -1271,7 +1271,7 @@ indicadores:
       valor: null
       estado: no_medible
       nota: 'Sin publicacion tarifaria original de estos 32 prestadores con la que contrastar. La reconciliacion interna se reporta en R09, que es otra cosa.'
-    medido_utc: '2026-11-05T00:02:30Z'
+    medido_utc: '2026-11-05T00:11:26Z'
   parametros:
     tamano_muestra_por_fuente: null
     semilla: 2026
@@ -1346,7 +1346,7 @@ indicadores:
       valor: null
       estado: no_medible
       nota: 'La fuente trae fecha de expedicion de factura, que mide oportunidad del servicio y no del dato. OPO01 exige fecha de disponibilidad de la publicacion; cerrarlo requiere reespecificar el control.'
-    medido_utc: '2026-11-05T00:02:30Z'
+    medido_utc: '2026-11-05T00:11:26Z'
   parametros:
     plazo_documentado: null
     zona_horaria: America/Bogota
@@ -1416,7 +1416,7 @@ indicadores:
       valor: null
       estado: no_medible
       nota: 'No se detectaron variantes de escritura, de modo que no hay mapeos aplicados que acreditar. No equivale a consistencia demostrada.'
-    medido_utc: '2026-11-05T00:02:30Z'
+    medido_utc: '2026-11-05T00:11:26Z'
 - id: DEF01
   nombre: Semántica de variables críticas documentada
   dimension: consistencia
@@ -1481,7 +1481,7 @@ indicadores:
       valor: 0.0
       estado: medido
       nota: 'Ninguna de las 27 columnas trae descripcion en el metadato del portal.'
-    medido_utc: '2026-11-05T00:02:30Z'
+    medido_utc: '2026-11-05T00:11:26Z'
 - id: CART01
   nombre: Tasa de alertas de cartas I-MR
   dimension: razonabilidad
@@ -1549,7 +1549,7 @@ indicadores:
       valor: null
       estado: no_medible
       nota: 'No ejecutable sobre esta fuente: 12 periodos mensuales frente a los 49 que exige el protocolo.'
-    medido_utc: '2026-11-05T00:02:30Z'
+    medido_utc: '2026-11-05T00:11:26Z'
   parametros:
     cambios_referencia_base: 36
     min_cambios_vigilancia: 12

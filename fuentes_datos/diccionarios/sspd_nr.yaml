@@ -5,6 +5,14 @@ dataset:
   publicador: Superintendencia de Servicios Públicos Domiciliarios (SSPD)
   url_portal: https://www.datos.gov.co/d/bnkp-xdb7
   url_csv_completo: https://www.datos.gov.co/api/views/bnkp-xdb7/rows.csv?accessType=DOWNLOAD
+  archivos:
+    completo: datos/Datos_en_revision/sspd_bnkp-xdb7-compressed.zip
+    catalogos: datos/Datos_en_revision/sspd_bnkp-xdb7_catalogos.csv
+    resumen: datos/Datos_en_revision/sspd_bnkp-xdb7_resumen.csv
+  nota_sobre_compresion: >-
+    El CSV completo se conserva comprimido (74,1 MB a 17,6 MB) porque GitHub avisa sobre los
+    50 MB. Los scripts lo leen sin descomprimirlo, mediante lector_datos.py. El resumen y los
+    catálogos van sueltos porque son pequeños y GitHub los muestra como tabla.
   filas: 402500
   columnas: 48
   cobertura: 2021-07 a 2022-06 (12 períodos mensuales)

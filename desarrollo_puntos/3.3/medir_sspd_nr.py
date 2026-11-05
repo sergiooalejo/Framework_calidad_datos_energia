@@ -13,6 +13,8 @@ from pathlib import Path
 import csv
 import re
 
+from lector_datos import leer, filas as filas_de
+
 AQUI = Path(__file__).resolve().parent
 RAIZ = AQUI.parents[1]
 DATOS = RAIZ / "fuentes_datos" / "datos"
@@ -29,7 +31,7 @@ def dato(nombre):
     encontrados = sorted(DATOS.rglob(nombre))
     return encontrados[0] if encontrados else directo
 
-ARCHIVO = dato("sspd_bnkp-xdb7.csv")
+ARCHIVO = "sspd_bnkp-xdb7.csv"
 
 AUSENTES = {"", "N/A", "NA", "null", "None"}
 
@@ -48,7 +50,7 @@ SOLO_POSITIVOS = ["car_t440_dias_fact", "car_t440_dias_mora", "consumos",
                   "consumo_promedio_mensual", "consumo_energia_reactiva", "tarifa_aplicada",
                   "facturacion_por_consumo", "valor_subsidio", "valor_de_la_contribucion"]
 
-CATALOGOS = dato("sspd_bnkp-xdb7_catalogos.csv")
+CATALOGOS = "sspd_bnkp-xdb7_catalogos.csv"
 
 # Columnas del contrato de la copia conservada. El conjunto en origen trae 48; la copia
 # conserva las 27 analiticas y mueve los nombres denormalizados al archivo de catalogos,
@@ -90,7 +92,7 @@ def mediana(xs):
 
 
 def medir_sspd_nr():
-    filas = list(csv.DictReader(open(ARCHIVO, encoding="utf-8", newline="")))
+    filas = leer(ARCHIVO)
     n = len(filas)
     cols = list(filas[0].keys()) if filas else []
     m = {}
@@ -290,9 +292,9 @@ def medir_sspd_nr():
     # a mas de un nombre, aparece varias veces, de modo que la evidencia no se pierde.
     tot02 = ok02 = 0
     rotos = []
-    if CATALOGOS.exists():
+    if True:
         mapa = defaultdict(Counter)
-        for f in csv.DictReader(open(CATALOGOS, encoding="utf-8", newline="")):
+        for f in filas_de(CATALOGOS):
             cod, nom = f["campo_codigo"], f["campo_nombre"]
             k, v = (f["codigo"] or "").strip(), (f["nombre"] or "").strip()
             if k in AUSENTES or v in AUSENTES:
