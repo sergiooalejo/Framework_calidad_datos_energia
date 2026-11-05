@@ -58,3 +58,15 @@ Los nombres se conservan tal como aparecen en el CSV. Las magnitudes monetarias 
 ## Alcance de esta ficha
 
 Caracterización calculada directamente sobre el archivo local. Las definiciones que no están explícitas en los nombres se señalan como tentativas o pendientes de contraste con los metadatos oficiales de publicación.
+
+## Evidencia incorporada en el Hito 3
+
+- `EXA01` contrasta 756 celdas con Superservicios y obtiene 100 % de coincidencia en la
+  muestra disponible.
+- `DEF01` dispone del catálogo operativo de las 24 columnas en
+  `fuentes_datos/catalogos/CHEC/chec_definiciones_def01.yaml`.
+- `MAP01` registra 3/3 equivalencias código-nombre aprobadas metodológicamente por el
+  proyecto, sin presentarlas como catálogo oficial CHEC.
+- `cartas_log_chec.csv` contiene 276 series y 37 señales preliminares que deben revisarse
+  frente a las publicaciones tarifarias.
+- `OPO01` usa cobertura temporal 225/225 como proxy, no como puntualidad histórica.

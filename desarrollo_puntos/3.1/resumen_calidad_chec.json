@@ -1,0 +1,36 @@
+{
+  "archivo_entrada": "/Users/najhery/Documents/Maestria/Proyecto de grado/Framework_calidad_datos_energia/fuentes_datos/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv",
+  "filas": 40609,
+  "columnas": 24,
+  "dimensiones": [
+    "Exactitud",
+    "Validez",
+    "Completitud",
+    "Integridad",
+    "Unicidad",
+    "Oportunidad",
+    "Consistencia",
+    "Razonabilidad"
+  ],
+  "duplicados_exactos_adicionales": 0,
+  "filas_con_clave_compuesta_repetida": 2653,
+  "campos_clave_integridad": [
+    "costounitariotarifa_ano",
+    "costounitariotarifa_mes",
+    "comercializador_codigo",
+    "mercado_codigo",
+    "costounitariotarifa_tipomed",
+    "nivel_tension_codigo",
+    "modalidadcobro_propiedad",
+    "claseservicio_codigo",
+    "claseservicio_estrato",
+    "costounitariotarifa_rangoconsumo",
+    "costounitariotarifa_tipomercado"
+  ],
+  "ultimo_periodo": "2026-09",
+  "rezago_meses": 2,
+  "oportunidad_cumple_tolerancia": false,
+  "tolerancia_rezago_meses": 1,
+  "exactitud": "no evaluable sin fuente de referencia",
+  "nota": "Integridad es aproximada dentro del archivo; consistencia y razonabilidad usan proxies documentados en el CSV de indicadores."
+}

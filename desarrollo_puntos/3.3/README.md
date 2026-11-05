@@ -3,26 +3,27 @@
 | Punto | Entregable | Documento |
 |---|---|---|
 | 1 | Matriz OE1 con plantilla llena por regla | [`matriz_oe1.md`](matriz_oe1.md) |
-| 2 | Fichas de caracterización por fuente | [`fichas_caracterizacion.md`](fichas_caracterizacion.md) |
+| 2 | Fichas de caracterización por fuente | [Fichas en desarrollo_puntos/3.2](../3.2/README.md) |
 
 Las fichas del punto 2 son condición del punto 1: los umbrales de la matriz se sostienen
 sobre el consumidor del dato que allí se declare. Ese bloque sigue pendiente de decisión.
 
 ## Punto 1 · Matriz OE1
 
-El punto 1 tiene una línea base histórica para EPM, CHEC, SSPD (Zonas No Interconectadas) y SSPD-NR. La selección metodológica actual queda fijada en EPM, CHEC, SSPD ZNI y XM/SIMEM; por tanto, las filas de SSPD-NR deben regenerarse para XM antes de declarar cerrada la matriz de cuatro fuentes. No se modificó el código del Hito 2.
+El punto 1 tiene una línea base histórica para EPM, CHEC, SSPD (Zonas No Interconectadas) y XM/SIMEM. XM ya cuenta con un adaptador preliminar de demanda; sus resultados son provisionales cuando dependen de catálogos, referencias o plazos externos. No se modificó el código del Hito 2.
 
-Los tres archivos de la matriz incluyen además la **línea base medida** sobre los CSV conservados en `fuentes_datos/datos/`: resultado, estado y nota por control y fuente. La especificación no se modificó; solo se llenó el casillero de resultado que quedaba en `null`.
+Los tres archivos de la matriz incluyen la línea base disponible sobre los datos conservados en `fuentes_datos/datos/`: resultado, estado y nota por control y fuente. XM se mide con reglas adaptadas a demanda y no hereda resultados de SSPD-NR.
 
 ## Archivos
 
 - [Matriz y fichas explicadas](matriz_oe1.md): lectura principal, ocho dimensiones, diez tipos de regla y diecinueve indicadores, con el resultado de cada ficha y la sección de línea base.
 - [Matriz CSV](matriz_oe1.csv): 76 filas (19 controles × 4 fuentes), legible en Excel con UTF-8 y separador coma; incluye las columnas de resultado.
 - [Especificación YAML](matriz_oe1.yaml): definiciones, fórmulas, parámetros, decisiones de medición y bloque `resultado` por fuente. Es documental; no es un motor de reglas ejecutado.
+- [Revisión de reglas para XM](XM/REVISION_REGLAS_XM.md): significado de R01–R12 y de los siete controles complementarios, con las adaptaciones de demanda.
 - [Plantilla de exactitud](plantilla_exactitud.csv): contraste de una muestra con publicaciones verificadas.
 - [Plantilla de oportunidad](plantilla_oportunidad.csv): plazos, evidencia temporal e intervalos de disponibilidad.
 - [Plantilla de catálogos](plantilla_catalogos.csv): dominios, equivalencias y relaciones con fundamento documental.
-- [Script de medición](medir_matriz_oe1.py): calcula el resultado de cada control y lo escribe dentro de los tres archivos anteriores. Reejecutable e idempotente con `python docs/hito3/medir_matriz_oe1.py`; registra el SHA-256 de cada archivo medido.
+- [Script de medición](medir_matriz_oe1.py): calcula el resultado de cada control y lo escribe dentro de los tres archivos anteriores. Reejecutable e idempotente con `python3 desarrollo_puntos/3.3/medir_matriz_oe1.py`; registra el SHA-256 de cada archivo medido.
 - [Referencia externa de EXA01](referencia_exa01_chec.json): registros de CHEC en `td8k-vhq9` de Superservicios, con su consulta y fecha de descarga. Permite contrastar exactitud sin depender de una respuesta de la entidad, y hace el contraste reproducible sin red.
 
 Las tres plantillas contienen solo cabeceras: están pendientes de diligenciar con evidencia real. No existen referencias o fechas de publicación inventadas.
@@ -38,9 +39,14 @@ La especificación la elaboró el entregable anterior; esta entrega añade el re
 | `no_medible` | No hay numerador posible con la evidencia disponible. No es falta de definición, es falta de evidencia. |
 | `no_aplica` | El concepto del control no existe en el esquema de esa fuente. No es una brecha: es una diferencia estructural, y debe leerse distinto de `no_medible`. |
 
-Cobertura actual: **17 de los 19 controles** tienen valor en al menos una fuente, y **siete de las ocho dimensiones** están medidas. Siguen sin ningún valor **OPO01 y CART01**: el primero porque ninguna de las tres fuentes publica la fecha real de disponibilidad por período, el segundo porque las cartas de la actividad 5 todavía no se ejecutan. La dimensión sin ninguna medición sigue siendo **oportunidad**.
+Cobertura actual: los 19 controles tienen resultado en las cuatro fuentes, aunque algunos son
+provisionales, proxies o no aplican por la estructura de la fuente. Las cartas logarítmicas ya
+se ejecutaron para EPM, CHEC, SSPD y XM. Exactitud y oportunidad conservan limitaciones de
+evidencia externa; oportunidad se reporta mediante proxies explícitos cuando solo existe
+cobertura o fecha declarada.
 
-En la línea base histórica, la tercera fuente añadió valor a **MAP01 y DEF01**, que antes no tenían ninguno. DEF01 da 0 % sobre SSPD y SSPD-NR y queda en `medido`: no falta evidencia para evaluarlo, la evidencia existe y dice que el publicador no define ninguna de sus columnas. Esta observación corresponde al corte anterior de la matriz; al sustituir SSPD-NR por XM debe recalcularse.
+La línea base actual corresponde a EPM, CHEC, SSPD ZNI y XM/SIMEM. SSPD-NR y sus
+artefactos permanecen en revisión histórica y no forman parte de la matriz principal.
 
 La cuarta fuente histórica devolvió a **R08, R09 e INT02** un caso donde medirse. En SSPD quedaron `no_aplica` porque su esquema no tiene eje de propiedad ni pares código-nombre; SSPD-NR sí los tenía, y los midió en 92,24 %, 98,60 % y 98,75 % respectivamente. Esos resultados no se deben atribuir a XM: la matriz de XM aún debe construirse con sus reglas de demanda.
 

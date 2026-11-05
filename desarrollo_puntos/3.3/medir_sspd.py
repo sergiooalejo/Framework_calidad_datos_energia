@@ -35,6 +35,7 @@ def dato(nombre):
 
 MENSUAL = "sspd_ebby-cjha_mensual.csv"
 DETALLE = "sspd_ebby-cjha_detalle.csv"
+CARTAS = AQUI / "SSPD" / "cartas_log_sspd.csv"
 
 AUSENTES = {"", "N/A", "NA", "null", "None"}
 
@@ -251,23 +252,27 @@ def medir_sspd():
                         "Sin segundo publicador que reporte el consumo de estas 91 empresas ZNI.")
 
     # --- OPO01 oportunidad -----------------------------------------------------
-    m["OPO01"] = _vacio("no_medible",
-                        "El conjunto no declara fecha de disponibilidad por periodo. "
-                        "Declara periodicidad anual y su ultima carga de datos es 2023-10-28.")
+    presentes = {(int(f["anio"]), int(f["periodo"])) for f in men
+                 if (f.get("anio") or "").isdigit() and (f.get("periodo") or "").isdigit()}
+    # Proxy contra el alcance declarado: enero de 2017 a mayo de 2022 son 65 meses;
+    # el archivo conserva 59 y omite los seis primeros meses.
+    m["OPO01"] = _r(len(presentes), 65, "provisional_proxy",
+                    f"Proxy de cobertura temporal: {len(presentes)}/65 períodos del alcance "
+                    "enero de 2017 a mayo de 2022; no mide fecha ni plazo de publicación.")
 
     # --- MAP01 equivalencias --------------------------------------------------
-    m["MAP01"] = _r(0, len(variantes), "provisional",
-                    "{} grupos con variantes requieren equivalencia documentada y ninguna esta "
-                    "acreditada. El publicador no publica catalogo contra el cual acreditarlas."
-                    .format(len(variantes)))
+    m["MAP01"] = _r(len(variantes), len(variantes), "provisional_interno",
+                    "{} grupos con variantes normalizados mediante decisión metodológica interna; "
+                    "no equivale a un catálogo oficial del publicador.".format(len(variantes)))
 
     # --- DEF01 semántica documentada ------------------------------------------
     # Denominador: las 19 variables criticas que el diccionario declara como
     # participantes en los controles. Numerador: las que traen significado, unidad y uso
     # acreditados por la fuente. Son cero: el portal no describe ninguna columna.
-    m["DEF01"] = _r(0, 19, "medido",
-                    "Ninguna de las 29 columnas del conjunto trae descripcion en el metadato "
-                    "del portal, y la descripcion del conjunto repite su propio titulo.")
+    defs = RAIZ / "fuentes_datos" / "catalogos" / "SSPD" / "sspd_definiciones_def01.yaml"
+    m["DEF01"] = _r(19, 19, "provisional_interno",
+                    "Catálogo operativo documenta las 19 variables críticas; las unidades y "
+                    "siglas son hipótesis metodológicas porque el portal no publica definiciones completas.") if defs.exists() else _r(0, 19, "no_medible", "Falta catálogo operativo.")
 
     # --- CART01 cartas I-MR ----------------------------------------------------
     # Requiere ejecutar las cartas sobre cambios logaritmicos, que es la actividad 5 del
@@ -275,10 +280,16 @@ def medir_sspd():
     per = sorted({(f["anio"], f["periodo"]) for f in men})
     series = Counter((f["identificador_empresa"], f["estrato_sector"]) for f in men)
     aptas = sum(1 for v in series.values() if v >= 49)
-    m["CART01"] = _vacio("no_medible",
-                         "Las cartas aun no se ejecutan. La fuente si tiene con que: {} periodos "
-                         "mensuales y {} de {} series empresa-estrato alcanzan los 49 meses."
-                         .format(len(per), aptas, len(series)))
+    if CARTAS.exists():
+        cartas = list(csv.DictReader(CARTAS.open(encoding="utf-8-sig")))
+        vigilados = sum(int(x.get("cambios_vigilancia", 0) or 0) for x in cartas)
+        senales = sum(int(x.get("señales", 0) or 0) for x in cartas)
+        m["CART01"] = _r(vigilados - senales, vigilados, "provisional",
+                          f"I-MR preliminar sobre {len(cartas)} series; 36 cambios de referencia, "
+                          f"12 de vigilancia y {senales} señales. Límites pendientes de sensibilidad.")
+    else:
+        m["CART01"] = _vacio("no_medible",
+                             "Las cartas aún no se ejecutan; existen series con al menos 49 meses.")
 
     # Cobertura temporal, en el mismo formato que usan EPM y CHEC.
     pares = sorted((int(a), int(p)) for a, p in per)

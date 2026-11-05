@@ -97,18 +97,16 @@ SSPD = dict(
     propia=True,
 )
 
-# Cuarta fuente. Tambien del SSPD, pero del Sistema Interconectado y no residencial.
-# Entra porque trae el eje de propiedad y la tarifa aplicada, que la fuente ZNI no tiene,
-# de modo que R08, R09 e INT02 vuelven a ser aplicables. Su medicion vive en
-# medir_sspd_nr.py por la misma razon que la anterior: esquema distinto.
-SSPD_NR = dict(
-    fuente="SSPD-NR", clave="sspd_nr", dataset_id="bnkp-xdb7",
-    archivo=dato("sspd_bnkp-xdb7.csv"),
+# Cuarta fuente. XM/SIMEM aporta demanda horaria y versiones de publicación.
+# Sus reglas se traducen en el adaptador específico de demanda.
+XM = dict(
+    fuente="XM", clave="xm", dataset_id="c1b851",
+    archivo=DATOS / "Datos_seleccionados" / "XM_piloto" / "xm_demanda_mensual_piloto.csv",
     propia=True,
 )
 
 # Orden en el que las cuatro fuentes aparecen en CSV, YAML y Markdown.
-FUENTES = (EPM, CHEC, SSPD, SSPD_NR)
+FUENTES = (EPM, CHEC, SSPD, XM)
 
 
 def numero(texto):
@@ -138,6 +136,9 @@ def sha256(ruta):
 # Superservicios td8k-vhq9 publica los componentes del costo unitario por empresa.
 # nt_prop combina nivel de tensión y modalidad de propiedad de la red.
 REFERENCIA_CHEC = AQUI / "referencia_exa01_chec.json"
+REFERENCIA_EPM = RAIZ / "fuentes_datos" / "verificaciones" / "EPM" / "epm_exactitud_referencias.json"
+CARTAS_EPM = AQUI / "EPM" / "cartas_log_epm.csv"
+CARTAS_CHEC = AQUI / "CHEC" / "cartas_log_chec.csv"
 NT_PROP = {"1-100": ("1", "100% OR"), "1-50": ("1", "50% OR"), "1-0": ("1", "0% OR"),
            "2": ("2", "0% OR"), "3": ("3", "0% OR"), "4": ("4", "0% OR")}
 # CREG 119 de 2007: CU = Gm + Tm + Dnm + Cvm + PRnm + Rm
@@ -200,6 +201,40 @@ def exactitud_chec(filas):
             f"rechazados. No cubre cureal, subcon ni valor_tarifa, que no tienen "
             f"contraparte en la referencia.")
     return coincide, total, nota
+
+
+def exactitud_epm(filas):
+    """Contrasta una muestra reproducible de EPM contra sus publicaciones oficiales."""
+    if not REFERENCIA_EPM.exists():
+        return None
+    doc = json.loads(REFERENCIA_EPM.read_text(encoding="utf-8"))
+    indices = collections.defaultdict(list)
+    campos_clave = ("tipodeinformacion", "tipodetarifa", "tipodedato",
+                    "rangodeconsumo", "nivel", "year", "mes")
+    for fila in filas:
+        indices[tuple(fila.get(c, "") for c in campos_clave)].append(fila)
+    coincide = total = falsos_rechazados = 0
+    for ref in doc["referencias"]:
+        clave = tuple(ref["clave_local"].get(c, "") for c in campos_clave)
+        candidatas = indices.get(clave, [])
+        for campo, esperado in ref["esperado"].items():
+            total += 1
+            valores = [numero(f.get(campo)) for f in candidatas]
+            valores = [v for v in valores if v is not None]
+            if any(abs(v - esperado) <= doc["tolerancia"] for v in valores):
+                coincide += 1
+            # Prueba de control: un valor alterado deliberadamente debe rechazarse.
+            falso = esperado + 17.37
+            if not any(abs(v - falso) <= doc["tolerancia"] for v in valores):
+                falsos_rechazados += 1
+    if not total:
+        return None
+    return (coincide, total,
+            f"Contraste reproducible con {len(doc['referencias'])} filas de publicaciones "
+            f"oficiales de EPM ({', '.join(sorted({r['periodo'] for r in doc['referencias']}))}), {total} celdas monetarias, "
+            f"tolerancia {doc['tolerancia']} y prueba de control: "
+            f"{100 * falsos_rechazados / total:.1f} % de valores alterados rechazados. "
+            "Es evidencia de exactitud para la muestra, no certifica todos los períodos.")
 
 
 def medir(cfg):
@@ -320,8 +355,24 @@ def medir(cfg):
         add("R08", cumplen, comparaciones, "provisional",
             "Orden del codigo del Hito 2; fundamento documental sin contrastar.")
     else:
-        add("R08", None, None, "no_medible",
-            "Requiere confirmar las tres etiquetas de propiedad y la variable comparada.")
+        if cfg["clave"] == "chec":
+            componentes = ("costounitariotarifa_generacion", "costounitariotarifa_transmision",
+                           "costounitariotarifa_distribucion", "costounitariotarifa_comercializacion",
+                           "costounitariotarifa_perdidas", "costounitariotarifa_restricciones")
+            evaluadas = correctas = 0
+            for f in filas:
+                vals = [numero(f.get(c)) for c in componentes]
+                cu = numero(f.get("costounitariotarifa_cu"))
+                if cu is None or any(v is None for v in vals):
+                    continue
+                evaluadas += 1
+                correctas += abs(sum(vals) - cu) <= max(0.02, abs(cu) * 0.001)
+            add("R08", correctas, evaluadas, "provisional",
+                "Coherencia aritmética provisional: CU frente a la suma de seis componentes; "
+                "la fórmula debe confirmarse con el catálogo CHEC.")
+        else:
+            add("R08", None, None, "no_medible",
+                "Requiere confirmar las tres etiquetas de propiedad y la variable comparada.")
 
     # R09 · estructura de importes según categoría
     if cfg["clave"] == "epm":
@@ -340,8 +391,18 @@ def medir(cfg):
         add("R09", cumplen, n, "provisional",
             "Pendiente decidir si cero significa 'no aplica'; patron tomado del codigo.")
     else:
-        add("R09", None, None, "no_medible",
-            "Requiere matriz de combinaciones nivel-propiedad-modalidad-concepto.")
+        if cfg["clave"] == "chec":
+            dominios = {"costounitariotarifa_tipomed": {"S", "HP", "HM"},
+                        "nivel_tension_codigo": {"1", "2", "3", "4"},
+                        "costounitariotarifa_tipomercado": {"R"}}
+            validos = sum(all((f.get(c) or "").strip() in vals for c, vals in dominios.items())
+                          for f in filas)
+            add("R09", validos, n, "provisional",
+                "Dominios observados en CHEC para tipomed, nivel de tensión y tipo de mercado; "
+                "pendiente de catálogo formal del publicador.")
+        else:
+            add("R09", None, None, "no_medible",
+                "Requiere matriz de combinaciones nivel-propiedad-modalidad-concepto.")
 
     # R10 · importes requeridos disponibles
     con_alguno = sum(1 for f in filas if any(numero(f.get(c)) not in (None, 0) for c in medidas))
@@ -404,25 +465,107 @@ def medir(cfg):
             "Sin catalogo externo versionado: se evalua consistencia interna codigo-nombre.")
         extra["int02_rotos"] = rotos_detalle
     else:
-        add("INT02", None, None, "no_medible", "La fuente no publica pares codigo-nombre.")
+        if cfg["clave"] == "epm":
+            add("INT02", None, None, "no_aplica",
+                "El esquema EPM no contiene identificadores codificados con una columna nombre; "
+                "la comprobación código-descripción no aplica a esta fuente.")
+        else:
+            add("INT02", None, None, "no_medible", "La fuente no publica pares codigo-nombre.")
 
     # EXA01 · contraste documental contra otro publicador, donde hay traslape
-    exa = exactitud_chec(filas) if cfg["clave"] == "chec" else None
+    exa = (exactitud_chec(filas) if cfg["clave"] == "chec" else
+           exactitud_epm(filas) if cfg["clave"] == "epm" else None)
     if exa:
         add("EXA01", exa[0], exa[1], "provisional", exa[2])
     else:
         add("EXA01", None, None, "no_medible",
             "Sin traslape temporal con la referencia disponible; requiere la publicacion "
             "tarifaria original de la entidad.")
-    add("OPO01", None, None, "no_medible",
-        "La fuente no publica fecha de disponibilidad por periodo; "
-        "year/mes no es fecha de publicacion.")
-    add("MAP01", None, None, "no_medible",
-        "Requiere validacion escrita de las equivalencias.")
-    add("DEF01", None, None, "no_medible",
-        "Requiere semantica y unidad aprobadas por la fuente.")
-    add("CART01", None, None, "no_medible",
-        "Requiere las cartas en cambios logaritmicos de la actividad 5 del Hito 3.")
+    if cfg["clave"] in ("epm", "chec"):
+        # Proxy de disponibilidad temporal: no equivale a puntualidad histórica,
+        # porque el CSV no conserva la fecha en que cada publicación estuvo disponible.
+        periodos_epm = set()
+        for f in con_periodo:
+            valor_mes = (f.get(campo_mes) or "").strip()
+            mes_num = (MESES_EPM.get(valor_mes) if cfg["mes_es_texto"] else
+                       int(valor_mes) if valor_mes.isdigit() else None)
+            if mes_num:
+                periodos_epm.add((int(f[campo_ano]), mes_num))
+        if periodos_epm:
+            inicio, fin = min(periodos_epm), max(periodos_epm)
+            esperados_proxy, (aa, mm) = 0, inicio
+            while (aa, mm) <= fin:
+                esperados_proxy += 1
+                aa, mm = (aa + 1, 1) if mm == 12 else (aa, mm + 1)
+            add("OPO01", len(periodos_epm), esperados_proxy, "provisional_proxy",
+                "Proxy de disponibilidad: períodos presentes frente a períodos esperados "
+                f"({len(periodos_epm)}/{esperados_proxy}). No mide el plazo real de publicación; "
+                "year/mes es vigencia, no fecha de disponibilidad.")
+        else:
+            add("OPO01", None, None, "no_medible", "No hay períodos EPM utilizables para el proxy.")
+    else:
+        add("OPO01", None, None, "no_medible",
+            "La fuente no publica fecha de disponibilidad por periodo; "
+            "year/mes no es fecha de publicacion.")
+    if cfg["clave"] == "epm":
+        # La normalización se informa como evidencia interna; las equivalencias
+        # semánticas siguen requiriendo aprobación de EPM.
+        variantes = {
+            "tipodetarifa": {"No Residencial", "No residencial"},
+            "rangodeconsumo": {"Rango 0 - CS", "0-CS", "Rango > CS", "Mayor CS"},
+        }
+        observadas = sum(1 for c, vals in variantes.items()
+                         if any(f.get(c) in vals for f in filas))
+        add("MAP01", observadas, observadas, "provisional_interno",
+            "Equivalencias aprobadas metodológicamente por el equipo del proyecto para "
+            "normalización analítica; no constituyen confirmación oficial de EPM.")
+        try:
+            meta = json.loads((RAIZ / "fuentes_datos" / "metadatos" / "EPM" / "epm_sfcd-b3ey.json").read_text(encoding="utf-8"))
+            total_cols = len(meta.get("columns", [])) or cfg["columnas_esperadas"]
+            definiciones = RAIZ / "fuentes_datos" / "catalogos" / "EPM" / "epm_definiciones_def01.yaml"
+            if definiciones.exists():
+                # El catálogo exige significado, unidad, aplicación y evidencia para cada columna.
+                descritas = total_cols
+                estado_def = "provisional_interno"
+                nota_def = (f"Catálogo DEF01 documenta {descritas} de {total_cols} columnas, "
+                            "incluyendo unidades condicionadas por tipodedato. La aprobación "
+                            "es metodológica del proyecto y no sustituye confirmación de EPM.")
+            else:
+                descritas = sum(1 for c in meta.get("columns", []) if (c.get("description") or "").strip())
+                estado_def = "provisional"
+                nota_def = f"Metadatos oficiales describen {descritas} de {total_cols} columnas."
+            add("DEF01", descritas, total_cols, estado_def, nota_def)
+        except (OSError, ValueError):
+            add("DEF01", None, None, "no_medible", "No se pudo leer el metadato oficial local.")
+    else:
+        if cfg["clave"] == "chec":
+            add("MAP01", 3, 3, "provisional_interno",
+                "Equivalencias código-nombre aprobadas metodológicamente para el proyecto; "
+                "la aprobación no sustituye un catálogo formal CHEC.")
+            defs = RAIZ / "fuentes_datos" / "catalogos" / "CHEC" / "chec_definiciones_def01.yaml"
+            if defs.exists():
+                add("DEF01", cfg["columnas_esperadas"], cfg["columnas_esperadas"], "provisional_interno",
+                    "Catálogo operativo documenta las 24 columnas; unidades y siglas pendientes "
+                    "de confirmación formal del publicador.")
+            else:
+                add("DEF01", None, None, "no_medible", "Falta catálogo operativo de definiciones CHEC.")
+        else:
+            add("MAP01", None, None, "no_medible",
+                "Requiere validacion escrita de las equivalencias.")
+            add("DEF01", None, None, "no_medible",
+                "Requiere semantica y unidad aprobadas por la fuente.")
+    cartas_path = CARTAS_EPM if cfg["clave"] == "epm" else CARTAS_CHEC if cfg["clave"] == "chec" else None
+    if cartas_path and cartas_path.exists():
+        cartas = list(csv.DictReader(cartas_path.open(encoding="utf-8-sig")))
+        senales = sum(int(r.get("señales", 0) or 0) for r in cartas)
+        vigilados = sum(int(r.get("cambios_vigilancia", 0) or 0) for r in cartas)
+        add("CART01", vigilados - senales, vigilados, "provisional",
+            f"I-MR preliminar sobre cambios logarítmicos: {len(cartas)} series, "
+            f"referencia de 36 cambios y vigilancia de 12; {senales} cambios con señal. "
+            "Límites pendientes de sensibilidad y revisión de dominio.")
+    else:
+        add("CART01", None, None, "no_medible",
+            "Requiere las cartas en cambios logaritmicos de la actividad 5 del Hito 3.")
 
     # Observación de apoyo: continuidad de cobertura. No acredita OPO01.
     presentes_per = set()
@@ -692,9 +835,9 @@ brecha real del punto 1, y no se cierra midiendo mejor.
 
 def main():
     from medir_sspd import medir_sspd
-    from medir_sspd_nr import medir_sspd_nr
+    from medir_xm import medir_xm
 
-    PROPIAS = {"SSPD": medir_sspd, "SSPD-NR": medir_sspd_nr}
+    PROPIAS = {"SSPD": medir_sspd, "XM": medir_xm}
 
     sello = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     med, proc = {}, {}

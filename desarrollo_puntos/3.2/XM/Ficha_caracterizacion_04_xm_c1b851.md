@@ -7,8 +7,8 @@
 | Dataset histórico | `c1b851` |
 | Portal | https://www.simem.co/ |
 | Documentación API | https://github.com/EquipoAnaliticaXM/API_XM |
-| Archivo crudo local | `fuentes_datos/datos/Datos_en_revision/XM_piloto/xm_demanda_epmc_epmd_str02_202001_202501.csv` |
-| Archivo mensual derivado | `fuentes_datos/datos/Datos_en_revision/XM_piloto/xm_demanda_mensual_piloto.csv` |
+| Archivo crudo local | `fuentes_datos/datos/Datos_seleccionados/XM_piloto/xm_demanda_epmc_epmd_str02_202001_202501.csv` |
+| Archivo mensual derivado | `fuentes_datos/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv` |
 | Publicador | XM/SIMEM |
 | Tema | Demanda real de energía eléctrica |
 | Alcance del piloto | Agente `EPMC`, mercado `EPMD`, sistema `STR02` |
@@ -72,3 +72,13 @@ Esta política produjo 61 meses completos y positivos. Exigir únicamente la ver
 La fuente permite trabajar completitud, validez, unicidad, consistencia, integridad y razonabilidad. Exactitud y oportunidad siguen pendientes de evidencia externa. La matriz debe conservar el método de versión, el filtro y el hash como parte de la trazabilidad.
 
 La fuente es publicada por XM y no por CREG. CREG se utiliza como referencia regulatoria, no como atribución del dataset.
+
+## Cierre del Hito 3
+
+El catálogo operativo está en `fuentes_datos/catalogos/XM/xm_definiciones_def01.yaml`.
+La matriz incorpora mapeos internos para agente, mercado, sistema y unidad, y `OPO01`
+usa un proxy de trazabilidad de 60/61 meses con fecha declarada. `EXA01` permanece sin
+medir por falta de una referencia horaria o mensual independiente; esta limitación y las
+adaptaciones de R08/R09 están documentadas en `desarrollo_puntos/3.3/XM/REVISION_REGLAS_XM.md`.
+La carta I-MR está disponible en `desarrollo_puntos/3.3/XM/cartas_log_xm.csv` y se
+reproduce con `cartas_log_xm.py`.

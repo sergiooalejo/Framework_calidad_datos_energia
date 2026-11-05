@@ -10,7 +10,7 @@
       },
       "link": "https://www.datos.gov.co/d/sfcd-b3ey",
       "datos": "datos/epm_sfcd-b3ey.csv",
-      "diccionario": "diccionarios/epm.yaml"
+      "diccionario": "diccionarios/EPM/epm.yaml"
     },
     {
       "resource": {
@@ -20,7 +20,7 @@
       },
       "link": "https://www.datos.gov.co/d/c698-wqig",
       "datos": "datos/chec_c698-wqig.csv",
-      "diccionario": "diccionarios/chec.yaml"
+      "diccionario": "diccionarios/CHEC/chec.yaml"
     }
   ],
   "resultSetSize": 2

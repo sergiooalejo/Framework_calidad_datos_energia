@@ -1,0 +1,53 @@
+version: '1.0'
+dataset_id: sfcd-b3ey
+proposito: Catálogo de etiquetas EPM usado para separar normalización textual de equivalencia semántica.
+regla: No reemplazar etiquetas en el CSV original; aplicar estos mapeos únicamente en una copia de trabajo y conservar la etiqueta_original.
+aprobacion:
+  tipo: metodologica_interna
+  responsable: equipo_del_proyecto
+  revision: director_o_asesor_de_tesis
+  alcance: Normalización para análisis de calidad; no constituye confirmación oficial de EPM.
+entradas:
+  - campo: tipodetarifa
+    etiqueta_original: No Residencial
+    etiqueta_canonica_candidata: No Residencial
+    estado: aprobado_internamente
+    observacion: La variante No residencial solo difiere en capitalización; requiere confirmación documental de EPM antes de consolidarla.
+  - campo: tipodetarifa
+    etiqueta_original: No residencial
+    etiqueta_canonica_candidata: No Residencial
+    estado: aprobado_internamente
+    observacion: Equivalencia ortográfica aprobada por el proyecto; no confirmada oficialmente por EPM.
+  - campo: rangodeconsumo
+    etiqueta_original: Rango 0 - CS
+    etiqueta_canonica_candidata: Rango 0 - CS
+    estado: aprobado_internamente
+    observacion: Coincide con la terminología de la publicación oficial revisada.
+  - campo: rangodeconsumo
+    etiqueta_original: 0-CS
+    etiqueta_canonica_candidata: Rango 0 - CS
+    estado: aprobado_internamente
+    observacion: Equivalencia operativa aprobada por el proyecto por aparecer en el mismo dominio y conservar el límite CS; no confirmada oficialmente por EPM.
+  - campo: rangodeconsumo
+    etiqueta_original: Rango > CS
+    etiqueta_canonica_candidata: Rango > CS
+    estado: aprobado_internamente
+    observacion: Coincide con la terminología de la publicación oficial revisada.
+  - campo: rangodeconsumo
+    etiqueta_original: Mayor CS
+    etiqueta_canonica_candidata: Rango > CS
+    estado: aprobado_internamente
+    observacion: Equivalencia operativa aprobada por el proyecto; no confirmada oficialmente por EPM.
+  - campo: tipodedato
+    etiqueta_original: Costo compra: Gm, i
+    etiqueta_canonica_candidata: Costo compra: Gm,i
+    estado: aprobado_internamente
+    observacion: Equivalencia ortográfica aprobada por el proyecto; conservar ambas en el archivo original.
+  - campo: tipodedato
+    etiqueta_original: Costo compra: Gm,i
+    etiqueta_canonica_candidata: Costo compra: Gm,i
+    estado: aprobado_internamente
+    observacion: Forma de referencia para normalización textual.
+pendiente:
+  - Solicitar a EPM el catálogo formal de categorías y la equivalencia semántica de las abreviaturas.
+  - Confirmar si los importes están expresados en COP/kWh para cada tipodedato.

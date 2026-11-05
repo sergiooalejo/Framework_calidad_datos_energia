@@ -1,0 +1,97 @@
+﻿columna,registros,dimension,casos_conformes,casos_evaluados,indicador_pct,observacion
+tipodeinformacion,3623,Exactitud,0,0,,Coincidencia exacta con referencia emparejada por clave; sin --reference y --keys no es evaluable.
+tipodeinformacion,3623,Validez,3623,3623,100.0,Cumple formato y reglas de dominio configuradas; 0 incumplimientos.
+tipodeinformacion,3623,Completitud,3623,3623,100.0,"Valores presentes; vacío, NA, N/A, null y none se consideran faltantes (0)."
+tipodeinformacion,3623,Integridad,3607,3623,99.56,Proxy estructural por clave compuesta disponible (7 campos); no evalúa relaciones entre tablas.
+tipodeinformacion,3623,Unicidad,2,3623,0.06,"Valores distintos/presentes=2/3623; métrica descriptiva, una columna no necesariamente es clave."
+tipodeinformacion,3623,Oportunidad,0,1,0.0,"Indicador de actualidad del dataset aplicado a cada campo; último periodo 2021-12 si disponible, rezago=59 meses, tolerancia=1."
+tipodeinformacion,3623,Consistencia,3623,3623,100.0,Sin espacios periféricos; 0 grupos presentan variantes de mayúsculas/espaciado tras normalizar. No se normalizan automáticamente.
+tipodeinformacion,3623,Razonabilidad,3623,3623,100.0,Categorías no vacías y reglas de dominio configuradas; no existe catálogo externo.
+tipodetarifa,3623,Exactitud,0,0,,Coincidencia exacta con referencia emparejada por clave; sin --reference y --keys no es evaluable.
+tipodetarifa,3623,Validez,3623,3623,100.0,Cumple formato y reglas de dominio configuradas; 0 incumplimientos.
+tipodetarifa,3623,Completitud,3623,3623,100.0,"Valores presentes; vacío, NA, N/A, null y none se consideran faltantes (0)."
+tipodetarifa,3623,Integridad,3607,3623,99.56,Proxy estructural por clave compuesta disponible (7 campos); no evalúa relaciones entre tablas.
+tipodetarifa,3623,Unicidad,6,3623,0.17,"Valores distintos/presentes=6/3623; métrica descriptiva, una columna no necesariamente es clave."
+tipodetarifa,3623,Oportunidad,0,1,0.0,"Indicador de actualidad del dataset aplicado a cada campo; último periodo 2021-12 si disponible, rezago=59 meses, tolerancia=1."
+tipodetarifa,3623,Consistencia,3623,3623,100.0,Sin espacios periféricos; 1 grupos presentan variantes de mayúsculas/espaciado tras normalizar. No se normalizan automáticamente.
+tipodetarifa,3623,Razonabilidad,3623,3623,100.0,Categorías no vacías y reglas de dominio configuradas; no existe catálogo externo.
+tipodedato,3623,Exactitud,0,0,,Coincidencia exacta con referencia emparejada por clave; sin --reference y --keys no es evaluable.
+tipodedato,3623,Validez,3623,3623,100.0,Cumple formato y reglas de dominio configuradas; 0 incumplimientos.
+tipodedato,3623,Completitud,3623,3623,100.0,"Valores presentes; vacío, NA, N/A, null y none se consideran faltantes (0)."
+tipodedato,3623,Integridad,3607,3623,99.56,Proxy estructural por clave compuesta disponible (7 campos); no evalúa relaciones entre tablas.
+tipodedato,3623,Unicidad,28,3623,0.77,"Valores distintos/presentes=28/3623; métrica descriptiva, una columna no necesariamente es clave."
+tipodedato,3623,Oportunidad,0,1,0.0,"Indicador de actualidad del dataset aplicado a cada campo; último periodo 2021-12 si disponible, rezago=59 meses, tolerancia=1."
+tipodedato,3623,Consistencia,3623,3623,100.0,Sin espacios periféricos; 3 grupos presentan variantes de mayúsculas/espaciado tras normalizar. No se normalizan automáticamente.
+tipodedato,3623,Razonabilidad,3623,3623,100.0,Categorías no vacías y reglas de dominio configuradas; no existe catálogo externo.
+rangodeconsumo,3623,Exactitud,0,0,,Coincidencia exacta con referencia emparejada por clave; sin --reference y --keys no es evaluable.
+rangodeconsumo,3623,Validez,1480,1480,100.0,Cumple formato y reglas de dominio configuradas; 0 incumplimientos.
+rangodeconsumo,3623,Completitud,1480,3623,40.85,"Valores presentes; vacío, NA, N/A, null y none se consideran faltantes (2143)."
+rangodeconsumo,3623,Integridad,3607,3623,99.56,Proxy estructural por clave compuesta disponible (7 campos); no evalúa relaciones entre tablas.
+rangodeconsumo,3623,Unicidad,7,1480,0.47,"Valores distintos/presentes=7/1480; métrica descriptiva, una columna no necesariamente es clave."
+rangodeconsumo,3623,Oportunidad,0,1,0.0,"Indicador de actualidad del dataset aplicado a cada campo; último periodo 2021-12 si disponible, rezago=59 meses, tolerancia=1."
+rangodeconsumo,3623,Consistencia,1480,1480,100.0,Sin espacios periféricos; 0 grupos presentan variantes de mayúsculas/espaciado tras normalizar. No se normalizan automáticamente.
+rangodeconsumo,3623,Razonabilidad,1480,1480,100.0,Categorías no vacías y reglas de dominio configuradas; no existe catálogo externo.
+nivel,3623,Exactitud,0,0,,Coincidencia exacta con referencia emparejada por clave; sin --reference y --keys no es evaluable.
+nivel,3623,Validez,3623,3623,100.0,Cumple formato y reglas de dominio configuradas; 0 incumplimientos.
+nivel,3623,Completitud,3623,3623,100.0,"Valores presentes; vacío, NA, N/A, null y none se consideran faltantes (0)."
+nivel,3623,Integridad,3607,3623,99.56,Proxy estructural por clave compuesta disponible (7 campos); no evalúa relaciones entre tablas.
+nivel,3623,Unicidad,4,3623,0.11,"Valores distintos/presentes=4/3623; métrica descriptiva, una columna no necesariamente es clave."
+nivel,3623,Oportunidad,0,1,0.0,"Indicador de actualidad del dataset aplicado a cada campo; último periodo 2021-12 si disponible, rezago=59 meses, tolerancia=1."
+nivel,3623,Consistencia,3623,3623,100.0,Sin espacios periféricos; 0 grupos presentan variantes de mayúsculas/espaciado tras normalizar. No se normalizan automáticamente.
+nivel,3623,Razonabilidad,3623,3623,100.0,Categorías no vacías y reglas de dominio configuradas; no existe catálogo externo.
+propiedadepm,3623,Exactitud,0,0,,Coincidencia exacta con referencia emparejada por clave; sin --reference y --keys no es evaluable.
+propiedadepm,3623,Validez,3622,3622,100.0,Cumple formato y reglas de dominio configuradas; 0 incumplimientos.
+propiedadepm,3623,Completitud,3622,3623,99.97,"Valores presentes; vacío, NA, N/A, null y none se consideran faltantes (1)."
+propiedadepm,3623,Integridad,3607,3623,99.56,Proxy estructural por clave compuesta disponible (7 campos); no evalúa relaciones entre tablas.
+propiedadepm,3623,Unicidad,1304,3622,36.0,"Valores distintos/presentes=1304/3622; métrica descriptiva, una columna no necesariamente es clave."
+propiedadepm,3623,Oportunidad,0,1,0.0,"Indicador de actualidad del dataset aplicado a cada campo; último periodo 2021-12 si disponible, rezago=59 meses, tolerancia=1."
+propiedadepm,3623,Consistencia,3622,3622,100.0,Porcentaje de valores que conservan formato numérico interpretable.
+propiedadepm,3623,Razonabilidad,3622,3622,100.0,"Rango estadístico IQR [-639.266, 1065.44]; los extremos son alertas para revisión, no errores confirmados."
+compartido,3623,Exactitud,0,0,,Coincidencia exacta con referencia emparejada por clave; sin --reference y --keys no es evaluable.
+compartido,3623,Validez,3622,3622,100.0,Cumple formato y reglas de dominio configuradas; 0 incumplimientos.
+compartido,3623,Completitud,3622,3623,99.97,"Valores presentes; vacío, NA, N/A, null y none se consideran faltantes (1)."
+compartido,3623,Integridad,3607,3623,99.56,Proxy estructural por clave compuesta disponible (7 campos); no evalúa relaciones entre tablas.
+compartido,3623,Unicidad,1304,3622,36.0,"Valores distintos/presentes=1304/3622; métrica descriptiva, una columna no necesariamente es clave."
+compartido,3623,Oportunidad,0,1,0.0,"Indicador de actualidad del dataset aplicado a cada campo; último periodo 2021-12 si disponible, rezago=59 meses, tolerancia=1."
+compartido,3623,Consistencia,3622,3622,100.0,Porcentaje de valores que conservan formato numérico interpretable.
+compartido,3623,Razonabilidad,3621,3622,99.97,"Rango estadístico IQR [-620.572, 1034.29]; los extremos son alertas para revisión, no errores confirmados."
+propiedaddelcliente,3623,Exactitud,0,0,,Coincidencia exacta con referencia emparejada por clave; sin --reference y --keys no es evaluable.
+propiedaddelcliente,3623,Validez,3622,3622,100.0,Cumple formato y reglas de dominio configuradas; 0 incumplimientos.
+propiedaddelcliente,3623,Completitud,3622,3623,99.97,"Valores presentes; vacío, NA, N/A, null y none se consideran faltantes (1)."
+propiedaddelcliente,3623,Integridad,3607,3623,99.56,Proxy estructural por clave compuesta disponible (7 campos); no evalúa relaciones entre tablas.
+propiedaddelcliente,3623,Unicidad,1297,3622,35.81,"Valores distintos/presentes=1297/3622; métrica descriptiva, una columna no necesariamente es clave."
+propiedaddelcliente,3623,Oportunidad,0,1,0.0,"Indicador de actualidad del dataset aplicado a cada campo; último periodo 2021-12 si disponible, rezago=59 meses, tolerancia=1."
+propiedaddelcliente,3623,Consistencia,3622,3622,100.0,Porcentaje de valores que conservan formato numérico interpretable.
+propiedaddelcliente,3623,Razonabilidad,3622,3622,100.0,"Rango estadístico IQR [-597.06, 995.1]; los extremos son alertas para revisión, no errores confirmados."
+punta,3623,Exactitud,0,0,,Coincidencia exacta con referencia emparejada por clave; sin --reference y --keys no es evaluable.
+punta,3623,Validez,3622,3622,100.0,Cumple formato y reglas de dominio configuradas; 0 incumplimientos.
+punta,3623,Completitud,3622,3623,99.97,"Valores presentes; vacío, NA, N/A, null y none se consideran faltantes (1)."
+punta,3623,Integridad,3607,3623,99.56,Proxy estructural por clave compuesta disponible (7 campos); no evalúa relaciones entre tablas.
+punta,3623,Unicidad,872,3622,24.08,"Valores distintos/presentes=872/3622; métrica descriptiva, una columna no necesariamente es clave."
+punta,3623,Oportunidad,0,1,0.0,"Indicador de actualidad del dataset aplicado a cada campo; último periodo 2021-12 si disponible, rezago=59 meses, tolerancia=1."
+punta,3623,Consistencia,3622,3622,100.0,Porcentaje de valores que conservan formato numérico interpretable.
+punta,3623,Razonabilidad,3003,3622,82.91,"Rango estadístico IQR [-59.625, 99.375]; los extremos son alertas para revisión, no errores confirmados."
+fueradepunta,3623,Exactitud,0,0,,Coincidencia exacta con referencia emparejada por clave; sin --reference y --keys no es evaluable.
+fueradepunta,3623,Validez,3622,3622,100.0,Cumple formato y reglas de dominio configuradas; 0 incumplimientos.
+fueradepunta,3623,Completitud,3622,3623,99.97,"Valores presentes; vacío, NA, N/A, null y none se consideran faltantes (1)."
+fueradepunta,3623,Integridad,3607,3623,99.56,Proxy estructural por clave compuesta disponible (7 campos); no evalúa relaciones entre tablas.
+fueradepunta,3623,Unicidad,884,3622,24.41,"Valores distintos/presentes=884/3622; métrica descriptiva, una columna no necesariamente es clave."
+fueradepunta,3623,Oportunidad,0,1,0.0,"Indicador de actualidad del dataset aplicado a cada campo; último periodo 2021-12 si disponible, rezago=59 meses, tolerancia=1."
+fueradepunta,3623,Consistencia,3622,3622,100.0,Porcentaje de valores que conservan formato numérico interpretable.
+fueradepunta,3623,Razonabilidad,3012,3622,83.16,"Rango estadístico IQR [-55.425, 92.375]; los extremos son alertas para revisión, no errores confirmados."
+year,3623,Exactitud,0,0,,Coincidencia exacta con referencia emparejada por clave; sin --reference y --keys no es evaluable.
+year,3623,Validez,3622,3622,100.0,Cumple formato y reglas de dominio configuradas; 0 incumplimientos.
+year,3623,Completitud,3622,3623,99.97,"Valores presentes; vacío, NA, N/A, null y none se consideran faltantes (1)."
+year,3623,Integridad,3607,3623,99.56,Proxy estructural por clave compuesta disponible (7 campos); no evalúa relaciones entre tablas.
+year,3623,Unicidad,6,3622,0.17,"Valores distintos/presentes=6/3622; métrica descriptiva, una columna no necesariamente es clave."
+year,3623,Oportunidad,0,1,0.0,"Indicador de actualidad del dataset aplicado a cada campo; último periodo 2021-12 si disponible, rezago=59 meses, tolerancia=1."
+year,3623,Consistencia,3622,3622,100.0,Porcentaje de valores que conservan formato numérico interpretable.
+year,3623,Razonabilidad,3622,3622,100.0,"Rango estadístico IQR [2015, 2023]; los extremos son alertas para revisión, no errores confirmados."
+mes,3623,Exactitud,0,0,,Coincidencia exacta con referencia emparejada por clave; sin --reference y --keys no es evaluable.
+mes,3623,Validez,3622,3622,100.0,Cumple formato y reglas de dominio configuradas; 0 incumplimientos.
+mes,3623,Completitud,3622,3623,99.97,"Valores presentes; vacío, NA, N/A, null y none se consideran faltantes (1)."
+mes,3623,Integridad,3607,3623,99.56,Proxy estructural por clave compuesta disponible (7 campos); no evalúa relaciones entre tablas.
+mes,3623,Unicidad,12,3622,0.33,"Valores distintos/presentes=12/3622; métrica descriptiva, una columna no necesariamente es clave."
+mes,3623,Oportunidad,0,1,0.0,"Indicador de actualidad del dataset aplicado a cada campo; último periodo 2021-12 si disponible, rezago=59 meses, tolerancia=1."
+mes,3623,Consistencia,3622,3622,100.0,Sin espacios periféricos; 0 grupos presentan variantes de mayúsculas/espaciado tras normalizar. No se normalizan automáticamente.
+mes,3623,Razonabilidad,3622,3622,100.0,Categorías no vacías y reglas de dominio configuradas; no existe catálogo externo.

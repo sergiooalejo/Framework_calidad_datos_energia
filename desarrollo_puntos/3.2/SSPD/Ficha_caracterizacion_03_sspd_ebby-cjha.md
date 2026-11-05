@@ -6,8 +6,8 @@
 |---|---|
 | Dataset | `ebby-cjha` |
 | Portal | https://www.datos.gov.co/d/ebby-cjha |
-| Archivo de detalle | `fuentes_datos/datos/Datos_en_revision/sspd_ebby-cjha_detalle-compressed.zip` |
-| Archivo agregado | `fuentes_datos/datos/Datos_en_revision/sspd_ebby-cjha_mensual.csv` |
+| Archivo de detalle | `fuentes_datos/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_detalle-compressed.zip` |
+| Archivo agregado | `fuentes_datos/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv` |
 | Publicador | Superintendencia de Servicios Públicos Domiciliarios |
 | Tema | Información comercial residencial y no residencial de energía eléctrica |
 | Filas de origen | 11.905.557 |
@@ -52,4 +52,14 @@ El archivo agregado no es una segunda fuente. Es una transformación reproducibl
 
 La fuente permite evaluar completitud, validez, unicidad, consistencia, integridad y razonabilidad con los datos disponibles. Exactitud y oportunidad requieren evidencia adicional. La aplicabilidad de cada regla debe registrarse explícitamente en la matriz, sin usar `no_aplica` para ocultar una falta de evidencia.
 
-Archivo de definición: [`sspd.yaml`](../../fuentes_datos/diccionarios/sspd.yaml).
+Archivo de definición: [`sspd.yaml`](../../../fuentes_datos/diccionarios/SSPD/sspd.yaml).
+
+## Cierre del Hito 3
+
+El catálogo operativo de las variables críticas está en
+`fuentes_datos/catalogos/SSPD/sspd_definiciones_def01.yaml`. Las cartas preliminares se
+encuentran en `desarrollo_puntos/3.3/SSPD/cartas_log_sspd.csv`: 361 series, 4.332 cambios
+vigilados y 143 señales. `OPO01` se evaluó como proxy de cobertura (59/65 períodos) y
+`EXA01` permanece sin medir por falta de una fuente externa comparable para las empresas
+ZNI. Estas limitaciones están descritas en
+`desarrollo_puntos/3.3/SSPD/REVISION_REGLAS_SSPD.md`.

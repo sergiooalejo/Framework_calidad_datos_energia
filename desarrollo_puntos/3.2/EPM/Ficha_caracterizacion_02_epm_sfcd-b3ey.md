@@ -53,3 +53,21 @@
 ## Alcance de esta ficha
 
 Caracterización calculada directamente sobre el archivo local. Las interpretaciones de las columnas se basan en sus nombres y valores observados; las definiciones y unidades que no constan en el CSV quedan pendientes de verificación con los metadatos oficiales.
+
+## Evidencia incorporada en el Hito 3
+
+- La comparación reproducible de `fuentes_datos/verificaciones/EPM/epm_exactitud_referencias.json`
+  coincide en 18 de 18 celdas con seis filas de publicaciones oficiales de EPM (2020 y
+  2021). Es una muestra de exactitud, no una certificación de todo el histórico.
+- `desarrollo_puntos/3.3/cartas_log_epm.csv` contiene 60 series con referencia de 36
+  cambios y vigilancia de 12 cambios en escala logarítmica. El resultado actual es
+  preliminar y debe someterse a sensibilidad antes de usarlo como alerta operativa.
+- La matriz OE1 deja `INT02` como no aplicable (no hay pares código-nombre). `OPO01` se
+  evalúa con un proxy de cobertura temporal (períodos presentes frente a esperados), no
+  como puntualidad histórica, porque el archivo no conserva fechas de publicación.
+  `MAP01` queda como `provisional_interno`: sus equivalencias fueron aprobadas por el
+  equipo del proyecto para normalización analítica, sin presentarlas como confirmación
+  oficial de EPM. `DEF01` cuenta ahora con el catálogo operativo de las 12 columnas en
+  `fuentes_datos/catalogos/EPM/epm_definiciones_def01.yaml`; sus unidades monetarias son
+  condicionales al `tipodedato`. `CART01` permanece provisional hasta completar su
+  calibración metodológica.

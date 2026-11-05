@@ -2,7 +2,7 @@
 
 Consulta: 4 de noviembre de 2026. Se buscó electricidad colombiana, consumo/demanda, mínimo 10.000 registros, historia temporal para cartas y evidencia para medir las ocho dimensiones. El análisis considera que el profesor exige medirlas todas.
 
-Actualización posterior al análisis inicial: se ejecutó un piloto de 61 meses para el grupo EPMC/EPMD/STR02. Los datos están en `fuentes_datos/datos/Datos_en_revision/XM_piloto/` y la decisión de cuatro fuentes en `fuentes_datos/PROPUESTA_CUATRO_FUENTES.md`. La longitud y continuidad se comprobaron bajo la política de mayor TX numérica disponible por mes; no bajo la versión final marcada en el calendario. Exactitud y oportunidad siguen pendientes. Las consultas puntuales que se describen abajo corresponden a la exploración inicial.
+Actualización posterior al análisis inicial: se ejecutó un piloto de 61 meses para el grupo EPMC/EPMD/STR02. Los datos están en `fuentes_datos/datos/Datos_seleccionados/XM_piloto/` y la decisión de cuatro fuentes en `fuentes_datos/PROPUESTA_CUATRO_FUENTES.md`. La longitud y continuidad se comprobaron bajo la política de mayor TX numérica disponible por mes; no bajo la versión final marcada en el calendario. Exactitud y oportunidad siguen pendientes. Las consultas puntuales que se describen abajo corresponden a la exploración inicial.
 
 ## Resultado de la búsqueda
 

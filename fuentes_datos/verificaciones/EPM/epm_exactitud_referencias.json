@@ -1,0 +1,116 @@
+{
+  "dataset_id": "sfcd-b3ey",
+  "archivo_local": "fuentes_datos/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv",
+  "criterio": "Comparación de tres columnas monetarias del CSV contra la tabla tarifaria oficial de EPM para el mismo mes, nivel I y categoría residencial.",
+  "tolerancia": 0.01,
+  "referencias": [
+    {
+      "periodo": "2020-01",
+      "url": "https://www.epm.com.co/content/dam/epm/clientes-y-usuarios/documentos/documentos-de-tarifas-a%C3%B1os-anterioes-energia/2020/tarifas-energia-enero-2020.pdf",
+      "clave_local": {
+        "tipodeinformacion": "Monomia",
+        "tipodetarifa": "Residencial",
+        "tipodedato": "Estrato 1",
+        "rangodeconsumo": "Rango 0 - CS",
+        "nivel": "I",
+        "year": "2020",
+        "mes": "Enero"
+      },
+      "esperado": {
+        "propiedadepm": 223.16,
+        "compartido": 214.80,
+        "propiedaddelcliente": 206.29
+      }
+    },
+    {
+      "periodo": "2020-01",
+      "url": "https://www.epm.com.co/content/dam/epm/clientes-y-usuarios/documentos/documentos-de-tarifas-a%C3%B1os-anterioes-energia/2020/tarifas-energia-enero-2020.pdf",
+      "clave_local": {
+        "tipodeinformacion": "Monomia",
+        "tipodetarifa": "Residencial",
+        "tipodedato": "Estrato 5 y 6",
+        "rangodeconsumo": "Todo el consumo",
+        "nivel": "I",
+        "year": "2020",
+        "mes": "Enero"
+      },
+      "esperado": {
+        "propiedadepm": 624.24,
+        "compartido": 601.37,
+        "propiedaddelcliente": 578.50
+      }
+    },
+    {
+      "periodo": "2020-12",
+      "url": "https://www.epm.com.co/content/dam/epm/clientes-y-usuarios/documentos/documentos-de-tarifas-a%C3%B1os-anterioes-energia/2020/tarifas-energia-diciembre-2020.pdf",
+      "clave_local": {
+        "tipodeinformacion": "Monomia",
+        "tipodetarifa": "Residencial",
+        "tipodedato": "Estrato 1",
+        "rangodeconsumo": "Rango 0 - CS",
+        "nivel": "I",
+        "year": "2020",
+        "mes": "Diciembre"
+      },
+      "esperado": {
+        "propiedadepm": 228.08,
+        "compartido": 218.81,
+        "propiedaddelcliente": 209.54
+      }
+    },
+    {
+      "periodo": "2020-12",
+      "url": "https://www.epm.com.co/content/dam/epm/clientes-y-usuarios/documentos/documentos-de-tarifas-a%C3%B1os-anterioes-energia/2020/tarifas-energia-diciembre-2020.pdf",
+      "clave_local": {
+        "tipodeinformacion": "Monomia",
+        "tipodetarifa": "Residencial",
+        "tipodedato": "Estrato 5 y 6",
+        "rangodeconsumo": "Todo el consumo",
+        "nivel": "I",
+        "year": "2020",
+        "mes": "Diciembre"
+      },
+      "esperado": {
+        "propiedadepm": 684.23,
+        "compartido": 656.43,
+        "propiedaddelcliente": 628.62
+      }
+    },
+    {
+      "periodo": "2021-04",
+      "url": "https://www.epm.com.co/content/dam/epm/clientes-y-usuarios/documentos/documentos-de-tarifas-a%C3%B1os-anterioes-energia/2021/Publicacion_Tarifas_Energia_17_abril_2021.pdf",
+      "clave_local": {
+        "tipodeinformacion": "Monomia",
+        "tipodetarifa": "Residencial",
+        "tipodedato": "Estrato 1",
+        "rangodeconsumo": "Rango 0 - CS",
+        "nivel": "I",
+        "year": "2021",
+        "mes": "Abril"
+      },
+      "esperado": {
+        "propiedadepm": 233.37,
+        "compartido": 223.88,
+        "propiedaddelcliente": 214.40
+      }
+    },
+    {
+      "periodo": "2021-12",
+      "url": "https://www.epm.com.co/content/dam/epm/clientes-y-usuarios/documentos/documentos-de-tarifas-a%C3%B1os-anterioes-energia/2021/PublicacionTarifasEnergiaDiciembre2021.pdf",
+      "clave_local": {
+        "tipodeinformacion": "Monomia",
+        "tipodetarifa": "Residencial",
+        "tipodedato": "Estrato 1",
+        "rangodeconsumo": "Rango 0 - CS",
+        "nivel": "I",
+        "year": "2021",
+        "mes": "Diciembre"
+      },
+      "esperado": {
+        "propiedadepm": 246.76,
+        "compartido": 236.73,
+        "propiedaddelcliente": 226.70
+      }
+    }
+  ]
+}

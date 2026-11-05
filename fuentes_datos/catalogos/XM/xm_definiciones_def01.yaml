@@ -1,0 +1,19 @@
+version: '1.0'
+dataset_id: c1b851
+proposito: Definiciones operativas de las variables críticas del piloto XM/SIMEM.
+aprobacion: metodologica_interna_con_documentacion_api
+variables:
+  CodigoVariable: Identificador de la variable de demanda reportada.
+  Valor: Medida horaria de demanda; unidad declarada kWh.
+  MercadoComercializacion: Código del mercado de comercialización.
+  UnidadMedida: Unidad declarada del valor; se espera kWh en el piloto.
+  CodigoSICAgente: Código del agente comercializador.
+  SistemaTransmision: Código del sistema de transmisión.
+  Version: Versión de publicación; TX numérica incluida, TXF/TXR excluidas.
+  FechaHora: Fecha y hora de la observación horaria.
+  CodigoDuracion: Duración del intervalo; PT1H en el piloto.
+  demanda_kwh: Suma mensual de valores horarios únicos de la versión seleccionada.
+reglas:
+  - La versión seleccionada es una decisión metodológica congelada, no una afirmación de versión final oficial.
+  - No se interpolan horas ni se suman versiones entre sí.
+limitacion: Exactitud y oportunidad requieren una referencia equivalente y un plazo de publicación independiente.

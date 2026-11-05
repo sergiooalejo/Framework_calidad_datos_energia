@@ -1,0 +1,66 @@
+version: '1.0'
+dataset_id: sfcd-b3ey
+proposito: Definiciones operativas para evaluar DEF01 sin modificar el CSV original.
+aprobacion: metodologica_interna_con_evidencia_documental
+variables:
+  tipodeinformacion:
+    significado: Modalidad de tarifa: Monomia u Horaria.
+    unidad: categoria
+    aplicacion: Determina si punta y fuera de punta son aplicables.
+    evidencia: Metadato oficial y notas de franjas horarias de EPM.
+  tipodetarifa:
+    significado: Segmento tarifario o clase de usuario.
+    unidad: categoria
+    aplicacion: Se interpreta junto con tipodedato y rango de consumo.
+    evidencia: Valores publicados en el dataset y tablas tarifarias oficiales.
+  tipodedato:
+    significado: Concepto tarifario, componente del costo unitario o categoría de usuario.
+    unidad: etiqueta_de_concepto
+    aplicacion: Define la unidad y el tratamiento de la medida asociada.
+    evidencia: Metadato oficial y tablas de componentes tarifarios.
+  rangodeconsumo:
+    significado: Tramo tarifario de consumo; CS significa consumo subsidiado.
+    unidad: categoria_de_rango
+    aplicacion: Aplica principalmente a tarifas residenciales y categorías con consumo.
+    evidencia: Metadato oficial de EPM.
+  nivel:
+    significado: Nivel de tensión tarifario, codificado I, II, III o IV.
+    unidad: categoria_de_nivel
+    aplicacion: Determina la estructura tarifaria aplicable.
+    evidencia: Tablas tarifarias oficiales y valores observados.
+  propiedadepm:
+    significado: Importe correspondiente a activos o red de propiedad de EPM.
+    unidad: segun_tipodedato; normalmente COP_por_kWh en componentes energeticos y COP_por_factura en cargos fijos.
+    aplicacion: Solo debe compararse entre filas con el mismo tipodedato, nivel y periodo.
+    evidencia: Tablas tarifarias oficiales de EPM; unidad condicionada al concepto.
+  compartido:
+    significado: Importe correspondiente a activos o red de propiedad compartida.
+    unidad: segun_tipodedato; normalmente COP_por_kWh en componentes energeticos y COP_por_factura en cargos fijos.
+    aplicacion: Solo debe compararse entre filas con el mismo tipodedato, nivel y periodo.
+    evidencia: Tablas tarifarias oficiales de EPM; unidad condicionada al concepto.
+  propiedaddelcliente:
+    significado: Importe correspondiente a activos o red de propiedad del cliente.
+    unidad: segun_tipodedato; normalmente COP_por_kWh en componentes energeticos y COP_por_factura en cargos fijos.
+    aplicacion: Solo debe compararse entre filas con el mismo tipodedato, nivel y periodo.
+    evidencia: Tablas tarifarias oficiales de EPM; unidad condicionada al concepto.
+  punta:
+    significado: Importe de la franja horaria punta.
+    unidad: segun_tipodedato
+    aplicacion: Aplica cuando tipodeinformacion es Horaria; en Monomia puede ser cero o no aplicable.
+    evidencia: Nota oficial de franjas horarias de EPM.
+  fueradepunta:
+    significado: Importe de la franja horaria fuera de punta.
+    unidad: segun_tipodedato
+    aplicacion: Aplica cuando tipodeinformacion es Horaria; en Monomia puede ser cero o no aplicable.
+    evidencia: Nota oficial de franjas horarias de EPM.
+  year:
+    significado: Año de vigencia de la tarifa.
+    unidad: año_calendario
+    aplicacion: Se combina con mes para formar el periodo de vigencia.
+    evidencia: Metadato y estructura del dataset.
+  mes:
+    significado: Mes de vigencia expresado en español.
+    unidad: mes_calendario
+    aplicacion: Se normaliza al número de mes; no representa fecha de publicación.
+    evidencia: Metadato y estructura del dataset.
+limitacion: Las unidades de las medidas dependen de tipodedato; no se debe comparar toda la columna como si tuviera una sola unidad.

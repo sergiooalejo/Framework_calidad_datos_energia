@@ -30,6 +30,7 @@ DEFAULT_INPUT = (
     / "fuentes_datos"
     / "datos"
     / "Datos_seleccionados"
+    / "CHEC"
     / "chec_c698-wqig.csv"
 )
 MISSING = {"", "na", "n/a", "null", "none"}

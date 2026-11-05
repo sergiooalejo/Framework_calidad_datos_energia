@@ -30,6 +30,7 @@ DEFAULT_INPUT = (
     / "fuentes_datos"
     / "datos"
     / "Datos_seleccionados"
+    / "EPM"
     / "epm_sfcd-b3ey.csv"
 )
 MISSING = {"", "na", "n/a", "null", "none"}

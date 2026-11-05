@@ -7,7 +7,7 @@ Se seleccionan dos casos de registros administrativos tarifarios de energía el�
 ## EPM — Histórico de tarifas de energía eléctrica
 
 - Portal: https://www.datos.gov.co/d/sfcd-b3ey
-- CSV: `datos/epm_sfcd-b3ey.csv`. Diccionario: `diccionarios/epm.yaml`.
+- CSV: `datos/epm_sfcd-b3ey.csv`. Diccionario: `diccionarios/EPM/epm.yaml`.
 - Volumen comprobado: **3.623 filas y 12 columnas**.
 - Cobertura descrita por el publicador: **diciembre de 2016 a diciembre de 2021**.
 
@@ -20,7 +20,7 @@ Se acepta la excepción de tamaño para este caso: longitud temporal y validaci�
 ## CHEC — Información de costo unitario de tarifas de energía
 
 - Portal: https://www.datos.gov.co/d/c698-wqig
-- CSV: `datos/chec_c698-wqig.csv`. Diccionario: `diccionarios/chec.yaml`.
+- CSV: `datos/chec_c698-wqig.csv`. Diccionario: `diccionarios/CHEC/chec.yaml`.
 - Volumen comprobado: **40.609 filas y 24 columnas**.
 - Cobertura global: **enero de 2008 a septiembre de 2026**, 225 meses.
 
@@ -28,15 +28,15 @@ Se selecciona para evaluar transferencia a otro publicador y estructura mantenie
 
 La validación local encontró, para cada variable costo unitario y valor de tarifa, **180 grupos con al menos 61 meses consecutivos con un registro único por mes y valores positivos y finitos**. Se agruparon las 12 columnas categóricas y se exigió variación en los valores del grupo. La mayor racha bajo estas condiciones fue de 201 meses. Estas dos variables no constituyen réplicas independientes de una misma categoría.
 
-Con 61 observaciones se pueden reservar 48 cambios de referencia y 12 de vigilancia. Esa longitud habilita diseñar el experimento; todavía hay que verificar supuestos y ejecutar el protocolo. Existen 1.398 claves categoría-mes repetidas que requieren revisión, no eliminación automática. El resumen está en `verificaciones/chec_validacion_series.json`.
+Con 61 observaciones se pueden reservar 48 cambios de referencia y 12 de vigilancia. Esa longitud habilita diseñar el experimento; todavía hay que verificar supuestos y ejecutar el protocolo. Existen 1.398 claves categoría-mes repetidas que requieren revisión, no eliminación automática. El resumen está en `verificaciones/CHEC/chec_validacion_series.json`.
 
 CHEC tampoco contiene consumo observado. Las medidas están declaradas como texto en el esquema; definiciones como `tipomed`, `cureal` y `subcon` requieren confirmación. El diccionario no inventa catálogos ni unidades faltantes.
 
 ## SSPD — Información comercial residencial y no residencial
 
 - Portal: https://www.datos.gov.co/d/ebby-cjha
-- CSV: `datos/sspd_ebby-cjha_mensual.csv` y `datos/sspd_ebby-cjha_detalle.csv`.
-  Diccionario: `diccionarios/sspd.yaml`.
+- CSV: `datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv` y el detalle comprimido.
+  Diccionario: `diccionarios/SSPD/sspd.yaml`.
 - Volumen en origen: **11.905.557 filas y 29 columnas**.
 - Cobertura: **julio de 2017 a mayo de 2022, 59 períodos mensuales consecutivos.**
 
@@ -70,7 +70,8 @@ capacidad de reporte es un argumento de transferibilidad bastante más fuerte.
 ## SSPD-NR — Información comercial no residencial
 
 - Portal: https://www.datos.gov.co/d/bnkp-xdb7
-- CSV: `datos/sspd_bnkp-xdb7.csv`. Diccionario: `diccionarios/sspd_nr.yaml`.
+- Archivo en revisión: `datos/Datos_en_revision/sspd_bnkp-xdb7-compressed.zip`.
+  Diccionario: `diccionarios/sspd_nr.yaml`.
 - Volumen: **402.500 filas y 48 columnas**, conservadas íntegras.
 - Cobertura: **julio de 2021 a junio de 2022, 12 períodos mensuales.**
 
@@ -150,4 +151,4 @@ Las doce reglas base no cubren por sí solas las ocho dimensiones. Se proponen c
 
 Metadatos originales en `metadatos/`; CSV sin modificación en `datos/`; hashes y tamaños en `verificaciones/manifiesto_archivos.json`. La fecha del manifiesto no se presenta como fecha de descarga original ni de publicación.
 
-Fundamento: anteproyecto y retroalimentación de junio de 2026 en `documentos/`, revisión técnica del Hito 2 en `docs/` y exigencia adicional del profesor comunicada por el usuario. La revisión técnica es un borrador local, no un concepto oficial del profesor. No se modificó el anteproyecto; queda pendiente actualizar publicadores, población/muestra y alcance de ocho dimensiones.
+Fundamento: anteproyecto y retroalimentación de junio de 2026 en `Entregables_pdf/`, revisión técnica del Hito 2 en `0_Recomendaciones_profesor/` y exigencia adicional del profesor comunicada por el usuario. La revisión técnica es un borrador local, no un concepto oficial del profesor. No se modificó el anteproyecto; queda pendiente actualizar publicadores, población/muestra y alcance de ocho dimensiones.

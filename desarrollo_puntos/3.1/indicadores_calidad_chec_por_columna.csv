@@ -1,0 +1,193 @@
+﻿columna,registros,dimension,casos_conformes,casos_evaluados,indicador_pct,observacion
+costounitariotarifa_ano,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+costounitariotarifa_ano,40609,Validez,40609,40609,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+costounitariotarifa_ano,40609,Completitud,40609,40609,100.0,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (0)."
+costounitariotarifa_ano,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+costounitariotarifa_ano,40609,Unicidad,19,40609,0.05,Indicador descriptivo: valores distintos/presentes=19/40609; 40609 filas contienen valores repetidos. No implica que la columna deba ser clave.
+costounitariotarifa_ano,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+costounitariotarifa_ano,40609,Consistencia,40609,40609,100.0,Conformidad de formato numérico; no contrasta sistemas externos.
+costounitariotarifa_ano,40609,Razonabilidad,40609,40609,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+costounitariotarifa_mes,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+costounitariotarifa_mes,40609,Validez,40609,40609,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+costounitariotarifa_mes,40609,Completitud,40609,40609,100.0,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (0)."
+costounitariotarifa_mes,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+costounitariotarifa_mes,40609,Unicidad,12,40609,0.03,Indicador descriptivo: valores distintos/presentes=12/40609; 40609 filas contienen valores repetidos. No implica que la columna deba ser clave.
+costounitariotarifa_mes,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+costounitariotarifa_mes,40609,Consistencia,40609,40609,100.0,Conformidad de formato numérico; no contrasta sistemas externos.
+costounitariotarifa_mes,40609,Razonabilidad,40609,40609,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+comercializador_codigo,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+comercializador_codigo,40609,Validez,40609,40609,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+comercializador_codigo,40609,Completitud,40609,40609,100.0,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (0)."
+comercializador_codigo,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+comercializador_codigo,40609,Unicidad,1,40609,0.0,Indicador descriptivo: valores distintos/presentes=1/40609; 40609 filas contienen valores repetidos. No implica que la columna deba ser clave.
+comercializador_codigo,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+comercializador_codigo,40609,Consistencia,40609,40609,100.0,"Espacios periféricos conformes; 0 grupos tienen variantes de mayúsculas/espaciado. La coincidencia normalizada es una alerta, no una corrección automática."
+comercializador_codigo,40609,Razonabilidad,40609,40609,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+comercializador_nombre,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+comercializador_nombre,40609,Validez,40609,40609,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+comercializador_nombre,40609,Completitud,40609,40609,100.0,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (0)."
+comercializador_nombre,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+comercializador_nombre,40609,Unicidad,1,40609,0.0,Indicador descriptivo: valores distintos/presentes=1/40609; 40609 filas contienen valores repetidos. No implica que la columna deba ser clave.
+comercializador_nombre,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+comercializador_nombre,40609,Consistencia,40609,40609,100.0,"Espacios periféricos conformes; 0 grupos tienen variantes de mayúsculas/espaciado. La coincidencia normalizada es una alerta, no una corrección automática."
+comercializador_nombre,40609,Razonabilidad,40609,40609,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+mercado_codigo,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+mercado_codigo,40609,Validez,40609,40609,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+mercado_codigo,40609,Completitud,40609,40609,100.0,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (0)."
+mercado_codigo,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+mercado_codigo,40609,Unicidad,2,40609,0.0,Indicador descriptivo: valores distintos/presentes=2/40609; 40609 filas contienen valores repetidos. No implica que la columna deba ser clave.
+mercado_codigo,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+mercado_codigo,40609,Consistencia,40609,40609,100.0,Conformidad de formato numérico; no contrasta sistemas externos.
+mercado_codigo,40609,Razonabilidad,40609,40609,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+mercado_nombre,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+mercado_nombre,40609,Validez,40609,40609,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+mercado_nombre,40609,Completitud,40609,40609,100.0,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (0)."
+mercado_nombre,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+mercado_nombre,40609,Unicidad,2,40609,0.0,Indicador descriptivo: valores distintos/presentes=2/40609; 40609 filas contienen valores repetidos. No implica que la columna deba ser clave.
+mercado_nombre,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+mercado_nombre,40609,Consistencia,40609,40609,100.0,"Espacios periféricos conformes; 0 grupos tienen variantes de mayúsculas/espaciado. La coincidencia normalizada es una alerta, no una corrección automática."
+mercado_nombre,40609,Razonabilidad,40609,40609,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+costounitariotarifa_tipomed,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+costounitariotarifa_tipomed,40609,Validez,40609,40609,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+costounitariotarifa_tipomed,40609,Completitud,40609,40609,100.0,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (0)."
+costounitariotarifa_tipomed,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+costounitariotarifa_tipomed,40609,Unicidad,3,40609,0.01,Indicador descriptivo: valores distintos/presentes=3/40609; 40609 filas contienen valores repetidos. No implica que la columna deba ser clave.
+costounitariotarifa_tipomed,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+costounitariotarifa_tipomed,40609,Consistencia,40609,40609,100.0,"Espacios periféricos conformes; 0 grupos tienen variantes de mayúsculas/espaciado. La coincidencia normalizada es una alerta, no una corrección automática."
+costounitariotarifa_tipomed,40609,Razonabilidad,40609,40609,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+nivel_tension_codigo,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+nivel_tension_codigo,40609,Validez,40609,40609,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+nivel_tension_codigo,40609,Completitud,40609,40609,100.0,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (0)."
+nivel_tension_codigo,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+nivel_tension_codigo,40609,Unicidad,4,40609,0.01,Indicador descriptivo: valores distintos/presentes=4/40609; 40609 filas contienen valores repetidos. No implica que la columna deba ser clave.
+nivel_tension_codigo,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+nivel_tension_codigo,40609,Consistencia,40609,40609,100.0,Conformidad de formato numérico; no contrasta sistemas externos.
+nivel_tension_codigo,40609,Razonabilidad,40609,40609,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+modalidadcobro_propiedad,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+modalidadcobro_propiedad,40609,Validez,40609,40609,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+modalidadcobro_propiedad,40609,Completitud,40609,40609,100.0,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (0)."
+modalidadcobro_propiedad,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+modalidadcobro_propiedad,40609,Unicidad,4,40609,0.01,Indicador descriptivo: valores distintos/presentes=4/40609; 40609 filas contienen valores repetidos. No implica que la columna deba ser clave.
+modalidadcobro_propiedad,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+modalidadcobro_propiedad,40609,Consistencia,40609,40609,100.0,"Espacios periféricos conformes; 0 grupos tienen variantes de mayúsculas/espaciado. La coincidencia normalizada es una alerta, no una corrección automática."
+modalidadcobro_propiedad,40609,Razonabilidad,40609,40609,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+claseservicio_codigo,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+claseservicio_codigo,40609,Validez,40609,40609,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+claseservicio_codigo,40609,Completitud,40609,40609,100.0,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (0)."
+claseservicio_codigo,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+claseservicio_codigo,40609,Unicidad,23,40609,0.06,Indicador descriptivo: valores distintos/presentes=23/40609; 40609 filas contienen valores repetidos. No implica que la columna deba ser clave.
+claseservicio_codigo,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+claseservicio_codigo,40609,Consistencia,40609,40609,100.0,"Espacios periféricos conformes; 0 grupos tienen variantes de mayúsculas/espaciado. La coincidencia normalizada es una alerta, no una corrección automática."
+claseservicio_codigo,40609,Razonabilidad,40609,40609,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+claseservicio_descri,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+claseservicio_descri,40609,Validez,40609,40609,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+claseservicio_descri,40609,Completitud,40609,40609,100.0,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (0)."
+claseservicio_descri,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+claseservicio_descri,40609,Unicidad,29,40609,0.07,Indicador descriptivo: valores distintos/presentes=29/40609; 40609 filas contienen valores repetidos. No implica que la columna deba ser clave.
+claseservicio_descri,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+claseservicio_descri,40609,Consistencia,40609,40609,100.0,"Espacios periféricos conformes; 0 grupos tienen variantes de mayúsculas/espaciado. La coincidencia normalizada es una alerta, no una corrección automática."
+claseservicio_descri,40609,Razonabilidad,40609,40609,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+claseservicio_estrato,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+claseservicio_estrato,40609,Validez,15343,15343,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+claseservicio_estrato,40609,Completitud,15343,40609,37.78,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (25266)."
+claseservicio_estrato,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+claseservicio_estrato,40609,Unicidad,6,15343,0.04,Indicador descriptivo: valores distintos/presentes=6/15343; 15343 filas contienen valores repetidos. No implica que la columna deba ser clave.
+claseservicio_estrato,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+claseservicio_estrato,40609,Consistencia,15343,15343,100.0,Conformidad de formato numérico; no contrasta sistemas externos.
+claseservicio_estrato,40609,Razonabilidad,15343,15343,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+costounitariotarifa_rangoconsumo,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+costounitariotarifa_rangoconsumo,40609,Validez,40609,40609,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+costounitariotarifa_rangoconsumo,40609,Completitud,40609,40609,100.0,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (0)."
+costounitariotarifa_rangoconsumo,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+costounitariotarifa_rangoconsumo,40609,Unicidad,2,40609,0.0,Indicador descriptivo: valores distintos/presentes=2/40609; 40609 filas contienen valores repetidos. No implica que la columna deba ser clave.
+costounitariotarifa_rangoconsumo,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+costounitariotarifa_rangoconsumo,40609,Consistencia,40609,40609,100.0,Conformidad de formato numérico; no contrasta sistemas externos.
+costounitariotarifa_rangoconsumo,40609,Razonabilidad,40609,40609,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+costounitariotarifa_tipomercado,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+costounitariotarifa_tipomercado,40609,Validez,40609,40609,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+costounitariotarifa_tipomercado,40609,Completitud,40609,40609,100.0,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (0)."
+costounitariotarifa_tipomercado,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+costounitariotarifa_tipomercado,40609,Unicidad,1,40609,0.0,Indicador descriptivo: valores distintos/presentes=1/40609; 40609 filas contienen valores repetidos. No implica que la columna deba ser clave.
+costounitariotarifa_tipomercado,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+costounitariotarifa_tipomercado,40609,Consistencia,40609,40609,100.0,"Espacios periféricos conformes; 0 grupos tienen variantes de mayúsculas/espaciado. La coincidencia normalizada es una alerta, no una corrección automática."
+costounitariotarifa_tipomercado,40609,Razonabilidad,40609,40609,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+costounitariotarifa_generacion,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+costounitariotarifa_generacion,40609,Validez,40609,40609,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+costounitariotarifa_generacion,40609,Completitud,40609,40609,100.0,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (0)."
+costounitariotarifa_generacion,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+costounitariotarifa_generacion,40609,Unicidad,674,40609,1.66,Indicador descriptivo: valores distintos/presentes=674/40609; 40609 filas contienen valores repetidos. No implica que la columna deba ser clave.
+costounitariotarifa_generacion,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+costounitariotarifa_generacion,40609,Consistencia,40609,40609,100.0,Conformidad de formato numérico; no contrasta sistemas externos.
+costounitariotarifa_generacion,40609,Razonabilidad,40609,40609,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+costounitariotarifa_transmision,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+costounitariotarifa_transmision,40609,Validez,40609,40609,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+costounitariotarifa_transmision,40609,Completitud,40609,40609,100.0,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (0)."
+costounitariotarifa_transmision,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+costounitariotarifa_transmision,40609,Unicidad,616,40609,1.52,Indicador descriptivo: valores distintos/presentes=616/40609; 40609 filas contienen valores repetidos. No implica que la columna deba ser clave.
+costounitariotarifa_transmision,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+costounitariotarifa_transmision,40609,Consistencia,40609,40609,100.0,Conformidad de formato numérico; no contrasta sistemas externos.
+costounitariotarifa_transmision,40609,Razonabilidad,40609,40609,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+costounitariotarifa_distribucion,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+costounitariotarifa_distribucion,40609,Validez,40598,40598,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+costounitariotarifa_distribucion,40609,Completitud,40598,40609,99.97,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (11)."
+costounitariotarifa_distribucion,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+costounitariotarifa_distribucion,40609,Unicidad,1474,40598,3.63,Indicador descriptivo: valores distintos/presentes=1474/40598; 40593 filas contienen valores repetidos. No implica que la columna deba ser clave.
+costounitariotarifa_distribucion,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+costounitariotarifa_distribucion,40609,Consistencia,40598,40598,100.0,Conformidad de formato numérico; no contrasta sistemas externos.
+costounitariotarifa_distribucion,40609,Razonabilidad,40598,40598,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+costounitariotarifa_comercializacion,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+costounitariotarifa_comercializacion,40609,Validez,40598,40598,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+costounitariotarifa_comercializacion,40609,Completitud,40598,40609,99.97,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (11)."
+costounitariotarifa_comercializacion,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+costounitariotarifa_comercializacion,40609,Unicidad,305,40598,0.75,Indicador descriptivo: valores distintos/presentes=305/40598; 40598 filas contienen valores repetidos. No implica que la columna deba ser clave.
+costounitariotarifa_comercializacion,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+costounitariotarifa_comercializacion,40609,Consistencia,40598,40598,100.0,Conformidad de formato numérico; no contrasta sistemas externos.
+costounitariotarifa_comercializacion,40609,Razonabilidad,40598,40598,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+costounitariotarifa_perdidas,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+costounitariotarifa_perdidas,40609,Validez,40598,40598,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+costounitariotarifa_perdidas,40609,Completitud,40598,40609,99.97,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (11)."
+costounitariotarifa_perdidas,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+costounitariotarifa_perdidas,40609,Unicidad,2610,40598,6.43,Indicador descriptivo: valores distintos/presentes=2610/40598; 40511 filas contienen valores repetidos. No implica que la columna deba ser clave.
+costounitariotarifa_perdidas,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+costounitariotarifa_perdidas,40609,Consistencia,40598,40598,100.0,Conformidad de formato numérico; no contrasta sistemas externos.
+costounitariotarifa_perdidas,40609,Razonabilidad,40598,40598,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+costounitariotarifa_restricciones,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+costounitariotarifa_restricciones,40609,Validez,40598,40598,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+costounitariotarifa_restricciones,40609,Completitud,40598,40609,99.97,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (11)."
+costounitariotarifa_restricciones,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+costounitariotarifa_restricciones,40609,Unicidad,616,40598,1.52,Indicador descriptivo: valores distintos/presentes=616/40598; 40598 filas contienen valores repetidos. No implica que la columna deba ser clave.
+costounitariotarifa_restricciones,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+costounitariotarifa_restricciones,40609,Consistencia,40598,40598,100.0,Conformidad de formato numérico; no contrasta sistemas externos.
+costounitariotarifa_restricciones,40609,Razonabilidad,40598,40598,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+costounitariotarifa_cu,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+costounitariotarifa_cu,40609,Validez,40609,40609,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+costounitariotarifa_cu,40609,Completitud,40609,40609,100.0,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (0)."
+costounitariotarifa_cu,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+costounitariotarifa_cu,40609,Unicidad,4397,40609,10.83,Indicador descriptivo: valores distintos/presentes=4397/40609; 40520 filas contienen valores repetidos. No implica que la columna deba ser clave.
+costounitariotarifa_cu,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+costounitariotarifa_cu,40609,Consistencia,40609,40609,100.0,Conformidad de formato numérico; no contrasta sistemas externos.
+costounitariotarifa_cu,40609,Razonabilidad,40609,40609,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+costounitariotarifa_cureal,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+costounitariotarifa_cureal,40609,Validez,40609,40609,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+costounitariotarifa_cureal,40609,Completitud,40609,40609,100.0,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (0)."
+costounitariotarifa_cureal,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+costounitariotarifa_cureal,40609,Unicidad,337,40609,0.83,Indicador descriptivo: valores distintos/presentes=337/40609; 40609 filas contienen valores repetidos. No implica que la columna deba ser clave.
+costounitariotarifa_cureal,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+costounitariotarifa_cureal,40609,Consistencia,40609,40609,100.0,Conformidad de formato numérico; no contrasta sistemas externos.
+costounitariotarifa_cureal,40609,Razonabilidad,40609,40609,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+costounitariotarifa_subcon,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+costounitariotarifa_subcon,40609,Validez,40598,40598,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+costounitariotarifa_subcon,40609,Completitud,40598,40609,99.97,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (11)."
+costounitariotarifa_subcon,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+costounitariotarifa_subcon,40609,Unicidad,1409,40598,3.47,Indicador descriptivo: valores distintos/presentes=1409/40598; 39279 filas contienen valores repetidos. No implica que la columna deba ser clave.
+costounitariotarifa_subcon,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+costounitariotarifa_subcon,40609,Consistencia,40598,40598,100.0,Conformidad de formato numérico; no contrasta sistemas externos.
+costounitariotarifa_subcon,40609,Razonabilidad,40598,40598,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.
+costounitariotarifa_valor_tarifa,40609,Exactitud,0,0,,Coincidencia exacta con referencia por clave; no evaluable sin --reference y --keys.
+costounitariotarifa_valor_tarifa,40609,Validez,40609,40609,100.0,Cumple reglas de formato/rango configuradas; 0 incumplimientos.
+costounitariotarifa_valor_tarifa,40609,Completitud,40609,40609,100.0,"Valores presentes; faltantes reconoce vacío, NA, N/A, null y none (0)."
+costounitariotarifa_valor_tarifa,40609,Integridad,37956,40609,93.47,Integridad estructural aproximada usando clave compuesta disponible (11 campos); no reemplaza integridad referencial entre tablas.
+costounitariotarifa_valor_tarifa,40609,Unicidad,10288,40609,25.33,Indicador descriptivo: valores distintos/presentes=10288/40609; 36591 filas contienen valores repetidos. No implica que la columna deba ser clave.
+costounitariotarifa_valor_tarifa,40609,Oportunidad,0,1,0.0,Indicador del periodo del dataset repetido por columna: último periodo 2026-09 si disponible; rezago=2 meses; tolerancia=1.
+costounitariotarifa_valor_tarifa,40609,Consistencia,40609,40609,100.0,Conformidad de formato numérico; no contrasta sistemas externos.
+costounitariotarifa_valor_tarifa,40609,Razonabilidad,40609,40609,100.0,Proxy de razonabilidad: rangos simples (año/mes/niveles/códigos configurados y no negatividad para componentes no ajustables); revisar alertas de negocio y extremos por contexto.

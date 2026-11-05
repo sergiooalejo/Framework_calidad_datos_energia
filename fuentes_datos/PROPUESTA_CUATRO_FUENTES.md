@@ -54,7 +54,7 @@ Las ocho dimensiones siguen siendo obligatorias. Un resultado de calidad bajo es
 
 ## Trabajo para concretar el cuarto caso
 
-- Se descargó un subconjunto filtrado al grupo EPMC/EPMD/STR02, enero de 2020 a enero de 2025, con todas las versiones disponibles. Se conserva en `datos/Datos_en_revision/XM_piloto/`.
+- Se descargó un subconjunto filtrado al grupo EPMC/EPMD/STR02, enero de 2020 a enero de 2025, con todas las versiones disponibles. Se conserva en `datos/Datos_seleccionados/XM_piloto/`.
 - Se comprobaron 61 meses completos y positivos al seleccionar por mes la TX numérica más alta disponible y sumar horas únicas: 44.592 horas en total. Esta política debe justificarse; no equivale a última versión oficial. Exigir la versión final marcada en el calendario deja solo 53 meses coincidentes y una racha máxima de 20, que no sirve para este protocolo.
 - Se vincularon fechas de publicación declaradas de 60 de 61 versiones seleccionadas. Falta junio de 2021 y definir los plazos de cada versión; oportunidad no se declara completa. No se suman revisiones como energía adicional.
 - Obtener maestras y un contraste oficial de valores; definir las adaptaciones R08/R09 y el uso de demanda frente a tarifa.

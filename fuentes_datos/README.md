@@ -7,10 +7,12 @@ incorporadas para cubrir el consumo observado que a las dos primeras les falta.
 
 | Fuente | Qué aporta | CSV | Diccionario | Portal |
 |---|---|---|---|---|
-| **EPM** · 3.623 filas, 12 col. | Tarifa, forma larga | [csv](datos/Datos_seleccionados/epm_sfcd-b3ey.csv) | [epm.yaml](diccionarios/epm.yaml) | https://www.datos.gov.co/d/sfcd-b3ey |
-| **CHEC** · 40.609 filas, 24 col. | Tarifa, forma ancha | [csv](datos/Datos_seleccionados/chec_c698-wqig.csv) | [chec.yaml](diccionarios/chec.yaml) | https://www.datos.gov.co/d/c698-wqig |
-| **SSPD** · 11.905.557 filas en origen, 29 col. | Consumo y **59 meses** para las cartas | [mensual](datos/Datos_en_revision/sspd_ebby-cjha_mensual.csv) · [detalle .zip](datos/Datos_en_revision/sspd_ebby-cjha_detalle-compressed.zip) | [sspd.yaml](diccionarios/sspd.yaml) | https://www.datos.gov.co/d/ebby-cjha |
-| **XM/SIMEM** · 119.928 registros crudos, 61 meses derivados | Demanda horaria y versiones de publicación | [piloto](datos/Datos_en_revision/XM_piloto/xm_demanda_mensual_piloto.csv) · [crudo](datos/Datos_en_revision/XM_piloto/xm_demanda_epmc_epmd_str02_202001_202501.csv) | [`ficha XM`](../desarrollo_puntos/3.2/Ficha_caracterizacion_04_xm_c1b851.md) | https://www.simem.co/ |
+| **EPM** · 3.623 filas, 12 col. | Tarifa, forma larga | [csv](datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv) | [epm.yaml](diccionarios/EPM/epm.yaml) | https://www.datos.gov.co/d/sfcd-b3ey |
+| **CHEC** · 40.609 filas, 24 col. | Tarifa, forma ancha | [csv](datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv) | [chec.yaml](diccionarios/CHEC/chec.yaml) | https://www.datos.gov.co/d/c698-wqig |
+
+Los documentos específicos de cada fuente están agrupados en carpetas por dataset dentro de `diccionarios`, `catalogos`, `metadatos` y `verificaciones`.
+| **SSPD** · 11.905.557 filas en origen, 29 col. | Consumo y **59 meses** para las cartas | [mensual](datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv) · [detalle .zip](datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_detalle-compressed.zip) | [sspd.yaml](diccionarios/SSPD/sspd.yaml) | https://www.datos.gov.co/d/ebby-cjha |
+| **XM/SIMEM** · 119.928 registros crudos, 61 meses derivados | Demanda horaria y versiones de publicación | [piloto](datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv) · [crudo](datos/Datos_seleccionados/XM_piloto/xm_demanda_epmc_epmd_str02_202001_202501.csv) | [xm.yaml](diccionarios/XM/xm.yaml) | https://www.simem.co/ |
 
 ## Por qué hay archivos comprimidos
 
@@ -46,7 +48,7 @@ mediante una política de selección de versiones documentada.
 versionable. En su lugar se conservan **dos censos declarados, no muestras**: uno mensual
 agregado que cubre las 91 empresas y los 59 períodos (15.075 filas), y uno de detalle con
 todos los registros de la empresa 28111 (91.840 filas). El alcance de cada uno está escrito
-en `diccionarios/sspd.yaml` y se repite en cada resultado que lo use.
+en `diccionarios/SSPD/sspd.yaml` y se repite en cada resultado que lo use.
 
 ## Cómo consultar la información
 
@@ -54,7 +56,7 @@ en `diccionarios/sspd.yaml` y se repite en cada resultado que lo use.
 - **Justificación:** [JUSTIFICACION_SELECCION.md](JUSTIFICACION_SELECCION.md) explica la selección, las limitaciones y la cobertura prevista por dimensión.
 - **Variables:** los YAML explican todas las columnas, tipo oficial, significado, unidad o incertidumbre, rol, reglas relacionadas y uso para series.
 - **Dimensiones y reglas:** [dimensiones_reglas.yaml](diccionarios/dimensiones_reglas.yaml) distingue las doce reglas base de los controles complementarios. Es una especificación documental, no un motor ejecutado.
-- **Matriz OE1 del Hito 3:** [fichas completas](../docs/hito3/matriz_oe1.md), [CSV para Excel](../docs/hito3/matriz_oe1.csv) y [YAML](../docs/hito3/matriz_oe1.yaml). Incluye 19 indicadores y su aplicación en ambas fuentes.
+- **Matriz OE1 del Hito 3:** [Markdown](../desarrollo_puntos/3.3/matriz_oe1.md), [CSV para Excel](../desarrollo_puntos/3.3/matriz_oe1.csv) y [YAML](../desarrollo_puntos/3.3/matriz_oe1.yaml). Incluye 19 indicadores por cada una de las cuatro fuentes; XM queda pendiente de medición específica.
 - **Metadatos:** `metadatos/` contiene los esquemas y descripciones del portal.
 - **Verificaciones:** `verificaciones/` conserva cobertura y validación de CHEC, además de hashes de ambos archivos.
 - **Catálogo:** `catalogos/busqueda_tarifas_energia.json` contiene solo EPM y CHEC; es un catálogo curado, no la búsqueda íntegra original.
@@ -62,7 +64,8 @@ en `diccionarios/sspd.yaml` y se repite en cada resultado que lo use.
 ## Estado
 
 EPM se conserva con la excepción de tamaño aceptada por el usuario. EPM y CHEC contienen
-tarifas y costos, no consumo observado; esa carencia es la que cubre la tercera fuente.
+tarifas y costos, no consumo observado; esa carencia la cubren SSPD ZNI y XM desde dominios
+complementarios: consumo/facturación y demanda eléctrica.
 
 **SSPD es de Zonas No Interconectadas.** Sus 91 empresas se verificaron una por una contra
 el directorio de Superservicios y ninguna pertenece al Sistema Interconectado Nacional, de
