@@ -106,5 +106,5 @@ controles_complementarios:
   requisito: Medir fecha real de disponibilidad frente a plazo esperado documentado. No sustituir por mes de vigencia,
     fecha de descarga ni última modificación global del dataset.
   estado: pendiente
-matriz_oe1: ../../docs/hito3/matriz_oe1.yaml
+matriz_oe1: ../../desarrollo_puntos/3.1/matriz_oe1.yaml
 nota_matriz: La matriz OE1 es la especificación detallada; las metas son propuestas y no hay nuevas mediciones.

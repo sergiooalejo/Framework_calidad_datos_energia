@@ -1,0 +1,28 @@
+{
+  "metodo": "zscore_robusto_logaritmico",
+  "umbral": 3.0,
+  "cambios_referencia": 36,
+  "cambios_vigilancia": 12,
+  "solo_periodos_mensuales_consecutivos": true,
+  "entradas": {
+    "EPM": {
+      "ruta": "C:\\Users\\segep\\OneDrive\\Documents\\Personal\\Maestria en Ciencia de Datos\\Semestre 3\\Seminario III\\Repositorio trabajo final\\Framework_calidad_datos_energia\\fuentes_datos\\datos\\Datos_seleccionados\\EPM\\epm_sfcd-b3ey.csv",
+      "sha256": "98acd40e8d2b92433b1dfc60422228f26f53ab331fd600631f03f830e7ba38f4"
+    },
+    "CHEC": {
+      "ruta": "C:\\Users\\segep\\OneDrive\\Documents\\Personal\\Maestria en Ciencia de Datos\\Semestre 3\\Seminario III\\Repositorio trabajo final\\Framework_calidad_datos_energia\\fuentes_datos\\datos\\Datos_seleccionados\\CHEC\\chec_c698-wqig.csv",
+      "sha256": "05865b094a4cc4eb9f822ed2af686a11a8905d6606f40bb554f5bb5258e3c53f"
+    },
+    "SSPD": {
+      "ruta": "C:\\Users\\segep\\OneDrive\\Documents\\Personal\\Maestria en Ciencia de Datos\\Semestre 3\\Seminario III\\Repositorio trabajo final\\Framework_calidad_datos_energia\\fuentes_datos\\datos\\Datos_seleccionados\\SSPD\\sspd_ebby-cjha_mensual.csv",
+      "sha256": "c0beb6d6800de043e91dfd0def5ee619201a579c4013fd65e9255d6e1479d625"
+    },
+    "XM": {
+      "ruta": "C:\\Users\\segep\\OneDrive\\Documents\\Personal\\Maestria en Ciencia de Datos\\Semestre 3\\Seminario III\\Repositorio trabajo final\\Framework_calidad_datos_energia\\fuentes_datos\\datos\\Datos_seleccionados\\XM_piloto\\xm_demanda_mensual_piloto.csv",
+      "sha256": "56db2e52a430619794277c3d0682c5e815318166541b7132834946566ab7c569"
+    }
+  },
+  "series": 693,
+  "observaciones_vigilancia": 8316,
+  "señales": 701
+}

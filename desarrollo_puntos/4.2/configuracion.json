@@ -1,0 +1,103 @@
+{
+  "fecha_cliente": "2026-11-06",
+  "semilla": 20261106,
+  "referencias": [
+    24,
+    36,
+    48
+  ],
+  "vigilancia": 12,
+  "origenes_inyeccion": "todos los primeros 11 meses; sin reemplazo; último mes solo seguimiento",
+  "paneles": {
+    "disponible": "todas las series elegibles por ventana",
+    "comun": "mismas series en todas las ventanas viables de cada fuente; SSPD solo 24 y 36"
+  },
+  "anclaje": "últimos 12 cambios de la racha consecutiva más larga; desempate por fin más reciente",
+  "normalizacion_MAD": 0.6744897501960817,
+  "I_coeficiente": 2.66,
+  "MR_coeficiente": 3.267,
+  "multiplicadores_MAD": [
+    2.66,
+    3.0,
+    3.267
+  ],
+  "percentiles_IF": [
+    0.99,
+    0.995
+  ],
+  "IF_arboles": 300,
+  "IF_max_samples": 256,
+  "IF_n_jobs": 1,
+  "IF_ajuste": "modelo por fuente/ventana/cohorte/calendario de vigilancia; último entrenamiento anterior a primera vigilancia del modelo; escalas y umbrales solo con referencia",
+  "IF_max_samples_efectivo": "min(256, observaciones de referencia del grupo de calendario)",
+  "rasgos_IF": [
+    "cambio_log",
+    "cambio_log_anterior",
+    "diferencia_absoluta_cambios",
+    "nivel_log_relativo_mediana_referencia"
+  ],
+  "factores_R12": [
+    5,
+    10,
+    20
+  ],
+  "R12": "abs(nivel) > factor * mediana(abs(niveles_referencia)); no usa vigilancia",
+  "umbrales_sistemicos": [
+    0.1,
+    0.25,
+    0.5,
+    0.75
+  ],
+  "regla_sistemica": "fracción estrictamente mayor que X; mínimo 2 series observadas por fuente/método/mes",
+  "bootstrap": {
+    "repeticiones": 1000,
+    "unidad": "categoría completa dentro de fuente; se remuestrean numeradores y denominadores juntos",
+    "intervalo": "percentil 2.5 y 97.5; sin IC si hay menos de dos categorías; descriptivo condicional al snapshot"
+  },
+  "MAD_cero": "señal si el cambio difiere de la mediana; no se añade epsilon",
+  "verdad_terreno": "solo la perturbación artificial; las alertas reales carecen de etiquetas completas",
+  "entradas": {
+    "EPM": {
+      "ruta": "fuentes_datos/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv",
+      "sha256": "98acd40e8d2b92433b1dfc60422228f26f53ab331fd600631f03f830e7ba38f4"
+    },
+    "CHEC": {
+      "ruta": "fuentes_datos/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv",
+      "sha256": "05865b094a4cc4eb9f822ed2af686a11a8905d6606f40bb554f5bb5258e3c53f"
+    },
+    "SSPD": {
+      "ruta": "fuentes_datos/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv",
+      "sha256": "c0beb6d6800de043e91dfd0def5ee619201a579c4013fd65e9255d6e1479d625"
+    },
+    "XM": {
+      "ruta": "fuentes_datos/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv",
+      "sha256": "56db2e52a430619794277c3d0682c5e815318166541b7132834946566ab7c569"
+    }
+  },
+  "cuarentena_EPM": {
+    "ruta": "desarrollo_puntos/3.7/EPM/cuarentena_registros.csv",
+    "sha256": "d91f1d5ba85558f90955c5b225fff4c447739090f4e49e150bc37eafb7a0de15"
+  },
+  "dependencias": {
+    "0_Recomendaciones_profesor/plan_hitos_3-6_detallado.txt": "1d04173ff2951d739bd8c2b3346cfcf34627fdeb3f4c025f30908a401e39857c",
+    "desarrollo_puntos/4.1/zscore_robusto.py": "f4fa4941169ba854c1b3e4fd5d270070338181c1720d04172e0b1e23d56d3506"
+  },
+  "versiones": {
+    "python": "3.14.0",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "sklearn": "1.8.0"
+  },
+  "detalle": {
+    "alertas_reales": 39288,
+    "inyecciones": 212497
+  },
+  "verificaciones": [
+    "entradas_intactas",
+    "rachas_consecutivas",
+    "mismos_meses_en_panel_comun",
+    "monotonia_MAD_IF_R12",
+    "reclasificacion_no_aumenta_detecciones",
+    "ultimo_entrenamiento_IF_anterior_a_toda_vigilancia_del_modelo"
+  ]
+}

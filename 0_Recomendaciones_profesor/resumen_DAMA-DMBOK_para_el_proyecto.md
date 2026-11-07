@@ -2,7 +2,7 @@
 
 Guía para el trabajo de grado *Framework automatizado para la evaluación de la calidad de datos en registros administrativos del sector energético en Colombia* (Grupo 03; dirección del trabajo). Referencia: DAMA International (2017), *DAMA-DMBOK2*, capítulo 13.
 
-Actualización del 27 de octubre de 2026: el profesor exige medir las ocho dimensiones en EPM y CHEC. La especificación vigente está en [la matriz OE1](hito3/matriz_oe1.md). Este resumen describe antecedentes del Hito 2; R11/R12 no acreditan exactitud y la oportunidad ya no se excluye.
+Actualización del 27 de octubre de 2026: el profesor exige medir las ocho dimensiones en EPM y CHEC. La especificación vigente está en [la matriz OE1](../desarrollo_puntos/3.1/matriz_oe1.md). Este resumen describe antecedentes del Hito 2; R11/R12 no acreditan exactitud y la oportunidad ya no se excluye.
 
 ## 1. Definición y propósito
 

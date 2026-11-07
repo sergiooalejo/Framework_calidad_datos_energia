@@ -1,0 +1,51 @@
+serie,medida,periodo,valor_anterior,valor_actual,cambio_log,limite_inferior,limite_superior,clasificacion
+Monomia|Costo Unitario|Restricciones: Rm|N/A|I,propiedadepm,2020-04,0.5200,7.5900,2.68075806,-1.51455179,1.32222590,pendiente_revision
+Monomia|Costo Unitario|Restricciones: Rm|N/A|I,compartido,2020-04,0.5200,7.5900,2.68075806,-1.51455179,1.32222590,pendiente_revision
+Monomia|Costo Unitario|Restricciones: Rm|N/A|I,propiedaddelcliente,2020-04,0.5200,7.5900,2.68075806,-1.51455179,1.32222590,pendiente_revision
+"Horaria|Costo Unitario|Cargo transporte SDL: Dn,m|Punta|I",propiedadepm,2020-02,191.7900,206.6800,0.07477068,-0.06065442,0.06508458,pendiente_revision
+"Horaria|Costo Unitario|Margen comercialización: CVm,i,j|Punta|I",propiedadepm,2020-05,49.4000,46.9200,-0.05150640,-0.05021202,0.05932570,pendiente_revision
+"Horaria|Costo Unitario|Margen comercialización: CVm,i,j|Punta|I",propiedadepm,2020-07,48.5500,52.0300,0.06922628,-0.05021202,0.05932570,pendiente_revision
+"Horaria|Costo Unitario|Margen comercialización: CVm,i,j|Punta|I",compartido,2020-05,49.4000,46.9200,-0.05150640,-0.05021202,0.05932570,pendiente_revision
+"Horaria|Costo Unitario|Margen comercialización: CVm,i,j|Punta|I",compartido,2020-07,48.5500,52.0300,0.06922628,-0.05021202,0.05932570,pendiente_revision
+"Horaria|Costo Unitario|Margen comercialización: CVm,i,j|Punta|I",propiedaddelcliente,2020-05,49.4000,46.9200,-0.05150640,-0.05021202,0.05932570,pendiente_revision
+"Horaria|Costo Unitario|Margen comercialización: CVm,i,j|Punta|I",propiedaddelcliente,2020-07,48.5500,52.0300,0.06922628,-0.05021202,0.05932570,pendiente_revision
+Horaria|Costo Unitario|Restricciones: Rm|Punta|I,propiedadepm,2020-04,0.5800,6.7100,2.44832613,-1.48851648,1.28988663,pendiente_revision
+Horaria|Costo Unitario|Restricciones: Rm|Punta|I,compartido,2020-04,0.5800,6.7100,2.44832613,-1.48851648,1.28988663,pendiente_revision
+Horaria|Costo Unitario|Restricciones: Rm|Punta|I,propiedaddelcliente,2020-04,0.5800,6.7100,2.44832613,-1.48851648,1.28988663,pendiente_revision
+"Horaria|Costo Unitario|Cargo transporte SDL: Dn,m|Fuera de Punta|I",propiedadepm,2020-02,191.7900,206.6800,0.07477068,-0.05312666,0.05958190,pendiente_revision
+"Horaria|Costo Unitario|Margen comercialización: CVm,i,j|Fuera de Punta|I",propiedadepm,2020-05,49.4000,46.9200,-0.05150640,-0.05021202,0.05932570,pendiente_revision
+"Horaria|Costo Unitario|Margen comercialización: CVm,i,j|Fuera de Punta|I",propiedadepm,2020-07,48.5500,52.0300,0.06922628,-0.05021202,0.05932570,pendiente_revision
+"Horaria|Costo Unitario|Margen comercialización: CVm,i,j|Fuera de Punta|I",compartido,2020-05,49.4000,46.9200,-0.05150640,-0.05021202,0.05932570,pendiente_revision
+"Horaria|Costo Unitario|Margen comercialización: CVm,i,j|Fuera de Punta|I",compartido,2020-07,48.5500,52.0300,0.06922628,-0.05021202,0.05932570,pendiente_revision
+"Horaria|Costo Unitario|Margen comercialización: CVm,i,j|Fuera de Punta|I",propiedaddelcliente,2020-05,49.4000,46.9200,-0.05150640,-0.05021202,0.05932570,pendiente_revision
+"Horaria|Costo Unitario|Margen comercialización: CVm,i,j|Fuera de Punta|I",propiedaddelcliente,2020-07,48.5500,52.0300,0.06922628,-0.05021202,0.05932570,pendiente_revision
+Horaria|Costo Unitario|Restricciones: Rm|Fuera de Punta|I,propiedadepm,2020-01,1.8900,0.1000,-2.93916192,-1.23714519,1.08541942,pendiente_revision
+Horaria|Costo Unitario|Restricciones: Rm|Fuera de Punta|I,propiedadepm,2020-02,0.1000,2.5300,3.23080440,-1.23714519,1.08541942,pendiente_revision
+Horaria|Costo Unitario|Restricciones: Rm|Fuera de Punta|I,propiedadepm,2020-03,2.5300,0.5000,-1.62136648,-1.23714519,1.08541942,pendiente_revision
+Horaria|Costo Unitario|Restricciones: Rm|Fuera de Punta|I,propiedadepm,2020-04,0.5000,7.9400,2.76506046,-1.23714519,1.08541942,pendiente_revision
+Horaria|Costo Unitario|Restricciones: Rm|Fuera de Punta|I,propiedadepm,2020-08,6.8000,20.6800,1.11224444,-1.23714519,1.08541942,pendiente_revision
+Horaria|Costo Unitario|Restricciones: Rm|Fuera de Punta|I,compartido,2020-01,1.8900,0.1000,-2.93916192,-1.23714519,1.08541942,pendiente_revision
+Horaria|Costo Unitario|Restricciones: Rm|Fuera de Punta|I,compartido,2020-02,0.1000,2.5300,3.23080440,-1.23714519,1.08541942,pendiente_revision
+Horaria|Costo Unitario|Restricciones: Rm|Fuera de Punta|I,compartido,2020-03,2.5300,0.5000,-1.62136648,-1.23714519,1.08541942,pendiente_revision
+Horaria|Costo Unitario|Restricciones: Rm|Fuera de Punta|I,compartido,2020-04,0.5000,7.9400,2.76506046,-1.23714519,1.08541942,pendiente_revision
+Horaria|Costo Unitario|Restricciones: Rm|Fuera de Punta|I,compartido,2020-08,6.8000,20.6800,1.11224444,-1.23714519,1.08541942,pendiente_revision
+Horaria|Costo Unitario|Restricciones: Rm|Fuera de Punta|I,propiedaddelcliente,2020-01,1.8900,0.1000,-2.93916192,-1.23714519,1.08541942,pendiente_revision
+Horaria|Costo Unitario|Restricciones: Rm|Fuera de Punta|I,propiedaddelcliente,2020-02,0.1000,2.5300,3.23080440,-1.23714519,1.08541942,pendiente_revision
+Horaria|Costo Unitario|Restricciones: Rm|Fuera de Punta|I,propiedaddelcliente,2020-03,2.5300,0.5000,-1.62136648,-1.23714519,1.08541942,pendiente_revision
+Horaria|Costo Unitario|Restricciones: Rm|Fuera de Punta|I,propiedaddelcliente,2020-04,0.5000,7.9400,2.76506046,-1.23714519,1.08541942,pendiente_revision
+Horaria|Costo Unitario|Restricciones: Rm|Fuera de Punta|I,propiedaddelcliente,2020-08,6.8000,20.6800,1.11224444,-1.23714519,1.08541942,pendiente_revision
+Monomia|No Residencial|Industrial y Comercial|N/A|I,propiedadepm,2020-02,624.2400,680.8300,0.08677773,-0.07327374,0.07869527,pendiente_revision
+Monomia|No Residencial|Industrial y Comercial|N/A|I,compartido,2020-02,601.3700,653.1600,0.08261174,-0.07608332,0.08151976,pendiente_revision
+Monomia|No Residencial|ESPD|N/A|I,propiedadepm,2020-02,572.2200,624.1000,0.08678708,-0.07328116,0.07870234,pendiente_revision
+Monomia|No Residencial|ESPD|N/A|I,compartido,2020-02,551.2500,598.7300,0.08262232,-0.07608451,0.08152008,pendiente_revision
+Monomia|No Residencial|Oficial y Exentos de Contribución|N/A|I,propiedadepm,2020-02,520.2000,567.3600,0.08678067,-0.07152239,0.07684373,pendiente_revision
+Monomia|No Residencial|Oficial y Exentos de Contribución|N/A|I,compartido,2020-02,501.1400,544.3000,0.08261506,-0.07426227,0.07959705,pendiente_revision
+Horaria|No Residencial|Industrial y Comercial|Fuera de Punta|I,propiedadepm,2020-02,623.5600,680.6000,0.08752977,-0.07260469,0.07824503,pendiente_revision
+Horaria|No Residencial|Industrial y Comercial|Fuera de Punta|I,compartido,2020-02,600.6900,652.9300,0.08339093,-0.07542707,0.08109177,pendiente_revision
+Monomia|Residencial|Estrato 4|Todo el consumo|I,propiedadepm,2020-03,520.2000,573.0300,0.09672472,-0.07152239,0.07684373,pendiente_revision
+Monomia|Residencial|Estrato 4|Todo el consumo|I,compartido,2020-02,501.1400,544.3000,0.08261506,-0.07426227,0.07959705,pendiente_revision
+Horaria|Tarifa|Industrial y Comercial|N/A|II,punta,2020-02,508.0900,557.6800,0.09312672,-0.09011378,0.08955906,pendiente_revision
+Horaria|Tarifa|Industrial y Comercial|N/A|II,fueradepunta,2020-02,505.1400,556.0800,0.09607655,-0.06678127,0.07110035,pendiente_revision
+Horaria|Tarifa|Oficial y Exentos|N/A|II,fueradepunta,2020-02,420.9500,463.4000,0.09607655,-0.06921934,0.07516883,pendiente_revision
+Horaria|Tarifa|Industrial y Comercial|N/A|III,fueradepunta,2020-02,419.6200,458.2700,0.08810899,-0.07856304,0.08310309,pendiente_revision
+Horaria|Tarifa|Oficial y Exentos|N/A|III,fueradepunta,2020-02,349.6800,381.8900,0.08811416,-0.07770495,0.08224527,pendiente_revision

@@ -58,7 +58,7 @@ Archivo de definición: [`sspd.yaml`](../../../fuentes_datos/diccionarios/SSPD/s
 
 El catálogo operativo de las variables críticas está en
 `fuentes_datos/catalogos/SSPD/sspd_definiciones_def01.yaml`. Las cartas preliminares se
-encuentran en `desarrollo_puntos/3.3/SSPD/cartas_log_sspd.csv`: 361 series, 4.332 cambios
+encuentran en `desarrollo_puntos/3.5/SSPD/cartas_log_sspd.csv`: 361 series, 4.332 cambios
 vigilados y 143 señales. `OPO01` se evaluó como proxy de cobertura (59/65 períodos) y
 `EXA01` permanece sin medir por falta de una fuente externa comparable para las empresas
 ZNI. Estas limitaciones están descritas en

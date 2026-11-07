@@ -9,3 +9,7 @@ Cada fuente tiene su propia carpeta para localizar rápidamente los archivos usa
 
 Los documentos analíticos de EPM y CHEC están agrupados en `desarrollo_puntos/3.3/EPM`
 y `desarrollo_puntos/3.3/CHEC`.
+
+La matriz OE1 está en `desarrollo_puntos/3.1/`, las fichas en `3.2`, las cartas en
+`3.5`, la trazabilidad en `3.6` y la cuarentena/bootstrap en `3.7`. El índice completo
+está en [la documentación general del Hito 3](../../../desarrollo_puntos/3_documentacion_general/README.md).

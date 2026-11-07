@@ -1,7 +1,11 @@
 # EPM: cierre de controles del Hito 3
 
 Fuente: `fuentes_datos/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv` (`sfcd-b3ey`, 3.623 filas).
-La medición se ejecuta con `python3 desarrollo_puntos/3.3/medir_matriz_oe1.py`.
+La medición se ejecuta con `python3 desarrollo_puntos/3.1/medir_matriz_oe1.py`.
+
+Los archivos de cartas y revisión de señales citados abajo están en
+[3.5/EPM](../../3.5/README.md); los de cuarentena, en
+[3.7/EPM](../../3.7/EPM/README_CUARENTENA.md).
 
 ## Evidencia incorporada
 

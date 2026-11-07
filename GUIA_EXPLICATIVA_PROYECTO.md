@@ -103,10 +103,20 @@ usar los datos, cuáles son sus variables críticas y qué limitaciones tiene.
 
 ### Resultados del Hito 3
 
-`desarrollo_puntos/3.3/`
+Los resultados se distribuyen según las actividades del plan:
 
-Aquí están la matriz, las reglas por fuente, las cartas, el bootstrap, la cuarentena, la
-trazabilidad y los informes metodológicos.
+- `desarrollo_puntos/3.1/`: matriz OE1, indicadores y evidencia de medición.
+- `desarrollo_puntos/3.2/`: fichas y perfiles de caracterización.
+- `desarrollo_puntos/3.3/`: adaptadores, revisión de reglas e informe de diferencias.
+- `desarrollo_puntos/3.4/`: evaluación de fuentes CREG y alternativas.
+- `desarrollo_puntos/3.5/`: cartas logarítmicas y señales.
+- `desarrollo_puntos/3.6/`: trazabilidad y reproducibilidad.
+- `desarrollo_puntos/3.7/`: cuarentena y bootstrap.
+
+El [índice general](desarrollo_puntos/3_documentacion_general/README.md) reúne enlaces,
+criterios y el inventario de movimientos. El plan, cierre y pendientes generales están
+en esa misma carpeta. Los resultados históricos del Hito 2 se conservan como insumos en
+`desarrollo_puntos/3.3/insumos_hito2/`.
 
 ## 5. Las ocho dimensiones de calidad
 
@@ -187,7 +197,7 @@ sea incorrecto.
 
 Las cartas se guardan por fuente en:
 
-`desarrollo_puntos/3.3/EPM/`, `CHEC/`, `SSPD/` y `XM/`.
+`desarrollo_puntos/3.5/EPM/`, `CHEC/`, `SSPD/` y `XM/`.
 
 ## 9. Cuarentena
 
@@ -218,7 +228,7 @@ Para cada fuente se conserva:
 
 El manifiesto está en:
 
-`desarrollo_puntos/3.3/trazabilidad/manifiesto_ejecucion.json`
+`desarrollo_puntos/3.6/trazabilidad/manifiesto_ejecucion.json`
 
 El SHA-256 es una huella digital del archivo. Si cambia un carácter, la huella normalmente cambia.
 No es un método de cifrado ni muestra el contenido del archivo.
@@ -251,9 +261,9 @@ programa; significa que no hay suficiente variación entre series para estimar i
 Se ejecutaron correctamente:
 
 ```bash
-python3 desarrollo_puntos/3.3/medir_matriz_oe1.py
-python3 desarrollo_puntos/3.3/bootstrap_categorias.py
-python3 desarrollo_puntos/3.3/trazabilidad.py
+python3 desarrollo_puntos/3.1/medir_matriz_oe1.py
+python3 desarrollo_puntos/3.7/bootstrap_categorias.py
+python3 desarrollo_puntos/3.6/trazabilidad.py
 ```
 
 La ejecución genera:
@@ -266,7 +276,7 @@ La ejecución genera:
 
 Los pendientes están reunidos en:
 
-[PENDIENTES_APROBACION_HITO3.md](desarrollo_puntos/3.3/PENDIENTES_APROBACION_HITO3.md)
+[PENDIENTES_APROBACION_HITO3.md](desarrollo_puntos/3_documentacion_general/PENDIENTES_APROBACION_HITO3.md)
 
 En resumen:
 

@@ -3,6 +3,8 @@
 Fuente: `ebby-cjha`, información comercial de energía en ZNI. La copia conserva el
 censo mensual de 91 empresas y el detalle completo de una empresa.
 
+El script y la salida de cartas se conservan en [3.5/SSPD](../../3.5/README.md).
+
 ## Resultados incorporados
 
 - `DEF01`: 19/19 variables críticas documentadas en

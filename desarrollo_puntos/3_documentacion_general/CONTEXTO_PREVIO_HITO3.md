@@ -1,0 +1,95 @@
+# Hito 3 · Puntos 1 y 2
+
+Documento de contexto conservado de la organización anterior. Sus estados describen
+distintas etapas de trabajo y pueden diferir de documentos posteriores. Para la ubicación
+actual de los archivos, consultar el [índice del Hito 3](README.md).
+
+El estado de cierre y la transición al Hito 4 están documentados en [CIERRE_HITO3.md](CIERRE_HITO3.md).
+
+| Punto | Entregable | Documento |
+|---|---|---|
+| 1 | Matriz OE1 con plantilla llena por regla | [`matriz_oe1.md`](../3.1/matriz_oe1.md) |
+| 2 | Fichas de caracterización por fuente | [Fichas en desarrollo_puntos/3.2](../3.2/README.md) |
+
+Las fichas del punto 2 son condición del punto 1: los umbrales de la matriz se sostienen
+sobre el consumidor del dato que allí se declare. Ese bloque sigue pendiente de decisión.
+
+## Punto 1 · Matriz OE1
+
+El punto 1 tiene una línea base histórica para EPM, CHEC, SSPD (Zonas No Interconectadas) y XM/SIMEM. XM ya cuenta con un adaptador preliminar de demanda; sus resultados son provisionales cuando dependen de catálogos, referencias o plazos externos. No se modificó el código del Hito 2.
+
+Los tres archivos de la matriz incluyen la línea base disponible sobre los datos conservados en `fuentes_datos/datos/`: resultado, estado y nota por control y fuente. XM se mide con reglas adaptadas a demanda y no hereda resultados de SSPD-NR.
+
+## Archivos
+
+- [Matriz y fichas explicadas](../3.1/matriz_oe1.md): lectura principal, ocho dimensiones, diez tipos de regla y diecinueve indicadores, con el resultado de cada ficha y la sección de línea base.
+- [Matriz CSV](../3.1/matriz_oe1.csv): 76 filas (19 controles × 4 fuentes), legible en Excel con UTF-8 y separador coma; incluye las columnas de resultado.
+- [Especificación YAML](../3.1/matriz_oe1.yaml): definiciones, fórmulas, parámetros, decisiones de medición y bloque `resultado` por fuente. Es documental; no es un motor de reglas ejecutado.
+- [Revisión de reglas para XM](../3.3/XM/REVISION_REGLAS_XM.md): significado de R01–R12 y de los siete controles complementarios, con las adaptaciones de demanda.
+- [Plantilla de exactitud](../3.1/plantilla_exactitud.csv): contraste de una muestra con publicaciones verificadas.
+- [Plantilla de oportunidad](../3.1/plantilla_oportunidad.csv): plazos, evidencia temporal e intervalos de disponibilidad.
+- [Plantilla de catálogos](../3.1/plantilla_catalogos.csv): dominios, equivalencias y relaciones con fundamento documental.
+- [Script de medición](../3.1/medir_matriz_oe1.py): calcula el resultado de cada control y lo escribe dentro de los tres archivos anteriores. Reejecutable e idempotente con `python3 desarrollo_puntos/3.1/medir_matriz_oe1.py`; registra el SHA-256 de cada archivo medido.
+- [Referencia externa de EXA01](../3.1/referencia_exa01_chec.json): registros de CHEC en `td8k-vhq9` de Superservicios, con su consulta y fecha de descarga. Permite contrastar exactitud sin depender de una respuesta de la entidad, y hace el contraste reproducible sin red.
+- [Trazabilidad estable](../../fuentes_datos/verificaciones/trazabilidad_filas/README.md):
+  SHA-256 por archivo, fecha de ejecución, clave de contenido e identificador estable de
+  fila para los cuatro datasets; también genera copias trazables de hallazgos y alertas.
+- [Bootstrap por categoría](../3.7/bootstrap/README.md):
+  intervalos de confianza del 95 % para la tasa descriptiva de señales de CART01,
+  remuestreando series dentro de cada categoría y sin mezclar fuentes. Incluye la semilla,
+  el número de repeticiones y la unidad de remuestreo para reproducibilidad.
+- [Informe de diferencias entre fuentes](../3.3/INFORME_DIFERENCIAS_FUENTES.md): comparación de
+  estructura, aplicabilidad, estados de medición y restricciones de interpretación.
+- [Pendientes de aprobación del Hito 3](PENDIENTES_APROBACION_HITO3.md): documento único con
+  roles, umbrales, catálogos, evidencia externa, reproducibilidad y decisiones estadísticas.
+- [Evidencia de exactitud y oportunidad](../3.1/EVIDENCIA_EXACTITUD_OPORTUNIDAD.md): procedimiento,
+  evidencia disponible y plantillas para cerrar EXA01 y OPO01.
+- [Reproducibilidad del Hito 3](../3.6/REPRODUCIBILIDAD_HITO3.md): prueba ejecutada, hashes y requisito
+  de una segunda versión independiente.
+
+Las tres plantillas contienen solo cabeceras: están pendientes de diligenciar con evidencia real. No existen referencias o fechas de publicación inventadas.
+
+## Estado de la medición
+
+La especificación la elaboró el entregable anterior; esta entrega añade el resultado calculado de cada control. El `estado_medicion` de cada fila distingue tres situaciones:
+
+| Estado | Qué significa |
+|---|---|
+| `medido` | La definición de la matriz se aplica sin supuestos añadidos. El valor no cambia salvo que cambien los datos. |
+| `provisional` | Hay valor, pero depende de una decisión documental todavía abierta (catálogo canónico, dominio por concepto, conjunto de medidas requeridas, factor de R12, clave definitiva de CHEC). El valor puede cambiar cuando esa decisión se cierre. |
+| `no_medible` | No hay numerador posible con la evidencia disponible. No es falta de definición, es falta de evidencia. |
+| `no_aplica` | El concepto del control no existe en el esquema de esa fuente. No es una brecha: es una diferencia estructural, y debe leerse distinto de `no_medible`. |
+
+Cobertura actual: los 19 controles tienen resultado en las cuatro fuentes, aunque algunos son
+provisionales, proxies o no aplican por la estructura de la fuente. Las cartas logarítmicas ya
+se ejecutaron para EPM, CHEC, SSPD y XM. Exactitud y oportunidad conservan limitaciones de
+evidencia externa; oportunidad se reporta mediante proxies explícitos cuando solo existe
+cobertura o fecha declarada.
+
+La línea base actual corresponde a EPM, CHEC, SSPD ZNI y XM/SIMEM. SSPD-NR y sus
+artefactos permanecen en revisión histórica y no forman parte de la matriz principal.
+
+La cuarta fuente histórica devolvió a **R08, R09 e INT02** un caso donde medirse. En SSPD quedaron `no_aplica` porque su esquema no tiene eje de propiedad ni pares código-nombre; SSPD-NR sí los tenía, y los midió en 92,24 %, 98,60 % y 98,75 % respectivamente. Esos resultados no se deben atribuir a XM: la matriz de XM aún debe construirse con sus reglas de demanda.
+
+Cada valor va acompañado de su numerador, su denominador y una nota que declara los supuestos aplicados. Las cifras se recalculan ejecutando el script; no se transcriben a mano.
+
+## Qué cambia frente al plan anterior
+
+La oportunidad pasa de excluida a obligatoria por instrucción del profesor. Se mantienen R01–R12 y se añaden INT01/INT02, EXA01, OPO01, MAP01, DEF01 y CART01 para completar la especificación conceptual. No se fuerza una asignación uno a uno entre doce reglas y diez tipos.
+
+Las metas de conformidad del 100 % son propuestas del proyecto; los umbrales de tasas de alertas requieren calibración y no se fijan en cero. Deben validarse antes de declarar cumplimiento. El documento distingue cambios propuestos al código (especialmente R10/R11/R12) de su comportamiento actual.
+
+## Pendientes residuales después del cierre documental
+
+1. Asignar nombres a los roles y validar los criterios/umbrales con el equipo y dirección.
+2. Confirmar catálogos, unidades, semántica, clave candidata y adaptaciones R08/R09 para CHEC.
+3. Completar la evidencia de exactitud y oportunidad. EXA01 ya tiene un contraste parcial en CHEC contra otro publicador; falta cubrir EPM, que no tiene traslape temporal con esa referencia, y falta por completo la evidencia de oportunidad en ambas fuentes. «No evaluable» no acredita el requisito de ocho dimensiones.
+4. Generar scorecards y análisis de sensibilidad en el Hito 4.
+5. Revisar dos propuestas que surgen de medir: cambiar la unidad de observación de R10 de fila a celda por columna, y declarar la política de fin de línea de los CSV para que sus hashes sean verificables.
+
+6. Interpretar el bootstrap por categoría junto con la matriz: el intervalo cuantifica la
+   variabilidad entre series, no demuestra por sí solo que una señal sea un error. El grupo
+   XM y cualquier categoría con una sola serie tienen un intervalo degenerado; deben reportarse
+   como evidencia descriptiva y no como inferencia poblacional.
+
+La actividad cuenta con su entregable documental; la validación metodológica, implementación, medición y cierre del Hito 3 siguen pendientes. El plan detallado en Markdown y esta matriz contienen el alcance actualizado; las imágenes del plan son una representación anterior y no deben usarse para excluir oportunidad.

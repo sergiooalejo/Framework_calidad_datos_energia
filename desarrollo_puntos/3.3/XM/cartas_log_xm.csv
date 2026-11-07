@@ -1,2 +1,0 @@
-serie,medida,periodos,cambios_referencia,cambios_vigilancia,limite_inferior,limite_superior,señales
-EPMC|EPMD|STR02,demanda_kwh,61,36,12,-0.15351127,0.15556946,0

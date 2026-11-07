@@ -56,7 +56,7 @@ en `diccionarios/SSPD/sspd.yaml` y se repite en cada resultado que lo use.
 - **Justificación:** [JUSTIFICACION_SELECCION.md](JUSTIFICACION_SELECCION.md) explica la selección, las limitaciones y la cobertura prevista por dimensión.
 - **Variables:** los YAML explican todas las columnas, tipo oficial, significado, unidad o incertidumbre, rol, reglas relacionadas y uso para series.
 - **Dimensiones y reglas:** [dimensiones_reglas.yaml](diccionarios/dimensiones_reglas.yaml) distingue las doce reglas base de los controles complementarios. Es una especificación documental, no un motor ejecutado.
-- **Matriz OE1 del Hito 3:** [Markdown](../desarrollo_puntos/3.3/matriz_oe1.md), [CSV para Excel](../desarrollo_puntos/3.3/matriz_oe1.csv) y [YAML](../desarrollo_puntos/3.3/matriz_oe1.yaml). Incluye 19 indicadores por cada una de las cuatro fuentes; XM queda pendiente de medición específica.
+- **Matriz OE1 del Hito 3:** [Markdown](../desarrollo_puntos/3.1/matriz_oe1.md), [CSV para Excel](../desarrollo_puntos/3.1/matriz_oe1.csv) y [YAML](../desarrollo_puntos/3.1/matriz_oe1.yaml). Incluye 19 indicadores por cada una de las cuatro fuentes; XM queda pendiente de medición específica.
 - **Metadatos:** `metadatos/` contiene los esquemas y descripciones del portal.
 - **Verificaciones:** `verificaciones/` conserva cobertura y validación de CHEC, además de hashes de ambos archivos.
 - **Catálogo:** `catalogos/busqueda_tarifas_energia.json` contiene solo EPM y CHEC; es un catálogo curado, no la búsqueda íntegra original.

@@ -66,7 +66,7 @@ Las bases CREG se pueden utilizar para fundamentar variables y contextualizar re
 ## Evidencia local
 
 - `metadatos/candidatos_creg/catalogo_creg_2026-11-04.json`: respuesta de catálogo y relaciones entre vistas.
-- `desarrollo_puntos/3.2/perfiles/creg_electricidad_anexos.json`: archivos, hojas, conteos XML y hashes de los libros eléctricos.
-- `desarrollo_puntos/3.2/perfiles/creg_prioridad_perfil.json`: perfil del conjunto de gas descartado; no es una fuente seleccionada.
+- `desarrollo_puntos/3.4/perfiles/creg_electricidad_anexos.json`: archivos, hojas, conteos XML y hashes de los libros eléctricos.
+- `desarrollo_puntos/3.4/perfiles/creg_prioridad_perfil.json`: perfil del conjunto de gas descartado; no es una fuente seleccionada.
 
 La fecha y los hashes registran la revisión/descarga; no prueban por sí solos oportunidad histórica por período.

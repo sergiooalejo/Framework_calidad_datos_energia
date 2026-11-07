@@ -2,6 +2,9 @@
 
 ## Propósito
 
+El script y la salida de cartas citados en este documento están en
+[3.5/XM](../../3.5/README.md). La matriz se conserva en [3.1](../../3.1/matriz_oe1.md).
+
 Este documento realiza el punto 1 del siguiente paso del Hito 3: revisar la matriz OE1 para XM y recordar el significado de cada regla. XM contiene demanda horaria y versiones de publicación, no tarifas. Por eso una regla tarifaria no se copia literalmente: se adapta por propósito y se deja evidencia de la decisión.
 
 Estados utilizados:

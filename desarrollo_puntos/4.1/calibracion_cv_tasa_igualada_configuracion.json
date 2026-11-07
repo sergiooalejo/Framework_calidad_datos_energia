@@ -1,0 +1,12 @@
+{
+  "grupos": 5,
+  "metodo_tasa_objetivo": "tasa de señales de cartas Hito 3",
+  "no_usa_vigilancia_para_umbral": true,
+  "fuentes": [
+    "EPM",
+    "CHEC",
+    "SSPD",
+    "XM"
+  ],
+  "nota": "XM tiene tasa objetivo cero; el umbral queda infinito y no se esperan señales."
+}

@@ -20,7 +20,7 @@ Enlaces:
 - EPM: https://www.datos.gov.co/d/sfcd-b3ey
 - CHEC: https://www.datos.gov.co/d/c698-wqig
 - Superservicios: https://www.datos.gov.co/d/ebby-cjha
-- XM: https://www.simem.co/ ; API/documentación: https://github.com/EquipoAnaliticaXM/API_XM . Detalle de consultas y limitaciones en `desarrollo_puntos/3.2/Evaluacion_fuente_alternativa_XM.md`.
+- XM: https://www.simem.co/ ; API/documentación: https://github.com/EquipoAnaliticaXM/API_XM . Detalle de consultas y limitaciones en `desarrollo_puntos/3.4/Evaluacion_fuente_alternativa_XM.md`.
 
 ## Verificación adicional de la fuente ZNI
 

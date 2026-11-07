@@ -80,5 +80,5 @@ La matriz incorpora mapeos internos para agente, mercado, sistema y unidad, y `O
 usa un proxy de trazabilidad de 60/61 meses con fecha declarada. `EXA01` permanece sin
 medir por falta de una referencia horaria o mensual independiente; esta limitación y las
 adaptaciones de R08/R09 están documentadas en `desarrollo_puntos/3.3/XM/REVISION_REGLAS_XM.md`.
-La carta I-MR está disponible en `desarrollo_puntos/3.3/XM/cartas_log_xm.csv` y se
+La carta I-MR está disponible en `desarrollo_puntos/3.5/XM/cartas_log_xm.csv` y se
 reproduce con `cartas_log_xm.py`.

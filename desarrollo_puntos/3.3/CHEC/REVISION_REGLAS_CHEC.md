@@ -3,6 +3,10 @@
 Fuente: `fuentes_datos/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv` (`c698-wqig`,
 40.609 filas y 24 columnas).
 
+El script y la salida de cartas citados abajo están en
+[3.5/CHEC](../../3.5/README.md). El análisis de códigos y semántica está en
+[3.2/CHEC](../../3.2/CHEC/DECISION_CATALOGOS_CHEC.md).
+
 ## Evidencia y resultados
 
 - `EXA01` contrasta 756 celdas contra Superservicios (`td8k-vhq9`) y obtiene 100 % de

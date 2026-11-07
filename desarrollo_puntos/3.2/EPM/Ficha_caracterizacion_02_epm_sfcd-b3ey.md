@@ -59,7 +59,7 @@ Caracterización calculada directamente sobre el archivo local. Las interpretaci
 - La comparación reproducible de `fuentes_datos/verificaciones/EPM/epm_exactitud_referencias.json`
   coincide en 18 de 18 celdas con seis filas de publicaciones oficiales de EPM (2020 y
   2021). Es una muestra de exactitud, no una certificación de todo el histórico.
-- `desarrollo_puntos/3.3/cartas_log_epm.csv` contiene 60 series con referencia de 36
+- `desarrollo_puntos/3.5/EPM/cartas_log_epm.csv` contiene 60 series con referencia de 36
   cambios y vigilancia de 12 cambios en escala logarítmica. El resultado actual es
   preliminar y debe someterse a sensibilidad antes de usarlo como alerta operativa.
 - La matriz OE1 deja `INT02` como no aplicable (no hay pares código-nombre). `OPO01` se

@@ -8,9 +8,14 @@ Estudiantes: Grupo 03 · Director del trabajo
 
 | Carpeta | Qué hay |
 |---|---|
-| `desarrollo_puntos/3.1/` | Perfilamiento por columna para EPM y CHEC. |
-| `desarrollo_puntos/3.2/` | Salidas del Hito 2 y fichas de caracterización por fuente. |
-| `desarrollo_puntos/3.3/` | Plan Hito 3, matriz OE1, adaptadores y mediciones. |
+| `desarrollo_puntos/3.1/` | Matriz OE1, indicadores por columna y evidencia de medición. |
+| `desarrollo_puntos/3.2/` | Fichas de caracterización y perfiles por fuente. |
+| `desarrollo_puntos/3.3/` | Réplica, adaptadores, diferencias e insumos históricos del Hito 2. |
+| `desarrollo_puntos/3.4/` | Selección de fuente CREG y evaluación de alternativas. |
+| `desarrollo_puntos/3.5/` | Cartas en cambios logarítmicos y revisión de señales. |
+| `desarrollo_puntos/3.6/` | Trazabilidad estable y reproducibilidad. |
+| `desarrollo_puntos/3.7/` | Cuarentena y bootstrap. |
+| `desarrollo_puntos/3_documentacion_general/` | Índice, plan, cierre, pendientes e inventario de organización. |
 | `fuentes_datos/` | Fuentes seleccionadas, datos en revisión, diccionarios, catálogos, metadatos y verificaciones. |
 | `presentaciones/` | Primera presentación, Hito 1 (7 de octubre de 2026) y Hito 2 (21 de octubre de 2026). |
 | `Entregables_pdf/` | Anteproyecto y retroalimentación de dirección. |
@@ -19,9 +24,12 @@ Estudiantes: Grupo 03 · Director del trabajo
 
 ## Estado
 
-Hito 2 entregado. El plan de los hitos 3 a 6 está en `desarrollo_puntos/3.3/plan_hitos_3-6_detallado.md`, trazado a los cuatro objetivos específicos del anteproyecto.
+Hito 2 entregado. El plan de los hitos 3 a 6 está en `desarrollo_puntos/3_documentacion_general/plan_hitos_3-6_detallado.md`, trazado a los cuatro objetivos específicos del anteproyecto.
 
 Para entender el trabajo realizado hasta el Hito 3, consultar la [guía explicativa del proyecto](GUIA_EXPLICATIVA_PROYECTO.md).
+
+La ubicación y el criterio de clasificación de sus archivos están en el
+[índice del Hito 3](desarrollo_puntos/3_documentacion_general/README.md).
 
 ## Datos
 

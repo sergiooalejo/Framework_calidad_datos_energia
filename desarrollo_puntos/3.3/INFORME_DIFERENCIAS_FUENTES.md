@@ -8,6 +8,10 @@ XM/SIMEM (`c1b851`). La comparación se basa en `matriz_oe1.csv`, las fichas de 
 las cartas logarítmicas y el bootstrap por categoría. No mezcla registros ni resultados entre
 fuentes.
 
+Ubicaciones actuales: [matriz OE1](../3.1/matriz_oe1.csv),
+[fichas](../3.2/README.md), [cartas](../3.5/README.md) y
+[bootstrap](../3.7/bootstrap/bootstrap_categorias.csv).
+
 ## Diferencias estructurales
 
 | Fuente | Naturaleza del dato | Unidad de carta | Tratamiento específico |
@@ -40,7 +44,7 @@ esquema de esa fuente.
 
 Las cartas usan cambios logarítmicos y se ejecutan solo donde existe una serie temporal suficiente.
 SSPD tiene series mensuales aptas para el análisis disponible; XM usa una adaptación de demanda.
-El archivo `bootstrap/bootstrap_categorias.csv` calcula intervalos del 95 % para la tasa de señales
+El archivo `../3.7/bootstrap/bootstrap_categorias.csv` calcula intervalos del 95 % para la tasa de señales
 de CART01 remuestreando series dentro de cada categoría. La ejecución tiene 105 categorías:
 EPM (8), CHEC (4), SSPD (92) y XM (1). XM y una categoría de SSPD tienen una sola serie, por lo
 que sus intervalos son degenerados.

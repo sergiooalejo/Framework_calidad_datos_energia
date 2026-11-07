@@ -35,7 +35,7 @@ def dato(nombre):
 
 MENSUAL = "sspd_ebby-cjha_mensual.csv"
 DETALLE = "sspd_ebby-cjha_detalle.csv"
-CARTAS = AQUI / "SSPD" / "cartas_log_sspd.csv"
+CARTAS = AQUI.parent / "3.5" / "SSPD" / "cartas_log_sspd.csv"
 
 AUSENTES = {"", "N/A", "NA", "null", "None"}
 
