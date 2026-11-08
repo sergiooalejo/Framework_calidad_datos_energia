@@ -1,0 +1,232 @@
+{
+  "entradas": {
+    "EPM": {
+      "ruta": "fuentes_datos/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv",
+      "sha256": "98acd40e8d2b92433b1dfc60422228f26f53ab331fd600631f03f830e7ba38f4"
+    },
+    "CHEC": {
+      "ruta": "fuentes_datos/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv",
+      "sha256": "05865b094a4cc4eb9f822ed2af686a11a8905d6606f40bb554f5bb5258e3c53f"
+    },
+    "SSPD": {
+      "ruta": "fuentes_datos/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv",
+      "sha256": "c0beb6d6800de043e91dfd0def5ee619201a579c4013fd65e9255d6e1479d625"
+    },
+    "XM": {
+      "ruta": "fuentes_datos/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv",
+      "sha256": "56db2e52a430619794277c3d0682c5e815318166541b7132834946566ab7c569"
+    }
+  },
+  "archivos": [
+    {
+      "archivo": "calibracion_resumen.csv",
+      "bytes": 1775,
+      "sha256": "b953168051e5505c2654c5b940443427f0cd123aa87b237715f8781ee96162b8"
+    },
+    {
+      "archivo": "calibracion_X.csv",
+      "bytes": 85507,
+      "sha256": "ee4e3914879f0b4cba9e29241232cbaaf4586f0177b15c67f48618bb77fd1629"
+    },
+    {
+      "archivo": "calibrar_regla_sistemica.py",
+      "bytes": 20154,
+      "sha256": "4b00f27895c51f3f4eddfea54368348d887010817f5fcd7f48c262d7a5d105b1"
+    },
+    {
+      "archivo": "catalogo_alertas_sistemicas.csv",
+      "bytes": 31151,
+      "sha256": "b34c4c735882340f89960a1e32d8d15cd306681dc0302fbf97d22e96eb50f258"
+    },
+    {
+      "archivo": "composicion_alertas_meses_plan.csv",
+      "bytes": 8456,
+      "sha256": "2e9aab760d9f2b7f928a0976c46dcab425e135004f2d64739fa79a92756bdf6d"
+    },
+    {
+      "archivo": "configuracion.json",
+      "bytes": 4327,
+      "sha256": "c84920912bc3d86dfcee40289232a5d7cde9a98c523d6f9a43c6c7ef117cb6a6"
+    },
+    {
+      "archivo": "contraste_componentes.csv",
+      "bytes": 3094,
+      "sha256": "2b0b230342bf4714cf3a00ce239368862a15695f600a3008a27fd706ae20c3cd"
+    },
+    {
+      "archivo": "costo_enmascaramiento_4_2.csv",
+      "bytes": 3618,
+      "sha256": "245fcf769f67d00389939402512cfaa1afe5e4634f7262c575fb54f3aa43133d"
+    },
+    {
+      "archivo": "efecto_regla_sobre_alertas_reales.csv",
+      "bytes": 10060,
+      "sha256": "8b0ae01e10e34f2a96cf4c998b4543d2ec0f253836f0a779563e7599b3437465"
+    },
+    {
+      "archivo": "evidencia_externa/epm_tarifas_energia_2020-01.pdf",
+      "bytes": 148648,
+      "sha256": "49f635522bb31f68ba5270492c835eacb5e3c0acd72d9c1d368690adc09ee4b3"
+    },
+    {
+      "archivo": "evidencia_externa/epm_tarifas_energia_2020-02.pdf",
+      "bytes": 146935,
+      "sha256": "f6b6bf5f35444406f4c7c94614b906b638aca4f8ecf5d4261cf74715621232ff"
+    },
+    {
+      "archivo": "evidencia_externa/epm_tarifas_energia_2020-06.pdf",
+      "bytes": 152125,
+      "sha256": "303725419a6355a3c0545e60bb642590acf87e05c4b26279b561ddec02f8d3bf"
+    },
+    {
+      "archivo": "evidencia_externa/epm_tarifas_energia_2020-07.pdf",
+      "bytes": 330823,
+      "sha256": "ac74b07c4d569596b59cc0b67221e84d5dd10eb17213fc8790a3d3872d27efc4"
+    },
+    {
+      "archivo": "evidencia_externa/epm_tarifas_energia_2021-06.pdf",
+      "bytes": 328123,
+      "sha256": "3259037dd1181bace641eb1c2a99d202f8004053e316c85a4688650093fa1d09"
+    },
+    {
+      "archivo": "evidencia_externa/epm_tarifas_energia_2021-07.pdf",
+      "bytes": 328162,
+      "sha256": "0a4209952eee22281ad1c601a692ba4165fdfa84309418cb77aa210500303679"
+    },
+    {
+      "archivo": "evidencia_externa/referencias_documentales.csv",
+      "bytes": 6665,
+      "sha256": "6bbf1325402c9ab11044dfbce1fe35375c247b5c6edc2be34492c82e2db52faa"
+    },
+    {
+      "archivo": "evidencia_externa/tarifas_epm_publicadas.csv",
+      "bytes": 2410,
+      "sha256": "a7c3500186dd359ba2a110bb302e246ef670c278b2265b6b055e7d22824d07a9"
+    },
+    {
+      "archivo": "figuras/01_fraccion_mensual_epm.pdf",
+      "bytes": 32875,
+      "sha256": "62f68c3a35cc6619d937895cf97e11fd4c443b01d1e192e5a90a6ec4123c863b"
+    },
+    {
+      "archivo": "figuras/01_fraccion_mensual_epm.png",
+      "bytes": 158786,
+      "sha256": "741b80f02fe114b71657024790aeac20ce3a98425fb0cc1f168c69d31018023d"
+    },
+    {
+      "archivo": "figuras/01_fraccion_mensual_epm.svg",
+      "bytes": 82699,
+      "sha256": "b25c24bbefa7c9054bd94edd995f4cd5bdb531662f280301cf058040c44a9ccc"
+    },
+    {
+      "archivo": "figuras/02_fraccion_mensual_chec_sspd.pdf",
+      "bytes": 35783,
+      "sha256": "1a7be66bca5cf858d34d897a013f48cedae75bf1a4ca9431efd276ed6761f090"
+    },
+    {
+      "archivo": "figuras/02_fraccion_mensual_chec_sspd.png",
+      "bytes": 105196,
+      "sha256": "58740a068c21ec68a302e83244da9989c44ac95dd48b5f186cc081f1dcf037e2"
+    },
+    {
+      "archivo": "figuras/02_fraccion_mensual_chec_sspd.svg",
+      "bytes": 136490,
+      "sha256": "f8ba57b22bd088488c121f4825f513a082538699f808e9fb91ab5f9dc3372262"
+    },
+    {
+      "archivo": "figuras/03_calibracion_X.pdf",
+      "bytes": 31793,
+      "sha256": "38a4996b46112e9464870b2ec1bbc22b2176a774da151d25097e011066bde9c8"
+    },
+    {
+      "archivo": "figuras/03_calibracion_X.png",
+      "bytes": 99501,
+      "sha256": "f8ac050a9a477dfbbdce669845fd96aa40510d17ae0f0a3e418ac3833e92b89b"
+    },
+    {
+      "archivo": "figuras/03_calibracion_X.svg",
+      "bytes": 80918,
+      "sha256": "ae952820d1d88d1e31abb8967ee956ed7455b78011e29516e38cc30a0056ea88"
+    },
+    {
+      "archivo": "figuras/04_contraste_publicaciones_epm.pdf",
+      "bytes": 36883,
+      "sha256": "9c2268ec268279f00a8b85c94bd49e67fe45c3da1c2e628e9159028fae210b81"
+    },
+    {
+      "archivo": "figuras/04_contraste_publicaciones_epm.png",
+      "bytes": 158342,
+      "sha256": "3fd44f159b4c437f7d0472a62a8d16abbd27af55ed13a4447b09906f7f751415"
+    },
+    {
+      "archivo": "figuras/04_contraste_publicaciones_epm.svg",
+      "bytes": 116449,
+      "sha256": "70f35ce7fa05c3c13e995f31a2de4d028e126edeaae4c5e3cc64c9a129dc840e"
+    },
+    {
+      "archivo": "fracciones_mensuales.csv",
+      "bytes": 103387,
+      "sha256": "531202723d50ff3ccc1ec202e6ffdbf6879303810e3be63fdb8dd99735f5a871"
+    },
+    {
+      "archivo": "INFORME_REGLA_SISTEMICA.md",
+      "bytes": 22053,
+      "sha256": "3ec0e227952c18e76fafc729408f6657cbec58ef0857b8781750c9e1bb265c2c"
+    },
+    {
+      "archivo": "informe_regla_sistemica.py",
+      "bytes": 35269,
+      "sha256": "8fa4859d613a8a06e1de5c4dc62bf4bfa4a43eea448c49fb657e2dacd6003e96"
+    },
+    {
+      "archivo": "inventario_series_por_variante.csv",
+      "bytes": 297,
+      "sha256": "dac694a61793311d2514966575df4443b32e5f14813cf17577518548b2cd71a7"
+    },
+    {
+      "archivo": "README.md",
+      "bytes": 3976,
+      "sha256": "a8276b3865f8bd2776bb09a30b58154389e3570fde6a83c52bbf0835aac17ced"
+    },
+    {
+      "archivo": "regla_sistemica.py",
+      "bytes": 10855,
+      "sha256": "30e5daae75dc0d859faa28866261509d1542c45aa33d41b5ca0306b5d71f91c0"
+    },
+    {
+      "archivo": "reproduccion_hito2.csv",
+      "bytes": 1039,
+      "sha256": "38ecbcfa336c38f39923d5080151e6b728140dfa6bb5031da81c14f86783a97f"
+    },
+    {
+      "archivo": "tamano_componentes_epm.csv",
+      "bytes": 53699,
+      "sha256": "fda415a9638cae94b5e1d83a6f94435ac3fef83ac0f1cfa9ec4424a136436a0a"
+    },
+    {
+      "archivo": "test_regla_sistemica.py",
+      "bytes": 7282,
+      "sha256": "b31978d04a999ce8fc9fe24e97a37c96d04868845f83b0236fab6b444bd527d9"
+    },
+    {
+      "archivo": "verificacion.json",
+      "bytes": 1143,
+      "sha256": "68414ffd6bb296e012196d6aeb8ab9601cfc4b84e08d01ced1ed807c3f0719d8"
+    },
+    {
+      "archivo": "verificacion_suma_componentes.csv",
+      "bytes": 885,
+      "sha256": "149d074d1cd9fe6fcde4d3eaef31ed7ccc5b0ae4485c192bffe78baae1112c71"
+    },
+    {
+      "archivo": "verificacion_transcripcion_pdf.csv",
+      "bytes": 7044,
+      "sha256": "6d8c65c1f7185763d6c28ee62d95a4b504593a236b182556f90dc7008b53252c"
+    },
+    {
+      "archivo": "verificar_resultados.py",
+      "bytes": 10928,
+      "sha256": "51e5285523ff0506b8162276675e943aefcc8efa8d563eec421fa8d9c8e66b77"
+    }
+  ]
+}

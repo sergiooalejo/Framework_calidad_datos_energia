@@ -1,0 +1,78 @@
+{
+  "fecha_cliente": "2026-11-07",
+  "ventanas_referencia": [
+    24,
+    36
+  ],
+  "metodos": [
+    "IMR_clasica",
+    "MAD_3sigma"
+  ],
+  "protocolo": "origen móvil: el mes m se evalúa con los W cambios logarítmicos anteriores; cambios solo entre meses consecutivos",
+  "regla": "mes sistémico si series_con_alerta/series_evaluadas > X y series_evaluadas >= 10",
+  "X_malla": [
+    0.05,
+    0.8,
+    "paso 0,01"
+  ],
+  "X_trabajo_propuesto": 0.25,
+  "estado_X_trabajo": "propuesta; no aprobada por el director",
+  "meses_del_plan": [
+    "2020-02",
+    "2020-07",
+    "2021-07"
+  ],
+  "N_MIN": 10,
+  "etiquetas_EPM": {
+    "canonicas": "catálogo de variantes del Hito 2 (3.3/insumos_hito2/02_catalogo_variantes.csv), copia de trabajo",
+    "originales": "etiquetas tal como están en el CSV (protocolo 4.1/4.2)"
+  },
+  "variantes_calibradas": "EPM canónicas y originales × W 24 y 36 × I-MR clásica y MAD 3σ, más la reproducción del Hito 2 (origen fijo, diferencia absoluta, 83 series)",
+  "MAD_cero": "señal si el cambio difiere de la mediana (como 4.1 y 4.2)",
+  "entradas": {
+    "EPM": {
+      "ruta": "fuentes_datos/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv",
+      "sha256": "98acd40e8d2b92433b1dfc60422228f26f53ab331fd600631f03f830e7ba38f4"
+    },
+    "CHEC": {
+      "ruta": "fuentes_datos/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv",
+      "sha256": "05865b094a4cc4eb9f822ed2af686a11a8905d6606f40bb554f5bb5258e3c53f"
+    },
+    "SSPD": {
+      "ruta": "fuentes_datos/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv",
+      "sha256": "c0beb6d6800de043e91dfd0def5ee619201a579c4013fd65e9255d6e1479d625"
+    },
+    "XM": {
+      "ruta": "fuentes_datos/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv",
+      "sha256": "56db2e52a430619794277c3d0682c5e815318166541b7132834946566ab7c569"
+    }
+  },
+  "cuarentena_EPM": {
+    "ruta": "desarrollo_puntos/3.7/EPM/cuarentena_registros.csv",
+    "sha256": "d91f1d5ba85558f90955c5b225fff4c447739090f4e49e150bc37eafb7a0de15"
+  },
+  "dependencias": {
+    "0_Recomendaciones_profesor/plan_hitos_3-6_detallado.txt": "1d04173ff2951d739bd8c2b3346cfcf34627fdeb3f4c025f30908a401e39857c",
+    "desarrollo_puntos/3.3/insumos_hito2/05_alertas_imr_reales.csv": "b29bf9ba1a26866cc2572667b27ef2a76b028cc62f7b4a96d83625f9781f9c2d",
+    "desarrollo_puntos/3.3/insumos_hito2/00_resumen.json": "c720d89c4847bef7daa07ffe3137b558ce6345e20e554a98e366ec36a2f55a39",
+    "desarrollo_puntos/3.3/insumos_hito2/02_catalogo_variantes.csv": "08d3d6d93d530a378f2331755c7ef1d008b8c9197a053ce249028e0cd763eee4",
+    "desarrollo_puntos/4.2/efecto_regla_sistemica_inyecciones.csv": "c0e44a9782979c5da5c95399511d99d150cdc98a3d3834a14e8f0d14946510bd",
+    "desarrollo_puntos/4.2/analisis_sensibilidad.py": "42a00763e496f29d671964846bce07672272be74ba3580a8680d813e47303897",
+    "desarrollo_puntos/4.1/zscore_robusto.py": "13ffe93652fd0265f799d1cc28e03251f797079e6e87c76fefe91b9858f51798"
+  },
+  "evidencia_externa": {
+    "desarrollo_puntos/4.4/evidencia_externa/epm_tarifas_energia_2020-01.pdf": "49f635522bb31f68ba5270492c835eacb5e3c0acd72d9c1d368690adc09ee4b3",
+    "desarrollo_puntos/4.4/evidencia_externa/epm_tarifas_energia_2020-02.pdf": "f6b6bf5f35444406f4c7c94614b906b638aca4f8ecf5d4261cf74715621232ff",
+    "desarrollo_puntos/4.4/evidencia_externa/epm_tarifas_energia_2020-06.pdf": "303725419a6355a3c0545e60bb642590acf87e05c4b26279b561ddec02f8d3bf",
+    "desarrollo_puntos/4.4/evidencia_externa/epm_tarifas_energia_2020-07.pdf": "ac74b07c4d569596b59cc0b67221e84d5dd10eb17213fc8790a3d3872d27efc4",
+    "desarrollo_puntos/4.4/evidencia_externa/epm_tarifas_energia_2021-06.pdf": "3259037dd1181bace641eb1c2a99d202f8004053e316c85a4688650093fa1d09",
+    "desarrollo_puntos/4.4/evidencia_externa/epm_tarifas_energia_2021-07.pdf": "0a4209952eee22281ad1c601a692ba4165fdfa84309418cb77aa210500303679",
+    "desarrollo_puntos/4.4/evidencia_externa/referencias_documentales.csv": "6bbf1325402c9ab11044dfbce1fe35375c247b5c6edc2be34492c82e2db52faa",
+    "desarrollo_puntos/4.4/evidencia_externa/tarifas_epm_publicadas.csv": "a7c3500186dd359ba2a110bb302e246ef670c278b2265b6b055e7d22824d07a9"
+  },
+  "versiones": {
+    "python": "3.12.10",
+    "numpy": "2.5.4",
+    "pandas": "2.3.3"
+  }
+}
