@@ -1,0 +1,182 @@
+{
+  "entradas": {
+    "EPM": {
+      "ruta": "fuentes_datos/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv",
+      "sha256": "98acd40e8d2b92433b1dfc60422228f26f53ab331fd600631f03f830e7ba38f4"
+    },
+    "CHEC": {
+      "ruta": "fuentes_datos/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv",
+      "sha256": "05865b094a4cc4eb9f822ed2af686a11a8905d6606f40bb554f5bb5258e3c53f"
+    },
+    "SSPD": {
+      "ruta": "fuentes_datos/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv",
+      "sha256": "c0beb6d6800de043e91dfd0def5ee619201a579c4013fd65e9255d6e1479d625"
+    },
+    "XM": {
+      "ruta": "fuentes_datos/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv",
+      "sha256": "56db2e52a430619794277c3d0682c5e815318166541b7132834946566ab7c569"
+    }
+  },
+  "archivos": [
+    {
+      "archivo": "cobertura_experimento.csv",
+      "bytes": 710,
+      "sha256": "ec7ff0e68b003890d38f6cbde4467606265781246777ea5b7af9046f0d45282a"
+    },
+    {
+      "archivo": "configuracion.json",
+      "bytes": 4684,
+      "sha256": "905439f2a1f5f6dc327ffe91f92e49830c9ac847986a924feccbb1805158837f"
+    },
+    {
+      "archivo": "curva_deteccion.csv",
+      "bytes": 135212,
+      "sha256": "4d1753198cecb371fb3f130f3315796a7d6bea0095d4efa7249af83fe2ee673b"
+    },
+    {
+      "archivo": "deteccion_por_tipo_tasa_igualada.csv",
+      "bytes": 167193,
+      "sha256": "62e651d2709a3d8607c0b4867cd06b7569e0a3456d4c2e0e798993d9454ba123"
+    },
+    {
+      "archivo": "diferencias_vs_IMR.csv",
+      "bytes": 88475,
+      "sha256": "8e439be8b62467012cc6901854e1c78bed5feeca5194950f57a970369a814f4e"
+    },
+    {
+      "archivo": "ejecuciones.csv",
+      "bytes": 833,
+      "sha256": "17b942b5de173cf6daddc8442cdd7ebc09bae5cb80a186c5c5116d5cb34dec62"
+    },
+    {
+      "archivo": "experimento_tasa_igualada.py",
+      "bytes": 35865,
+      "sha256": "bea555f2197acaf7e217484bc495567a0264d3ffdee9521972d54bc2e37c0a7b"
+    },
+    {
+      "archivo": "figuras/01_curvas_deteccion.pdf",
+      "bytes": 39257,
+      "sha256": "a8c9c1aaf2d11f70fee316267d7e9c6b05b7047476152ddb91a178b7790ca2d4"
+    },
+    {
+      "archivo": "figuras/01_curvas_deteccion.png",
+      "bytes": 161479,
+      "sha256": "81f093aafb9e65108ca08c036e1140fa8f214bbb15c64dc464bd64ea917583b1"
+    },
+    {
+      "archivo": "figuras/01_curvas_deteccion.svg",
+      "bytes": 123487,
+      "sha256": "b8cd1638c5740ab428140abc33827a0a9f6e3e2f440a654e44933aa45993a850"
+    },
+    {
+      "archivo": "figuras/02_f1_por_metodo.pdf",
+      "bytes": 37507,
+      "sha256": "b866358ed78918c83f0e30e332aae475b1ef8ac43b40090304a2e09c8dc8624b"
+    },
+    {
+      "archivo": "figuras/02_f1_por_metodo.png",
+      "bytes": 110453,
+      "sha256": "a11b6ee045d4d57211ddb0447e2d025009c67389579cd50102d3a1fcb9d6b010"
+    },
+    {
+      "archivo": "figuras/02_f1_por_metodo.svg",
+      "bytes": 98089,
+      "sha256": "8669eb421c24c46ab7fbcd711c1c18c87b37781489fbdcb2d42bf24aae53f33d"
+    },
+    {
+      "archivo": "figuras/03_recall_por_tipo.pdf",
+      "bytes": 40557,
+      "sha256": "e8f9aa34f2d3bf5812a92b48f3e2fe0a0d3fc02532ef77d54e4662e22f5eb8bd"
+    },
+    {
+      "archivo": "figuras/03_recall_por_tipo.png",
+      "bytes": 141974,
+      "sha256": "4e3f047286c89d56a1eec8ba73a74ed670e44b782238c8999e86a0a982667a8a"
+    },
+    {
+      "archivo": "figuras/03_recall_por_tipo.svg",
+      "bytes": 119137,
+      "sha256": "2b49622a485a148267124e252940be20b890697acbdfdb1ec134d86099c10e6c"
+    },
+    {
+      "archivo": "INFORME_METRICAS.md",
+      "bytes": 25956,
+      "sha256": "f899f841c46f5eba51d2246c66492ed2eb8b20fb393e8edcef54eb8db665ecc6"
+    },
+    {
+      "archivo": "informe_metricas.py",
+      "bytes": 32305,
+      "sha256": "0c7005f1dc88248ef0821d46c8fcacdec0d3ee8b5b304fe5bb8044cb4dd42c00"
+    },
+    {
+      "archivo": "inyecciones_omitidas.csv",
+      "bytes": 442,
+      "sha256": "1d2bb06a585c90ba9609cedd00fcda5661db58fdfcf6c9a36aca253c9ae975fd"
+    },
+    {
+      "archivo": "metricas_base.py",
+      "bytes": 5907,
+      "sha256": "3a1ee53dc5e7039c09fcc36342e2267dcb73d5086827582314561b1a68deb2c7"
+    },
+    {
+      "archivo": "metricas_globales.csv",
+      "bytes": 178440,
+      "sha256": "1994af1f5cc567fe57cd76f0b72624650a60fa5352d9a2509815865fc6a4ef6d"
+    },
+    {
+      "archivo": "pruebas_por_tipo.csv",
+      "bytes": 1658,
+      "sha256": "06d5e8991508fee782df5a6d62393591ae23abfae460f4add047626720c67a7d"
+    },
+    {
+      "archivo": "puntajes_inyecciones.csv.gz",
+      "bytes": 4188896,
+      "sha256": "a08489cfc71ff518a8e5fd67e27730b0c5259c9b0149d76e2449bf068302932b"
+    },
+    {
+      "archivo": "puntajes_reales.csv.gz",
+      "bytes": 326226,
+      "sha256": "206cb4580799428486b1ed22d2c6c3d193f3703f003772e0e090c2ea5cb9e691"
+    },
+    {
+      "archivo": "puntos_operativos_nativos.csv",
+      "bytes": 15862,
+      "sha256": "0ac96a502657ab2536e8e278b6cfd708578f1188ec4a5a5147d72cc22abfe0cc"
+    },
+    {
+      "archivo": "README.md",
+      "bytes": 3947,
+      "sha256": "fd385666d03c7c4464fefde31ed371b942e571a65bfc92a7a23e4663b94c98ab"
+    },
+    {
+      "archivo": "sorteo_sin_reemplazo.csv",
+      "bytes": 41913,
+      "sha256": "3597719aa4f035dbf102389330bf0432282d4750e7aa8326d23802089f4f9e9a"
+    },
+    {
+      "archivo": "test_metricas.py",
+      "bytes": 5992,
+      "sha256": "469c06708f2473a5df3c5186aa34f4ee011b7de2355fdd750a8a194791bed7fa"
+    },
+    {
+      "archivo": "umbrales_tasa_igualada.csv",
+      "bytes": 15681,
+      "sha256": "a2f058ea4ec11525cc3089400b98628a09b82388ab5cb5b02c6a8c6959529d7c"
+    },
+    {
+      "archivo": "verificacion.json",
+      "bytes": 951,
+      "sha256": "fe2abcaa8caf8422d836e03ad5623a0ccfe2c9a132a07a8810be13f2326da603"
+    },
+    {
+      "archivo": "verificacion_contra_4_2.json",
+      "bytes": 3239,
+      "sha256": "3258c4ec9077feab4a4da7faae7a06a50d49aa870576f339917f1ae5bce88181"
+    },
+    {
+      "archivo": "verificar_resultados.py",
+      "bytes": 9897,
+      "sha256": "394de37d111fa36393e2baf52534ae17d44cb8690a8d815fa185682e79d439ae"
+    }
+  ]
+}

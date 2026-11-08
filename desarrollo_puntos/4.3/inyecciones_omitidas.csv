@@ -1,0 +1,8 @@
+﻿fuente,tipo,motivo,casos
+EPM,otra_medida,sin_otra_medida_positiva_distinta,165
+CHEC,otra_medida,sin_otra_medida_positiva_distinta,1056
+CHEC,valor_no_actualizado,la_alteracion_no_cambia_el_valor,57
+SSPD,otra_medida,sin_otra_medida_positiva_distinta,126
+SSPD,valor_no_actualizado,la_alteracion_no_cambia_el_valor,180
+XM,otra_medida,sin_otra_medida_positiva_distinta,11
+EPM_canonicas,otra_medida,sin_otra_medida_positiva_distinta,363

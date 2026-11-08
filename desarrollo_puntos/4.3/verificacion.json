@@ -1,0 +1,24 @@
+{
+  "estado": "correcto",
+  "fecha_cliente": "2026-11-07",
+  "comprobaciones": [
+    "Datasets, cuarentena y dependencias conservan sus huellas",
+    "Umbrales y alertas reales reproducidos desde puntajes_reales; nunca superan la tasa objetivo",
+    "Detecciones por tipo reproducidas desde puntajes_inyecciones (casos, aciertos y recall exactos)",
+    "720 filas de métricas globales: macro, tasa de alerta, precisión y F1 recalculados",
+    "Recall t o t+1 >= t; curvas no decrecientes; XM y LOF degenerado marcados sin IC ni interpretación",
+    "Sorteo con meses distintos; banderas nativas idénticas a 4.2 en series con escala positiva",
+    "12 pruebas automáticas de propiedades: correctas"
+  ],
+  "fuentes": [
+    "EPM",
+    "CHEC",
+    "SSPD",
+    "XM",
+    "EPM_canonicas"
+  ],
+  "filas_metricas_globales": 720,
+  "observaciones_reales_puntuadas": 8328,
+  "casos_puntuados": 43846,
+  "pruebas_automaticas": 12
+}
