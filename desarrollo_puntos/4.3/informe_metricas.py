@@ -401,7 +401,9 @@ es 0 % y la precisión sale 100 % por construcción; **no es interpretable**, se
 
 {sections['XM']}
 
-![F1 por método](figuras/02_f1_por_metodo.png)
+*Figura regenerable:* `python desarrollo_puntos/4.3/informe_metricas.py` crea
+`figuras/02_f1_por_metodo.png`. Las figuras no se versionan; la tabla anterior contiene sus
+valores auditables.
 
 ### Diferencias pareadas frente a I-MR
 
@@ -440,14 +442,16 @@ F1 a tasa del 5 %, prevalencia supuesta del 5 %, horizonte t:
 
 ## 4. Curvas de detección contra tasa de alerta
 
-![Curvas de detección](figuras/01_curvas_deteccion.png)
+*Figura regenerable:* `informe_metricas.py` crea `figuras/01_curvas_deteccion.png`; los datos
+auditables permanecen en [curva_deteccion.csv](curva_deteccion.csv).
 
 Datos en [curva_deteccion.csv](curva_deteccion.csv) (40 tasas entre 0,25 y 30 %). Las curvas no tienen IC: son el recall
 macro exhaustivo en cada punto. Se omiten los puntos con menos de 5 alertas esperadas y LOF en CHEC.
 
 ## 5. Recall por tipo de error
 
-![Recall por tipo](figuras/03_recall_por_tipo.png)
+*Figura regenerable:* `informe_metricas.py` crea `figuras/03_recall_por_tipo.png`; los valores
+auditables permanecen en [deteccion_por_tipo_tasa_igualada.csv](deteccion_por_tipo_tasa_igualada.csv).
 
 Tabla comparativa con IC 95 % por técnica y tipo de error (horizonte t, tasa 5 %). El resto de tasas y el horizonte
 t o t+1 están en [deteccion_por_tipo_tasa_igualada.csv](deteccion_por_tipo_tasa_igualada.csv).

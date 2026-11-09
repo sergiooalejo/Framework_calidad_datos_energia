@@ -24,7 +24,9 @@ No modifica 4.1 ni 4.2; solo escribe en esta carpeta.
 | [verificar_resultados.py](verificar_resultados.py), [verificacion.json](verificacion.json), [verificacion_contra_4_2.json](verificacion_contra_4_2.json) | Recalcula umbrales, detecciones, FPR, precisión y F1 desde los puntajes; compara las banderas nativas con las de 4.2. |
 | [configuracion.json](configuracion.json), [manifiesto_resultados.json](manifiesto_resultados.json) | Protocolo, semilla, versiones y huellas de entradas y salidas. |
 
-En [figuras](figuras/) hay tres gráficos en PNG, SVG y PDF.
+El script `informe_metricas.py` genera tres gráficos en `figuras/`, en PNG, SVG y PDF. La carpeta
+no se versiona porque son artefactos regenerables; se debe ejecutar el script con las dependencias
+registradas en `configuracion.json` para visualizarlos.
 XM tiene una sola serie y 12 observaciones: se reporta como descriptivo y no es interpretable a tasa igualada.
 LOF queda marcado como degenerado en CHEC (entrenamiento con muchos duplicados exactos).
 La fuente `EPM_canonicas` es una variante de sensibilidad con las equivalencias de etiquetas del Hito 2 (11 equivalencias aprobadas internamente): no sustituye a EPM y no existe en 4.2.

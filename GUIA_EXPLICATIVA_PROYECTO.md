@@ -737,3 +737,20 @@ qué fórmula, bajo qué supuestos, con qué evidencia y con qué limitaciones.
 El Hito 4 añade dos reglas de honestidad: **una señal estadística no es un error de dato**, y **un mes con muchas alertas no es un
 cambio regulatorio hasta compararlo con la publicación real**. Por eso el proyecto reporta alertas “sin error conocido”,
 prevalencias supuestas, intervalos por categorías y el estado de cada pieza de evidencia (leída, no verificada, no localizada).
+
+## 26. Revisión de integridad de los Hitos 3 y 4
+
+La revisión más reciente está en [REVISION_HITOS_3_4.md](desarrollo_puntos/3_documentacion_general/REVISION_HITOS_3_4.md).
+Comprueba que la estructura sigue las actividades 3.1–3.7 y 4.1–4.6, que los entregables tienen índice y que la
+documentación no presenta como definitivos los resultados provisionales.
+
+Hay dos ideas prácticas importantes:
+
+1. Las decisiones que requieren director o equipo están reunidas únicamente en
+   [PENDIENTES_APROBACION_HITO3.md](desarrollo_puntos/3_documentacion_general/PENDIENTES_APROBACION_HITO3.md),
+   incluido el texto que falta incorporar en el documento oficial de tesis.
+2. Las figuras de 4.2, 4.3 y 4.4 se generan desde los CSV y scripts, pero no se almacenan en Git. La revisión ejecutó y
+   validó 4.2 (9 pruebas), 4.3 (12) y 4.4 (10) con sus librerías científicas; para abrir las figuras en otro equipo hay que
+   volver a ejecutar los scripts. Esta es una limitación técnica de reproducibilidad del entorno, no una decisión
+   metodológica pendiente del director. Los entornos para reproducirlos están formalizados en
+   [requirements/README.md](requirements/README.md); un contenedor o `pyproject.toml` puede añadirse en el Hito 5.

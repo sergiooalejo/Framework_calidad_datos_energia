@@ -20,6 +20,7 @@ Los documentos generales quedan aquí porque abarcan varios puntos:
 - [Plan de hitos en Markdown](plan_hitos_3-6_detallado.md), que incluye también los hitos 4 a 6.
 - [Documento de cierre](CIERRE_HITO3.md), con sus límites y pendientes existentes.
 - [Pendientes de aprobación de Hitos 3 y 4](PENDIENTES_APROBACION_HITO3.md).
+- [Revisión de integridad de Hitos 3 y 4](REVISION_HITOS_3_4.md), con verificaciones, hallazgos y límites técnicos.
 - [Referencia anterior de roles y umbrales](VALIDACION_ROLES_UMBRALES.md).
 - [Contexto previo](CONTEXTO_PREVIO_HITO3.md), conservado con su contenido histórico.
 

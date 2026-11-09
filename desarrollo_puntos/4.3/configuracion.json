@@ -58,35 +58,35 @@
   "entradas": {
     "EPM": {
       "ruta": "fuentes_datos/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv",
-      "sha256": "98acd40e8d2b92433b1dfc60422228f26f53ab331fd600631f03f830e7ba38f4"
+      "sha256": "b974a37a171b9178476fbd2baba21470e8845076af105ef9c178e80690f09920"
     },
     "CHEC": {
       "ruta": "fuentes_datos/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv",
-      "sha256": "05865b094a4cc4eb9f822ed2af686a11a8905d6606f40bb554f5bb5258e3c53f"
+      "sha256": "1f34f85ada431220a39b2bacf10a1dd09bd440b3e7eab61b61d53094508af08c"
     },
     "SSPD": {
       "ruta": "fuentes_datos/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv",
-      "sha256": "c0beb6d6800de043e91dfd0def5ee619201a579c4013fd65e9255d6e1479d625"
+      "sha256": "cc92ffc4f89ecab6336304feace83e87b049a2e488e17d1e88c2851e784becbe"
     },
     "XM": {
       "ruta": "fuentes_datos/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv",
-      "sha256": "56db2e52a430619794277c3d0682c5e815318166541b7132834946566ab7c569"
+      "sha256": "fe51fd1cdcbd229ef66b44e81d5312d0f3537ce237873bf52d4a25397f48e975"
     }
   },
   "cuarentena_EPM": {
     "ruta": "desarrollo_puntos/3.7/EPM/cuarentena_registros.csv",
-    "sha256": "d91f1d5ba85558f90955c5b225fff4c447739090f4e49e150bc37eafb7a0de15"
+    "sha256": "9db4fb8622b152923b589aa49afde94e64932e2f26e4a3bce13ab6031c90bc35"
   },
   "dependencias": {
-    "0_Recomendaciones_profesor/plan_hitos_3-6_detallado.txt": "1d04173ff2951d739bd8c2b3346cfcf34627fdeb3f4c025f30908a401e39857c",
-    "desarrollo_puntos/4.2/analisis_sensibilidad.py": "42a00763e496f29d671964846bce07672272be74ba3580a8680d813e47303897",
-    "desarrollo_puntos/4.2/inyecciones_detalle.csv.gz": "1558af7cca6bbff1ef28e056c729541096c3cadd34a6f90d08740215dc1def44",
-    "desarrollo_puntos/4.1/zscore_robusto.py": "13ffe93652fd0265f799d1cc28e03251f797079e6e87c76fefe91b9858f51798",
-    "desarrollo_puntos/3.3/insumos_hito2/02_catalogo_variantes.csv": "08d3d6d93d530a378f2331755c7ef1d008b8c9197a053ce249028e0cd763eee4",
-    "desarrollo_puntos/4.4/regla_sistemica.py": "30e5daae75dc0d859faa28866261509d1542c45aa33d41b5ca0306b5d71f91c0"
+    "0_Recomendaciones_profesor/plan_hitos_3-6_detallado.txt": "048aa5be0109314c1c528bba202957687dfbfce7ea96aac5f5c272338d3ec45b",
+    "desarrollo_puntos/4.2/analisis_sensibilidad.py": "07bb22007e9aa9e6a650f51118029dcae246e4882e48e88f5de3562217d91df7",
+    "desarrollo_puntos/4.2/inyecciones_detalle.csv.gz": "55863fe735747dacc62c64d973efbaa141da34664697da7cedf95d4d07cee49d",
+    "desarrollo_puntos/4.1/zscore_robusto.py": "f4fa4941169ba854c1b3e4fd5d270070338181c1720d04172e0b1e23d56d3506",
+    "desarrollo_puntos/3.3/insumos_hito2/02_catalogo_variantes.csv": "c45cf2504c74db5a4933f61b225e060442898a0728d511c4cceaf2ca2153064b",
+    "desarrollo_puntos/4.4/regla_sistemica.py": "82078cf0a6e12d6540c519e94b04a5bf567894acb448c2153da25d40c8326a34"
   },
   "versiones": {
-    "python": "3.12.10",
+    "python": "3.14.6",
     "numpy": "2.5.4",
     "pandas": "2.3.3",
     "sklearn": "1.9.1"

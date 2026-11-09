@@ -85,6 +85,7 @@ El criterio de cierre solicita dos descargas. Debe aprobarse obtener una segunda
 | Scorecard 4.5 | Generado para 4 fuentes × 8 dimensiones, pero permanece provisional | El scorecard resume resultados que dependen de umbrales y evidencia aún no aprobados. | Aprobar umbrales y evidencia para convertirlo en definitivo |
 | Resultados 4.6 | Niveles explícitos para EPM/CHEC; SSPD y XM quedan `No_aplica` | Forzar una clasificación de nivel donde no existe produciría una comparación artificial. | Aceptar esta delimitación y evitar equivalencias no sustentadas |
 | Evidencia regulatoria | Falta lectura completa de CREG 015/2018, 152/2020, 003/2021 y resoluciones particulares de EPM | Una alerta estadística no demuestra una causa regulatoria; se necesita respaldo documental para afirmarlo. | Confirmar alcance documental y si la consulta formal queda para Hito 6 |
+| Incorporación en la tesis | El plan exige actualizar los apartados 3.1.5 y 5.6.4 del anteproyecto/metodología; el repositorio contiene la evidencia técnica, pero no el documento oficial editable de la tesis | La evidencia implementada debe reflejarse en el texto que se entregará y sustentará, sin afirmar como aprobado lo que sigue provisional. | Indicar el documento y responsable que integrará el texto, y aprobar su versión final |
 
 Los resultados de 4.2–4.6 no deben presentarse como aprobación de un umbral, método o causa
 regulatoria. Son evidencia para tomar estas decisiones.

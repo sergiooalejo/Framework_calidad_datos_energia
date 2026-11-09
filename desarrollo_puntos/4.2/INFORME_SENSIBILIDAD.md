@@ -281,4 +281,6 @@ python desarrollo_puntos/4.2/verificar_resultados.py
 `configuracion.json` fija versiones, semilla, fuentes, hashes, parámetros y fórmulas.
 `manifiesto_resultados.json` permite verificar cada archivo. Las tablas de detalle
 comprimidas son CSV UTF-8 legibles con `pandas.read_csv(ruta, compression="gzip")`.
-Las nueve figuras se entregan en PNG, SVG y PDF para revisión y exportación.
+`informe_sensibilidad.py` genera nueve figuras en PNG, SVG y PDF para revisión y exportación.
+La carpeta `figuras/` contiene artefactos regenerables y no se versiona; debe reconstruirse en un
+entorno que tenga las dependencias fijadas en `configuracion.json`.

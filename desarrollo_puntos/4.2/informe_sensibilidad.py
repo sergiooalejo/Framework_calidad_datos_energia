@@ -395,7 +395,9 @@ python desarrollo_puntos/4.2/verificar_resultados.py
 `configuracion.json` fija versiones, semilla, fuentes, hashes, parámetros y fórmulas.
 `manifiesto_resultados.json` permite verificar cada archivo. Las tablas de detalle
 comprimidas son CSV UTF-8 legibles con `pandas.read_csv(ruta, compression="gzip")`.
-Las nueve figuras se entregan en PNG, SVG y PDF para revisión y exportación.
+`informe_sensibilidad.py` genera nueve figuras en PNG, SVG y PDF para revisión y exportación.
+La carpeta `figuras/` contiene artefactos regenerables y no se versiona; debe reconstruirse en un
+entorno que tenga las dependencias fijadas en `configuracion.json`.
 '''
     (HERE/'INFORME_SENSIBILIDAD.md').write_text(body,encoding='utf-8')
     (HERE/'README.md').write_text('''# 4.2 · Análisis de sensibilidad
@@ -427,7 +429,9 @@ El análisis se ejecutó sobre las cuatro fuentes locales y escribe todas sus sa
 | [test_sensibilidad.py](test_sensibilidad.py) | Pruebas de continuidad, ausencia de fuga temporal, límites y bootstrap. |
 | [verificar_resultados.py](verificar_resultados.py), [verificacion.json](verificacion.json) | Reconciliación del detalle, denominadores, hashes y pruebas automáticas. |
 
-En [figuras](figuras/) están nueve gráficos en PNG, SVG y PDF.
+El script `informe_sensibilidad.py` genera nueve gráficos en `figuras/`, en PNG, SVG y PDF.
+La carpeta no se versiona porque son artefactos regenerables; se debe ejecutar el script con las
+dependencias registradas en `configuracion.json` para visualizarlos.
 SSPD con referencia 48 es no evaluable; XM no recibe IC entre categorías.
 Los resultados describen sensibilidad, sin aprobar umbrales ni clasificar automáticamente
 una señal estadística como error o cambio regulatorio.

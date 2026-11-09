@@ -40,7 +40,7 @@ CHEC,LOF,0.02,3939162921.3194513,3312,60,0.018115942028985508,tasa_inferior_por_
 CHEC,LOF,0.05,1558994437.4855728,3312,160,0.04830917874396135,tasa_inferior_por_empates,degenerado_por_duplicados,alertas_reales_sin_verdad_terreno
 CHEC,LOF,0.1,15.395002396082598,3312,331,0.09993961352657005,tasa_igualada,degenerado_por_duplicados,alertas_reales_sin_verdad_terreno
 CHEC,KNN,0.01,2.595040347920816,3312,32,0.00966183574879227,tasa_inferior_por_empates,evaluable,alertas_reales_sin_verdad_terreno
-CHEC,KNN,0.02,2.404406301585007,3312,62,0.018719806763285024,tasa_inferior_por_empates,evaluable,alertas_reales_sin_verdad_terreno
+CHEC,KNN,0.02,2.4044063015850075,3312,62,0.018719806763285024,tasa_inferior_por_empates,evaluable,alertas_reales_sin_verdad_terreno
 CHEC,KNN,0.05,1.110893016855458,3312,164,0.049516908212560384,tasa_inferior_por_empates,evaluable,alertas_reales_sin_verdad_terreno
 CHEC,KNN,0.1,0.7808739755081586,3312,330,0.09963768115942029,tasa_inferior_por_empates,evaluable,alertas_reales_sin_verdad_terreno
 CHEC,R12,0.01,1.1977468303869359,3312,32,0.00966183574879227,tasa_inferior_por_empates,evaluable,alertas_reales_sin_verdad_terreno
@@ -62,9 +62,9 @@ SSPD,IF,0.1,0.4537214601189746,3852,385,0.09994807892004154,tasa_igualada,evalua
 SSPD,LOF,0.01,5.8054446020679356,3852,38,0.009865005192107996,tasa_igualada,evaluable,alertas_reales_sin_verdad_terreno
 SSPD,LOF,0.02,3.559239845515903,3852,77,0.01998961578400831,tasa_igualada,evaluable,alertas_reales_sin_verdad_terreno
 SSPD,LOF,0.05,2.104657834598403,3852,192,0.04984423676012461,tasa_igualada,evaluable,alertas_reales_sin_verdad_terreno
-SSPD,LOF,0.1,1.6355071438063569,3852,385,0.09994807892004154,tasa_igualada,evaluable,alertas_reales_sin_verdad_terreno
+SSPD,LOF,0.1,1.6355071438063564,3852,385,0.09994807892004154,tasa_igualada,evaluable,alertas_reales_sin_verdad_terreno
 SSPD,KNN,0.01,22.753836356172126,3852,38,0.009865005192107996,tasa_igualada,evaluable,alertas_reales_sin_verdad_terreno
-SSPD,KNN,0.02,9.13388633113503,3852,77,0.01998961578400831,tasa_igualada,evaluable,alertas_reales_sin_verdad_terreno
+SSPD,KNN,0.02,9.133886331135031,3852,77,0.01998961578400831,tasa_igualada,evaluable,alertas_reales_sin_verdad_terreno
 SSPD,KNN,0.05,4.423361502146521,3852,192,0.04984423676012461,tasa_igualada,evaluable,alertas_reales_sin_verdad_terreno
 SSPD,KNN,0.1,2.0449758325609535,3852,385,0.09994807892004154,tasa_igualada,evaluable,alertas_reales_sin_verdad_terreno
 SSPD,R12,0.01,5.069237559229794,3852,38,0.009865005192107996,tasa_igualada,evaluable,alertas_reales_sin_verdad_terreno

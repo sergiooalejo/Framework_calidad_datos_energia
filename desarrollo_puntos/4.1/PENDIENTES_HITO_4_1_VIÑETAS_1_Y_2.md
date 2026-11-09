@@ -1,5 +1,11 @@
 # Pendientes · Hito 4.1 · Viñetas 1 y 2
 
+> **Documento histórico actualizado.** Este archivo conserva el diagnóstico con el que terminó
+> inicialmente 4.1. Los puntos 1, 2 y 3 fueron resueltos posteriormente en 4.2 y 4.3. Las
+> decisiones que siguen vigentes no se aprueban aquí: están consolidadas en
+> [PENDIENTES_APROBACION_HITO3.md](../3_documentacion_general/PENDIENTES_APROBACION_HITO3.md),
+> que es el único registro para el director y el equipo.
+
 ## Estado general
 
 Las dos viñetas tienen implementaciones reproducibles dentro de `4.1`:
@@ -28,23 +34,22 @@ entre las series SSPD del Hito 3 y Hito 4.1.
 
 ## Pendientes que permanecen
 
-### 1. Repetir el experimento de errores inyectados
+### 1. Repetir el experimento de errores inyectados — resuelto
 
 Los archivos del Hito 2 contienen etiquetas y resultados de reglas, I-MR e
 Isolation Forest anterior, pero no predicciones del Z-score robusto ni del nuevo
-Isolation Forest logarítmico. Es necesario repetir la inyección, al menos sobre
-el dataset EPM compatible, para producir resultados propios de 4.1.
+Isolation Forest logarítmico. Este rerun se realizó en 4.2 para las fuentes y
+escenarios definidos allí; sus resultados se evalúan en 4.3.
 
-### 2. Calcular precisión, recall, F1 e intervalos
+### 2. Calcular precisión, recall, F1 e intervalos — resuelto
 
-Estas métricas dependen de la nueva ejecución de inyecciones. Pueden calcularse
-para errores inyectados, pero no para alertas reales sin una etiqueta externa de
-error confirmado.
+4.3 calcula estas métricas e intervalos para los errores inyectados. Las alertas
+reales siguen sin etiqueta externa confirmada; esa limitación permanece vigente.
 
-### 3. Comparar detección en t frente a t+1
+### 3. Comparar detección en t frente a t+1 — resuelto
 
-La estructura del experimento permite hacerlo, pero requiere la nueva ejecución
-de inyecciones para ambos métodos. No debe inferirse desde las alertas reales.
+4.2 ejecuta ambos horizontes para las inyecciones y 4.3 los reporta a tasa de
+alerta igualada. No se infiere este resultado desde alertas reales.
 
 ### 4. Resolver el caso XM en validación cruzada
 

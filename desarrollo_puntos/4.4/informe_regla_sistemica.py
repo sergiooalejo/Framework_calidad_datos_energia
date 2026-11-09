@@ -344,7 +344,9 @@ cuántos componentes distintos alertan:
   puede explicar por qué I-MR ref. 36 no señala jul-2020 ({pct(pe.loc['2020-07', 'fraccion'])}) y MAD, más robusto, sí. Es una hipótesis no contrastada
   (no se probó excluir los meses sistémicos de la referencia).
 
-![Fracción mensual de EPM](figuras/01_fraccion_mensual_epm.png)
+*Figura regenerable:* `python desarrollo_puntos/4.4/informe_regla_sistemica.py` crea
+`figuras/01_fraccion_mensual_epm.png`. Los valores auditables están en
+[fracciones_mensuales.csv](fracciones_mensuales.csv).
 
 ## 3. Calibración de X
 
@@ -357,7 +359,8 @@ meses es mayor o igual que el menor de los tres, la banda no existe:
 Variantes con etiquetas originales: ver [calibracion_resumen.csv](calibracion_resumen.csv); el X que maximiza la exactitud balanceada
 va de {pct(best_x.min(), 0)} a {pct(best_x.max(), 0)} según la variante: **no es un óptimo estable**.
 
-![Calibración](figuras/03_calibracion_X.png)
+*Figura regenerable:* `informe_regla_sistemica.py` crea `figuras/03_calibracion_X.png`; los datos
+auditables están en [calibracion_X.csv](calibracion_X.csv).
 
 **Criterio para el valor de trabajo.** Sin etiquetas confirmadas no hay un óptimo; se propone X = {R.X_WORK * 100:.0f} % porque (a) captura febrero de 2020 en las {len(summary)} variantes (su fracción mínima es {pct(feb_lo, 0)})
 y {int((summary.eventos_capturados_en_X_trabajo == 2).sum())} de {len(summary)} capturan además jul-2020; jul-2021 no se captura en ninguna;
@@ -375,7 +378,9 @@ En EPM, X = 10 % reclasificaría más del 80 % de las alertas (la regla dejaría
 {chec_over} de {len(chec)} meses evaluables superan el 25 % (I-MR): la mayor parte de sus alertas ocurre en meses en que casi toda la fuente cambia a la vez. En SSPD la fracción mensual
 máxima es {pct(sspd_max)} (referencia 36, ambos métodos): **con X = 25 % la regla no se activa y todas sus alertas siguen en revisión individual**.
 
-![CHEC y SSPD](figuras/02_fraccion_mensual_chec_sspd.png)
+*Figura regenerable:* `informe_regla_sistemica.py` crea
+`figuras/02_fraccion_mensual_chec_sspd.png`; los valores auditables están en
+[fracciones_mensuales.csv](fracciones_mensuales.csv).
 
 **Costo para detecciones de errores conocidos** (tomado de 4.2, inyecciones, referencia 36, cohorte común, horizonte t o t+1; fracción de detecciones que la regla enmascararía):
 
@@ -403,7 +408,9 @@ meses nuevos (feb, jun y jul de 2020; jun y jul de 2021) y otras filas de enero 
 
 {contrast_tables['2021-07']}
 
-![Cambios publicados](figuras/04_contraste_publicaciones_epm.png)
+*Figura regenerable:* `informe_regla_sistemica.py` crea
+`figuras/04_contraste_publicaciones_epm.png`; los valores auditables están en
+[contraste_componentes.csv](contraste_componentes.csv).
 
 Lectura, acotada a lo observado:
 

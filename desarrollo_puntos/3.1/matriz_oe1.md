@@ -395,7 +395,7 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 
 Valores calculados por [`medir_matriz_oe1.py`](medir_matriz_oe1.py) sobre los CSV de
 `fuentes_datos/datos/`, aplicando las definiciones de población, numerador y denominador
-de esta misma matriz. Última ejecución: 2026-11-05T19:46:12Z.
+de esta misma matriz. Última ejecución: 2026-11-09T18:43:52Z.
 
 | Archivo medido | Filas | SHA-256 |
 |---|---|---|

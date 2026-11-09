@@ -21,7 +21,9 @@ Desarrolla lo que [4.2](../4.2/README.md) solo exploró como sensibilidad. No mo
 | [test_regla_sistemica.py](test_regla_sistemica.py), [verificar_resultados.py](verificar_resultados.py), [verificacion.json](verificacion.json) | Diez pruebas de propiedades y auditoría con recálculo independiente. |
 | [configuracion.json](configuracion.json), [manifiesto_resultados.json](manifiesto_resultados.json) | Parámetros, versiones y huellas de entradas, PDF y salidas. |
 
-En [figuras](figuras/) hay cuatro gráficos en PNG, SVG y PDF.
+El script `informe_regla_sistemica.py` genera cuatro gráficos en `figuras/`, en PNG, SVG y PDF.
+La carpeta no se versiona porque son artefactos regenerables; se debe ejecutar el script con las
+dependencias registradas en `configuracion.json` para visualizarlos.
 X = 25 % es un **valor de trabajo propuesto, no aprobado**: con tres meses no hay un X único. «Candidato sistémico» no equivale a
 «cambio regulatorio confirmado»: el contraste con las publicaciones de EPM muestra que son cambios publicados, pero falta confirmar con EPM o la CREG la causa de cada uno.
 
