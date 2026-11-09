@@ -1,4 +1,4 @@
-"""Genera un scorecard provisional por fuente y dimensión desde la matriz OE1."""
+"""Genera el scorecard provisional del punto 4.5 desde la matriz OE1."""
 import csv
 from collections import defaultdict
 from pathlib import Path

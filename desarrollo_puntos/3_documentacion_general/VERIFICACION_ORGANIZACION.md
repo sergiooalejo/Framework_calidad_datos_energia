@@ -31,7 +31,7 @@ se conservaron. No se realizaron descargas ni se aprobaron decisiones metodológ
 - `desarrollo_puntos/3.5/EPM/revision_cartas_epm.py`
 - `desarrollo_puntos/3.7/bootstrap_categorias.py`
 - `desarrollo_puntos/3.1/medir_matriz_oe1.py`
-- `desarrollo_puntos/4.1/generar_scorecard_oe1.py`
+- `desarrollo_puntos/4.5/generar_scorecard_oe1.py`
 - `desarrollo_puntos/3.6/trazabilidad.py`
 - `desarrollo_puntos/3.7/EPM/cuarentena.py`
 - `desarrollo_puntos/3.7/cuarentena_fuentes.py`

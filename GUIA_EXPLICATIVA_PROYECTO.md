@@ -1,8 +1,8 @@
 # Guía explicativa del proyecto
 
 > **Cómo leer esta guía.** Las secciones 1 a 14 explican la base del proyecto y el Hito 3. Las secciones 15 a 23
-> explican el Hito 4 (puntos 4.1 a 4.4): qué se hizo, cómo, por qué se hizo así, qué se encontró y qué sigue
-> pendiente. Si solo necesitas saber qué está terminado, ve directo a la [sección 19](#19-están-completos-43-y-44).
+> explican el Hito 4 (puntos 4.1 a 4.6): qué se hizo, cómo, por qué se hizo así, qué se encontró y qué sigue
+> pendiente. Si solo necesitas saber qué está terminado, ve directo a la [sección 21](#21-están-completos-43-y-44).
 
 ## 1. ¿Qué estamos haciendo?
 
@@ -135,6 +135,10 @@ Cada punto del plan tiene su carpeta, con un README que indica qué archivo cont
 - `desarrollo_puntos/4.4/`: regla de alerta sistémica, catálogo y contraste con publicaciones de EPM. Informe en
   [INFORME_REGLA_SISTEMICA.md](desarrollo_puntos/4.4/INFORME_REGLA_SISTEMICA.md). La subcarpeta
   `evidencia_externa/` guarda los PDF oficiales de EPM que se leyeron.
+- `desarrollo_puntos/4.5/`: scorecard por fuente y dimensión. El resultado actual es provisional y está en
+  [scorecard_oe1_provisional.csv](desarrollo_puntos/4.5/scorecard_oe1_provisional.csv).
+- `desarrollo_puntos/4.6/`: resultados separados por nivel y costos computacionales. La explicación está en
+  [INFORME_NIVELES_COSTO.md](desarrollo_puntos/4.6/INFORME_NIVELES_COSTO.md).
 
 ## 5. Las ocho dimensiones de calidad
 
@@ -311,10 +315,9 @@ deben permanecer identificados como provisionales, proxy o pendientes.
 
 ## 14. Qué significa estar listos para el Hito 4
 
-> Esta sección se escribió al cerrar el Hito 3. El estado actual del Hito 4 está en las secciones 15 a 22.
+> Esta sección se escribió al cerrar el Hito 3. El estado actual del Hito 4 está en las secciones 15 a 24.
 
-Estamos técnicamente preparados para iniciar el Hito 4 porque ya existe una línea base comparable.
-El Hito 4 debe construir:
+La línea base del Hito 3 ya se utilizó para construir los entregables del Hito 4. El Hito 4 contiene:
 
 1. scorecards por fuente y dimensión;
 2. comparación de técnicas bajo el mismo protocolo;
@@ -333,10 +336,10 @@ El Hito 4 compara técnicas bajo el mismo protocolo. Su plan tiene seis puntos:
 |---|---|---|---|
 | 4.1 Técnicas adicionales | Z-score robusto, LOF o KNN, Extended Isolation Forest | **Parcial.** Z-score robusto e Isolation Forest en 4.1; LOF y KNN se agregaron en 4.3; Extended IF no se hizo | `4.1/`, `4.3/` |
 | 4.2 Sensibilidad | Ventanas, constantes, percentiles, R12, detección en t y t+1, regla sistémica | **Hecho** | `4.2/` |
-| 4.3 Métricas completas y honestas | Precisión, recall y F1 a tasa igualada, curvas, pruebas por tipo, sorteo sin reemplazo | **Hecho, con límites** (sección 19) | `4.3/` |
-| 4.4 Regla de alerta sistémica | Definir X, calibrarlo con tres meses, contrastar con la CREG y EPM | **Hecho, con pendientes** (sección 19) | `4.4/` |
-| 4.5 Scorecard por dimensión | Tabla única con umbral y estado por indicador y fuente | **Solo provisional** (generado en 4.1) | `4.1/` |
-| 4.6 Resultados por nivel y costo de cómputo | Separar el Nivel I de los niveles II a IV; tiempos por etapa | **No iniciado.** Los tiempos por etapa ya se guardan en `ejecuciones.csv` de 4.2 y 4.3 | — |
+| 4.3 Métricas completas y honestas | Precisión, recall y F1 a tasa igualada, curvas, pruebas por tipo, sorteo sin reemplazo | **Hecho, con límites** (sección 21) | `4.3/` |
+| 4.4 Regla de alerta sistémica | Definir X, calibrarlo con tres meses, contrastar con la CREG y EPM | **Hecho, con pendientes** (sección 21) | `4.4/` |
+| 4.5 Scorecard por dimensión | Tabla única con umbral y estado por indicador y fuente | **Solo provisional** | `4.5/` |
+| 4.6 Resultados por nivel y costo de cómputo | Separar el Nivel I de los niveles II a IV; tiempos por etapa | **Hecho con alcance explícito**: niveles donde existen y `No_aplica` en SSPD/XM | `4.6/` |
 
 Los Hitos 5 (artefacto: paquete, contenedor, tablero) y 6 (validación y sustentación) todavía no tienen trabajo.
 
@@ -584,7 +587,53 @@ Lectura prudente:
 - El costo de enmascaramiento sale de inyecciones artificiales de 4.2, no se recalculó con la ventana móvil.
 - Las equivalencias de etiquetas son una aprobación interna del equipo, no una confirmación de EPM.
 
-## 19. ¿Están completos 4.3 y 4.4?
+## 19. Hito 4.5: scorecard por dimensión
+
+El scorecard es una tabla de resumen. No vuelve a medir los datos; organiza los resultados de la
+matriz OE1 para que sea posible leerlos por fuente y dimensión.
+
+El archivo `4.5/scorecard_oe1_provisional.csv` tiene 32 filas: cuatro fuentes por ocho
+dimensiones. Cada fila indica cuántos controles hay, cuántos fueron medidos, cuántos son
+provisionales, cuántos no se pudieron medir y cuántos no aplican.
+
+Por ejemplo, una fila de EPM para completitud no significa que “EPM tenga 90 % de calidad”. Significa
+que resume los controles de completitud definidos para EPM y conserva sus estados y limitaciones.
+El scorecard seguirá llamándose provisional hasta que se aprueben umbrales, catálogos y evidencia
+externa.
+
+Para regenerarlo:
+
+```bash
+python3 desarrollo_puntos/4.5/generar_scorecard_oe1.py
+```
+
+## 20. Hito 4.6: niveles y costo computacional
+
+Este punto responde dos preguntas:
+
+1. ¿Las alertas se comportan distinto en los diferentes niveles tarifarios?
+2. ¿Cuánto tiempo tarda cada etapa del análisis?
+
+Se generaron dos archivos en `4.6/`:
+
+- `resultados_por_nivel.csv`: observaciones, series, detecciones y tasa de alerta por método y nivel.
+- `costos_computacionales.csv`: tiempos registrados por fuente, escenario y etapa.
+
+EPM se separa por niveles I, II y III en el panel común utilizado. CHEC se separa por sus códigos
+de nivel 1 a 4. SSPD y XM se reportan como `No_aplica`, porque el esquema utilizado no tiene un
+nivel comparable. Esto es una decisión de honestidad: no se inventa una equivalencia entre
+estrato, categoría comercial o grupo operativo y nivel tarifario.
+
+Los tiempos se toman de las ejecuciones de 4.2 y 4.3. Permiten comparar el costo relativo entre
+fuentes y etapas, pero no garantizan el mismo tiempo en otro computador.
+
+Para reproducirlo:
+
+```bash
+python3 desarrollo_puntos/4.6/analizar_niveles_costos.py
+```
+
+## 21. ¿Están completos 4.3 y 4.4?
 
 **Sí en lo que se puede hacer con los datos y archivos disponibles; no en su totalidad.** Quedan pendientes que dependen de
 decisiones, de documentos que no se localizaron o de etapas posteriores del plan.
@@ -615,7 +664,7 @@ decisiones, de documentos que no se localizaron o de etapas posteriores del plan
 | Contrastar con resoluciones de la CREG | **Parcial**: leídas la 012, 058 y 104 de 2020; la 015 de 2018 solo en parte; la 152 de 2020 y la 003 de 2021 (citadas en los encabezados de 2021) no se consultaron |
 | Consulta formal a EPM o a la CREG | **No hecho** (el plan la ubica en el Hito 6) |
 
-## 20. Hallazgos que afectan al trabajo anterior
+## 22. Hallazgos que afectan al trabajo anterior
 
 1. **Las etiquetas de EPM fragmentan las series.** Sin normalizarlas hay 266 series; con las equivalencias del Hito 2, 200.
    En el panel común de 4.3 pasan de 27 a 69 series. 4.1 y 4.2 usaron las etiquetas originales y no se modificaron; 4.3 se
@@ -627,11 +676,17 @@ decisiones, de documentos que no se localizaron o de etapas posteriores del plan
    no se probó.
 5. **Un valor repetido no lo detecta ninguna carta.** Refuerza la idea de combinar reglas y cartas.
 
-## 21. Cómo reproducir y verificar el Hito 4
+## 23. Cómo reproducir y verificar el Hito 4
 
 Desde la raíz del proyecto:
 
 ```powershell
+# 4.5
+python desarrollo_puntos/4.5/generar_scorecard_oe1.py
+
+# 4.6
+python desarrollo_puntos/4.6/analizar_niveles_costos.py
+
 # 4.3
 python desarrollo_puntos/4.3/experimento_tasa_igualada.py
 python desarrollo_puntos/4.3/informe_metricas.py
@@ -658,20 +713,22 @@ Qué comprueban las verificaciones:
 
 Ejecutar dos veces da las mismas cifras; solo cambian los tiempos de cómputo guardados.
 
-## 22. Qué todavía no está aprobado o resuelto en el Hito 4
+## 24. Qué todavía no está aprobado o resuelto en el Hito 4
 
 1. **Valor de X** de la regla sistémica (se propone 25 %, sin aprobar).
 2. **Prevalencia de errores** a usar para presentar la precisión.
 3. **Repetir 4.1 y 4.2 con etiquetas canónicas** de EPM (4.3 ya se repitió) y decidir si esas equivalencias se aceptan como oficiales.
 4. **Contraste documental restante**: leer completa la CREG 015 de 2018 y las resoluciones particulares de EPM, y las CREG 152 de 2020 y 003 de 2021.
 5. **Consulta formal a EPM o a la CREG** sobre los cambios detectados (Hito 6).
-6. **Extended Isolation Forest**, **scorecard definitivo** (4.5) y **resultados por nivel** (4.6).
+6. **Extended Isolation Forest**, que el plan dejaba condicionado al tiempo disponible.
 7. **Tratamiento de MAD igual a cero**, que sigue con la regla conservadora de 4.1.
 8. **Decidir qué hacer con LOF** (CHEC y EPM con etiquetas canónicas): quitar duplicados o aumentar vecinos cambia el significado de la densidad.
+9. **Scorecard 4.5:** está generado, pero permanece provisional hasta aprobar umbrales y evidencia externa.
+10. **4.6:** la separación por nivel solo es interpretable para EPM y CHEC; SSPD y XM quedan como `No_aplica` por diseño.
 
 No se deben presentar como aprobados ni los umbrales ni los resultados de estos puntos hasta que el director los confirme.
 
-## 23. Idea principal para recordar
+## 25. Idea principal para recordar
 
 El proyecto no consiste en producir un único porcentaje de “calidad”. Consiste en construir una
 evaluación explicable y reproducible: cada resultado debe indicar qué se midió, con qué datos, con

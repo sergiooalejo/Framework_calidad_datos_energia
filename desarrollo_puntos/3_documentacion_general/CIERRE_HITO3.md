@@ -40,7 +40,7 @@ fuente y dimensión, la comparación de técnicas bajo el mismo protocolo y el a
 sensibilidad. Los resultados provisionales deben conservarse separados de los medidos y no se
 deben comparar porcentajes sin revisar población, unidad y aplicabilidad.
 
-Antes de declararlo formalmente aprobado, debe diligenciarse
+Antes de declarar los Hitos 3 y 4 formalmente aprobados, debe diligenciarse
 [PENDIENTES_APROBACION_HITO3.md](PENDIENTES_APROBACION_HITO3.md). Ese documento concentra las
-decisiones que dependen del director, de una fuente de contraste o de una segunda descarga; no se
-han presentado como cumplidas.
+decisiones que dependen del director, de una fuente de contraste, de una segunda descarga o de
+la selección metodológica del Hito 4; no se han presentado como cumplidas.
