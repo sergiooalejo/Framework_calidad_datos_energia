@@ -16,6 +16,39 @@ La matriz OE1, las fichas, las cartas, la trazabilidad, la cuarentena, el bootst
 | Responsable de validación | Director o persona que revisa la muestra externa | Las alertas estadísticas no prueban exactitud; alguien debe contrastar los valores con evidencia externa. | Pendiente de confirmar |
 | Aprobador final | Director del proyecto | La tesis necesita una autoridad que confirme que los criterios son aceptables metodológicamente. | Pendiente de confirmar |
 
+### Propuesta de distribución para validar con el profesor
+
+Se propone que el equipo de estudiantes comparta la ejecución técnica y que se asigne una persona
+principal para conservar los datos y otra para ejecutar las métricas. El director o profesor actuaría
+como aprobador final. El responsable de reglas de negocio y el responsable de validación podrían ser
+el director, un experto del sector energético o una persona que el equipo designe formalmente.
+
+Esta distribución es una propuesta de trabajo y no supone que exista actualmente un experto externo
+ni que una persona haya aceptado formalmente un rol. Una misma persona podría asumir más de un rol si
+el profesor lo considera adecuado, siempre que quede registrado quién responde por cada actividad.
+
+| Rol propuesto | Responsable sugerido | Actividades principales | Confirmación solicitada |
+|---|---|---|---|
+| Reglas de negocio | Director, experto energético o integrante designado | Validar significados, unidades, categorías, rangos y reglas específicas de las fuentes | Confirmar quién tiene autoridad para aprobar la interpretación del negocio |
+| Datos | Integrante del equipo | Descargar, conservar, versionar y verificar los datasets mediante SHA-256 | Confirmar quién custodiará los archivos y evidencias |
+| Métricas y anomalías | Integrante técnico del equipo | Ejecutar cartas, bootstrap, modelos, métricas y verificadores | Confirmar quién será responsable de las ejecuciones técnicas |
+| Validación | Director, experto energético o integrante designado | Contrastar alertas con publicaciones y fuentes externas | Confirmar quién revisará y aceptará la evidencia externa |
+| Aprobación final | Director o profesor de tesis | Aprobar umbrales, métodos, catálogos, alcance y decisiones metodológicas | Confirmar que el director ejercerá esta función |
+
+La tabla muestra una distribución sugerida, no una asignación definitiva. Los nombres o cargos se
+completarán únicamente después de la confirmación del profesor.
+
+### Preguntas para el profesor
+
+1. ¿Está de acuerdo con estos cinco roles y con la distribución propuesta?
+2. ¿Una misma persona puede asumir simultáneamente los roles de responsable de datos, métricas,
+   reglas de negocio o validación?
+3. ¿Es necesario registrar nombres propios o es suficiente indicar el cargo o la responsabilidad?
+4. ¿Confirma que el director será el aprobador final de umbrales, métodos, catálogos y alcance?
+
+**Estado:** propuesta pendiente de revisión y aprobación. No se deben inventar nombres ni declarar
+un experto externo hasta contar con una confirmación explícita.
+
 ## 2. Umbrales y severidad
 
 | Grupo | Controles | Propuesta | Por qué se necesita | Estado |
@@ -28,6 +61,28 @@ La matriz OE1, las fichas, las cartas, la trazabilidad, la cuarentena, el bootst
 
 El 100 % es una meta del proyecto, no un umbral impuesto por DAMA-DMBOK ni ISO. Si el director aprueba tolerancias diferentes, deben registrarse junto con su justificación.
 
+### Propuesta resumida para aprobar
+
+| Tipo de control | Propuesta | Interpretación del resultado | Decisión solicitada |
+|---|---|---|---|
+| Integridad mínima | 100 % | Un incumplimiento se reporta como error porque impide interpretar o relacionar correctamente el dato | Confirmar si la meta debe ser estrictamente 100 % |
+| Completitud y consistencia | Meta de 100 %, con tasa continua y advertencia | Un valor menor muestra una desviación que debe analizarse; no se elimina automáticamente el registro | Confirmar qué porcentaje o casos son aceptables como advertencia |
+| Exactitud | 100 % de coincidencia en la muestra validada, con tolerancia de redondeo previamente definida | Solo se evalúan registros contrastados contra una fuente oficial aprobada | Aprobar muestra, fuente de verdad y tolerancia numérica |
+| Oportunidad | Medir el retraso real cuando exista fecha y plazo; utilizar `provisional_proxy` cuando no exista plazo publicado | Un proxy no demuestra el plazo real, solo aproxima la disponibilidad | Aprobar el plazo esperado o aceptar explícitamente el proxy |
+| Señales estadísticas | Advertencia, nunca error automático | Una alerta puede representar un cambio real de tarifa, demanda o regulación | Confirmar que toda alerta requiere revisión antes de clasificarse como error |
+
+### Preguntas para el profesor sobre los umbrales
+
+1. ¿Aprueba una meta del 100 % para integridad, completitud y consistencia, o propone tolerancias?
+2. ¿Qué nivel de incumplimiento debe generar advertencia y cuál debe considerarse error?
+3. ¿Aprueba la muestra de 30 registros por fuente para exactitud?
+4. ¿Qué fuente oficial y qué tolerancia de redondeo deben utilizarse para validar importes?
+5. ¿Acepta que la oportunidad se reporte como `provisional_proxy` cuando el portal no publique un plazo?
+6. ¿Confirma que las alertas estadísticas no se convierten automáticamente en errores de calidad?
+
+**Estado:** propuesta pendiente de revisión y aprobación. Los porcentajes calculados actualmente son
+resultados de medición; no constituyen por sí mismos umbrales aprobados.
+
 ## 3. Catálogos y semántica de CHEC
 
 Se debe aprobar el significado de categorías, niveles, unidades y conceptos tarifarios; el catálogo canónico y las equivalencias; la unidad de cada importe y el tratamiento de valores negativos; la clave candidata para identificar una tarifa por período; la aplicación definitiva de R08 y R09; y el responsable de mantener los catálogos.
@@ -35,6 +90,31 @@ Se debe aprobar el significado de categorías, niveles, unidades y conceptos tar
 **Por qué:** CHEC contiene códigos cuyo significado no está completamente explícito en el archivo. Si se interpretan sin catálogo, se podrían marcar como errores valores válidos o comparar conceptos que no tienen la misma unidad. La clave también debe aprobarse porque existen multiplicidades y no es seguro eliminar filas repetidas automáticamente.
 
 **Estado:** análisis técnico en [DECISION_CATALOGOS_CHEC.md](../3.2/CHEC/DECISION_CATALOGOS_CHEC.md); aprobación documental pendiente.
+
+### Propuesta de decisiones para CHEC
+
+| Aspecto | Propuesta técnica | Por qué es necesario | Confirmación solicitada |
+|---|---|---|---|
+| Categorías y códigos | Mantener los valores originales y construir un catálogo canónico versionado | Evita modificar la fuente y permite distinguir variantes de escritura | Confirmar qué equivalencias representan el mismo concepto |
+| Niveles tarifarios | Conservar los niveles 1–4 como categorías independientes | Agruparlos podría mezclar tarifas con comportamientos y unidades diferentes | Confirmar que los niveles 1–4 no deben combinarse |
+| Unidades | Registrar explícitamente la unidad de cada componente e importe antes de comparar | Dos valores numéricamente similares pueden estar expresados en unidades distintas | Aprobar el catálogo de unidades y conversiones permitidas |
+| Valores negativos | No marcar automáticamente valores negativos; revisar su significado por concepto, especialmente restricciones | Un valor negativo puede ser válido según el componente tarifario | Confirmar qué conceptos admiten valores negativos |
+| Clave de tarifa | Usar una clave compuesta por período, categoría, nivel y concepto, sin eliminar duplicados automáticamente | Las multiplicidades pueden representar registros distintos o conflictos que requieren revisión | Aprobar la clave candidata y la política frente a duplicados |
+| R08 y R09 | Aplicar las reglas solo cuando exista una matriz de aplicabilidad documentada | Sin conocer qué campos aplican a cada nivel, un supuesto puede generar falsos errores | Confirmar la matriz de aplicabilidad y la interpretación de ceros |
+| Mantenimiento | Asignar un responsable para versionar el catálogo cuando cambie la fuente | Un catálogo sin control de versiones puede cambiar los resultados históricos | Confirmar responsable y frecuencia de actualización |
+
+### Preguntas para el profesor sobre CHEC
+
+1. ¿Aprueba construir un catálogo canónico sin alterar los valores originales?
+2. ¿Confirma que los niveles 1–4 deben analizarse por separado?
+3. ¿Quién puede validar el significado de los códigos, unidades y conceptos tarifarios?
+4. ¿Qué conceptos pueden tener valores negativos válidos?
+5. ¿Aprueba la clave compuesta propuesta y la decisión de no eliminar duplicados automáticamente?
+6. ¿Confirma que R08 y R09 deben quedar como provisionales hasta aprobar la matriz de aplicabilidad?
+7. ¿Quién será responsable de mantener y aprobar futuras versiones del catálogo?
+
+**Estado:** propuesta técnica pendiente de validación semántica y aprobación documental. Hasta entonces,
+las equivalencias y reglas CHEC deben presentarse como provisionales.
 
 ## 4. Evidencia de exactitud
 
@@ -44,6 +124,34 @@ Se propone contrastar 30 registros por fuente, estratificados por período y cat
 
 **Estado:** procedimiento y plantilla en [EVIDENCIA_EXACTITUD_OPORTUNIDAD.md](../3.1/EVIDENCIA_EXACTITUD_OPORTUNIDAD.md); la muestra y la fuente no están aprobadas.
 
+### Propuesta para evaluar exactitud
+
+| Elemento | Propuesta | Por qué es necesario | Confirmación solicitada |
+|---|---|---|---|
+| Fuente de contraste | Publicación oficial del mismo período; usar una fuente independiente cuando exista | Permite comprobar que el valor del dataset coincide con un documento verificable | Aprobar la fuente oficial y aclarar cuándo se considera independiente |
+| Tamaño de muestra | 30 registros por fuente, estratificados por período y categoría | Evita validar solo los casos más fáciles o más recientes | Confirmar tamaño y método de selección |
+| Campos comparados | Período, categoría, unidad y valores monetarios o de consumo aplicables | La comparación debe hacerse entre conceptos equivalentes | Aprobar las columnas obligatorias por fuente |
+| Tolerancia numérica | Definirla antes de comparar, según precisión publicada y redondeo; propuesta inicial: 0,01 en importes con dos decimales | Una diferencia de redondeo no debe clasificarse como error | Aprobar tolerancia y regla de redondeo |
+| Diferencias | Separar diferencia por redondeo, unidad, transcripción o valor no coincidente | No todas las diferencias tienen la misma causa ni gravedad | Aprobar categorías de diferencia y tratamiento |
+| Evidencia | Conservar URL, fecha de consulta, PDF/archivo, SHA-256 y transcripción | Permite repetir la revisión y demostrar qué documento se utilizó | Confirmar los elementos mínimos de la evidencia |
+| Resultado | Reportar porcentaje de coincidencia de la muestra como EXA01, no como exactitud de todo el dataset | Una muestra no permite afirmar que todas las filas sean correctas | Confirmar el alcance limitado del indicador |
+
+La validación propuesta mide **concordancia documental**. No demuestra por sí sola que la tarifa sea
+económicamente correcta ni reemplaza una auditoría del publicador. Si solo se dispone de una publicación
+del mismo proveedor, el resultado debe describirse como coincidencia con la publicación oficial y no como
+validación completamente independiente.
+
+### Preguntas para el profesor sobre exactitud
+
+1. ¿Aprueba utilizar 30 registros por fuente con selección estratificada?
+2. ¿Qué fuente debe considerarse referencia oficial para cada dataset?
+3. ¿Cuándo debe exigirse una fuente independiente y cuándo basta una publicación oficial del mismo proveedor?
+4. ¿Aprueba la tolerancia inicial de 0,01 o establece otra según la unidad y precisión de cada fuente?
+5. ¿Aprueba reportar EXA01 como concordancia de la muestra, sin generalizarlo a todo el dataset?
+6. ¿Qué tratamiento debe darse a diferencias causadas por redondeo, unidad, transcripción o actualización?
+
+**Estado:** procedimiento definido, pero fuente, muestra, tolerancia y alcance requieren aprobación.
+
 ## 5. Evidencia de oportunidad
 
 Se propone registrar fecha de publicación o actualización, fecha de descarga, frecuencia esperada, retraso calculado y evidencia de la URL o metadato. Si el publicador no declara un plazo esperado, debe aprobarse el uso de un proxy y reportarse como `provisional_proxy`.
@@ -52,6 +160,27 @@ Se propone registrar fecha de publicación o actualización, fecha de descarga, 
 
 **Estado:** procedimiento en [EVIDENCIA_EXACTITUD_OPORTUNIDAD.md](../3.1/EVIDENCIA_EXACTITUD_OPORTUNIDAD.md); pendiente de aprobar el plazo o proxy por fuente.
 
+### Propuesta para evaluar oportunidad
+
+| Elemento | Propuesta | Por qué es necesario | Confirmación solicitada |
+|---|---|---|---|
+| Fecha de publicación | Usar la fecha declarada por el portal o el publicador | El período del dato no equivale a la fecha en que se publicó | Confirmar qué metadato tiene prioridad |
+| Fecha de descarga | Registrar fecha, hora y zona horaria de cada captura | Permite calcular el retraso observado y repetir la medición | Aprobar formato y zona horaria |
+| Plazo esperado | Usar el plazo oficial del publicador o la obligación aplicable | Sin plazo no se puede clasificar puntualidad o retraso | Definir plazo por fuente |
+| Proxy | Usar disponibilidad del período como `provisional_proxy` cuando no exista plazo | Es una aproximación y no una medición directa del retraso | Aceptar o rechazar el proxy por fuente |
+| Evidencia | Conservar URL, metadatos, fecha de consulta y SHA-256 | Permite demostrar qué estaba disponible en la fecha observada | Aprobar elementos mínimos |
+| Interpretación | Reportar “medible”, “provisional_proxy” o “no medible” | Evita presentar una aproximación como resultado definitivo | Confirmar las categorías de estado |
+
+### Preguntas para el profesor sobre oportunidad
+
+1. ¿Qué plazo esperado debe utilizarse para cada fuente?
+2. ¿Qué fecha del portal debe considerarse fecha de publicación?
+3. ¿Acepta el uso de `provisional_proxy` cuando no exista un plazo publicado?
+4. ¿Aprueba registrar fecha, hora, zona horaria, URL y SHA-256 como evidencia mínima?
+5. ¿Confirma que la ausencia de evidencia debe clasificarse como “no medible” y no como retraso?
+
+**Estado:** propuesta pendiente de aprobación del plazo, proxy y categorías de resultado.
+
 ## 6. Reproducibilidad y versiones
 
 El criterio de cierre solicita dos descargas. Debe aprobarse obtener una segunda descarga real del portal o usar una segunda copia congelada con fecha y SHA-256 diferentes, declarando que demuestra reproducibilidad técnica pero no estabilidad temporal del portal. También debe aprobarse la política de codificación y fin de línea de los CSV.
@@ -59,6 +188,27 @@ El criterio de cierre solicita dos descargas. Debe aprobarse obtener una segunda
 **Por qué:** una sola descarga demuestra que el código funciona sobre un archivo, pero no que los resultados se mantienen entre versiones. La segunda versión permite identificar cambios del portal y la política de codificación evita que el mismo archivo produzca hashes diferentes por razones técnicas.
 
 **Estado:** procedimiento en [REPRODUCIBILIDAD_HITO3.md](../3.6/REPRODUCIBILIDAD_HITO3.md); segunda versión y política de fin de línea pendientes.
+
+### Propuesta para reproducibilidad
+
+| Elemento | Propuesta | Por qué es necesario | Confirmación solicitada |
+|---|---|---|---|
+| Segunda versión | Obtener una segunda descarga real o conservar una segunda copia congelada | Permite comparar versiones y detectar cambios del portal | Aprobar cuál de las dos alternativas se usará |
+| Identificación | Registrar fecha de captura, URL, tamaño y SHA-256 | Permite distinguir inequívocamente ambas versiones | Confirmar metadatos obligatorios |
+| Codificación | Normalizar lectura a UTF-8 y conservar el archivo original | Evita errores por acentos y separadores sin alterar la evidencia | Aprobar política de codificación |
+| Fin de línea | Registrar si el archivo usa LF o CRLF y no cambiarlo silenciosamente | El contenido puede ser igual aunque el hash cambie por formato | Aprobar si se compara el archivo crudo o una representación normalizada |
+| Comparación | Reejecutar los mismos controles sobre ambas versiones | Permite distinguir cambios del dato de cambios del código | Confirmar controles mínimos a repetir |
+| Conclusión | Declarar “reproducibilidad técnica” sin afirmar estabilidad del portal | Dos copias no demuestran que futuras descargas sean idénticas | Aprobar el alcance de la conclusión |
+
+### Preguntas para el profesor sobre reproducibilidad
+
+1. ¿Acepta una segunda copia congelada si no es posible obtener una segunda descarga del portal?
+2. ¿Qué metadatos deben acompañar cada versión?
+3. ¿Debe conservarse y compararse el archivo crudo o una versión normalizada?
+4. ¿Qué controles deben repetirse obligatoriamente sobre la segunda versión?
+5. ¿Aprueba declarar reproducibilidad técnica sin afirmar estabilidad temporal del portal?
+
+**Estado:** procedimiento definido; segunda versión, codificación y alcance de la conclusión pendientes.
 
 ## 7. Decisiones estadísticas pendientes
 
@@ -70,6 +220,26 @@ El criterio de cierre solicita dos descargas. Debe aprobarse obtener una segunda
 **Estado:** propuesta documentada; aprobación metodológica pendiente.
 
 **Por qué:** estas decisiones cambian la interpretación de las cartas y del bootstrap. Definir la unidad de remuestreo, el tratamiento del MAD cero y la regla R12 evita que se comparen resultados generados con criterios diferentes.
+
+### Propuesta estadística para aprobar
+
+| Decisión | Propuesta | Por qué es necesario | Confirmación solicitada |
+|---|---|---|---|
+| Bootstrap | Remuestrear series dentro de cada fuente y categoría, no filas individuales | Las filas no son observaciones independientes y mezclar fuentes distorsiona el intervalo | Aprobar la serie como unidad de remuestreo |
+| XM y categorías unitarias | Reportar intervalo degenerado y estado descriptivo/no interpretable | Una sola serie no permite estimar variabilidad entre series | Confirmar que no se inventarán intervalos |
+| R12 y CART01 | Mantenerlos como advertencias hasta calibración o evidencia histórica | Una señal estadística no equivale automáticamente a un error | Confirmar que no generan error automático |
+| R10 | Mantener medición por fila y documentar la limitación; evaluar celda/columna como sensibilidad | Cambiar el denominador modifica el resultado de completitud | Elegir unidad principal y sensibilidad |
+| MAD cero | Mantener regla conservadora sin inventar escala | Una escala arbitraria puede crear señales artificiales | Confirmar señal, exclusión o alternativa |
+
+### Preguntas para el profesor sobre decisiones estadísticas
+
+1. ¿Aprueba remuestrear series dentro de cada categoría?
+2. ¿Acepta reportar XM y categorías unitarias como no interpretables?
+3. ¿Confirma que R12 y CART01 serán advertencias y no errores automáticos?
+4. ¿Prefiere R10 por fila, por celda/columna o ambos como análisis principal y sensibilidad?
+5. ¿Aprueba el tratamiento conservador del MAD igual a cero?
+
+**Estado:** propuesta estadística pendiente de aprobación metodológica.
 
 ## 8. Decisiones adicionales del Hito 4
 
@@ -89,6 +259,22 @@ El criterio de cierre solicita dos descargas. Debe aprobarse obtener una segunda
 
 Los resultados de 4.2–4.6 no deben presentarse como aprobación de un umbral, método o causa
 regulatoria. Son evidencia para tomar estas decisiones.
+
+### Preguntas integrales sobre el Hito 4
+
+1. ¿Aprueba `X = 25 %` como valor de trabajo o prefiere mantener la regla exploratoria?
+2. ¿Debe presentarse una prevalencia principal para precisión/F1 o todos los escenarios como sensibilidad?
+3. ¿El framework tendrá un método principal o conservará varios métodos complementarios?
+4. ¿Se aceptan las etiquetas `EPM_canonicas` como catálogo oficial o solo como sensibilidad?
+5. ¿Se mantiene la regla conservadora de MAD cero?
+6. ¿Se excluye Extended Isolation Forest del alcance final?
+7. ¿Cómo debe tratarse LOF cuando queda degenerado por duplicados?
+8. ¿Se aprueba convertir el scorecard 4.5 en definitivo después de aprobar umbrales y evidencias?
+9. ¿Se acepta que SSPD y XM queden como `No_aplica` en el análisis por nivel de 4.6?
+10. ¿Qué evidencia regulatoria debe completarse y qué parte se deja para el Hito 6?
+11. ¿Quién integrará las decisiones aprobadas en el documento oficial de la tesis?
+
+**Estado:** decisiones del Hito 4 pendientes de confirmación metodológica, documental y de alcance.
 
 ## Registro de aprobación
 
