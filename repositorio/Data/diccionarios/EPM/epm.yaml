@@ -1,0 +1,282 @@
+version: '1.0'
+dataset:
+  id: sfcd-b3ey
+  nombre: Histórico de Tarifas de Energía Eléctrica – EPM (2016-2021)
+  publicador: E.S.P. Empresas Públicas de Medellín - EPM, Antioquia
+  url_portal: https://www.datos.gov.co/d/sfcd-b3ey
+  url_csv_completo: https://www.datos.gov.co/api/views/sfcd-b3ey/rows.csv?accessType=DOWNLOAD
+  archivo_csv: datos/epm_sfcd-b3ey.csv
+  filas_verificadas: 3623
+  columnas: 12
+  cobertura: 2016-12 a 2021-12
+  contiene_consumo_observado: false
+  licencia_portal: CC_40_BY_SA
+  estado: Seleccionado como caso de estudio; cobertura de las ocho dimensiones aún pendiente de completar.
+advertencia: Diccionario documental y propuesta de controles; no es un motor ejecutable ni demuestra reglas implementadas.
+granularidad: Registro tarifario por categoría y período; verificar clave y multiplicidad antes de generar series.
+clave_candidata:
+  categorias:
+  - tipodeinformacion
+  - tipodetarifa
+  - tipodedato
+  - rangodeconsumo
+  - nivel
+  periodo:
+  - year
+  - mes
+  estado: Pendiente de validación; no asumir unicidad.
+series:
+  clave: Categorías + variable monetaria, con fecha mensual derivada.
+  variables_prioritarias:
+  - propiedadepm
+  - compartido
+  - propiedaddelcliente
+  - punta
+  - fueradepunta
+  condiciones:
+  - No mezclar conceptos, categorías o unidades.
+  - Exigir continuidad temporal y resolver conflictos de clave.
+  - Aplicar logaritmos solo a valores positivos; no unir meses a través de huecos.
+  - Separar referencia de vigilancia; no ajustar límites con vigilancia.
+  - Controlar dependencia entre series para intervalos y remuestreo.
+variables:
+- columna: tipodeinformacion
+  nombre_portal: Tipo de Información
+  descripcion: Modalidad tarifaria del registro, por ejemplo monomía u horaria.
+  descripcion_oficial: "Tarifa Monomia Horaria \n\n-Franjas Aplicadas: \n\nHoras de punta: 9 a.m. - 12 m; 6 p.m\
+    \ - 9 p.m.\n\nHoras fuera de punta: \n12 p.m - 9 a.m.; 12 m - 6 p.m y 9 p.m - 12 p.m."
+  tipo_portal: text
+  tipo_recomendado: texto
+  rol: categoria
+  unidad: No aplica
+  reglas_relacionadas:
+  - R05
+  - R06
+  - R09
+  nulos_y_ceros: Validar según catálogo y aplicabilidad; no reemplazar N/A sin estudiar su significado.
+- columna: tipodetarifa
+  nombre_portal: Tipo de Tarifa
+  descripcion: Clase de usuario o tarifa a la que corresponde el registro.
+  descripcion_oficial: null
+  tipo_portal: text
+  tipo_recomendado: texto
+  rol: categoria
+  unidad: No aplica
+  reglas_relacionadas:
+  - R05
+  - R06
+  nulos_y_ceros: Validar según catálogo y aplicabilidad; no reemplazar N/A sin estudiar su significado.
+- columna: tipodedato
+  nombre_portal: Tipo de Dato
+  descripcion: 'Concepto representado por los importes: tarifa o componente/cargo. Determina su unidad y la interpretación
+    de signos y ceros.'
+  descripcion_oficial: "B.T.: Baja Tensión (Nivel 1, < 1 kV).\n\nCfm,j ($/factura) para diciembre 2016 -  5,660\
+    \ - enero 2017 - 5,642 - febrero 2017 - 5,699. \nmarzo 2017 - 5,757\nabril 2017 - 5,784"
+  tipo_portal: text
+  tipo_recomendado: texto
+  rol: categoria_critica
+  unidad: No aplica
+  reglas_relacionadas:
+  - R05
+  - R06
+  - R07
+  - R10
+  - R12
+  nulos_y_ceros: Validar según catálogo y aplicabilidad; no reemplazar N/A sin estudiar su significado.
+- columna: rangodeconsumo
+  nombre_portal: Rango de Consumo
+  descripcion: Tramo de consumo al que aplica la tarifa; no es consumo medido. C.S. aparece definido como consumo
+    subsidiado en el metadato.
+  descripcion_oficial: "B.T.: Baja Tensión (Nivel 1, < 1 kV). \nC.S.: Consumo Subsidiado"
+  tipo_portal: text
+  tipo_recomendado: texto
+  rol: categoria
+  unidad: Etiqueta; validar límites del tramo
+  reglas_relacionadas:
+  - R05
+  - R06
+  nulos_y_ceros: Validar según catálogo y aplicabilidad; no reemplazar N/A sin estudiar su significado.
+- columna: nivel
+  nombre_portal: Nivel
+  descripcion: Nivel de tensión tarifario. El código actual distingue nivel I frente a los demás niveles.
+  descripcion_oficial: null
+  tipo_portal: text
+  tipo_recomendado: texto
+  rol: categoria_critica
+  unidad: Categoría, no magnitud continua
+  reglas_relacionadas:
+  - R05
+  - R09
+  nulos_y_ceros: Validar según catálogo y aplicabilidad; no reemplazar N/A sin estudiar su significado.
+- columna: propiedadepm
+  nombre_portal: Propiedad Epm
+  descripcion: Importe para activos de propiedad EPM; usado por el código actual en nivel I.
+  descripcion_oficial: null
+  tipo_portal: number
+  tipo_recomendado: decimal_nullable
+  rol: medida_critica
+  unidad: Según tipodedato; COP/kWh para conceptos tarifarios energéticos, por confirmar por concepto
+  reglas_relacionadas:
+  - R03
+  - R07
+  - R08
+  - R09
+  - R10
+  - R11
+  - R12
+  nulos_y_ceros: Preservar original. Definir aplicabilidad por categoría; no convertir cero en nulo automáticamente.
+- columna: compartido
+  nombre_portal: Compartido
+  descripcion: Importe para activos de propiedad compartida; usado por el código actual en nivel I.
+  descripcion_oficial: null
+  tipo_portal: number
+  tipo_recomendado: decimal_nullable
+  rol: medida_critica
+  unidad: Según tipodedato; no asignar una unidad única sin revisar concepto
+  reglas_relacionadas:
+  - R03
+  - R07
+  - R08
+  - R09
+  - R10
+  - R11
+  - R12
+  nulos_y_ceros: Preservar original. Definir aplicabilidad por categoría; no convertir cero en nulo automáticamente.
+- columna: propiedaddelcliente
+  nombre_portal: Propiedad del Cliente
+  descripcion: Importe para activos de propiedad del cliente; usado por el código actual en nivel I.
+  descripcion_oficial: null
+  tipo_portal: number
+  tipo_recomendado: decimal_nullable
+  rol: medida_critica
+  unidad: Según tipodedato; no asignar una unidad única sin revisar concepto
+  reglas_relacionadas:
+  - R03
+  - R07
+  - R08
+  - R09
+  - R10
+  - R11
+  - R12
+  nulos_y_ceros: Preservar original. Definir aplicabilidad por categoría; no convertir cero en nulo automáticamente.
+- columna: punta
+  nombre_portal: Punta
+  descripcion: Importe de la franja horaria punta. Validar aplicabilidad por nivel y modalidad tarifaria con el
+    documento original.
+  descripcion_oficial: 'Tarifa Monomia Horaria -Franjas Aplicadas: Horas de punta: 9 a.m. - 12 m; 6 p.m - 9 p.m.
+
+    Horas fuera de punta: 12 p.m - 9 a.m.; 12 m - 6 p.m y 9 p.m - 12 p.m.'
+  tipo_portal: number
+  tipo_recomendado: decimal_nullable
+  rol: medida_critica
+  unidad: Según concepto y modalidad; validar en publicación
+  reglas_relacionadas:
+  - R03
+  - R07
+  - R09
+  - R10
+  - R11
+  - R12
+  nulos_y_ceros: Preservar original. Definir aplicabilidad por categoría; no convertir cero en nulo automáticamente.
+- columna: fueradepunta
+  nombre_portal: Fuera de Punta
+  descripcion: Importe de la franja fuera de punta. Validar aplicabilidad por nivel y modalidad tarifaria con el
+    documento original.
+  descripcion_oficial: 'Tarifa Monomia Horaria -Franjas Aplicadas: Horas de punta: 9 a.m. - 12 m; 6 p.m - 9 p.m.
+
+    Horas fuera de punta: 12 p.m - 9 a.m.; 12 m - 6 p.m y 9 p.m - 12 p.m.'
+  tipo_portal: number
+  tipo_recomendado: decimal_nullable
+  rol: medida_critica
+  unidad: Según concepto y modalidad; validar en publicación
+  reglas_relacionadas:
+  - R03
+  - R07
+  - R09
+  - R10
+  - R11
+  - R12
+  nulos_y_ceros: Preservar original. Definir aplicabilidad por categoría; no convertir cero en nulo automáticamente.
+- columna: year
+  nombre_portal: Año
+  descripcion: Año de vigencia del dato tarifario; el portal lo declara texto. No es fecha de publicación.
+  descripcion_oficial: año
+  tipo_portal: text
+  tipo_recomendado: entero_o_mes_normalizado
+  rol: periodo
+  unidad: Año calendario
+  reglas_relacionadas:
+  - R01
+  - R02
+  - R05
+  nulos_y_ceros: Validar según catálogo y aplicabilidad; no reemplazar N/A sin estudiar su significado.
+- columna: mes
+  nombre_portal: Mes
+  descripcion: Mes de vigencia expresado como texto. Normalizar mediante catálogo explícito de meses.
+  descripcion_oficial: mes
+  tipo_portal: text
+  tipo_recomendado: entero_o_mes_normalizado
+  rol: periodo
+  unidad: Mes calendario
+  reglas_relacionadas:
+  - R01
+  - R02
+  - R05
+  nulos_y_ceros: Validar según catálogo y aplicabilidad; no reemplazar N/A sin estudiar su significado.
+campos_externos_necesarios:
+- campo: referencia_publicacion_original
+  presente_en_csv: false
+  descripcion: Documento oficial, página y valor contrastado para exactitud.
+- campo: fecha_disponibilidad_real
+  presente_en_csv: false
+  descripcion: Evidencia histórica de cuándo estuvo disponible cada publicación; pendiente.
+- campo: fecha_limite_esperada
+  presente_en_csv: false
+  descripcion: Plazo documentado para cada publicación; pendiente.
+- campo: evidencia_temporal
+  presente_en_csv: false
+  descripcion: URL, archivo o registro que respalda la fecha real; pendiente.
+trazabilidad:
+  campos_generados:
+  - sha256_archivo
+  - fecha_descarga_utc
+  - dataset_id
+  - clave_contenido_hallazgo
+  precaucion: La fecha de descarga y timestamps globales del portal no prueban publicación puntual por período.
+dimensiones:
+  completitud:
+    control: R01/R10 y cobertura temporal definida
+    requisito: Medir nulos y presencia esperada por categoría; no confundir meses anteriores a creación de categoría
+      con faltantes.
+    estado: propuesto_pendiente_de_implementacion_o_validacion
+  validez:
+    control: R02/R03/R07/R11
+    requisito: Dominios por concepto y fuente; R11 es detección heurística.
+    estado: propuesto_pendiente_de_implementacion_o_validacion
+  unicidad:
+    control: R04/R05
+    requisito: Definir entidad y clave antes de calificar duplicación.
+    estado: propuesto_pendiente_de_implementacion_o_validacion
+  consistencia:
+    control: R06/R08/R09
+    requisito: Adaptar relaciones y catálogo a cada fuente.
+    estado: propuesto_pendiente_de_implementacion_o_validacion
+  integridad:
+    control: INT01 control complementario propuesto
+    requisito: Verificar estructura y relaciones código-nombre/catálogos. Separar de unicidad; falta implementar
+      y validar.
+    estado: propuesto_pendiente_de_implementacion_o_validacion
+  razonabilidad:
+    control: R12 y cartas I-MR/modelos
+    requisito: Evaluar patrones y alertas; anomalía no equivale a error confirmado.
+    estado: propuesto_pendiente_de_implementacion_o_validacion
+  exactitud:
+    control: EXA01 control complementario propuesto
+    requisito: Contrastar muestra con documentos tarifarios oficiales equivalentes; reportar tamaño de muestra y
+      concordancia, no extrapolar sin diseño.
+    estado: propuesto_pendiente_de_implementacion_o_validacion
+  oportunidad:
+    control: OPO01 control complementario propuesto
+    requisito: Medir fecha real de disponibilidad frente a plazo esperado documentado. No sustituir por mes de vigencia,
+      fecha de descarga ni última modificación global del dataset.
+    estado: propuesto_pendiente_de_implementacion_o_validacion

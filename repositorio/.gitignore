@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv*/
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store
+Thumbs.db
+# Los resultados tabulares y muestras forman parte de la entrega.
+# Las figuras se pueden regenerar con pipeline.py ejecutar figuras.
+Outputs/**/figuras/

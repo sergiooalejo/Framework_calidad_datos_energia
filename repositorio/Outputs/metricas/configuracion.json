@@ -1,0 +1,98 @@
+{
+  "fecha_cliente": "2026-11-07",
+  "semilla": 20261107,
+  "referencia": 36,
+  "vigilancia": 12,
+  "panel": "comun, igual que el escenario principal de 4.2 (EPM 27, CHEC 276, SSPD 321, XM 1 series)",
+  "variante_sensibilidad": "EPM_canonicas: EPM con las equivalencias de etiquetas del Hito 2 (3.3/insumos_hito2/02_catalogo_variantes.csv), copia de trabajo; no existe en 4.2 y no se compara con él",
+  "metodos": {
+    "IMR": "Cartas I-MR",
+    "Z_robusto": "Z-score robusto (MAD)",
+    "IF": "Isolation Forest",
+    "LOF": "LOF",
+    "KNN": "KNN (distancia media, k=5)",
+    "R12": "R12 (magnitud del nivel)"
+  },
+  "puntajes": {
+    "IMR": "max(|c-media|/(2,66*MR), |c-anterior|/(3,267*MR)); >1 equivale a la unión I o MR",
+    "Z_robusto": "|c-mediana|/(MAD/0,6745); >3 equivale a MAD_3sigma de 4.2",
+    "IF": "-score_samples del modelo de 4.2 (300 árboles, 4 rasgos, un modelo por calendario)",
+    "LOF": "-score_samples de LocalOutlierFactor(novelty=True, n_neighbors=20) sobre los mismos rasgos",
+    "KNN": "distancia media a los 5 vecinos de referencia más cercanos, mismos rasgos",
+    "R12": "|nivel| / mediana de referencia; el factor 5, 10 o 20 es el umbral"
+  },
+  "escala_de_respaldo": "MAD o MR igual a cero: desviación absoluta media, luego desviación estándar, luego 1; solo para ordenar puntajes",
+  "tasa_igualada": {
+    "tasas_objetivo": [
+      0.01,
+      0.02,
+      0.05,
+      0.1
+    ],
+    "tasa_destacada": 0.05,
+    "definicion": "umbral = (floor(tasa*n)+1)-ésimo puntaje más alto de las observaciones reales de vigilancia de la fuente; sin etiquetas",
+    "no_interpretable_baja_resolucion": "menos de 5 alertas esperadas",
+    "LOF_degenerado": "fracción de puntajes reales LOF > 1e+06 mayor o igual a 0.01"
+  },
+  "etiquetas": "positivo = valor inyectado en t; negativo = observaciones reales sin inyección, incluidas las alertas reales sin error conocido",
+  "horizontes": {
+    "t": "alerta en el mes inyectado (FPR sobre los 12 meses reales)",
+    "t_o_t1": "alerta en t o t+1 (FPR sobre pares de meses consecutivos, 11 por serie)"
+  },
+  "recall_global": "macro: promedio de los recall por tipo, cada tipo con el mismo peso (mezcla uniforme de los seis tipos)",
+  "prevalencias_supuestas": [
+    0.01,
+    0.05,
+    0.1
+  ],
+  "bootstrap": {
+    "repeticiones": 1000,
+    "unidad": "categoría completa dentro de la fuente; TPR y FPR remuestreados juntos",
+    "intervalo": "percentiles 2,5 y 97,5; sin IC con menos de dos categorías"
+  },
+  "sorteo": {
+    "replicas": 500,
+    "origenes_por_serie": 3,
+    "diseno": "k meses de origen distintos por serie, sin reemplazo; un tipo de error uniforme por mes"
+  },
+  "entradas": {
+    "EPM": {
+      "ruta": "Data/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv",
+      "sha256": "98acd40e8d2b92433b1dfc60422228f26f53ab331fd600631f03f830e7ba38f4"
+    },
+    "CHEC": {
+      "ruta": "Data/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv",
+      "sha256": "05865b094a4cc4eb9f822ed2af686a11a8905d6606f40bb554f5bb5258e3c53f"
+    },
+    "SSPD": {
+      "ruta": "Data/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv",
+      "sha256": "c0beb6d6800de043e91dfd0def5ee619201a579c4013fd65e9255d6e1479d625"
+    },
+    "XM": {
+      "ruta": "Data/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv",
+      "sha256": "56db2e52a430619794277c3d0682c5e815318166541b7132834946566ab7c569"
+    }
+  },
+  "cuarentena_EPM": {
+    "ruta": "Outputs/cuarentena_bootstrap/EPM/cuarentena_registros.csv",
+    "sha256": "d91f1d5ba85558f90955c5b225fff4c447739090f4e49e150bc37eafb7a0de15"
+  },
+  "dependencias": {
+    "Docs/Antecedentes/plan_hitos_3-6_detallado.txt": "1d04173ff2951d739bd8c2b3346cfcf34627fdeb3f4c025f30908a401e39857c",
+    "Code/Modeling/sensibilidad/analisis_sensibilidad.py": "33a03c3bd908f0975b8f759e284178f709f90fc32a6c184ce1575510661275ce",
+    "Outputs/sensibilidad/inyecciones_detalle.csv.gz": "55863fe735747dacc62c64d973efbaa141da34664697da7cedf95d4d07cee49d",
+    "Code/Modeling/detectores/zscore_robusto.py": "3fd8f9e9826b555ad0bd731ed772e5d10b4f23e238582d86671a5065de91eaee",
+    "Outputs/adaptadores/insumos_hito2/02_catalogo_variantes.csv": "08d3d6d93d530a378f2331755c7ef1d008b8c9197a053ce249028e0cd763eee4",
+    "Code/Modeling/regla_sistemica/regla_sistemica.py": "a7d758f4651fc8dc74ee39f7ecbf94486c0d74956d1402a16f67f66d023a4b79"
+  },
+  "versiones": {
+    "python": "3.14.6",
+    "numpy": "2.5.4",
+    "pandas": "2.3.3",
+    "sklearn": "1.9.1"
+  },
+  "detalle": {
+    "puntajes_reales": 8328,
+    "puntajes_inyecciones": 43846
+  }
+}

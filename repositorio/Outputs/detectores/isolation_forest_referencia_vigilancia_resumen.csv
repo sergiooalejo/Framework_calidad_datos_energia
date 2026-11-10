@@ -1,0 +1,5 @@
+fuente,series_entrenamiento,observaciones_referencia,observaciones_vigilancia,umbral_referencia,percentil_umbral,señales_vigilancia,tasa_alerta_vigilancia
+EPM,60,2160,720,0.703160867459,0.995,31,0.0430555555556
+CHEC,276,9936,3312,0.688891483037,0.995,16,0.0048309178744
+SSPD,356,12816,4272,0.729329767365,0.995,27,0.0063202247191
+XM,1,36,12,0.723648516572,0.995,0,0

@@ -1,0 +1,32 @@
+{
+  "archivo_entrada": "Data/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv",
+  "filas": 3623,
+  "columnas": 12,
+  "dimensiones": [
+    "Exactitud",
+    "Validez",
+    "Completitud",
+    "Integridad",
+    "Unicidad",
+    "Oportunidad",
+    "Consistencia",
+    "Razonabilidad"
+  ],
+  "duplicados_exactos_adicionales": 10,
+  "filas_con_clave_compuesta_repetida": 16,
+  "campos_clave_integridad": [
+    "year",
+    "mes",
+    "tipodeinformacion",
+    "tipodetarifa",
+    "tipodedato",
+    "rangodeconsumo",
+    "nivel"
+  ],
+  "ultimo_periodo": "2021-12",
+  "rezago_meses": 59,
+  "oportunidad_cumple_tolerancia": false,
+  "tolerancia_rezago_meses": 1,
+  "exactitud": "no evaluable sin fuente de referencia",
+  "nota": "Integridad, consistencia y razonabilidad se estiman con proxies descritos en los indicadores; revisar extremos estadísticos con reglas de negocio."
+}

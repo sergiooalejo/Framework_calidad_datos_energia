@@ -1,0 +1,47 @@
+periodo,componente,propiedadepm,compartido,propiedaddelcliente
+2020-01,CU total,520.20,501.14,482.08
+2020-01,"Costo compra: Gm, i",210.50,210.50,210.50
+2020-01,Cargo transporte STN: Tm,33.62,33.62,33.62
+2020-01,"Cargo transporte SDL: Dn,m",191.79,172.73,153.67
+2020-01,"Margen comercialización: CVm,i,j",45.60,45.60,45.60
+2020-01,"Costo G,T, pérdidas: PRn,m",38.93,38.93,38.93
+2020-01,Restricciones: Rm,-0.25,-0.25,-0.25
+2020-02,CU total,567.36,544.30,521.24
+2020-02,"Costo compra: Gm, i",228.24,228.24,228.24
+2020-02,Cargo transporte STN: Tm,35.41,35.41,35.41
+2020-02,"Cargo transporte SDL: Dn,m",206.68,183.62,160.56
+2020-02,"Margen comercialización: CVm,i,j",46.02,46.02,46.02
+2020-02,"Costo G,T, pérdidas: PRn,m",48.98,48.98,48.98
+2020-02,Restricciones: Rm,2.03,2.03,2.03
+2020-06,CU total,572.92,550.93,528.94
+2020-06,CU CREG 012 de 2020,567.36,544.30,521.24
+2020-06,"Costo compra: Gm, i",221.40,221.40,221.40
+2020-06,Cargo transporte STN: Tm,43.10,43.10,43.10
+2020-06,"Cargo transporte SDL: Dn,m",206.40,184.41,162.42
+2020-06,"Margen comercialización: CVm,i,j",48.55,48.55,48.55
+2020-06,"Costo G,T, pérdidas: PRn,m",48.92,48.92,48.92
+2020-06,Restricciones: Rm,4.55,4.55,4.55
+2020-07,CU total,581.22,559.32,537.43
+2020-07,CU CREG 012 de 2020,567.36,544.30,521.24
+2020-07,"Costo compra: Gm, i",222.30,222.30,222.30
+2020-07,Cargo transporte STN: Tm,34.33,34.33,34.33
+2020-07,"Cargo transporte SDL: Dn,m",217.22,195.32,173.43
+2020-07,"Margen comercialización: CVm,i,j",52.03,52.03,52.03
+2020-07,"Costo G,T, pérdidas: PRn,m",48.93,48.93,48.93
+2020-07,Restricciones: Rm,6.41,6.41,6.41
+2021-06,CU total,625.76,602.47,579.19
+2021-06,CU CREG 012 de 2020,590.45,566.45,542.45
+2021-06,"Costo compra: Gm, i",228.62,228.62,228.62
+2021-06,Cargo transporte STN: Tm,47.93,47.93,47.93
+2021-06,"Cargo transporte SDL: Dn,m",236.60,213.31,190.02
+2021-06,"Margen comercialización: CVm,i,j",51.20,51.20,51.20
+2021-06,"Costo G,T, pérdidas: PRn,m",49.91,49.91,49.91
+2021-06,Restricciones: Rm,11.50,11.50,11.50
+2021-07,CU total,623.97,600.89,577.80
+2021-07,CU CREG 012 de 2020,593.99,569.85,545.71
+2021-07,"Costo compra: Gm, i",221.74,221.74,221.74
+2021-07,Cargo transporte STN: Tm,41.57,41.57,41.57
+2021-07,"Cargo transporte SDL: Dn,m",231.74,208.65,185.57
+2021-07,"Margen comercialización: CVm,i,j",52.72,52.72,52.72
+2021-07,"Costo G,T, pérdidas: PRn,m",47.80,47.80,47.80
+2021-07,Restricciones: Rm,28.40,28.40,28.40

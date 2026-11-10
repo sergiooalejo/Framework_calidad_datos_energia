@@ -1,0 +1,11 @@
+{
+  "fecha": "2026-11-04",
+  "archivo": "Data/datos/Datos_en_revision/sspd_ebby-cjha_mensual.csv",
+  "filas_agregadas": 15075,
+  "meses_globales": 59,
+  "grupos_empresa_estrato": 207,
+  "grupos_presencia_49_meses_consecutivos": 120,
+  "grupos_consumo_basico_agregado_positivo_49_meses_consecutivos": 117,
+  "max_racha_positiva": 59,
+  "advertencia": "Suma por empresa-estrato en copia agregada; mezcla ubicaciones y categorías de conexión/lectura/factura. No prueba continuidad individual ni valida homogeneidad de cobertura."
+}

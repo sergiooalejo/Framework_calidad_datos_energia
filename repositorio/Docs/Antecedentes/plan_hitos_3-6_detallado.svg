@@ -1,0 +1,443 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="2797" viewBox="0 0 1800 2797" font-family="Segoe UI, Helvetica, Arial, sans-serif"><rect width="1800" height="2797" fill="#ffffff"/><text x="60" y="60" font-size="30" font-weight="700" fill="#1f2937">Plan de cierre de brechas · Hitos 3 a 6 · versión detallada</text>
+<text x="60" y="88" font-size="15" fill="#6b7280">Framework de calidad de datos en registros administrativos del sector energético · Grupo 03 · Dirección del trabajo · Sin fechas: la secuencia es la propuesta y el calendario lo fija el director con el programa</text>
+<text x="60" y="122" font-size="13" font-weight="700" fill="#6b7280" letter-spacing="1">BRECHAS DEL HITO 2 (REVISIÓN DEL 23 DE OCTUBRE DE 2026, CÓDIGO EJECUTADO Y CIFRAS REPRODUCIDAS)</text>
+<rect x="60" y="136" width="211" height="36" rx="18" fill="#f6f7f9" stroke="#d7dde5"/>
+<g transform="translate(75.6,145.5) scale(0.0332)"><path fill="#6b7280" d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></g>
+<text x="102" y="159" font-size="13.5" fill="#1f2937">Una sola fuente (EPM)</text>
+<rect x="283.20000000000005" y="136" width="254" height="36" rx="18" fill="#f6f7f9" stroke="#d7dde5"/>
+<g transform="translate(297.7,145.5) scale(0.0332)"><path fill="#6b7280" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zm-312 8v64c0 13.3 10.7 24 24 24s24-10.7 24-24l0-64c0-13.3-10.7-24-24-24s-24 10.7-24 24zm80-96V280c0 13.3 10.7 24 24 24s24-10.7 24-24V120c0-13.3-10.7-24-24-24s-24 10.7-24 24zm80 64v96c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></g>
+<text x="325.20000000000005" y="159" font-size="13.5" fill="#1f2937">Un modelo, sin sensibilidad</text>
+<rect x="549.6" y="136" width="233" height="36" rx="18" fill="#f6f7f9" stroke="#d7dde5"/>
+<g transform="translate(563.0,145.5) scale(0.0332)"><path fill="#6b7280" d="M290.8 48.6l78.4 29.7L288 109.5 206.8 78.3l78.4-29.7c1.8-.7 3.8-.7 5.7 0zM136 92.5V204.7c-1.3 .4-2.6 .8-3.9 1.3l-96 36.4C14.4 250.6 0 271.5 0 294.7V413.9c0 22.2 13.1 42.3 33.5 51.3l96 42.2c14.4 6.3 30.7 6.3 45.1 0L288 457.5l113.5 49.9c14.4 6.3 30.7 6.3 45.1 0l96-42.2c20.3-8.9 33.5-29.1 33.5-51.3V294.7c0-23.3-14.4-44.1-36.1-52.4l-96-36.4c-1.3-.5-2.6-.9-3.9-1.3V92.5c0-23.3-14.4-44.1-36.1-52.4l-96-36.4c-12.8-4.8-26.9-4.8-39.7 0l-96 36.4C150.4 48.4 136 69.3 136 92.5zM392 210.6l-82.4 31.2V152.6L392 121v89.6zM154.8 250.9l78.4 29.7L152 311.7 70.8 280.6l78.4-29.7c1.8-.7 3.8-.7 5.7 0zm18.8 204.4V354.8L256 323.2v95.9l-82.4 36.2zM421.2 250.9c1.8-.7 3.8-.7 5.7 0l78.4 29.7L424 311.7l-81.2-31.1 78.4-29.7zM523.2 421.2l-77.6 34.1V354.8L528 323.2v90.7c0 3.2-1.9 6-4.8 7.3z"/></g>
+<text x="591.6" y="159" font-size="13.5" fill="#1f2937">Sin artefacto ni tablero</text>
+<rect x="794.4000000000001" y="136" width="276" height="36" rx="18" fill="#f6f7f9" stroke="#d7dde5"/>
+<g transform="translate(808.9,145.5) scale(0.0332)"><path fill="#6b7280" d="M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160v8c0 13.3 10.7 24 24 24H456c13.3 0 24-10.7 24-24v-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8-3.4-17.2-3.4-25.2 0zM128 224H64V420.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512H480c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1V224H384V416H344V224H280V416H232V224H168V416H128V224zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></g>
+<text x="836.4000000000001" y="159" font-size="13.5" fill="#1f2937">Nada confirmado con la entidad</text>
+<rect x="1082.4" y="136" width="298" height="36" rx="18" fill="#f6f7f9" stroke="#d7dde5"/>
+<g transform="translate(1098.0,145.5) scale(0.0332)"><path fill="#6b7280" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3v87.8c18.8-10.9 40.7-17.1 64-17.1h96c35.3 0 64-28.7 64-64v-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V160c0 70.7-57.3 128-128 128H176c-35.3 0-64 28.7-64 64v6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V352 153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></g>
+<text x="1124.4" y="159" font-size="13.5" fill="#1f2937">Hipótesis vs. diseño sin resolver</text>
+<rect x="1392.0" y="136" width="247" height="36" rx="18" fill="#f6f7f9" stroke="#d7dde5"/>
+<g transform="translate(1406.5,145.5) scale(0.0332)"><path fill="#6b7280" d="M0 416c0 17.7 14.3 32 32 32l54.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-246.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 384c-17.7 0-32 14.3-32 32zm128 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM320 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm32-80c-32.8 0-61 19.7-73.3 48L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l246.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48l54.7 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-54.7 0c-12.3-28.3-40.5-48-73.3-48zM192 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm73.3-64C253 35.7 224.8 16 192 16s-61 19.7-73.3 48L32 64C14.3 64 0 78.3 0 96s14.3 32 32 32l86.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 128c17.7 0 32-14.3 32-32s-14.3-32-32-32L265.3 64z"/></g>
+<text x="1434.0" y="159" font-size="13.5" fill="#1f2937">OE1 sin métricas definidas</text>
+<rect x="60" y="206" width="1680" height="734" rx="14" fill="#ffffff" stroke="#d7dde5"/>
+<path d="M60,220 a14,14 0 0 1 14,-14 h216 v734 h-216 a14,14 0 0 1 -14,-14 z" fill="#2a78d6" opacity="0.07"/>
+<rect x="60" y="206" width="6" height="734" fill="#2a78d6"/>
+<circle cx="106" cy="254" r="26" fill="#2a78d6" opacity="0.14"/>
+<g transform="translate(92.0,240.0) scale(0.0547)"><path fill="#2a78d6" d="M288 448H64V224h64V160H64c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64zm-64-96H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64z"/></g>
+<text x="144" y="248" font-size="12" font-weight="700" fill="#2a78d6" letter-spacing="1">HITO 3</text>
+<text x="144" y="270" font-size="19" font-weight="700" fill="#1f2937">Replicar y</text>
+<text x="144" y="292" font-size="19" font-weight="700" fill="#1f2937">formalizar</text>
+<rect x="144" y="305" width="40" height="21" rx="10.5" fill="#2a78d6"/>
+<text x="164" y="320" font-size="11.5" font-weight="700" fill="#fff" text-anchor="middle">OE1</text>
+<rect x="190" y="305" width="40" height="21" rx="10.5" fill="#2a78d6"/>
+<text x="210" y="320" font-size="11.5" font-weight="700" fill="#fff" text-anchor="middle">OE2</text>
+<text x="82" y="348" font-size="13" fill="#6b7280">Lidera: responsable de datos</text>
+<text x="82" y="372" font-size="12.5" fill="#1f2937" font-style="italic">Cierra: una sola fuente ·</text>
+<text x="82" y="389" font-size="12.5" fill="#1f2937" font-style="italic">trazabilidad por posición ·</text>
+<text x="82" y="406" font-size="12.5" fill="#1f2937" font-style="italic">cartas fuera del anteproyecto ·</text>
+<text x="82" y="423" font-size="12.5" fill="#1f2937" font-style="italic">OE1 sin entregable</text>
+<text x="310" y="236" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">ACTIVIDADES</text>
+<circle cx="320" cy="255" r="9" fill="#2a78d6"/>
+<text x="320" y="259" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+<text x="338" y="260" font-size="13.5" font-weight="600" fill="#1f2937">Matriz dimensión → métrica → indicador → regla (OE1).</text>
+<text x="340" y="278" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="278" font-size="12.5" fill="#374151">Ocho dimensiones de DMBOK2 cap. 13 con definición propia para tarifas; las 12 reglas</text>
+<text x="352" y="294" font-size="12.5" fill="#374151">clasificadas en los 10 tipos de regla.</text>
+<text x="340" y="310" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="310" font-size="12.5" fill="#374151">Plantilla por indicador: fórmula como cociente, unidad, umbral, severidad, frecuencia,</text>
+<text x="352" y="326" font-size="12.5" fill="#374151">responsable y tendencia.</text>
+<text x="340" y="342" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="342" font-size="12.5" fill="#374151">Añadir integridad (clave categoría + período) y razonabilidad (cartas); excluir oportunidad por</text>
+<text x="352" y="358" font-size="12.5" fill="#374151">escrito. Relación explícita con ISO/IEC 25012.</text>
+<circle cx="320" cy="379" r="9" fill="#2a78d6"/>
+<text x="320" y="383" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+<text x="338" y="384" font-size="13.5" font-weight="600" fill="#1f2937">Ficha de caracterización por fuente (OE2).</text>
+<text x="340" y="402" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="402" font-size="12.5" fill="#374151">EPM sfcd-b3ey: 3.623 filas, 12 columnas, dic-2016 a dic-2021; 202 series posibles, 83 con 49</text>
+<text x="352" y="418" font-size="12.5" fill="#374151">meses o más.</text>
+<text x="340" y="434" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="434" font-size="12.5" fill="#374151">Superservicios vfjy-6fka: 5.396 filas, 16 columnas, 8 períodos. Consumidores del dato, datos</text>
+<text x="352" y="450" font-size="12.5" fill="#374151">críticos, unidades y significado de Rango de Consumo (2.143 ausentes).</text>
+<circle cx="320" cy="471" r="9" fill="#2a78d6"/>
+<text x="320" y="475" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+<text x="338" y="476" font-size="13.5" font-weight="600" fill="#1f2937">Replicar el pipeline en Superservicios.</text>
+<text x="340" y="494" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="494" font-size="12.5" fill="#374151">Reglas transversales R01 a R11 y perfilamiento; las cartas no aplican con 8 períodos y se</text>
+<text x="352" y="510" font-size="12.5" fill="#374151">documenta.</text>
+<text x="340" y="526" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="526" font-size="12.5" fill="#374151">Informe de diferencias: qué reglas y umbrales cambian y qué dimensiones quedan sin cubrir en</text>
+<text x="352" y="542" font-size="12.5" fill="#374151">cada fuente.</text>
+<circle cx="320" cy="563" r="9" fill="#2a78d6"/>
+<text x="320" y="567" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+<text x="338" y="568" font-size="13.5" font-weight="600" fill="#1f2937">Decidir la fuente CREG.</text>
+<text x="340" y="586" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="586" font-size="12.5" fill="#374151">Buscar en datos.gov.co un conjunto de la CREG con series mensuales de 48 meses o más. Si no</text>
+<text x="352" y="602" font-size="12.5" fill="#374151">existe, reformular OE2 por escrito: fuentes abiertas del sector con la CREG como referencia</text>
+<text x="352" y="618" font-size="12.5" fill="#374151">regulatoria.</text>
+<circle cx="320" cy="639" r="9" fill="#2a78d6"/>
+<text x="320" y="643" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">5</text>
+<text x="338" y="644" font-size="13.5" font-weight="600" fill="#1f2937">Cartas en cambios logarítmicos y formalizadas.</text>
+<text x="340" y="662" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="662" font-size="12.5" fill="#374151">Sustituir la diferencia absoluta por la diferencia de logaritmos en la carta I, la carta MR y</text>
+<text x="352" y="678" font-size="12.5" fill="#374151">los rasgos del Isolation Forest; recalcular límites.</text>
+<text x="340" y="694" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="694" font-size="12.5" fill="#374151">Marco teórico 3.1.5: Jones-Farmer et al. (2014) y DMBOK2 cap. 13, técnica de control estadístico</text>
+<text x="352" y="710" font-size="12.5" fill="#374151">de procesos. Metodología 5.6.4: cartas como método estadístico clásico en lugar de Z-score.</text>
+<circle cx="320" cy="731" r="9" fill="#2a78d6"/>
+<text x="320" y="735" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">6</text>
+<text x="338" y="736" font-size="13.5" font-weight="600" fill="#1f2937">Trazabilidad estable entre descargas.</text>
+<text x="340" y="754" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="754" font-size="12.5" fill="#374151">Descarga por API con identificador de fila; hash SHA-256 y fecha de cada descarga; clave de</text>
+<text x="352" y="770" font-size="12.5" fill="#374151">contenido (categoría, fecha, columna) en hallazgos y alertas.</text>
+<text x="340" y="786" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="786" font-size="12.5" fill="#374151">Motivo: los registros 2047, 3131, 3133 y 2348 de la diapositiva 7 cambian de posición en otra</text>
+<text x="352" y="802" font-size="12.5" fill="#374151">descarga del portal.</text>
+<circle cx="320" cy="823" r="9" fill="#2a78d6"/>
+<text x="320" y="827" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">7</text>
+<text x="338" y="828" font-size="13.5" font-weight="600" fill="#1f2937">Cuarentena por valor y remuestreo correcto.</text>
+<text x="340" y="846" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="846" font-size="12.5" fill="#374151">La cuarentena entra en el cálculo de límites: se excluyen los cambios que tocan un valor en</text>
+<text x="352" y="862" font-size="12.5" fill="#374151">cuarentena, sin interpolar. Hoy solo marca la serie como sucia.</text>
+<text x="340" y="878" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="878" font-size="12.5" fill="#374151">Bootstrap por categoría (23 del Nivel I y 5 de otros niveles), no por serie. R12 pasa de Error a</text>
+<text x="352" y="894" font-size="12.5" fill="#374151">Advertencia hasta confirmación.</text>
+<text x="930" y="236" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">INSUMOS Y FUNDAMENTO</text>
+<g transform="translate(931.8,249.0) scale(0.0234)"><path fill="#2a78d6" d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></g>
+<text x="952" y="260" font-size="12.5" fill="#1f2937">03_hallazgos.csv y</text>
+<text x="952" y="277" font-size="12.5" fill="#1f2937">05_alertas_imr_reales.csv</text>
+<g transform="translate(931.8,289.0) scale(0.0234)"><path fill="#2a78d6" d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></g>
+<text x="952" y="300" font-size="12.5" fill="#1f2937">08_copia_preparada.csv</text>
+<g transform="translate(931.8,312.0) scale(0.0234)"><path fill="#2a78d6" d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></g>
+<text x="952" y="323" font-size="12.5" fill="#1f2937">Resumen DAMA: secciones 2, 3 y 4</text>
+<g transform="translate(931.8,335.0) scale(0.0234)"><path fill="#2a78d6" d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></g>
+<text x="952" y="346" font-size="12.5" fill="#1f2937">Anteproyecto: 3.1.5, 5.6.4, 5.8</text>
+<g transform="translate(931.8,358.0) scale(0.0234)"><path fill="#2a78d6" d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></g>
+<text x="952" y="369" font-size="12.5" fill="#1f2937">Retro de junio: observaciones 5 y 7</text>
+<text x="1180" y="236" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">ENTREGABLES</text>
+<g transform="translate(1181.3,248.5) scale(0.0254)"><path fill="#2a78d6" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></g>
+<text x="1202" y="260" font-size="12.5" fill="#1f2937">Notebook replicado en las dos</text>
+<text x="1202" y="277" font-size="12.5" fill="#1f2937">fuentes</text>
+<g transform="translate(1181.3,288.5) scale(0.0254)"><path fill="#2a78d6" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></g>
+<text x="1202" y="300" font-size="12.5" fill="#1f2937">Informe de diferencias entre</text>
+<text x="1202" y="317" font-size="12.5" fill="#1f2937">fuentes</text>
+<g transform="translate(1181.3,328.5) scale(0.0254)"><path fill="#2a78d6" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></g>
+<text x="1202" y="340" font-size="12.5" fill="#1f2937">Matriz OE1 con plantilla llena por</text>
+<text x="1202" y="357" font-size="12.5" fill="#1f2937">regla</text>
+<g transform="translate(1181.3,368.5) scale(0.0254)"><path fill="#2a78d6" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></g>
+<text x="1202" y="380" font-size="12.5" fill="#1f2937">Fichas de caracterización</text>
+<g transform="translate(1181.3,391.5) scale(0.0254)"><path fill="#2a78d6" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></g>
+<text x="1202" y="403" font-size="12.5" fill="#1f2937">Anteproyecto actualizado</text>
+<text x="1420" y="236" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">CRITERIO DE CIERRE</text>
+<text x="1420" y="260" font-size="12.5" fill="#1f2937">El pipeline corre sin cambios manuales en las</text>
+<text x="1420" y="277" font-size="12.5" fill="#1f2937">dos fuentes y da los mismos hallazgos con dos</text>
+<text x="1420" y="294" font-size="12.5" fill="#1f2937">descargas distintas. Cada regla tiene dimensión,</text>
+<text x="1420" y="311" font-size="12.5" fill="#1f2937">tipo, fórmula y umbral. El anteproyecto ya</text>
+<text x="1420" y="328" font-size="12.5" fill="#1f2937">nombra las cartas.</text>
+<g transform="translate(1420.0,351.0) scale(0.0273)"><path fill="#eda100" d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></g>
+<text x="1440" y="363" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">RIESGO Y MITIGACIÓN</text>
+<text x="1420" y="385" font-size="12.5" fill="#1f2937">Superservicios tiene 8 períodos: allí solo</text>
+<text x="1420" y="402" font-size="12.5" fill="#1f2937">reglas y métodos transversales. Si la CREG no</text>
+<text x="1420" y="419" font-size="12.5" fill="#1f2937">tiene series largas, la replicación de cartas</text>
+<text x="1420" y="436" font-size="12.5" fill="#1f2937">queda solo en EPM y se declara como limitación.</text>
+<rect x="60" y="958" width="1680" height="546" rx="14" fill="#ffffff" stroke="#d7dde5"/>
+<path d="M60,972 a14,14 0 0 1 14,-14 h216 v546 h-216 a14,14 0 0 1 -14,-14 z" fill="#1baf7a" opacity="0.07"/>
+<rect x="60" y="958" width="6" height="546" fill="#1baf7a"/>
+<circle cx="106" cy="1006" r="26" fill="#1baf7a" opacity="0.14"/>
+<g transform="translate(88.5,992.0) scale(0.0547)"><path fill="#1baf7a" d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></g>
+<text x="144" y="1000" font-size="12" font-weight="700" fill="#1baf7a" letter-spacing="1">HITO 4</text>
+<text x="144" y="1022" font-size="19" font-weight="700" fill="#1f2937">Comparar con</text>
+<text x="144" y="1044" font-size="19" font-weight="700" fill="#1f2937">protocolo</text>
+<rect x="144" y="1057" width="40" height="21" rx="10.5" fill="#1baf7a"/>
+<text x="164" y="1072" font-size="11.5" font-weight="700" fill="#fff" text-anchor="middle">OE3</text>
+<rect x="190" y="1057" width="40" height="21" rx="10.5" fill="#1baf7a"/>
+<text x="210" y="1072" font-size="11.5" font-weight="700" fill="#fff" text-anchor="middle">OE4</text>
+<text x="82" y="1100" font-size="13" fill="#6b7280">Lidera: responsable de métricas y anomalías</text>
+<text x="82" y="1124" font-size="12.5" fill="#1f2937" font-style="italic">Cierra: un solo modelo · sin</text>
+<text x="82" y="1141" font-size="12.5" fill="#1f2937" font-style="italic">sensibilidad · sin precisión ni</text>
+<text x="82" y="1158" font-size="12.5" fill="#1f2937" font-style="italic">F1 · n efectivo sobreestimado</text>
+<text x="310" y="988" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">ACTIVIDADES</text>
+<circle cx="320" cy="1007" r="9" fill="#1baf7a"/>
+<text x="320" y="1011" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+<text x="338" y="1012" font-size="13.5" font-weight="600" fill="#1f2937">Técnicas adicionales con el mismo protocolo.</text>
+<text x="340" y="1030" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="1030" font-size="12.5" fill="#374151">Z-score robusto (mediana y MAD) sobre cambios log como línea base del anteproyecto; LOF o KNN</text>
+<text x="352" y="1046" font-size="12.5" fill="#374151">sobre los cuatro rasgos del Isolation Forest; Extended IF si el tiempo alcanza.</text>
+<text x="340" y="1062" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="1062" font-size="12.5" fill="#374151">Entrenamiento solo en referencia, evaluación en vigilancia, umbral por validación cruzada a tasa</text>
+<text x="352" y="1078" font-size="12.5" fill="#374151">de alerta igualada, como ya se hace con IF.</text>
+<circle cx="320" cy="1099" r="9" fill="#1baf7a"/>
+<text x="320" y="1103" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+<text x="338" y="1104" font-size="13.5" font-weight="600" fill="#1f2937">Análisis de sensibilidad.</text>
+<text x="340" y="1122" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="1122" font-size="12.5" fill="#374151">Ventana de referencia de 24, 36 y 48 cambios; constantes 2,66 y 3,267 frente a 3 sigma con MAD;</text>
+<text x="352" y="1138" font-size="12.5" fill="#374151">percentil 99 y 99,5; factor de R12 en 5, 10 y 20.</text>
+<text x="340" y="1154" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="1154" font-size="12.5" fill="#374151">Ventana de detección t frente a t y t+1; efecto de la regla de alerta sistémica sobre la tasa de</text>
+<text x="352" y="1170" font-size="12.5" fill="#374151">alerta.</text>
+<circle cx="320" cy="1191" r="9" fill="#1baf7a"/>
+<text x="320" y="1195" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+<text x="338" y="1196" font-size="13.5" font-weight="600" fill="#1f2937">Métricas completas y honestas.</text>
+<text x="340" y="1214" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="1214" font-size="12.5" fill="#374151">Precisión, recall y F1 a tasa de alerta igualada; curvas de detección contra tasa de alerta por</text>
+<text x="352" y="1230" font-size="12.5" fill="#374151">método.</text>
+<text x="340" y="1246" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="1246" font-size="12.5" fill="#374151">Reportar pruebas por tipo (hoy entre 760 y 1.540) y meses distintos sorteados (13 de 23 en</text>
+<text x="352" y="1262" font-size="12.5" fill="#374151">promedio); sortear sin reemplazo.</text>
+<circle cx="320" cy="1283" r="9" fill="#1baf7a"/>
+<text x="320" y="1287" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+<text x="338" y="1288" font-size="13.5" font-weight="600" fill="#1f2937">Regla de alerta sistémica.</text>
+<text x="340" y="1306" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="1306" font-size="12.5" fill="#374151">Si más de X % de las series alertan en el mismo mes, se clasifica como cambio regulatorio y no</text>
+<text x="352" y="1322" font-size="12.5" fill="#374151">como error de dato; calibrar X con feb-2020 (51 de 83), jul-2020 (24) y jul-2021 (18).</text>
+<text x="340" y="1338" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="1338" font-size="12.5" fill="#374151">Contrastar con resoluciones CREG y publicaciones tarifarias de EPM de esos meses.</text>
+<circle cx="320" cy="1359" r="9" fill="#1baf7a"/>
+<text x="320" y="1363" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">5</text>
+<text x="338" y="1364" font-size="13.5" font-weight="600" fill="#1f2937">Scorecard por dimensión (OE1 en resultados).</text>
+<text x="340" y="1382" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="1382" font-size="12.5" fill="#374151">Calcular cada indicador de la matriz en ambas fuentes; tabla única con umbral y estado, como</text>
+<text x="352" y="1398" font-size="12.5" fill="#374151">pide DMBOK2 para el reporte de calidad.</text>
+<circle cx="320" cy="1419" r="9" fill="#1baf7a"/>
+<text x="320" y="1423" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">6</text>
+<text x="338" y="1424" font-size="13.5" font-weight="600" fill="#1f2937">Resultados por nivel y costo de cómputo.</text>
+<text x="340" y="1442" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="1442" font-size="12.5" fill="#374151">Separar Nivel I (69 series casi colineales, razones medianas 0,964 y 0,928) de los niveles II a</text>
+<text x="352" y="1458" font-size="12.5" fill="#374151">IV (14 series); tiempo de cómputo por etapa y por fuente.</text>
+<text x="930" y="988" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">INSUMOS Y FUNDAMENTO</text>
+<g transform="translate(931.8,1001.0) scale(0.0234)"><path fill="#1baf7a" d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></g>
+<text x="952" y="1012" font-size="12.5" fill="#1f2937">06_experimento_inyeccion.csv</text>
+<g transform="translate(931.8,1024.0) scale(0.0234)"><path fill="#1baf7a" d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></g>
+<text x="952" y="1035" font-size="12.5" fill="#1f2937">11_puntajes_limpios_por_serie.csv</text>
+<g transform="translate(931.8,1047.0) scale(0.0234)"><path fill="#1baf7a" d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></g>
+<text x="952" y="1058" font-size="12.5" fill="#1f2937">07_deteccion_por_tipo.csv</text>
+<g transform="translate(931.8,1070.0) scale(0.0234)"><path fill="#1baf7a" d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></g>
+<text x="952" y="1081" font-size="12.5" fill="#1f2937">Resumen DAMA: sección 4 (métricas)</text>
+<g transform="translate(931.8,1093.0) scale(0.0234)"><path fill="#1baf7a" d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></g>
+<text x="952" y="1104" font-size="12.5" fill="#1f2937">Anteproyecto: 5.6.5 y 5.6.6</text>
+<text x="1180" y="988" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">ENTREGABLES</text>
+<g transform="translate(1181.3,1000.5) scale(0.0254)"><path fill="#1baf7a" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></g>
+<text x="1202" y="1012" font-size="12.5" fill="#1f2937">Tabla comparativa con IC 95 % por</text>
+<text x="1202" y="1029" font-size="12.5" fill="#1f2937">técnica y tipo de error</text>
+<g transform="translate(1181.3,1040.5) scale(0.0254)"><path fill="#1baf7a" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></g>
+<text x="1202" y="1052" font-size="12.5" fill="#1f2937">Figuras de sensibilidad</text>
+<g transform="translate(1181.3,1063.5) scale(0.0254)"><path fill="#1baf7a" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></g>
+<text x="1202" y="1075" font-size="12.5" fill="#1f2937">Catálogo de alertas sistémicas</text>
+<g transform="translate(1181.3,1086.5) scale(0.0254)"><path fill="#1baf7a" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></g>
+<text x="1202" y="1098" font-size="12.5" fill="#1f2937">Scorecard por fuente y dimensión</text>
+<g transform="translate(1181.3,1109.5) scale(0.0254)"><path fill="#1baf7a" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></g>
+<text x="1202" y="1121" font-size="12.5" fill="#1f2937">Sección preliminar de resultados</text>
+<text x="1420" y="988" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">CRITERIO DE CIERRE</text>
+<text x="1420" y="1012" font-size="12.5" fill="#1f2937">Toda técnica pasó por el mismo protocolo y los</text>
+<text x="1420" y="1029" font-size="12.5" fill="#1f2937">mismos errores. Las conclusiones llevan</text>
+<text x="1420" y="1046" font-size="12.5" fill="#1f2937">intervalo. La sensibilidad está reportada. El</text>
+<text x="1420" y="1063" font-size="12.5" fill="#1f2937">scorecard existe en las dos fuentes.</text>
+<g transform="translate(1420.0,1086.0) scale(0.0273)"><path fill="#eda100" d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></g>
+<text x="1440" y="1098" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">RIESGO Y MITIGACIÓN</text>
+<text x="1420" y="1120" font-size="12.5" fill="#1f2937">Fuera del Nivel I hay 14 series: las</text>
+<text x="1420" y="1137" font-size="12.5" fill="#1f2937">conclusiones por nivel se presentan con cautela.</text>
+<text x="1420" y="1154" font-size="12.5" fill="#1f2937">La regla sistémica puede ocultar errores masivos</text>
+<text x="1420" y="1171" font-size="12.5" fill="#1f2937">reales; dejarlo como limitación.</text>
+<rect x="60" y="1522" width="1680" height="434" rx="14" fill="#ffffff" stroke="#d7dde5"/>
+<path d="M60,1536 a14,14 0 0 1 14,-14 h216 v434 h-216 a14,14 0 0 1 -14,-14 z" fill="#6250d6" opacity="0.07"/>
+<rect x="60" y="1522" width="6" height="434" fill="#6250d6"/>
+<circle cx="106" cy="1570" r="26" fill="#6250d6" opacity="0.14"/>
+<g transform="translate(90.2,1556.0) scale(0.0547)"><path fill="#6250d6" d="M290.8 48.6l78.4 29.7L288 109.5 206.8 78.3l78.4-29.7c1.8-.7 3.8-.7 5.7 0zM136 92.5V204.7c-1.3 .4-2.6 .8-3.9 1.3l-96 36.4C14.4 250.6 0 271.5 0 294.7V413.9c0 22.2 13.1 42.3 33.5 51.3l96 42.2c14.4 6.3 30.7 6.3 45.1 0L288 457.5l113.5 49.9c14.4 6.3 30.7 6.3 45.1 0l96-42.2c20.3-8.9 33.5-29.1 33.5-51.3V294.7c0-23.3-14.4-44.1-36.1-52.4l-96-36.4c-1.3-.5-2.6-.9-3.9-1.3V92.5c0-23.3-14.4-44.1-36.1-52.4l-96-36.4c-12.8-4.8-26.9-4.8-39.7 0l-96 36.4C150.4 48.4 136 69.3 136 92.5zM392 210.6l-82.4 31.2V152.6L392 121v89.6zM154.8 250.9l78.4 29.7L152 311.7 70.8 280.6l78.4-29.7c1.8-.7 3.8-.7 5.7 0zm18.8 204.4V354.8L256 323.2v95.9l-82.4 36.2zM421.2 250.9c1.8-.7 3.8-.7 5.7 0l78.4 29.7L424 311.7l-81.2-31.1 78.4-29.7zM523.2 421.2l-77.6 34.1V354.8L528 323.2v90.7c0 3.2-1.9 6-4.8 7.3z"/></g>
+<text x="144" y="1564" font-size="12" font-weight="700" fill="#6250d6" letter-spacing="1">HITO 5</text>
+<text x="144" y="1586" font-size="19" font-weight="700" fill="#1f2937">Construir el</text>
+<text x="144" y="1608" font-size="19" font-weight="700" fill="#1f2937">artefacto</text>
+<rect x="144" y="1621" width="40" height="21" rx="10.5" fill="#6250d6"/>
+<text x="164" y="1636" font-size="11.5" font-weight="700" fill="#fff" text-anchor="middle">OE3</text>
+<text x="82" y="1664" font-size="13" fill="#6b7280">Lidera: responsable de reglas de negocio</text>
+<text x="82" y="1688" font-size="12.5" fill="#1f2937" font-style="italic">Cierra: no existe el artefacto</text>
+<text x="82" y="1705" font-size="12.5" fill="#1f2937" font-style="italic">prometido (paquete, contenedor,</text>
+<text x="82" y="1722" font-size="12.5" fill="#1f2937" font-style="italic">tablero) · guion de 1.171 líneas</text>
+<text x="82" y="1739" font-size="12.5" fill="#1f2937" font-style="italic">sin dependencias fijadas</text>
+<text x="310" y="1552" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">ACTIVIDADES</text>
+<circle cx="320" cy="1571" r="9" fill="#6250d6"/>
+<text x="320" y="1575" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+<text x="338" y="1576" font-size="13.5" font-weight="600" fill="#1f2937">Paquete Python por componentes.</text>
+<text x="340" y="1594" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="1594" font-size="12.5" fill="#374151">Módulos cargar, perfilar, reglas, series, cartas, anomalías, evaluar y reportar; sin variables</text>
+<text x="352" y="1610" font-size="12.5" fill="#374151">globales compartidas entre partes (hoy df, resumen y meses se redefinen entre el Hito 1 y el 2).</text>
+<circle cx="320" cy="1631" r="9" fill="#6250d6"/>
+<text x="320" y="1635" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+<text x="338" y="1636" font-size="13.5" font-weight="600" fill="#1f2937">Reglas en configuración, no en código.</text>
+<text x="340" y="1654" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="1654" font-size="12.5" fill="#374151">Archivo YAML con id, dimensión, tipo, severidad, fórmula, umbral y referencia regulatoria por</text>
+<text x="352" y="1670" font-size="12.5" fill="#374151">regla; el motor las lee y las registra en la bitácora.</text>
+<circle cx="320" cy="1691" r="9" fill="#6250d6"/>
+<text x="320" y="1695" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+<text x="338" y="1696" font-size="13.5" font-weight="600" fill="#1f2937">Línea de comandos y salidas.</text>
+<text x="340" y="1714" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="1714" font-size="12.5" fill="#374151">descargar → evaluar → reportar; salidas CSV y JSON con metadatos de ejecución: hash, fecha,</text>
+<text x="352" y="1730" font-size="12.5" fill="#374151">versión del paquete y semilla.</text>
+<circle cx="320" cy="1751" r="9" fill="#6250d6"/>
+<text x="320" y="1755" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+<text x="338" y="1756" font-size="13.5" font-weight="600" fill="#1f2937">Reproducibilidad computacional.</text>
+<text x="340" y="1774" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="1774" font-size="12.5" fill="#374151">pyproject con Poetry y versiones fijadas de pandas, scikit-learn, statsmodels y matplotlib;</text>
+<text x="352" y="1790" font-size="12.5" fill="#374151">Dockerfile; pruebas automáticas con un conjunto pequeño y errores inyectados conocidos.</text>
+<circle cx="320" cy="1811" r="9" fill="#6250d6"/>
+<text x="320" y="1815" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">5</text>
+<text x="338" y="1816" font-size="13.5" font-weight="600" fill="#1f2937">Tablero de monitoreo.</text>
+<text x="340" y="1834" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="1834" font-size="12.5" fill="#374151">Power BI sobre las salidas: scorecard por dimensión, alertas por fuente y mes, bitácora de</text>
+<text x="352" y="1850" font-size="12.5" fill="#374151">incidentes con estado; limitado a las salidas de 5.9.2. Exportar también el scorecard en CSV.</text>
+<circle cx="320" cy="1871" r="9" fill="#6250d6"/>
+<text x="320" y="1875" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">6</text>
+<text x="338" y="1876" font-size="13.5" font-weight="600" fill="#1f2937">Documentación del artefacto.</text>
+<text x="340" y="1894" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="1894" font-size="12.5" fill="#374151">Diagrama de componentes 5.9 con entradas y salidas reales; README de reproducción; bitácora de</text>
+<text x="352" y="1910" font-size="12.5" fill="#374151">incidentes con estado, responsable y fecha (operación de calidad en DMBOK2).</text>
+<text x="930" y="1552" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">INSUMOS Y FUNDAMENTO</text>
+<g transform="translate(931.8,1565.0) scale(0.0234)"><path fill="#6250d6" d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></g>
+<text x="952" y="1576" font-size="12.5" fill="#1f2937">Código hasta Hito 2 (1.171 líneas)</text>
+<g transform="translate(931.8,1588.0) scale(0.0234)"><path fill="#6250d6" d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></g>
+<text x="952" y="1599" font-size="12.5" fill="#1f2937">Resumen DAMA: secciones 5 y 6</text>
+<g transform="translate(931.8,1611.0) scale(0.0234)"><path fill="#6250d6" d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></g>
+<text x="952" y="1622" font-size="12.5" fill="#1f2937">Anteproyecto: 5.7 y 5.9</text>
+<g transform="translate(931.8,1634.0) scale(0.0234)"><path fill="#6250d6" d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></g>
+<text x="952" y="1645" font-size="12.5" fill="#1f2937">Retro de junio: observación 6</text>
+<text x="1180" y="1552" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">ENTREGABLES</text>
+<g transform="translate(1181.3,1564.5) scale(0.0254)"><path fill="#6250d6" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></g>
+<text x="1202" y="1576" font-size="12.5" fill="#1f2937">Repositorio etiquetado v1.0</text>
+<g transform="translate(1181.3,1587.5) scale(0.0254)"><path fill="#6250d6" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></g>
+<text x="1202" y="1599" font-size="12.5" fill="#1f2937">Imagen Docker</text>
+<g transform="translate(1181.3,1610.5) scale(0.0254)"><path fill="#6250d6" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></g>
+<text x="1202" y="1622" font-size="12.5" fill="#1f2937">Tablero de monitoreo</text>
+<g transform="translate(1181.3,1633.5) scale(0.0254)"><path fill="#6250d6" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></g>
+<text x="1202" y="1645" font-size="12.5" fill="#1f2937">README de reproducción</text>
+<text x="1420" y="1552" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">CRITERIO DE CIERRE</text>
+<text x="1420" y="1576" font-size="12.5" fill="#1f2937">Otra persona reproduce los resultados desde el</text>
+<text x="1420" y="1593" font-size="12.5" fill="#1f2937">contenedor con un solo comando, las pruebas</text>
+<text x="1420" y="1610" font-size="12.5" fill="#1f2937">pasan y el resumen JSON coincide con el del Hito</text>
+<text x="1420" y="1627" font-size="12.5" fill="#1f2937">4.</text>
+<g transform="translate(1420.0,1650.0) scale(0.0273)"><path fill="#eda100" d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></g>
+<text x="1440" y="1662" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">RIESGO Y MITIGACIÓN</text>
+<text x="1420" y="1684" font-size="12.5" fill="#1f2937">Power BI no es reproducible por código. Mantener</text>
+<text x="1420" y="1701" font-size="12.5" fill="#1f2937">el scorecard en CSV como salida primaria y el</text>
+<text x="1420" y="1718" font-size="12.5" fill="#1f2937">tablero como vista.</text>
+<rect x="60" y="1974" width="1680" height="466" rx="14" fill="#ffffff" stroke="#d7dde5"/>
+<path d="M60,1988 a14,14 0 0 1 14,-14 h216 v466 h-216 a14,14 0 0 1 -14,-14 z" fill="#eb6834" opacity="0.07"/>
+<rect x="60" y="1974" width="6" height="466" fill="#eb6834"/>
+<circle cx="106" cy="2022" r="26" fill="#eb6834" opacity="0.14"/>
+<g transform="translate(88.5,2008.0) scale(0.0547)"><path fill="#eb6834" d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"/></g>
+<text x="144" y="2016" font-size="12" font-weight="700" fill="#eb6834" letter-spacing="1">HITO 6</text>
+<text x="144" y="2038" font-size="19" font-weight="700" fill="#1f2937">Validar y</text>
+<text x="144" y="2060" font-size="19" font-weight="700" fill="#1f2937">sustentar</text>
+<rect x="144" y="2073" width="40" height="21" rx="10.5" fill="#eb6834"/>
+<text x="164" y="2088" font-size="11.5" font-weight="700" fill="#fff" text-anchor="middle">OE4</text>
+<text x="82" y="2116" font-size="13" fill="#6b7280">Lidera: equipo</text>
+<text x="82" y="2140" font-size="12.5" fill="#1f2937" font-style="italic">Cierra: errores sin confirmar ·</text>
+<text x="82" y="2157" font-size="12.5" fill="#1f2937" font-style="italic">hipótesis incoherente con el</text>
+<text x="82" y="2174" font-size="12.5" fill="#1f2937" font-style="italic">diseño · reproducibilidad no</text>
+<text x="82" y="2191" font-size="12.5" fill="#1f2937" font-style="italic">medida · observaciones de junio</text>
+<text x="310" y="2004" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">ACTIVIDADES</text>
+<circle cx="320" cy="2023" r="9" fill="#eb6834"/>
+<text x="320" y="2027" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+<text x="338" y="2028" font-size="13.5" font-weight="600" fill="#1f2937">Validación externa.</text>
+<text x="340" y="2046" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="2046" font-size="12.5" fill="#374151">Consulta formal a EPM o a la CREG sobre los seriales 43.577 y 43.501, el valor 205.151, la</text>
+<text x="352" y="2062" font-size="12.5" fill="#374151">mezcla de enero y abril y el cambio de febrero de 2020.</text>
+<circle cx="320" cy="2083" r="9" fill="#eb6834"/>
+<text x="320" y="2087" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+<text x="338" y="2088" font-size="13.5" font-weight="600" fill="#1f2937">Verificación manual de alertas.</text>
+<text x="340" y="2106" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="2106" font-size="12.5" fill="#374151">Muestra aleatoria de 50 alertas reales contrastada con la publicación original de EPM; precisión</text>
+<text x="352" y="2122" font-size="12.5" fill="#374151">empírica con intervalo.</text>
+<circle cx="320" cy="2143" r="9" fill="#eb6834"/>
+<text x="320" y="2147" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+<text x="338" y="2148" font-size="13.5" font-weight="600" fill="#1f2937">Resolver hipótesis frente a diseño.</text>
+<text x="340" y="2166" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="2166" font-size="12.5" fill="#374151">Reglas estáticas como procedimiento tradicional (MinTIC, Deequ); framework como reglas más</text>
+<text x="352" y="2182" font-size="12.5" fill="#374151">cartas y ML; contraste de H1 con el bootstrap (hoy 88 % frente a 73 %).</text>
+<text x="340" y="2198" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="2198" font-size="12.5" fill="#374151">Si no se sostiene, reformular bajo Design Science y decirlo en el documento.</text>
+<circle cx="320" cy="2219" r="9" fill="#eb6834"/>
+<text x="320" y="2223" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+<text x="338" y="2224" font-size="13.5" font-weight="600" fill="#1f2937">Reproducibilidad como resultado.</text>
+<text x="340" y="2242" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="2242" font-size="12.5" fill="#374151">Misma salida en dos ambientes (Colab y Docker) y con dos descargas distintas; reportarlo como</text>
+<text x="352" y="2258" font-size="12.5" fill="#374151">evidencia, no como herramienta, según la nota de dirección de junio.</text>
+<circle cx="320" cy="2279" r="9" fill="#eb6834"/>
+<text x="320" y="2283" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">5</text>
+<text x="338" y="2284" font-size="13.5" font-weight="600" fill="#1f2937">Documento final.</text>
+<text x="340" y="2302" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="2302" font-size="12.5" fill="#374151">Problema y pregunta; marco con DMBOK e ISO delimitados; metodología con tipos de regla, ciclo y</text>
+<text x="352" y="2318" font-size="12.5" fill="#374151">técnicas; resultados; limitaciones: tamaño efectivo, carácter retrospectivo, una sola fuente con</text>
+<text x="352" y="2334" font-size="12.5" fill="#374151">series largas.</text>
+<text x="340" y="2350" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="2350" font-size="12.5" fill="#374151">Depurar referencias, cronograma y resumen (observaciones menores de junio).</text>
+<circle cx="320" cy="2371" r="9" fill="#eb6834"/>
+<text x="320" y="2375" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">6</text>
+<text x="338" y="2376" font-size="13.5" font-weight="600" fill="#1f2937">Sustentación.</text>
+<text x="340" y="2394" font-size="12.5" fill="#6b7280">–</text>
+<text x="352" y="2394" font-size="12.5" fill="#374151">Ensayo con jurado simulado; cada objetivo específico con su evidencia señalada en el documento.</text>
+<text x="930" y="2004" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">INSUMOS Y FUNDAMENTO</text>
+<g transform="translate(931.8,2017.0) scale(0.0234)"><path fill="#eb6834" d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></g>
+<text x="952" y="2028" font-size="12.5" fill="#1f2937">Retroalimentación de junio</text>
+<g transform="translate(931.8,2040.0) scale(0.0234)"><path fill="#eb6834" d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></g>
+<text x="952" y="2051" font-size="12.5" fill="#1f2937">05_alertas_imr_reales.csv</text>
+<g transform="translate(931.8,2063.0) scale(0.0234)"><path fill="#eb6834" d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></g>
+<text x="952" y="2074" font-size="12.5" fill="#1f2937">03_hallazgos.csv</text>
+<g transform="translate(931.8,2086.0) scale(0.0234)"><path fill="#eb6834" d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></g>
+<text x="952" y="2097" font-size="12.5" fill="#1f2937">Anteproyecto completo</text>
+<text x="1180" y="2004" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">ENTREGABLES</text>
+<g transform="translate(1181.3,2016.5) scale(0.0254)"><path fill="#eb6834" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></g>
+<text x="1202" y="2028" font-size="12.5" fill="#1f2937">Documento final</text>
+<g transform="translate(1181.3,2039.5) scale(0.0254)"><path fill="#eb6834" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></g>
+<text x="1202" y="2051" font-size="12.5" fill="#1f2937">Anexo de validación externa</text>
+<g transform="translate(1181.3,2062.5) scale(0.0254)"><path fill="#eb6834" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></g>
+<text x="1202" y="2074" font-size="12.5" fill="#1f2937">Repositorio final y tablero</text>
+<g transform="translate(1181.3,2085.5) scale(0.0254)"><path fill="#eb6834" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></g>
+<text x="1202" y="2097" font-size="12.5" fill="#1f2937">Presentación de sustentación</text>
+<text x="1420" y="2004" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">CRITERIO DE CIERRE</text>
+<text x="1420" y="2028" font-size="12.5" fill="#1f2937">H1 contrastada o reformulada con evidencia. Cada</text>
+<text x="1420" y="2045" font-size="12.5" fill="#1f2937">objetivo específico señala el entregable que lo</text>
+<text x="1420" y="2062" font-size="12.5" fill="#1f2937">cumple. Las observaciones de junio están</text>
+<text x="1420" y="2079" font-size="12.5" fill="#1f2937">cerradas.</text>
+<g transform="translate(1420.0,2102.0) scale(0.0273)"><path fill="#eda100" d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></g>
+<text x="1440" y="2114" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">RIESGO Y MITIGACIÓN</text>
+<text x="1420" y="2136" font-size="12.5" fill="#1f2937">EPM o la CREG no responden a tiempo. Presentar</text>
+<text x="1420" y="2153" font-size="12.5" fill="#1f2937">los casos como hipótesis con evidencia interna y</text>
+<text x="1420" y="2170" font-size="12.5" fill="#1f2937">dejarlo como limitación explícita.</text>
+<text x="60" y="2468" font-size="13" font-weight="700" fill="#6b7280" letter-spacing="1">TRAZABILIDAD OBJETIVO → HITO → ENTREGABLE → EVIDENCIA EN EL DOCUMENTO</text>
+<rect x="60" y="2482" width="1680" height="30" rx="8" fill="#f6f7f9"/>
+<text x="70" y="2502" font-size="12.5" font-weight="700" fill="#6b7280">OE</text>
+<text x="150" y="2502" font-size="12.5" font-weight="700" fill="#6b7280">Objetivo específico</text>
+<text x="490" y="2502" font-size="12.5" font-weight="700" fill="#6b7280">Hitos</text>
+<text x="650" y="2502" font-size="12.5" font-weight="700" fill="#6b7280">Entregable que lo cumple</text>
+<text x="1220" y="2502" font-size="12.5" font-weight="700" fill="#6b7280">Dónde queda la evidencia</text>
+<rect x="60" y="2512" width="1680" height="33" fill="#ffffff" stroke="#d7dde5"/>
+<rect x="60" y="2512" width="5" height="33" fill="#2a78d6"/>
+<text x="70" y="2534" font-size="12.5" fill="#1f2937" font-weight="700">OE1</text>
+<text x="150" y="2534" font-size="12.5" fill="#1f2937">Dimensiones, métricas e indicadores (DAMA, ISO)</text>
+<text x="490" y="2534" font-size="12.5" fill="#1f2937">Hito 3 → Hito 4</text>
+<text x="650" y="2534" font-size="12.5" fill="#1f2937">Matriz regla-dimensión-tipo-métrica; scorecard por fuente</text>
+<text x="1220" y="2534" font-size="12.5" fill="#1f2937">Tabla en metodología y tabla de resultados</text>
+<rect x="60" y="2545" width="1680" height="50" fill="#ffffff" stroke="#d7dde5"/>
+<rect x="60" y="2545" width="5" height="50" fill="#1baf7a"/>
+<text x="70" y="2567" font-size="12.5" fill="#1f2937" font-weight="700">OE2</text>
+<text x="150" y="2567" font-size="12.5" fill="#1f2937">Caracterización y reglas de negocio, fuente</text>
+<text x="150" y="2584" font-size="12.5" fill="#1f2937">CREG</text>
+<text x="490" y="2567" font-size="12.5" fill="#1f2937">Hito 3 → Hito 5</text>
+<text x="650" y="2567" font-size="12.5" fill="#1f2937">Fichas por fuente; decisión CREG; reglas en YAML con referencia regulatoria</text>
+<text x="1220" y="2567" font-size="12.5" fill="#1f2937">Sección 5.8 actualizada y archivo de reglas</text>
+<rect x="60" y="2595" width="1680" height="33" fill="#ffffff" stroke="#d7dde5"/>
+<rect x="60" y="2595" width="5" height="33" fill="#6250d6"/>
+<text x="70" y="2617" font-size="12.5" fill="#1f2937" font-weight="700">OE3</text>
+<text x="150" y="2617" font-size="12.5" fill="#1f2937">Framework: perfilamiento, reglas, anomalías</text>
+<text x="490" y="2617" font-size="12.5" fill="#1f2937">Hito 4 → Hito 5</text>
+<text x="650" y="2617" font-size="12.5" fill="#1f2937">Paquete, contenedor, tablero; técnicas comparadas</text>
+<text x="1220" y="2617" font-size="12.5" fill="#1f2937">Repositorio v1.0 y diagrama 5.9</text>
+<rect x="60" y="2628" width="1680" height="33" fill="#ffffff" stroke="#d7dde5"/>
+<rect x="60" y="2628" width="5" height="33" fill="#eb6834"/>
+<text x="70" y="2650" font-size="12.5" fill="#1f2937" font-weight="700">OE4</text>
+<text x="150" y="2650" font-size="12.5" fill="#1f2937">Evaluar frente a procedimientos tradicionales</text>
+<text x="490" y="2650" font-size="12.5" fill="#1f2937">Hito 4 → Hito 6</text>
+<text x="650" y="2650" font-size="12.5" fill="#1f2937">Tabla comparativa con IC; validación externa; reproducibilidad medida</text>
+<text x="1220" y="2650" font-size="12.5" fill="#1f2937">Contraste de H1 y anexo de validación</text>
+<text x="60" y="2689" font-size="13" font-weight="700" fill="#6b7280" letter-spacing="1">DEPENDENCIAS</text>
+<text x="60" y="2711" font-size="13" fill="#1f2937">Hito 3 entrega a Hito 4 las cartas en log, la matriz OE1 y la clave estable. Hito 4 entrega a Hito 5 las técnicas y umbrales definitivos a empaquetar. Hito 5 entrega a Hito 6 el artefacto reproducible con el que se mide la</text>
+<text x="60" y="2729" font-size="13" fill="#1f2937">reproducibilidad. Hito 6 cierra con los tres anteriores.</text>
+<text x="60" y="2779" font-size="12.5" fill="#6b7280">Líderes según el cronograma del anteproyecto (responsable de datos; responsable de métricas y anomalías; responsable de reglas de negocio). Insumos: archivos que genera el código entregado en el Hito 2 (carpeta salida/). Íconos: Font Awesome Free 6.5.2 (CC BY 4.0).</text></svg>

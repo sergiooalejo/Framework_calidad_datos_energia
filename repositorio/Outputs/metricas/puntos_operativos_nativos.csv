@@ -1,0 +1,121 @@
+﻿fuente,metodo,horizonte,umbral_nativo,prevalencia_supuesta,recall_macro,tasa_alerta_sin_error_conocido,precision_conservadora,f1,etiqueta
+EPM,IMR,t,"puntaje>1 (2,66 y 3,267 del plan)",0.01,0.635662177328844,0.05555555555555555,0.10360123470904312,0.17816487427009814,sin_IC_punto_operativo_de_4_2
+EPM,IMR,t,"puntaje>1 (2,66 y 3,267 del plan)",0.05,0.635662177328844,0.05555555555555555,0.37586063873911246,0.4723974352291091,sin_IC_punto_operativo_de_4_2
+EPM,IMR,t,"puntaje>1 (2,66 y 3,267 del plan)",0.1,0.635662177328844,0.05555555555555555,0.5597282273008031,0.5952834526703016,sin_IC_punto_operativo_de_4_2
+EPM,IMR,t_o_t1,"puntaje>1 (2,66 y 3,267 del plan)",0.01,0.7129629629629629,0.08080808080808081,0.0818278427205101,0.14680648236415633,sin_IC_punto_operativo_de_4_2
+EPM,IMR,t_o_t1,"puntaje>1 (2,66 y 3,267 del plan)",0.05,0.7129629629629629,0.08080808080808081,0.31710969674279293,0.4389738274164291,sin_IC_punto_operativo_de_4_2
+EPM,IMR,t_o_t1,"puntaje>1 (2,66 y 3,267 del plan)",0.1,0.7129629629629629,0.08080808080808081,0.49503214494447684,0.5843394273887546,sin_IC_punto_operativo_de_4_2
+EPM,Z_robusto,t,|z|>3,0.01,0.6439393939393939,0.037037037037037035,0.14938488576449913,0.24251069900142652,sin_IC_punto_operativo_de_4_2
+EPM,Z_robusto,t,|z|>3,0.05,0.6439393939393939,0.037037037037037035,0.4778263585259213,0.5485837217640731,sin_IC_punto_operativo_de_4_2
+EPM,Z_robusto,t,|z|>3,0.1,0.6439393939393939,0.037037037037037035,0.6589147286821706,0.6513409961685824,sin_IC_punto_operativo_de_4_2
+EPM,Z_robusto,t_o_t1,|z|>3,0.01,0.683641975308642,0.08080808080808081,0.07872756353296606,0.141195219123506,sin_IC_punto_operativo_de_4_2
+EPM,Z_robusto,t_o_t1,|z|>3,0.05,0.683641975308642,0.08080808080808081,0.30808623632800153,0.4247548485508826,sin_IC_punto_operativo_de_4_2
+EPM,Z_robusto,t_o_t1,|z|>3,0.1,0.683641975308642,0.08080808080808081,0.48453813264392953,0.5671224905440791,sin_IC_punto_operativo_de_4_2
+EPM,IF,t,"percentil 99,5 de entrenamiento",0.01,0.04545454545454545,0.0,1.0,0.08695652173913043,sin_IC_punto_operativo_de_4_2
+EPM,IF,t,"percentil 99,5 de entrenamiento",0.05,0.04545454545454545,0.0,1.0,0.08695652173913043,sin_IC_punto_operativo_de_4_2
+EPM,IF,t,"percentil 99,5 de entrenamiento",0.1,0.04545454545454545,0.0,1.0,0.08695652173913043,sin_IC_punto_operativo_de_4_2
+EPM,IF,t_o_t1,"percentil 99,5 de entrenamiento",0.01,0.04545454545454545,0.0,1.0,0.08695652173913043,sin_IC_punto_operativo_de_4_2
+EPM,IF,t_o_t1,"percentil 99,5 de entrenamiento",0.05,0.04545454545454545,0.0,1.0,0.08695652173913043,sin_IC_punto_operativo_de_4_2
+EPM,IF,t_o_t1,"percentil 99,5 de entrenamiento",0.1,0.04545454545454545,0.0,1.0,0.08695652173913043,sin_IC_punto_operativo_de_4_2
+EPM,R12,t,nivel>10 x mediana,0.01,0.3333333333333333,0.0,1.0,0.5,sin_IC_punto_operativo_de_4_2
+EPM,R12,t,nivel>10 x mediana,0.05,0.3333333333333333,0.0,1.0,0.5,sin_IC_punto_operativo_de_4_2
+EPM,R12,t,nivel>10 x mediana,0.1,0.3333333333333333,0.0,1.0,0.5,sin_IC_punto_operativo_de_4_2
+EPM,R12,t_o_t1,nivel>10 x mediana,0.01,0.3333333333333333,0.0,1.0,0.5,sin_IC_punto_operativo_de_4_2
+EPM,R12,t_o_t1,nivel>10 x mediana,0.05,0.3333333333333333,0.0,1.0,0.5,sin_IC_punto_operativo_de_4_2
+EPM,R12,t_o_t1,nivel>10 x mediana,0.1,0.3333333333333333,0.0,1.0,0.5,sin_IC_punto_operativo_de_4_2
+CHEC,IMR,t,"puntaje>1 (2,66 y 3,267 del plan)",0.01,0.6382886839408579,0.0,1.0,0.7792139324376852,sin_IC_punto_operativo_de_4_2
+CHEC,IMR,t,"puntaje>1 (2,66 y 3,267 del plan)",0.05,0.6382886839408579,0.0,1.0,0.7792139324376852,sin_IC_punto_operativo_de_4_2
+CHEC,IMR,t,"puntaje>1 (2,66 y 3,267 del plan)",0.1,0.6382886839408579,0.0,1.0,0.7792139324376852,sin_IC_punto_operativo_de_4_2
+CHEC,IMR,t_o_t1,"puntaje>1 (2,66 y 3,267 del plan)",0.01,0.7513248426291904,0.0,1.0,0.8580074059832989,sin_IC_punto_operativo_de_4_2
+CHEC,IMR,t_o_t1,"puntaje>1 (2,66 y 3,267 del plan)",0.05,0.7513248426291904,0.0,1.0,0.8580074059832989,sin_IC_punto_operativo_de_4_2
+CHEC,IMR,t_o_t1,"puntaje>1 (2,66 y 3,267 del plan)",0.1,0.7513248426291904,0.0,1.0,0.8580074059832989,sin_IC_punto_operativo_de_4_2
+CHEC,Z_robusto,t,|z|>3,0.01,0.734204362465232,0.0,1.0,0.846733382012181,sin_IC_punto_operativo_de_4_2
+CHEC,Z_robusto,t,|z|>3,0.05,0.734204362465232,0.0,1.0,0.846733382012181,sin_IC_punto_operativo_de_4_2
+CHEC,Z_robusto,t,|z|>3,0.1,0.734204362465232,0.0,1.0,0.846733382012181,sin_IC_punto_operativo_de_4_2
+CHEC,Z_robusto,t_o_t1,|z|>3,0.01,0.7615006737987167,0.0,1.0,0.8646044649605759,sin_IC_punto_operativo_de_4_2
+CHEC,Z_robusto,t_o_t1,|z|>3,0.05,0.7615006737987167,0.0,1.0,0.8646044649605759,sin_IC_punto_operativo_de_4_2
+CHEC,Z_robusto,t_o_t1,|z|>3,0.1,0.7615006737987167,0.0,1.0,0.8646044649605759,sin_IC_punto_operativo_de_4_2
+CHEC,IF,t,"percentil 99,5 de entrenamiento",0.01,0.5517566974088713,0.0,1.0,0.7111381550087028,sin_IC_punto_operativo_de_4_2
+CHEC,IF,t,"percentil 99,5 de entrenamiento",0.05,0.5517566974088713,0.0,1.0,0.7111381550087028,sin_IC_punto_operativo_de_4_2
+CHEC,IF,t,"percentil 99,5 de entrenamiento",0.1,0.5517566974088713,0.0,1.0,0.7111381550087028,sin_IC_punto_operativo_de_4_2
+CHEC,IF,t_o_t1,"percentil 99,5 de entrenamiento",0.01,0.6403198653198653,0.0,1.0,0.7807256119464258,sin_IC_punto_operativo_de_4_2
+CHEC,IF,t_o_t1,"percentil 99,5 de entrenamiento",0.05,0.6403198653198653,0.0,1.0,0.7807256119464258,sin_IC_punto_operativo_de_4_2
+CHEC,IF,t_o_t1,"percentil 99,5 de entrenamiento",0.1,0.6403198653198653,0.0,1.0,0.7807256119464258,sin_IC_punto_operativo_de_4_2
+CHEC,R12,t,nivel>10 x mediana,0.01,0.3333333333333333,0.0,1.0,0.5,sin_IC_punto_operativo_de_4_2
+CHEC,R12,t,nivel>10 x mediana,0.05,0.3333333333333333,0.0,1.0,0.5,sin_IC_punto_operativo_de_4_2
+CHEC,R12,t,nivel>10 x mediana,0.1,0.3333333333333333,0.0,1.0,0.5,sin_IC_punto_operativo_de_4_2
+CHEC,R12,t_o_t1,nivel>10 x mediana,0.01,0.3333333333333333,0.0,1.0,0.5,sin_IC_punto_operativo_de_4_2
+CHEC,R12,t_o_t1,nivel>10 x mediana,0.05,0.3333333333333333,0.0,1.0,0.5,sin_IC_punto_operativo_de_4_2
+CHEC,R12,t_o_t1,nivel>10 x mediana,0.1,0.3333333333333333,0.0,1.0,0.5,sin_IC_punto_operativo_de_4_2
+SSPD,IMR,t,"puntaje>1 (2,66 y 3,267 del plan)",0.01,0.6598201918381082,0.045950155763239874,0.12667204483575525,0.2125406177625428,sin_IC_punto_operativo_de_4_2
+SSPD,IMR,t,"puntaje>1 (2,66 y 3,267 del plan)",0.05,0.6598201918381082,0.045950155763239874,0.43044670151698694,0.521005318793104,sin_IC_punto_operativo_de_4_2
+SSPD,IMR,t,"puntaje>1 (2,66 y 3,267 del plan)",0.1,0.6598201918381082,0.045950155763239874,0.6147173967583647,0.6364707550163015,sin_IC_punto_operativo_de_4_2
+SSPD,IMR,t_o_t1,"puntaje>1 (2,66 y 3,267 del plan)",0.01,0.6946463358615144,0.06938544321721891,0.09183821055335344,0.1622284296462541,sin_IC_punto_operativo_de_4_2
+SSPD,IMR,t_o_t1,"puntaje>1 (2,66 y 3,267 del plan)",0.05,0.6946463358615144,0.06938544321721891,0.3450853314858932,0.4611040879187462,sin_IC_punto_operativo_de_4_2
+SSPD,IMR,t_o_t1,"puntaje>1 (2,66 y 3,267 del plan)",0.1,0.6946463358615144,0.06938544321721891,0.5266001560236241,0.5990614855830706,sin_IC_punto_operativo_de_4_2
+SSPD,Z_robusto,t,|z|>3,0.01,0.6899877776488589,0.07242990654205607,0.08777857873747251,0.15574380653245865,sin_IC_punto_operativo_de_4_2
+SSPD,Z_robusto,t,|z|>3,0.05,0.6899877776488589,0.07242990654205607,0.3339475707537835,0.4500669745508779,sin_IC_punto_operativo_de_4_2
+SSPD,Z_robusto,t,|z|>3,0.1,0.6899877776488589,0.07242990654205607,0.5142036821261299,0.5892655241972307,sin_IC_punto_operativo_de_4_2
+SSPD,Z_robusto,t_o_t1,|z|>3,0.01,0.7249185191327766,0.12036250354007363,0.057347490178801926,0.1062867545350298,sin_IC_punto_operativo_de_4_2
+SSPD,Z_robusto,t_o_t1,|z|>3,0.05,0.7249185191327766,0.12036250354007363,0.24069229503439604,0.36139260149751445,sin_IC_punto_operativo_de_4_2
+SSPD,Z_robusto,t_o_t1,|z|>3,0.1,0.7249185191327766,0.12036250354007363,0.40091036167782895,0.5162904427948654,sin_IC_punto_operativo_de_4_2
+SSPD,IF,t,"percentil 99,5 de entrenamiento",0.01,0.41075441175844735,0.004672897196261682,0.47030906867475647,0.4385189697186831,sin_IC_punto_operativo_de_4_2
+SSPD,IF,t,"percentil 99,5 de entrenamiento",0.05,0.41075441175844735,0.004672897196261682,0.822266198954916,0.5478407512834295,sin_IC_punto_operativo_de_4_2
+SSPD,IF,t,"percentil 99,5 de entrenamiento",0.1,0.41075441175844735,0.004672897196261682,0.9071221272079538,0.5654617936314503,sin_IC_punto_operativo_de_4_2
+SSPD,IF,t_o_t1,"percentil 99,5 de entrenamiento",0.01,0.5096476493239244,0.006796941376380629,0.43097532514425896,0.46702146840623465,sin_IC_punto_operativo_de_4_2
+SSPD,IF,t_o_t1,"percentil 99,5 de entrenamiento",0.05,0.5096476493239244,0.006796941376380629,0.7978334349901783,0.6219806000605872,sin_IC_punto_operativo_de_4_2
+SSPD,IF,t_o_t1,"percentil 99,5 de entrenamiento",0.1,0.5096476493239244,0.006796941376380629,0.8928340644264129,0.6488937113546549,sin_IC_punto_operativo_de_4_2
+SSPD,R12,t,nivel>10 x mediana,0.01,0.23074293238079338,0.0012980269989615785,0.6422949770319054,0.3395156724717605,sin_IC_punto_operativo_de_4_2
+SSPD,R12,t,nivel>10 x mediana,0.05,0.23074293238079338,0.0012980269989615785,0.9034377949718146,0.3675990624916082,sin_IC_punto_operativo_de_4_2
+SSPD,R12,t,nivel>10 x mediana,0.1,0.23074293238079338,0.0012980269989615785,0.9518109331147044,0.3714395634518726,sin_IC_punto_operativo_de_4_2
+SSPD,R12,t_o_t1,nivel>10 x mediana,0.01,0.23180022886252113,0.0019824412347776836,0.541510989062013,0.3246361058437258,sin_IC_punto_operativo_de_4_2
+SSPD,R12,t_o_t1,nivel>10 x mediana,0.05,0.23180022886252113,0.0019824412347776836,0.8602187367999969,0.3651931080539331,sin_IC_punto_operativo_de_4_2
+SSPD,R12,t_o_t1,nivel>10 x mediana,0.1,0.23180022886252113,0.0019824412347776836,0.928529827430023,0.37098655737948344,sin_IC_punto_operativo_de_4_2
+XM,IMR,t,"puntaje>1 (2,66 y 3,267 del plan)",0.01,0.6,0.0,1.0,0.7499999999999999,sin_IC_punto_operativo_de_4_2
+XM,IMR,t,"puntaje>1 (2,66 y 3,267 del plan)",0.05,0.6,0.0,1.0,0.7499999999999999,sin_IC_punto_operativo_de_4_2
+XM,IMR,t,"puntaje>1 (2,66 y 3,267 del plan)",0.1,0.6,0.0,1.0,0.7499999999999999,sin_IC_punto_operativo_de_4_2
+XM,IMR,t_o_t1,"puntaje>1 (2,66 y 3,267 del plan)",0.01,0.6727272727272727,0.0,1.0,0.8043478260869564,sin_IC_punto_operativo_de_4_2
+XM,IMR,t_o_t1,"puntaje>1 (2,66 y 3,267 del plan)",0.05,0.6727272727272727,0.0,1.0,0.8043478260869564,sin_IC_punto_operativo_de_4_2
+XM,IMR,t_o_t1,"puntaje>1 (2,66 y 3,267 del plan)",0.1,0.6727272727272727,0.0,1.0,0.8043478260869564,sin_IC_punto_operativo_de_4_2
+XM,Z_robusto,t,|z|>3,0.01,0.6363636363636364,0.0,1.0,0.7777777777777778,sin_IC_punto_operativo_de_4_2
+XM,Z_robusto,t,|z|>3,0.05,0.6363636363636364,0.0,1.0,0.7777777777777778,sin_IC_punto_operativo_de_4_2
+XM,Z_robusto,t,|z|>3,0.1,0.6363636363636364,0.0,1.0,0.7777777777777778,sin_IC_punto_operativo_de_4_2
+XM,Z_robusto,t_o_t1,|z|>3,0.01,0.6545454545454545,0.0,1.0,0.7912087912087912,sin_IC_punto_operativo_de_4_2
+XM,Z_robusto,t_o_t1,|z|>3,0.05,0.6545454545454545,0.0,1.0,0.7912087912087912,sin_IC_punto_operativo_de_4_2
+XM,Z_robusto,t_o_t1,|z|>3,0.1,0.6545454545454545,0.0,1.0,0.7912087912087912,sin_IC_punto_operativo_de_4_2
+XM,IF,t,"percentil 99,5 de entrenamiento",0.01,0.7090909090909091,0.0,1.0,0.8297872340425533,sin_IC_punto_operativo_de_4_2
+XM,IF,t,"percentil 99,5 de entrenamiento",0.05,0.7090909090909091,0.0,1.0,0.8297872340425533,sin_IC_punto_operativo_de_4_2
+XM,IF,t,"percentil 99,5 de entrenamiento",0.1,0.7090909090909091,0.0,1.0,0.8297872340425533,sin_IC_punto_operativo_de_4_2
+XM,IF,t_o_t1,"percentil 99,5 de entrenamiento",0.01,0.7272727272727273,0.0,1.0,0.8421052631578948,sin_IC_punto_operativo_de_4_2
+XM,IF,t_o_t1,"percentil 99,5 de entrenamiento",0.05,0.7272727272727273,0.0,1.0,0.8421052631578948,sin_IC_punto_operativo_de_4_2
+XM,IF,t_o_t1,"percentil 99,5 de entrenamiento",0.1,0.7272727272727273,0.0,1.0,0.8421052631578948,sin_IC_punto_operativo_de_4_2
+XM,R12,t,nivel>10 x mediana,0.01,0.2,0.0,1.0,0.33333333333333337,sin_IC_punto_operativo_de_4_2
+XM,R12,t,nivel>10 x mediana,0.05,0.2,0.0,1.0,0.33333333333333337,sin_IC_punto_operativo_de_4_2
+XM,R12,t,nivel>10 x mediana,0.1,0.2,0.0,1.0,0.33333333333333337,sin_IC_punto_operativo_de_4_2
+XM,R12,t_o_t1,nivel>10 x mediana,0.01,0.2,0.0,1.0,0.33333333333333337,sin_IC_punto_operativo_de_4_2
+XM,R12,t_o_t1,nivel>10 x mediana,0.05,0.2,0.0,1.0,0.33333333333333337,sin_IC_punto_operativo_de_4_2
+XM,R12,t_o_t1,nivel>10 x mediana,0.1,0.2,0.0,1.0,0.33333333333333337,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,IMR,t,"puntaje>1 (2,66 y 3,267 del plan)",0.01,0.6373517786561265,0.021739130434782608,0.22848034006376194,0.3363754889178618,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,IMR,t,"puntaje>1 (2,66 y 3,267 del plan)",0.05,0.6373517786561265,0.021739130434782608,0.6067732831608655,0.6216867469879519,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,IMR,t,"puntaje>1 (2,66 y 3,267 del plan)",0.1,0.6373517786561265,0.021739130434782608,0.7651245551601424,0.6954177897574124,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,IMR,t_o_t1,"puntaje>1 (2,66 y 3,267 del plan)",0.01,0.7736971160884205,0.03162055335968379,0.1981739183419029,0.3155286734004724,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,IMR,t_o_t1,"puntaje>1 (2,66 y 3,267 del plan)",0.05,0.7736971160884205,0.03162055335968379,0.5628985661603185,0.6516750025046048,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,IMR,t_o_t1,"puntaje>1 (2,66 y 3,267 del plan)",0.1,0.7736971160884205,0.03162055335968379,0.7310877872494942,0.7517891910633796,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,Z_robusto,t,|z|>3,0.01,0.6546625677060459,0.014492753623188406,0.31331885377986407,0.42380591357088704,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,Z_robusto,t,|z|>3,0.05,0.6546625677060459,0.014492753623188406,0.7039194081536282,0.6783980582524272,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,Z_robusto,t,|z|>3,0.1,0.6546625677060459,0.014492753623188406,0.8338616446019019,0.7334754797441364,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,Z_robusto,t_o_t1,|z|>3,0.01,0.6912055335968379,0.03162055335968379,0.18086619263089854,0.28670970386310074,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,Z_robusto,t_o_t1,|z|>3,0.05,0.6912055335968379,0.03162055335968379,0.5349904397705545,0.6031472300064669,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,Z_robusto,t_o_t1,|z|>3,0.1,0.6912055335968379,0.03162055335968379,0.7083544303797469,0.6996749187296825,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,IF,t,"percentil 99,5 de entrenamiento",0.01,0.49516908212560384,0.0,1.0,0.6623586429725363,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,IF,t,"percentil 99,5 de entrenamiento",0.05,0.49516908212560384,0.0,1.0,0.6623586429725363,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,IF,t,"percentil 99,5 de entrenamiento",0.1,0.49516908212560384,0.0,1.0,0.6623586429725363,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,IF,t_o_t1,"percentil 99,5 de entrenamiento",0.01,0.5422705314009661,0.0,1.0,0.7032106499608457,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,IF,t_o_t1,"percentil 99,5 de entrenamiento",0.05,0.5422705314009661,0.0,1.0,0.7032106499608457,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,IF,t_o_t1,"percentil 99,5 de entrenamiento",0.1,0.5422705314009661,0.0,1.0,0.7032106499608457,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,R12,t,nivel>10 x mediana,0.01,0.3333333333333333,0.0,1.0,0.5,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,R12,t,nivel>10 x mediana,0.05,0.3333333333333333,0.0,1.0,0.5,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,R12,t,nivel>10 x mediana,0.1,0.3333333333333333,0.0,1.0,0.5,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,R12,t_o_t1,nivel>10 x mediana,0.01,0.3333333333333333,0.0,1.0,0.5,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,R12,t_o_t1,nivel>10 x mediana,0.05,0.3333333333333333,0.0,1.0,0.5,sin_IC_punto_operativo_de_4_2
+EPM_canonicas,R12,t_o_t1,nivel>10 x mediana,0.1,0.3333333333333333,0.0,1.0,0.5,sin_IC_punto_operativo_de_4_2

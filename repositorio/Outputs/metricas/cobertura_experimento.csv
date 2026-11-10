@@ -1,0 +1,6 @@
+﻿fuente,referencia,vigilancia,series,categorias,observaciones_reales,casos_individuales,series_con_escala_MR_cero,series_con_MAD_cero,modelos_calendario,ic_disponible,entrenamiento_filas,entrenamiento_filas_unicas,LOF_fraccion_puntajes_reales_explotados,LOF_estado,nota
+EPM,36,12,27,5,324,1617,0,0,1,1,972,567,0.0,evaluable,
+CHEC,36,12,276,4,3312,17103,0,0,2,1,9936,2126,0.06189613526570048,degenerado_por_duplicados,
+SSPD,36,12,321,89,3852,20880,3,18,8,1,11556,11025,0.002336448598130841,evaluable,
+XM,36,12,1,1,12,55,0,0,1,0,36,36,0.0,evaluable,XM: una serie y una categoría; resultados descriptivos
+EPM_canonicas,36,12,69,6,828,4191,0,0,1,1,2484,1220,0.03260869565217391,degenerado_por_duplicados,

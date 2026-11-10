@@ -1,0 +1,26 @@
+{
+  "EPM": {
+    "ruta": "C:\\Users\\segep\\OneDrive\\Documents\\Personal\\Maestria en Ciencia de Datos\\Semestre 3\\Seminario III\\Repositorio trabajo final\\Framework_calidad_datos_energia\\desarrollo_puntos\\3.3\\EPM\\cuarentena_registros.csv",
+    "filas": 9,
+    "reglas": [
+      "R08 Orden EPM ≥ Compartido ≥ Cliente",
+      "R11 Posible serial de fecha Excel",
+      "R12 Magnitud > 10× mediana de su serie"
+    ]
+  },
+  "CHEC": {
+    "ruta": "Data/verificaciones/trazabilidad_filas/c698-wqig_cuarentena.csv",
+    "filas": 0,
+    "reglas": []
+  },
+  "SSPD": {
+    "ruta": "Data/verificaciones/trazabilidad_filas/ebby-cjha_cuarentena.csv",
+    "filas": 0,
+    "reglas": []
+  },
+  "XM": {
+    "ruta": "Data/verificaciones/trazabilidad_filas/c1b851_cuarentena.csv",
+    "filas": 0,
+    "reglas": []
+  }
+}

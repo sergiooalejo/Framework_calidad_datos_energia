@@ -1,0 +1,113 @@
+{
+  "estado": "coincide",
+  "detalle": [
+    {
+      "fuente": "EPM",
+      "casos": 1617,
+      "metodos": {
+        "IMR": {
+          "discrepancias_total": 0,
+          "discrepancias_series_con_escala_positiva": 0,
+          "casos_comparables": 3234
+        },
+        "Z_robusto": {
+          "discrepancias_total": 0,
+          "discrepancias_series_con_escala_positiva": 0,
+          "casos_comparables": 3234
+        },
+        "IF": {
+          "discrepancias_total": 0,
+          "discrepancias_series_con_escala_positiva": 0,
+          "casos_comparables": 3234
+        },
+        "R12": {
+          "discrepancias_total": 0,
+          "discrepancias_series_con_escala_positiva": 0,
+          "casos_comparables": 3234
+        }
+      },
+      "coincide_con_inyecciones_detalle_4_2": true
+    },
+    {
+      "fuente": "CHEC",
+      "casos": 17103,
+      "metodos": {
+        "IMR": {
+          "discrepancias_total": 0,
+          "discrepancias_series_con_escala_positiva": 0,
+          "casos_comparables": 34206
+        },
+        "Z_robusto": {
+          "discrepancias_total": 0,
+          "discrepancias_series_con_escala_positiva": 0,
+          "casos_comparables": 34206
+        },
+        "IF": {
+          "discrepancias_total": 0,
+          "discrepancias_series_con_escala_positiva": 0,
+          "casos_comparables": 34206
+        },
+        "R12": {
+          "discrepancias_total": 0,
+          "discrepancias_series_con_escala_positiva": 0,
+          "casos_comparables": 34206
+        }
+      },
+      "coincide_con_inyecciones_detalle_4_2": true
+    },
+    {
+      "fuente": "SSPD",
+      "casos": 20880,
+      "metodos": {
+        "IMR": {
+          "discrepancias_total": 66,
+          "discrepancias_series_con_escala_positiva": 0,
+          "casos_comparables": 41452
+        },
+        "Z_robusto": {
+          "discrepancias_total": 298,
+          "discrepancias_series_con_escala_positiva": 0,
+          "casos_comparables": 39756
+        },
+        "IF": {
+          "discrepancias_total": 0,
+          "discrepancias_series_con_escala_positiva": 0,
+          "casos_comparables": 41760
+        },
+        "R12": {
+          "discrepancias_total": 0,
+          "discrepancias_series_con_escala_positiva": 0,
+          "casos_comparables": 41760
+        }
+      },
+      "coincide_con_inyecciones_detalle_4_2": true
+    },
+    {
+      "fuente": "XM",
+      "casos": 55,
+      "metodos": {
+        "IMR": {
+          "discrepancias_total": 0,
+          "discrepancias_series_con_escala_positiva": 0,
+          "casos_comparables": 110
+        },
+        "Z_robusto": {
+          "discrepancias_total": 0,
+          "discrepancias_series_con_escala_positiva": 0,
+          "casos_comparables": 110
+        },
+        "IF": {
+          "discrepancias_total": 0,
+          "discrepancias_series_con_escala_positiva": 0,
+          "casos_comparables": 110
+        },
+        "R12": {
+          "discrepancias_total": 0,
+          "discrepancias_series_con_escala_positiva": 0,
+          "casos_comparables": 110
+        }
+      },
+      "coincide_con_inyecciones_detalle_4_2": true
+    }
+  ]
+}

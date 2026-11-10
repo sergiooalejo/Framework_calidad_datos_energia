@@ -1,0 +1,34 @@
+[
+  {
+    "fuente": "EPM",
+    "archivo": "EPM.csv",
+    "filas": 10,
+    "seleccion": "primeras diez filas; muestra de formato, no estadística",
+    "origen": "Data/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv",
+    "sha256_origen": "98acd40e8d2b92433b1dfc60422228f26f53ab331fd600631f03f830e7ba38f4"
+  },
+  {
+    "fuente": "CHEC",
+    "archivo": "CHEC.csv",
+    "filas": 10,
+    "seleccion": "primeras diez filas; muestra de formato, no estadística",
+    "origen": "Data/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv",
+    "sha256_origen": "05865b094a4cc4eb9f822ed2af686a11a8905d6606f40bb554f5bb5258e3c53f"
+  },
+  {
+    "fuente": "SSPD",
+    "archivo": "SSPD.csv",
+    "filas": 10,
+    "seleccion": "primeras diez filas; muestra de formato, no estadística",
+    "origen": "Data/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv",
+    "sha256_origen": "c0beb6d6800de043e91dfd0def5ee619201a579c4013fd65e9255d6e1479d625"
+  },
+  {
+    "fuente": "XM",
+    "archivo": "XM.csv",
+    "filas": 10,
+    "seleccion": "primeras diez filas; muestra de formato, no estadística",
+    "origen": "Data/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv",
+    "sha256_origen": "56db2e52a430619794277c3d0682c5e815318166541b7132834946566ab7c569"
+  }
+]

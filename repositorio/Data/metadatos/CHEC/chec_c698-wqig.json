@@ -1,0 +1,1849 @@
+{
+  "id": "c698-wqig",
+  "name": "Información Costo unitario de tarifas de energía CHEC",
+  "assetType": "dataset",
+  "attribution": "E.S.P. Central Hidroeléctrica de Caldas, Caldas",
+  "attributionLink": "https://chec.com.co/Home/Transparencia/Planeaci%C3%B3n-presupuestos-e-informes/Publicaciones-de-Tarifas",
+  "averageRating": 0,
+  "category": "Minas y Energía",
+  "createdAt": 1664383634,
+  "description": "Las tarifas son calculadas con base en la metodología establecida por la CREG. La CREG - Comisión Regulación de Energía y Gas - nace en 1994 cuando el Gobierno Nacional a través de las leyes 142 y 143 creó las Comisiones de Regulación, con el fin de regular las actividades de los servicios públicos. Actualmente rige para este efecto la Resolución CREG 119 de 2007.",
+  "diciBackend": false,
+  "displayType": "table",
+  "downloadCount": 550,
+  "hideFromCatalog": false,
+  "hideFromDataJson": false,
+  "licenseId": "CC_40_BY_SA",
+  "locked": false,
+  "newBackend": true,
+  "numberOfComments": 0,
+  "oid": 38899143,
+  "provenance": "official",
+  "publicationAppendEnabled": false,
+  "publicationDate": 1665002110,
+  "publicationGroup": 18889175,
+  "publicationStage": "published",
+  "rowsUpdatedAt": 1791023874,
+  "rowsUpdatedBy": "b7kb-mi2x",
+  "tableId": 18889175,
+  "totalTimesRated": 0,
+  "viewCount": 10575,
+  "viewLastModified": 1779126738,
+  "viewType": "tabular",
+  "approvals": [
+    {
+      "reviewedAt": 1665525384,
+      "reviewedAutomatically": false,
+      "state": "approved",
+      "submissionId": 5024521,
+      "submissionObject": "public_audience_request",
+      "submissionOutcome": "change_audience",
+      "submittedAt": 1665419412,
+      "targetAudience": "public",
+      "workflowId": 2188,
+      "reviewer": {
+        "id": "vc9x-zjzh",
+        "displayName": "soporteccc"
+      },
+      "submissionDetails": {
+        "permissionType": "read"
+      },
+      "submissionOutcomeApplication": {
+        "endedAt": 1665525384,
+        "failureCount": 0,
+        "startedAt": 1665525384,
+        "status": "success"
+      },
+      "submitter": {
+        "id": "b7kb-mi2x",
+        "displayName": "Central_Hidroelectrica_de_Caldas"
+      }
+    }
+  ],
+  "clientContext": {
+    "clientContextVariables": [],
+    "inheritedVariables": {}
+  },
+  "columns": [
+    {
+      "id": 566232787,
+      "name": "costounitariotarifa_ano",
+      "dataTypeName": "number",
+      "description": "Año",
+      "fieldName": "costounitariotarifa_ano",
+      "position": 1,
+      "renderTypeName": "number",
+      "tableColumnId": 143907060,
+      "cachedContents": {
+        "non_null": "40609",
+        "largest": "2026",
+        "null": "0",
+        "top": [
+          {
+            "item": "2025",
+            "count": "3465"
+          },
+          {
+            "item": "2026",
+            "count": "2835"
+          },
+          {
+            "item": "2009",
+            "count": "2509"
+          },
+          {
+            "item": "2008",
+            "count": "2251"
+          },
+          {
+            "item": "2020",
+            "count": "2151"
+          },
+          {
+            "item": "2019",
+            "count": "2136"
+          },
+          {
+            "item": "2018",
+            "count": "2125"
+          },
+          {
+            "item": "2017",
+            "count": "2124"
+          },
+          {
+            "item": "2016",
+            "count": "2124"
+          },
+          {
+            "item": "2015",
+            "count": "2124"
+          },
+          {
+            "item": "2014",
+            "count": "2046"
+          },
+          {
+            "item": "2013",
+            "count": "2004"
+          },
+          {
+            "item": "2021",
+            "count": "1996"
+          },
+          {
+            "item": "2012",
+            "count": "1934"
+          },
+          {
+            "item": "2023",
+            "count": "1848"
+          },
+          {
+            "item": "2024",
+            "count": "1848"
+          },
+          {
+            "item": "2022",
+            "count": "1848"
+          },
+          {
+            "item": "2011",
+            "count": "1824"
+          },
+          {
+            "item": "2010",
+            "count": "1417"
+          }
+        ],
+        "smallest": "2008",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232788,
+      "name": "costounitariotarifa_mes",
+      "dataTypeName": "number",
+      "description": "Mes",
+      "fieldName": "costounitariotarifa_mes",
+      "position": 2,
+      "renderTypeName": "number",
+      "tableColumnId": 143907061,
+      "cachedContents": {
+        "non_null": "40609",
+        "largest": "12",
+        "null": "0",
+        "top": [
+          {
+            "item": "6",
+            "count": "3542"
+          },
+          {
+            "item": "9",
+            "count": "3525"
+          },
+          {
+            "item": "8",
+            "count": "3521"
+          },
+          {
+            "item": "7",
+            "count": "3515"
+          },
+          {
+            "item": "5",
+            "count": "3474"
+          },
+          {
+            "item": "4",
+            "count": "3473"
+          },
+          {
+            "item": "3",
+            "count": "3470"
+          },
+          {
+            "item": "2",
+            "count": "3313"
+          },
+          {
+            "item": "12",
+            "count": "3229"
+          },
+          {
+            "item": "11",
+            "count": "3221"
+          },
+          {
+            "item": "10",
+            "count": "3216"
+          },
+          {
+            "item": "1",
+            "count": "3110"
+          }
+        ],
+        "smallest": "1",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232810,
+      "name": "comercializador_codigo",
+      "dataTypeName": "text",
+      "description": "Código del comercializador",
+      "fieldName": "comercializador_codigo",
+      "position": 3,
+      "renderTypeName": "text",
+      "tableColumnId": 143907083,
+      "cachedContents": {
+        "non_null": "40609",
+        "largest": "CHCC",
+        "null": "0",
+        "top": [
+          {
+            "item": "CHCC",
+            "count": "40609"
+          }
+        ],
+        "smallest": "CHCC",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232809,
+      "name": "comercializador_nombre",
+      "dataTypeName": "text",
+      "description": "Nombre del comercializador",
+      "fieldName": "comercializador_nombre",
+      "position": 4,
+      "renderTypeName": "text",
+      "tableColumnId": 143907082,
+      "cachedContents": {
+        "non_null": "40609",
+        "largest": "CENTRAL HIDROELECTRICA DE CALDAS S.A. E.S.P.",
+        "null": "0",
+        "top": [
+          {
+            "item": "CENTRAL HIDROELECTRICA DE CALDAS S.A. E.S.P.",
+            "count": "40609"
+          }
+        ],
+        "smallest": "CENTRAL HIDROELECTRICA DE CALDAS S.A. E.S.P.",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232794,
+      "name": "mercado_codigo",
+      "dataTypeName": "text",
+      "description": "Código de mercado",
+      "fieldName": "mercado_codigo",
+      "position": 5,
+      "renderTypeName": "text",
+      "tableColumnId": 143907067,
+      "cachedContents": {
+        "non_null": "40609",
+        "largest": "1234",
+        "null": "0",
+        "top": [
+          {
+            "item": "1234",
+            "count": "37683"
+          },
+          {
+            "item": "1218",
+            "count": "2926"
+          }
+        ],
+        "smallest": "1218",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232795,
+      "name": "mercado_nombre",
+      "dataTypeName": "text",
+      "description": "Nombre de mercado",
+      "fieldName": "mercado_nombre",
+      "position": 6,
+      "renderTypeName": "text",
+      "tableColumnId": 143907068,
+      "cachedContents": {
+        "non_null": "40609",
+        "largest": "PEREIRA",
+        "null": "0",
+        "top": [
+          {
+            "item": "CHEC",
+            "count": "37683"
+          },
+          {
+            "item": "PEREIRA",
+            "count": "2926"
+          }
+        ],
+        "smallest": "CHEC",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232808,
+      "name": "costounitariotarifa_tipomed",
+      "dataTypeName": "text",
+      "description": "tipomed",
+      "fieldName": "costounitariotarifa_tipomed",
+      "position": 7,
+      "renderTypeName": "text",
+      "tableColumnId": 143907081,
+      "cachedContents": {
+        "non_null": "40609",
+        "largest": "S",
+        "null": "0",
+        "top": [
+          {
+            "item": "S",
+            "count": "28875"
+          },
+          {
+            "item": "HM",
+            "count": "5867"
+          },
+          {
+            "item": "HP",
+            "count": "5867"
+          }
+        ],
+        "smallest": "HM",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232807,
+      "name": "nivel_tension_codigo",
+      "dataTypeName": "text",
+      "description": "Código del nivel de tensión",
+      "fieldName": "nivel_tension_codigo",
+      "position": 8,
+      "renderTypeName": "text",
+      "tableColumnId": 143907080,
+      "cachedContents": {
+        "non_null": "40609",
+        "largest": "4",
+        "null": "0",
+        "top": [
+          {
+            "item": "1",
+            "count": "29204"
+          },
+          {
+            "item": "2",
+            "count": "5817"
+          },
+          {
+            "item": "3",
+            "count": "3737"
+          },
+          {
+            "item": "4",
+            "count": "1851"
+          }
+        ],
+        "smallest": "1",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232806,
+      "name": "modalidadcobro_propiedad",
+      "dataTypeName": "text",
+      "description": "Modalidad de cobro",
+      "fieldName": "modalidadcobro_propiedad",
+      "position": 9,
+      "renderTypeName": "text",
+      "tableColumnId": 143907079,
+      "cachedContents": {
+        "non_null": "40609",
+        "largest": "50% OR",
+        "null": "0",
+        "top": [
+          {
+            "item": "0% OR",
+            "count": "19642"
+          },
+          {
+            "item": "100% OR",
+            "count": "8271"
+          },
+          {
+            "item": "50% OR",
+            "count": "8068"
+          },
+          {
+            "item": "0% OR SIN AOM",
+            "count": "4628"
+          }
+        ],
+        "smallest": "0% OR",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232798,
+      "name": "claseservicio_codigo",
+      "dataTypeName": "text",
+      "description": "Código de la clase del servicio",
+      "fieldName": "claseservicio_codigo",
+      "position": 10,
+      "renderTypeName": "text",
+      "tableColumnId": 143907071,
+      "cachedContents": {
+        "non_null": "40609",
+        "largest": "RS",
+        "null": "0",
+        "top": [
+          {
+            "item": "RS",
+            "count": "15343"
+          },
+          {
+            "item": "ID",
+            "count": "4626"
+          },
+          {
+            "item": "CR",
+            "count": "4537"
+          },
+          {
+            "item": "PR",
+            "count": "3678"
+          },
+          {
+            "item": "OF",
+            "count": "1560"
+          },
+          {
+            "item": "EE",
+            "count": "1208"
+          },
+          {
+            "item": "EA",
+            "count": "1208"
+          },
+          {
+            "item": "AP",
+            "count": "1120"
+          },
+          {
+            "item": "IX",
+            "count": "1006"
+          },
+          {
+            "item": "IA",
+            "count": "993"
+          },
+          {
+            "item": "AC",
+            "count": "993"
+          },
+          {
+            "item": "CE",
+            "count": "936"
+          },
+          {
+            "item": "OO",
+            "count": "633"
+          },
+          {
+            "item": "BE",
+            "count": "558"
+          },
+          {
+            "item": "OB",
+            "count": "425"
+          },
+          {
+            "item": "ES",
+            "count": "342"
+          },
+          {
+            "item": "GC",
+            "count": "250"
+          },
+          {
+            "item": "OA",
+            "count": "215"
+          },
+          {
+            "item": "IY",
+            "count": "214"
+          },
+          {
+            "item": "FX",
+            "count": "212"
+          }
+        ],
+        "smallest": "AC",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232796,
+      "name": "claseservicio_descri",
+      "dataTypeName": "text",
+      "description": "Descripción de la clase de servicio",
+      "fieldName": "claseservicio_descri",
+      "position": 11,
+      "renderTypeName": "text",
+      "tableColumnId": 143907069,
+      "cachedContents": {
+        "non_null": "40609",
+        "largest": "Residencial Estrato 6",
+        "null": "0",
+        "top": [
+          {
+            "item": "Industrial",
+            "count": "4626"
+          },
+          {
+            "item": "Residencial Estrato 4",
+            "count": "4560"
+          },
+          {
+            "item": "Comercial",
+            "count": "4537"
+          },
+          {
+            "item": "Provisional",
+            "count": "3678"
+          },
+          {
+            "item": "Residencial Estrato 5",
+            "count": "2955"
+          },
+          {
+            "item": "Residencial Estrato 6",
+            "count": "2907"
+          },
+          {
+            "item": "Residencial",
+            "count": "1800"
+          },
+          {
+            "item": "Oficial",
+            "count": "1560"
+          },
+          {
+            "item": "Especial Asistencial",
+            "count": "1208"
+          },
+          {
+            "item": "Especial Educativo",
+            "count": "1208"
+          },
+          {
+            "item": "Alumbrado P�blico",
+            "count": "1120"
+          },
+          {
+            "item": "Residencial Estrato 2",
+            "count": "1092"
+          },
+          {
+            "item": "Residencial Estrato 3",
+            "count": "1073"
+          },
+          {
+            "item": "Industrial Exenta",
+            "count": "1006"
+          },
+          {
+            "item": "�rea Com�n",
+            "count": "993"
+          },
+          {
+            "item": "Industrial Bombeo",
+            "count": "993"
+          },
+          {
+            "item": "Residencial Estrato 1",
+            "count": "956"
+          },
+          {
+            "item": "Comercia Exenta",
+            "count": "936"
+          },
+          {
+            "item": "Consorcio Amani",
+            "count": "633"
+          },
+          {
+            "item": "Bombeo Exenta",
+            "count": "558"
+          }
+        ],
+        "smallest": "Agricola",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232801,
+      "name": "claseservicio_estrato",
+      "dataTypeName": "text",
+      "description": "Estrato de la clase de servicio",
+      "fieldName": "claseservicio_estrato",
+      "position": 12,
+      "renderTypeName": "text",
+      "tableColumnId": 143907074,
+      "cachedContents": {
+        "non_null": "40609",
+        "largest": "NA",
+        "null": "0",
+        "top": [
+          {
+            "item": "NA",
+            "count": "25266"
+          },
+          {
+            "item": "5",
+            "count": "2955"
+          },
+          {
+            "item": "6",
+            "count": "2907"
+          },
+          {
+            "item": "2",
+            "count": "2832"
+          },
+          {
+            "item": "3",
+            "count": "2813"
+          },
+          {
+            "item": "1",
+            "count": "2696"
+          },
+          {
+            "item": "4",
+            "count": "1140"
+          }
+        ],
+        "smallest": "1",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232805,
+      "name": "costounitariotarifa_rangoconsumo",
+      "dataTypeName": "text",
+      "description": "Rango de consumo",
+      "fieldName": "costounitariotarifa_rangoconsumo",
+      "position": 13,
+      "renderTypeName": "text",
+      "tableColumnId": 143907078,
+      "cachedContents": {
+        "non_null": "40609",
+        "largest": "2",
+        "null": "0",
+        "top": [
+          {
+            "item": "1",
+            "count": "35389"
+          },
+          {
+            "item": "2",
+            "count": "5220"
+          }
+        ],
+        "smallest": "1",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232799,
+      "name": "costounitariotarifa_tipomercado",
+      "dataTypeName": "text",
+      "description": "Tipo de mercado",
+      "fieldName": "costounitariotarifa_tipomercado",
+      "position": 14,
+      "renderTypeName": "text",
+      "tableColumnId": 143907072,
+      "cachedContents": {
+        "non_null": "40609",
+        "largest": "R",
+        "null": "0",
+        "top": [
+          {
+            "item": "R",
+            "count": "40609"
+          }
+        ],
+        "smallest": "R",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232790,
+      "name": "costounitariotarifa_generacion",
+      "dataTypeName": "text",
+      "description": "Generación",
+      "fieldName": "costounitariotarifa_generacion",
+      "position": 15,
+      "renderTypeName": "text",
+      "tableColumnId": 143907063,
+      "cachedContents": {
+        "non_null": "40609",
+        "largest": "99.5350",
+        "null": "0",
+        "top": [
+          {
+            "item": "95.2445",
+            "count": "211"
+          },
+          {
+            "item": "96.1310",
+            "count": "210"
+          },
+          {
+            "item": "93.7510",
+            "count": "210"
+          },
+          {
+            "item": "96.3644",
+            "count": "210"
+          },
+          {
+            "item": "99.0923",
+            "count": "210"
+          },
+          {
+            "item": "95.9520",
+            "count": "210"
+          },
+          {
+            "item": "97.4928",
+            "count": "208"
+          },
+          {
+            "item": "102.5358",
+            "count": "208"
+          },
+          {
+            "item": "101.6222",
+            "count": "208"
+          },
+          {
+            "item": "101.9992",
+            "count": "208"
+          },
+          {
+            "item": "102.2967",
+            "count": "208"
+          },
+          {
+            "item": "85.0732",
+            "count": "208"
+          },
+          {
+            "item": "90.2104",
+            "count": "208"
+          },
+          {
+            "item": "83.0539",
+            "count": "205"
+          },
+          {
+            "item": "80.9314",
+            "count": "205"
+          },
+          {
+            "item": "84.4323",
+            "count": "205"
+          },
+          {
+            "item": "80.5788",
+            "count": "204"
+          },
+          {
+            "item": "80.1733",
+            "count": "204"
+          },
+          {
+            "item": "81.5761",
+            "count": "204"
+          },
+          {
+            "item": "83.8004",
+            "count": "202"
+          }
+        ],
+        "smallest": ".0000",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232793,
+      "name": "costounitariotarifa_transmision",
+      "dataTypeName": "text",
+      "description": "Transmisión",
+      "fieldName": "costounitariotarifa_transmision",
+      "position": 16,
+      "renderTypeName": "text",
+      "tableColumnId": 143907066,
+      "cachedContents": {
+        "non_null": "40609",
+        "largest": "66.8118",
+        "null": "0",
+        "top": [
+          {
+            "item": "60.4433",
+            "count": "211"
+          },
+          {
+            "item": "52.9668",
+            "count": "211"
+          },
+          {
+            "item": "57.6320",
+            "count": "211"
+          },
+          {
+            "item": "43.8332",
+            "count": "211"
+          },
+          {
+            "item": "50.6152",
+            "count": "211"
+          },
+          {
+            "item": "20.8577",
+            "count": "211"
+          },
+          {
+            "item": "62.1955",
+            "count": "211"
+          },
+          {
+            "item": "54.6881",
+            "count": "211"
+          },
+          {
+            "item": "54.1358",
+            "count": "211"
+          },
+          {
+            "item": "53.2977",
+            "count": "211"
+          },
+          {
+            "item": "53.8357",
+            "count": "211"
+          },
+          {
+            "item": "49.3138",
+            "count": "211"
+          },
+          {
+            "item": "52.9743",
+            "count": "211"
+          },
+          {
+            "item": "56.2770",
+            "count": "211"
+          },
+          {
+            "item": "46.9108",
+            "count": "211"
+          },
+          {
+            "item": "38.4612",
+            "count": "211"
+          },
+          {
+            "item": "55.9536",
+            "count": "211"
+          },
+          {
+            "item": "56.9345",
+            "count": "211"
+          },
+          {
+            "item": "51.6610",
+            "count": "211"
+          },
+          {
+            "item": "56.7575",
+            "count": "211"
+          }
+        ],
+        "smallest": "18.4788",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232791,
+      "name": "costounitariotarifa_distribucion",
+      "dataTypeName": "text",
+      "description": "Distribución",
+      "fieldName": "costounitariotarifa_distribucion",
+      "position": 17,
+      "renderTypeName": "text",
+      "tableColumnId": 143907064,
+      "cachedContents": {
+        "non_null": "40598",
+        "largest": "99.9003",
+        "null": "11",
+        "top": [
+          {
+            "item": "202.8152",
+            "count": "69"
+          },
+          {
+            "item": "207.5394",
+            "count": "69"
+          },
+          {
+            "item": "202.2693",
+            "count": "69"
+          },
+          {
+            "item": "205.5949",
+            "count": "69"
+          },
+          {
+            "item": "205.4425",
+            "count": "69"
+          },
+          {
+            "item": "206.0710",
+            "count": "69"
+          },
+          {
+            "item": "202.1251",
+            "count": "69"
+          },
+          {
+            "item": "196.9665",
+            "count": "69"
+          },
+          {
+            "item": "200.5713",
+            "count": "69"
+          },
+          {
+            "item": "206.2744",
+            "count": "69"
+          },
+          {
+            "item": "207.0119",
+            "count": "69"
+          },
+          {
+            "item": "200.7845",
+            "count": "69"
+          },
+          {
+            "item": "204.6976",
+            "count": "69"
+          },
+          {
+            "item": "204.3716",
+            "count": "69"
+          },
+          {
+            "item": "197.7955",
+            "count": "69"
+          },
+          {
+            "item": "198.8052",
+            "count": "69"
+          },
+          {
+            "item": "198.4778",
+            "count": "69"
+          },
+          {
+            "item": "197.1035",
+            "count": "69"
+          },
+          {
+            "item": "204.7514",
+            "count": "69"
+          },
+          {
+            "item": "307.3709",
+            "count": "64"
+          }
+        ],
+        "smallest": "100.2641",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232792,
+      "name": "costounitariotarifa_comercializacion",
+      "dataTypeName": "text",
+      "description": "Comercialización",
+      "fieldName": "costounitariotarifa_comercializacion",
+      "position": 18,
+      "renderTypeName": "text",
+      "tableColumnId": 143907065,
+      "cachedContents": {
+        "non_null": "40598",
+        "largest": "99.2050",
+        "null": "11",
+        "top": [
+          {
+            "item": "48.2874",
+            "count": "211"
+          },
+          {
+            "item": "48.3544",
+            "count": "210"
+          },
+          {
+            "item": "48.4365",
+            "count": "210"
+          },
+          {
+            "item": "48.4665",
+            "count": "210"
+          },
+          {
+            "item": "48.3141",
+            "count": "210"
+          },
+          {
+            "item": "48.4586",
+            "count": "210"
+          },
+          {
+            "item": "48.3047",
+            "count": "208"
+          },
+          {
+            "item": "47.0957",
+            "count": "208"
+          },
+          {
+            "item": "48.4391",
+            "count": "208"
+          },
+          {
+            "item": "47.6118",
+            "count": "208"
+          },
+          {
+            "item": "48.4612",
+            "count": "208"
+          },
+          {
+            "item": "48.0392",
+            "count": "208"
+          },
+          {
+            "item": "47.3405",
+            "count": "208"
+          },
+          {
+            "item": "46.9160",
+            "count": "205"
+          },
+          {
+            "item": "46.8259",
+            "count": "205"
+          },
+          {
+            "item": "46.9733",
+            "count": "205"
+          },
+          {
+            "item": "45.4032",
+            "count": "204"
+          },
+          {
+            "item": "46.7239",
+            "count": "204"
+          },
+          {
+            "item": "46.6897",
+            "count": "204"
+          },
+          {
+            "item": "41.9717",
+            "count": "202"
+          }
+        ],
+        "smallest": "100.6850",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232800,
+      "name": "costounitariotarifa_perdidas",
+      "dataTypeName": "text",
+      "description": "Pérdidas",
+      "fieldName": "costounitariotarifa_perdidas",
+      "position": 19,
+      "renderTypeName": "text",
+      "tableColumnId": 143907073,
+      "cachedContents": {
+        "non_null": "40598",
+        "largest": "9.9476",
+        "null": "11",
+        "top": [
+          {
+            "item": "19.6595",
+            "count": "211"
+          },
+          {
+            "item": "20.0094",
+            "count": "210"
+          },
+          {
+            "item": "19.3162",
+            "count": "210"
+          },
+          {
+            "item": "19.7493",
+            "count": "210"
+          },
+          {
+            "item": "19.7786",
+            "count": "210"
+          },
+          {
+            "item": "20.1368",
+            "count": "210"
+          },
+          {
+            "item": "20.8537",
+            "count": "208"
+          },
+          {
+            "item": "19.1600",
+            "count": "208"
+          },
+          {
+            "item": "18.1481",
+            "count": "208"
+          },
+          {
+            "item": "20.9597",
+            "count": "208"
+          },
+          {
+            "item": "20.6858",
+            "count": "208"
+          },
+          {
+            "item": "21.2872",
+            "count": "208"
+          },
+          {
+            "item": "20.0739",
+            "count": "208"
+          },
+          {
+            "item": "17.6043",
+            "count": "205"
+          },
+          {
+            "item": "17.1401",
+            "count": "205"
+          },
+          {
+            "item": "17.8150",
+            "count": "205"
+          },
+          {
+            "item": "17.2754",
+            "count": "204"
+          },
+          {
+            "item": "17.2034",
+            "count": "204"
+          },
+          {
+            "item": "17.0696",
+            "count": "204"
+          },
+          {
+            "item": "17.5402",
+            "count": "202"
+          }
+        ],
+        "smallest": "10.0216",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232789,
+      "name": "costounitariotarifa_restricciones",
+      "dataTypeName": "text",
+      "description": "Restricciones",
+      "fieldName": "costounitariotarifa_restricciones",
+      "position": 20,
+      "renderTypeName": "text",
+      "tableColumnId": 143907062,
+      "cachedContents": {
+        "non_null": "40598",
+        "largest": "9.9612",
+        "null": "11",
+        "top": [
+          {
+            "item": "23.4950",
+            "count": "211"
+          },
+          {
+            "item": "28.0655",
+            "count": "211"
+          },
+          {
+            "item": "19.0751",
+            "count": "211"
+          },
+          {
+            "item": "8.1674",
+            "count": "211"
+          },
+          {
+            "item": "22.4864",
+            "count": "211"
+          },
+          {
+            "item": "19.5517",
+            "count": "211"
+          },
+          {
+            "item": "40.9794",
+            "count": "211"
+          },
+          {
+            "item": "47.7778",
+            "count": "211"
+          },
+          {
+            "item": "77.9982",
+            "count": "211"
+          },
+          {
+            "item": "6.9570",
+            "count": "211"
+          },
+          {
+            "item": "30.4281",
+            "count": "211"
+          },
+          {
+            "item": "16.8950",
+            "count": "211"
+          },
+          {
+            "item": "23.2430",
+            "count": "211"
+          },
+          {
+            "item": "6.0519",
+            "count": "211"
+          },
+          {
+            "item": "26.4761",
+            "count": "211"
+          },
+          {
+            "item": "40.4652",
+            "count": "211"
+          },
+          {
+            "item": "32.2938",
+            "count": "211"
+          },
+          {
+            "item": "26.5830",
+            "count": "211"
+          },
+          {
+            "item": "29.6978",
+            "count": "211"
+          },
+          {
+            "item": "18.5517",
+            "count": "211"
+          }
+        ],
+        "smallest": "10.0820",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232804,
+      "name": "costounitariotarifa_cu",
+      "dataTypeName": "text",
+      "description": "Costo unitario",
+      "fieldName": "costounitariotarifa_cu",
+      "position": 21,
+      "renderTypeName": "text",
+      "tableColumnId": 143907077,
+      "cachedContents": {
+        "non_null": "40609",
+        "largest": "999.1087",
+        "null": "0",
+        "top": [
+          {
+            "item": "340.1601",
+            "count": "60"
+          },
+          {
+            "item": "344.8195",
+            "count": "60"
+          },
+          {
+            "item": "357.4828",
+            "count": "60"
+          },
+          {
+            "item": "369.9701",
+            "count": "60"
+          },
+          {
+            "item": "355.5964",
+            "count": "60"
+          },
+          {
+            "item": "336.2956",
+            "count": "60"
+          },
+          {
+            "item": "362.3203",
+            "count": "60"
+          },
+          {
+            "item": "358.2077",
+            "count": "60"
+          },
+          {
+            "item": "373.3432",
+            "count": "60"
+          },
+          {
+            "item": "358.6550",
+            "count": "60"
+          },
+          {
+            "item": "328.8150",
+            "count": "60"
+          },
+          {
+            "item": "328.8061",
+            "count": "60"
+          },
+          {
+            "item": "356.7524",
+            "count": "60"
+          },
+          {
+            "item": "352.5892",
+            "count": "60"
+          },
+          {
+            "item": "331.4267",
+            "count": "60"
+          },
+          {
+            "item": "373.3266",
+            "count": "60"
+          },
+          {
+            "item": "343.1244",
+            "count": "60"
+          },
+          {
+            "item": "355.6340",
+            "count": "60"
+          },
+          {
+            "item": "346.4410",
+            "count": "60"
+          },
+          {
+            "item": "337.1751",
+            "count": "60"
+          }
+        ],
+        "smallest": "1005.0354",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232803,
+      "name": "costounitariotarifa_cureal",
+      "dataTypeName": "text",
+      "description": "Costo unitario real",
+      "fieldName": "costounitariotarifa_cureal",
+      "position": 22,
+      "renderTypeName": "text",
+      "tableColumnId": 143907076,
+      "cachedContents": {
+        "non_null": "40609",
+        "largest": "934.8447",
+        "null": "0",
+        "top": [
+          {
+            "item": ".0000",
+            "count": "33871"
+          },
+          {
+            "item": "602.9363",
+            "count": "198"
+          },
+          {
+            "item": "552.0815",
+            "count": "198"
+          },
+          {
+            "item": "577.5089",
+            "count": "189"
+          },
+          {
+            "item": "539.0947",
+            "count": "180"
+          },
+          {
+            "item": "507.3797",
+            "count": "157"
+          },
+          {
+            "item": "422.2520",
+            "count": "108"
+          },
+          {
+            "item": "385.8016",
+            "count": "54"
+          },
+          {
+            "item": "654.4439",
+            "count": "44"
+          },
+          {
+            "item": "714.7278",
+            "count": "44"
+          },
+          {
+            "item": "684.5859",
+            "count": "42"
+          },
+          {
+            "item": "601.4537",
+            "count": "38"
+          },
+          {
+            "item": "500.5424",
+            "count": "24"
+          },
+          {
+            "item": "567.7136",
+            "count": "22"
+          },
+          {
+            "item": "707.0302",
+            "count": "22"
+          },
+          {
+            "item": "581.4619",
+            "count": "22"
+          },
+          {
+            "item": "620.0084",
+            "count": "22"
+          },
+          {
+            "item": "760.2113",
+            "count": "22"
+          },
+          {
+            "item": "577.9939",
+            "count": "22"
+          },
+          {
+            "item": "595.5431",
+            "count": "22"
+          }
+        ],
+        "smallest": ".0000",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232802,
+      "name": "costounitariotarifa_subcon",
+      "dataTypeName": "text",
+      "description": "Subcon",
+      "fieldName": "costounitariotarifa_subcon",
+      "position": 23,
+      "renderTypeName": "text",
+      "tableColumnId": 143907075,
+      "cachedContents": {
+        "non_null": "40598",
+        "largest": "-.6000001",
+        "null": "11",
+        "top": [
+          {
+            "item": ".2000000",
+            "count": "19391"
+          },
+          {
+            "item": ".0000000",
+            "count": "16854"
+          },
+          {
+            "item": "-.1500000",
+            "count": "1073"
+          },
+          {
+            "item": ".1000000",
+            "count": "993"
+          },
+          {
+            "item": "-.5000000",
+            "count": "473"
+          },
+          {
+            "item": "-.6000000",
+            "count": "143"
+          },
+          {
+            "item": "-.4999999",
+            "count": "51"
+          },
+          {
+            "item": "-.4000000",
+            "count": "29"
+          },
+          {
+            "item": "-.4979125",
+            "count": "17"
+          },
+          {
+            "item": "-.5983299",
+            "count": "16"
+          },
+          {
+            "item": "-.5983300",
+            "count": "16"
+          },
+          {
+            "item": "-.5999999",
+            "count": "14"
+          },
+          {
+            "item": "-.4979124",
+            "count": "13"
+          },
+          {
+            "item": "-.5983301",
+            "count": "6"
+          },
+          {
+            "item": "-.4605320",
+            "count": "5"
+          },
+          {
+            "item": "-.4979123",
+            "count": "5"
+          },
+          {
+            "item": "-.5504430",
+            "count": "5"
+          },
+          {
+            "item": "-.4341650",
+            "count": "5"
+          },
+          {
+            "item": "-.4954170",
+            "count": "5"
+          },
+          {
+            "item": "-.5747450",
+            "count": "5"
+          }
+        ],
+        "smallest": ".0000000",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    },
+    {
+      "id": 566232797,
+      "name": "costounitariotarifa_valor_tarifa",
+      "dataTypeName": "text",
+      "description": "Valor de la tarifa",
+      "fieldName": "costounitariotarifa_valor_tarifa",
+      "position": 24,
+      "renderTypeName": "text",
+      "tableColumnId": 143907070,
+      "cachedContents": {
+        "non_null": "40609",
+        "largest": "999.1087",
+        "null": "0",
+        "top": [
+          {
+            "item": "552.0815",
+            "count": "130"
+          },
+          {
+            "item": "602.9363",
+            "count": "130"
+          },
+          {
+            "item": "507.3797",
+            "count": "120"
+          },
+          {
+            "item": "577.5089",
+            "count": "120"
+          },
+          {
+            "item": "539.0947",
+            "count": "110"
+          },
+          {
+            "item": "422.2520",
+            "count": "90"
+          },
+          {
+            "item": "662.4978",
+            "count": "50"
+          },
+          {
+            "item": "646.9136",
+            "count": "50"
+          },
+          {
+            "item": "693.0107",
+            "count": "50"
+          },
+          {
+            "item": "723.5236",
+            "count": "50"
+          },
+          {
+            "item": "608.8556",
+            "count": "44"
+          },
+          {
+            "item": "385.8016",
+            "count": "40"
+          },
+          {
+            "item": "506.7024",
+            "count": "30"
+          },
+          {
+            "item": "714.7278",
+            "count": "26"
+          },
+          {
+            "item": "654.4439",
+            "count": "26"
+          },
+          {
+            "item": "601.4537",
+            "count": "24"
+          },
+          {
+            "item": "684.5859",
+            "count": "24"
+          },
+          {
+            "item": "429.0056",
+            "count": "21"
+          },
+          {
+            "item": "462.9619",
+            "count": "20"
+          },
+          {
+            "item": "500.5424",
+            "count": "18"
+          }
+        ],
+        "smallest": "1000.3490",
+        "count": "40609",
+        "cardinality": "40609"
+      },
+      "format": {}
+    }
+  ],
+  "grants": [
+    {
+      "inherited": false,
+      "type": "viewer",
+      "flags": [
+        "public"
+      ]
+    }
+  ],
+  "license": {
+    "name": "Creative Commons Attribution | Share Alike 4.0 International",
+    "logoUrl": "images/licenses/cc30bysa.png",
+    "termsLink": "http://creativecommons.org/licenses/by-sa/4.0/legalcode"
+  },
+  "metadata": {
+    "custom_fields": {
+      "Información de la Entidad": {
+        "Municipio": "Manizales",
+        "Nombre de la Entidad": "E.S.P. Central Hidroeléctrica de Caldas, Caldas",
+        "DIVIPOLA Municipio": "17001",
+        "Orden": "Territorial",
+        "Sector": "Vivienda, Ciudad y Territorio",
+        "Departamento": "Caldas"
+      },
+      "Información de Datos": {
+        "Cobertura Geográfica": "Departamental",
+        "Idioma": "Español",
+        "Frecuencia de Actualización": "Mensual"
+      }
+    }
+  },
+  "owner": {
+    "id": "b7kb-mi2x",
+    "displayName": "Central_Hidroelectrica_de_Caldas",
+    "profileImageUrlLarge": "/api/users/b7kb-mi2x/profile_images/LARGE",
+    "profileImageUrlMedium": "/api/users/b7kb-mi2x/profile_images/THUMB",
+    "profileImageUrlSmall": "/api/users/b7kb-mi2x/profile_images/TINY",
+    "screenName": "Central_Hidroelectrica_de_Caldas",
+    "type": "interactive",
+    "flags": [
+      "acceptedEula",
+      "mayBeStoriesCoOwner"
+    ]
+  },
+  "query": {
+    "orderBys": [
+      {
+        "ascending": false,
+        "expression": {
+          "columnId": 566232787,
+          "type": "column"
+        }
+      }
+    ]
+  },
+  "rights": [
+    "read"
+  ],
+  "tableAuthor": {
+    "id": "b7kb-mi2x",
+    "displayName": "Central_Hidroelectrica_de_Caldas",
+    "profileImageUrlLarge": "/api/users/b7kb-mi2x/profile_images/LARGE",
+    "profileImageUrlMedium": "/api/users/b7kb-mi2x/profile_images/THUMB",
+    "profileImageUrlSmall": "/api/users/b7kb-mi2x/profile_images/TINY",
+    "screenName": "Central_Hidroelectrica_de_Caldas",
+    "type": "interactive",
+    "flags": [
+      "acceptedEula",
+      "mayBeStoriesCoOwner"
+    ]
+  },
+  "tags": [
+    "información costo unitario de tarifas de energía chec",
+    "costo unitario de tarifas de energía chec",
+    "tarifas chec",
+    "información tarifas chec",
+    "tarifas energía"
+  ],
+  "flags": [
+    "default",
+    "ownerMayBeContacted",
+    "restorable",
+    "restorePossibleForType"
+  ]
+}

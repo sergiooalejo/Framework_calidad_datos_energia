@@ -1,0 +1,30 @@
+{
+  "filas": 40609,
+  "duplicados_exactos_adicionales": 0,
+  "claves_categoria_mes_repetidas": 1398,
+  "no_numericos_o_no_finitos": {
+    "costounitariotarifa_distribucion": 11,
+    "costounitariotarifa_comercializacion": 11,
+    "costounitariotarifa_perdidas": 11,
+    "costounitariotarifa_restricciones": 11,
+    "costounitariotarifa_subcon": 11
+  },
+  "no_positivos": {
+    "costounitariotarifa_cureal": 33871,
+    "costounitariotarifa_subcon": 20214,
+    "costounitariotarifa_restricciones": 727,
+    "costounitariotarifa_generacion": 11
+  },
+  "series": {
+    "costounitariotarifa_cu": {
+      "con_49_meses_positivos_unicos_consecutivos": 183,
+      "con_61_meses_positivos_unicos_consecutivos": 180,
+      "max_meses": 201
+    },
+    "costounitariotarifa_valor_tarifa": {
+      "con_49_meses_positivos_unicos_consecutivos": 183,
+      "con_61_meses_positivos_unicos_consecutivos": 180,
+      "max_meses": 201
+    }
+  }
+}

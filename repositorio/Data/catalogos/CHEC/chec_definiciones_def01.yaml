@@ -1,0 +1,16 @@
+version: '1.0'
+dataset_id: c698-wqig
+proposito: Definiciones operativas de las 24 columnas CHEC para DEF01.
+aprobacion: metodologica_interna_con_metadatos_del_portal
+reglas:
+  - Los códigos se conservan como texto y se interpretan mediante catálogos.
+  - Las magnitudes monetarias no se comparan entre conceptos sin controlar su unidad.
+  - NA en estrato es no aplicable o no informado; no se convierte en cero.
+campos:
+  periodo: año y mes de vigencia mensual; unidad calendario; no es fecha de publicación.
+  identificacion: códigos y nombres de comercializador, mercado y clase de servicio.
+  clasificacion: tipomed, nivel de tensión, modalidad de cobro, estrato, rango y tipo de mercado.
+  componentes: generación, transmisión, distribución, comercialización, pérdidas y restricciones.
+  agregados: CU, CU real, subcon y valor de tarifa; unidad dependiente del concepto publicado.
+evidencia: Metadatos del portal de datos abiertos, diccionario local y contraste documental CHEC-Superservicios.
+limitacion: La unidad exacta y algunas siglas requieren catálogo formal del publicador; el cierre es metodológico interno.

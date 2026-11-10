@@ -1,0 +1,10 @@
+regla,dimension,severidad,filas
+R01 Período presente,Completitud,Error,1
+R04 Duplicado exacto (adicional),Unicidad,Error,10
+R05 Clave categoría+fecha repetida,Unicidad,Advertencia,2
+R06 Etiqueta no canónica,Consistencia,Advertencia,445
+R07 No negatividad,Validez,Informativa,9
+R08 Orden EPM ≥ Compartido ≥ Cliente,Consistencia,Advertencia,2
+R10 Todos los importes en cero,Completitud,Advertencia,1
+R11 Posible serial de fecha Excel,Exactitud,Error,2
+R12 Magnitud > 10× mediana de su serie,Exactitud,Error,3

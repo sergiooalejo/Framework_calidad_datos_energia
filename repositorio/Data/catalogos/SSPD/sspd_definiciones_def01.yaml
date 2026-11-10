@@ -1,0 +1,16 @@
+version: '1.0'
+dataset_id: ebby-cjha
+proposito: Definiciones operativas de las variables críticas SSPD para DEF01.
+aprobacion: metodologica_interna_con_metadatos_del_portal
+variables:
+  identificadores: identificador_empresa, niu, id_factura, codigo_localidad, codigo_conexion
+  periodo: anio, periodo, fecha_expedicion, fecha_inicio_periodo, dias_facturados
+  clasificacion: ubicacion, tipo_conexion, estrato_sector, tipo_factura, tipo_lectura, tipo_categoria, tension
+  consumo: consumo_basico, consumo_complementario, consumo_reside_mayor800
+  facturacion: facturacion_consumo_basico, facturacion_complementario, facturacion_reside_mayor800
+  valores: valor_refacturacion, valor_mora, interes_mora, valor_subsidio, porcentaje_subsidio, valor_total
+reglas:
+  - Las unidades de consumo se tratan como kWh únicamente como hipótesis operativa; el publicador no las documenta.
+  - Los valores monetarios se conservan en la escala original; no se imputa moneda sin evidencia.
+  - NA y valores negativos se conservan y se analizan según concepto.
+limitacion: El catálogo es una definición metodológica del proyecto porque el portal no publica descripciones completas de las 29 columnas.

@@ -1,0 +1,64 @@
+{
+  "nombre": "calidad_datos_energia",
+  "estructura": "TDSP adaptado",
+  "fecha_consolidacion": "2026-11-09",
+  "actividades": {
+    "3.1": {
+      "codigo": "Code/Data_Acquisition_and_Understanding/calidad",
+      "resultados": "Outputs/calidad"
+    },
+    "3.2": {
+      "codigo": "Code/Data_Acquisition_and_Understanding/caracterizacion",
+      "resultados": "Outputs/caracterizacion"
+    },
+    "3.3": {
+      "codigo": "Code/Data_Acquisition_and_Understanding/adaptadores",
+      "resultados": "Outputs/adaptadores"
+    },
+    "3.4": {
+      "codigo": "Code/Data_Acquisition_and_Understanding/seleccion_fuentes",
+      "resultados": "Outputs/seleccion_fuentes"
+    },
+    "3.5": {
+      "codigo": "Code/Modeling/cartas",
+      "resultados": "Outputs/cartas"
+    },
+    "3.6": {
+      "codigo": "Code/Data_Acquisition_and_Understanding/trazabilidad",
+      "resultados": "Outputs/trazabilidad"
+    },
+    "3.7": {
+      "codigo": "Code/Data_Acquisition_and_Understanding/cuarentena_bootstrap",
+      "resultados": "Outputs/cuarentena_bootstrap"
+    },
+    "3_documentacion_general": {
+      "codigo": "Code/Project/organizacion",
+      "resultados": "Outputs/organizacion"
+    },
+    "4.1": {
+      "codigo": "Code/Modeling/detectores",
+      "resultados": "Outputs/detectores"
+    },
+    "4.2": {
+      "codigo": "Code/Modeling/sensibilidad",
+      "resultados": "Outputs/sensibilidad"
+    },
+    "4.3": {
+      "codigo": "Code/Modeling/metricas",
+      "resultados": "Outputs/metricas"
+    },
+    "4.4": {
+      "codigo": "Code/Modeling/regla_sistemica",
+      "resultados": "Outputs/regla_sistemica"
+    },
+    "4.5": {
+      "codigo": "Code/Evaluation/scorecard",
+      "resultados": "Outputs/scorecard"
+    },
+    "4.6": {
+      "codigo": "Code/Evaluation/niveles_costos",
+      "resultados": "Outputs/niveles_costos"
+    }
+  },
+  "estado": "linea_base_tecnica_pendiente_aprobacion"
+}

@@ -1,0 +1,72 @@
+{
+  "metodo": "isolation_forest_referencia_vigilancia",
+  "semilla": 20261106,
+  "n_estimators": 300,
+  "contamination": "auto",
+  "formula_particion": "36 cambios logarítmicos consecutivos de referencia + 12 de vigilancia",
+  "caracteristicas": [
+    "cambio_log_actual",
+    "cambio_log_anterior",
+    "diferencia_absoluta_entre_cambios",
+    "nivel_log_relativo_a_mediana_referencia"
+  ],
+  "escalamiento": "mediana y MAD robustos calculados dentro de referencia; fallback documentado si escala cero",
+  "umbral": "percentil de puntajes de entrenamiento por fuente",
+  "percentil_umbral": 0.995,
+  "entrenamiento_solo_referencia": true,
+  "evaluacion_solo_vigilancia": true,
+  "fuentes": [
+    "EPM",
+    "CHEC",
+    "SSPD",
+    "XM"
+  ],
+  "entradas": {
+    "EPM": {
+      "ruta": "Data/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv",
+      "sha256": "98acd40e8d2b92433b1dfc60422228f26f53ab331fd600631f03f830e7ba38f4"
+    },
+    "CHEC": {
+      "ruta": "Data/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv",
+      "sha256": "05865b094a4cc4eb9f822ed2af686a11a8905d6606f40bb554f5bb5258e3c53f"
+    },
+    "SSPD": {
+      "ruta": "Data/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv",
+      "sha256": "c0beb6d6800de043e91dfd0def5ee619201a579c4013fd65e9255d6e1479d625"
+    },
+    "XM": {
+      "ruta": "Data/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv",
+      "sha256": "56db2e52a430619794277c3d0682c5e815318166541b7132834946566ab7c569"
+    }
+  },
+  "modelos": {
+    "EPM": {
+      "series_entrenamiento": 60,
+      "observaciones_referencia": 2160,
+      "observaciones_vigilancia": 720,
+      "umbral": 0.7031608674587164,
+      "percentil_umbral": 0.995
+    },
+    "CHEC": {
+      "series_entrenamiento": 276,
+      "observaciones_referencia": 9936,
+      "observaciones_vigilancia": 3312,
+      "umbral": 0.6888914830368914,
+      "percentil_umbral": 0.995
+    },
+    "SSPD": {
+      "series_entrenamiento": 356,
+      "observaciones_referencia": 12816,
+      "observaciones_vigilancia": 4272,
+      "umbral": 0.7293297673649828,
+      "percentil_umbral": 0.995
+    },
+    "XM": {
+      "series_entrenamiento": 1,
+      "observaciones_referencia": 36,
+      "observaciones_vigilancia": 12,
+      "umbral": 0.723648516572221,
+      "percentil_umbral": 0.995
+    }
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "entradas": {
+    "EPM": {
+      "ruta": "Data/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv",
+      "sha256": "98acd40e8d2b92433b1dfc60422228f26f53ab331fd600631f03f830e7ba38f4"
+    },
+    "CHEC": {
+      "ruta": "Data/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv",
+      "sha256": "05865b094a4cc4eb9f822ed2af686a11a8905d6606f40bb554f5bb5258e3c53f"
+    },
+    "SSPD": {
+      "ruta": "Data/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv",
+      "sha256": "c0beb6d6800de043e91dfd0def5ee619201a579c4013fd65e9255d6e1479d625"
+    },
+    "XM": {
+      "ruta": "Data/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv",
+      "sha256": "56db2e52a430619794277c3d0682c5e815318166541b7132834946566ab7c569"
+    }
+  },
+  "archivos": [
+    {
+      "archivo": "calibracion_resumen.csv",
+      "bytes": 1775,
+      "sha256": "b953168051e5505c2654c5b940443427f0cd123aa87b237715f8781ee96162b8"
+    },
+    {
+      "archivo": "calibracion_X.csv",
+      "bytes": 85507,
+      "sha256": "ee4e3914879f0b4cba9e29241232cbaaf4586f0177b15c67f48618bb77fd1629"
+    },
+    {
+      "archivo": "catalogo_alertas_sistemicas.csv",
+      "bytes": 31151,
+      "sha256": "b34c4c735882340f89960a1e32d8d15cd306681dc0302fbf97d22e96eb50f258"
+    },
+    {
+      "archivo": "composicion_alertas_meses_plan.csv",
+      "bytes": 8456,
+      "sha256": "2e9aab760d9f2b7f928a0976c46dcab425e135004f2d64739fa79a92756bdf6d"
+    },
+    {
+      "archivo": "configuracion.json",
+      "bytes": 4305,
+      "sha256": "c9d62f5cedefc4e53128015bfaba38388a0e40acbc6d655ce907a59182a8eeaf"
+    },
+    {
+      "archivo": "contraste_componentes.csv",
+      "bytes": 3094,
+      "sha256": "2b0b230342bf4714cf3a00ce239368862a15695f600a3008a27fd706ae20c3cd"
+    },
+    {
+      "archivo": "costo_enmascaramiento_4_2.csv",
+      "bytes": 3618,
+      "sha256": "245fcf769f67d00389939402512cfaa1afe5e4634f7262c575fb54f3aa43133d"
+    },
+    {
+      "archivo": "efecto_regla_sobre_alertas_reales.csv",
+      "bytes": 10060,
+      "sha256": "8b0ae01e10e34f2a96cf4c998b4543d2ec0f253836f0a779563e7599b3437465"
+    },
+    {
+      "archivo": "evidencia_externa/epm_tarifas_energia_2020-01.pdf",
+      "bytes": 148648,
+      "sha256": "49f635522bb31f68ba5270492c835eacb5e3c0acd72d9c1d368690adc09ee4b3"
+    },
+    {
+      "archivo": "evidencia_externa/epm_tarifas_energia_2020-02.pdf",
+      "bytes": 146935,
+      "sha256": "f6b6bf5f35444406f4c7c94614b906b638aca4f8ecf5d4261cf74715621232ff"
+    },
+    {
+      "archivo": "evidencia_externa/epm_tarifas_energia_2020-06.pdf",
+      "bytes": 152125,
+      "sha256": "303725419a6355a3c0545e60bb642590acf87e05c4b26279b561ddec02f8d3bf"
+    },
+    {
+      "archivo": "evidencia_externa/epm_tarifas_energia_2020-07.pdf",
+      "bytes": 330823,
+      "sha256": "ac74b07c4d569596b59cc0b67221e84d5dd10eb17213fc8790a3d3872d27efc4"
+    },
+    {
+      "archivo": "evidencia_externa/epm_tarifas_energia_2021-06.pdf",
+      "bytes": 328123,
+      "sha256": "3259037dd1181bace641eb1c2a99d202f8004053e316c85a4688650093fa1d09"
+    },
+    {
+      "archivo": "evidencia_externa/epm_tarifas_energia_2021-07.pdf",
+      "bytes": 328162,
+      "sha256": "0a4209952eee22281ad1c601a692ba4165fdfa84309418cb77aa210500303679"
+    },
+    {
+      "archivo": "evidencia_externa/referencias_documentales.csv",
+      "bytes": 6677,
+      "sha256": "6364b5a22fe795bc521cb808d5546c4197ae71a92da1214d0ec17c84d08813fb"
+    },
+    {
+      "archivo": "evidencia_externa/tarifas_epm_publicadas.csv",
+      "bytes": 2457,
+      "sha256": "c651fc9c3ec1f6c92b75c92f525dcfebb15d0e4f4e5c99397338432da32740dc"
+    },
+    {
+      "archivo": "fracciones_mensuales.csv",
+      "bytes": 103387,
+      "sha256": "531202723d50ff3ccc1ec202e6ffdbf6879303810e3be63fdb8dd99735f5a871"
+    },
+    {
+      "archivo": "INFORME_REGLA_SISTEMICA.txt",
+      "bytes": 22574,
+      "sha256": "13ae413c6709be496806cdb48252c4be64b71d11b9a72356aa0cb236adfed7b2"
+    },
+    {
+      "archivo": "inventario_series_por_variante.csv",
+      "bytes": 297,
+      "sha256": "dac694a61793311d2514966575df4443b32e5f14813cf17577518548b2cd71a7"
+    },
+    {
+      "archivo": "reproduccion_hito2.csv",
+      "bytes": 1039,
+      "sha256": "38ecbcfa336c38f39923d5080151e6b728140dfa6bb5031da81c14f86783a97f"
+    },
+    {
+      "archivo": "tamano_componentes_epm.csv",
+      "bytes": 53699,
+      "sha256": "fda415a9638cae94b5e1d83a6f94435ac3fef83ac0f1cfa9ec4424a136436a0a"
+    },
+    {
+      "archivo": "verificacion.json",
+      "bytes": 1143,
+      "sha256": "68414ffd6bb296e012196d6aeb8ab9601cfc4b84e08d01ced1ed807c3f0719d8"
+    },
+    {
+      "archivo": "verificacion_suma_componentes.csv",
+      "bytes": 885,
+      "sha256": "149d074d1cd9fe6fcde4d3eaef31ed7ccc5b0ae4485c192bffe78baae1112c71"
+    },
+    {
+      "archivo": "verificacion_transcripcion_pdf.csv",
+      "bytes": 7044,
+      "sha256": "6d8c65c1f7185763d6c28ee62d95a4b504593a236b182556f90dc7008b53252c"
+    }
+  ]
+}

@@ -1,0 +1,694 @@
+fuente,serie,medida,periodos_disponibles,cambios_referencia,cambios_vigilancia,mediana_referencia,mad_referencia,umbral,señales,tasa_alerta_vigilancia,estado_escala
+EPM,"Horaria|Costo Unitario|Cargo transporte SDL: Dn,m|Fuera de Punta|I",compartido,61,36,12,0.0032379841623,0.0135053294949,3,0,0,mad_positivo
+EPM,"Horaria|Costo Unitario|Cargo transporte SDL: Dn,m|Fuera de Punta|I",propiedaddelcliente,61,36,12,0.00316451839494,0.0147984379347,3,0,0,mad_positivo
+EPM,"Horaria|Costo Unitario|Cargo transporte SDL: Dn,m|Fuera de Punta|I",propiedadepm,61,36,12,0.00215878453528,0.0115701210656,3,1,0.0833333333333,mad_positivo
+EPM,"Horaria|Costo Unitario|Cargo transporte SDL: Dn,m|Punta|I",compartido,60,36,12,0.00207243771344,0.0136323877257,3,0,0,mad_positivo
+EPM,"Horaria|Costo Unitario|Cargo transporte SDL: Dn,m|Punta|I",propiedaddelcliente,60,36,12,0.00203347223143,0.0152171132272,3,0,0,mad_positivo
+EPM,"Horaria|Costo Unitario|Cargo transporte SDL: Dn,m|Punta|I",propiedadepm,60,36,12,0.00224753764544,0.0130728939226,3,0,0,mad_positivo
+EPM,Horaria|Costo Unitario|Cargo transporte STN: Tm|Fuera de Punta|I,compartido,61,36,12,-0.000155448470085,0.0341019838017,3,2,0.166666666667,mad_positivo
+EPM,Horaria|Costo Unitario|Cargo transporte STN: Tm|Fuera de Punta|I,propiedaddelcliente,61,36,12,-0.000155448470085,0.0341019838017,3,2,0.166666666667,mad_positivo
+EPM,Horaria|Costo Unitario|Cargo transporte STN: Tm|Fuera de Punta|I,propiedadepm,61,36,12,-0.000155448470085,0.0341019838017,3,2,0.166666666667,mad_positivo
+EPM,Horaria|Costo Unitario|Cargo transporte STN: Tm|Punta|I,compartido,60,36,12,-0.00313822834015,0.0393009074663,3,3,0.25,mad_positivo
+EPM,Horaria|Costo Unitario|Cargo transporte STN: Tm|Punta|I,propiedaddelcliente,60,36,12,-0.00313822834015,0.0393009074663,3,3,0.25,mad_positivo
+EPM,Horaria|Costo Unitario|Cargo transporte STN: Tm|Punta|I,propiedadepm,60,36,12,-0.00313822834015,0.0393009074663,3,3,0.25,mad_positivo
+EPM,"Horaria|Costo Unitario|Margen comercialización: CVm,i,j|Fuera de Punta|I",compartido,61,36,12,0.00424429842107,0.0119334859294,3,2,0.166666666667,mad_positivo
+EPM,"Horaria|Costo Unitario|Margen comercialización: CVm,i,j|Fuera de Punta|I",propiedaddelcliente,61,36,12,0.00424429842107,0.0119334859294,3,2,0.166666666667,mad_positivo
+EPM,"Horaria|Costo Unitario|Margen comercialización: CVm,i,j|Fuera de Punta|I",propiedadepm,61,36,12,0.00424429842107,0.0119334859294,3,2,0.166666666667,mad_positivo
+EPM,"Horaria|Costo Unitario|Margen comercialización: CVm,i,j|Punta|I",compartido,61,36,12,0.00424429842107,0.0119334859294,3,2,0.166666666667,mad_positivo
+EPM,"Horaria|Costo Unitario|Margen comercialización: CVm,i,j|Punta|I",propiedaddelcliente,61,36,12,0.00424429842107,0.0119334859294,3,2,0.166666666667,mad_positivo
+EPM,"Horaria|Costo Unitario|Margen comercialización: CVm,i,j|Punta|I",propiedadepm,61,36,12,0.00424429842107,0.0119334859294,3,2,0.166666666667,mad_positivo
+EPM,Horaria|Costo Unitario|Restricciones: Rm|Fuera de Punta|I,compartido,61,36,12,-0.0114819526561,0.175816528199,3,5,0.416666666667,mad_positivo
+EPM,Horaria|Costo Unitario|Restricciones: Rm|Fuera de Punta|I,propiedaddelcliente,61,36,12,-0.0114819526561,0.175816528199,3,5,0.416666666667,mad_positivo
+EPM,Horaria|Costo Unitario|Restricciones: Rm|Fuera de Punta|I,propiedadepm,61,36,12,-0.0114819526561,0.175816528199,3,5,0.416666666667,mad_positivo
+EPM,Horaria|Costo Unitario|Restricciones: Rm|Punta|I,compartido,59,36,12,-0.00647957232125,0.167242028988,3,2,0.166666666667,mad_positivo
+EPM,Horaria|Costo Unitario|Restricciones: Rm|Punta|I,propiedaddelcliente,59,36,12,-0.00647957232125,0.167242028988,3,2,0.166666666667,mad_positivo
+EPM,Horaria|Costo Unitario|Restricciones: Rm|Punta|I,propiedadepm,59,36,12,-0.00647957232125,0.167242028988,3,2,0.166666666667,mad_positivo
+EPM,Horaria|No Residencial|Industrial y Comercial|Fuera de Punta|I,compartido,60,36,12,0.00513916801494,0.0166360537322,3,0,0,mad_positivo
+EPM,Horaria|No Residencial|Industrial y Comercial|Fuera de Punta|I,propiedaddelcliente,60,36,12,0.00507710618041,0.0174539816474,3,0,0,mad_positivo
+EPM,Horaria|No Residencial|Industrial y Comercial|Fuera de Punta|I,propiedadepm,60,36,12,0.00519673032094,0.0158925405362,3,0,0,mad_positivo
+EPM,Horaria|No Residencial|Industrial y Comercial|Punta|I,compartido,60,36,12,0.0014441016008,0.0181976026904,3,0,0,mad_positivo
+EPM,Horaria|No Residencial|Industrial y Comercial|Punta|I,propiedaddelcliente,60,36,12,0.00145606049517,0.017769742942,3,0,0,mad_positivo
+EPM,Horaria|No Residencial|Industrial y Comercial|Punta|I,propiedadepm,60,36,12,0.00142474295802,0.0175514077145,3,0,0,mad_positivo
+EPM,Horaria|Tarifa|Industrial y Comercial|N/A|II,fueradepunta,61,36,12,0.0031615705268,0.0176919134261,3,1,0.0833333333333,mad_positivo
+EPM,Horaria|Tarifa|Industrial y Comercial|N/A|II,punta,61,36,12,0.00563585403371,0.011925172453,3,1,0.0833333333333,mad_positivo
+EPM,Horaria|Tarifa|Industrial y Comercial|N/A|III,fueradepunta,61,36,12,0.00294506031452,0.0183029743097,3,1,0.0833333333333,mad_positivo
+EPM,Horaria|Tarifa|Industrial y Comercial|N/A|III,punta,61,36,12,0.00429931444794,0.0107262736799,3,1,0.0833333333333,mad_positivo
+EPM,Horaria|Tarifa|Industrial y Comercial|N/A|IV,fueradepunta,60,36,12,0.00562890764875,0.0215464115418,3,0,0,mad_positivo
+EPM,Horaria|Tarifa|Industrial y Comercial|N/A|IV,punta,60,36,12,0.00436715403065,0.0238631717923,3,0,0,mad_positivo
+EPM,Horaria|Tarifa|Oficial y Exentos|N/A|II,fueradepunta,60,36,12,0.00315055823584,0.0187765939835,3,0,0,mad_positivo
+EPM,Horaria|Tarifa|Oficial y Exentos|N/A|II,punta,60,36,12,0.00564799722576,0.0126366820162,3,0,0,mad_positivo
+EPM,Horaria|Tarifa|Oficial y Exentos|N/A|III,fueradepunta,61,36,12,0.0029396080788,0.0183140675066,3,1,0.0833333333333,mad_positivo
+EPM,Horaria|Tarifa|Oficial y Exentos|N/A|III,punta,61,36,12,0.00429353391354,0.0107243327795,3,1,0.0833333333333,mad_positivo
+EPM,Horaria|Tarifa|Oficial y Exentos|N/A|IV,fueradepunta,60,36,12,0.00953038613331,0.020018766275,3,0,0,mad_positivo
+EPM,Horaria|Tarifa|Oficial y Exentos|N/A|IV,punta,60,36,12,0.00760053543424,0.0206240332654,3,0,0,mad_positivo
+EPM,Monomia|Costo Unitario|Cargo transporte STN: Tm|N/A|I,compartido,61,36,12,-0.00135277401022,0.0363322061224,3,2,0.166666666667,mad_positivo
+EPM,Monomia|Costo Unitario|Cargo transporte STN: Tm|N/A|I,propiedaddelcliente,61,36,12,-0.00135277401022,0.0363322061224,3,2,0.166666666667,mad_positivo
+EPM,Monomia|Costo Unitario|Cargo transporte STN: Tm|N/A|I,propiedadepm,61,36,12,-0.00135277401022,0.0315281927503,3,2,0.166666666667,mad_positivo
+EPM,Monomia|Costo Unitario|Restricciones: Rm|N/A|I,compartido,60,36,12,-0.0153760130493,0.172880866438,3,3,0.25,mad_positivo
+EPM,Monomia|Costo Unitario|Restricciones: Rm|N/A|I,propiedaddelcliente,60,36,12,-0.0153760130493,0.172880866438,3,3,0.25,mad_positivo
+EPM,Monomia|Costo Unitario|Restricciones: Rm|N/A|I,propiedadepm,60,36,12,-0.0153760130493,0.172880866438,3,3,0.25,mad_positivo
+EPM,Monomia|No Residencial|ESPD|N/A|I,compartido,59,36,12,0.00649033498311,0.0146849747335,3,0,0,mad_positivo
+EPM,Monomia|No Residencial|ESPD|N/A|I,propiedaddelcliente,59,36,12,0.00646820107133,0.0154212378226,3,0,0,mad_positivo
+EPM,Monomia|No Residencial|ESPD|N/A|I,propiedadepm,59,36,12,0.0065297350023,0.0139737636186,3,0,0,mad_positivo
+EPM,Monomia|No Residencial|Industrial y Comercial|N/A|I,compartido,60,36,12,0.00502921579149,0.0161514941223,3,0,0,mad_positivo
+EPM,Monomia|No Residencial|Industrial y Comercial|N/A|I,propiedaddelcliente,60,36,12,0.00499814703125,0.0168965804006,3,0,0,mad_positivo
+EPM,Monomia|No Residencial|Industrial y Comercial|N/A|I,propiedadepm,60,36,12,0.00491423181738,0.0155953478636,3,0,0,mad_positivo
+EPM,Monomia|No Residencial|Oficial y Exentos de Contribución|N/A|I,compartido,60,36,12,0.00502906163991,0.0161495807348,3,0,0,mad_positivo
+EPM,Monomia|No Residencial|Oficial y Exentos de Contribución|N/A|I,propiedaddelcliente,60,36,12,0.00500177391224,0.0168912981734,3,0,0,mad_positivo
+EPM,Monomia|No Residencial|Oficial y Exentos de Contribución|N/A|I,propiedadepm,60,36,12,0.00491781295659,0.0155881458604,3,0,0,mad_positivo
+EPM,Monomia|Residencial|Estrato 4|Todo el consumo|I,compartido,61,36,12,0.00649711554047,0.0157718993061,3,1,0.0833333333333,mad_positivo
+EPM,Monomia|Residencial|Estrato 4|Todo el consumo|I,propiedaddelcliente,61,36,12,0.00646900018079,0.0164750392103,3,0,0,mad_positivo
+EPM,Monomia|Residencial|Estrato 4|Todo el consumo|I,propiedadepm,61,36,12,0.00652328028554,0.0151098900686,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|0% OR|CR|1|R,costounitariotarifa_cu,196,36,12,0.00392716268373,0.0123524369135,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00392727119472,0.012352189918,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|0% OR|ID|1|R,costounitariotarifa_cu,196,36,12,0.00392716268373,0.0123524369135,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00392727119472,0.012352189918,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|0% OR|PR|1|R,costounitariotarifa_cu,196,36,12,0.00392716268373,0.0123524369135,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|0% OR|PR|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00392727119472,0.012352189918,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|0% OR|RS|1|R,costounitariotarifa_cu,196,36,12,0.00392716268373,0.0123524369135,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|0% OR|RS|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00392727119472,0.012352189918,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|0% OR SIN AOM|CR|1|R,costounitariotarifa_cu,133,36,12,0.0046463126952,0.0123075062899,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|0% OR SIN AOM|CR|1|R,costounitariotarifa_valor_tarifa,133,36,12,0.0046463310199,0.0123074697732,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|0% OR SIN AOM|ID|1|R,costounitariotarifa_cu,133,36,12,0.0046463126952,0.0123075062899,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|0% OR SIN AOM|ID|1|R,costounitariotarifa_valor_tarifa,133,36,12,0.0046463310199,0.0123074697732,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|0% OR SIN AOM|PR|1|R,costounitariotarifa_cu,133,36,12,0.0046463126952,0.0123075062899,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|0% OR SIN AOM|PR|1|R,costounitariotarifa_valor_tarifa,133,36,12,0.0046463310199,0.0123074697732,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|0% OR SIN AOM|RS|1|R,costounitariotarifa_cu,133,36,12,0.0046463126952,0.0123075062899,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|0% OR SIN AOM|RS|1|R,costounitariotarifa_valor_tarifa,133,36,12,0.0046463310199,0.0123074697732,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|100% OR|CR|1|R,costounitariotarifa_cu,196,36,12,0.00332384466846,0.0116031821965,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|100% OR|CR|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00332384455701,0.0116031412763,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|100% OR|ID|1|R,costounitariotarifa_cu,196,36,12,0.00332384466846,0.0116031821965,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|100% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00332384455701,0.0116031412763,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|100% OR|PR|1|R,costounitariotarifa_cu,196,36,12,0.00332384466846,0.0116031821965,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|100% OR|PR|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00332384455701,0.0116031412763,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|100% OR|RS|1|R,costounitariotarifa_cu,196,36,12,0.00332384466846,0.0116031821965,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|100% OR|RS|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00332384455701,0.0116031412763,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|50% OR|CR|1|R,costounitariotarifa_cu,196,36,12,0.00362565239222,0.0119426763168,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|50% OR|CR|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.0036256131819,0.0119427779768,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|50% OR|ID|1|R,costounitariotarifa_cu,196,36,12,0.00362565239222,0.0119426763168,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|50% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.0036256131819,0.0119427779768,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|50% OR|PR|1|R,costounitariotarifa_cu,196,36,12,0.00362565239222,0.0119426763168,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|50% OR|PR|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.0036256131819,0.0119427779768,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|50% OR|RS|1|R,costounitariotarifa_cu,196,36,12,0.00362565239222,0.0119426763168,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|1|50% OR|RS|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.0036256131819,0.0119427779768,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|HM|2|0% OR|CR|1|R,costounitariotarifa_cu,196,36,12,0.00259573084695,0.0154355964473,3,0,0,mad_positivo
+CHEC,CHCC|1234|HM|2|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00259568256589,0.0154355969242,3,0,0,mad_positivo
+CHEC,CHCC|1234|HM|2|0% OR|ID|1|R,costounitariotarifa_cu,196,36,12,0.00259573084695,0.0154355964473,3,0,0,mad_positivo
+CHEC,CHCC|1234|HM|2|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00259568256589,0.0154355969242,3,0,0,mad_positivo
+CHEC,CHCC|1234|HM|2|0% OR|OO|1|R,costounitariotarifa_cu,192,36,12,0.00384477875914,0.0143332719569,3,0,0,mad_positivo
+CHEC,CHCC|1234|HM|2|0% OR|OO|1|R,costounitariotarifa_valor_tarifa,192,36,12,0.00384480305851,0.0143331212117,3,0,0,mad_positivo
+CHEC,CHCC|1234|HM|2|0% OR|PR|1|R,costounitariotarifa_cu,146,36,12,0.00894486520433,0.013314434329,3,0,0,mad_positivo
+CHEC,CHCC|1234|HM|2|0% OR|PR|1|R,costounitariotarifa_valor_tarifa,146,36,12,0.00894481501165,0.0133143655334,3,0,0,mad_positivo
+CHEC,CHCC|1234|HM|2|0% OR|RS|1|R,costounitariotarifa_cu,74,36,12,0.00426820794055,0.0256926401246,3,0,0,mad_positivo
+CHEC,CHCC|1234|HM|2|0% OR|RS|1|R,costounitariotarifa_valor_tarifa,74,36,12,0.00426815852904,0.025692603756,3,0,0,mad_positivo
+CHEC,CHCC|1234|HM|3|0% OR|CR|1|R,costounitariotarifa_cu,196,36,12,0.00652269992359,0.0135826690726,3,0,0,mad_positivo
+CHEC,CHCC|1234|HM|3|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00652283096765,0.0135826991309,3,0,0,mad_positivo
+CHEC,CHCC|1234|HM|3|0% OR|ID|1|R,costounitariotarifa_cu,196,36,12,0.00652269992359,0.0135826690726,3,0,0,mad_positivo
+CHEC,CHCC|1234|HM|3|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00652283096765,0.0135826991309,3,0,0,mad_positivo
+CHEC,CHCC|1234|HM|3|0% OR|PR|1|R,costounitariotarifa_cu,150,36,12,0.00550327049697,0.0150721115753,3,0,0,mad_positivo
+CHEC,CHCC|1234|HM|3|0% OR|PR|1|R,costounitariotarifa_valor_tarifa,150,36,12,0.00550324624664,0.0150720245391,3,0,0,mad_positivo
+CHEC,CHCC|1234|HM|4|0% OR|CR|1|R,costounitariotarifa_cu,168,36,12,0.00196030156435,0.0134132216327,3,4,0.333333333333,mad_positivo
+CHEC,CHCC|1234|HM|4|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,168,36,12,0.0019602973981,0.0134131885414,3,4,0.333333333333,mad_positivo
+CHEC,CHCC|1234|HM|4|0% OR|ID|1|R,costounitariotarifa_cu,196,36,12,0.00725785299896,0.0157931173543,3,0,0,mad_positivo
+CHEC,CHCC|1234|HM|4|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00725785348401,0.0157932195449,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|0% OR|CR|1|R,costounitariotarifa_cu,196,36,12,0.000334252305602,0.014807597013,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.000334345867612,0.0148077338886,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|0% OR|ID|1|R,costounitariotarifa_cu,196,36,12,0.000334252305602,0.014807597013,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.000334345867612,0.0148077338886,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|0% OR|PR|1|R,costounitariotarifa_cu,196,36,12,0.000334252305602,0.014807597013,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|0% OR|PR|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.000334345867612,0.0148077338886,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|0% OR|RS|1|R,costounitariotarifa_cu,196,36,12,0.000334252305602,0.014807597013,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|0% OR|RS|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.000334345867612,0.0148077338886,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|0% OR SIN AOM|CR|1|R,costounitariotarifa_cu,133,36,12,0.000238424914601,0.0154362377785,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|0% OR SIN AOM|CR|1|R,costounitariotarifa_valor_tarifa,133,36,12,0.000238374137622,0.0154361946576,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|0% OR SIN AOM|ID|1|R,costounitariotarifa_cu,133,36,12,0.000238424914601,0.0154362377785,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|0% OR SIN AOM|ID|1|R,costounitariotarifa_valor_tarifa,133,36,12,0.000238374137622,0.0154361946576,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|0% OR SIN AOM|PR|1|R,costounitariotarifa_cu,133,36,12,0.000238424914601,0.0154362377785,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|0% OR SIN AOM|PR|1|R,costounitariotarifa_valor_tarifa,133,36,12,0.000238374137622,0.0154361946576,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|0% OR SIN AOM|RS|1|R,costounitariotarifa_cu,133,36,12,0.000238424914601,0.0154362377785,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|0% OR SIN AOM|RS|1|R,costounitariotarifa_valor_tarifa,133,36,12,0.000238374137622,0.0154361946576,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|100% OR|CR|1|R,costounitariotarifa_cu,196,36,12,0.000541116892693,0.0139927006328,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|100% OR|CR|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.000541017266796,0.0139927790948,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|100% OR|ID|1|R,costounitariotarifa_cu,196,36,12,0.000541116892693,0.0139927006328,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|100% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.000541017266796,0.0139927790948,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|100% OR|PR|1|R,costounitariotarifa_cu,196,36,12,0.000541116892693,0.0139927006328,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|100% OR|PR|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.000541017266796,0.0139927790948,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|100% OR|RS|1|R,costounitariotarifa_cu,196,36,12,0.000541116892693,0.0139927006328,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|100% OR|RS|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.000541017266796,0.0139927790948,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|50% OR|CR|1|R,costounitariotarifa_cu,196,36,12,0.000442647151485,0.014379394371,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|50% OR|CR|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.000442669322231,0.0143794181575,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|50% OR|ID|1|R,costounitariotarifa_cu,196,36,12,0.000442647151485,0.014379394371,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|50% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.000442669322231,0.0143794181575,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|50% OR|PR|1|R,costounitariotarifa_cu,196,36,12,0.000442647151485,0.014379394371,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|50% OR|PR|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.000442669322231,0.0143794181575,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|50% OR|RS|1|R,costounitariotarifa_cu,196,36,12,0.000442647151485,0.014379394371,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|1|50% OR|RS|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.000442669322231,0.0143794181575,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|2|0% OR|CR|1|R,costounitariotarifa_cu,196,36,12,5.94863093224e-05,0.0163315704721,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|2|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,196,36,12,5.95376199319e-05,0.0163314490205,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|2|0% OR|ID|1|R,costounitariotarifa_cu,196,36,12,5.94863093224e-05,0.0163315704721,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|2|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,5.95376199319e-05,0.0163314490205,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|2|0% OR|OO|1|R,costounitariotarifa_cu,192,36,12,0.0014719545064,0.0167738900328,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|2|0% OR|OO|1|R,costounitariotarifa_valor_tarifa,192,36,12,0.00147209991798,0.0167739162135,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|2|0% OR|PR|1|R,costounitariotarifa_cu,146,36,12,0.00769785022481,0.0186013219425,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|2|0% OR|PR|1|R,costounitariotarifa_valor_tarifa,146,36,12,0.00769774753753,0.0186012616696,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|2|0% OR|RS|1|R,costounitariotarifa_cu,74,36,12,0.00909617207389,0.0258583201911,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|2|0% OR|RS|1|R,costounitariotarifa_valor_tarifa,74,36,12,0.00909617197922,0.0258583184845,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|3|0% OR|CR|1|R,costounitariotarifa_cu,196,36,12,0.0046008033955,0.0168198249584,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|3|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00460086343558,0.0168198291303,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|3|0% OR|ID|1|R,costounitariotarifa_cu,196,36,12,0.0046008033955,0.0168198249584,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|3|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00460086343558,0.0168198291303,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|3|0% OR|PR|1|R,costounitariotarifa_cu,150,36,12,0.00869706552496,0.0165035386872,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|3|0% OR|PR|1|R,costounitariotarifa_valor_tarifa,150,36,12,0.00869700613596,0.0165035595452,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|4|0% OR|CR|1|R,costounitariotarifa_cu,168,36,12,0.00668798521787,0.0111575149573,3,5,0.416666666667,mad_positivo
+CHEC,CHCC|1234|HP|4|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,168,36,12,0.00668804932955,0.0111573839909,3,5,0.416666666667,mad_positivo
+CHEC,CHCC|1234|HP|4|0% OR|ID|1|R,costounitariotarifa_cu,196,36,12,0.00616388007601,0.0178892722892,3,0,0,mad_positivo
+CHEC,CHCC|1234|HP|4|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00616395672804,0.0178893341188,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|AC|1|R,costounitariotarifa_cu,196,36,12,0.00303124806504,0.0122007103746,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|AC|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00303124806504,0.0122007103746,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|AP|1|R,costounitariotarifa_cu,224,36,12,0.00770730727934,0.00928294762644,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|AP|1|R,costounitariotarifa_valor_tarifa,224,36,12,0.0073651180905,0.00996495032693,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|BE|1|R,costounitariotarifa_cu,167,36,12,0.00667468604328,0.0158616108474,3,2,0.166666666667,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|BE|1|R,costounitariotarifa_valor_tarifa,167,36,12,0.00944988031365,0.0125196998267,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|CE|1|R,costounitariotarifa_cu,176,36,12,9.48907986191e-05,0.0157541788736,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|CE|1|R,costounitariotarifa_valor_tarifa,176,36,12,0.00279547197758,0.017007289064,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|CR|1|R,costounitariotarifa_cu,224,36,12,0.00770730727934,0.00928294762644,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,224,36,12,0.00736522030629,0.00996484665618,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|EA|1|R,costounitariotarifa_cu,196,36,12,0.00303124806504,0.0122007103746,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|EA|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00303124806504,0.0122007103746,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|EE|1|R,costounitariotarifa_cu,196,36,12,0.00303124806504,0.0122007103746,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|EE|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00303124806504,0.0122007103746,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|IA|1|R,costounitariotarifa_cu,196,36,12,0.00303124806504,0.0122007103746,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|IA|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00303126584402,0.0122005589768,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|ID|1|R,costounitariotarifa_cu,224,36,12,0.00770730727934,0.00928294762644,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,224,36,12,0.00736522030629,0.00996484665618,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|IX|1|R,costounitariotarifa_cu,176,36,12,9.48907986191e-05,0.0157541788736,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|IX|1|R,costounitariotarifa_valor_tarifa,176,36,12,0.00279547197758,0.017007289064,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|OB|1|R,costounitariotarifa_cu,191,36,12,0.00376809392329,0.0149276963058,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|OB|1|R,costounitariotarifa_valor_tarifa,191,36,12,0.00376809392329,0.0149276963058,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|OF|1|R,costounitariotarifa_cu,224,36,12,0.00770730727934,0.00928294762644,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|OF|1|R,costounitariotarifa_valor_tarifa,224,36,12,0.0073651180905,0.00996495032693,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|PR|1|R,costounitariotarifa_cu,224,36,12,0.00770730727934,0.00928294762644,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|PR|1|R,costounitariotarifa_valor_tarifa,224,36,12,0.00736522030629,0.00996484665618,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|RS|1|R,costounitariotarifa_cu,225,36,12,0.00770730727934,0.00928294762644,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|RS|1|R,costounitariotarifa_valor_tarifa,225,36,12,0.00691481120128,0.00977763800172,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|RS|2|R,costounitariotarifa_cu,224,36,12,0.00770730727934,0.00928294762644,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR|RS|2|R,costounitariotarifa_valor_tarifa,224,36,12,0.0073651180905,0.00996495032693,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|AC|1|R,costounitariotarifa_cu,133,36,12,0.00338756459361,0.0124640564801,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|AC|1|R,costounitariotarifa_valor_tarifa,133,36,12,0.00338756459361,0.0124640564801,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|AI|1|R,costounitariotarifa_cu,128,36,12,0.00393332443972,0.0156191348861,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|AI|1|R,costounitariotarifa_valor_tarifa,128,36,12,0.00393332443972,0.0156191348861,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|AP|1|R,costounitariotarifa_cu,161,36,12,0.00725938143971,0.00859035577477,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|AP|1|R,costounitariotarifa_valor_tarifa,161,36,12,0.00739097833024,0.0100221941882,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|CR|1|R,costounitariotarifa_cu,161,36,12,0.00725938143971,0.00859035577477,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|CR|1|R,costounitariotarifa_valor_tarifa,161,36,12,0.00739087365028,0.0100222531643,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|EA|1|R,costounitariotarifa_cu,133,36,12,0.00338756459361,0.0124640564801,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|EA|1|R,costounitariotarifa_valor_tarifa,133,36,12,0.00338756459361,0.0124640564801,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|EE|1|R,costounitariotarifa_cu,133,36,12,0.00338756459361,0.0124640564801,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|EE|1|R,costounitariotarifa_valor_tarifa,133,36,12,0.00338756459361,0.0124640564801,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|IA|1|R,costounitariotarifa_cu,133,36,12,0.00338756459361,0.0124640564801,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|IA|1|R,costounitariotarifa_valor_tarifa,133,36,12,0.0033875359052,0.0124639334837,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|ID|1|R,costounitariotarifa_cu,161,36,12,0.00725938143971,0.00859035577477,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|ID|1|R,costounitariotarifa_valor_tarifa,161,36,12,0.00739087365028,0.0100222531643,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|OF|1|R,costounitariotarifa_cu,161,36,12,0.00725938143971,0.00859035577477,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|OF|1|R,costounitariotarifa_valor_tarifa,161,36,12,0.00739097833024,0.0100221941882,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|PR|1|R,costounitariotarifa_cu,161,36,12,0.00725938143971,0.00859035577477,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|PR|1|R,costounitariotarifa_valor_tarifa,161,36,12,0.00739087365028,0.0100222531643,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|RS|1|R,costounitariotarifa_cu,161,36,12,0.00725938143971,0.00859035577477,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|RS|1|R,costounitariotarifa_valor_tarifa,161,36,12,0.00596899784566,0.0106986446418,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|RS|2|R,costounitariotarifa_cu,161,36,12,0.00725938143971,0.00859035577477,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|0% OR SIN AOM|RS|2|R,costounitariotarifa_valor_tarifa,161,36,12,0.00739097833024,0.0100221941882,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|AC|1|R,costounitariotarifa_cu,196,36,12,0.00220781067839,0.0123183852755,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|AC|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00220781067839,0.0123183852755,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|AP|1|R,costounitariotarifa_cu,224,36,12,0.00753586122442,0.00874591486507,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|AP|1|R,costounitariotarifa_valor_tarifa,224,36,12,0.00753586122442,0.00855981633869,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|BE|1|R,costounitariotarifa_cu,167,36,12,0.0074990954186,0.0134358565882,3,2,0.166666666667,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|BE|1|R,costounitariotarifa_valor_tarifa,167,36,12,0.0103057581564,0.0115891301872,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|CE|1|R,costounitariotarifa_cu,176,36,12,7.04824013651e-05,0.0145055250777,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|CE|1|R,costounitariotarifa_valor_tarifa,176,36,12,0.0026176988516,0.0161284824349,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|CR|1|R,costounitariotarifa_cu,224,36,12,0.00753586122442,0.00874591486507,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|CR|1|R,costounitariotarifa_valor_tarifa,224,36,12,0.00753601104683,0.00855974414939,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|EA|1|R,costounitariotarifa_cu,196,36,12,0.00220781067839,0.0123183852755,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|EA|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00220781067839,0.0123183852755,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|EE|1|R,costounitariotarifa_cu,196,36,12,0.00220781067839,0.0123183852755,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|EE|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00220781067839,0.0123183852755,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|IA|1|R,costounitariotarifa_cu,196,36,12,0.00220781067839,0.0123183852755,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|IA|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00220785409531,0.0123183137067,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|ID|1|R,costounitariotarifa_cu,224,36,12,0.00753586122442,0.00874591486507,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|ID|1|R,costounitariotarifa_valor_tarifa,224,36,12,0.00753601104683,0.00855974414939,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|IX|1|R,costounitariotarifa_cu,176,36,12,7.04824013651e-05,0.0145055250777,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|IX|1|R,costounitariotarifa_valor_tarifa,176,36,12,0.0026176988516,0.0161284824349,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|OA|1|R,costounitariotarifa_cu,196,36,12,0.00220781067839,0.0123183852755,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|OA|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00220781067839,0.0123183852755,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|OF|1|R,costounitariotarifa_cu,224,36,12,0.00753586122442,0.00874591486507,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|OF|1|R,costounitariotarifa_valor_tarifa,224,36,12,0.00753586122442,0.00855981633869,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|PR|1|R,costounitariotarifa_cu,224,36,12,0.00753586122442,0.00874591486507,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|PR|1|R,costounitariotarifa_valor_tarifa,224,36,12,0.00753601104683,0.00855974414939,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|RS|1|R,costounitariotarifa_cu,225,36,12,0.00753586122442,0.00874591486507,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|RS|1|R,costounitariotarifa_valor_tarifa,225,36,12,0.00671262328887,0.00803652485887,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|RS|2|R,costounitariotarifa_cu,224,36,12,0.00753586122442,0.00874591486507,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|100% OR|RS|2|R,costounitariotarifa_valor_tarifa,224,36,12,0.00753586122442,0.00855981633869,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|AC|1|R,costounitariotarifa_cu,196,36,12,0.00259751620574,0.0122205746452,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|AC|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00259751620574,0.0122205746452,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|AP|1|R,costounitariotarifa_cu,224,36,12,0.00760180255899,0.0090000034676,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|AP|1|R,costounitariotarifa_valor_tarifa,224,36,12,0.00729418369269,0.00923805913593,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|CE|1|R,costounitariotarifa_cu,175,36,12,0.00188494095999,0.0143709026524,3,2,0.166666666667,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|CE|1|R,costounitariotarifa_valor_tarifa,175,36,12,0.00427902518393,0.0155235192584,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|CR|1|R,costounitariotarifa_cu,224,36,12,0.00760180255899,0.0090000034676,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|CR|1|R,costounitariotarifa_valor_tarifa,224,36,12,0.00729427575911,0.00923804070049,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|EA|1|R,costounitariotarifa_cu,196,36,12,0.00259751620574,0.0122205746452,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|EA|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00259751620574,0.0122205746452,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|EE|1|R,costounitariotarifa_cu,196,36,12,0.00259751620574,0.0122205746452,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|EE|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00259751620574,0.0122205746452,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|IA|1|R,costounitariotarifa_cu,196,36,12,0.00259751620574,0.0122205746452,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|IA|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00259759765279,0.0122205904462,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|ID|1|R,costounitariotarifa_cu,224,36,12,0.00760180255899,0.0090000034676,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|ID|1|R,costounitariotarifa_valor_tarifa,224,36,12,0.00729427575911,0.00923804070049,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|IX|1|R,costounitariotarifa_cu,176,36,12,8.19685928475e-05,0.0150961508448,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|IX|1|R,costounitariotarifa_valor_tarifa,176,36,12,0.00287387511564,0.0167881778672,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|OB|1|R,costounitariotarifa_cu,196,36,12,0.00259751620574,0.0122205746452,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|OB|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00259751620574,0.0122205746452,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|OF|1|R,costounitariotarifa_cu,224,36,12,0.00760180255899,0.0090000034676,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|OF|1|R,costounitariotarifa_valor_tarifa,224,36,12,0.00729418369269,0.00923805913593,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|PR|1|R,costounitariotarifa_cu,224,36,12,0.00760180255899,0.0090000034676,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|PR|1|R,costounitariotarifa_valor_tarifa,224,36,12,0.00729427575911,0.00923804070049,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|RS|1|R,costounitariotarifa_cu,225,36,12,0.00760180255899,0.0090000034676,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|RS|1|R,costounitariotarifa_valor_tarifa,225,36,12,0.00658765904323,0.00962798795565,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|RS|2|R,costounitariotarifa_cu,224,36,12,0.00760180255899,0.0090000034676,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|1|50% OR|RS|2|R,costounitariotarifa_valor_tarifa,224,36,12,0.00729418369269,0.00923805913593,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|AC|1|R,costounitariotarifa_cu,196,36,12,0.00467688013672,0.0124304867339,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|AC|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00467688013672,0.0124304867339,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|BE|1|R,costounitariotarifa_cu,167,36,12,0.00522240404628,0.0128918626789,3,2,0.166666666667,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|BE|1|R,costounitariotarifa_valor_tarifa,167,36,12,0.00867828516178,0.01059512403,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|CE|1|R,costounitariotarifa_cu,173,36,12,0.00101034941511,0.0139807567484,3,3,0.25,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|CE|1|R,costounitariotarifa_valor_tarifa,173,36,12,0.00439670235309,0.0146039431305,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|CR|1|R,costounitariotarifa_cu,201,36,12,0.0077541883066,0.0112235801604,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,201,36,12,0.00775409043398,0.0112235808754,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|EA|1|R,costounitariotarifa_cu,196,36,12,0.00467688013672,0.0124304867339,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|EA|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00467688013672,0.0124304867339,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|EE|1|R,costounitariotarifa_cu,196,36,12,0.00467688013672,0.0124304867339,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|EE|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00467688013672,0.0124304867339,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|FX|1|R,costounitariotarifa_cu,193,36,12,0.00687772108101,0.012856842469,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|FX|1|R,costounitariotarifa_valor_tarifa,193,36,12,0.00467683126355,0.0122766099741,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|IA|1|R,costounitariotarifa_cu,196,36,12,0.00467688013672,0.0124304867339,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|IA|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00467685347863,0.0124305000111,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|ID|1|R,costounitariotarifa_cu,201,36,12,0.0077541883066,0.0112235801604,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,201,36,12,0.00775409043398,0.0112235808754,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|IX|1|R,costounitariotarifa_cu,176,36,12,0.00101034941511,0.0135219562889,3,2,0.166666666667,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|IX|1|R,costounitariotarifa_valor_tarifa,176,36,12,0.00439670235309,0.013733715593,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|IY|1|R,costounitariotarifa_cu,195,36,12,0.0025144354633,0.0123924053131,3,1,0.0833333333333,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|IY|1|R,costounitariotarifa_valor_tarifa,195,36,12,0.00112574246147,0.0136419494249,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|OF|1|R,costounitariotarifa_cu,201,36,12,0.0077541883066,0.0112235801604,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|OF|1|R,costounitariotarifa_valor_tarifa,201,36,12,0.0077541883066,0.0112235801604,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|OO|1|R,costounitariotarifa_cu,192,36,12,0.00687772108101,0.012856842469,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|OO|1|R,costounitariotarifa_valor_tarifa,192,36,12,0.00687767097189,0.0128568176151,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|PR|1|R,costounitariotarifa_cu,146,36,12,0.00937429232616,0.0123003085002,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|PR|1|R,costounitariotarifa_valor_tarifa,146,36,12,0.0138332158069,0.00544161978925,3,2,0.166666666667,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|RS|1|R,costounitariotarifa_cu,74,36,12,0.0054150105294,0.0276998936972,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|RS|1|R,costounitariotarifa_valor_tarifa,74,36,12,0.00598210552162,0.000994545627252,3,10,0.833333333333,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|RS|2|R,costounitariotarifa_cu,201,36,12,0.0077541883066,0.0112235801604,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|2|0% OR|RS|2|R,costounitariotarifa_valor_tarifa,201,36,12,0.0077541883066,0.0112235801604,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|3|0% OR|CR|1|R,costounitariotarifa_cu,201,36,12,0.00752077819927,0.0158515500924,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|3|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,201,36,12,0.00752055993487,0.0158517290279,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|3|0% OR|EA|1|R,costounitariotarifa_cu,196,36,12,0.00651109121008,0.0158515500924,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|3|0% OR|EA|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00651109121008,0.0158515500924,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|3|0% OR|EE|1|R,costounitariotarifa_cu,196,36,12,0.00651109121008,0.0158515500924,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|3|0% OR|EE|1|R,costounitariotarifa_valor_tarifa,196,36,12,0.00651109121008,0.0158515500924,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|3|0% OR|HO|1|R,costounitariotarifa_cu,193,36,12,0.00515637505275,0.0134464469622,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|3|0% OR|HO|1|R,costounitariotarifa_valor_tarifa,193,36,12,0.00515637505275,0.0134464469622,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|3|0% OR|ID|1|R,costounitariotarifa_cu,201,36,12,0.00752077819927,0.0158515500924,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|3|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,201,36,12,0.00752055993487,0.0158517290279,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|3|0% OR|IX|1|R,costounitariotarifa_cu,176,36,12,0.00369445017143,0.0152080470091,3,2,0.166666666667,mad_positivo
+CHEC,CHCC|1234|S|3|0% OR|IX|1|R,costounitariotarifa_valor_tarifa,176,36,12,0.00369445017143,0.0152080470091,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|3|0% OR|OF|1|R,costounitariotarifa_cu,201,36,12,0.00752077819927,0.0158515500924,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|3|0% OR|OF|1|R,costounitariotarifa_valor_tarifa,201,36,12,0.00752077819927,0.0158515500924,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|3|0% OR|OH|1|R,costounitariotarifa_cu,193,36,12,0.00515637505275,0.0134464469622,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|3|0% OR|OH|1|R,costounitariotarifa_valor_tarifa,193,36,12,0.0042389797171,0.0147987284964,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|3|0% OR|PR|1|R,costounitariotarifa_cu,150,36,12,0.00701001324181,0.015680553034,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|3|0% OR|PR|1|R,costounitariotarifa_valor_tarifa,150,36,12,0.0148884485128,0.00350954616166,3,7,0.583333333333,mad_positivo
+CHEC,CHCC|1234|S|3|0% OR|RS|2|R,costounitariotarifa_cu,201,36,12,0.00752077819927,0.0158515500924,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|3|0% OR|RS|2|R,costounitariotarifa_valor_tarifa,201,36,12,0.00752077819927,0.0158515500924,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|4|0% OR|CE|1|R,costounitariotarifa_cu,141,36,12,0.00720099258321,0.0177929995666,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|4|0% OR|CE|1|R,costounitariotarifa_valor_tarifa,141,36,12,0.0148498533764,0.00414119487966,3,7,0.583333333333,mad_positivo
+CHEC,CHCC|1234|S|4|0% OR|CR|1|R,costounitariotarifa_cu,168,36,12,0.00339185227579,0.0121453581326,3,5,0.416666666667,mad_positivo
+CHEC,CHCC|1234|S|4|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,168,36,12,0.00339171832746,0.0121454921092,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|4|0% OR|ID|1|R,costounitariotarifa_cu,201,36,12,0.00933167772115,0.0170884365087,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|4|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,201,36,12,0.00933156862334,0.0170886271699,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|4|0% OR|RS|2|R,costounitariotarifa_cu,141,36,12,0.00720099258321,0.0177929995666,3,0,0,mad_positivo
+CHEC,CHCC|1234|S|4|0% OR|RS|2|R,costounitariotarifa_valor_tarifa,141,36,12,0.0148498533764,0.00414119487966,3,7,0.583333333333,mad_positivo
+SSPD,1720|1|U|T|E|N,consumo_basico_sum,57,36,12,-0.00633953986443,0.132339455427,3,1,0.0833333333333,mad_positivo
+SSPD,1720|1|U|T|E|N,consumo_compl_sum,57,36,12,0.0925072857416,0.306496109337,3,0,0,mad_positivo
+SSPD,1720|1|U|T|E|N,valor_total_sum,57,36,12,0.00484651135117,0.135828159855,3,1,0.0833333333333,mad_positivo
+SSPD,1720|1|U|T|R|N,consumo_basico_sum,57,36,12,0.000832811510082,0.00840967427381,3,2,0.166666666667,mad_positivo
+SSPD,1720|1|U|T|R|N,consumo_compl_sum,57,36,12,-0.00451122856015,0.0580468017689,3,1,0.0833333333333,mad_positivo
+SSPD,1720|1|U|T|R|N,consumo_mayor800_sum,57,36,12,0.0167952126385,0.16265478903,3,1,0.0833333333333,mad_positivo
+SSPD,1720|1|U|T|R|N,valor_total_sum,56,36,12,-0.00200611251346,0.0357569665934,3,5,0.416666666667,mad_positivo
+SSPD,1720|2|U|T|E|N,consumo_basico_sum,57,36,12,-0.0369076026595,0.197921750896,3,0,0,mad_positivo
+SSPD,1720|2|U|T|E|N,consumo_compl_sum,57,36,12,-0.102850267765,0.244769648729,3,0,0,mad_positivo
+SSPD,1720|2|U|T|E|N,consumo_mayor800_sum,53,36,12,-0.0181563064703,0.778445616812,3,1,0.0833333333333,mad_positivo
+SSPD,1720|2|U|T|E|N,valor_total_sum,56,36,12,-0.0118526174394,0.233514688128,3,4,0.333333333333,mad_positivo
+SSPD,1720|2|U|T|R|N,consumo_basico_sum,57,36,12,0.00245745339074,0.0138910734132,3,1,0.0833333333333,mad_positivo
+SSPD,1720|2|U|T|R|N,consumo_compl_sum,57,36,12,-0.00315620357873,0.0535379007843,3,1,0.0833333333333,mad_positivo
+SSPD,1720|2|U|T|R|N,consumo_mayor800_sum,57,36,12,0.00532641562862,0.176706706688,3,1,0.0833333333333,mad_positivo
+SSPD,1720|2|U|T|R|N,valor_total_sum,55,36,12,-0.01005256481,0.0457992020293,3,2,0.166666666667,mad_positivo
+SSPD,1720|3|U|T|E|N,consumo_basico_sum,57,36,12,0.0215828375451,0.214501480178,3,1,0.0833333333333,mad_positivo
+SSPD,1720|3|U|T|E|N,consumo_compl_sum,57,36,12,-0.0226396279498,0.367894337396,3,0,0,mad_positivo
+SSPD,1720|3|U|T|E|N,consumo_mayor800_sum,53,36,12,-0.0644757420585,0.521893960012,3,0,0,mad_positivo
+SSPD,1720|3|U|T|E|N,valor_total_sum,55,36,12,-0.00222269735268,0.166385584796,3,3,0.25,mad_positivo
+SSPD,1720|3|U|T|R|N,consumo_basico_sum,57,36,12,0.00136354922283,0.00946022889012,3,1,0.0833333333333,mad_positivo
+SSPD,1720|3|U|T|R|N,consumo_compl_sum,57,36,12,0.00242298831226,0.0509296812659,3,1,0.0833333333333,mad_positivo
+SSPD,1720|3|U|T|R|N,consumo_mayor800_sum,57,36,12,0.00667106947809,0.119849230563,3,1,0.0833333333333,mad_positivo
+SSPD,1720|3|U|T|R|N,valor_total_sum,54,36,12,0.00787671637133,0.0496241702925,3,3,0.25,mad_positivo
+SSPD,1720|4|U|T|E|N,consumo_basico_sum,57,36,12,-0.0978325551108,0.417097364057,3,0,0,mad_positivo
+SSPD,1720|4|U|T|E|N,valor_total_sum,53,36,12,0.0119205191048,0.450030663964,3,1,0.0833333333333,mad_positivo
+SSPD,1720|4|U|T|R|N,consumo_basico_sum,57,36,12,-0.00110247273364,0.0362942391317,3,0,0,mad_positivo
+SSPD,1720|4|U|T|R|N,consumo_compl_sum,57,36,12,-0.0157950856465,0.149722031229,3,0,0,mad_positivo
+SSPD,1720|4|U|T|R|N,valor_total_sum,54,36,12,0.0113494004912,0.0721429422784,3,3,0.25,mad_positivo
+SSPD,1720|5|U|T|E|N,consumo_basico_sum,57,36,12,-0.0763615052209,0.402823881193,3,0,0,mad_positivo
+SSPD,1720|5|U|T|R|N,consumo_basico_sum,57,36,12,-0.0124949547303,0.0617754321295,3,0,0,mad_positivo
+SSPD,1720|5|U|T|R|N,consumo_compl_sum,57,36,12,-0.0190892295434,0.179580624047,3,0,0,mad_positivo
+SSPD,1720|5|U|T|R|N,valor_total_sum,54,36,12,-0.0104596086888,0.107932422791,3,2,0.166666666667,mad_positivo
+SSPD,1720|6|U|T|R|N,consumo_basico_sum,57,36,12,-0.003712089355,0.0575726839232,3,0,0,mad_positivo
+SSPD,1720|6|U|T|R|N,consumo_compl_sum,57,36,12,-0.00527649793825,0.145664634118,3,0,0,mad_positivo
+SSPD,1720|6|U|T|R|N,valor_total_sum,54,36,12,-0.00996416083322,0.10061969614,3,2,0.166666666667,mad_positivo
+SSPD,1720|C|U|P|R|N,consumo_basico_sum,57,36,12,-0.0121720040674,0.0546395035662,3,2,0.166666666667,mad_positivo
+SSPD,1720|C|U|P|R|N,valor_total_sum,56,36,12,-0.00309862028034,0.0531307336609,3,5,0.416666666667,mad_positivo
+SSPD,1720|C|U|T|E|N,consumo_basico_sum,57,36,12,0.00362916813925,0.169393024957,3,0,0,mad_positivo
+SSPD,1720|C|U|T|E|N,valor_total_sum,56,36,12,0.0066588022516,0.131549462436,3,5,0.416666666667,mad_positivo
+SSPD,1720|C|U|T|N|N,consumo_basico_sum,57,36,12,0.00259707786846,0.0122819024694,3,5,0.416666666667,mad_positivo
+SSPD,1720|C|U|T|N|N,valor_total_sum,57,36,12,0.00228337406263,0.0163877529269,3,7,0.583333333333,mad_positivo
+SSPD,1720|C|U|T|R|N,consumo_basico_sum,57,36,12,0.000771012800264,0.0307470456169,3,2,0.166666666667,mad_positivo
+SSPD,1720|C|U|T|R|N,valor_total_sum,55,36,12,0.000846618780464,0.0295204048493,3,4,0.333333333333,mad_positivo
+SSPD,1720|O|U|P|R|N,consumo_basico_sum,57,36,12,0.00260232574735,0.0288705215118,3,0,0,mad_positivo
+SSPD,1720|O|U|P|R|N,valor_total_sum,57,36,12,0.0197725664017,0.0277963224996,3,0,0,mad_positivo
+SSPD,1720|O|U|T|E|N,consumo_basico_sum,57,36,12,-0.00554894717346,0.807562293708,3,0,0,mad_positivo
+SSPD,1720|O|U|T|E|N,valor_total_sum,57,36,12,-0.0144264416089,0.348763394,3,3,0.25,mad_positivo
+SSPD,1720|O|U|T|N|N,consumo_basico_sum,57,36,12,-0.00756324751212,0.0359395901567,3,2,0.166666666667,mad_positivo
+SSPD,1720|O|U|T|N|N,valor_total_sum,57,36,12,-0.00566410056684,0.0379971238074,3,3,0.25,mad_positivo
+SSPD,1720|O|U|T|R|N,consumo_basico_sum,57,36,12,-0.00234215698207,0.0340359365683,3,1,0.0833333333333,mad_positivo
+SSPD,1720|O|U|T|R|N,valor_total_sum,57,36,12,-0.000424450352927,0.0401447251807,3,1,0.0833333333333,mad_positivo
+SSPD,1720|P|U|T|E|N,consumo_basico_sum,57,36,12,-0.0920415051519,0.69128953396,3,0,0,mad_positivo
+SSPD,1720|P|U|T|E|N,valor_total_sum,54,36,12,0.00629414498422,0.796301945363,3,0,0,mad_positivo
+SSPD,1720|P|U|T|N|N,valor_total_sum,53,36,12,0.0891377341443,0.0891377341443,3,1,0.0833333333333,mad_positivo
+SSPD,1720|P|U|T|R|N,consumo_basico_sum,57,36,12,0.00664942306964,0.045960008163,3,1,0.0833333333333,mad_positivo
+SSPD,1720|P|U|T|R|N,valor_total_sum,55,36,12,0.0107006181873,0.0515846554131,3,5,0.416666666667,mad_positivo
+SSPD,1759|1|R|P|N|N,consumo_basico_sum,57,36,12,0.00281200526936,0.0163634028034,3,1,0.0833333333333,mad_positivo
+SSPD,1759|1|R|P|N|N,valor_total_sum,57,36,12,0.00777289143972,0.014415820994,3,1,0.0833333333333,mad_positivo
+SSPD,1759|1|R|P|R|N,consumo_basico_sum,57,36,12,-0.0183807616307,0.060532842047,3,0,0,mad_positivo
+SSPD,1759|1|R|P|R|N,consumo_compl_sum,57,36,12,-0.0383455933627,0.209064444684,3,0,0,mad_positivo
+SSPD,1759|1|R|P|R|N,valor_total_sum,57,36,12,0.0327328850924,0.0363134545111,3,0,0,mad_positivo
+SSPD,1759|1|U|P|R|N,consumo_basico_sum,57,36,12,-0.0010279925159,0.0421224180968,3,0,0,mad_positivo
+SSPD,1759|1|U|P|R|N,consumo_compl_sum,57,36,12,-0.0248888333889,0.21370070179,3,0,0,mad_positivo
+SSPD,1759|1|U|P|R|N,consumo_mayor800_sum,56,36,12,-0.0456845404378,0.451081864917,3,1,0.0833333333333,mad_positivo
+SSPD,1759|1|U|P|R|N,valor_total_sum,57,36,12,0.0158249873404,0.0261218782521,3,0,0,mad_positivo
+SSPD,1759|2|R|P|R|N,consumo_basico_sum,57,36,12,0.0140897220742,0.0997441757939,3,0,0,mad_positivo
+SSPD,1759|2|R|P|R|N,valor_total_sum,57,36,12,0.218144432971,0.499805823941,3,0,0,mad_positivo
+SSPD,1759|2|U|P|R|N,consumo_basico_sum,57,36,12,0.00417825147005,0.0376048923571,3,0,0,mad_positivo
+SSPD,1759|2|U|P|R|N,consumo_compl_sum,57,36,12,0.0125468870872,0.179373834179,3,0,0,mad_positivo
+SSPD,1759|2|U|P|R|N,consumo_mayor800_sum,52,36,12,0.236044781115,0.565187627462,3,0,0,mad_positivo
+SSPD,1759|2|U|P|R|N,valor_total_sum,57,36,12,0.0274756960566,0.0237432873958,3,2,0.166666666667,mad_positivo
+SSPD,1759|3|R|P|R|N,consumo_basico_sum,57,36,12,0.0213645823628,0.125759006166,3,0,0,mad_positivo
+SSPD,1759|3|R|P|R|N,valor_total_sum,57,36,12,0.0370613799324,0.353661543574,3,0,0,mad_positivo
+SSPD,1759|3|U|P|R|N,consumo_basico_sum,57,36,12,-0.00958644543259,0.040490529862,3,0,0,mad_positivo
+SSPD,1759|3|U|P|R|N,consumo_compl_sum,57,36,12,-0.0345936744913,0.161226299316,3,0,0,mad_positivo
+SSPD,1759|3|U|P|R|N,valor_total_sum,57,36,12,0.0159713536791,0.0212495444087,3,0,0,mad_positivo
+SSPD,1759|C|R|P|R|N,consumo_basico_sum,57,36,12,-0.0268077788619,0.0726559589499,3,2,0.166666666667,mad_positivo
+SSPD,1759|C|R|P|R|N,consumo_compl_sum,57,36,12,0,0.131193030617,3,3,0.25,mad_positivo
+SSPD,1759|C|R|P|R|N,consumo_mayor800_sum,50,36,12,0.00103228082355,0.248085057625,3,2,0.166666666667,mad_positivo
+SSPD,1759|C|R|P|R|N,valor_total_sum,57,36,12,0.0495252698678,0.0842637336565,3,1,0.0833333333333,mad_positivo
+SSPD,1759|C|U|P|R|N,consumo_basico_sum,57,36,12,-0.000299344173091,0.0211809099187,3,0,0,mad_positivo
+SSPD,1759|C|U|P|R|N,consumo_compl_sum,57,36,12,0.00776916173739,0.0524213223266,3,0,0,mad_positivo
+SSPD,1759|C|U|P|R|N,consumo_mayor800_sum,57,36,12,0.0343769300486,0.0708242111255,3,0,0,mad_positivo
+SSPD,1759|C|U|P|R|N,valor_total_sum,57,36,12,0.024008604627,0.0310912577343,3,0,0,mad_positivo
+SSPD,1759|O|R|P|R|N,consumo_basico_sum,57,36,12,0.00339307873623,0.0282658420467,3,0,0,mad_positivo
+SSPD,1759|O|R|P|R|N,consumo_compl_sum,57,36,12,0.0161523412318,0.0719105924487,3,0,0,mad_positivo
+SSPD,1759|O|R|P|R|N,consumo_mayor800_sum,57,36,12,0.00159512425679,0.0463766046509,3,2,0.166666666667,mad_positivo
+SSPD,1759|O|R|P|R|N,valor_total_sum,57,36,12,0.0196452202894,0.0385028784394,3,2,0.166666666667,mad_positivo
+SSPD,1759|O|U|P|R|N,consumo_basico_sum,57,36,12,0.00124416860465,0.017970589372,3,0,0,mad_positivo
+SSPD,1759|O|U|P|R|N,consumo_compl_sum,57,36,12,-0.0179794401677,0.048924798791,3,0,0,mad_positivo
+SSPD,1759|O|U|P|R|N,consumo_mayor800_sum,57,36,12,-0.0340742967236,0.195191484643,3,4,0.333333333333,mad_positivo
+SSPD,1759|O|U|P|R|N,valor_total_sum,57,36,12,0.022513323186,0.0224524195123,3,0,0,mad_positivo
+SSPD,1811|1|R|P|N|N,consumo_basico_sum,57,36,12,0,0,3,1,0.0833333333333,mad_cero
+SSPD,1811|1|R|P|N|N,valor_total_sum,57,36,12,0.00203363908563,0.00273270276477,3,1,0.0833333333333,mad_positivo
+SSPD,1811|1|U|P|N|N,consumo_basico_sum,57,36,12,0,0.0540998302451,3,0,0,mad_positivo
+SSPD,1811|1|U|P|N|N,valor_total_sum,57,36,12,0.00434995098676,0.0588185845437,3,0,0,mad_positivo
+SSPD,1811|1|U|P|R|N,consumo_basico_sum,57,36,12,0,0.0257901832302,3,1,0.0833333333333,mad_positivo
+SSPD,1811|1|U|P|R|N,valor_total_sum,57,36,12,0.00209056731377,0.0508499839096,3,0,0,mad_positivo
+SSPD,1811|C|U|P|R|N,consumo_basico_sum,57,36,12,0,0,3,12,1,mad_cero
+SSPD,1811|C|U|P|R|N,valor_total_sum,57,36,12,0.0016837013658,0.012547818279,3,4,0.333333333333,mad_positivo
+SSPD,1811|O|U|P|N|N,consumo_basico_sum,55,36,12,0,0.0115028261812,3,4,0.333333333333,mad_positivo
+SSPD,1811|O|U|P|N|N,valor_total_sum,55,36,12,0.000816092300491,0.0228124028462,3,1,0.0833333333333,mad_positivo
+SSPD,1811|O|U|P|R|N,consumo_basico_sum,57,36,12,0,0,3,12,1,mad_cero
+SSPD,1811|O|U|P|R|N,valor_total_sum,57,36,12,-0.0264477550851,0.0479925334831,3,0,0,mad_positivo
+SSPD,1890|1|R|P|N|N,consumo_basico_sum,54,36,12,0,0,3,0,0,mad_cero
+SSPD,1890|1|R|P|N|N,valor_total_sum,54,36,12,0.00134616625086,0.00452938103427,3,6,0.5,mad_positivo
+SSPD,1891|1|U|P|R|N,consumo_basico_sum,57,36,12,-0.00516391284432,0.0430083548868,3,0,0,mad_positivo
+SSPD,1891|1|U|P|R|N,consumo_compl_sum,57,36,12,-0.0175217772985,0.0916062955029,3,1,0.0833333333333,mad_positivo
+SSPD,1891|1|U|P|R|N,valor_total_sum,57,36,12,0.0108900528303,0.0389894685544,3,0,0,mad_positivo
+SSPD,1891|C|U|P|R|N,consumo_basico_sum,57,36,12,0.000522067542468,0.0627192459779,3,1,0.0833333333333,mad_positivo
+SSPD,1891|C|U|P|R|N,valor_total_sum,57,36,12,0.0038818039904,0.0389535999173,3,0,0,mad_positivo
+SSPD,1891|O|U|P|R|N,consumo_basico_sum,57,36,12,-0.00808624297923,0.0558573033024,3,2,0.166666666667,mad_positivo
+SSPD,1891|O|U|P|R|N,valor_total_sum,57,36,12,0.00257922421778,0.0247794615408,3,2,0.166666666667,mad_positivo
+SSPD,1892|1|R|P|N|N,consumo_basico_sum,57,36,12,0,0.0404732051984,3,0,0,mad_positivo
+SSPD,1892|1|R|P|N|N,valor_total_sum,57,36,12,0.000521962626701,0.0467435457762,3,0,0,mad_positivo
+SSPD,1900|1|U|P|R|N,consumo_basico_sum,53,36,12,0,0.0329706516344,3,0,0,mad_positivo
+SSPD,1900|1|U|P|R|N,valor_total_sum,53,36,12,0.00122240161693,0.0446839179585,3,0,0,mad_positivo
+SSPD,20081|1|R|P|N|N,consumo_basico_sum,54,36,12,0,0,3,0,0,mad_cero
+SSPD,20081|1|R|P|N|N,valor_total_sum,54,36,12,0.00164036551428,0.00183455262061,3,2,0.166666666667,mad_positivo
+SSPD,20214|1|R|P|E|N,consumo_basico_sum,54,36,12,0,0.0327304836905,3,2,0.166666666667,mad_positivo
+SSPD,20214|1|R|P|E|N,valor_total_sum,54,36,12,-0.0027709471792,0.037135316899,3,2,0.166666666667,mad_positivo
+SSPD,20214|1|U|P|R|N,consumo_basico_sum,54,36,12,-0.00114030761821,0.003486025537,3,2,0.166666666667,mad_positivo
+SSPD,20214|1|U|P|R|N,valor_total_sum,54,36,12,0.000449438232509,0.00136874558918,3,2,0.166666666667,mad_positivo
+SSPD,20214|2|U|P|R|N,consumo_basico_sum,54,36,12,-0.000526515662544,0.00379556992173,3,4,0.333333333333,mad_positivo
+SSPD,20214|2|U|P|R|N,valor_total_sum,54,36,12,0.00126103471636,0.00144923787842,3,6,0.5,mad_positivo
+SSPD,20214|3|U|P|R|N,consumo_basico_sum,54,36,12,0,0.0300291562061,3,1,0.0833333333333,mad_positivo
+SSPD,20214|3|U|P|R|N,valor_total_sum,54,36,12,0,0,3,4,0.333333333333,mad_cero
+SSPD,20214|C|U|P|R|N,consumo_basico_sum,54,36,12,-0.000549422806968,0.0079689804749,3,1,0.0833333333333,mad_positivo
+SSPD,20214|C|U|P|R|N,valor_total_sum,54,36,12,0,0.00461362447125,3,5,0.416666666667,mad_positivo
+SSPD,20214|O|U|P|R|N,consumo_basico_sum,54,36,12,-0.0016098851671,0.00497597838858,3,4,0.333333333333,mad_positivo
+SSPD,20214|O|U|P|R|N,valor_total_sum,54,36,12,0,0,3,3,0.25,mad_cero
+SSPD,20217|1|U|T|R|N,consumo_basico_sum,57,36,12,-0.00568009650719,0.0605141079504,3,1,0.0833333333333,mad_positivo
+SSPD,20217|1|U|T|R|N,valor_total_sum,57,36,12,0.0362966600794,0.125785825366,3,0,0,mad_positivo
+SSPD,20217|C|U|T|R|N,consumo_basico_sum,57,36,12,-6.5549935778e-05,0.0563720282067,3,1,0.0833333333333,mad_positivo
+SSPD,20217|C|U|T|R|N,consumo_compl_sum,56,36,12,0.0275496459033,0.17399496923,3,0,0,mad_positivo
+SSPD,20217|C|U|T|R|N,valor_total_sum,57,36,12,-0.00838076084503,0.14257185576,3,0,0,mad_positivo
+SSPD,20217|O|U|T|R|N,consumo_basico_sum,57,36,12,0,0.0607124493613,3,1,0.0833333333333,mad_positivo
+SSPD,20217|O|U|T|R|N,consumo_compl_sum,56,36,12,0.0162662953323,0.19570609384,3,0,0,mad_positivo
+SSPD,20217|O|U|T|R|N,valor_total_sum,57,36,12,0.0417191171434,0.14491133196,3,1,0.0833333333333,mad_positivo
+SSPD,20217|P|U|T|R|N,valor_total_sum,57,36,12,0.0277920895835,0.19304739802,3,0,0,mad_positivo
+SSPD,20432|1|R|P|E|N,consumo_basico_sum,53,36,12,0,0,3,2,0.166666666667,mad_cero
+SSPD,20432|1|R|P|E|N,valor_total_sum,53,36,12,0.00282382006238,0.0030177034893,3,2,0.166666666667,mad_positivo
+SSPD,20432|1|U|P|R|N,consumo_basico_sum,53,36,12,0.00136803205983,0.0268689831721,3,0,0,mad_positivo
+SSPD,20432|1|U|P|R|N,valor_total_sum,53,36,12,0.0368972813369,0.0548034249269,3,5,0.416666666667,mad_positivo
+SSPD,20432|C|U|P|R|N,consumo_basico_sum,53,36,12,0.00189550568716,0.147085826382,3,1,0.0833333333333,mad_positivo
+SSPD,20432|C|U|P|R|N,valor_total_sum,53,36,12,0.0196442853142,0.0975154518771,3,0,0,mad_positivo
+SSPD,20432|O|U|P|R|N,consumo_basico_sum,53,36,12,-0.000136525830417,0.101311727936,3,0,0,mad_positivo
+SSPD,20432|O|U|P|R|N,valor_total_sum,53,36,12,0.0210581731955,0.0687456536156,3,0,0,mad_positivo
+SSPD,20504|1|R|P|E|N,consumo_basico_sum,57,36,12,-0.00258581839379,0.062237174679,3,0,0,mad_positivo
+SSPD,20504|1|R|P|E|N,valor_total_sum,57,36,12,0.00232289162888,0.0799460161217,3,0,0,mad_positivo
+SSPD,20504|C|R|P|E|N,consumo_basico_sum,56,36,12,-0.00179945365291,0.117662622467,3,0,0,mad_positivo
+SSPD,20504|C|R|P|E|N,valor_total_sum,56,36,12,0.00177390677581,0.116111928448,3,0,0,mad_positivo
+SSPD,20504|O|R|P|E|N,consumo_basico_sum,56,36,12,0.00119301408395,0.00817680054088,3,0,0,mad_positivo
+SSPD,20504|O|R|P|E|N,valor_total_sum,56,36,12,0.00419887722531,0.007362821529,3,1,0.0833333333333,mad_positivo
+SSPD,21597|1|R|P|N|N,consumo_basico_sum,57,36,12,0,0.00886127865056,3,2,0.166666666667,mad_positivo
+SSPD,21597|1|R|P|N|N,valor_total_sum,57,36,12,0.00021658097007,0.0139539958345,3,3,0.25,mad_positivo
+SSPD,22594|1|R|P|N|N,consumo_basico_sum,57,36,12,0,0,3,11,0.916666666667,mad_cero
+SSPD,22594|1|R|P|N|N,valor_total_sum,57,36,12,0.00170633651913,0.00293991764282,3,6,0.5,mad_positivo
+SSPD,22645|1|R|T|N|N,consumo_basico_sum,51,36,12,-0.00409569033546,0.015331841811,3,1,0.0833333333333,mad_positivo
+SSPD,22645|1|R|T|N|N,valor_total_sum,51,36,12,-0.00559389469735,0.0127944985741,3,1,0.0833333333333,mad_positivo
+SSPD,2272|1|U|P|R|N,consumo_basico_sum,53,36,12,0,0.0124420471999,3,2,0.166666666667,mad_positivo
+SSPD,2272|1|U|P|R|N,valor_total_sum,53,36,12,0.00260741324497,0.179910795688,3,0,0,mad_positivo
+SSPD,22728|1|R|P|N|N,consumo_basico_sum,57,36,12,0,0,3,0,0,mad_cero
+SSPD,22728|1|R|P|N|N,valor_total_sum,57,36,12,0.00172281237294,0.00255327195755,3,0,0,mad_positivo
+SSPD,22941|1|R|P|R|N,consumo_basico_sum,51,36,12,-0.00461703465273,0.0779230833383,3,0,0,mad_positivo
+SSPD,22941|1|R|P|R|N,valor_total_sum,51,36,12,-0.003736437215,0.0898617823585,3,0,0,mad_positivo
+SSPD,22941|1|U|P|R|N,consumo_basico_sum,57,36,12,0.0315430704674,0.0777172884896,3,0,0,mad_positivo
+SSPD,22941|1|U|P|R|N,consumo_compl_sum,56,36,12,0.0677774977762,0.236513989922,3,0,0,mad_positivo
+SSPD,22941|1|U|P|R|N,valor_total_sum,57,36,12,0.0294284214154,0.07561250994,3,0,0,mad_positivo
+SSPD,22941|C|U|P|R|N,consumo_basico_sum,51,36,12,0.00791874467409,0.105166896871,3,0,0,mad_positivo
+SSPD,22941|C|U|P|R|N,valor_total_sum,51,36,12,0.0100613674125,0.120151734574,3,0,0,mad_positivo
+SSPD,22941|O|U|P|R|N,consumo_basico_sum,51,36,12,0.0190515754681,0.107476455364,3,0,0,mad_positivo
+SSPD,22941|O|U|P|R|N,valor_total_sum,51,36,12,0.0213886353467,0.112562322794,3,0,0,mad_positivo
+SSPD,2331|1|R|P|E|N,consumo_basico_sum,56,36,12,-0.0181269684054,0.134798553566,3,0,0,mad_positivo
+SSPD,2331|1|R|P|E|N,valor_total_sum,56,36,12,0.00945377860211,0.187396643885,3,2,0.166666666667,mad_positivo
+SSPD,2331|1|U|P|R|N,consumo_basico_sum,57,36,12,0.00356085390897,0.0374102662948,3,0,0,mad_positivo
+SSPD,2331|1|U|P|R|N,consumo_compl_sum,57,36,12,0.0509254572599,0.160615627623,3,0,0,mad_positivo
+SSPD,2331|1|U|P|R|N,valor_total_sum,57,36,12,0.0278165218287,0.0883898003857,3,2,0.166666666667,mad_positivo
+SSPD,2331|2|U|P|R|N,consumo_basico_sum,57,36,12,0.00354984685197,0.0346337063045,3,0,0,mad_positivo
+SSPD,2331|2|U|P|R|N,consumo_compl_sum,57,36,12,0.00847142608514,0.127002940839,3,0,0,mad_positivo
+SSPD,2331|2|U|P|R|N,valor_total_sum,57,36,12,0.0164854999805,0.0962832365142,3,3,0.25,mad_positivo
+SSPD,2331|3|U|P|R|N,consumo_basico_sum,57,36,12,0.000420672737622,0.0278167412335,3,0,0,mad_positivo
+SSPD,2331|3|U|P|R|N,consumo_compl_sum,57,36,12,0,0.115510204761,3,0,0,mad_positivo
+SSPD,2331|3|U|P|R|N,valor_total_sum,57,36,12,0.0338284542459,0.177866908155,3,0,0,mad_positivo
+SSPD,2331|C|U|P|R|N,consumo_basico_sum,57,36,12,0.00436241306215,0.0658040681507,3,0,0,mad_positivo
+SSPD,2331|C|U|P|R|N,valor_total_sum,57,36,12,0.00592860468597,0.075302258909,3,0,0,mad_positivo
+SSPD,2331|I|U|P|R|N,consumo_basico_sum,57,36,12,0,0.125760926729,3,0,0,mad_positivo
+SSPD,2331|I|U|P|R|N,valor_total_sum,57,36,12,0.00149253842173,0.121901560916,3,0,0,mad_positivo
+SSPD,2331|O|U|P|R|N,consumo_basico_sum,57,36,12,0,0.160696681199,3,0,0,mad_positivo
+SSPD,2331|O|U|P|R|N,valor_total_sum,57,36,12,0.0031160151967,0.160012925798,3,1,0.0833333333333,mad_positivo
+SSPD,23400|1|R|P|N|N,consumo_basico_sum,54,36,12,0,0,3,3,0.25,mad_cero
+SSPD,23400|1|R|P|N|N,valor_total_sum,54,36,12,0.00173841986971,0.00149718261123,3,5,0.416666666667,mad_positivo
+SSPD,23430|1|R|T|E|N,consumo_basico_sum,53,36,12,0.30973350795,0.400209256216,3,1,0.0833333333333,mad_positivo
+SSPD,23430|1|R|T|E|N,valor_total_sum,57,36,12,0.0154815778747,0.1336786444,3,0,0,mad_positivo
+SSPD,23430|1|R|T|M|SC,consumo_basico_sum,57,36,12,-0.00765235252838,0.0419156459585,3,0,0,mad_positivo
+SSPD,23430|1|R|T|M|SC,valor_total_sum,57,36,12,0.0257811704344,0.0986382848519,3,1,0.0833333333333,mad_positivo
+SSPD,23430|1|R|T|N|N,valor_total_sum,57,36,12,0.000525290407278,0.00475063773145,3,5,0.416666666667,mad_positivo
+SSPD,23430|1|R|T|R|N,consumo_basico_sum,57,36,12,0.000495760034674,0.0239055335021,3,0,0,mad_positivo
+SSPD,23430|1|R|T|R|N,consumo_compl_sum,57,36,12,0.00576628769814,0.104026212105,3,0,0,mad_positivo
+SSPD,23430|1|R|T|R|N,consumo_mayor800_sum,57,36,12,-0.0500295613574,0.367622623428,3,0,0,mad_positivo
+SSPD,23430|1|R|T|R|N,valor_total_sum,57,36,12,-0.00373529065888,0.033842968861,3,1,0.0833333333333,mad_positivo
+SSPD,23430|1|U|T|E|N,valor_total_sum,57,36,12,0.0168167767106,0.064707621427,3,6,0.5,mad_positivo
+SSPD,23430|1|U|T|M|SC,consumo_basico_sum,57,36,12,0.0229703574469,0.065839233488,3,1,0.0833333333333,mad_positivo
+SSPD,23430|1|U|T|M|SC,valor_total_sum,57,36,12,0.0109386918935,0.0794478539412,3,0,0,mad_positivo
+SSPD,23430|1|U|T|N|N,valor_total_sum,57,36,12,0.00111747113819,0.00706779841534,3,9,0.75,mad_positivo
+SSPD,23430|1|U|T|N|SC,valor_total_sum,57,36,12,0,0,3,0,0,mad_cero
+SSPD,23430|1|U|T|R|N,consumo_basico_sum,57,36,12,0.00582128204199,0.0327050908967,3,0,0,mad_positivo
+SSPD,23430|1|U|T|R|N,consumo_compl_sum,57,36,12,0.0207090879464,0.0834229808862,3,0,0,mad_positivo
+SSPD,23430|1|U|T|R|N,valor_total_sum,57,36,12,0.0130379610878,0.0407830271477,3,1,0.0833333333333,mad_positivo
+SSPD,23430|2|R|T|N|N,valor_total_sum,57,36,12,0,0,3,2,0.166666666667,mad_cero
+SSPD,23430|2|R|T|R|N,consumo_basico_sum,57,36,12,0.0124864658581,0.049549898007,3,0,0,mad_positivo
+SSPD,23430|2|R|T|R|N,consumo_compl_sum,57,36,12,-0.00107938733404,0.0927625526819,3,0,0,mad_positivo
+SSPD,23430|2|R|T|R|N,valor_total_sum,57,36,12,0.0255260156182,0.0623106403923,3,0,0,mad_positivo
+SSPD,23430|2|U|T|E|N,valor_total_sum,57,36,12,0.0628293165209,0.107828248319,3,4,0.333333333333,mad_positivo
+SSPD,23430|2|U|T|M|SC,consumo_basico_sum,57,36,12,0.0306239990932,0.0913624082754,3,0,0,mad_positivo
+SSPD,23430|2|U|T|M|SC,valor_total_sum,57,36,12,0.0533026701565,0.17320575092,3,0,0,mad_positivo
+SSPD,23430|2|U|T|N|AC,consumo_compl_sum,57,36,12,0,0,3,0,0,mad_cero
+SSPD,23430|2|U|T|N|AC,valor_total_sum,57,36,12,0.00222724284876,0.00193739359095,3,0,0,mad_positivo
+SSPD,23430|2|U|T|N|N,valor_total_sum,57,36,12,0.00575803138509,0.00985340481443,3,8,0.666666666667,mad_positivo
+SSPD,23430|2|U|T|R|AC,valor_total_sum,57,36,12,0.101322619724,0.337636390482,3,0,0,mad_positivo
+SSPD,23430|2|U|T|R|N,consumo_basico_sum,57,36,12,-0.0126858524425,0.0434530480414,3,0,0,mad_positivo
+SSPD,23430|2|U|T|R|N,consumo_compl_sum,57,36,12,0.0233350991802,0.0871113715104,3,0,0,mad_positivo
+SSPD,23430|2|U|T|R|N,consumo_mayor800_sum,57,36,12,-0.0128362677195,0.25610611021,3,0,0,mad_positivo
+SSPD,23430|2|U|T|R|N,valor_total_sum,57,36,12,0.0100426204322,0.0418276168485,3,1,0.0833333333333,mad_positivo
+SSPD,23430|3|R|T|R|N,consumo_basico_sum,57,36,12,0.0127675241855,0.0760714203825,3,0,0,mad_positivo
+SSPD,23430|3|R|T|R|N,consumo_compl_sum,57,36,12,0.00738436381142,0.0884690733392,3,2,0.166666666667,mad_positivo
+SSPD,23430|3|R|T|R|N,valor_total_sum,57,36,12,0.0162584843395,0.106485474103,3,0,0,mad_positivo
+SSPD,23430|3|U|T|E|N,consumo_basico_sum,53,36,12,-0.0884049351623,0.432077861622,3,4,0.333333333333,mad_positivo
+SSPD,23430|3|U|T|E|N,valor_total_sum,57,36,12,0.0382234022003,0.109144478041,3,5,0.416666666667,mad_positivo
+SSPD,23430|3|U|T|N|N,valor_total_sum,57,36,12,0.0168012613023,0.0167864351826,3,5,0.416666666667,mad_positivo
+SSPD,23430|3|U|T|R|AC,consumo_compl_sum,57,36,12,0.0112289143377,0.147428421277,3,0,0,mad_positivo
+SSPD,23430|3|U|T|R|AC,consumo_mayor800_sum,52,36,12,-0.0305224095678,0.0932030767641,3,0,0,mad_positivo
+SSPD,23430|3|U|T|R|AC,valor_total_sum,57,36,12,-0.0127262719884,0.267687027998,3,0,0,mad_positivo
+SSPD,23430|3|U|T|R|N,consumo_basico_sum,57,36,12,-0.00970508313684,0.0483243326584,3,0,0,mad_positivo
+SSPD,23430|3|U|T|R|N,consumo_compl_sum,57,36,12,0.0175186208952,0.0737469481893,3,0,0,mad_positivo
+SSPD,23430|3|U|T|R|N,consumo_mayor800_sum,57,36,12,0.00341722286801,0.177218301507,3,0,0,mad_positivo
+SSPD,23430|3|U|T|R|N,valor_total_sum,57,36,12,0.000523922136288,0.0410773681489,3,0,0,mad_positivo
+SSPD,23430|4|U|T|R|N,consumo_basico_sum,57,36,12,0.0645787360601,0.277514261533,3,0,0,mad_positivo
+SSPD,23430|4|U|T|R|N,consumo_compl_sum,57,36,12,0.0236805340505,0.0819322719172,3,0,0,mad_positivo
+SSPD,23430|4|U|T|R|N,consumo_mayor800_sum,57,36,12,-0.0161906911769,0.186138962475,3,2,0.166666666667,mad_positivo
+SSPD,23430|4|U|T|R|N,valor_total_sum,57,36,12,0.0426379504949,0.0971792819233,3,0,0,mad_positivo
+SSPD,23430|C|R|T|N|N,valor_total_sum,57,36,12,0,0,3,1,0.0833333333333,mad_cero
+SSPD,23430|C|R|T|R|N,consumo_basico_sum,57,36,12,0.00100039061196,0.0782628519712,3,0,0,mad_positivo
+SSPD,23430|C|R|T|R|N,valor_total_sum,57,36,12,0.0300050369234,0.0994996071139,3,1,0.0833333333333,mad_positivo
+SSPD,23430|C|U|T|E|N,valor_total_sum,57,36,12,0.101994923028,0.167622352174,3,2,0.166666666667,mad_positivo
+SSPD,23430|C|U|T|N|N,valor_total_sum,57,36,12,0.00528450111042,0.0487548253679,3,0,0,mad_positivo
+SSPD,23430|C|U|T|R|N,consumo_basico_sum,57,36,12,-0.0113119343,0.0355132051761,3,2,0.166666666667,mad_positivo
+SSPD,23430|C|U|T|R|N,valor_total_sum,57,36,12,0.0015852494194,0.0284387116496,3,6,0.5,mad_positivo
+SSPD,23430|I|R|T|N|N,valor_total_sum,57,36,12,0,0,3,0,0,mad_cero
+SSPD,23430|I|R|T|R|N,consumo_basico_sum,57,36,12,0.00384627626047,0.0649740221569,3,5,0.416666666667,mad_positivo
+SSPD,23430|I|R|T|R|N,valor_total_sum,57,36,12,0.0202268404481,0.222796307127,3,0,0,mad_positivo
+SSPD,23430|I|U|T|E|N,valor_total_sum,54,36,12,0.045754382353,0.139976742731,3,2,0.166666666667,mad_positivo
+SSPD,23430|I|U|T|N|N,consumo_basico_sum,57,36,12,0,0,3,0,0,mad_cero
+SSPD,23430|I|U|T|N|N,valor_total_sum,57,36,12,0.000110236308265,0.000344710071234,3,12,1,mad_positivo
+SSPD,23430|I|U|T|R|N,consumo_basico_sum,57,36,12,-0.00589778941827,0.0696539790515,3,0,0,mad_positivo
+SSPD,23430|I|U|T|R|N,valor_total_sum,57,36,12,-0.00510931555003,0.0769412869535,3,0,0,mad_positivo
+SSPD,23430|O|R|T|N|N,consumo_basico_sum,57,36,12,0,0.00660231828042,3,1,0.0833333333333,mad_positivo
+SSPD,23430|O|R|T|N|N,valor_total_sum,57,36,12,0.00776603210259,0.109931654568,3,0,0,mad_positivo
+SSPD,23430|O|R|T|R|N,consumo_basico_sum,57,36,12,-0.00837085094605,0.0971624267623,3,0,0,mad_positivo
+SSPD,23430|O|R|T|R|N,valor_total_sum,57,36,12,0.00824117467291,0.0483749378133,3,2,0.166666666667,mad_positivo
+SSPD,23430|O|U|T|E|N,valor_total_sum,55,36,12,0.0466808358336,0.631879515021,3,0,0,mad_positivo
+SSPD,23430|O|U|T|N|N,consumo_basico_sum,57,36,12,-0.00405012850095,0.0289353591684,3,0,0,mad_positivo
+SSPD,23430|O|U|T|N|N,valor_total_sum,57,36,12,-0.00466127179892,0.0312631778636,3,2,0.166666666667,mad_positivo
+SSPD,23430|O|U|T|R|N,consumo_basico_sum,57,36,12,-0.0111634528937,0.057392415142,3,0,0,mad_positivo
+SSPD,23430|O|U|T|R|N,valor_total_sum,57,36,12,0.0206645204459,0.0581513649432,3,3,0.25,mad_positivo
+SSPD,23430|P|R|T|N|N,valor_total_sum,56,36,12,0,0,3,2,0.166666666667,mad_cero
+SSPD,23430|P|U|T|N|N,consumo_basico_sum,56,36,12,0.100040408909,0.482113280388,3,0,0,mad_positivo
+SSPD,23430|P|U|T|N|N,valor_total_sum,57,36,12,0.154562943014,0.491343114192,3,1,0.0833333333333,mad_positivo
+SSPD,23430|P|U|T|R|N,consumo_basico_sum,57,36,12,0.007128788926,0.11125077302,3,1,0.0833333333333,mad_positivo
+SSPD,23430|P|U|T|R|N,valor_total_sum,57,36,12,0.0123350017875,0.145553742853,3,0,0,mad_positivo
+SSPD,25680|1|U|T|R|N,consumo_basico_sum,57,36,12,0.0168860314727,0.0308445491004,3,0,0,mad_positivo
+SSPD,25680|1|U|T|R|N,valor_total_sum,57,36,12,0.0255938152189,0.0778498210769,3,1,0.0833333333333,mad_positivo
+SSPD,25680|2|U|T|R|N,consumo_basico_sum,57,36,12,0.0149855740268,0.0588902972238,3,0,0,mad_positivo
+SSPD,25680|2|U|T|R|N,valor_total_sum,57,36,12,0.0546848671671,0.114202158185,3,2,0.166666666667,mad_positivo
+SSPD,25680|C|U|T|R|N,consumo_basico_sum,57,36,12,0.0157581136134,0.0490758061975,3,0,0,mad_positivo
+SSPD,25680|C|U|T|R|N,valor_total_sum,57,36,12,0.0920536819929,0.0650291423852,3,2,0.166666666667,mad_positivo
+SSPD,25680|O|U|T|R|N,consumo_basico_sum,57,36,12,0.0146835462443,0.0399724272583,3,1,0.0833333333333,mad_positivo
+SSPD,25680|O|U|T|R|N,valor_total_sum,57,36,12,0.0830260568975,0.12742407892,3,2,0.166666666667,mad_positivo
+SSPD,25681|1|R|P|N|N,consumo_basico_sum,57,36,12,-0.0024060886672,0.00806401620426,3,1,0.0833333333333,mad_positivo
+SSPD,25681|1|R|P|N|N,valor_total_sum,57,36,12,-0.00072126992834,0.00958515164442,3,2,0.166666666667,mad_positivo
+SSPD,25965|1|R|P|N|N,consumo_basico_sum,57,36,12,0,0,3,11,0.916666666667,mad_cero
+SSPD,25965|1|R|P|N|N,valor_total_sum,57,36,12,0.0016082821637,0.00249420183748,3,5,0.416666666667,mad_positivo
+SSPD,26717|1|R|P|N|N,consumo_basico_sum,57,36,12,0.00159628534705,0.014656326044,3,0,0,mad_positivo
+SSPD,26717|1|R|P|N|N,valor_total_sum,57,36,12,0.00243109746845,0.016958315839,3,0,0,mad_positivo
+SSPD,26810|1|R|P|N|N,consumo_basico_sum,57,36,12,0,0,3,9,0.75,mad_cero
+SSPD,26810|1|R|P|N|N,valor_total_sum,57,36,12,0.00201303591779,0.00204940965225,3,5,0.416666666667,mad_positivo
+SSPD,27271|1|R|T|N|N,consumo_basico_sum,57,36,12,0.000174225227778,0.000971019071592,3,5,0.416666666667,mad_positivo
+SSPD,27271|1|R|T|N|N,valor_total_sum,57,36,12,0.00304574505935,0.00228207796853,3,2,0.166666666667,mad_positivo
+SSPD,28111|1|R|P|N|N,consumo_basico_sum,57,36,12,0,0.0478631352112,3,1,0.0833333333333,mad_positivo
+SSPD,28111|1|R|P|N|N,valor_total_sum,57,36,12,0,0.0447826531092,3,1,0.0833333333333,mad_positivo
+SSPD,28352|1|R|P|R|N,consumo_basico_sum,57,36,12,0,0.0185975592732,3,1,0.0833333333333,mad_positivo
+SSPD,28352|1|R|P|R|N,valor_total_sum,57,36,12,0.00197296757219,0.0214142485473,3,4,0.333333333333,mad_positivo
+SSPD,2994|1|U|P|R|N,consumo_basico_sum,56,36,12,0.0181188439341,0.0520203956098,3,0,0,mad_positivo
+SSPD,2994|1|U|P|R|N,valor_total_sum,56,36,12,0.0213285108306,0.0473630269527,3,0,0,mad_positivo
+SSPD,3076|1|R|T|N|N,consumo_basico_sum,51,36,12,-0.000194812132989,0.00104968174888,3,1,0.0833333333333,mad_positivo
+SSPD,3076|1|R|T|N|N,valor_total_sum,51,36,12,0.00163511847634,0.00219710629849,3,2,0.166666666667,mad_positivo
+SSPD,31373|1|R|T|N|N,consumo_basico_sum,51,36,12,-0.000527057778787,0.00482030898666,3,0,0,mad_positivo
+SSPD,31373|1|R|T|N|N,valor_total_sum,51,36,12,0.00106353691895,0.00576638906228,3,0,0,mad_positivo
+SSPD,3173|1|R|T|N|N,consumo_basico_sum,57,36,12,-0.00668889843576,0.0555978985325,3,4,0.333333333333,mad_positivo
+SSPD,3173|1|R|T|N|N,valor_total_sum,57,36,12,-0.00498900198588,0.057146875982,3,3,0.25,mad_positivo
+SSPD,32033|1|R|P|N|N,consumo_basico_sum,57,36,12,0,0.0328182746001,3,1,0.0833333333333,mad_positivo
+SSPD,32033|1|R|P|N|N,valor_total_sum,57,36,12,0.00107249692772,0.100492444142,3,0,0,mad_positivo
+SSPD,3207|1|R|P|N|N,consumo_basico_sum,58,36,12,0,0.0327792515902,3,1,0.0833333333333,mad_positivo
+SSPD,3207|1|R|P|N|N,valor_total_sum,55,36,12,-0.0502669753409,0.863332491331,3,0,0,mad_positivo
+SSPD,3212|1|R|P|R|N,consumo_basico_sum,59,36,12,0.00797110961696,0.0372754982469,3,1,0.0833333333333,mad_positivo
+SSPD,3212|1|R|P|R|N,consumo_compl_sum,59,36,12,0.01916631305,0.142959833684,3,1,0.0833333333333,mad_positivo
+SSPD,3212|1|R|P|R|N,consumo_mayor800_sum,58,36,12,0.0767581934746,0.365039131402,3,3,0.25,mad_positivo
+SSPD,3212|1|R|P|R|N,valor_total_sum,59,36,12,0.0364942899426,0.170947056691,3,0,0,mad_positivo
+SSPD,3212|1|U|P|R|N,consumo_basico_sum,59,36,12,0.00612269741748,0.0255751326432,3,2,0.166666666667,mad_positivo
+SSPD,3212|1|U|P|R|N,consumo_compl_sum,59,36,12,0.00874943103842,0.110460703265,3,1,0.0833333333333,mad_positivo
+SSPD,3212|1|U|P|R|N,consumo_mayor800_sum,59,36,12,0.0793794564666,0.203055199445,3,4,0.333333333333,mad_positivo
+SSPD,3212|1|U|P|R|N,valor_total_sum,59,36,12,0.0326823051957,0.06606618335,3,0,0,mad_positivo
+SSPD,3212|2|R|P|R|N,consumo_basico_sum,59,36,12,-0.00985349750058,0.0526965953638,3,0,0,mad_positivo
+SSPD,3212|2|R|P|R|N,consumo_compl_sum,59,36,12,0.00461834072477,0.0814192053731,3,2,0.166666666667,mad_positivo
+SSPD,3212|2|R|P|R|N,valor_total_sum,59,36,12,-0.00910649857985,0.208110053463,3,0,0,mad_positivo
+SSPD,3212|2|U|P|R|N,consumo_basico_sum,59,36,12,0.00343378514758,0.0178191157746,3,2,0.166666666667,mad_positivo
+SSPD,3212|2|U|P|R|N,consumo_compl_sum,59,36,12,-0.00793855561965,0.116394678872,3,0,0,mad_positivo
+SSPD,3212|2|U|P|R|N,consumo_mayor800_sum,59,36,12,0.0553598333607,0.222057078448,3,2,0.166666666667,mad_positivo
+SSPD,3212|2|U|P|R|N,valor_total_sum,59,36,12,0.0207813101185,0.0741309870499,3,1,0.0833333333333,mad_positivo
+SSPD,3212|3|U|P|R|N,consumo_basico_sum,59,36,12,0.00694361816063,0.0252948103392,3,0,0,mad_positivo
+SSPD,3212|3|U|P|R|N,consumo_compl_sum,59,36,12,-0.00962474473411,0.116497881649,3,0,0,mad_positivo
+SSPD,3212|3|U|P|R|N,consumo_mayor800_sum,59,36,12,-0.0213381224801,0.178906568687,3,3,0.25,mad_positivo
+SSPD,3212|3|U|P|R|N,valor_total_sum,59,36,12,0.0106675336327,0.0825684064316,3,0,0,mad_positivo
+SSPD,3212|C|R|P|R|N,consumo_basico_sum,59,36,12,0,0.163404611284,3,1,0.0833333333333,mad_positivo
+SSPD,3212|C|R|P|R|N,consumo_compl_sum,59,36,12,-0.0296887241168,0.128966651001,3,1,0.0833333333333,mad_positivo
+SSPD,3212|C|R|P|R|N,valor_total_sum,59,36,12,0.0245410861725,0.246340437715,3,0,0,mad_positivo
+SSPD,3212|C|U|P|R|N,consumo_basico_sum,59,36,12,0.00670119433766,0.0313459389245,3,1,0.0833333333333,mad_positivo
+SSPD,3212|C|U|P|R|N,consumo_compl_sum,59,36,12,0.018565418835,0.0389769536259,3,2,0.166666666667,mad_positivo
+SSPD,3212|C|U|P|R|N,consumo_mayor800_sum,59,36,12,0.0431545455862,0.0984821330182,3,4,0.333333333333,mad_positivo
+SSPD,3212|C|U|P|R|N,valor_total_sum,59,36,12,0.0342294324588,0.041734207228,3,3,0.25,mad_positivo
+SSPD,3212|O|R|P|R|N,consumo_basico_sum,59,36,12,0,0.0234846162925,3,8,0.666666666667,mad_positivo
+SSPD,3212|O|R|P|R|N,consumo_compl_sum,59,36,12,0,0.0921345221018,3,2,0.166666666667,mad_positivo
+SSPD,3212|O|R|P|R|N,consumo_mayor800_sum,59,36,12,0.00187676981918,0.0470121318506,3,5,0.416666666667,mad_positivo
+SSPD,3212|O|R|P|R|N,valor_total_sum,59,36,12,-0.00702851193742,0.241708079886,3,0,0,mad_positivo
+SSPD,3212|O|U|P|R|N,consumo_basico_sum,59,36,12,-0.00227293903952,0.024533472503,3,0,0,mad_positivo
+SSPD,3212|O|U|P|R|N,consumo_compl_sum,59,36,12,0.00111407445456,0.0310940933997,3,1,0.0833333333333,mad_positivo
+SSPD,3212|O|U|P|R|N,consumo_mayor800_sum,59,36,12,0.0177498040849,0.0657510529088,3,3,0.25,mad_positivo
+SSPD,3212|O|U|P|R|N,valor_total_sum,59,36,12,0.028611071461,0.0425273547855,3,2,0.166666666667,mad_positivo
+SSPD,32194|1|R|T|N|N,consumo_basico_sum,56,36,12,0.00421815282953,0.155081564641,3,0,0,mad_positivo
+SSPD,32194|1|R|T|N|N,valor_total_sum,56,36,12,0.0106665850086,0.154034794199,3,0,0,mad_positivo
+SSPD,34833|1|R|T|N|N,consumo_basico_sum,56,36,12,0.000212590358077,0.00161746854068,3,0,0,mad_positivo
+SSPD,34833|1|R|T|N|N,valor_total_sum,56,36,12,0.00188947210881,0.00228946310456,3,0,0,mad_positivo
+SSPD,37735|1|R|T|N|N,consumo_basico_sum,57,36,12,0.000262166499985,0.0112577110777,3,1,0.0833333333333,mad_positivo
+SSPD,37735|1|R|T|N|N,valor_total_sum,57,36,12,0.00447870445839,0.0129920863017,3,1,0.0833333333333,mad_positivo
+SSPD,37833|1|R|P|N|N,consumo_basico_sum,57,36,12,0,0.000984788099643,3,7,0.583333333333,mad_positivo
+SSPD,37833|1|R|P|N|N,valor_total_sum,57,36,12,0.00160862779642,0.00424855847002,3,5,0.416666666667,mad_positivo
+SSPD,37953|1|U|P|E|N,consumo_basico_sum,54,36,12,0,0.00810435755755,3,2,0.166666666667,mad_positivo
+SSPD,37953|1|U|P|E|N,valor_total_sum,54,36,12,0.00160171535576,0.00649619767675,3,2,0.166666666667,mad_positivo
+SSPD,37953|1|U|P|R|N,consumo_basico_sum,54,36,12,0,0,3,0,0,mad_cero
+SSPD,37953|1|U|P|R|N,valor_total_sum,54,36,12,0.00118640220261,0.00476781037806,3,0,0,mad_positivo
+SSPD,38134|1|R|T|N|N,consumo_basico_sum,57,36,12,5.08186669963e-05,0.00824036218783,3,0,0,mad_positivo
+SSPD,38134|1|R|T|N|N,valor_total_sum,57,36,12,0.00210517133874,0.00922611140621,3,0,0,mad_positivo
+SSPD,38850|1|R|P|N|N,consumo_basico_sum,56,36,12,0,0.00208915485365,3,7,0.583333333333,mad_positivo
+SSPD,38850|1|R|P|N|N,valor_total_sum,56,36,12,0.00519154572975,0.00491159654398,3,5,0.416666666667,mad_positivo
+SSPD,39672|1|R|T|N|N,consumo_basico_sum,53,36,12,0,0.00443727005193,3,0,0,mad_positivo
+SSPD,39672|1|R|T|N|N,valor_total_sum,53,36,12,0.00288412695769,0.00878596275692,3,2,0.166666666667,mad_positivo
+XM,EPMC|EPMD|STR02,demanda_kwh,61,36,12,-0.00787025434618,0.0297738346969,3,0,0,mad_positivo

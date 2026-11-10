@@ -1,0 +1,484 @@
+registro_original,regla,dimension,severidad,columna,valor,detalle
+1714,R01 Período presente,Completitud,Error,Año/Mes,,
+2038,R04 Duplicado exacto (adicional),Unicidad,Error,,,
+2352,R04 Duplicado exacto (adicional),Unicidad,Error,,,
+2428,R04 Duplicado exacto (adicional),Unicidad,Error,,,
+2520,R04 Duplicado exacto (adicional),Unicidad,Error,,,
+2652,R04 Duplicado exacto (adicional),Unicidad,Error,,,
+2658,R04 Duplicado exacto (adicional),Unicidad,Error,,,
+2668,R04 Duplicado exacto (adicional),Unicidad,Error,,,
+2678,R04 Duplicado exacto (adicional),Unicidad,Error,,,
+2916,R04 Duplicado exacto (adicional),Unicidad,Error,,,
+3623,R04 Duplicado exacto (adicional),Unicidad,Error,,,
+58,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+59,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+210,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+211,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+277,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+278,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+294,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+295,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+362,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+363,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+464,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+465,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+471,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+472,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+566,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+567,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+625,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+626,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+648,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+649,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+707,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+708,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+807,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+808,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+825,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+826,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+3268,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+3269,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+3328,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+3329,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+3385,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+3386,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+3444,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+3445,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+3503,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+3504,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+3562,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+3563,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+3621,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+3622,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial
+12,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución
+13,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución
+14,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i"
+16,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m"
+17,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j"
+18,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m"
+22,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+26,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+28,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+32,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+34,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+38,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+46,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+50,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+52,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+56,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+71,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución
+72,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución
+73,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i"
+75,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m"
+76,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j"
+77,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m"
+81,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+85,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+87,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+91,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+93,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+97,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+114,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución
+115,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución
+116,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i"
+118,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m"
+119,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j"
+120,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m"
+124,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+128,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+130,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+134,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+136,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+140,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+148,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+152,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+164,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución
+165,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución
+166,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i"
+168,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m"
+169,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j"
+170,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m"
+174,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+178,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+180,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+184,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+186,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+190,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+198,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+202,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+204,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+208,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+223,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución
+224,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución
+225,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i"
+227,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m"
+228,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j"
+229,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m"
+233,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+237,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+239,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+243,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+245,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+249,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+265,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+269,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+271,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+275,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+282,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+286,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+288,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+292,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+315,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución
+316,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución
+317,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i"
+319,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m"
+320,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j"
+321,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m"
+325,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+329,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+331,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+335,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+337,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+341,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+349,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+353,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+356,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+360,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+366,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución
+367,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución
+368,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i"
+370,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m"
+371,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j"
+372,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m"
+376,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+380,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+382,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+386,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+388,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+392,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+400,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+404,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+406,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+418,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución
+419,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución
+420,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i"
+422,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m"
+423,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j"
+424,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m"
+428,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+432,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+434,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+438,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+440,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+444,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+452,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+456,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+458,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+462,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+469,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+484,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución
+485,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución
+486,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i"
+488,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m"
+489,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j"
+490,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m"
+494,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+498,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+500,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+504,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+506,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+520,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución
+521,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución
+522,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i"
+524,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m"
+525,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j"
+526,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m"
+530,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+534,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+536,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+540,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+542,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+546,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+554,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+558,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+560,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+564,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+579,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución
+580,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución
+581,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i"
+583,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m"
+584,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j"
+585,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m"
+589,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+593,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+595,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+599,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+601,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+605,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+613,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+617,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+619,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+623,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+628,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+636,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+640,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+642,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+646,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+661,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución
+662,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución
+663,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i"
+665,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m"
+666,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j"
+667,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m"
+671,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+675,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+677,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+681,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+683,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+687,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+695,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+699,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+701,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+705,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+720,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución
+721,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución
+722,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i"
+724,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m"
+725,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j"
+726,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m"
+730,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+734,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+736,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+740,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+742,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+746,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+761,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución
+762,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución
+763,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i"
+765,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m"
+766,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j"
+767,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m"
+771,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+775,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+777,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+781,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+783,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+787,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+795,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+799,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+801,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+805,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+813,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+817,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+819,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+823,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+1405,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3266,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3281,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución
+3282,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución
+3283,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i"
+3285,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m"
+3286,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j"
+3287,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m"
+3291,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3295,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3297,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3301,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3303,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3307,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3315,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3320,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3322,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3326,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3339,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución
+3340,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución
+3341,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i"
+3343,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m"
+3344,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j"
+3345,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m"
+3349,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3353,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3355,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3359,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3361,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3365,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3373,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3377,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3379,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3383,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3398,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución
+3399,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución
+3400,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i"
+3402,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m"
+3403,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j"
+3404,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m"
+3408,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3412,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3414,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3418,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3420,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3424,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3432,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3436,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3438,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3442,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3457,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución
+3458,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución
+3459,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i"
+3461,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m"
+3462,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j"
+3463,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m"
+3467,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3471,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3473,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3477,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3479,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3483,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3491,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3495,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3497,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3501,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3516,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución
+3517,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución
+3518,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i"
+3520,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m"
+3521,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j"
+3522,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m"
+3526,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3530,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3532,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3536,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3538,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3542,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3550,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3554,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3556,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3560,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3575,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución
+3576,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución
+3577,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i"
+3579,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m"
+3580,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j"
+3581,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m"
+3585,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3589,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3591,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3595,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3597,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3601,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3609,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3613,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+3615,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i"
+3619,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m"
+1949,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+1952,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+1975,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2016,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2021,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2024,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2030,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2056,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2073,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2076,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2088,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2092,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2095,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2098,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2100,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2101,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2125,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2137,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2148,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2154,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2157,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2159,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2163,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2167,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2190,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2193,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2200,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2202,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2204,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2215,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2223,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2237,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2247,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2266,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2292,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2315,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2316,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2328,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2330,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2343,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2349,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2375,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2380,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2387,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2397,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2415,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2431,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2451,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2468,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2474,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2486,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2494,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2517,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2547,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2548,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2572,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2577,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2585,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2620,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2651,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2665,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2666,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2672,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2674,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2685,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2692,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2710,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2716,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2737,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2738,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2742,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2750,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2751,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2767,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2820,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2832,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2839,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2845,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2854,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2866,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2869,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2876,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS
+2888,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2893,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+2912,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS
+1043,R08 Orden EPM ≥ Compartido ≥ Cliente,Consistencia,Advertencia,Propiedad,213.5 / 205151.0 / 197.37,
+1808,R11 Posible serial de fecha Excel,Exactitud,Error,Punta,43577.0,equivale a 2019-04-22
+1808,R11 Posible serial de fecha Excel,Exactitud,Error,Fuera de Punta,43577.0,equivale a 2019-04-22
+1810,R11 Posible serial de fecha Excel,Exactitud,Error,Punta,43501.0,equivale a 2019-02-05
+2103,R10 Todos los importes en cero,Completitud,Advertencia,,,
+2994,R07 No negatividad,Validez,Informativa,Punta,-1.61,Rm puede ser negativo (pendiente confirmar)
+3000,R07 No negatividad,Validez,Informativa,Punta,-1.61,Rm puede ser negativo (pendiente confirmar)
+3006,R07 No negatividad,Validez,Informativa,Punta,-1.61,Rm puede ser negativo (pendiente confirmar)
+3018,R07 No negatividad,Validez,Informativa,Propiedad Epm,-1.61,Rm puede ser negativo (pendiente confirmar)
+3018,R07 No negatividad,Validez,Informativa,Compartido,-1.61,Rm puede ser negativo (pendiente confirmar)
+3018,R07 No negatividad,Validez,Informativa,Propiedad del Cliente,-1.61,Rm puede ser negativo (pendiente confirmar)
+3045,R07 No negatividad,Validez,Informativa,Propiedad Epm,-0.25,Rm puede ser negativo (pendiente confirmar)
+3045,R07 No negatividad,Validez,Informativa,Compartido,-0.25,Rm puede ser negativo (pendiente confirmar)
+3045,R07 No negatividad,Validez,Informativa,Propiedad del Cliente,-0.25,Rm puede ser negativo (pendiente confirmar)
+3053,R07 No negatividad,Validez,Informativa,Punta,-1.12,Rm puede ser negativo (pendiente confirmar)
+3059,R07 No negatividad,Validez,Informativa,Punta,-1.12,Rm puede ser negativo (pendiente confirmar)
+3065,R07 No negatividad,Validez,Informativa,Punta,-1.12,Rm puede ser negativo (pendiente confirmar)
+3077,R07 No negatividad,Validez,Informativa,Propiedad Epm,-1.12,Rm puede ser negativo (pendiente confirmar)
+3077,R07 No negatividad,Validez,Informativa,Compartido,-1.12,Rm puede ser negativo (pendiente confirmar)
+3077,R07 No negatividad,Validez,Informativa,Propiedad del Cliente,-1.12,Rm puede ser negativo (pendiente confirmar)
+3092,R08 Orden EPM ≥ Compartido ≥ Cliente,Consistencia,Advertencia,Propiedad,520.2 / 544.3 / 521.24,
+2380,R05 Clave categoría+fecha repetida,Unicidad,Advertencia,,,mismos importes con etiquetas sinónimas
+2567,R05 Clave categoría+fecha repetida,Unicidad,Advertencia,,,mismos importes con etiquetas sinónimas
+1808,R12 Magnitud > 10× mediana de su serie,Exactitud,Error,Punta,43577.0,mediana 22.86
+1808,R12 Magnitud > 10× mediana de su serie,Exactitud,Error,Fuera de Punta,43577.0,mediana 22.86
+1810,R12 Magnitud > 10× mediana de su serie,Exactitud,Error,Punta,43501.0,mediana 9.59
+1043,R12 Magnitud > 10× mediana de su serie,Exactitud,Error,Compartido,205151.0,mediana 212.54

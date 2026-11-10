@@ -1,0 +1,19 @@
+{
+  "estado": "correcto",
+  "fecha_cliente": "2026-11-07",
+  "comprobaciones": [
+    "Datasets, cuarentena, dependencias y los seis PDF de EPM conservan sus huellas",
+    "120 meses de EPM canónica recalculados con una implementación distinta: conteos idénticos",
+    "Cifras 51/83, 24/83 y 18/83 del plan reproducidas desde 05_alertas_imr_reales.csv",
+    "Banda de X, capturas y alertas reclasificadas recalculadas desde las fracciones; ninguna variante tiene banda factible",
+    "Alertas retenidas + reclasificadas = alertas totales; XM sin meses evaluables queda indefinido, no en cero",
+    "Catálogo de 227 filas: fracciones, banderas por X y estado coherentes",
+    "108 celdas de los PDF = CSV; suma de componentes = CU total (±0,02); cambios porcentuales recalculados",
+    "Fracciones de enmascaramiento reconciliadas con los conteos de 4.2",
+    "10 pruebas automáticas (sin fuga de futuro, equivalencia con el cálculo ingenuo, regla estricta, etiquetas canónicas): correctas"
+  ],
+  "filas_fracciones_mensuales": 1272,
+  "variantes_calibradas": 9,
+  "filas_catalogo": 227,
+  "pruebas_automaticas": 10
+}
