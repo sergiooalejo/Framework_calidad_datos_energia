@@ -128,7 +128,7 @@ Fuera del Nivel I hay 14 series: las conclusiones por nivel se presentan con cau
 4. **Reproducibilidad computacional.**
    - pyproject con Poetry y versiones fijadas de pandas, scikit-learn, statsmodels y matplotlib; Dockerfile; pruebas automáticas con un conjunto pequeño y errores inyectados conocidos.
 5. **Tablero de monitoreo.**
-   - Power BI sobre las salidas: scorecard por dimensión, alertas por fuente y mes, bitácora de incidentes con estado; limitado a las salidas de 5.9.2. Exportar también el scorecard en CSV.
+   - Tablero Streamlit sobre las salidas: scorecard por dimensión, alertas por fuente y mes, bitácora de incidentes con estado; limitado a las salidas de 5.9.2. Exportar también el scorecard en CSV. La selección de Streamlit sigue la sugerencia del profesor.
 6. **Documentación del artefacto.**
    - Diagrama de componentes 5.9 con entradas y salidas reales; README de reproducción; bitácora de incidentes con estado, responsable y fecha (operación de calidad en DMBOK2).
 
@@ -152,7 +152,8 @@ Otra persona reproduce los resultados desde el contenedor con un solo comando, l
 
 ### Riesgo y mitigación
 
-Power BI no es reproducible por código. Mantener el scorecard en CSV como salida primaria y el tablero como vista.
+El tablero debe ser reproducible por código. Mantener el scorecard en CSV como salida primaria y
+la aplicación Streamlit como vista; la primera versión se limita a leer las salidas versionadas.
 
 ## Hito 6 · Validar y sustentar (OE4) · Lidera: equipo
 

@@ -2,22 +2,27 @@
   "entradas": {
     "EPM": {
       "ruta": "Data/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv",
-      "sha256": "98acd40e8d2b92433b1dfc60422228f26f53ab331fd600631f03f830e7ba38f4"
+      "sha256": "b974a37a171b9178476fbd2baba21470e8845076af105ef9c178e80690f09920"
     },
     "CHEC": {
       "ruta": "Data/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv",
-      "sha256": "05865b094a4cc4eb9f822ed2af686a11a8905d6606f40bb554f5bb5258e3c53f"
+      "sha256": "1f34f85ada431220a39b2bacf10a1dd09bd440b3e7eab61b61d53094508af08c"
     },
     "SSPD": {
       "ruta": "Data/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv",
-      "sha256": "c0beb6d6800de043e91dfd0def5ee619201a579c4013fd65e9255d6e1479d625"
+      "sha256": "cc92ffc4f89ecab6336304feace83e87b049a2e488e17d1e88c2851e784becbe"
     },
     "XM": {
       "ruta": "Data/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv",
-      "sha256": "56db2e52a430619794277c3d0682c5e815318166541b7132834946566ab7c569"
+      "sha256": "fe51fd1cdcbd229ef66b44e81d5312d0f3537ce237873bf52d4a25397f48e975"
     }
   },
   "archivos": [
+    {
+      "archivo": "INFORME_METRICAS.txt",
+      "bytes": 26005,
+      "sha256": "8264f667d83c51d3769f2ce8919ec9c9096097f61c5dbd259e3c649d43e2bdaf"
+    },
     {
       "archivo": "cobertura_experimento.csv",
       "bytes": 710,
@@ -25,8 +30,8 @@
     },
     {
       "archivo": "configuracion.json",
-      "bytes": 4658,
-      "sha256": "e7f4992d2b1b4e0c8057842377e50bcace68ddcb086efe99119411b58e03be70"
+      "bytes": 4560,
+      "sha256": "5c860e57c09d0cf60e4a1450828d667d6715e093835cd8fec90b1c324fd41878"
     },
     {
       "archivo": "curva_deteccion.csv",
@@ -45,13 +50,8 @@
     },
     {
       "archivo": "ejecuciones.csv",
-      "bytes": 843,
-      "sha256": "7e9da8d61552a66033bdbfb831d1be48fe48355b18bac57fc1eef6d87c0a413c"
-    },
-    {
-      "archivo": "INFORME_METRICAS.txt",
-      "bytes": 26355,
-      "sha256": "761a7a1dc7201faf21a3511afa8eafa8a62358d2f86de7914b32869136708bdf"
+      "bytes": 845,
+      "sha256": "cd18e1cfc1908940a41fbdbf69d104811d6852ddeb9fbf49ae0e34faae191a5d"
     },
     {
       "archivo": "inyecciones_omitidas.csv",
@@ -70,13 +70,13 @@
     },
     {
       "archivo": "puntajes_inyecciones.csv.gz",
-      "bytes": 4188908,
-      "sha256": "e075377d00ce7315cd2134d208fc645c9be90a4ad6f8c43eb589afca87d5608b"
+      "bytes": 4188959,
+      "sha256": "0d72b4e512c9d8769136363f8fa25efe64804518bfd2e518cc9bc66182c5f9de"
     },
     {
       "archivo": "puntajes_reales.csv.gz",
-      "bytes": 326184,
-      "sha256": "9a1db8de583853501c2b2a4b5f0022b9688358e7126e67ec562d6070c387519d"
+      "bytes": 326183,
+      "sha256": "26125ad637a47f9130d12018ca842ce0b53c14e4fda9925442d48f5b85afe6c4"
     },
     {
       "archivo": "puntos_operativos_nativos.csv",
@@ -95,13 +95,13 @@
     },
     {
       "archivo": "verificacion.json",
-      "bytes": 951,
-      "sha256": "fe2abcaa8caf8422d836e03ad5623a0ccfe2c9a132a07a8810be13f2326da603"
+      "bytes": 927,
+      "sha256": "9ad6de60ed418529ba60bb2f3332aafe430aa97943497ffeb4747cabd0ba8bc1"
     },
     {
       "archivo": "verificacion_contra_4_2.json",
-      "bytes": 3239,
-      "sha256": "3258c4ec9077feab4a4da7faae7a06a50d49aa870576f339917f1ae5bce88181"
+      "bytes": 3126,
+      "sha256": "a49729a2e88d4ed9709b384201eba13dcb5d50d081c59bf86e34c8833fd80a39"
     }
   ]
 }

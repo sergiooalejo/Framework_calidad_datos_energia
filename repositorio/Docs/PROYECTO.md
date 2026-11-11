@@ -9,7 +9,8 @@ declara cierre académico, aceptación del director ni despliegue en producción
 Evaluar la calidad de registros administrativos abiertos del sector energético colombiano
 mediante perfilamiento, reglas de negocio, control estadístico y detección de anomalías.
 El resultado se consume como tablas de indicadores, alertas trazables y evidencia comparativa
-para el equipo de investigación y el director de la maestría. El tablero es trabajo futuro.
+para el equipo de investigación y el director de la maestría. La primera versión del tablero
+Streamlit está implementada; el cierre académico y el despliegue productivo siguen pendientes.
 
 Las fuentes principales son EPM, CHEC, SSPD ZNI y XM/SIMEM. Las fuentes en revisión,
 incluidas SSPD-NR y candidatas CREG, se conservan separadas y no se incorporan a la matriz
@@ -20,7 +21,7 @@ de marco conceptual; no convierten las metas propuestas del proyecto en obligaci
 |---|---|---|
 | OE1: dimensiones, métricas e indicadores | Matriz de 19 controles y scorecard | Aprobar umbrales y completar evidencia externa |
 | OE2: caracterización y reglas | Fichas, perfiles, adaptadores y selección de fuentes | Validar semántica, catálogos y alcance regulatorio |
-| OE3: framework | Código de preparación, cartas, detectores y evaluación | Empaquetado definitivo, contenedor y tablero |
+| OE3: framework | Código, paquete, contenedor, tablero y evaluación | Aprobación académica y validación externa |
 | OE4: comparación con procedimientos tradicionales | Experimentos, sensibilidad y métricas | Validación externa, contraste de hipótesis y reproducción entre ambientes/versiones |
 
 Roles propuestos: responsable de datos, reglas de negocio, métricas/anomalías, validación
@@ -123,8 +124,9 @@ límites: SSPD y XM no tienen niveles equivalentes a los de EPM/CHEC.
    responsables, umbrales, unidades estadísticas y técnica principal. Incorporar resultados
    y cambios metodológicos en el documento oficial de tesis. Las implementaciones ya existen.
 2. **Hito 5:** formalizar paquete y configuración ejecutable de reglas, fijar entorno de
-   entrenamiento definitivo, contenedor, tablero y bitácora de incidentes. La CLI local de
-   esta entrega facilita la ejecución; no certifica que todo el Hito 5 esté terminado.
+   entrenamiento definitivo, contenedor, tablero Streamlit y bitácora de incidentes. La CLI
+   local y la primera app Streamlit de esta entrega facilitan la ejecución; no certifican que
+   todo el Hito 5 esté terminado.
 3. **Hito 6:** contrastar alertas y causas con evidencia externa, evaluar H1 o reformularla
    con fundamento, medir reproducción en ambientes y descargas independientes, entregar
    documento final y sustentación con evidencia por objetivo.

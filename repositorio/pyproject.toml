@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "framework-calidad-datos-energia"
+version = "0.1.0"
+description = "Componentes reutilizables para calidad de datos energéticos"
+requires-python = ">=3.11"
+dependencies = ["pandas>=2.3,<3", "PyYAML>=6.0,<7"]
+
+[tool.setuptools.packages.find]
+where = ["Code"]
+

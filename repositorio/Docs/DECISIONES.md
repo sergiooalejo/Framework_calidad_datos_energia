@@ -294,3 +294,44 @@ regulatoria. Son evidencia para tomar estas decisiones.
 ## Texto para enviar al director
 
 > Consolidamos en un único documento las decisiones pendientes de los Hitos 3 y 4: responsables, umbrales, catálogos CHEC, evidencia de exactitud y oportunidad, reproducibilidad, método principal, valor X, prevalencia, scorecard y alcance de niveles. Solicitamos confirmar o ajustar cada propuesta y registrar la versión aprobada de la matriz OE1 y del protocolo del Hito 4.
+
+## 9. Artefacto del Hito 5: Streamlit
+
+| Decisión | Propuesta | Motivo | Estado |
+|---|---|---|---|
+| Tecnología del tablero | Streamlit | Fue sugerida por el profesor y permite mantener la visualización junto al código y las salidas reproducibles. | Adoptada para la primera versión |
+| Fuente de visualización | `repositorio/Outputs/` | Evita recalcular o alterar los experimentos mientras se valida el artefacto. | Adoptada |
+| Alcance inicial | Resumen, dimensiones DAMA-DMBOK, alertas sistémicas, métricas y trazabilidad | Cubre las salidas disponibles de los Hitos 3 y 4 sin inventar resultados nuevos. | Adoptado |
+| Límites | No descarga, no modifica fuentes y no confirma por sí sola una alerta como error | Una señal estadística requiere revisión y evidencia antes de convertirse en incidente confirmado. | Adoptado |
+
+La primera implementación está en `repositorio/app_streamlit.py` y su entorno en
+`repositorio/Environment/requirements-streamlit.txt`. Quedan pendientes el empaquetado final,
+Docker, la bitácora operativa de incidentes y la aprobación metodológica de umbrales y reglas.
+
+## 10. Formalización del paquete Python
+
+Se creó `Code/framework_calidad` como API reutilizable para carga, perfilamiento, evaluación de
+reglas, detectores y reportes. Los scripts históricos permanecen intactos para conservar la
+trazabilidad de los resultados de Hitos 3 y 4; la migración de cada experimento al paquete será
+gradual y se aceptará únicamente si reproduce sus salidas.
+
+La configuración utilizada para esta primera formalización es `Outputs/calidad/matriz_oe1.yaml`.
+Sus umbrales conservan el estado `propuesta_metodologica_no_aprobada` cuando corresponde; el
+hecho de mover una regla a YAML no significa que el profesor ya la haya aprobado.
+
+La revisión de cartas se generalizó con un control estructural para EPM, CHEC, SSPD y XM. El
+análisis detallado de señales de EPM se conserva como complemento; no se extrapolan sus criterios
+a las demás fuentes sin una validación específica.
+
+## 11. Metadatos de ejecución
+
+La CLI conserva el comando existente y ahora genera un manifiesto JSON por etapa en
+`Outputs/ejecuciones/`. El manifiesto incluye fecha UTC, etapa, versión del paquete, semilla,
+versión de Python y SHA-256 de las entradas. Esto permite saber con qué archivos se produjo una
+salida sin alterar los datos originales.
+
+## 12. Bitácora de incidentes
+
+Se creó una bitácora inicial vacía con campos para fuente, período, regla, dimensión, descripción,
+severidad, responsable, estado, evidencia, acción y fechas. Se evita precargar incidentes no
+confirmados para no presentar alertas estadísticas como errores probados.

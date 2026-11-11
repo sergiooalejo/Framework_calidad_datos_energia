@@ -2,61 +2,66 @@
   "entradas": {
     "EPM": {
       "ruta": "Data/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv",
-      "sha256": "98acd40e8d2b92433b1dfc60422228f26f53ab331fd600631f03f830e7ba38f4"
+      "sha256": "b974a37a171b9178476fbd2baba21470e8845076af105ef9c178e80690f09920"
     },
     "CHEC": {
       "ruta": "Data/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv",
-      "sha256": "05865b094a4cc4eb9f822ed2af686a11a8905d6606f40bb554f5bb5258e3c53f"
+      "sha256": "1f34f85ada431220a39b2bacf10a1dd09bd440b3e7eab61b61d53094508af08c"
     },
     "SSPD": {
       "ruta": "Data/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv",
-      "sha256": "c0beb6d6800de043e91dfd0def5ee619201a579c4013fd65e9255d6e1479d625"
+      "sha256": "cc92ffc4f89ecab6336304feace83e87b049a2e488e17d1e88c2851e784becbe"
     },
     "XM": {
       "ruta": "Data/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv",
-      "sha256": "56db2e52a430619794277c3d0682c5e815318166541b7132834946566ab7c569"
+      "sha256": "fe51fd1cdcbd229ef66b44e81d5312d0f3537ce237873bf52d4a25397f48e975"
     }
   },
   "archivos": [
     {
-      "archivo": "calibracion_resumen.csv",
-      "bytes": 1775,
-      "sha256": "b953168051e5505c2654c5b940443427f0cd123aa87b237715f8781ee96162b8"
+      "archivo": "INFORME_REGLA_SISTEMICA.txt",
+      "bytes": 22335,
+      "sha256": "acceb8e14309bfa40023c281a0e199968a7dc4560ccc8b465c1a6ce0052a5071"
     },
     {
       "archivo": "calibracion_X.csv",
-      "bytes": 85507,
-      "sha256": "ee4e3914879f0b4cba9e29241232cbaaf4586f0177b15c67f48618bb77fd1629"
+      "bytes": 84822,
+      "sha256": "fae625dbf2ce117b94b1014736bc9ac7c37b601863c59c99927e066655466ad3"
+    },
+    {
+      "archivo": "calibracion_resumen.csv",
+      "bytes": 1765,
+      "sha256": "5f8c60f5fc969e1dbb9966f0c6968e222e1ebe63b80f5080446de0b608e7fa61"
     },
     {
       "archivo": "catalogo_alertas_sistemicas.csv",
-      "bytes": 31151,
-      "sha256": "b34c4c735882340f89960a1e32d8d15cd306681dc0302fbf97d22e96eb50f258"
+      "bytes": 30923,
+      "sha256": "6bb87d55c8a0f327a4b422dc5610daa71f72aedccaeab5d189ecb2c1e547c669"
     },
     {
       "archivo": "composicion_alertas_meses_plan.csv",
-      "bytes": 8456,
-      "sha256": "2e9aab760d9f2b7f928a0976c46dcab425e135004f2d64739fa79a92756bdf6d"
+      "bytes": 8329,
+      "sha256": "ce27d817bf97317021ac33677b4a173563f11170492ac13c0b9af4d0374e3b21"
     },
     {
       "archivo": "configuracion.json",
-      "bytes": 4305,
-      "sha256": "c9d62f5cedefc4e53128015bfaba38388a0e40acbc6d655ce907a59182a8eeaf"
+      "bytes": 4227,
+      "sha256": "c74404934ba20ae9ab91b52aff73e26dfffb40c6d6291e778ffeb038640c1257"
     },
     {
       "archivo": "contraste_componentes.csv",
-      "bytes": 3094,
-      "sha256": "2b0b230342bf4714cf3a00ce239368862a15695f600a3008a27fd706ae20c3cd"
+      "bytes": 3072,
+      "sha256": "598d85735e313cd5a4ea9f45efef88747b0df8f726888b1f682d2dd54a9bd5b9"
     },
     {
       "archivo": "costo_enmascaramiento_4_2.csv",
-      "bytes": 3618,
-      "sha256": "245fcf769f67d00389939402512cfaa1afe5e4634f7262c575fb54f3aa43133d"
+      "bytes": 3553,
+      "sha256": "cbb331dd3ce7487d9d98a11e75e0cd4d91bff368727efed9bc048313ba585d31"
     },
     {
       "archivo": "efecto_regla_sobre_alertas_reales.csv",
-      "bytes": 10060,
-      "sha256": "8b0ae01e10e34f2a96cf4c998b4543d2ec0f253836f0a779563e7599b3437465"
+      "bytes": 9933,
+      "sha256": "173480c36052a77b70c8671c20f3a151bf08890f4b5935c22fae584594543d9a"
     },
     {
       "archivo": "evidencia_externa/epm_tarifas_energia_2020-01.pdf",
@@ -90,53 +95,48 @@
     },
     {
       "archivo": "evidencia_externa/referencias_documentales.csv",
-      "bytes": 6677,
-      "sha256": "6364b5a22fe795bc521cb808d5546c4197ae71a92da1214d0ec17c84d08813fb"
+      "bytes": 6665,
+      "sha256": "6bbf1325402c9ab11044dfbce1fe35375c247b5c6edc2be34492c82e2db52faa"
     },
     {
       "archivo": "evidencia_externa/tarifas_epm_publicadas.csv",
-      "bytes": 2457,
-      "sha256": "c651fc9c3ec1f6c92b75c92f525dcfebb15d0e4f4e5c99397338432da32740dc"
+      "bytes": 2410,
+      "sha256": "a7c3500186dd359ba2a110bb302e246ef670c278b2265b6b055e7d22824d07a9"
     },
     {
       "archivo": "fracciones_mensuales.csv",
-      "bytes": 103387,
-      "sha256": "531202723d50ff3ccc1ec202e6ffdbf6879303810e3be63fdb8dd99735f5a871"
-    },
-    {
-      "archivo": "INFORME_REGLA_SISTEMICA.txt",
-      "bytes": 22574,
-      "sha256": "13ae413c6709be496806cdb48252c4be64b71d11b9a72356aa0cb236adfed7b2"
+      "bytes": 102114,
+      "sha256": "4d2fcb2bd73e5533c3b10a8ccdc6dd14782615dd6f518fba126199930773e296"
     },
     {
       "archivo": "inventario_series_por_variante.csv",
-      "bytes": 297,
-      "sha256": "dac694a61793311d2514966575df4443b32e5f14813cf17577518548b2cd71a7"
+      "bytes": 291,
+      "sha256": "30ca31e64e7d5d1973c36071f1621975a7d475bde53f51e2bcc93f4e6419a6ee"
     },
     {
       "archivo": "reproduccion_hito2.csv",
-      "bytes": 1039,
-      "sha256": "38ecbcfa336c38f39923d5080151e6b728140dfa6bb5031da81c14f86783a97f"
+      "bytes": 1014,
+      "sha256": "4dfac5e059ce00a5da7d64d7c7713adb32adb9816cb3bfc3a8bfa16131e5fc08"
     },
     {
       "archivo": "tamano_componentes_epm.csv",
-      "bytes": 53699,
-      "sha256": "fda415a9638cae94b5e1d83a6f94435ac3fef83ac0f1cfa9ec4424a136436a0a"
+      "bytes": 52752,
+      "sha256": "bed4e02e0dc79c737844335188749e560c61926d6330c83fea83265942f611cc"
     },
     {
       "archivo": "verificacion.json",
-      "bytes": 1143,
-      "sha256": "68414ffd6bb296e012196d6aeb8ab9601cfc4b84e08d01ced1ed807c3f0719d8"
+      "bytes": 1124,
+      "sha256": "216423efa3c79363559f4c6a5f57b57fd9738e367c47f1d6f665213f5efaf01a"
     },
     {
       "archivo": "verificacion_suma_componentes.csv",
-      "bytes": 885,
-      "sha256": "149d074d1cd9fe6fcde4d3eaef31ed7ccc5b0ae4485c192bffe78baae1112c71"
+      "bytes": 866,
+      "sha256": "3bb8db40e8d422163d9427083af6d137917c83f8c7559ff027583ff2f355ba82"
     },
     {
       "archivo": "verificacion_transcripcion_pdf.csv",
-      "bytes": 7044,
-      "sha256": "6d8c65c1f7185763d6c28ee62d95a4b504593a236b182556f90dc7008b53252c"
+      "bytes": 6935,
+      "sha256": "18ca078fd1604cf1125e060064200b8d438d3a5152391292f18f6f0b05b9467c"
     }
   ]
 }

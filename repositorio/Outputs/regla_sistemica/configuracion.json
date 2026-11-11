@@ -32,33 +32,33 @@
   "entradas": {
     "EPM": {
       "ruta": "Data/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv",
-      "sha256": "98acd40e8d2b92433b1dfc60422228f26f53ab331fd600631f03f830e7ba38f4"
+      "sha256": "b974a37a171b9178476fbd2baba21470e8845076af105ef9c178e80690f09920"
     },
     "CHEC": {
       "ruta": "Data/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv",
-      "sha256": "05865b094a4cc4eb9f822ed2af686a11a8905d6606f40bb554f5bb5258e3c53f"
+      "sha256": "1f34f85ada431220a39b2bacf10a1dd09bd440b3e7eab61b61d53094508af08c"
     },
     "SSPD": {
       "ruta": "Data/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv",
-      "sha256": "c0beb6d6800de043e91dfd0def5ee619201a579c4013fd65e9255d6e1479d625"
+      "sha256": "cc92ffc4f89ecab6336304feace83e87b049a2e488e17d1e88c2851e784becbe"
     },
     "XM": {
       "ruta": "Data/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv",
-      "sha256": "56db2e52a430619794277c3d0682c5e815318166541b7132834946566ab7c569"
+      "sha256": "fe51fd1cdcbd229ef66b44e81d5312d0f3537ce237873bf52d4a25397f48e975"
     }
   },
   "cuarentena_EPM": {
     "ruta": "Outputs/cuarentena_bootstrap/EPM/cuarentena_registros.csv",
-    "sha256": "d91f1d5ba85558f90955c5b225fff4c447739090f4e49e150bc37eafb7a0de15"
+    "sha256": "9db4fb8622b152923b589aa49afde94e64932e2f26e4a3bce13ab6031c90bc35"
   },
   "dependencias": {
-    "Docs/Antecedentes/plan_hitos_3-6_detallado.txt": "1d04173ff2951d739bd8c2b3346cfcf34627fdeb3f4c025f30908a401e39857c",
-    "Outputs/adaptadores/insumos_hito2/05_alertas_imr_reales.csv": "b29bf9ba1a26866cc2572667b27ef2a76b028cc62f7b4a96d83625f9781f9c2d",
-    "Outputs/adaptadores/insumos_hito2/00_resumen.json": "c720d89c4847bef7daa07ffe3137b558ce6345e20e554a98e366ec36a2f55a39",
-    "Outputs/adaptadores/insumos_hito2/02_catalogo_variantes.csv": "08d3d6d93d530a378f2331755c7ef1d008b8c9197a053ce249028e0cd763eee4",
+    "Docs/Antecedentes/plan_hitos_3-6_detallado.txt": "048aa5be0109314c1c528bba202957687dfbfce7ea96aac5f5c272338d3ec45b",
+    "Outputs/adaptadores/insumos_hito2/05_alertas_imr_reales.csv": "de0f7a53a5f18b912813f25d002601f471a523ebd2a2cbf566ebce42ec732084",
+    "Outputs/adaptadores/insumos_hito2/00_resumen.json": "244aea0b8e3399d18cd8a53f4d5568b74f1b35d380a9cd32f7ed35281c4d6843",
+    "Outputs/adaptadores/insumos_hito2/02_catalogo_variantes.csv": "c45cf2504c74db5a4933f61b225e060442898a0728d511c4cceaf2ca2153064b",
     "Outputs/sensibilidad/efecto_regla_sistemica_inyecciones.csv": "c0e44a9782979c5da5c95399511d99d150cdc98a3d3834a14e8f0d14946510bd",
-    "Code/Modeling/sensibilidad/analisis_sensibilidad.py": "33a03c3bd908f0975b8f759e284178f709f90fc32a6c184ce1575510661275ce",
-    "Code/Modeling/detectores/zscore_robusto.py": "3fd8f9e9826b555ad0bd731ed772e5d10b4f23e238582d86671a5065de91eaee"
+    "Code/Modeling/sensibilidad/analisis_sensibilidad.py": "412cd43a29ba30b49e88e32e16583a103efa4ad97865cb20211c4cfb36792944",
+    "Code/Modeling/detectores/zscore_robusto.py": "48006493c5dd59567ca26bf5cab7db930bcdac24e0c2768eff4921b738a3c323"
   },
   "evidencia_externa": {
     "Outputs/regla_sistemica/evidencia_externa/epm_tarifas_energia_2020-01.pdf": "49f635522bb31f68ba5270492c835eacb5e3c0acd72d9c1d368690adc09ee4b3",
@@ -67,12 +67,12 @@
     "Outputs/regla_sistemica/evidencia_externa/epm_tarifas_energia_2020-07.pdf": "ac74b07c4d569596b59cc0b67221e84d5dd10eb17213fc8790a3d3872d27efc4",
     "Outputs/regla_sistemica/evidencia_externa/epm_tarifas_energia_2021-06.pdf": "3259037dd1181bace641eb1c2a99d202f8004053e316c85a4688650093fa1d09",
     "Outputs/regla_sistemica/evidencia_externa/epm_tarifas_energia_2021-07.pdf": "0a4209952eee22281ad1c601a692ba4165fdfa84309418cb77aa210500303679",
-    "Outputs/regla_sistemica/evidencia_externa/referencias_documentales.csv": "6364b5a22fe795bc521cb808d5546c4197ae71a92da1214d0ec17c84d08813fb",
-    "Outputs/regla_sistemica/evidencia_externa/tarifas_epm_publicadas.csv": "c651fc9c3ec1f6c92b75c92f525dcfebb15d0e4f4e5c99397338432da32740dc"
+    "Outputs/regla_sistemica/evidencia_externa/referencias_documentales.csv": "6bbf1325402c9ab11044dfbce1fe35375c247b5c6edc2be34492c82e2db52faa",
+    "Outputs/regla_sistemica/evidencia_externa/tarifas_epm_publicadas.csv": "a7c3500186dd359ba2a110bb302e246ef670c278b2265b6b055e7d22824d07a9"
   },
   "versiones": {
     "python": "3.14.6",
-    "numpy": "2.5.4",
+    "numpy": "2.3.5",
     "pandas": "2.3.3"
   }
 }

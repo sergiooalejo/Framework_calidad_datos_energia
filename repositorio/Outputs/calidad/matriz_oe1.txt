@@ -395,14 +395,14 @@ Los tipos son una clasificación, no diez reglas adicionales ni una exigencia de
 
 Valores calculados por [`medir_matriz_oe1.py`](medir_matriz_oe1.py) sobre los CSV de
 `fuentes_datos/datos/`, aplicando las definiciones de población, numerador y denominador
-de esta misma matriz. Última ejecución: 2026-11-10T01:29:15Z.
+de esta misma matriz. Última ejecución: 2026-11-10T15:31:02Z.
 
 | Archivo medido | Filas | SHA-256 |
 |---|---|---|
-| `Data/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv` | 3623 | `98acd40e8d2b92433b1dfc60422228f26f53ab331fd600631f03f830e7ba38f4` |
-| `Data/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv` | 40609 | `05865b094a4cc4eb9f822ed2af686a11a8905d6606f40bb554f5bb5258e3c53f` |
+| `Data/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv` | 3623 | `b974a37a171b9178476fbd2baba21470e8845076af105ef9c178e80690f09920` |
+| `Data/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv` | 40609 | `1f34f85ada431220a39b2bacf10a1dd09bd440b3e7eab61b61d53094508af08c` |
 | `Data/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_detalle-compressed.zip` | 91840 | `ac2231358b78eeadb7a2bd99b5311e8a34467130d34d246efb19cb05bbcd3257` |
-| `Data/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv` | 61 | `56db2e52a430619794277c3d0682c5e815318166541b7132834946566ab7c569` |
+| `Data/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv` | 61 | `fe51fd1cdcbd229ef66b44e81d5312d0f3537ce237873bf52d4a25397f48e975` |
 
 > Estos hashes no coinciden con `fuentes_datos/verificaciones/manifiesto_archivos.json`.
 > La causa está identificada y no es corrupción: el repositorio no declara política de fin

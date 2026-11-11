@@ -1,0 +1,5 @@
+﻿archivo,columnas,estado,filas,filas_vacias,fuente,observacion,periodos,series
+Outputs/cartas/EPM/cartas_log_epm.csv,8,revisada,60,0,EPM,Revisión estructural; las señales requieren interpretación específica de la fuente.,0,22
+Outputs/cartas/CHEC/cartas_log_chec.csv,8,revisada,276,0,CHEC,Revisión estructural; las señales requieren interpretación específica de la fuente.,0,138
+Outputs/cartas/SSPD/cartas_log_sspd.csv,8,revisada,361,0,SSPD,Revisión estructural; las señales requieren interpretación específica de la fuente.,0,158
+Outputs/cartas/XM/cartas_log_xm.csv,8,revisada,1,0,XM,Revisión estructural; las señales requieren interpretación específica de la fuente.,0,1

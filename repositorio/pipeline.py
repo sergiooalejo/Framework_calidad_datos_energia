@@ -8,6 +8,7 @@ import json
 import os
 import subprocess
 import sys
+from datetime import datetime, timezone
 
 ROOT = Path(__file__).resolve().parent
 PREP = 'Code/Data_Acquisition_and_Understanding/'
@@ -17,7 +18,7 @@ TASKS = {
     'trazabilidad': [PREP + 'trazabilidad/trazabilidad.py'],
     'cuarentena': [PREP + 'cuarentena_bootstrap/EPM/cuarentena.py', PREP + 'cuarentena_bootstrap/cuarentena_fuentes.py'],
     'cartas': [MODEL + f'cartas/{source}/cartas_log_{source.lower()}.py' for source in ('EPM', 'CHEC', 'SSPD', 'XM')],
-    'revision-cartas': [MODEL + 'cartas/EPM/revision_cartas_epm.py'],
+    'revision-cartas': [MODEL + 'cartas/revision_cartas_fuentes.py', MODEL + 'cartas/EPM/revision_cartas_epm.py'],
     'matriz': [PREP + 'calidad/medir_matriz_oe1.py'],
     'bootstrap': [PREP + 'cuarentena_bootstrap/bootstrap_categorias.py'],
     'zscore': [MODEL + 'detectores/zscore_robusto.py'],
@@ -41,10 +42,45 @@ def run(args):
                    env=dict(os.environ, PYTHONDONTWRITEBYTECODE='1', PYTHONIOENCODING='utf-8'))
 
 
+def execution_manifest(stage, seed=None):
+    """Registra la ejecución y las huellas de archivos de entrada disponibles."""
+    files = []
+    data_root = ROOT / 'Data/datos'
+    if data_root.exists():
+        for path in sorted(data_root.rglob('*')):
+            if path.is_file():
+                files.append({
+                    'ruta': str(path.relative_to(ROOT)),
+                    'sha256': hashlib.sha256(path.read_bytes()).hexdigest(),
+                    'bytes': path.stat().st_size,
+                })
+    payload = {
+        'ejecucion_utc': datetime.now(timezone.utc).isoformat(),
+        'etapa': stage,
+        'version_paquete': '0.1.0',
+        'semilla': seed,
+        'python': sys.version,
+        'archivos_entrada': files,
+    }
+    out = ROOT / 'Outputs/ejecuciones'
+    out.mkdir(parents=True, exist_ok=True)
+    stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+    target = out / f'manifiesto_{stamp}.json'
+    target.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding='utf-8')
+    return target
+
+
 def validate():
     """Verifica estructura y datos sin regenerar resultados ni requerir paquetes externos."""
     manifest = list(csv.DictReader((ROOT / 'Docs/MIGRACION.csv').open(encoding='utf-8')))
-    absent = [r['destino'] for r in manifest if not (ROOT / r['destino'].split('#')[0]).is_file()]
+    regenerable_prefixes = ('Outputs/sensibilidad/figuras/', 'Outputs/metricas/figuras/',
+                            'Outputs/regla_sistemica/figuras/')
+    absent = [r['destino'] for r in manifest
+              if not (ROOT / r['destino'].split('#')[0]).is_file()
+              and not r['destino'].split('#')[0].startswith(regenerable_prefixes)]
+    regenerable_missing = [r['destino'] for r in manifest
+                           if not (ROOT / r['destino'].split('#')[0]).is_file()
+                           and r['destino'].split('#')[0].startswith(regenerable_prefixes)]
     if absent:
         raise RuntimeError(f'Faltan archivos: {absent}')
     raw = [r for r in manifest if r['destino'].startswith('Data/datos/')]
@@ -60,13 +96,15 @@ def validate():
             if not (ROOT / entry).is_file():
                 raise RuntimeError(f'No existe el comando: {entry}')
     print(json.dumps({'estado': 'correcto', 'archivos_mapeados': len(manifest),
-                      'scripts_sintaxis_correcta': len(scripts), 'datos_integros': len(raw)}, indent=2))
+                      'scripts_sintaxis_correcta': len(scripts), 'datos_integros': len(raw),
+                      'figuras_regenerables_ausentes': len(regenerable_missing)}, indent=2))
 
 
 def main():
     parser = argparse.ArgumentParser(description='Framework de calidad de datos de energía; ejecutar desde cualquier carpeta.')
     parser.add_argument('accion', choices=['listar', 'validar', 'pruebas', 'auditar', 'ejecutar'])
     parser.add_argument('etapa', nargs='?', choices=['baseline', *TASKS])
+    parser.add_argument('--semilla', type=int, default=None, help='Semilla declarada para la ejecución')
     args = parser.parse_args()
     if args.accion == 'ejecutar' and not args.etapa:
         parser.error('ejecutar requiere una etapa; consultar listar')
@@ -85,6 +123,8 @@ def main():
         for folder, _ in TESTS:
             run([MODEL + folder + '/verificar_resultados.py'])
     elif args.accion == 'ejecutar':
+        manifest = execution_manifest(args.etapa, args.semilla)
+        print(f'Manifiesto: {manifest.relative_to(ROOT)}', flush=True)
         for task in BASELINE if args.etapa == 'baseline' else (args.etapa,):
             for script in TASKS[task]:
                 print(f'Ejecutando {script}', flush=True)

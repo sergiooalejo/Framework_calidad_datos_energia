@@ -17,6 +17,7 @@ repositorio/
 │   ├── Data_Acquisition_and_Understanding/  # Calidad, adaptadores, trazabilidad y cuarentena
 │   ├── Modeling/                          # Cartas, detectores y experimentos
 │   └── Evaluation/                        # Scorecard, niveles y costos
+├── Code/framework_calidad/                 # API reutilizable del framework
 ├── Data/                                  # Datos completos y evidencia de las fuentes
 ├── Sample_Data/                           # Diez filas por fuente, solo para inspección
 ├── Outputs/                               # Tablas, configuraciones, informes y figuras
@@ -56,6 +57,10 @@ bootstrap, scorecard y niveles/costos a partir de los datos y experimentos conse
 Estas etapas usan la biblioteca estándar. Escriben en Outputs y Data/verificaciones;
 no modifican los datos de entrada. Para comparar salidas conviene guardar una copia previa.
 
+Cada ejecución de `ejecutar` crea un manifiesto JSON en `Outputs/ejecuciones/` con fecha UTC,
+etapa, versión del paquete, semilla declarada, versión de Python y SHA-256 de los archivos de
+entrada. Por ejemplo: `python pipeline.py ejecutar scorecard --semilla 42`.
+
 ## Pruebas y auditoría científica
 
 El entorno local comprobado es Windows, Python 3.14.0, NumPy 2.3.5, pandas 2.3.3,
@@ -79,7 +84,72 @@ Los archivos `Environment/requirements-hito4-2.txt` y
 originales. Deben utilizarse en entornos separados si se pretende reproducir ese
 entrenamiento; pasar las auditorías locales no acredita identidad con aquellos ambientes.
 
+## Paquete reutilizable
+
+El paquete `Code/framework_calidad` separa responsabilidades comunes para cargar datos,
+perfilar columnas, evaluar reglas, aplicar detectores y escribir resultados. Se puede instalar
+en modo editable desde `repositorio/`:
+
+```powershell
+python -m pip install -e .
+```
+
+Los scripts históricos de `Code/` se conservan como evidencia. La migración de cada experimento
+al paquete será gradual y solo se aceptará si reproduce sus salidas.
+
+La configuración declarativa vigente se encuentra en
+`Outputs/calidad/matriz_oe1.yaml`. Allí están las ocho dimensiones, los tipos de regla, los
+indicadores, las fórmulas, los umbrales propuestos, la severidad y el estado de aprobación.
+El paquete expone `cargar_configuracion()` y `listar_indicadores()` para leerla sin codificar
+esas decisiones directamente en Python.
+
+## Tablero Streamlit del Hito 5
+
+Por sugerencia del profesor, el artefacto de visualización se implementa inicialmente en
+Streamlit. `app_streamlit.py` lee únicamente las salidas versionadas de `Outputs/`: scorecard,
+matriz de dimensiones, alertas sistémicas y métricas. No descarga datos, no cambia los CSV y
+no recalcula los experimentos. Para ejecutarlo en un entorno separado:
+
+```powershell
+python -m venv .venv-streamlit
+.venv-streamlit/Scripts/python -m pip install -r Environment/requirements-streamlit.txt
+.venv-streamlit/Scripts/streamlit run app_streamlit.py
+```
+
+En Linux/macOS se sustituye `Scripts` por `bin`. El tablero es la primera vista funcional del
+Hito 5; todavía deben completarse el empaquetado definitivo, el contenedor, la bitácora de
+incidentes y la revisión de aceptación metodológica.
+
+La barra lateral incluye un selector de etapas autorizadas y el botón **Ejecutar etapa**.
+Permite ejecutar matriz OE1, cartas, bootstrap, detectores, métricas, scorecard y niveles/costos.
+Requiere marcar la confirmación y permite declarar una semilla. La acción llama únicamente a
+la etapa seleccionada de `pipeline.py`, crea el manifiesto de ejecución y actualiza sus salidas.
+Después se debe pulsar `Rerun` para visualizar los nuevos resultados.
+
+La revisión de cartas ahora tiene dos niveles: una revisión estructural comparable para EPM,
+CHEC, SSPD y XM (`Outputs/cartas/revision_cartas_fuentes.csv`) y la revisión estadística
+detallada heredada de EPM. La primera no sustituye la interpretación específica de cada fuente.
+
 ## Ejecutar componentes
+
+## Ejecutar con Docker
+
+Con Docker instalado, desde `repositorio/`:
+
+```bash
+docker build -t calidad-energia-streamlit .
+docker run --rm -p 8501:8501 calidad-energia-streamlit
+```
+
+También se puede usar Compose:
+
+```bash
+docker compose up --build
+```
+
+El tablero quedará disponible en `http://localhost:8501`. La imagen contiene el código,
+las dependencias y las salidas versionadas; no incluye los datasets completos de `Data/datos/`
+ni descarga información durante el arranque.
 
 ```powershell
 python pipeline.py ejecutar zscore
@@ -97,6 +167,19 @@ un script directamente y consultar sus parámetros. Los datos completos están i
 no se realizan descargas de los portales como parte de estos comandos.
 
 ## Lectura y trazabilidad
+
+- [Informe de validación del Hito 5](Docs/INFORME_VALIDACION_HITO5.md): comandos, resultados,
+  evidencia y limitaciones.
+- [Cierre del Hito 5](Docs/CIERRE_HITO5.md): entregables terminados y pendientes académicos.
+
+- [Diagrama de componentes del Hito 5](Docs/DIAGRAMA_COMPONENTES_HITO5.md): flujo del artefacto,
+  entradas, procesos, salidas, Streamlit y Docker.
+- [Guía de ejecución del Hito 5](Docs/GUIA_EJECUCION_HITO5.md): instalación, orden de etapas,
+  validación y solución de uso básico.
+
+La bitácora inicial está en `Outputs/incidentes/bitacora_incidentes.csv` y se visualiza en la
+pestaña **Incidentes**. Solo deben registrarse alertas confirmadas o formalmente abiertas después
+de revisión; el tablero no convierte automáticamente una señal estadística en un incidente.
 
 - [Proyecto y resultados](Docs/PROYECTO.md): alcance, correspondencia de todas las actividades,
   interpretación científica y criterios de aceptación.

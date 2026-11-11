@@ -1,0 +1,4 @@
+# Aplicación Streamlit del Hito 5. Python 3.14 recomendado.
+streamlit==1.50.0
+pandas==2.3.3
+PyYAML==6.0.3
