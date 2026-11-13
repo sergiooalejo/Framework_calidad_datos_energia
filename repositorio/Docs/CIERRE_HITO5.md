@@ -9,7 +9,7 @@ y desde un selector controlado en el tablero.
 ## Entregables completados
 
 - Paquete Python reutilizable en `Code/framework_calidad/`.
-- Configuración YAML de reglas en `Outputs/calidad/matriz_oe1.yaml`.
+- Configuración YAML de reglas en `Data/gold/outputs/calidad/matriz_oe1.yaml`.
 - CLI con manifiestos, semilla y SHA-256.
 - Tablero Streamlit con filtros, descripciones de reglas, ejecución controlada e incidentes.
 - Revisión estructural de cartas para EPM, CHEC, SSPD y XM.

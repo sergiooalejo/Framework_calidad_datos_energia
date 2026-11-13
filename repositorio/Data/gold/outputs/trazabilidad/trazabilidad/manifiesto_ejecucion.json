@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "generado_utc": "2026-11-13T15:57:12.628280+00:00",
+  "algoritmo": "SHA-256",
+  "clave_contenido": "JSON UTF-8 canónico de todas las columnas, ordenadas por nombre",
+  "archivos": [
+    {
+      "dataset_id": "sfcd-b3ey",
+      "archivo": "Data/bronze/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv",
+      "sha256": "b974a37a171b9178476fbd2baba21470e8845076af105ef9c178e80690f09920",
+      "bytes": 423202,
+      "filas": 3623,
+      "columnas": 12,
+      "salida_trazabilidad": "Data/silver/verificaciones/trazabilidad_filas/sfcd-b3ey_filas.csv",
+      "duplicados_por_contenido": 10
+    },
+    {
+      "dataset_id": "c698-wqig",
+      "archivo": "Data/bronze/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv",
+      "sha256": "1f34f85ada431220a39b2bacf10a1dd09bd440b3e7eab61b61d53094508af08c",
+      "bytes": 9586122,
+      "filas": 40609,
+      "columnas": 24,
+      "salida_trazabilidad": "Data/silver/verificaciones/trazabilidad_filas/c698-wqig_filas.csv",
+      "duplicados_por_contenido": 0
+    },
+    {
+      "dataset_id": "ebby-cjha-mensual",
+      "archivo": "Data/silver/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv",
+      "sha256": "cc92ffc4f89ecab6336304feace83e87b049a2e488e17d1e88c2851e784becbe",
+      "bytes": 1209834,
+      "filas": 15075,
+      "columnas": 18,
+      "salida_trazabilidad": "Data/silver/verificaciones/trazabilidad_filas/ebby-cjha-mensual_filas.csv",
+      "duplicados_por_contenido": 0
+    },
+    {
+      "dataset_id": "c1b851-mensual",
+      "archivo": "Data/silver/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv",
+      "sha256": "fe51fd1cdcbd229ef66b44e81d5312d0f3537ce237873bf52d4a25397f48e975",
+      "bytes": 4176,
+      "filas": 61,
+      "columnas": 10,
+      "salida_trazabilidad": "Data/silver/verificaciones/trazabilidad_filas/c1b851-mensual_filas.csv",
+      "duplicados_por_contenido": 0
+    }
+  ]
+}

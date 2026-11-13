@@ -141,7 +141,7 @@ def medir_xm():
     m["MAP01"] = _r(3, 3, "provisional_interno",
                     "Códigos EPMC/EPMD/STR02 y unidad kWh normalizados para el piloto; "
                     "decisión interna, no catálogo completo del mercado XM.")
-    defs = (_PROJECT_ROOT / 'Data/catalogos/XM/xm_definiciones_def01.yaml')
+    defs = (_PROJECT_ROOT / 'Data/silver/catalogos/XM/xm_definiciones_def01.yaml')
     m["DEF01"] = _r(10, 10, "provisional_interno",
                     "Catálogo operativo documenta las variables crudas y derivadas del piloto; "
                     "unidad y política de versión deben congelarse metodológicamente.") if defs.exists() else _r(None, None, "no_medible", "Falta catálogo operativo XM.")

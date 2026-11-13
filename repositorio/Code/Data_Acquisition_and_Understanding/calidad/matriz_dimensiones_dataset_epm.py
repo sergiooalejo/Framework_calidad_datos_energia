@@ -26,10 +26,10 @@ from pathlib import Path
 from typing import Any
 
 
-SCRIPT_DIR = (_PROJECT_ROOT / 'Outputs/calidad')
+SCRIPT_DIR = (_PROJECT_ROOT / 'Data/gold/outputs/calidad')
 PROJECT_DIR = _PROJECT_ROOT
 DEFAULT_INPUT = (
-    (_PROJECT_ROOT / 'Data/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv')
+    (_PROJECT_ROOT / 'Data/bronze/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv')
 )
 MISSING = {"", "na", "n/a", "null", "none"}
 MONTHS = {
@@ -266,12 +266,12 @@ def main() -> int:
                                "casos_conformes": ok, "casos_evaluados": evaluated,
                                "indicador_pct": score, "observacion": note})
 
-    indicators_path = (_PROJECT_ROOT / 'Outputs/calidad/indicadores_calidad_epm_por_columna.csv')
+    indicators_path = (_PROJECT_ROOT / 'Data/gold/outputs/calidad/indicadores_calidad_epm_por_columna.csv')
     with indicators_path.open("w", encoding="utf-8-sig", newline="") as stream:
         writer = csv.DictWriter(stream, fieldnames=list(indicators[0]))
         writer.writeheader()
         writer.writerows(indicators)
-    incidents_path = (_PROJECT_ROOT / 'Outputs/calidad/incidencias_calidad_epm.csv')
+    incidents_path = (_PROJECT_ROOT / 'Data/gold/outputs/calidad/incidencias_calidad_epm.csv')
     incident_rows = validity_failures + missing_cells + [
         {"registro_archivo": "", "columna": "*", "valor": "", "dimension": "Unicidad",
          "motivo": f"Filas duplicadas exactas adicionales: {duplicate_rows}"},
@@ -295,7 +295,7 @@ def main() -> int:
         "exactitud": "medida contra referencia" if args.reference else "no evaluable sin fuente de referencia",
         "nota": "Integridad, consistencia y razonabilidad se estiman con proxies descritos en los indicadores; revisar extremos estadísticos con reglas de negocio.",
     }
-    summary_path = (_PROJECT_ROOT / 'Outputs/calidad/resumen_calidad_epm.json')
+    summary_path = (_PROJECT_ROOT / 'Data/gold/outputs/calidad/resumen_calidad_epm.json')
     summary_path.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Registros analizados: {len(rows)}; columnas: {len(columns)}")
     print(f"Indicadores: {indicators_path}\nIncidencias: {incidents_path}\nResumen: {summary_path}")

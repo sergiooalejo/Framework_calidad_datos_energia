@@ -5,8 +5,8 @@ _PROJECT_ROOT = next(p for p in _ProjectPath(__file__).resolve().parents if (p /
 import csv, math, statistics
 from pathlib import Path
 ROOT=_PROJECT_ROOT
-src=(_PROJECT_ROOT / 'Data/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv')
-out=(_PROJECT_ROOT / 'Outputs/cartas/XM/cartas_log_xm.csv')
+src=(_PROJECT_ROOT / 'Data/silver/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv')
+out=(_PROJECT_ROOT / 'Data/gold/outputs/cartas/XM/cartas_log_xm.csv')
 rows=list(csv.DictReader(open(src,encoding='utf-8-sig')))
 rows=sorted(rows,key=lambda r:r['periodo'])
 vals=[float(r['demanda_kwh']) for r in rows if float(r['demanda_kwh'])>0]

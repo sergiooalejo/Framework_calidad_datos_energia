@@ -30,7 +30,7 @@ from sklearn.ensemble import IsolationForest
 from zscore_robusto import REF_CHANGES, WATCH_CHANGES, build_series, log_changes
 
 
-HERE = (_PROJECT_ROOT / 'Outputs/detectores')
+HERE = (_PROJECT_ROOT / 'Data/gold/outputs/detectores')
 SEED = 20261106
 N_ESTIMATORS = 300
 CONTAMINATION = "auto"
@@ -185,8 +185,8 @@ def main() -> None:
             "tasa_alerta_vigilancia": f"{signals / len(evaluation):.12g}",
         })
 
-    write_csv((_PROJECT_ROOT / 'Outputs/detectores/isolation_forest_referencia_vigilancia_detalle.csv'), detail)
-    write_csv((_PROJECT_ROOT / 'Outputs/detectores/isolation_forest_referencia_vigilancia_resumen.csv'), summary)
+    write_csv((_PROJECT_ROOT / 'Data/gold/outputs/detectores/isolation_forest_referencia_vigilancia_detalle.csv'), detail)
+    write_csv((_PROJECT_ROOT / 'Data/gold/outputs/detectores/isolation_forest_referencia_vigilancia_resumen.csv'), summary)
     config = {
         "metodo": "isolation_forest_referencia_vigilancia",
         "semilla": SEED,
@@ -203,7 +203,7 @@ def main() -> None:
         "entradas": inputs,
         "modelos": model_info,
     }
-    ((_PROJECT_ROOT / 'Outputs/detectores/isolation_forest_referencia_vigilancia_configuracion.json')).write_text(json.dumps(config, ensure_ascii=False, indent=2), encoding="utf-8")
+    ((_PROJECT_ROOT / 'Data/gold/outputs/detectores/isolation_forest_referencia_vigilancia_configuracion.json')).write_text(json.dumps(config, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"fuentes={len(summary)} series={sum(int(row['series_entrenamiento']) for row in summary)} vigilancia={len(detail)} señales={sum(int(row['señales_vigilancia']) for row in summary)}")
 
 

@@ -30,19 +30,19 @@ para el profesor y registro de aprobación se conservan en [DECISIONES.md](DECIS
 
 ## Arquitectura y correspondencia completa
 
-`Data → Code de preparación → Code de modelado → Code de evaluación → Outputs`.
+`Bronze → Code de preparación → Silver → Code de modelado → Gold`.
 Los scripts leen copias locales y guardan sus resultados dentro de esta carpeta. Cada script
 localiza la raíz mediante `project.json`, por lo que no depende del directorio de ejecución.
 Las rutas absolutas del equipo original no forman parte del contrato de ejecución.
 
-| Actividad de origen | Código en Code/ | Evidencia en Outputs/ |
+| Actividad de origen | Código en Code/ | Evidencia |
 |---|---|---|
 | 3.1: matriz OE1 | Data_Acquisition_and_Understanding/calidad | calidad |
 | 3.2: fichas y perfiles | Actividad documental; no tenía scripts propios | caracterizacion |
-| 3.3: réplica y adaptadores | Data_Acquisition_and_Understanding/adaptadores | adaptadores, incluidos insumos_hito2 |
+| 3.3: réplica y adaptadores | Data_Acquisition_and_Understanding/adaptadores | Data/silver/outputs/adaptadores, incluidos insumos_hito2 |
 | 3.4: evaluación CREG/XM | Actividad documental; no tenía scripts propios | seleccion_fuentes |
 | 3.5: cartas | Modeling/cartas, por fuente | cartas, por fuente |
-| 3.6: trazabilidad | Data_Acquisition_and_Understanding/trazabilidad | trazabilidad; tablas por fila en Data/verificaciones |
+| 3.6: trazabilidad | Data_Acquisition_and_Understanding/trazabilidad | trazabilidad; tablas por fila en Data/silver/verificaciones |
 | 3.7: cuarentena y bootstrap | Data_Acquisition_and_Understanding/cuarentena_bootstrap | cuarentena_bootstrap |
 | Documentación general | Consolidada en Docs | organizacion: inventario histórico |
 | 4.1: técnicas y calibración | Modeling/detectores | detectores |
@@ -59,7 +59,7 @@ protocolo distinto. Sus tablas originales se conservan como insumos de comparaci
 
 ## Datos, métodos e interpretación
 
-Los datos completos están en `Data/datos/`, incluidos ZIP y fuentes en revisión. Diccionarios,
+La clasificación medallón está documentada en [`Data/MEDALLION.md`](../Data/MEDALLION.md). Las copias de entrada están en `Data/bronze/datos/`, incluidos ZIP y fuentes en revisión; los agregados mensuales de SSPD y XM están en `Data/silver/datos/`. Diccionarios,
 catálogos, metadatos y verificaciones acompañan a cada fuente. `Sample_Data/` contiene solo
 pequeñas muestras identificadas por su procedencia; no sirve para reproducir las series largas.
 

@@ -13,7 +13,10 @@ RUN python -m pip install --no-cache-dir poetry==2.4.1 \
     && poetry config virtualenvs.create false \
     && poetry install --only main --no-interaction --no-ansi
 
-COPY Outputs ./Outputs
+COPY Data ./Data
+COPY Docs ./Docs
+COPY Environment ./Environment
+COPY project.json ./project.json
 COPY app_streamlit.py pipeline.py ./
 COPY .streamlit ./.streamlit
 

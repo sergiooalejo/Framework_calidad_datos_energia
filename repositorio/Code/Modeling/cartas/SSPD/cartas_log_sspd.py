@@ -5,8 +5,8 @@ _PROJECT_ROOT = next(p for p in _ProjectPath(__file__).resolve().parents if (p /
 import csv, math, statistics
 from pathlib import Path
 ROOT=_PROJECT_ROOT
-src=(_PROJECT_ROOT / 'Data/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv')
-out=(_PROJECT_ROOT / 'Outputs/cartas/SSPD/cartas_log_sspd.csv')
+src=(_PROJECT_ROOT / 'Data/silver/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv')
+out=(_PROJECT_ROOT / 'Data/gold/outputs/cartas/SSPD/cartas_log_sspd.csv')
 rows=list(csv.DictReader(open(src,encoding='utf-8-sig')))
 cats=('identificador_empresa','estrato_sector','ubicacion','tipo_conexion','tipo_lectura','tipo_factura')
 measures=('consumo_basico_sum','consumo_compl_sum','consumo_mayor800_sum','valor_total_sum')

@@ -21,7 +21,7 @@ from sklearn.ensemble import IsolationForest
 from isolation_forest_referencia_vigilancia import SEED, feature_rows
 from zscore_robusto import build_series, REF_CHANGES, WATCH_CHANGES
 
-HERE = (_PROJECT_ROOT / 'Outputs/detectores')
+HERE = (_PROJECT_ROOT / 'Data/gold/outputs/detectores')
 K = 5
 N_ESTIMATORS = 200
 
@@ -96,9 +96,9 @@ def main():
                 {"fuente": source, "metodo": "isolation_forest", "fold": fold, "tasa_objetivo_cartas": rate, "umbral": if_threshold, "series_entrenamiento": len(training_ids), "series_evaluacion": len(test_ids), "observaciones_vigilancia": observations, "señales_vigilancia": if_signals, "tasa_observada": if_signals / observations},
                 {"fuente": source, "metodo": "zscore_robusto", "fold": fold, "tasa_objetivo_cartas": rate, "umbral": z_threshold, "series_entrenamiento": len(training_ids), "series_evaluacion": len(test_ids), "observaciones_vigilancia": observations, "señales_vigilancia": z_signals, "tasa_observada": z_signals / observations},
             ])
-    write_csv((_PROJECT_ROOT / 'Outputs/detectores/calibracion_cv_tasa_igualada.csv'), output)
+    write_csv((_PROJECT_ROOT / 'Data/gold/outputs/detectores/calibracion_cv_tasa_igualada.csv'), output)
     config = {"grupos": K, "metodo_tasa_objetivo": "tasa de señales de cartas Hito 3", "no_usa_vigilancia_para_umbral": True, "fuentes": ["EPM", "CHEC", "SSPD", "XM"], "nota": "XM tiene tasa objetivo cero; el umbral queda infinito y no se esperan señales."}
-    ((_PROJECT_ROOT / 'Outputs/detectores/calibracion_cv_tasa_igualada_configuracion.json')).write_text(json.dumps(config, ensure_ascii=False, indent=2), encoding="utf-8")
+    ((_PROJECT_ROOT / 'Data/gold/outputs/detectores/calibracion_cv_tasa_igualada_configuracion.json')).write_text(json.dumps(config, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"filas={len(output)} archivo=calibracion_cv_tasa_igualada.csv")
 
 

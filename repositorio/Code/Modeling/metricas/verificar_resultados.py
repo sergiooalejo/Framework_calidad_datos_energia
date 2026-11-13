@@ -14,7 +14,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-HERE = (_PROJECT_ROOT / 'Outputs/metricas')
+HERE = (_PROJECT_ROOT / 'Data/gold/outputs/metricas')
 ROOT = _PROJECT_ROOT
 sys.dont_write_bytecode = True
 sys.path.insert(0, str((_PROJECT_ROOT / 'Code/Modeling/metricas')))
@@ -24,7 +24,10 @@ from metricas_base import (ERROR_TYPES, METHODS, f1_score, precision_at_prevalen
 TOL = 1e-12
 
 
-def digest(path):
+def digest(path, expected=None):
+    sys.path.insert(0, str(ROOT / 'Code/Modeling'))
+    from medallon_compat import historical_path
+    path = historical_path(path, expected)
     h = hashlib.sha256()
     with path.open('rb') as stream:
         for block in iter(lambda: stream.read(1 << 20), b''):
@@ -34,24 +37,24 @@ def digest(path):
 
 def main():
     sys.stdout.reconfigure(encoding='utf-8')
-    config = json.loads(((_PROJECT_ROOT / 'Outputs/metricas/configuracion.json')).read_text(encoding='utf-8'))
+    config = json.loads(((_PROJECT_ROOT / 'Data/gold/outputs/metricas/configuracion.json')).read_text(encoding='utf-8'))
     checks = []
     for entry in [*config['entradas'].values(), config['cuarentena_EPM']]:
-        assert digest(ROOT / entry['ruta']) == entry['sha256'], entry['ruta']
+        assert digest(ROOT / entry['ruta'], entry['sha256']) == entry['sha256'], entry['ruta']
     for path, expected in config['dependencias'].items():
-        assert digest(ROOT / path) == expected, path
+        assert digest(ROOT / path, expected) == expected, path
     checks.append('Datasets, cuarentena y dependencias conservan sus huellas')
-    manifest = json.loads(((_PROJECT_ROOT / 'Outputs/metricas/manifiesto_resultados.json')).read_text(encoding='utf-8')) \
-        if ((_PROJECT_ROOT / 'Outputs/metricas/manifiesto_resultados.json')).exists() else None
+    manifest = json.loads(((_PROJECT_ROOT / 'Data/gold/outputs/metricas/manifiesto_resultados.json')).read_text(encoding='utf-8')) \
+        if ((_PROJECT_ROOT / 'Data/gold/outputs/metricas/manifiesto_resultados.json')).exists() else None
 
     alphas = tuple(config['tasa_igualada']['tasas_objetivo'])
     prevalences = tuple(config['prevalencias_supuestas'])
-    real = pd.read_csv((_PROJECT_ROOT / 'Outputs/metricas/puntajes_reales.csv.gz'))
-    cases = pd.read_csv((_PROJECT_ROOT / 'Outputs/metricas/puntajes_inyecciones.csv.gz'))
-    thresholds = pd.read_csv((_PROJECT_ROOT / 'Outputs/metricas/umbrales_tasa_igualada.csv'))
-    by_type = pd.read_csv((_PROJECT_ROOT / 'Outputs/metricas/deteccion_por_tipo_tasa_igualada.csv'))
-    metrics = pd.read_csv((_PROJECT_ROOT / 'Outputs/metricas/metricas_globales.csv'))
-    curve = pd.read_csv((_PROJECT_ROOT / 'Outputs/metricas/curva_deteccion.csv'))
+    real = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/metricas/puntajes_reales.csv.gz'))
+    cases = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/metricas/puntajes_inyecciones.csv.gz'))
+    thresholds = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/metricas/umbrales_tasa_igualada.csv'))
+    by_type = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/metricas/deteccion_por_tipo_tasa_igualada.csv'))
+    metrics = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/metricas/metricas_globales.csv'))
+    curve = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/metricas/curva_deteccion.csv'))
     sources = list(real.fuente.unique())
     assert len(real) == config['detalle']['puntajes_reales'] and len(cases) == config['detalle']['puntajes_inyecciones']
 
@@ -132,7 +135,7 @@ def main():
         assert (frame.recall_macro_t_o_t1 >= frame.recall_macro_t - TOL).all()
     xm = metrics[metrics.fuente == 'XM']
     assert (xm.estado_metodo == 'no_interpretable_baja_resolucion').all() and xm.ic95_inferior_f1.isna().all()
-    cover = pd.read_csv((_PROJECT_ROOT / 'Outputs/metricas/cobertura_experimento.csv'))
+    cover = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/metricas/cobertura_experimento.csv'))
     for row in cover.itertuples(index=False):
         degenerate = metrics[(metrics.fuente == row.fuente) & (metrics.metodo == 'LOF') &
                              (metrics.estado_metodo == 'degenerado_por_duplicados')]
@@ -140,10 +143,10 @@ def main():
     checks.append('Recall t o t+1 >= t; curvas no decrecientes; XM y LOF degenerado marcados sin IC ni interpretación')
 
     # 5. sorteo sin reemplazo y comparación con 4.2
-    draw = pd.read_csv((_PROJECT_ROOT / 'Outputs/metricas/sorteo_sin_reemplazo.csv'))
+    draw = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/metricas/sorteo_sin_reemplazo.csv'))
     assert (draw.meses_distintos_por_serie == 'todos_distintos_por_construccion').all()
     assert (draw.recall_sorteo_p2_5 <= draw.recall_sorteo_media + TOL).all()
-    against = json.loads(((_PROJECT_ROOT / 'Outputs/metricas/verificacion_contra_4_2.json')).read_text(encoding='utf-8'))
+    against = json.loads(((_PROJECT_ROOT / 'Data/gold/outputs/metricas/verificacion_contra_4_2.json')).read_text(encoding='utf-8'))
     assert against['estado'] == 'coincide'
     for item in against['detalle']:
         assert item['coincide_con_inyecciones_detalle_4_2']
@@ -163,11 +166,11 @@ def main():
               'fuentes': sources, 'filas_metricas_globales': len(metrics),
               'observaciones_reales_puntuadas': len(real), 'casos_puntuados': len(cases),
               'pruebas_automaticas': n_tests}
-    ((_PROJECT_ROOT / 'Outputs/metricas/verificacion.json')).write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    ((_PROJECT_ROOT / 'Data/gold/outputs/metricas/verificacion.json')).write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     artifacts = [{'archivo': p.relative_to(HERE).as_posix(), 'bytes': p.stat().st_size, 'sha256': digest(p)}
                  for p in sorted(HERE.rglob('*')) if p.is_file() and p.name != 'manifiesto_resultados.json'
                  and '__pycache__' not in p.parts]
-    ((_PROJECT_ROOT / 'Outputs/metricas/manifiesto_resultados.json')).write_text(
+    ((_PROJECT_ROOT / 'Data/gold/outputs/metricas/manifiesto_resultados.json')).write_text(
         json.dumps({'entradas': config['entradas'], 'archivos': artifacts}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(report, ensure_ascii=False, indent=2))
 

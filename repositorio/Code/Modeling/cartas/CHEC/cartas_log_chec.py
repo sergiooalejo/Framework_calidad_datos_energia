@@ -4,7 +4,7 @@ from pathlib import Path as _ProjectPath
 _PROJECT_ROOT = next(p for p in _ProjectPath(__file__).resolve().parents if (p / "project.json").is_file())
 import csv, math, statistics
 from pathlib import Path
-ROOT=_PROJECT_ROOT; src=(_PROJECT_ROOT / 'Data/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv'); out=(_PROJECT_ROOT / 'Outputs/cartas/CHEC/cartas_log_chec.csv')
+ROOT=_PROJECT_ROOT; src=(_PROJECT_ROOT / 'Data/bronze/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv'); out=(_PROJECT_ROOT / 'Data/gold/outputs/cartas/CHEC/cartas_log_chec.csv')
 rows=list(csv.DictReader(open(src,encoding='utf-8-sig'))); cats=('comercializador_codigo','mercado_codigo','costounitariotarifa_tipomed','nivel_tension_codigo','modalidadcobro_propiedad','claseservicio_codigo','costounitariotarifa_rangoconsumo','costounitariotarifa_tipomercado'); measures=('costounitariotarifa_cu','costounitariotarifa_valor_tarifa')
 series={}
 for r in rows:

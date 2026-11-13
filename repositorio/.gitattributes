@@ -1,0 +1,8 @@
+# Las auditorías comparan bytes mediante SHA-256. Evitar que Git cambie los
+# finales de línea al clonar en Windows, macOS o Linux.
+Data/** -text
+Code/** -text
+Docs/Antecedentes/** -text
+Docs/codigo_historico/** -text
+Docs/evidencia_historica/** -text
+Environment/** -text

@@ -23,11 +23,15 @@ import io
 import zipfile
 
 RAIZ = _PROJECT_ROOT
-DATOS = (_PROJECT_ROOT / 'Data/datos')
+DATOS = (_PROJECT_ROOT / 'Data/bronze/datos')
 
 
 def dato(nombre):
     """Devuelve la ruta del CSV `nombre`, o la del zip que lo contiene."""
+    for layer in ('silver', 'bronze'):
+        matches = sorted((_PROJECT_ROOT / 'Data' / layer / 'datos').rglob(nombre))
+        if matches:
+            return matches[0]
     directo = DATOS / nombre
     if directo.exists():
         return directo
@@ -35,9 +39,10 @@ def dato(nombre):
     if encontrados:
         return encontrados[0]
     comprimido = nombre.replace(".csv", "-compressed.zip")
-    zips = sorted(DATOS.rglob(comprimido))
-    if zips:
-        return zips[0]
+    for layer in ('silver', 'bronze'):
+        zips = sorted((_PROJECT_ROOT / 'Data' / layer / 'datos').rglob(comprimido))
+        if zips:
+            return zips[0]
     return directo          # que falle con el nombre esperado, no con uno inventado
 
 

@@ -592,7 +592,7 @@ Lectura prudente:
 El scorecard es una tabla de resumen. No vuelve a medir los datos; organiza los resultados de la
 matriz OE1 para que sea posible leerlos por fuente y dimensión.
 
-El archivo `4.5/scorecard_oe1_provisional.csv` tiene 32 filas: cuatro fuentes por ocho
+El [scorecard vigente](repositorio/Data/gold/outputs/scorecard/scorecard_oe1_provisional.csv) tiene 32 filas: cuatro fuentes por ocho
 dimensiones. Cada fila indica cuántos controles hay, cuántos fueron medidos, cuántos son
 provisionales, cuántos no se pudieron medir y cuántos no aplican.
 
@@ -601,10 +601,17 @@ que resume los controles de completitud definidos para EPM y conserva sus estado
 El scorecard seguirá llamándose provisional hasta que se aprueben umbrales, catálogos y evidencia
 externa.
 
+La columna de promedio está vacía: no se pueden promediar sin una regla aprobada tasas de
+incumplimiento y de cumplimiento. El tablero muestra cada indicador por separado. La versión
+anterior del scorecard se conserva como evidencia histórica en
+`repositorio/Docs/evidencia_historica/scorecard_antes_correccion_20261113.csv` y sus promedios no
+deben presentarse como una medida global de calidad.
+
 Para regenerarlo:
 
 ```bash
-python3 desarrollo_puntos/4.5/generar_scorecard_oe1.py
+cd repositorio
+python pipeline.py ejecutar scorecard
 ```
 
 ## 20. Hito 4.6: niveles y costo computacional
@@ -754,3 +761,44 @@ Hay dos ideas prácticas importantes:
    volver a ejecutar los scripts. Esta es una limitación técnica de reproducibilidad del entorno, no una decisión
    metodológica pendiente del director. Los entornos para reproducirlos están formalizados en
    [requirements/README.md](requirements/README.md); un contenedor o `pyproject.toml` puede añadirse en el Hito 5.
+
+## 27. ¿Cómo están organizados ahora los datos?
+
+El repositorio usa una estructura medallón física para mostrar el recorrido de la información:
+
+1. **Bronze:** en [Data/bronze/datos](repositorio/Data/bronze/datos/) están las copias de entrada
+   y las fuentes en revisión. El detalle de SSPD es una extracción de una empresa, no el portal completo.
+2. **Silver:** en [Data/silver](repositorio/Data/silver/) están los agregados mensuales de SSPD y XM,
+   los catálogos, diccionarios, verificaciones e insumos adaptados.
+3. **Gold:** en [Data/gold/outputs](repositorio/Data/gold/outputs/) están los resultados: matriz,
+   cartas, métricas, scorecards y evidencias del Hito 6.
+
+Por ejemplo, el CSV que antes se abría en `Data/datos/Datos_seleccionados/EPM` ahora está en
+[Bronze/EPM](repositorio/Data/bronze/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv).
+Los manifiestos de las ejecuciones anteriores conservan sus huellas y rutas históricas; la auditoría
+localiza la evidencia correspondiente con una tabla de compatibilidad.
+
+La organización física no significa que los datos hayan sido corregidos ni que una alerta sea un
+error confirmado. Los supuestos y decisiones metodológicas siguen pendientes de aprobación.
+Más detalles en [la guía de arquitectura](repositorio/Data/MEDALLION.md).
+
+## 28. Correcciones después de la revisión
+
+**Semillas.** La semilla es un número que ayuda a repetir ciertos cálculos aleatorios. Antes el
+tablero permitía escribir un número, pero varios scripts usaban otro fijo. Ahora el tablero muestra
+el valor base que usa cada método y no permite escribir uno distinto. Por ejemplo, Bootstrap usa
+`20261105`; la muestra propuesta del Hito 6 usa `42`. Los manifiestos antiguos se conservan, pero
+su campo `semilla` no demuestra por sí solo cuál se utilizó.
+
+**Scorecard.** Se conservan los controles y sus estados, pero no se calcula un promedio global:
+algunos porcentajes representan problemas y otros cumplimiento. Un promedio requiere acordar con
+el profesor cómo interpretar y ponderar cada uno.
+
+**Muestra de alertas.** La muestra de 50 filas sigue en su archivo original. Si se genera otra,
+se crea una copia con fecha para no borrar las revisiones. Su diseño todavía debe compararse con
+el plan, que solicita 50 alertas de EPM, y aprobarse con el profesor.
+
+**Caso 43.577.** Ver el número como moneda en Excel no permite saber si hubo una conversión de
+fecha antes de publicarlo. El caso permanece sin conclusión hasta contar con más evidencia.
+
+El detalle técnico está en [Correcciones posteriores a la revisión](repositorio/Docs/CORRECCIONES_REVISION.md).

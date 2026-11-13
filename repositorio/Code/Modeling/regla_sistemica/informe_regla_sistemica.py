@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt  # noqa: E402
 import numpy as np  # noqa: E402
 import pandas as pd  # noqa: E402
 
-HERE = (_PROJECT_ROOT / 'Outputs/regla_sistemica')
+HERE = (_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica')
 sys.dont_write_bytecode = True
 sys.path.insert(0, str((_PROJECT_ROOT / 'Code/Modeling/regla_sistemica')))
 import regla_sistemica as R  # noqa: E402
@@ -49,9 +49,9 @@ def style():
 
 
 def save(fig, name):
-    ((_PROJECT_ROOT / 'Outputs/regla_sistemica/figuras')).mkdir(exist_ok=True)
+    ((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/figuras')).mkdir(exist_ok=True)
     for ext in ('png', 'svg', 'pdf'):
-        fig.savefig((_PROJECT_ROOT / 'Outputs/regla_sistemica/figuras') / f'{name}.{ext}', dpi=200, bbox_inches='tight')
+        fig.savefig((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/figuras') / f'{name}.{ext}', dpi=200, bbox_inches='tight')
     plt.close(fig)
 
 
@@ -172,16 +172,16 @@ def figure_contrast(contrast):
 # ----------------------------------------------------------------------- informe
 def main():
     style()
-    fr = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/fracciones_mensuales.csv'))
-    calibration = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/calibracion_X.csv'))
-    summary = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/calibracion_resumen.csv'))
-    effect = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/efecto_regla_sobre_alertas_reales.csv'))
-    cost = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/costo_enmascaramiento_4_2.csv'))
-    contrast = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/contraste_componentes.csv'))
-    composition = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/composicion_alertas_meses_plan.csv'))
-    h2 = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/reproduccion_hito2.csv'))
-    refs = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/evidencia_externa/referencias_documentales.csv'))
-    catalog = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/catalogo_alertas_sistemicas.csv'))
+    fr = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/fracciones_mensuales.csv'))
+    calibration = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/calibracion_X.csv'))
+    summary = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/calibracion_resumen.csv'))
+    effect = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/efecto_regla_sobre_alertas_reales.csv'))
+    cost = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/costo_enmascaramiento_4_2.csv'))
+    contrast = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/contraste_componentes.csv'))
+    composition = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/composicion_alertas_meses_plan.csv'))
+    h2 = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/reproduccion_hito2.csv'))
+    refs = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/evidencia_externa/referencias_documentales.csv'))
+    catalog = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/catalogo_alertas_sistemicas.csv'))
     figure_timeline(fr)
     figure_sources(fr)
     figure_calibration(calibration)
@@ -235,11 +235,11 @@ def main():
     chec_over = int((chec.fraccion > R.X_WORK).sum())
     sspd = fr[(fr.fuente == 'SSPD') & (fr.referencia == 36) & (fr.aplicable == 1)]
     sspd_max = sspd.fraccion.max()
-    block = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/tamano_componentes_epm.csv'))
+    block = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/tamano_componentes_epm.csv'))
     block_max = block.fraccion_si_alertan_todas.max()
     block_row = block.loc[block.fraccion_si_alertan_todas.idxmax()]
-    cfg_n = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/fracciones_mensuales.csv'), usecols=['fuente', 'etiquetas', 'referencia', 'metodo', 'periodo', 'series_evaluadas'])
-    inventory = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/inventario_series_por_variante.csv')).set_index(['fuente', 'etiquetas'])
+    cfg_n = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/fracciones_mensuales.csv'), usecols=['fuente', 'etiquetas', 'referencia', 'metodo', 'periodo', 'series_evaluadas'])
+    inventory = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/inventario_series_por_variante.csv')).set_index(['fuente', 'etiquetas'])
     epm_c = int(inventory.loc[('EPM', 'canonicas'), 'series_totales'])
     epm_o = int(inventory.loc[('EPM', 'originales'), 'series_totales'])
     e25 = effect[(effect.fuente == 'EPM') & (effect.etiquetas == 'canonicas') & (effect.referencia == 36) & (effect.umbral_X == 0.25)].fraccion_alertas_reclasificadas
@@ -395,7 +395,7 @@ Por eso la regla **etiqueta**, no suprime.
 ## 5. Contraste con las publicaciones oficiales de EPM
 
 Se leyeron las publicaciones tarifarias de EPM de enero, febrero, junio y julio de 2020 y de junio y julio de 2021 (tabla monomia, nivel I). Su transcripción se verificó de dos maneras:
-(1) coincide con el CSV en las {int(len(pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/verificacion_transcripcion_pdf.csv'))))} celdas (componente × columna × mes) y (2) la suma de componentes reproduce el CU total publicado (tolerancia 0,02) —
+(1) coincide con el CSV en las {int(len(pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/verificacion_transcripcion_pdf.csv'))))} celdas (componente × columna × mes) y (2) la suma de componentes reproduce el CU total publicado (tolerancia 0,02) —
 [verificacion_transcripcion_pdf.csv](verificacion_transcripcion_pdf.csv) y [verificacion_suma_componentes.csv](verificacion_suma_componentes.csv). De paso, esto suma evidencia de exactitud de EPM para cinco
 meses nuevos (feb, jun y jul de 2020; jun y jul de 2021) y otras filas de enero (EXA01 usaba seis filas de ene/dic-2020 y abr/dic-2021); la matriz OE1 de 3.1 no se modifica.
 
@@ -466,7 +466,7 @@ python desarrollo_puntos/4.4/verificar_resultados.py
 
 [configuracion.json](configuracion.json) fija parámetros, versiones y huellas de entradas y de los PDF; [manifiesto_resultados.json](manifiesto_resultados.json) las de todos los archivos entregados.
 """
-    ((_PROJECT_ROOT / 'Outputs/regla_sistemica/INFORME_REGLA_SISTEMICA.txt')).write_text(text, encoding='utf-8')
+    ((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/INFORME_REGLA_SISTEMICA.txt')).write_text(text, encoding='utf-8')
     print('Informe y figuras generados')
 
 

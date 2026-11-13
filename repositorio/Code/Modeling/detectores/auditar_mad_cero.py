@@ -6,8 +6,8 @@ from pathlib import Path
 import csv
 import json
 
-HERE = (_PROJECT_ROOT / 'Outputs/detectores')
-SUMMARY = (_PROJECT_ROOT / 'Outputs/detectores/zscore_robusto_resumen.csv')
+HERE = (_PROJECT_ROOT / 'Data/gold/outputs/detectores')
+SUMMARY = (_PROJECT_ROOT / 'Data/gold/outputs/detectores/zscore_robusto_resumen.csv')
 
 
 def main():
@@ -29,7 +29,7 @@ def main():
             "series": len(group),
             "señales": sum(int(row["señales"]) for row in group),
         }
-    ((_PROJECT_ROOT / 'Outputs/detectores/auditoria_mad_cero.json')).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+    ((_PROJECT_ROOT / 'Data/gold/outputs/detectores/auditoria_mad_cero.json')).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"series_mad_cero={len(zero)} señales_mad_cero={result['señales_mad_cero']}")
 
 

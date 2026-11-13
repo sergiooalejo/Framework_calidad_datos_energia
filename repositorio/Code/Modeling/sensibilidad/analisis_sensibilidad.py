@@ -25,7 +25,7 @@ import pandas as pd
 import sklearn
 from sklearn.ensemble import IsolationForest
 
-HERE = (_PROJECT_ROOT / 'Outputs/sensibilidad')
+HERE = (_PROJECT_ROOT / 'Data/gold/outputs/sensibilidad')
 ROOT = _PROJECT_ROOT
 sys.dont_write_bytecode = True
 sys.path.insert(0, str((_PROJECT_ROOT / 'Code/Modeling/detectores')))
@@ -540,7 +540,7 @@ def main():
     if hasattr(sys.stdout, 'reconfigure'):
         sys.stdout.reconfigure(encoding='utf-8')
     datasets, inputs = load_sources()
-    quarantine = (_PROJECT_ROOT / 'Outputs/cuarentena_bootstrap/EPM/cuarentena_registros.csv')
+    quarantine = (_PROJECT_ROOT / 'Data/gold/outputs/cuarentena_bootstrap/EPM/cuarentena_registros.csv')
     originals = {ROOT / entry['ruta']: entry['sha256'] for entry in inputs.values()}
     originals[quarantine] = sha256(quarantine)
     real_writer = CompressedTable('alertas_reales_detalle.csv.gz')
@@ -595,14 +595,14 @@ def main():
         'verificaciones':['entradas_intactas','rachas_consecutivas','mismos_meses_en_panel_comun',
                           'monotonia_MAD_IF_R12','reclasificacion_no_aumenta_detecciones',
                           'ultimo_entrenamiento_IF_anterior_a_toda_vigilancia_del_modelo']}
-    ((_PROJECT_ROOT / 'Outputs/sensibilidad/configuracion.json')).write_text(json.dumps(config,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    ((_PROJECT_ROOT / 'Data/gold/outputs/sensibilidad/configuracion.json')).write_text(json.dumps(config,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     from informe_sensibilidad import generate
     generate()
     artifacts=[]
     for path in sorted(HERE.rglob('*')):
         if path.is_file() and path.name!='manifiesto_resultados.json' and '__pycache__' not in path.parts:
             artifacts.append({'archivo':path.relative_to(HERE).as_posix(),'bytes':path.stat().st_size,'sha256':sha256(path)})
-    ((_PROJECT_ROOT / 'Outputs/sensibilidad/manifiesto_resultados.json')).write_text(json.dumps({'entradas':inputs,'archivos':artifacts},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    ((_PROJECT_ROOT / 'Data/gold/outputs/sensibilidad/manifiesto_resultados.json')).write_text(json.dumps({'entradas':inputs,'archivos':artifacts},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(f'Finalizado: {real_writer.count} observaciones y {cases_writer.count} inyecciones; resultados en {HERE}',flush=True)
 
 

@@ -3,5 +3,8 @@ services:
     build: .
     ports:
       - "8501:8501"
+    volumes:
+      - ./Data/gold/outputs:/app/Data/gold/outputs
+      - ./Data/silver/verificaciones:/app/Data/silver/verificaciones
     restart: unless-stopped
 

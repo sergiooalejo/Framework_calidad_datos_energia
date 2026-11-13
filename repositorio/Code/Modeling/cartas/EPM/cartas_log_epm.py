@@ -11,9 +11,9 @@ import csv, hashlib, json, math, statistics
 from pathlib import Path
 
 ROOT = _PROJECT_ROOT
-src = (_PROJECT_ROOT / 'Data/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv')
-out = (_PROJECT_ROOT / 'Outputs/cartas/EPM/cartas_log_epm.csv')
-quar_path = (_PROJECT_ROOT / 'Outputs/cuarentena_bootstrap/EPM/cuarentena_registros.csv')
+src = (_PROJECT_ROOT / 'Data/bronze/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv')
+out = (_PROJECT_ROOT / 'Data/gold/outputs/cartas/EPM/cartas_log_epm.csv')
+quar_path = (_PROJECT_ROOT / 'Data/gold/outputs/cuarentena_bootstrap/EPM/cuarentena_registros.csv')
 quarantined = {r["clave_contenido"] for r in csv.DictReader(quar_path.open(encoding="utf-8"))} if quar_path.exists() else set()
 months = {m:i for i,m in enumerate(("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"),1)}
 cats = ("tipodeinformacion","tipodetarifa","tipodedato","rangodeconsumo","nivel")

@@ -1,0 +1,135 @@
+version: '1.0'
+dataset:
+  id: c1b851
+  nombre: Demanda real histórica XM/SIMEM
+  publicador: XM/SIMEM
+  url_portal: https://www.simem.co/
+  url_documentacion_api: https://github.com/EquipoAnaliticaXM/API_XM
+  archivos:
+    crudo: Data/bronze/datos/Datos_seleccionados/XM_piloto/xm_demanda_epmc_epmd_str02_202001_202501.csv
+    mensual: Data/silver/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv
+    versiones: Data/bronze/datos/Datos_seleccionados/XM_piloto/xm_versiones_mensuales_202001_202501.csv
+  alcance: >-
+    Piloto filtrado al agente EPMC, mercado EPMD y sistema STR02. No representa todo el mercado.
+  filas_crudas: 119928
+  observaciones_horarias_unicas: 44592
+  observaciones_mensuales: 61
+  cobertura: 2020-01 a 2025-01
+  contiene_consumo_observado: true
+  unidad_principal: kWh
+  estado: fuente seleccionada; adaptador OE1 preliminar ejecutado; exactitud y oportunidad pendientes de evidencia externa
+
+politica_version:
+  seleccion: >-
+    Para cada mes se selecciona la versión numérica TX más alta disponible, se excluyen TXF/TXR,
+    se conservan horas únicas y se suman los valores horarios.
+  no_interpolacion: true
+  no_suma_de_versiones: true
+  advertencia: >-
+    La versión TX más alta disponible no equivale automáticamente a la versión final oficial.
+    La política debe congelarse antes de comparar métodos.
+
+variables:
+  - columna: CodigoVariable
+    descripcion: Código de la variable reportada, por ejemplo demanda real.
+    tipo: texto
+    rol: identificador_de_variable
+    reglas: [R06, INT01, DEF01]
+  - columna: Valor
+    descripcion: Valor de demanda de la observación horaria.
+    tipo: decimal
+    unidad: kWh
+    rol: medida_principal
+    reglas: [R03, R07, R10, R11, R12, CART01, EXA01]
+  - columna: MercadoComercializacion
+    descripcion: Código del mercado de comercialización.
+    tipo: texto
+    rol: categoria
+    reglas: [R05, R06, INT01, INT02]
+  - columna: UnidadMedida
+    descripcion: Unidad declarada para el valor, kWh en el piloto.
+    tipo: texto
+    rol: unidad
+    reglas: [R06, R07, DEF01]
+  - columna: CodigoSICAgente
+    descripcion: Código del agente del mercado.
+    tipo: texto
+    rol: entidad
+    reglas: [R05, R06, INT02]
+  - columna: SistemaTransmision
+    descripcion: Sistema de transmisión asociado a la observación.
+    tipo: texto
+    rol: categoria
+    reglas: [R05, R06, INT02]
+  - columna: Version
+    descripcion: Versión de publicación del registro horario.
+    tipo: texto
+    rol: version
+    reglas: [R05, R06, R07, OPO01]
+  - columna: FechaHora
+    descripcion: Fecha y hora de la observación horaria.
+    tipo: fecha_hora
+    rol: periodo
+    reglas: [R01, R02, R05, OPO01]
+  - columna: CodigoDuracion
+    descripcion: Duración del intervalo, PT1H en el piloto.
+    tipo: texto
+    rol: granularidad
+    reglas: [R06, R07, DEF01]
+
+variables_derivadas:
+  - columna: periodo
+    descripcion: Mes calendario derivado de FechaHora.
+    tipo: periodo_mensual
+    reglas: [R01, R02, CART01]
+  - columna: Version_seleccionada
+    descripcion: Versión TX elegida por la política mensual congelada.
+    tipo: texto
+    reglas: [R05, R06, OPO01]
+  - columna: horas_unicas
+    descripcion: Número de horas distintas utilizadas en la suma mensual.
+    tipo: entero
+    reglas: [R01, R10, CART01]
+  - columna: horas_esperadas
+    descripcion: Horas calendario esperadas según el mes.
+    tipo: entero
+    reglas: [R01, R02, R10]
+  - columna: demanda_kwh
+    descripcion: Suma mensual de Valor para horas únicas de la versión seleccionada.
+    tipo: decimal
+    unidad: kWh
+    reglas: [R03, R07, R12, CART01]
+  - columna: publicacion_declarada
+    descripcion: Fecha de publicación declarada en el calendario de versiones.
+    tipo: fecha
+    reglas: [OPO01]
+
+adaptaciones:
+  R08: >-
+    No aplicar orden de tarifas por propiedad. Evaluar coherencia entre agente, mercado y sistema
+    cuando exista una relación autorizada.
+  R09: >-
+    No aplicar estructura tarifaria. Evaluar compatibilidad entre CodigoVariable, UnidadMedida,
+    CodigoDuracion y Version.
+  R12: >-
+    Evaluar magnitud de demanda_kwh frente a una ventana temporal de referencia sin interpretar
+    automáticamente una alerta como error confirmado.
+  CART01: >-
+    Aplicar cartas I-MR sobre cambios logarítmicos de demanda_kwh, con horas completas, sin
+    interpolar y excluyendo cambios que toquen valores en cuarentena.
+
+dimensiones:
+  completitud: Medir presencia de FechaHora, Valor, unidad, versión y horas esperadas.
+  validez: Validar fechas, números finitos, unidad kWh, duración PT1H y versiones permitidas.
+  unicidad: Evaluar duplicados por agente, mercado, sistema, versión y FechaHora.
+  consistencia: Contrastar relaciones entre variable, unidad, duración, agente y versión.
+  integridad: Verificar el contrato de nueve columnas y catálogos de agente/mercado/sistema.
+  razonabilidad: Analizar cambios logarítmicos y cartas sobre la demanda mensual.
+  exactitud: Requiere una referencia horaria o mensual equivalente y una muestra definida.
+  oportunidad: Requiere disponibilidad real, fecha límite y vínculo de publicación por versión.
+
+pendientes:
+  - Congelar la política de selección de versión antes de comparar técnicas.
+  - Adaptar y ejecutar los 19 controles de la matriz OE1.
+  - Documentar catálogos autorizados de agentes, mercados y sistemas.
+  - Completar evidencia de exactitud y oportunidad.

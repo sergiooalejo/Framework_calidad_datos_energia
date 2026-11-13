@@ -9,7 +9,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-HERE = (_PROJECT_ROOT / 'Outputs/regla_sistemica')
+HERE = (_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica')
 sys.dont_write_bytecode = True
 sys.path.insert(0, str((_PROJECT_ROOT / 'Code/Modeling/regla_sistemica')))
 import regla_sistemica as R  # noqa: E402

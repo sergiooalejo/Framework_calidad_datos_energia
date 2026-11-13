@@ -1,0 +1,235 @@
+clave,columna,fecha,valor,registro_original,serie_con_cuarentena,clave_contenido
+"Horaria | Costo Unitario | Cargo transporte SDL: Dn,m | Fuera de Punta | I",Propiedad Epm,2020-02-01,206.68,3139,False,fb97170685823276941c58c8966fd7b3ff89c3af1b01cda73690ff5d600d2bd1
+"Horaria | Costo Unitario | Cargo transporte SDL: Dn,m | Fuera de Punta | I",Propiedad Epm,2020-04-01,222.32,3257,False,0124a1ff03b32b75460bfe6615509ccfcb98fe8685277aa067a2db43b4176897
+"Horaria | Costo Unitario | Cargo transporte SDL: Dn,m | Fuera de Punta | I",Propiedad Epm,2020-05-01,215.93,3264,False,4c16011910480ab0b26732269b14f203401550d1c431c2b18f13f230174f40b3
+"Horaria | Costo Unitario | Cargo transporte SDL: Dn,m | Fuera de Punta | I",Propiedad Epm,2020-07-01,217.22,3381,False,f303010ab85086c8515f0d8553043cf7a70f9c53f6ee0cb011193bb88c61cca9
+"Horaria | Costo Unitario | Cargo transporte SDL: Dn,m | Fuera de Punta | I",Propiedad Epm,2021-02-01,218.23,273,False,5be9b1bbdc437127f530312341fd5d24f494717170237d67c14cc78daa8a314c
+"Horaria | Costo Unitario | Cargo transporte SDL: Dn,m | Fuera de Punta | I",Propiedad Epm,2021-06-01,236.6,562,False,63c654ab876c843a94f0628318722edc92d1bd3bc87feb6ba192aa808297bed0
+"Horaria | Costo Unitario | Cargo transporte SDL: Dn,m | Fuera de Punta | I",Propiedad Epm,2021-07-01,231.74,467,False,0008279b1073c0166a7115124c4be09c500db507a4d183380de4a46acf2bb1ea
+"Horaria | Costo Unitario | Cargo transporte SDL: Dn,m | Fuera de Punta | I",Propiedad Epm,2021-12-01,231.82,821,False,4a7b063e19315d0ddfec7643e89ee0e67587907c7e1136c5eae8875e54840dfd
+"Horaria | Costo Unitario | Cargo transporte SDL: Dn,m | Fuera de Punta | I",Compartido,2020-02-01,183.62,3139,False,fb97170685823276941c58c8966fd7b3ff89c3af1b01cda73690ff5d600d2bd1
+"Horaria | Costo Unitario | Cargo transporte SDL: Dn,m | Fuera de Punta | I",Compartido,2020-05-01,192.29,3264,False,4c16011910480ab0b26732269b14f203401550d1c431c2b18f13f230174f40b3
+"Horaria | Costo Unitario | Cargo transporte SDL: Dn,m | Fuera de Punta | I",Compartido,2020-07-01,195.32,3381,False,f303010ab85086c8515f0d8553043cf7a70f9c53f6ee0cb011193bb88c61cca9
+"Horaria | Costo Unitario | Cargo transporte SDL: Dn,m | Fuera de Punta | I",Compartido,2021-02-01,196.38,273,False,5be9b1bbdc437127f530312341fd5d24f494717170237d67c14cc78daa8a314c
+"Horaria | Costo Unitario | Cargo transporte SDL: Dn,m | Fuera de Punta | I",Compartido,2021-06-01,213.31,562,False,63c654ab876c843a94f0628318722edc92d1bd3bc87feb6ba192aa808297bed0
+"Horaria | Costo Unitario | Cargo transporte SDL: Dn,m | Fuera de Punta | I",Compartido,2021-07-01,208.65,467,False,0008279b1073c0166a7115124c4be09c500db507a4d183380de4a46acf2bb1ea
+"Horaria | Costo Unitario | Cargo transporte SDL: Dn,m | Fuera de Punta | I",Compartido,2021-12-01,208.63,821,False,4a7b063e19315d0ddfec7643e89ee0e67587907c7e1136c5eae8875e54840dfd
+"Horaria | Costo Unitario | Cargo transporte SDL: Dn,m | Fuera de Punta | I",Propiedad del Cliente,2020-02-01,160.56,3139,False,fb97170685823276941c58c8966fd7b3ff89c3af1b01cda73690ff5d600d2bd1
+"Horaria | Costo Unitario | Cargo transporte SDL: Dn,m | Fuera de Punta | I",Propiedad del Cliente,2020-07-01,173.43,3381,False,f303010ab85086c8515f0d8553043cf7a70f9c53f6ee0cb011193bb88c61cca9
+"Horaria | Costo Unitario | Cargo transporte SDL: Dn,m | Fuera de Punta | I",Propiedad del Cliente,2021-02-01,174.53,273,False,5be9b1bbdc437127f530312341fd5d24f494717170237d67c14cc78daa8a314c
+"Horaria | Costo Unitario | Cargo transporte SDL: Dn,m | Fuera de Punta | I",Propiedad del Cliente,2021-06-01,190.02,562,False,63c654ab876c843a94f0628318722edc92d1bd3bc87feb6ba192aa808297bed0
+"Horaria | Costo Unitario | Cargo transporte SDL: Dn,m | Fuera de Punta | I",Propiedad del Cliente,2021-07-01,185.57,467,False,0008279b1073c0166a7115124c4be09c500db507a4d183380de4a46acf2bb1ea
+"Horaria | Costo Unitario | Cargo transporte SDL: Dn,m | Fuera de Punta | I",Propiedad del Cliente,2021-12-01,185.45,821,False,4a7b063e19315d0ddfec7643e89ee0e67587907c7e1136c5eae8875e54840dfd
+Horaria | Costo Unitario | Cargo transporte STN: Tm | Fuera de Punta | I,Propiedad Epm,2020-07-01,33.23,3380,False,41a389f313a10dd7a296cd5127daa095f8581d8befc4a79dc69be4d915f185c1
+Horaria | Costo Unitario | Cargo transporte STN: Tm | Fuera de Punta | I,Propiedad Epm,2020-08-01,36.95,3439,False,d7bfc477181957303aeb32f03727ec4d93b3c81437ef78621bd314d11c88c431
+Horaria | Costo Unitario | Cargo transporte STN: Tm | Fuera de Punta | I,Propiedad Epm,2020-12-01,30.43,53,False,f6d4d2e9cf3b30cc5bc213bd59194d08599821fd63de3fadf0fb7df37e4fef42
+Horaria | Costo Unitario | Cargo transporte STN: Tm | Fuera de Punta | I,Propiedad Epm,2021-01-01,35.08,205,False,b97adcd32403fc87ded967549e88ee46afb1006d48b63535a9006358e2053147
+Horaria | Costo Unitario | Cargo transporte STN: Tm | Fuera de Punta | I,Propiedad Epm,2021-06-01,46.44,561,False,b0264bde7cf6d8926e73c535182655c8acd10e804e9d9ae771129c6b1cc25e0f
+Horaria | Costo Unitario | Cargo transporte STN: Tm | Fuera de Punta | I,Propiedad Epm,2021-07-01,40.23,466,False,79bde99c7f8ef5a15b37b85f710a39c1d352c85a4338e9b85d6ce326d274961c
+Horaria | Costo Unitario | Cargo transporte STN: Tm | Fuera de Punta | I,Compartido,2020-07-01,33.23,3380,False,41a389f313a10dd7a296cd5127daa095f8581d8befc4a79dc69be4d915f185c1
+Horaria | Costo Unitario | Cargo transporte STN: Tm | Fuera de Punta | I,Compartido,2020-08-01,36.95,3439,False,d7bfc477181957303aeb32f03727ec4d93b3c81437ef78621bd314d11c88c431
+Horaria | Costo Unitario | Cargo transporte STN: Tm | Fuera de Punta | I,Compartido,2020-12-01,30.43,53,False,f6d4d2e9cf3b30cc5bc213bd59194d08599821fd63de3fadf0fb7df37e4fef42
+Horaria | Costo Unitario | Cargo transporte STN: Tm | Fuera de Punta | I,Compartido,2021-01-01,35.08,205,False,b97adcd32403fc87ded967549e88ee46afb1006d48b63535a9006358e2053147
+Horaria | Costo Unitario | Cargo transporte STN: Tm | Fuera de Punta | I,Compartido,2021-06-01,46.44,561,False,b0264bde7cf6d8926e73c535182655c8acd10e804e9d9ae771129c6b1cc25e0f
+Horaria | Costo Unitario | Cargo transporte STN: Tm | Fuera de Punta | I,Compartido,2021-07-01,40.23,466,False,79bde99c7f8ef5a15b37b85f710a39c1d352c85a4338e9b85d6ce326d274961c
+Horaria | Costo Unitario | Cargo transporte STN: Tm | Fuera de Punta | I,Propiedad del Cliente,2020-07-01,33.23,3380,False,41a389f313a10dd7a296cd5127daa095f8581d8befc4a79dc69be4d915f185c1
+Horaria | Costo Unitario | Cargo transporte STN: Tm | Fuera de Punta | I,Propiedad del Cliente,2020-08-01,36.95,3439,False,d7bfc477181957303aeb32f03727ec4d93b3c81437ef78621bd314d11c88c431
+Horaria | Costo Unitario | Cargo transporte STN: Tm | Fuera de Punta | I,Propiedad del Cliente,2020-12-01,30.43,53,False,f6d4d2e9cf3b30cc5bc213bd59194d08599821fd63de3fadf0fb7df37e4fef42
+Horaria | Costo Unitario | Cargo transporte STN: Tm | Fuera de Punta | I,Propiedad del Cliente,2021-01-01,35.08,205,False,b97adcd32403fc87ded967549e88ee46afb1006d48b63535a9006358e2053147
+Horaria | Costo Unitario | Cargo transporte STN: Tm | Fuera de Punta | I,Propiedad del Cliente,2021-06-01,46.44,561,False,b0264bde7cf6d8926e73c535182655c8acd10e804e9d9ae771129c6b1cc25e0f
+Horaria | Costo Unitario | Cargo transporte STN: Tm | Fuera de Punta | I,Propiedad del Cliente,2021-07-01,40.23,466,False,79bde99c7f8ef5a15b37b85f710a39c1d352c85a4338e9b85d6ce326d274961c
+"Horaria | Costo Unitario | Costo G,T, pérdidas: PRn,m | Fuera de Punta | I",Propiedad Epm,2020-02-01,49.13,3141,False,d1fd71ef3f4a1883896abf7b4e61dbeddc4c343300693c49ecd8c374c803d68a
+"Horaria | Costo Unitario | Costo G,T, pérdidas: PRn,m | Fuera de Punta | I",Propiedad Epm,2020-03-01,53.17,3200,False,04d2a9f94f127fabe1ba6e2f09953d0fb269f2ed0be984b25679a0f6d08c3a25
+"Horaria | Costo Unitario | Costo G,T, pérdidas: PRn,m | Fuera de Punta | I",Propiedad Epm,2020-04-01,49.3,3259,False,c8ebe33d184af1daa4a13b89d844da7ca646e2d2dbd040154954b8ee5d4f6b5a
+"Horaria | Costo Unitario | Costo G,T, pérdidas: PRn,m | Fuera de Punta | I",Compartido,2020-02-01,49.13,3141,False,d1fd71ef3f4a1883896abf7b4e61dbeddc4c343300693c49ecd8c374c803d68a
+"Horaria | Costo Unitario | Costo G,T, pérdidas: PRn,m | Fuera de Punta | I",Compartido,2020-03-01,53.17,3200,False,04d2a9f94f127fabe1ba6e2f09953d0fb269f2ed0be984b25679a0f6d08c3a25
+"Horaria | Costo Unitario | Costo G,T, pérdidas: PRn,m | Fuera de Punta | I",Compartido,2020-04-01,49.3,3259,False,c8ebe33d184af1daa4a13b89d844da7ca646e2d2dbd040154954b8ee5d4f6b5a
+"Horaria | Costo Unitario | Costo G,T, pérdidas: PRn,m | Fuera de Punta | I",Propiedad del Cliente,2020-02-01,49.13,3141,False,d1fd71ef3f4a1883896abf7b4e61dbeddc4c343300693c49ecd8c374c803d68a
+"Horaria | Costo Unitario | Costo G,T, pérdidas: PRn,m | Fuera de Punta | I",Propiedad del Cliente,2020-03-01,53.17,3200,False,04d2a9f94f127fabe1ba6e2f09953d0fb269f2ed0be984b25679a0f6d08c3a25
+"Horaria | Costo Unitario | Costo G,T, pérdidas: PRn,m | Fuera de Punta | I",Propiedad del Cliente,2020-04-01,49.3,3259,False,c8ebe33d184af1daa4a13b89d844da7ca646e2d2dbd040154954b8ee5d4f6b5a
+"Horaria | Costo Unitario | Costo G,T, pérdidas: PRn,m | Punta | I",Propiedad Epm,2020-02-01,48.88,3135,False,f2fb39fd12c181d7d7369e10c3508fc44d38e5139ccf61b3a1e049ef85a5d3b3
+"Horaria | Costo Unitario | Costo G,T, pérdidas: PRn,m | Punta | I",Propiedad Epm,2020-03-01,53.03,3194,False,0ba263a2106e747ef809c89d818611cb027a44cf721351dfcb71998386bab041
+"Horaria | Costo Unitario | Costo G,T, pérdidas: PRn,m | Punta | I",Propiedad Epm,2020-04-01,48.85,3253,False,5a3fcf5329e60421d064bdef52b843b8ec045d1c83b06199da3f9b4912af298e
+"Horaria | Costo Unitario | Costo G,T, pérdidas: PRn,m | Punta | I",Compartido,2020-02-01,48.88,3135,False,f2fb39fd12c181d7d7369e10c3508fc44d38e5139ccf61b3a1e049ef85a5d3b3
+"Horaria | Costo Unitario | Costo G,T, pérdidas: PRn,m | Punta | I",Compartido,2020-03-01,53.03,3194,False,0ba263a2106e747ef809c89d818611cb027a44cf721351dfcb71998386bab041
+"Horaria | Costo Unitario | Costo G,T, pérdidas: PRn,m | Punta | I",Compartido,2020-04-01,48.85,3253,False,5a3fcf5329e60421d064bdef52b843b8ec045d1c83b06199da3f9b4912af298e
+"Horaria | Costo Unitario | Costo G,T, pérdidas: PRn,m | Punta | I",Propiedad del Cliente,2020-02-01,48.88,3135,False,f2fb39fd12c181d7d7369e10c3508fc44d38e5139ccf61b3a1e049ef85a5d3b3
+"Horaria | Costo Unitario | Costo G,T, pérdidas: PRn,m | Punta | I",Propiedad del Cliente,2020-03-01,53.03,3194,False,0ba263a2106e747ef809c89d818611cb027a44cf721351dfcb71998386bab041
+"Horaria | Costo Unitario | Costo G,T, pérdidas: PRn,m | Punta | I",Propiedad del Cliente,2020-04-01,48.85,3253,False,5a3fcf5329e60421d064bdef52b843b8ec045d1c83b06199da3f9b4912af298e
+"Horaria | Costo Unitario | Costo compra: Gm, i | Fuera de Punta | I",Propiedad Epm,2020-04-01,229.63,3255,False,20c1a4764fde9e62058e839fa801dd1b099e4ffd54ecaeab95dd7316cb2a52a7
+"Horaria | Costo Unitario | Costo compra: Gm, i | Fuera de Punta | I",Compartido,2020-04-01,229.63,3255,False,20c1a4764fde9e62058e839fa801dd1b099e4ffd54ecaeab95dd7316cb2a52a7
+"Horaria | Costo Unitario | Costo compra: Gm, i | Fuera de Punta | I",Propiedad del Cliente,2020-04-01,229.63,3255,False,20c1a4764fde9e62058e839fa801dd1b099e4ffd54ecaeab95dd7316cb2a52a7
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Fuera de Punta | I",Propiedad Epm,2020-05-01,46.92,3265,False,5047e10f8155fe9f4a9c27e922845dad99c596667ce4ad86c2c02c9e2abfcb75
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Fuera de Punta | I",Propiedad Epm,2020-06-01,48.55,3325,False,8015551ebffafe2875a905c45538443b0ab73f4201893c2c68ee930bcf451c49
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Fuera de Punta | I",Propiedad Epm,2020-07-01,52.03,3382,False,02a8b354344fcbf57ef1ed94f45cce19a0d93d6634223c020db4661437fbf797
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Fuera de Punta | I",Propiedad Epm,2020-08-01,50.71,3441,False,4f14657eb71a8d305f260e05e3dbd9d6ef2e3ce7ede9247757d1906fd831aaa1
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Fuera de Punta | I",Compartido,2020-05-01,46.92,3265,False,5047e10f8155fe9f4a9c27e922845dad99c596667ce4ad86c2c02c9e2abfcb75
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Fuera de Punta | I",Compartido,2020-06-01,48.55,3325,False,8015551ebffafe2875a905c45538443b0ab73f4201893c2c68ee930bcf451c49
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Fuera de Punta | I",Compartido,2020-07-01,52.03,3382,False,02a8b354344fcbf57ef1ed94f45cce19a0d93d6634223c020db4661437fbf797
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Fuera de Punta | I",Compartido,2020-08-01,50.71,3441,False,4f14657eb71a8d305f260e05e3dbd9d6ef2e3ce7ede9247757d1906fd831aaa1
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Fuera de Punta | I",Propiedad del Cliente,2020-05-01,46.92,3265,False,5047e10f8155fe9f4a9c27e922845dad99c596667ce4ad86c2c02c9e2abfcb75
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Fuera de Punta | I",Propiedad del Cliente,2020-06-01,48.55,3325,False,8015551ebffafe2875a905c45538443b0ab73f4201893c2c68ee930bcf451c49
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Fuera de Punta | I",Propiedad del Cliente,2020-07-01,52.03,3382,False,02a8b354344fcbf57ef1ed94f45cce19a0d93d6634223c020db4661437fbf797
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Fuera de Punta | I",Propiedad del Cliente,2020-08-01,50.71,3441,False,4f14657eb71a8d305f260e05e3dbd9d6ef2e3ce7ede9247757d1906fd831aaa1
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Punta | I",Propiedad Epm,2020-05-01,46.92,151,False,c53f513eee1aacb2efd664c66ad688f7df2d9b6bc7e53356d5fd2ea949cfe499
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Punta | I",Propiedad Epm,2020-06-01,48.55,3319,False,643ab080692cb72d08320a5875171553cda488d4a03d2a3b7825e5354aa6ace2
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Punta | I",Propiedad Epm,2020-07-01,52.03,3376,False,d1eb0a73f3db03fb517ac6defaa8f3ac517472f21b7e3d4b8e5368d515310a6e
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Punta | I",Propiedad Epm,2020-08-01,50.71,3435,False,4dc9b34948324e23e506c4de95e26c123bdc3068c58d5ca2db403a407692298d
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Punta | I",Compartido,2020-05-01,46.92,151,False,c53f513eee1aacb2efd664c66ad688f7df2d9b6bc7e53356d5fd2ea949cfe499
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Punta | I",Compartido,2020-06-01,48.55,3319,False,643ab080692cb72d08320a5875171553cda488d4a03d2a3b7825e5354aa6ace2
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Punta | I",Compartido,2020-07-01,52.03,3376,False,d1eb0a73f3db03fb517ac6defaa8f3ac517472f21b7e3d4b8e5368d515310a6e
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Punta | I",Compartido,2020-08-01,50.71,3435,False,4dc9b34948324e23e506c4de95e26c123bdc3068c58d5ca2db403a407692298d
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Punta | I",Propiedad del Cliente,2020-05-01,46.92,151,False,c53f513eee1aacb2efd664c66ad688f7df2d9b6bc7e53356d5fd2ea949cfe499
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Punta | I",Propiedad del Cliente,2020-06-01,48.55,3319,False,643ab080692cb72d08320a5875171553cda488d4a03d2a3b7825e5354aa6ace2
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Punta | I",Propiedad del Cliente,2020-07-01,52.03,3376,False,d1eb0a73f3db03fb517ac6defaa8f3ac517472f21b7e3d4b8e5368d515310a6e
+"Horaria | Costo Unitario | Margen comercialización: CVm,i,j | Punta | I",Propiedad del Cliente,2020-08-01,50.71,3435,False,4dc9b34948324e23e506c4de95e26c123bdc3068c58d5ca2db403a407692298d
+Horaria | Costo Unitario | Restricciones: Rm | Punta | I,Propiedad Epm,2021-07-01,29.0,405,False,51d50c2d9b448c044eda4ed51d8304e0a4ae48fbdf680f026969dbfd150c45a9
+Horaria | Costo Unitario | Restricciones: Rm | Punta | I,Compartido,2021-07-01,29.0,405,False,51d50c2d9b448c044eda4ed51d8304e0a4ae48fbdf680f026969dbfd150c45a9
+Horaria | Costo Unitario | Restricciones: Rm | Punta | I,Propiedad del Cliente,2021-07-01,29.0,405,False,51d50c2d9b448c044eda4ed51d8304e0a4ae48fbdf680f026969dbfd150c45a9
+Horaria | Tarifa | Industrial y Comercial |  | II,Punta,2020-02-01,557.68,3105,False,ca9580b0111a5d9f5319e295d130aa7f459c4d681e29dc6881f4000f11f4f9e9
+Horaria | Tarifa | Industrial y Comercial |  | II,Punta,2020-03-01,563.26,3164,False,4597922b1b135a3f96f95260411ae164f1ea7a83f382fbf146cfdfbee25e7a60
+Horaria | Tarifa | Industrial y Comercial |  | II,Fuera de Punta,2020-01-01,505.14,3046,False,355493f36bc8ac4a204c489e9c1a197ae62871b76687e2b408cce03476bffa93
+Horaria | Tarifa | Industrial y Comercial |  | II,Fuera de Punta,2020-02-01,556.08,3105,False,ca9580b0111a5d9f5319e295d130aa7f459c4d681e29dc6881f4000f11f4f9e9
+Horaria | Tarifa | Industrial y Comercial |  | II,Fuera de Punta,2020-03-01,561.64,3164,False,4597922b1b135a3f96f95260411ae164f1ea7a83f382fbf146cfdfbee25e7a60
+Horaria | Tarifa | Industrial y Comercial |  | III,Punta,2020-02-01,459.85,3125,False,7ff3f512e3287d25802df302281eef5ab95bd48c0e2a34c34339364e6343680e
+Horaria | Tarifa | Industrial y Comercial |  | III,Fuera de Punta,2020-02-01,458.27,3125,False,7ff3f512e3287d25802df302281eef5ab95bd48c0e2a34c34339364e6343680e
+Horaria | Tarifa | Industrial y Comercial |  | IV,Punta,2020-02-01,417.16,3127,False,b14c570b89e063805ed27955d7445996b50227746c189c5a85b518d7767b418b
+Horaria | Tarifa | Industrial y Comercial |  | IV,Fuera de Punta,2020-02-01,415.61,3127,False,b14c570b89e063805ed27955d7445996b50227746c189c5a85b518d7767b418b
+Horaria | Tarifa | Oficial y Exentos |  | III,Punta,2020-02-01,383.21,3126,False,ce1012a93168ecf909ffb207fa31017d05a1f8f6f996701702f32cf2e4f2b57a
+Horaria | Tarifa | Oficial y Exentos |  | III,Fuera de Punta,2020-02-01,381.89,3126,False,ce1012a93168ecf909ffb207fa31017d05a1f8f6f996701702f32cf2e4f2b57a
+"Monomia | Costo Unitario | Cargo transporte SDL: Dn,m |  | I",Propiedad Epm,2020-02-01,206.68,3101,False,c629401363fa1ab50bfbc13bf1901a7c9616541fd9866ee2c031e7dfe16d5722
+"Monomia | Costo Unitario | Cargo transporte SDL: Dn,m |  | I",Propiedad Epm,2020-04-01,222.32,3219,False,e3e0fff6416eaffc3f6f0119a62f43be6b6a732936f6d92eb791535039ce45d7
+"Monomia | Costo Unitario | Cargo transporte SDL: Dn,m |  | I",Propiedad Epm,2020-05-01,215.93,118,False,2843a2b2ac3578ab5f8f95b753dd1a4dacd4507a8e2dd89afe5cf732ba1be069
+"Monomia | Costo Unitario | Cargo transporte SDL: Dn,m |  | I",Propiedad Epm,2020-07-01,217.22,3343,False,69d21ba6e6aaa97c99090f478a2f76c11c8db166334cdc15e15f21fd2a46f79b
+"Monomia | Costo Unitario | Cargo transporte SDL: Dn,m |  | I",Propiedad Epm,2021-02-01,218.23,227,False,c3971984d41691a00d366a3203385ff544849d4f5a2678cbfb918fded595e203
+"Monomia | Costo Unitario | Cargo transporte SDL: Dn,m |  | I",Propiedad Epm,2021-06-01,236.6,524,False,75fe3abd3184a9599a2ab3db35e40f4237dd90f7e3740cbaf47230d472b10c0b
+"Monomia | Costo Unitario | Cargo transporte SDL: Dn,m |  | I",Propiedad Epm,2021-07-01,231.74,370,False,4f30b3ca7c510b8697706a1c2c7572b3ced9f1994d05de7cf1fa3767d843bb52
+"Monomia | Costo Unitario | Cargo transporte SDL: Dn,m |  | I",Propiedad Epm,2021-12-01,231.82,724,False,cbd940d866804d40cba64834bfa6f3d4b34927759c0e114df201a86df5a36ce9
+"Monomia | Costo Unitario | Cargo transporte SDL: Dn,m |  | I",Compartido,2020-02-01,183.62,3101,False,c629401363fa1ab50bfbc13bf1901a7c9616541fd9866ee2c031e7dfe16d5722
+"Monomia | Costo Unitario | Cargo transporte SDL: Dn,m |  | I",Compartido,2020-05-01,192.29,118,False,2843a2b2ac3578ab5f8f95b753dd1a4dacd4507a8e2dd89afe5cf732ba1be069
+"Monomia | Costo Unitario | Cargo transporte SDL: Dn,m |  | I",Compartido,2020-07-01,195.32,3343,False,69d21ba6e6aaa97c99090f478a2f76c11c8db166334cdc15e15f21fd2a46f79b
+"Monomia | Costo Unitario | Cargo transporte SDL: Dn,m |  | I",Compartido,2021-02-01,196.38,227,False,c3971984d41691a00d366a3203385ff544849d4f5a2678cbfb918fded595e203
+"Monomia | Costo Unitario | Cargo transporte SDL: Dn,m |  | I",Compartido,2021-06-01,213.31,524,False,75fe3abd3184a9599a2ab3db35e40f4237dd90f7e3740cbaf47230d472b10c0b
+"Monomia | Costo Unitario | Cargo transporte SDL: Dn,m |  | I",Compartido,2021-07-01,208.65,370,False,4f30b3ca7c510b8697706a1c2c7572b3ced9f1994d05de7cf1fa3767d843bb52
+"Monomia | Costo Unitario | Cargo transporte SDL: Dn,m |  | I",Compartido,2021-12-01,208.63,724,False,cbd940d866804d40cba64834bfa6f3d4b34927759c0e114df201a86df5a36ce9
+"Monomia | Costo Unitario | Cargo transporte SDL: Dn,m |  | I",Propiedad del Cliente,2020-02-01,160.56,3101,False,c629401363fa1ab50bfbc13bf1901a7c9616541fd9866ee2c031e7dfe16d5722
+"Monomia | Costo Unitario | Cargo transporte SDL: Dn,m |  | I",Propiedad del Cliente,2020-07-01,173.43,3343,False,69d21ba6e6aaa97c99090f478a2f76c11c8db166334cdc15e15f21fd2a46f79b
+"Monomia | Costo Unitario | Cargo transporte SDL: Dn,m |  | I",Propiedad del Cliente,2021-02-01,174.53,227,False,c3971984d41691a00d366a3203385ff544849d4f5a2678cbfb918fded595e203
+"Monomia | Costo Unitario | Cargo transporte SDL: Dn,m |  | I",Propiedad del Cliente,2021-06-01,190.02,524,False,75fe3abd3184a9599a2ab3db35e40f4237dd90f7e3740cbaf47230d472b10c0b
+"Monomia | Costo Unitario | Cargo transporte SDL: Dn,m |  | I",Propiedad del Cliente,2021-07-01,185.57,370,False,4f30b3ca7c510b8697706a1c2c7572b3ced9f1994d05de7cf1fa3767d843bb52
+"Monomia | Costo Unitario | Cargo transporte SDL: Dn,m |  | I",Propiedad del Cliente,2021-12-01,185.45,724,False,cbd940d866804d40cba64834bfa6f3d4b34927759c0e114df201a86df5a36ce9
+Monomia | Costo Unitario | Cargo transporte STN: Tm |  | I,Propiedad Epm,2020-07-01,34.33,3342,False,bae85dbf5d5d27912b466070b78206e6ae90c4363942d40a6a6b9c84f01e62f8
+Monomia | Costo Unitario | Cargo transporte STN: Tm |  | I,Propiedad Epm,2020-08-01,38.1,3401,False,9e51d00c8cda249b53b4abb326d1be556706630000b38f43eef0ebf91e8383f7
+Monomia | Costo Unitario | Cargo transporte STN: Tm |  | I,Propiedad Epm,2020-12-01,31.34,15,False,876824082ace18bc5be9353316950ebecca8e2780101aca2da3547401404dd98
+Monomia | Costo Unitario | Cargo transporte STN: Tm |  | I,Propiedad Epm,2021-01-01,36.1,167,False,625632174ac3461a870136322fd0d4f7510b4d97f03d8d7d2d6b724868780f4a
+Monomia | Costo Unitario | Cargo transporte STN: Tm |  | I,Propiedad Epm,2021-06-01,47.93,523,False,812d2a3635e304ab13c21ce6a0fa474126b29e568edd6a9d032779c493340dad
+Monomia | Costo Unitario | Cargo transporte STN: Tm |  | I,Propiedad Epm,2021-07-01,41.57,369,False,b0177f63ac0b82a72566c9351fb2ccbe065c26d2bcbc288b702825918acd3b30
+Monomia | Costo Unitario | Cargo transporte STN: Tm |  | I,Compartido,2020-07-01,34.33,3342,False,bae85dbf5d5d27912b466070b78206e6ae90c4363942d40a6a6b9c84f01e62f8
+Monomia | Costo Unitario | Cargo transporte STN: Tm |  | I,Compartido,2020-08-01,38.1,3401,False,9e51d00c8cda249b53b4abb326d1be556706630000b38f43eef0ebf91e8383f7
+Monomia | Costo Unitario | Cargo transporte STN: Tm |  | I,Compartido,2020-12-01,31.34,15,False,876824082ace18bc5be9353316950ebecca8e2780101aca2da3547401404dd98
+Monomia | Costo Unitario | Cargo transporte STN: Tm |  | I,Compartido,2021-01-01,36.1,167,False,625632174ac3461a870136322fd0d4f7510b4d97f03d8d7d2d6b724868780f4a
+Monomia | Costo Unitario | Cargo transporte STN: Tm |  | I,Compartido,2021-06-01,47.93,523,False,812d2a3635e304ab13c21ce6a0fa474126b29e568edd6a9d032779c493340dad
+Monomia | Costo Unitario | Cargo transporte STN: Tm |  | I,Compartido,2021-07-01,41.57,369,False,b0177f63ac0b82a72566c9351fb2ccbe065c26d2bcbc288b702825918acd3b30
+Monomia | Costo Unitario | Cargo transporte STN: Tm |  | I,Propiedad del Cliente,2020-07-01,34.33,3342,False,bae85dbf5d5d27912b466070b78206e6ae90c4363942d40a6a6b9c84f01e62f8
+Monomia | Costo Unitario | Cargo transporte STN: Tm |  | I,Propiedad del Cliente,2020-08-01,38.1,3401,False,9e51d00c8cda249b53b4abb326d1be556706630000b38f43eef0ebf91e8383f7
+Monomia | Costo Unitario | Cargo transporte STN: Tm |  | I,Propiedad del Cliente,2020-12-01,31.34,15,False,876824082ace18bc5be9353316950ebecca8e2780101aca2da3547401404dd98
+Monomia | Costo Unitario | Cargo transporte STN: Tm |  | I,Propiedad del Cliente,2021-01-01,36.1,167,False,625632174ac3461a870136322fd0d4f7510b4d97f03d8d7d2d6b724868780f4a
+Monomia | Costo Unitario | Cargo transporte STN: Tm |  | I,Propiedad del Cliente,2021-06-01,47.93,523,False,812d2a3635e304ab13c21ce6a0fa474126b29e568edd6a9d032779c493340dad
+Monomia | Costo Unitario | Cargo transporte STN: Tm |  | I,Propiedad del Cliente,2021-07-01,41.57,369,False,b0177f63ac0b82a72566c9351fb2ccbe065c26d2bcbc288b702825918acd3b30
+"Monomia | Costo Unitario | Costo G,T, pérdidas: PRn,m |  | I",Propiedad Epm,2020-02-01,48.98,3103,False,43038ddad731ef84509f5afe830b0e633758718fb1eb10bad83ba480adfbb946
+"Monomia | Costo Unitario | Costo G,T, pérdidas: PRn,m |  | I",Propiedad Epm,2020-03-01,53.04,3162,False,8389fea5a9b59cedd41558fdf52661a465f4087b78b3c450008220ddbc2ca87a
+"Monomia | Costo Unitario | Costo G,T, pérdidas: PRn,m |  | I",Propiedad Epm,2020-04-01,49.09,3221,False,6d5bb11027f70fadd47f0e8d0ccd06de860b7d0dff0150e4727325737820d533
+"Monomia | Costo Unitario | Costo G,T, pérdidas: PRn,m |  | I",Compartido,2020-02-01,48.98,3103,False,43038ddad731ef84509f5afe830b0e633758718fb1eb10bad83ba480adfbb946
+"Monomia | Costo Unitario | Costo G,T, pérdidas: PRn,m |  | I",Compartido,2020-03-01,53.04,3162,False,8389fea5a9b59cedd41558fdf52661a465f4087b78b3c450008220ddbc2ca87a
+"Monomia | Costo Unitario | Costo G,T, pérdidas: PRn,m |  | I",Compartido,2020-04-01,49.09,3221,False,6d5bb11027f70fadd47f0e8d0ccd06de860b7d0dff0150e4727325737820d533
+"Monomia | Costo Unitario | Costo G,T, pérdidas: PRn,m |  | I",Propiedad del Cliente,2020-02-01,48.98,3103,False,43038ddad731ef84509f5afe830b0e633758718fb1eb10bad83ba480adfbb946
+"Monomia | Costo Unitario | Costo G,T, pérdidas: PRn,m |  | I",Propiedad del Cliente,2020-03-01,53.04,3162,False,8389fea5a9b59cedd41558fdf52661a465f4087b78b3c450008220ddbc2ca87a
+"Monomia | Costo Unitario | Costo G,T, pérdidas: PRn,m |  | I",Propiedad del Cliente,2020-04-01,49.09,3221,False,6d5bb11027f70fadd47f0e8d0ccd06de860b7d0dff0150e4727325737820d533
+"Monomia | Costo Unitario | Margen comercialización: CVm,i,j |  | I",Propiedad Epm,2020-05-01,46.92,119,False,b9f414ceb290b38d02790257d8da0609c1943e00a4d1bf8dcea3a4cafc8c107d
+"Monomia | Costo Unitario | Margen comercialización: CVm,i,j |  | I",Propiedad Epm,2020-06-01,48.55,3286,False,b1d5da98e035c64f9e6a6771fa2e93ee9bf78b28331ab88ee008c0cec2be3f2d
+"Monomia | Costo Unitario | Margen comercialización: CVm,i,j |  | I",Propiedad Epm,2020-07-01,52.03,3344,False,e364e59e249f6f17887eb59f6db2281d198fad410e77abf29f42e381497b2ad3
+"Monomia | Costo Unitario | Margen comercialización: CVm,i,j |  | I",Propiedad Epm,2020-08-01,50.71,3403,False,64c1ee7684b3c136f120d6b26ee8c2fda9f77e9578e74cdd3ab13a928fce506e
+"Monomia | Costo Unitario | Margen comercialización: CVm,i,j |  | I",Compartido,2020-05-01,46.92,119,False,b9f414ceb290b38d02790257d8da0609c1943e00a4d1bf8dcea3a4cafc8c107d
+"Monomia | Costo Unitario | Margen comercialización: CVm,i,j |  | I",Compartido,2020-06-01,48.55,3286,False,b1d5da98e035c64f9e6a6771fa2e93ee9bf78b28331ab88ee008c0cec2be3f2d
+"Monomia | Costo Unitario | Margen comercialización: CVm,i,j |  | I",Compartido,2020-07-01,52.03,3344,False,e364e59e249f6f17887eb59f6db2281d198fad410e77abf29f42e381497b2ad3
+"Monomia | Costo Unitario | Margen comercialización: CVm,i,j |  | I",Compartido,2020-08-01,50.71,3403,False,64c1ee7684b3c136f120d6b26ee8c2fda9f77e9578e74cdd3ab13a928fce506e
+"Monomia | Costo Unitario | Margen comercialización: CVm,i,j |  | I",Propiedad del Cliente,2020-05-01,46.92,119,False,b9f414ceb290b38d02790257d8da0609c1943e00a4d1bf8dcea3a4cafc8c107d
+"Monomia | Costo Unitario | Margen comercialización: CVm,i,j |  | I",Propiedad del Cliente,2020-06-01,48.55,3286,False,b1d5da98e035c64f9e6a6771fa2e93ee9bf78b28331ab88ee008c0cec2be3f2d
+"Monomia | Costo Unitario | Margen comercialización: CVm,i,j |  | I",Propiedad del Cliente,2020-07-01,52.03,3344,False,e364e59e249f6f17887eb59f6db2281d198fad410e77abf29f42e381497b2ad3
+"Monomia | Costo Unitario | Margen comercialización: CVm,i,j |  | I",Propiedad del Cliente,2020-08-01,50.71,3403,False,64c1ee7684b3c136f120d6b26ee8c2fda9f77e9578e74cdd3ab13a928fce506e
+Monomia | Costo Unitario | Restricciones: Rm |  | I,Propiedad Epm,2021-07-01,28.4,373,False,6f18c6fdeee66637cbd95ccc6788fab2d67f518196b72d84a610776b2cece016
+Monomia | Costo Unitario | Restricciones: Rm |  | I,Compartido,2021-07-01,28.4,373,False,6f18c6fdeee66637cbd95ccc6788fab2d67f518196b72d84a610776b2cece016
+Monomia | Costo Unitario | Restricciones: Rm |  | I,Propiedad del Cliente,2021-07-01,28.4,373,False,6f18c6fdeee66637cbd95ccc6788fab2d67f518196b72d84a610776b2cece016
+Monomia | No Residencial | Oficial y Exentos de Contribución |  | I,Propiedad Epm,2020-02-01,567.36,3096,False,b985e49d698b67e56b1fcf340e49898a8d5b30b144e590a8444a92a41fed0e62
+Monomia | No Residencial | Oficial y Exentos de Contribución |  | I,Compartido,2020-02-01,544.3,3096,False,b985e49d698b67e56b1fcf340e49898a8d5b30b144e590a8444a92a41fed0e62
+Monomia | No Residencial | Oficial y Exentos de Contribución |  | I,Propiedad del Cliente,2020-02-01,521.24,3096,False,b985e49d698b67e56b1fcf340e49898a8d5b30b144e590a8444a92a41fed0e62
+Monomia | Residencial | Estrato 1 | Rango 0 - CS | I,Propiedad Epm,2020-02-01,226.94,3086,True,20d1694525d695d345e4303ec8e6824464b36de4ed2c8f295f7db5e8018534e7
+Monomia | Residencial | Estrato 1 | Rango 0 - CS | I,Propiedad Epm,2020-03-01,229.21,3145,True,43908222d0027ce0cda8b419aa90ac5b4d724d4c5ec59804da19b6fe31e66f77
+Monomia | Residencial | Estrato 1 | Rango 0 - CS | I,Propiedad Epm,2020-04-01,229.75,3204,True,9a6b48ffefb45567fa60624ac8609d01745169da4a5056fdec404ac176d24148
+Monomia | Residencial | Estrato 1 | Rango 0 - CS | I,Propiedad Epm,2020-06-01,229.38,3270,True,1a8001f3b638321e3d63f3e8026c36f156a95b202ddb5d99d19e6bed0406ec04
+Monomia | Residencial | Estrato 1 | Rango 0 - CS | I,Propiedad Epm,2020-07-01,228.53,2057,True,f657c965eb7ace569e7733816e6b221a12c2c63fc1f697506d263bc7d360fe02
+Monomia | Residencial | Estrato 1 | Rango 0 - CS | I,Propiedad Epm,2021-01-01,229.22,102,True,02aafa063051b9d8ba54ca69501f26ddd05a4fe1ddca5ff5371bddfc99ce5978
+Monomia | Residencial | Estrato 1 | Rango 0 - CS | I,Propiedad Epm,2021-09-01,240.93,650,True,829890521515ad6b87bf260bfbe1a4bc3205b1171bde9a9a456bd1c74302d342
+Monomia | Residencial | Estrato 1 | Rango 0 - CS | I,Propiedad Epm,2021-10-01,242.86,750,True,e4025ff1bb586e80dd4b4581f0b8cefc29f4e17f6dc0289cb8af189893fd24b6
+Monomia | Residencial | Estrato 1 | Rango 0 - CS | I,Propiedad Epm,2021-11-01,244.8,473,True,0de6b6172960d4c36fae7f5cb1bebc87de037e11ea8a2ab046c442e902f0f3f0
+Monomia | Residencial | Estrato 1 | Rango 0 - CS | I,Propiedad Epm,2021-12-01,246.76,709,True,09aca68275dff7c450595f184530f8a7b0debbc98c5d118c6c25a287686e1738
+Monomia | Residencial | Estrato 1 | Rango 0 - CS | I,Propiedad del Cliente,2020-02-01,208.5,3086,True,20d1694525d695d345e4303ec8e6824464b36de4ed2c8f295f7db5e8018534e7
+Monomia | Residencial | Estrato 1 | Rango 0 - CS | I,Propiedad del Cliente,2020-03-01,210.59,3145,True,43908222d0027ce0cda8b419aa90ac5b4d724d4c5ec59804da19b6fe31e66f77
+Monomia | Residencial | Estrato 1 | Rango 0 - CS | I,Propiedad del Cliente,2020-04-01,211.08,3204,True,9a6b48ffefb45567fa60624ac8609d01745169da4a5056fdec404ac176d24148
+Monomia | Residencial | Estrato 1 | Rango 0 - CS | I,Propiedad del Cliente,2020-08-01,209.96,3387,True,c41c5e9b229f2266c770dd0ef3dcb3b44c16a9658ccce0cd0c2a0c22e9e048c8
+Monomia | Residencial | Estrato 1 | Rango 0 - CS | I,Propiedad del Cliente,2021-01-01,210.59,102,True,02aafa063051b9d8ba54ca69501f26ddd05a4fe1ddca5ff5371bddfc99ce5978
+Monomia | Residencial | Estrato 1 | Rango 0 - CS | I,Propiedad del Cliente,2021-09-01,221.35,650,True,829890521515ad6b87bf260bfbe1a4bc3205b1171bde9a9a456bd1c74302d342
+Monomia | Residencial | Estrato 1 | Rango 0 - CS | I,Propiedad del Cliente,2021-10-01,223.12,750,True,e4025ff1bb586e80dd4b4581f0b8cefc29f4e17f6dc0289cb8af189893fd24b6
+Monomia | Residencial | Estrato 1 | Rango 0 - CS | I,Propiedad del Cliente,2021-11-01,224.9,473,True,0de6b6172960d4c36fae7f5cb1bebc87de037e11ea8a2ab046c442e902f0f3f0
+Monomia | Residencial | Estrato 1 | Rango 0 - CS | I,Propiedad del Cliente,2021-12-01,226.7,709,True,09aca68275dff7c450595f184530f8a7b0debbc98c5d118c6c25a287686e1738
+Monomia | Residencial | Estrato 1 | Rango > CS | I,Propiedad Epm,2020-02-01,567.36,3087,False,5e864f02a6a952861e0c7120437de3013f3d9cd40f12937a00fd9e5502649f70
+Monomia | Residencial | Estrato 1 | Rango > CS | I,Compartido,2020-02-01,544.3,3087,False,5e864f02a6a952861e0c7120437de3013f3d9cd40f12937a00fd9e5502649f70
+Monomia | Residencial | Estrato 1 | Rango > CS | I,Propiedad del Cliente,2020-02-01,521.24,3087,False,5e864f02a6a952861e0c7120437de3013f3d9cd40f12937a00fd9e5502649f70
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Propiedad Epm,2020-02-01,283.68,3088,False,953adb80de77119e7de0f6fdf3046923b1bac8cf738bbcd2650733fade1699f7
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Propiedad Epm,2020-03-01,286.52,3147,False,b624b8f055dceb1eb1bae03ac117f96732bd571449475879c48d871a882ec86a
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Propiedad Epm,2020-04-01,287.19,3206,False,1eff611a466b73d26c962eb875010c3c67c9f3757f1dd1e45759a170f55b1bca
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Propiedad Epm,2020-06-01,286.73,3272,False,49241b897e2955ffeab4b350405853e0fdd383f741eb9fa7ea806b379f596ed0
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Propiedad Epm,2020-07-01,285.67,3330,False,ff60d271e5b32ec7925925662fbf208005e65ed6b5fa039825cf2f2e1f8e7bfd
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Propiedad Epm,2021-01-01,286.52,155,False,0f8383a29aa173ec34c6ecc9eb0dfa82cb0118931895ce6ed1cce0d7ec71702d
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Propiedad Epm,2021-09-01,301.17,652,False,27dce32a9ca978427cebb12e079ffecd8f0d4b914e071ab429c93a70d58fff1a
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Propiedad Epm,2021-10-01,303.58,752,False,96c2627476f50ef88a9cf3c348f5c7701fe07d9caac5af55315e40d05b843d0d
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Propiedad Epm,2021-11-01,306.0,475,False,246eae41601b4aab066880aa370959b2767d17eeeb6ff0ed610828b6218f6fd5
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Propiedad Epm,2021-12-01,308.45,711,False,df8a7564e84354c927296abf628fe7feffd6bed3f42093f26b9388b20e4ebbe2
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Compartido,2020-02-01,272.15,3088,False,953adb80de77119e7de0f6fdf3046923b1bac8cf738bbcd2650733fade1699f7
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Compartido,2020-03-01,274.87,3147,False,b624b8f055dceb1eb1bae03ac117f96732bd571449475879c48d871a882ec86a
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Compartido,2020-04-01,275.52,3206,False,1eff611a466b73d26c962eb875010c3c67c9f3757f1dd1e45759a170f55b1bca
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Compartido,2020-06-01,275.07,3272,False,49241b897e2955ffeab4b350405853e0fdd383f741eb9fa7ea806b379f596ed0
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Compartido,2020-07-01,274.06,3330,False,ff60d271e5b32ec7925925662fbf208005e65ed6b5fa039825cf2f2e1f8e7bfd
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Compartido,2021-01-01,274.88,155,False,0f8383a29aa173ec34c6ecc9eb0dfa82cb0118931895ce6ed1cce0d7ec71702d
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Compartido,2021-09-01,288.93,652,False,27dce32a9ca978427cebb12e079ffecd8f0d4b914e071ab429c93a70d58fff1a
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Compartido,2021-10-01,291.24,752,False,96c2627476f50ef88a9cf3c348f5c7701fe07d9caac5af55315e40d05b843d0d
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Compartido,2021-11-01,293.57,475,False,246eae41601b4aab066880aa370959b2767d17eeeb6ff0ed610828b6218f6fd5
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Compartido,2021-12-01,295.92,711,False,df8a7564e84354c927296abf628fe7feffd6bed3f42093f26b9388b20e4ebbe2
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Propiedad del Cliente,2020-02-01,260.62,3088,False,953adb80de77119e7de0f6fdf3046923b1bac8cf738bbcd2650733fade1699f7
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Propiedad del Cliente,2020-03-01,263.23,3147,False,b624b8f055dceb1eb1bae03ac117f96732bd571449475879c48d871a882ec86a
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Propiedad del Cliente,2020-04-01,263.85,3206,False,1eff611a466b73d26c962eb875010c3c67c9f3757f1dd1e45759a170f55b1bca
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Propiedad del Cliente,2020-08-01,262.45,3389,False,f7fcc8a3c4b6754deceade7e789fe4b4f34d8aacd365eb17a25a9d2e31a6d2d3
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Propiedad del Cliente,2021-01-01,263.23,155,False,0f8383a29aa173ec34c6ecc9eb0dfa82cb0118931895ce6ed1cce0d7ec71702d
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Propiedad del Cliente,2021-09-01,276.69,652,False,27dce32a9ca978427cebb12e079ffecd8f0d4b914e071ab429c93a70d58fff1a
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Propiedad del Cliente,2021-10-01,278.9,752,False,96c2627476f50ef88a9cf3c348f5c7701fe07d9caac5af55315e40d05b843d0d
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Propiedad del Cliente,2021-11-01,281.13,475,False,246eae41601b4aab066880aa370959b2767d17eeeb6ff0ed610828b6218f6fd5
+Monomia | Residencial | Estrato 2 | Rango 0 - CS | I,Propiedad del Cliente,2021-12-01,283.38,711,False,df8a7564e84354c927296abf628fe7feffd6bed3f42093f26b9388b20e4ebbe2
+Monomia | Residencial | Estrato 2 | Rango > CS | I,Propiedad Epm,2020-02-01,567.36,3089,False,d87e6f7d0ea8143cf6f670b1c44e7f22841d6b31a6587e42c202fbc85b9c7f9e
+Monomia | Residencial | Estrato 2 | Rango > CS | I,Compartido,2020-02-01,544.3,3089,False,d87e6f7d0ea8143cf6f670b1c44e7f22841d6b31a6587e42c202fbc85b9c7f9e
+Monomia | Residencial | Estrato 2 | Rango > CS | I,Propiedad del Cliente,2020-02-01,521.24,3089,False,d87e6f7d0ea8143cf6f670b1c44e7f22841d6b31a6587e42c202fbc85b9c7f9e
+Monomia | Residencial | Estrato 3 | Rango 0 - CS | I,Propiedad Epm,2020-02-01,482.26,3090,False,cfd33f3efd2baa86651619f6aa2d9aa597571d2e49619e3221375fcdafc04a10
+Monomia | Residencial | Estrato 3 | Rango 0 - CS | I,Compartido,2020-02-01,462.66,3090,False,cfd33f3efd2baa86651619f6aa2d9aa597571d2e49619e3221375fcdafc04a10
+Monomia | Residencial | Estrato 3 | Rango 0 - CS | I,Propiedad del Cliente,2020-02-01,443.05,3090,False,cfd33f3efd2baa86651619f6aa2d9aa597571d2e49619e3221375fcdafc04a10
+Monomia | Residencial | Estrato 3 | Rango > CS | I,Propiedad Epm,2020-02-01,567.36,3091,False,84e1a399c4e0c5798a8eef4db87f3937a1e7954b87e4390dd487c55716bc4418
+Monomia | Residencial | Estrato 3 | Rango > CS | I,Compartido,2020-02-01,544.3,3091,False,84e1a399c4e0c5798a8eef4db87f3937a1e7954b87e4390dd487c55716bc4418
+Monomia | Residencial | Estrato 3 | Rango > CS | I,Propiedad del Cliente,2020-02-01,521.24,3091,False,84e1a399c4e0c5798a8eef4db87f3937a1e7954b87e4390dd487c55716bc4418
+Monomia | Residencial | Estrato 4 | Todo el consumo | I,Propiedad Epm,2020-03-01,573.03,3151,True,e59ad033b6904e2c1c322f263a39323af9fed3a0370f051514ef7ef883692e84
+Monomia | Residencial | Estrato 4 | Todo el consumo | I,Propiedad Epm,2020-04-01,567.36,3210,True,aabe2efa9c1ab3968c3da1695b7f0164a31ff784f73ec193e41b4fac8d7800ad
+Monomia | Residencial | Estrato 4 | Todo el consumo | I,Compartido,2020-02-01,544.3,3092,True,48276c73aeaf99482642ea52b8ad16e253f2a3a5ecc25699acf116466c5376b6
+Monomia | Residencial | Estrato 4 | Todo el consumo | I,Propiedad del Cliente,2020-02-01,521.24,3092,True,48276c73aeaf99482642ea52b8ad16e253f2a3a5ecc25699acf116466c5376b6
+Monomia | Áreas Comunes | Con contribución |  | I,Propiedad Epm,2020-02-01,680.83,3097,False,1d16ec10a947ff28cf662255192ed9c6ebad0c8161397e8cda3bc89d999f716b
+Monomia | Áreas Comunes | Con contribución |  | I,Compartido,2020-02-01,653.16,3097,False,1d16ec10a947ff28cf662255192ed9c6ebad0c8161397e8cda3bc89d999f716b
+Monomia | Áreas Comunes | Con contribución |  | I,Propiedad del Cliente,2020-02-01,625.49,3097,False,1d16ec10a947ff28cf662255192ed9c6ebad0c8161397e8cda3bc89d999f716b
+Monomia | Áreas Comunes | Sin contribución |  | I,Propiedad Epm,2020-02-01,567.36,3098,False,4328750dd048eab83e71dc4c913cfe38c87a905af9f618b0b277756fe77d4af5
+Monomia | Áreas Comunes | Sin contribución |  | I,Compartido,2020-02-01,544.3,3098,False,4328750dd048eab83e71dc4c913cfe38c87a905af9f618b0b277756fe77d4af5
+Monomia | Áreas Comunes | Sin contribución |  | I,Propiedad del Cliente,2020-02-01,521.24,3098,False,4328750dd048eab83e71dc4c913cfe38c87a905af9f618b0b277756fe77d4af5

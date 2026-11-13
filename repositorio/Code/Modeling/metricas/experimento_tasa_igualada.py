@@ -27,7 +27,7 @@ import pandas as pd
 import sklearn
 from sklearn.neighbors import LocalOutlierFactor, NearestNeighbors
 
-HERE = (_PROJECT_ROOT / 'Outputs/metricas')
+HERE = (_PROJECT_ROOT / 'Data/gold/outputs/metricas')
 ROOT = _PROJECT_ROOT
 sys.dont_write_bytecode = True
 sys.path.insert(0, str((_PROJECT_ROOT / 'Code/Modeling/sensibilidad')))
@@ -567,11 +567,11 @@ def main():
         sys.stdout.reconfigure(encoding='utf-8')
     global DETAIL_BASE, DETAIL_CASES
     datasets, inputs = A.load_sources()
-    quarantine = (_PROJECT_ROOT / 'Outputs/cuarentena_bootstrap/EPM/cuarentena_registros.csv')
+    quarantine = (_PROJECT_ROOT / 'Data/gold/outputs/cuarentena_bootstrap/EPM/cuarentena_registros.csv')
     guarded = {ROOT / e['ruta']: e['sha256'] for e in inputs.values()}
     guarded[quarantine] = sha256(quarantine)
     guarded[A.HERE / 'inyecciones_detalle.csv.gz'] = sha256(A.HERE / 'inyecciones_detalle.csv.gz')
-    guarded[(_PROJECT_ROOT / 'Outputs/adaptadores/insumos_hito2/02_catalogo_variantes.csv')] = sha256((_PROJECT_ROOT / 'Outputs/adaptadores/insumos_hito2/02_catalogo_variantes.csv'))
+    guarded[(_PROJECT_ROOT / 'Data/silver/outputs/adaptadores/insumos_hito2/02_catalogo_variantes.csv')] = sha256((_PROJECT_ROOT / 'Data/silver/outputs/adaptadores/insumos_hito2/02_catalogo_variantes.csv'))
     DETAIL_BASE = GzipTable('puntajes_reales.csv.gz')
     DETAIL_CASES = GzipTable('puntajes_inyecciones.csv.gz')
     verification = []
@@ -587,7 +587,7 @@ def main():
         write_table(name, rows)
     for path, before in guarded.items():
         assert sha256(path) == before, f'Se modificó una entrada: {path}'
-    ((_PROJECT_ROOT / 'Outputs/metricas/verificacion_contra_4_2.json')).write_text(
+    ((_PROJECT_ROOT / 'Data/gold/outputs/metricas/verificacion_contra_4_2.json')).write_text(
         json.dumps({'estado': 'coincide', 'detalle': verification}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     config = {
         'fecha_cliente': '2026-11-07', 'semilla': SEED, 'referencia': WINDOW, 'vigilancia': WATCH,
@@ -619,14 +619,14 @@ def main():
         'dependencias': {p.relative_to(ROOT).as_posix(): sha256(p) for p in (
             (_PROJECT_ROOT / 'Docs/Antecedentes/plan_hitos_3-6_detallado.txt'),
             (_PROJECT_ROOT / 'Code/Modeling/sensibilidad/analisis_sensibilidad.py'),
-            (_PROJECT_ROOT / 'Outputs/sensibilidad/inyecciones_detalle.csv.gz'),
+            (_PROJECT_ROOT / 'Data/gold/outputs/sensibilidad/inyecciones_detalle.csv.gz'),
             (_PROJECT_ROOT / 'Code/Modeling/detectores/zscore_robusto.py'),
-            (_PROJECT_ROOT / 'Outputs/adaptadores/insumos_hito2/02_catalogo_variantes.csv'),
+            (_PROJECT_ROOT / 'Data/silver/outputs/adaptadores/insumos_hito2/02_catalogo_variantes.csv'),
             (_PROJECT_ROOT / 'Code/Modeling/regla_sistemica/regla_sistemica.py'))},
         'versiones': {'python': platform.python_version(), 'numpy': np.__version__,
                       'pandas': pd.__version__, 'sklearn': sklearn.__version__},
         'detalle': {'puntajes_reales': DETAIL_BASE.count, 'puntajes_inyecciones': DETAIL_CASES.count}}
-    ((_PROJECT_ROOT / 'Outputs/metricas/configuracion.json')).write_text(json.dumps(config, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    ((_PROJECT_ROOT / 'Data/gold/outputs/metricas/configuracion.json')).write_text(json.dumps(config, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f"Finalizado: {DETAIL_BASE.count} observaciones y {DETAIL_CASES.count} casos puntuados en {HERE}", flush=True)
 
 

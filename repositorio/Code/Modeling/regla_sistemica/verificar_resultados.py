@@ -15,7 +15,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-HERE = (_PROJECT_ROOT / 'Outputs/regla_sistemica')
+HERE = (_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica')
 ROOT = _PROJECT_ROOT
 sys.dont_write_bytecode = True
 sys.path.insert(0, str((_PROJECT_ROOT / 'Code/Modeling/regla_sistemica')))
@@ -24,7 +24,10 @@ import regla_sistemica as R  # noqa: E402
 TOL = 1e-9
 
 
-def digest(path):
+def digest(path, expected=None):
+    sys.path.insert(0, str(ROOT / 'Code/Modeling'))
+    from medallon_compat import historical_path
+    path = historical_path(path, expected)
     h = hashlib.sha256()
     with path.open('rb') as stream:
         for block in iter(lambda: stream.read(1 << 20), b''):
@@ -59,16 +62,16 @@ def naive_fractions(items, window, method):
 
 def main():
     sys.stdout.reconfigure(encoding='utf-8')
-    config = json.loads(((_PROJECT_ROOT / 'Outputs/regla_sistemica/configuracion.json')).read_text(encoding='utf-8'))
+    config = json.loads(((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/configuracion.json')).read_text(encoding='utf-8'))
     checks = []
     for entry in [*config['entradas'].values(), config['cuarentena_EPM']]:
-        assert digest(ROOT / entry['ruta']) == entry['sha256'], entry['ruta']
+        assert digest(ROOT / entry['ruta'], entry['sha256']) == entry['sha256'], entry['ruta']
     for group in ('dependencias', 'evidencia_externa'):
         for path, expected in config[group].items():
-            assert digest(ROOT / path) == expected, path
+            assert digest(ROOT / path, expected) == expected, path
     checks.append('Datasets, cuarentena, dependencias y los seis PDF de EPM conservan sus huellas')
 
-    fractions = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/fracciones_mensuales.csv'))
+    fractions = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/fracciones_mensuales.csv'))
     # 1. fracciones: coherencia interna y recálculo ingenuo de EPM canónica
     assert np.allclose(fractions.fraccion, fractions.series_con_alerta / fractions.series_evaluadas, atol=TOL)
     assert ((fractions.series_evaluadas >= R.N_MIN).astype(int) == fractions.aplicable).all()
@@ -87,17 +90,17 @@ def main():
     checks.append(f'{compared} meses de EPM canónica recalculados con una implementación distinta: conteos idénticos')
 
     # 2. reproducción del Hito 2
-    alerts = pd.read_csv((_PROJECT_ROOT / 'Outputs/adaptadores/insumos_hito2/05_alertas_imr_reales.csv'))
+    alerts = pd.read_csv((_PROJECT_ROOT / 'Data/silver/outputs/adaptadores/insumos_hito2/05_alertas_imr_reales.csv'))
     alerts['serie'] = alerts.clave + '|' + alerts.columna
     per_month = alerts.assign(periodo=alerts.fecha.str[:7]).groupby('periodo').serie.nunique()
     assert (per_month['2020-02'], per_month['2020-07'], per_month['2021-07']) == (51, 24, 18)
-    h2 = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/reproduccion_hito2.csv')).set_index('periodo')
+    h2 = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/reproduccion_hito2.csv')).set_index('periodo')
     assert (h2.series_evaluadas == 83).all() and h2.series_con_alerta.sum() == per_month.sum()
     checks.append('Cifras 51/83, 24/83 y 18/83 del plan reproducidas desde 05_alertas_imr_reales.csv')
 
     # 3. calibración y banda factible recalculadas
-    summary = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/calibracion_resumen.csv'))
-    calibration = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/calibracion_X.csv'))
+    summary = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/calibracion_resumen.csv'))
+    calibration = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/calibracion_X.csv'))
     keys = ['etiquetas', 'referencia', 'metodo', 'protocolo']
     for _, row in summary.iterrows():
         frame = fractions[(fractions.fuente == 'EPM') & (fractions.etiquetas == row.etiquetas) &
@@ -121,7 +124,7 @@ def main():
     checks.append('Banda de X, capturas y alertas reclasificadas recalculadas desde las fracciones; ninguna variante tiene banda factible')
 
     # 4. efecto sobre alertas reales
-    effect = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/efecto_regla_sobre_alertas_reales.csv'))
+    effect = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/efecto_regla_sobre_alertas_reales.csv'))
     assert (effect.alertas_retenidas + effect.alertas_reclasificadas == effect.alertas_totales).all()
     undefined = effect.fraccion_alertas_reclasificadas.isna()
     assert (effect[undefined].alertas_totales == 0).all(), 'NaN solo si no hay alertas en meses evaluables'
@@ -130,7 +133,7 @@ def main():
     checks.append('Alertas retenidas + reclasificadas = alertas totales; XM sin meses evaluables queda indefinido, no en cero')
 
     # 5. catálogo
-    catalog = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/catalogo_alertas_sistemicas.csv'))
+    catalog = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/catalogo_alertas_sistemicas.csv'))
     assert np.allclose(catalog.fraccion, catalog.series_con_alerta / catalog.series_evaluadas, atol=TOL)
     for x in (10, 25, 50):
         assert ((catalog.fraccion > x / 100).astype(int) == catalog[f'sistemico_X{x}']).all()
@@ -139,12 +142,12 @@ def main():
     checks.append(f'Catálogo de {len(catalog)} filas: fracciones, banderas por X y estado coherentes')
 
     # 6. contraste: transcripción, suma de componentes y cambios porcentuales
-    comparison = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/verificacion_transcripcion_pdf.csv'))
-    sums = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/verificacion_suma_componentes.csv'))
+    comparison = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/verificacion_transcripcion_pdf.csv'))
+    sums = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/verificacion_suma_componentes.csv'))
     assert comparison.coincide.all() and len(comparison) == 108
     assert sums.dentro_de_tolerancia.all() and (sums.diferencia.abs() <= 0.02 + 1e-9).all()
-    published = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/evidencia_externa/tarifas_epm_publicadas.csv')).set_index(['periodo', 'componente'])
-    contrast = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/contraste_componentes.csv'))
+    published = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/evidencia_externa/tarifas_epm_publicadas.csv')).set_index(['periodo', 'componente'])
+    contrast = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/contraste_componentes.csv'))
     for row in contrast.itertuples(index=False):
         name = 'CU total' if str(row.componente).startswith('CU total') else row.componente
         old = published.loc[(row.mes_base, name), 'propiedadepm']
@@ -157,7 +160,7 @@ def main():
     checks.append('108 celdas de los PDF = CSV; suma de componentes = CU total (±0,02); cambios porcentuales recalculados')
 
     # 7. costo de enmascaramiento (tomado de 4.2)
-    cost = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/costo_enmascaramiento_4_2.csv'))
+    cost = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/costo_enmascaramiento_4_2.csv'))
     assert np.allclose(cost.fraccion_enmascarada, (cost.detecciones_t_o_t1 - cost.retenidas_t_o_t1) / cost.detecciones_t_o_t1, atol=TOL)
     assert (cost.retenidas_t_o_t1 <= cost.detecciones_t_o_t1).all()
     checks.append('Fracciones de enmascaramiento reconciliadas con los conteos de 4.2')
@@ -173,11 +176,11 @@ def main():
     report = {'estado': 'correcto', 'fecha_cliente': '2026-11-07', 'comprobaciones': checks,
               'filas_fracciones_mensuales': len(fractions), 'variantes_calibradas': len(summary),
               'filas_catalogo': len(catalog), 'pruebas_automaticas': n_tests}
-    ((_PROJECT_ROOT / 'Outputs/regla_sistemica/verificacion.json')).write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    ((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/verificacion.json')).write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     artifacts = [{'archivo': p.relative_to(HERE).as_posix(), 'bytes': p.stat().st_size, 'sha256': digest(p)}
                  for p in sorted(HERE.rglob('*')) if p.is_file() and p.name != 'manifiesto_resultados.json'
                  and '__pycache__' not in p.parts]
-    ((_PROJECT_ROOT / 'Outputs/regla_sistemica/manifiesto_resultados.json')).write_text(
+    ((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/manifiesto_resultados.json')).write_text(
         json.dumps({'entradas': config['entradas'], 'archivos': artifacts}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(report, ensure_ascii=False, indent=2))
 

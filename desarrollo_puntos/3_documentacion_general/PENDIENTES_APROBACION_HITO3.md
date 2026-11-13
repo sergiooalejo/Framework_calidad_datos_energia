@@ -8,13 +8,15 @@ La matriz OE1, las fichas, las cartas, la trazabilidad, la cuarentena, el bootst
 
 ## 1. Roles y gobernanza
 
+**Propuesta de gobernanza del equipo:** tres integrantes comparten la ejecución técnica y el
+profesor actúa como aprobador final. La distribución queda pendiente de confirmación nominal.
+
 | Decisión requerida | Propuesta inicial | Por qué se necesita | Estado |
 |---|---|---|---|
-| Responsable de reglas de negocio | Persona que conoce tarifas, consumo y categorías | Las reglas dependen del significado del negocio; sin esta persona, un código podría interpretarse de forma incorrecta. | Pendiente de asignar nombre o cargo |
-| Responsable de datos | Persona que descarga, versiona y conserva archivos | Alguien debe garantizar que se usa el archivo correcto y que los hashes y versiones se conservan. | Pendiente de asignar nombre o cargo |
-| Responsable de métricas y anomalías | Persona que ejecuta cartas, bootstrap y scripts | La medición debe poder repetirse y tener un responsable técnico. | Pendiente de asignar nombre o cargo |
-| Responsable de validación | Director o persona que revisa la muestra externa | Las alertas estadísticas no prueban exactitud; alguien debe contrastar los valores con evidencia externa. | Pendiente de confirmar |
-| Aprobador final | Director del proyecto | La tesis necesita una autoridad que confirme que los criterios son aceptables metodológicamente. | Pendiente de confirmar |
+| Integrante 1 | Datos y reglas de negocio | Conserva datasets, hashes, diccionarios, etiquetas y reglas. | Propuesta; falta nombre |
+| Integrante 2 | Métricas y anomalías | Ejecuta cartas, bootstrap, detectores, sensibilidad, métricas y scorecard. | Propuesta; falta nombre |
+| Integrante 3 | Validación y documentación | Revisa alertas, organiza evidencias, mantiene bitácora y documenta limitaciones. | Propuesta; falta nombre |
+| Profesor | Aprobador final | Confirma umbrales, métodos, alcance, interpretación y conclusiones. | Pendiente de confirmación |
 
 ### Propuesta de distribución para validar con el profesor
 
@@ -248,11 +250,11 @@ El criterio de cierre solicita dos descargas. Debe aprobarse obtener una segunda
 | Valor X de la regla sistémica | Se propone `25 %` como valor de trabajo; tres meses no permiten un valor único | X decide cuándo muchas alertas se consideran un fenómeno colectivo; cambiarlo puede reclasificar meses completos. | Aceptar 25 %, elegir otro valor o mantener la regla como exploratoria |
 | Prevalencia para precisión y F1 | Se reportan escenarios de 1 %, 5 % y 10 %; no se elige uno como verdad | La precisión depende de cuántos errores se supone que existen; elegir una prevalencia sin justificación puede exagerar o minimizar el resultado. | Decidir si se presenta un escenario principal o todos como sensibilidad |
 | Método principal | Se comparan IMR, Z robusto, Isolation Forest, LOF, KNN y R12 | La tesis debe explicar si propone un método principal o un conjunto de métodos complementarios. | Elegir método principal o declarar que el framework conserva varios métodos |
-| Etiquetas canónicas de EPM | Equivalencias aprobadas internamente; `EPM_canonicas` es sensibilidad | Las etiquetas fragmentan las series; unirlas cambia el número de series y puede cambiar las alertas. | Confirmar si se aceptan como catálogo oficial y si se repiten 4.1/4.2 |
+| Etiquetas canónicas de EPM | Se conservan las etiquetas actuales y `EPM_canonicas` como catálogo operativo | No existe una fuente externa disponible para validar las equivalencias; cambiar los valores originales afectaría la trazabilidad. | Aceptadas como decisión operativa del equipo; limitación documentada |
 | MAD igual a cero | Se conserva una regla conservadora: no se inventa escala | Si todos los cambios de referencia son iguales, el MAD es cero y cualquier solución arbitraria alteraría las señales. | Confirmar este tratamiento o definir una alternativa |
 | LOF en CHEC | Queda degenerado por duplicados exactos | LOF mide densidad; los duplicados pueden hacer que la densidad deje de representar rareza real. | Aprobar deduplicación, ajuste de vecinos o exclusión justificada |
 | Extended Isolation Forest | No implementado; el plan lo dejaba condicionado al tiempo | Se debe evitar que la ausencia de una técnica se interprete como un incumplimiento oculto. | Confirmar que se excluye del alcance final |
-| Scorecard 4.5 | Generado para 4 fuentes × 8 dimensiones, pero permanece provisional | El scorecard resume resultados que dependen de umbrales y evidencia aún no aprobados. | Aprobar umbrales y evidencia para convertirlo en definitivo |
+| Scorecard 4.5 | El resumen vigente conserva 4 fuentes × 8 dimensiones y deja el promedio vacío | Algunas reglas miden cumplimiento y otras incumplimiento; mezclarlas sin normalización daría un porcentaje engañoso. | Aprobar si habrá agregación y definir dirección, ponderaciones, poblaciones y tratamiento de resultados provisionales/no medibles |
 | Resultados 4.6 | Niveles explícitos para EPM/CHEC; SSPD y XM quedan `No_aplica` | Forzar una clasificación de nivel donde no existe produciría una comparación artificial. | Aceptar esta delimitación y evitar equivalencias no sustentadas |
 | Evidencia regulatoria | Falta lectura completa de CREG 015/2018, 152/2020, 003/2021 y resoluciones particulares de EPM | Una alerta estadística no demuestra una causa regulatoria; se necesita respaldo documental para afirmarlo. | Confirmar alcance documental y si la consulta formal queda para Hito 6 |
 | Incorporación en la tesis | El plan exige actualizar los apartados 3.1.5 y 5.6.4 del anteproyecto/metodología; el repositorio contiene la evidencia técnica, pero no el documento oficial editable de la tesis | La evidencia implementada debe reflejarse en el texto que se entregará y sustentará, sin afirmar como aprobado lo que sigue provisional. | Indicar el documento y responsable que integrará el texto, y aprobar su versión final |
@@ -273,6 +275,8 @@ regulatoria. Son evidencia para tomar estas decisiones.
 9. ¿Se acepta que SSPD y XM queden como `No_aplica` en el análisis por nivel de 4.6?
 10. ¿Qué evidencia regulatoria debe completarse y qué parte se deja para el Hito 6?
 11. ¿Quién integrará las decisiones aprobadas en el documento oficial de la tesis?
+12. ¿Debe existir una puntuación agregada? Si es así, ¿qué dirección, ponderación y tratamiento de
+    valores provisionales o no medibles debe usar cada indicador?
 
 **Estado:** decisiones del Hito 4 pendientes de confirmación metodológica, documental y de alcance.
 

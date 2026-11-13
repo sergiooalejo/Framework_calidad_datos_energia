@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "arquitectura": "medallon_fisico",
+  "capas": {
+    "bronze": [
+      "Data/bronze/datos"
+    ],
+    "silver": [
+      "Data/silver/datos",
+      "Data/silver/catalogos",
+      "Data/silver/diccionarios",
+      "Data/silver/metadatos",
+      "Data/silver/verificaciones",
+      "Data/silver/outputs/adaptadores"
+    ],
+    "gold": [
+      "Data/gold/outputs"
+    ]
+  }
+}

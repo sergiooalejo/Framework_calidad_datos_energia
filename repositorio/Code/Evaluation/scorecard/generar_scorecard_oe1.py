@@ -6,9 +6,9 @@ import csv
 from collections import defaultdict
 from pathlib import Path
 
-HERE = (_PROJECT_ROOT / 'Outputs/scorecard')
-MATRIX = (_PROJECT_ROOT / 'Outputs/calidad/matriz_oe1.csv')
-OUT = (_PROJECT_ROOT / 'Outputs/scorecard/scorecard_oe1_provisional.csv')
+HERE = (_PROJECT_ROOT / 'Data/gold/outputs/scorecard')
+MATRIX = (_PROJECT_ROOT / 'Data/gold/outputs/calidad/matriz_oe1.csv')
+OUT = (_PROJECT_ROOT / 'Data/gold/outputs/scorecard/scorecard_oe1_provisional.csv')
 
 
 def main():
@@ -21,7 +21,6 @@ def main():
         states = defaultdict(int)
         for control in controls:
             states[control["estado_medicion"]] += 1
-        values = [float(c["resultado_valor"]) for c in controls if c["resultado_valor"] not in ("", None)]
         rows.append({
             "fuente": source,
             "dimension": dimension,
@@ -30,9 +29,11 @@ def main():
             "controles_provisionales": states["provisional"] + states["provisional_proxy"] + states["provisional_interno"],
             "controles_no_medibles": states["no_medible"],
             "controles_no_aplica": states["no_aplica"],
-            "promedio_indicadores": "" if not values else f"{sum(values) / len(values):.6f}",
+            # Se conserva la columna por compatibilidad, pero no se mezclan
+            # tasas de alerta y cumplimiento sin una metodología aprobada.
+            "promedio_indicadores": "",
             "estado_scorecard": "provisional",
-            "nota": "No sustituye aprobación de umbrales ni evidencia externa.",
+            "nota": "Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.",
         })
     with OUT.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=list(rows[0]))

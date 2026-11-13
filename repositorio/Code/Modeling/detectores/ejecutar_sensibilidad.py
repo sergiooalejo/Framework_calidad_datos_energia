@@ -7,7 +7,7 @@ import csv
 import json
 import sys
 
-HERE = (_PROJECT_ROOT / 'Outputs/detectores')
+HERE = (_PROJECT_ROOT / 'Data/gold/outputs/detectores')
 sys.path.insert(0, str((_PROJECT_ROOT / 'Code/Modeling/detectores')))
 from zscore_robusto import evaluate, sha256  # noqa: E402
 

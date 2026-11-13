@@ -1,4 +1,9 @@
-# Aplicación Streamlit del Hito 5. Python 3.14 recomendado.
+# Tablero y etapas científicas ejecutables desde él. Python 3.14 requerido.
+# Para fijar también las dependencias indirectas, usar Poetry y poetry.lock.
 streamlit==1.50.0
 pandas==2.3.3
 PyYAML==6.0.3
+numpy==2.3.5
+scikit-learn==1.8.0
+scipy==1.17.1
+matplotlib==3.10.8

@@ -267,7 +267,7 @@ coincidencias ni porcentajes.
 
 ##### Plantilla
 
-La captura debe diligenciarse en [plantilla_exactitud.csv](../Outputs/calidad/plantilla_exactitud.csv). Cada fila debe
+La captura debe diligenciarse en [plantilla_exactitud.csv](../Data/gold/outputs/calidad/plantilla_exactitud.csv). Cada fila debe
 conservar el `snapshot_sha256` del dataset evaluado y el `sha256_referencia` del contraste.
 
 #### Oportunidad (OPO01)
@@ -290,7 +290,7 @@ por periodo. Sus resultados de oportunidad deben permanecer como proxy o pendien
 
 ##### Plantilla
 
-La captura debe diligenciarse en [plantilla_oportunidad.csv](../Outputs/calidad/plantilla_oportunidad.csv), incluyendo
+La captura debe diligenciarse en [plantilla_oportunidad.csv](../Data/gold/outputs/calidad/plantilla_oportunidad.csv), incluyendo
 la URL o archivo que demuestra cada fecha. No usar la fecha de descarga como fecha de publicación.
 
 #### Decisiones que debe aprobar el director
@@ -857,12 +857,12 @@ indicadores, sus resultados y las evidencias que sustentan cada medición.
 | Archivo o grupo | Función |
 |---|---|
 | [matriz_oe1.md](REFERENCIA_TECNICA.md#doc-cd000226e09e) | Definiciones, ocho dimensiones, diez tipos de regla y fichas de indicadores. |
-| [matriz_oe1.csv](../Outputs/calidad/matriz_oe1.csv) | Matriz principal: 76 registros, 19 controles por cada una de cuatro fuentes. |
-| [matriz_oe1.yaml](../Outputs/calidad/matriz_oe1.yaml) | Especificación documental y resultados por control y fuente. |
+| [matriz_oe1.csv](../Data/gold/outputs/calidad/matriz_oe1.csv) | Matriz principal: 76 registros, 19 controles por cada una de cuatro fuentes. |
+| [matriz_oe1.yaml](../Data/gold/outputs/calidad/matriz_oe1.yaml) | Especificación documental y resultados por control y fuente. |
 | [medir_matriz_oe1.py](../Code/Data_Acquisition_and_Understanding/calidad/medir_matriz_oe1.py) | Calcula la matriz; utiliza los adaptadores de [3.3](REFERENCIA_TECNICA.md#doc-1daec17adf88) y las cartas de [3.5](REFERENCIA_TECNICA.md#doc-6927d6df7ab3). |
 | [EVIDENCIA_EXACTITUD_OPORTUNIDAD.md](REFERENCIA_TECNICA.md#doc-dfcefa4bff36) | Procedimiento y limitaciones de EXA01 y OPO01. |
-| [referencia_exa01_chec.json](../Outputs/calidad/referencia_exa01_chec.json) | Referencia externa conservada para el contraste de exactitud CHEC. |
-| [plantilla_exactitud.csv](../Outputs/calidad/plantilla_exactitud.csv), [plantilla_oportunidad.csv](../Outputs/calidad/plantilla_oportunidad.csv), [plantilla_catalogos.csv](../Outputs/calidad/plantilla_catalogos.csv) | Plantillas sin diligenciar para evidencia y validación de indicadores. |
+| [referencia_exa01_chec.json](../Data/gold/outputs/calidad/referencia_exa01_chec.json) | Referencia externa conservada para el contraste de exactitud CHEC. |
+| [plantilla_exactitud.csv](../Data/gold/outputs/calidad/plantilla_exactitud.csv), [plantilla_oportunidad.csv](../Data/gold/outputs/calidad/plantilla_oportunidad.csv), [plantilla_catalogos.csv](../Data/gold/outputs/calidad/plantilla_catalogos.csv) | Plantillas sin diligenciar para evidencia y validación de indicadores. |
 | `matriz_dimensiones_dataset_*.py`, `indicadores_calidad_*_por_columna.csv`, `incidencias_calidad_*.csv`, `resumen_calidad_*.json` | Evaluación auxiliar por columna de EPM y CHEC; se conserva junto a los scripts que la generan. |
 
 La evaluación auxiliar por columna y la matriz principal tienen definiciones y unidades
@@ -1185,7 +1185,7 @@ El archivo agregado no es una segunda fuente. Es una transformación reproducibl
 
 La fuente permite evaluar completitud, validez, unicidad, consistencia, integridad y razonabilidad con los datos disponibles. Exactitud y oportunidad requieren evidencia adicional. La aplicabilidad de cada regla debe registrarse explícitamente en la matriz, sin usar `no_aplica` para ocultar una falta de evidencia.
 
-Archivo de definición: [`sspd.yaml`](../Data/diccionarios/SSPD/sspd.yaml).
+Archivo de definición: [`sspd.yaml`](../Data/silver/diccionarios/SSPD/sspd.yaml).
 
 #### Cierre del Hito 3
 
@@ -1390,9 +1390,9 @@ XM/SIMEM (`c1b851`). La comparación se basa en `matriz_oe1.csv`, las fichas de 
 las cartas logarítmicas y el bootstrap por categoría. No mezcla registros ni resultados entre
 fuentes.
 
-Ubicaciones actuales: [matriz OE1](../Outputs/calidad/matriz_oe1.csv),
+Ubicaciones actuales: [matriz OE1](../Data/gold/outputs/calidad/matriz_oe1.csv),
 [fichas](REFERENCIA_TECNICA.md#doc-6d09f59e62b7), [cartas](REFERENCIA_TECNICA.md#doc-6927d6df7ab3) y
-[bootstrap](../Outputs/cuarentena_bootstrap/bootstrap/bootstrap_categorias.csv).
+[bootstrap](../Data/gold/outputs/cuarentena_bootstrap/bootstrap/bootstrap_categorias.csv).
 
 #### Diferencias estructurales
 
@@ -1726,7 +1726,7 @@ Referencia en datos.gov.co: https://www.datos.gov.co/d/bt68-juyf . Su título co
 
 API de muestra: https://www.simem.co/backend-files/api/PublicData?datasetId=c1b851&startdate=2020-01-01&enddate=2020-01-02
 
-El archivo de evidencia [perfiles/evaluacion_candidato_xm.json](../Outputs/seleccion_fuentes/perfiles/evaluacion_candidato_xm.json) conserva parámetros, metadatos, esquema, conteos, ejemplos y hashes de respuestas. Las muestras completas de las consultas no se incorporaron al repositorio y no se cambiaron los datasets seleccionados.
+El archivo de evidencia [perfiles/evaluacion_candidato_xm.json](../Data/gold/outputs/seleccion_fuentes/perfiles/evaluacion_candidato_xm.json) conserva parámetros, metadatos, esquema, conteos, ejemplos y hashes de respuestas. Las muestras completas de las consultas no se incorporaron al repositorio y no se cambiaron los datasets seleccionados.
 
 #### Qué se comprobó directamente
 
@@ -1798,10 +1798,10 @@ alternativas o la reformulación del alcance de OE2.
 
 | Evidencia | Contenido |
 |---|---|
-| [perfiles/creg_electricidad_anexos.json](../Outputs/seleccion_fuentes/perfiles/creg_electricidad_anexos.json) | Revisión de anexos eléctricos CREG, hojas, tamaños y hashes. |
-| [perfiles/creg_prioridad_perfil.json](../Outputs/seleccion_fuentes/perfiles/creg_prioridad_perfil.json) | Perfil del conjunto CREG de gas ek3f-5wn4, descartado para el alcance eléctrico. |
+| [perfiles/creg_electricidad_anexos.json](../Data/gold/outputs/seleccion_fuentes/perfiles/creg_electricidad_anexos.json) | Revisión de anexos eléctricos CREG, hojas, tamaños y hashes. |
+| [perfiles/creg_prioridad_perfil.json](../Data/gold/outputs/seleccion_fuentes/perfiles/creg_prioridad_perfil.json) | Perfil del conjunto CREG de gas ek3f-5wn4, descartado para el alcance eléctrico. |
 | [Evaluacion_fuente_alternativa_XM.md](REFERENCIA_TECNICA.md#doc-50ab77624282) | Evaluación de demanda XM como alternativa y requisitos de adaptación. |
-| [perfiles/evaluacion_candidato_xm.json](../Outputs/seleccion_fuentes/perfiles/evaluacion_candidato_xm.json) | Consultas, metadatos y evidencia de la evaluación inicial del candidato XM. |
+| [perfiles/evaluacion_candidato_xm.json](../Data/gold/outputs/seleccion_fuentes/perfiles/evaluacion_candidato_xm.json) | Consultas, metadatos y evidencia de la evaluación inicial del candidato XM. |
 
 La explicación de la búsqueda CREG y la propuesta de fuentes ya existentes se conservan
 en [REVISION_CREG_ELECTRICIDAD.md](REFERENCIA_TECNICA.md#doc-1e1e212fc147) y
@@ -1824,13 +1824,13 @@ organizados por fuente.
 
 | Fuente | Script | Resultado |
 |---|---|---|
-| EPM | [cartas_log_epm.py](../Code/Modeling/cartas/EPM/cartas_log_epm.py) | [cartas_log_epm.csv](../Outputs/cartas/EPM/cartas_log_epm.csv) |
-| CHEC | [cartas_log_chec.py](../Code/Modeling/cartas/CHEC/cartas_log_chec.py) | [cartas_log_chec.csv](../Outputs/cartas/CHEC/cartas_log_chec.csv) |
-| SSPD | [cartas_log_sspd.py](../Code/Modeling/cartas/SSPD/cartas_log_sspd.py) | [cartas_log_sspd.csv](../Outputs/cartas/SSPD/cartas_log_sspd.csv) |
-| XM | [cartas_log_xm.py](../Code/Modeling/cartas/XM/cartas_log_xm.py) | [cartas_log_xm.csv](../Outputs/cartas/XM/cartas_log_xm.csv) |
+| EPM | [cartas_log_epm.py](../Code/Modeling/cartas/EPM/cartas_log_epm.py) | [cartas_log_epm.csv](../Data/gold/outputs/cartas/EPM/cartas_log_epm.csv) |
+| CHEC | [cartas_log_chec.py](../Code/Modeling/cartas/CHEC/cartas_log_chec.py) | [cartas_log_chec.csv](../Data/gold/outputs/cartas/CHEC/cartas_log_chec.csv) |
+| SSPD | [cartas_log_sspd.py](../Code/Modeling/cartas/SSPD/cartas_log_sspd.py) | [cartas_log_sspd.csv](../Data/gold/outputs/cartas/SSPD/cartas_log_sspd.csv) |
+| XM | [cartas_log_xm.py](../Code/Modeling/cartas/XM/cartas_log_xm.py) | [cartas_log_xm.csv](../Data/gold/outputs/cartas/XM/cartas_log_xm.csv) |
 
 EPM también conserva [revision_cartas_epm.py](../Code/Modeling/cartas/EPM/revision_cartas_epm.py) y su
-[tabla de señales](../Outputs/cartas/EPM/revision_senales_cartas_epm.csv). La revisión de señales tiene su
+[tabla de señales](../Data/gold/outputs/cartas/EPM/revision_senales_cartas_epm.csv). La revisión de señales tiene su
 propia implementación; moverla no certifica equivalencia con el cálculo principal.
 
 Desde la raíz del proyecto, por ejemplo:
@@ -1859,7 +1859,7 @@ manifiesto y comprobación de reproducibilidad.
 
 - [trazabilidad.py](../Code/Data_Acquisition_and_Understanding/trazabilidad/trazabilidad.py): genera claves estables, manifiesto y copias trazables
   de los hallazgos y alertas históricos de `3.3/insumos_hito2/`.
-- [trazabilidad/manifiesto_ejecucion.json](../Outputs/trazabilidad/trazabilidad/manifiesto_ejecucion.json):
+- [trazabilidad/manifiesto_ejecucion.json](../Data/gold/outputs/trazabilidad/trazabilidad/manifiesto_ejecucion.json):
   manifiesto conservado de la ejecución previa; no se ha sustituido por uno nuevo al moverlo.
 - [REPRODUCIBILIDAD_HITO3.md](REFERENCIA_TECNICA.md#doc-cff2689f65ac): evidencia existente y requisito
   pendiente de una segunda descarga independiente.
@@ -1977,10 +1977,10 @@ Corresponde a la actividad 7 del Hito 3.
 
 | Archivo o grupo | Función |
 |---|---|
-| [EPM/cuarentena.py](../Code/Data_Acquisition_and_Understanding/cuarentena_bootstrap/EPM/cuarentena.py), [cuarentena_registros.csv](../Outputs/cuarentena_bootstrap/EPM/cuarentena_registros.csv), [README_CUARENTENA.md](REFERENCIA_TECNICA.md#doc-9d236b840cde) | Materialización y explicación de los registros apartados para las cartas EPM. |
+| [EPM/cuarentena.py](../Code/Data_Acquisition_and_Understanding/cuarentena_bootstrap/EPM/cuarentena.py), [cuarentena_registros.csv](../Data/gold/outputs/cuarentena_bootstrap/EPM/cuarentena_registros.csv), [README_CUARENTENA.md](REFERENCIA_TECNICA.md#doc-9d236b840cde) | Materialización y explicación de los registros apartados para las cartas EPM. |
 | [cuarentena_fuentes.py](../Code/Data_Acquisition_and_Understanding/cuarentena_bootstrap/cuarentena_fuentes.py) | Generación conservadora de cuarentenas CHEC, SSPD y XM; escribe en las verificaciones de fuentes. |
 | [bootstrap_categorias.py](../Code/Data_Acquisition_and_Understanding/cuarentena_bootstrap/bootstrap_categorias.py) | Remuestreo y cálculo de intervalos a partir de las cartas de 3.5. |
-| [bootstrap/README.md](REFERENCIA_TECNICA.md#doc-30e3a1a159ec), [resultados](../Outputs/cuarentena_bootstrap/bootstrap/bootstrap_categorias.csv), [configuración](../Outputs/cuarentena_bootstrap/bootstrap/configuracion.json) | Evidencia y parámetros del bootstrap conservado: 105 grupos, 2.000 repeticiones y semilla fija. |
+| [bootstrap/README.md](REFERENCIA_TECNICA.md#doc-30e3a1a159ec), [resultados](../Data/gold/outputs/cuarentena_bootstrap/bootstrap/bootstrap_categorias.csv), [configuración](../Data/gold/outputs/cuarentena_bootstrap/bootstrap/configuracion.json) | Evidencia y parámetros del bootstrap conservado: 105 grupos, 2.000 repeticiones y semilla fija. |
 
 Desde la raíz del proyecto:
 
@@ -2012,7 +2012,7 @@ trazabilidad por fila, la cuarentena y el bootstrap por categoría.
 
 #### Entregables verificables
 
-- [Matriz OE1](REFERENCIA_TECNICA.md#doc-cd000226e09e), [CSV](../Outputs/calidad/matriz_oe1.csv) y [YAML](../Outputs/calidad/matriz_oe1.yaml): 19 controles × 4 fuentes.
+- [Matriz OE1](REFERENCIA_TECNICA.md#doc-cd000226e09e), [CSV](../Data/gold/outputs/calidad/matriz_oe1.csv) y [YAML](../Data/gold/outputs/calidad/matriz_oe1.yaml): 19 controles × 4 fuentes.
 - [Informe de diferencias entre fuentes](REFERENCIA_TECNICA.md#doc-7dec091a7816).
 - [Fichas de caracterización](REFERENCIA_TECNICA.md#doc-6d09f59e62b7) para EPM, CHEC, SSPD y XM.
 - [Cartas de EPM](REFERENCIA_TECNICA.md#doc-44ac9713606e), [CHEC](REFERENCIA_TECNICA.md#doc-f0cd728e94a3),
@@ -2079,14 +2079,14 @@ Los tres archivos de la matriz incluyen la línea base disponible sobre los dato
 #### Archivos
 
 - [Matriz y fichas explicadas](REFERENCIA_TECNICA.md#doc-cd000226e09e): lectura principal, ocho dimensiones, diez tipos de regla y diecinueve indicadores, con el resultado de cada ficha y la sección de línea base.
-- [Matriz CSV](../Outputs/calidad/matriz_oe1.csv): 76 filas (19 controles × 4 fuentes), legible en Excel con UTF-8 y separador coma; incluye las columnas de resultado.
-- [Especificación YAML](../Outputs/calidad/matriz_oe1.yaml): definiciones, fórmulas, parámetros, decisiones de medición y bloque `resultado` por fuente. Es documental; no es un motor de reglas ejecutado.
+- [Matriz CSV](../Data/gold/outputs/calidad/matriz_oe1.csv): 76 filas (19 controles × 4 fuentes), legible en Excel con UTF-8 y separador coma; incluye las columnas de resultado.
+- [Especificación YAML](../Data/gold/outputs/calidad/matriz_oe1.yaml): definiciones, fórmulas, parámetros, decisiones de medición y bloque `resultado` por fuente. Es documental; no es un motor de reglas ejecutado.
 - [Revisión de reglas para XM](REFERENCIA_TECNICA.md#doc-5cd7ac79d74f): significado de R01–R12 y de los siete controles complementarios, con las adaptaciones de demanda.
-- [Plantilla de exactitud](../Outputs/calidad/plantilla_exactitud.csv): contraste de una muestra con publicaciones verificadas.
-- [Plantilla de oportunidad](../Outputs/calidad/plantilla_oportunidad.csv): plazos, evidencia temporal e intervalos de disponibilidad.
-- [Plantilla de catálogos](../Outputs/calidad/plantilla_catalogos.csv): dominios, equivalencias y relaciones con fundamento documental.
+- [Plantilla de exactitud](../Data/gold/outputs/calidad/plantilla_exactitud.csv): contraste de una muestra con publicaciones verificadas.
+- [Plantilla de oportunidad](../Data/gold/outputs/calidad/plantilla_oportunidad.csv): plazos, evidencia temporal e intervalos de disponibilidad.
+- [Plantilla de catálogos](../Data/gold/outputs/calidad/plantilla_catalogos.csv): dominios, equivalencias y relaciones con fundamento documental.
 - [Script de medición](../Code/Data_Acquisition_and_Understanding/calidad/medir_matriz_oe1.py): calcula el resultado de cada control y lo escribe dentro de los tres archivos anteriores. Reejecutable e idempotente con `python3 desarrollo_puntos/3.1/medir_matriz_oe1.py`; registra el SHA-256 de cada archivo medido.
-- [Referencia externa de EXA01](../Outputs/calidad/referencia_exa01_chec.json): registros de CHEC en `td8k-vhq9` de Superservicios, con su consulta y fecha de descarga. Permite contrastar exactitud sin depender de una respuesta de la entidad, y hace el contraste reproducible sin red.
+- [Referencia externa de EXA01](../Data/gold/outputs/calidad/referencia_exa01_chec.json): registros de CHEC en `td8k-vhq9` de Superservicios, con su consulta y fecha de descarga. Permite contrastar exactitud sin depender de una respuesta de la entidad, y hace el contraste reproducible sin red.
 - [Trazabilidad estable](REFERENCIA_TECNICA.md#doc-351c00955bb1):
   SHA-256 por archivo, fecha de ejecución, clave de contenido e identificador estable de
   fila para los cuatro datasets; también genera copias trazables de hallazgos y alertas.
@@ -2479,7 +2479,7 @@ Sin fechas: la secuencia es la propuesta y el calendario lo fija el director con
    - Ocho dimensiones de DAMA-DMBOK2 (2017), cap. 13, obligatorias para EPM y CHEC. Clasificar R01–R12 en la taxonomía de diez tipos; no confundir tipos con número de reglas.
    - Plantilla por indicador: población, numerador, denominador, fórmula como cociente, unidad, umbral y fundamento, severidad, frecuencia, responsable, tendencia y aplicabilidad por fuente.
    - Incluir integridad estructural/referencial y razonabilidad (cartas). **Oportunidad no se excluye**: requiere evidencia de disponibilidad real y plazo esperado. Exactitud requiere contraste documental; las alertas no la sustituyen. Relación conceptual y delimitada con ISO/IEC 25012.
-   - Entregable documental del punto 1: [matriz y fichas OE1](REFERENCIA_TECNICA.md#doc-cd000226e09e), [YAML](../Outputs/calidad/matriz_oe1.yaml) y [CSV por fuente](../Outputs/calidad/matriz_oe1.csv). Incluye R01–R12 y siete controles complementarios. Umbrales propuestos, catálogos y evidencia externa pendientes de validación; no se declara medición de las ocho dimensiones ni cierre del Hito 3.
+   - Entregable documental del punto 1: [matriz y fichas OE1](REFERENCIA_TECNICA.md#doc-cd000226e09e), [YAML](../Data/gold/outputs/calidad/matriz_oe1.yaml) y [CSV por fuente](../Data/gold/outputs/calidad/matriz_oe1.csv). Incluye R01–R12 y siete controles complementarios. Umbrales propuestos, catálogos y evidencia externa pendientes de validación; no se declara medición de las ocho dimensiones ni cierre del Hito 3.
 2. **Ficha de caracterización por fuente (OE2).**
    - EPM sfcd-b3ey: 3.623 filas, 12 columnas, dic-2016 a dic-2021; 202 series posibles, 83 con 49 meses o más.
    - Superservicios vfjy-6fka: 5.396 filas, 16 columnas, 8 períodos. Consumidores del dato, datos críticos, unidades y significado de Rango de Consumo (2.143 ausentes).
@@ -2703,7 +2703,7 @@ La revisión cubrió los **76 archivos originales** de las carpetas que empiezan
 8 en 3.1, 22 en 3.2 y 46 en 3.3; 3.4, 3.5 y 3.6 estaban vacías. Se movieron **51**
 archivos y se mantuvieron 25 en su ubicación. Se añadieron índices para orientar la lectura.
 
-El [inventario completo](../Outputs/organizacion/INVENTARIO_ORGANIZACION.csv) registra, archivo por archivo, origen,
+El [inventario completo](../Data/gold/outputs/organizacion/INVENTARIO_ORGANIZACION.csv) registra, archivo por archivo, origen,
 destino, punto asignado, motivo y SHA-256 anterior. Los CSV de datos/resultados, JSON de
 evidencia y la especificación YAML se conservan íntegros. Se ajustaron rutas e imports
 para mantener las dependencias, incluidos los consumidores existentes del Hito 4.
@@ -3442,27 +3442,27 @@ El análisis se ejecutó sobre las cuatro fuentes locales y escribe todas sus sa
 
 | Archivo | Contenido |
 |---|---|
-| [cobertura_ventanas.csv](../Outputs/sensibilidad/cobertura_ventanas.csv) | Elegibilidad y configuraciones no evaluables. |
-| [tasas_alerta_reales.csv](../Outputs/sensibilidad/tasas_alerta_reales.csv) | Alertas e IC descriptivos por ventana, cohorte y método. |
-| [comparacion_ventanas_pareada.csv](../Outputs/sensibilidad/comparacion_ventanas_pareada.csv) | Diferencias 24/48 frente a 36 sobre las mismas series y meses. |
-| [parametros_por_serie.csv](../Outputs/sensibilidad/parametros_por_serie.csv) | Períodos de referencia/vigilancia, límites, MAD y mediana para R12. |
-| [deteccion_inyecciones.csv](../Outputs/sensibilidad/deteccion_inyecciones.csv) | Detección t/t+1, ganancia e IC por tipo; señales nuevas respecto a base. |
-| [resumen_horizonte_36.csv](../Outputs/sensibilidad/resumen_horizonte_36.csv) | Resumen de horizonte por fuente/método con referencia 36. |
-| [inyecciones_omitidas.csv](../Outputs/sensibilidad/inyecciones_omitidas.csv) | Casos sin perturbación efectiva o sin otra medida comparable. |
-| [combinaciones_framework.csv](../Outputs/sensibilidad/combinaciones_framework.csv) | Interacción de cartas, percentil IF y factor R12. |
-| [alertas_sistemicas_por_mes.csv](../Outputs/sensibilidad/alertas_sistemicas_por_mes.csv) | Catálogo mensual de candidatos para cada X, sin confirmar origen regulatorio. |
-| [efecto_regla_sistemica_reales.csv](../Outputs/sensibilidad/efecto_regla_sistemica_reales.csv) | Tasa original y tasa retenida por X. |
-| [efecto_regla_sistemica_inyecciones.csv](../Outputs/sensibilidad/efecto_regla_sistemica_inyecciones.csv) | Detecciones retenidas/enmascaradas en errores individuales y colectivos. |
-| [inventario_series.csv](../Outputs/sensibilidad/inventario_series.csv) | Rachas y elegibilidad de todas las series candidatas. |
-| [ejecuciones.csv](../Outputs/sensibilidad/ejecuciones.csv) | Escenarios, modelos, tamaños, umbrales y tiempos. |
-| [modelos_IF.csv](../Outputs/sensibilidad/modelos_IF.csv) | Modelos separados por calendario, fechas de corte y percentiles de referencia. |
-| [alertas_reales_detalle.csv.gz](../Outputs/sensibilidad/alertas_reales_detalle.csv.gz) | Una fila por escenario/serie/mes, con las once banderas de señal. |
-| [inyecciones_detalle.csv.gz](../Outputs/sensibilidad/inyecciones_detalle.csv.gz) | Casos auditables y banderas por método en t, t+1 y nuevas respecto a base. |
-| [configuracion.json](../Outputs/sensibilidad/configuracion.json) | Protocolo, versiones y huellas de entradas. |
-| [manifiesto_resultados.json](../Outputs/sensibilidad/manifiesto_resultados.json) | Huellas de los archivos entregados. |
+| [cobertura_ventanas.csv](../Data/gold/outputs/sensibilidad/cobertura_ventanas.csv) | Elegibilidad y configuraciones no evaluables. |
+| [tasas_alerta_reales.csv](../Data/gold/outputs/sensibilidad/tasas_alerta_reales.csv) | Alertas e IC descriptivos por ventana, cohorte y método. |
+| [comparacion_ventanas_pareada.csv](../Data/gold/outputs/sensibilidad/comparacion_ventanas_pareada.csv) | Diferencias 24/48 frente a 36 sobre las mismas series y meses. |
+| [parametros_por_serie.csv](../Data/gold/outputs/sensibilidad/parametros_por_serie.csv) | Períodos de referencia/vigilancia, límites, MAD y mediana para R12. |
+| [deteccion_inyecciones.csv](../Data/gold/outputs/sensibilidad/deteccion_inyecciones.csv) | Detección t/t+1, ganancia e IC por tipo; señales nuevas respecto a base. |
+| [resumen_horizonte_36.csv](../Data/gold/outputs/sensibilidad/resumen_horizonte_36.csv) | Resumen de horizonte por fuente/método con referencia 36. |
+| [inyecciones_omitidas.csv](../Data/gold/outputs/sensibilidad/inyecciones_omitidas.csv) | Casos sin perturbación efectiva o sin otra medida comparable. |
+| [combinaciones_framework.csv](../Data/gold/outputs/sensibilidad/combinaciones_framework.csv) | Interacción de cartas, percentil IF y factor R12. |
+| [alertas_sistemicas_por_mes.csv](../Data/gold/outputs/sensibilidad/alertas_sistemicas_por_mes.csv) | Catálogo mensual de candidatos para cada X, sin confirmar origen regulatorio. |
+| [efecto_regla_sistemica_reales.csv](../Data/gold/outputs/sensibilidad/efecto_regla_sistemica_reales.csv) | Tasa original y tasa retenida por X. |
+| [efecto_regla_sistemica_inyecciones.csv](../Data/gold/outputs/sensibilidad/efecto_regla_sistemica_inyecciones.csv) | Detecciones retenidas/enmascaradas en errores individuales y colectivos. |
+| [inventario_series.csv](../Data/gold/outputs/sensibilidad/inventario_series.csv) | Rachas y elegibilidad de todas las series candidatas. |
+| [ejecuciones.csv](../Data/gold/outputs/sensibilidad/ejecuciones.csv) | Escenarios, modelos, tamaños, umbrales y tiempos. |
+| [modelos_IF.csv](../Data/gold/outputs/sensibilidad/modelos_IF.csv) | Modelos separados por calendario, fechas de corte y percentiles de referencia. |
+| [alertas_reales_detalle.csv.gz](../Data/gold/outputs/sensibilidad/alertas_reales_detalle.csv.gz) | Una fila por escenario/serie/mes, con las once banderas de señal. |
+| [inyecciones_detalle.csv.gz](../Data/gold/outputs/sensibilidad/inyecciones_detalle.csv.gz) | Casos auditables y banderas por método en t, t+1 y nuevas respecto a base. |
+| [configuracion.json](../Data/gold/outputs/sensibilidad/configuracion.json) | Protocolo, versiones y huellas de entradas. |
+| [manifiesto_resultados.json](../Data/gold/outputs/sensibilidad/manifiesto_resultados.json) | Huellas de los archivos entregados. |
 | [analisis_sensibilidad.py](../Code/Modeling/sensibilidad/analisis_sensibilidad.py), [informe_sensibilidad.py](../Code/Modeling/sensibilidad/informe_sensibilidad.py) | Ejecución y generación de informe/figuras. |
 | [test_sensibilidad.py](../Code/Modeling/sensibilidad/test_sensibilidad.py) | Pruebas de continuidad, ausencia de fuga temporal, límites y bootstrap. |
-| [verificar_resultados.py](../Code/Modeling/sensibilidad/verificar_resultados.py), [verificacion.json](../Outputs/sensibilidad/verificacion.json) | Reconciliación del detalle, denominadores, hashes y pruebas automáticas. |
+| [verificar_resultados.py](../Code/Modeling/sensibilidad/verificar_resultados.py), [verificacion.json](../Data/gold/outputs/sensibilidad/verificacion.json) | Reconciliación del detalle, denominadores, hashes y pruebas automáticas. |
 
 El script `informe_sensibilidad.py` genera nueve gráficos en `figuras/`, en PNG, SVG y PDF.
 La carpeta no se versiona porque son artefactos regenerables; se debe ejecutar el script con las
@@ -3519,7 +3519,7 @@ No modifica 4.1 ni 4.2.
 SSPD 321 y XM 1 series).
 Las inyecciones y los modelos Isolation Forest son los mismos de 4.2: se verificó que, para cada caso,
 las banderas nativas de este experimento coinciden con `4.2/inyecciones_detalle.csv.gz`
-([verificacion_contra_4_2.json](../Outputs/metricas/verificacion_contra_4_2.json)).
+([verificacion_contra_4_2.json](../Data/gold/outputs/metricas/verificacion_contra_4_2.json)).
 
 **Seis métodos con puntaje continuo** (más alto = más anómalo, necesario para igualar tasas):
 
@@ -3539,7 +3539,7 @@ para MAD cero se conserva en la verificación contra 4.2 (sin discrepancias en s
 **Tasa de alerta igualada.** Para cada fuente, método y tasa objetivo (1, 2, 5 y 10 %) el umbral es el puntaje que deja esa
 fracción de las observaciones **reales** de vigilancia por encima. No usa etiquetas. Así todos los métodos alertan lo mismo
 sobre los datos reales y solo pueden diferenciarse por cuánto detectan de lo inyectado. Los empates pueden dejar la tasa
-observada ligeramente por debajo de la objetivo; se reporta en [umbrales_tasa_igualada.csv](../Outputs/metricas/umbrales_tasa_igualada.csv).
+observada ligeramente por debajo de la objetivo; se reporta en [umbrales_tasa_igualada.csv](../Data/gold/outputs/metricas/umbrales_tasa_igualada.csv).
 
 **Etiquetas.** Positivo: el valor inyectado en el mes t. Negativo: las observaciones reales sin inyección, que incluyen alertas
 reales sin error conocido (supuesto conservador: pueden contener errores verdaderos, de modo que la precisión es un límite
@@ -3588,7 +3588,7 @@ verifica con una aserción en cada ejecución y con pruebas unitarias.
 
 «Otra medida» solo existe donde la serie tiene otra medida positiva en el mismo grupo y mes (en EPM, 12 de 27 series; en XM
 ninguna), y «valor no actualizado» se omite cuando el valor anterior es igual al actual. Omisiones registradas en
-[inyecciones_omitidas.csv](../Outputs/metricas/inyecciones_omitidas.csv): EPM/otra_medida: 165 (sin otra medida positiva distinta); CHEC/otra_medida: 1056 (sin otra medida positiva distinta); CHEC/valor_no_actualizado: 57 (la alteracion no cambia el valor); SSPD/otra_medida: 126 (sin otra medida positiva distinta); SSPD/valor_no_actualizado: 180 (la alteracion no cambia el valor); XM/otra_medida: 11 (sin otra medida positiva distinta); EPM_canonicas/otra_medida: 363 (sin otra medida positiva distinta).
+[inyecciones_omitidas.csv](../Data/gold/outputs/metricas/inyecciones_omitidas.csv): EPM/otra_medida: 165 (sin otra medida positiva distinta); CHEC/otra_medida: 1056 (sin otra medida positiva distinta); CHEC/valor_no_actualizado: 57 (la alteracion no cambia el valor); SSPD/otra_medida: 126 (sin otra medida positiva distinta); SSPD/valor_no_actualizado: 180 (la alteracion no cambia el valor); XM/otra_medida: 11 (sin otra medida positiva distinta); EPM_canonicas/otra_medida: 363 (sin otra medida positiva distinta).
 
 **Las pruebas siguen sin ser independientes**: los casos de una misma serie comparten referencia, escala y modelo, y las
 series de una categoría están correlacionadas. Por eso los intervalos remuestrean categorías completas y no casos.
@@ -3691,7 +3691,7 @@ Son 5 métodos × 3 fuentes por configuración y no se aplicó corrección por c
 
 EPM cambia la escritura de varias etiquetas entre meses (p. ej. «Costo compra: Gm, i» y «Costo Compra: Gm, i», o «Rango 0 - CS» y «0-CS»). Si no se
 normalizan, una misma serie económica se parte en varias, y el panel común (series con 61 meses continuos) se reduce. Se repitió el experimento completo con las
-11 equivalencias del Hito 2 ([02_catalogo_variantes.csv](../Outputs/adaptadores/insumos_hito2/02_catalogo_variantes.csv), aprobadas internamente por el equipo, aplicadas en una copia de trabajo) como una
+11 equivalencias del Hito 2 ([02_catalogo_variantes.csv](../Data/silver/outputs/adaptadores/insumos_hito2/02_catalogo_variantes.csv), aprobadas internamente por el equipo, aplicadas en una copia de trabajo) como una
 fuente adicional, `EPM_canonicas`. **No sustituye a EPM**: 4.1, 4.2 y la matriz OE1 usan las etiquetas originales y la variante canónica no existe en 4.2, por lo que no se
 compara con él.
 
@@ -3721,18 +3721,18 @@ F1 a tasa del 5 %, prevalencia supuesta del 5 %, horizonte t:
 #### 4. Curvas de detección contra tasa de alerta
 
 *Figura regenerable:* `informe_metricas.py` crea `figuras/01_curvas_deteccion.png`; los datos
-auditables permanecen en [curva_deteccion.csv](../Outputs/metricas/curva_deteccion.csv).
+auditables permanecen en [curva_deteccion.csv](../Data/gold/outputs/metricas/curva_deteccion.csv).
 
-Datos en [curva_deteccion.csv](../Outputs/metricas/curva_deteccion.csv) (40 tasas entre 0,25 y 30 %). Las curvas no tienen IC: son el recall
+Datos en [curva_deteccion.csv](../Data/gold/outputs/metricas/curva_deteccion.csv) (40 tasas entre 0,25 y 30 %). Las curvas no tienen IC: son el recall
 macro exhaustivo en cada punto. Se omiten los puntos con menos de 5 alertas esperadas y LOF en CHEC.
 
 #### 5. Recall por tipo de error
 
 *Figura regenerable:* `informe_metricas.py` crea `figuras/03_recall_por_tipo.png`; los valores
-auditables permanecen en [deteccion_por_tipo_tasa_igualada.csv](../Outputs/metricas/deteccion_por_tipo_tasa_igualada.csv).
+auditables permanecen en [deteccion_por_tipo_tasa_igualada.csv](../Data/gold/outputs/metricas/deteccion_por_tipo_tasa_igualada.csv).
 
 Tabla comparativa con IC 95 % por técnica y tipo de error (horizonte t, tasa 5 %). El resto de tasas y el horizonte
-t o t+1 están en [deteccion_por_tipo_tasa_igualada.csv](../Outputs/metricas/deteccion_por_tipo_tasa_igualada.csv).
+t o t+1 están en [deteccion_por_tipo_tasa_igualada.csv](../Data/gold/outputs/metricas/deteccion_por_tipo_tasa_igualada.csv).
 
 **EPM**
 
@@ -3790,7 +3790,7 @@ pero con la misma tasa de alerta que las cartas su recall es comparable:
 
 (Prevalencia supuesta 5 %, horizonte t. Los puntos nativos no llevan IC. En CHEC (y en XM, no mostrado) la tasa nativa de
 I-MR y Z-score es 0 % sobre meses reales, de modo que su precisión es 100 % por construcción y su F1 nativo no es comparable
-con el igualado. Los puntos nativos de todas las fuentes están en [puntos_operativos_nativos.csv](../Outputs/metricas/puntos_operativos_nativos.csv).)
+con el igualado. Los puntos nativos de todas las fuentes están en [puntos_operativos_nativos.csv](../Data/gold/outputs/metricas/puntos_operativos_nativos.csv).)
 
 #### 7. Lo que no se puede concluir
 
@@ -3828,8 +3828,8 @@ python -m unittest discover -s desarrollo_puntos/4.3 -p test_metricas.py -v
 python desarrollo_puntos/4.3/verificar_resultados.py
 ```
 
-[configuracion.json](../Outputs/metricas/configuracion.json) fija semilla, versiones, definiciones y huellas de las entradas;
-[manifiesto_resultados.json](../Outputs/metricas/manifiesto_resultados.json) lista las huellas de todos los archivos entregados.
+[configuracion.json](../Data/gold/outputs/metricas/configuracion.json) fija semilla, versiones, definiciones y huellas de las entradas;
+[manifiesto_resultados.json](../Data/gold/outputs/metricas/manifiesto_resultados.json) lista las huellas de todos los archivos entregados.
 
 
 <a id="doc-a66acf433abb"></a>
@@ -3846,21 +3846,21 @@ No modifica 4.1 ni 4.2; solo escribe en esta carpeta.
 
 | Archivo | Contenido |
 |---|---|
-| [metricas_globales.csv](../Outputs/metricas/metricas_globales.csv) | Recall macro, tasa de alerta real, precisión y F1 con IC 95 % por fuente, método, tasa igualada (1, 2, 5 y 10 %), horizonte (t y t o t+1) y prevalencia supuesta (1, 5 y 10 %). |
-| [deteccion_por_tipo_tasa_igualada.csv](../Outputs/metricas/deteccion_por_tipo_tasa_igualada.csv) | Recall por tipo de error con casos, series, categorías e IC: la tabla comparativa por técnica y tipo de error. |
-| [diferencias_vs_IMR.csv](../Outputs/metricas/diferencias_vs_IMR.csv) | Diferencias pareadas de recall y F1 frente a la carta I-MR, con IC por categorías. |
-| [curva_deteccion.csv](../Outputs/metricas/curva_deteccion.csv) | Recall macro frente a tasa de alerta en 40 tasas (0,25–30 %). |
-| [umbrales_tasa_igualada.csv](../Outputs/metricas/umbrales_tasa_igualada.csv) | Umbral de cada método y tasa objetivo, alertas reales y tasa observada. |
-| [puntos_operativos_nativos.csv](../Outputs/metricas/puntos_operativos_nativos.csv) | Cada método con su umbral propio (I-MR > 1, \|z\| > 3, IF p99,5, R12 > 10), para contrastar con la tasa igualada. |
-| [pruebas_por_tipo.csv](../Outputs/metricas/pruebas_por_tipo.csv), [sorteo_sin_reemplazo.csv](../Outputs/metricas/sorteo_sin_reemplazo.csv) | Denominadores reales por tipo y sorteo con meses distintos, frente al cálculo exhaustivo. |
-| [cobertura_experimento.csv](../Outputs/metricas/cobertura_experimento.csv), [inyecciones_omitidas.csv](../Outputs/metricas/inyecciones_omitidas.csv) | Series, categorías, observaciones, duplicados de entrenamiento, estado de LOF y casos omitidos. |
-| [puntajes_reales.csv.gz](../Outputs/metricas/puntajes_reales.csv.gz), [puntajes_inyecciones.csv.gz](../Outputs/metricas/puntajes_inyecciones.csv.gz) | Puntajes continuos de los seis métodos (observaciones reales y casos inyectados): permiten rehacer umbrales y métricas sin reentrenar. |
-| [ejecuciones.csv](../Outputs/metricas/ejecuciones.csv) | Tiempos por etapa y fuente. |
+| [metricas_globales.csv](../Data/gold/outputs/metricas/metricas_globales.csv) | Recall macro, tasa de alerta real, precisión y F1 con IC 95 % por fuente, método, tasa igualada (1, 2, 5 y 10 %), horizonte (t y t o t+1) y prevalencia supuesta (1, 5 y 10 %). |
+| [deteccion_por_tipo_tasa_igualada.csv](../Data/gold/outputs/metricas/deteccion_por_tipo_tasa_igualada.csv) | Recall por tipo de error con casos, series, categorías e IC: la tabla comparativa por técnica y tipo de error. |
+| [diferencias_vs_IMR.csv](../Data/gold/outputs/metricas/diferencias_vs_IMR.csv) | Diferencias pareadas de recall y F1 frente a la carta I-MR, con IC por categorías. |
+| [curva_deteccion.csv](../Data/gold/outputs/metricas/curva_deteccion.csv) | Recall macro frente a tasa de alerta en 40 tasas (0,25–30 %). |
+| [umbrales_tasa_igualada.csv](../Data/gold/outputs/metricas/umbrales_tasa_igualada.csv) | Umbral de cada método y tasa objetivo, alertas reales y tasa observada. |
+| [puntos_operativos_nativos.csv](../Data/gold/outputs/metricas/puntos_operativos_nativos.csv) | Cada método con su umbral propio (I-MR > 1, \|z\| > 3, IF p99,5, R12 > 10), para contrastar con la tasa igualada. |
+| [pruebas_por_tipo.csv](../Data/gold/outputs/metricas/pruebas_por_tipo.csv), [sorteo_sin_reemplazo.csv](../Data/gold/outputs/metricas/sorteo_sin_reemplazo.csv) | Denominadores reales por tipo y sorteo con meses distintos, frente al cálculo exhaustivo. |
+| [cobertura_experimento.csv](../Data/gold/outputs/metricas/cobertura_experimento.csv), [inyecciones_omitidas.csv](../Data/gold/outputs/metricas/inyecciones_omitidas.csv) | Series, categorías, observaciones, duplicados de entrenamiento, estado de LOF y casos omitidos. |
+| [puntajes_reales.csv.gz](../Data/gold/outputs/metricas/puntajes_reales.csv.gz), [puntajes_inyecciones.csv.gz](../Data/gold/outputs/metricas/puntajes_inyecciones.csv.gz) | Puntajes continuos de los seis métodos (observaciones reales y casos inyectados): permiten rehacer umbrales y métricas sin reentrenar. |
+| [ejecuciones.csv](../Data/gold/outputs/metricas/ejecuciones.csv) | Tiempos por etapa y fuente. |
 | [metricas_base.py](../Code/Modeling/metricas/metricas_base.py) | Funciones puras: puntajes, umbral por tasa, precisión, F1 y sorteo sin reemplazo. |
 | [experimento_tasa_igualada.py](../Code/Modeling/metricas/experimento_tasa_igualada.py), [informe_metricas.py](../Code/Modeling/metricas/informe_metricas.py) | Ejecución del experimento; generación de figuras e informe desde las tablas. |
 | [test_metricas.py](../Code/Modeling/metricas/test_metricas.py) | Doce pruebas de propiedades. |
-| [verificar_resultados.py](../Code/Modeling/metricas/verificar_resultados.py), [verificacion.json](../Outputs/metricas/verificacion.json), [verificacion_contra_4_2.json](../Outputs/metricas/verificacion_contra_4_2.json) | Recalcula umbrales, detecciones, FPR, precisión y F1 desde los puntajes; compara las banderas nativas con las de 4.2. |
-| [configuracion.json](../Outputs/metricas/configuracion.json), [manifiesto_resultados.json](../Outputs/metricas/manifiesto_resultados.json) | Protocolo, semilla, versiones y huellas de entradas y salidas. |
+| [verificar_resultados.py](../Code/Modeling/metricas/verificar_resultados.py), [verificacion.json](../Data/gold/outputs/metricas/verificacion.json), [verificacion_contra_4_2.json](../Data/gold/outputs/metricas/verificacion_contra_4_2.json) | Recalcula umbrales, detecciones, FPR, precisión y F1 desde los puntajes; compara las banderas nativas con las de 4.2. |
+| [configuracion.json](../Data/gold/outputs/metricas/configuracion.json), [manifiesto_resultados.json](../Data/gold/outputs/metricas/manifiesto_resultados.json) | Protocolo, semilla, versiones y huellas de entradas y salidas. |
 
 El script `informe_metricas.py` genera tres gráficos en `figuras/`, en PNG, SVG y PDF. La carpeta
 no se versiona porque son artefactos regenerables; se debe ejecutar el script con las dependencias
@@ -3915,7 +3915,7 @@ de alertas sistémicas del Hito 4. No modifica 4.1, 4.2 ni 4.3.
    indistinguible de un cambio regulatorio solo por fracción): el rótulo es «candidato sistémico» y confirmarlo exige el contraste con la publicación.
 6. **Hallazgo colateral que afecta a 4.1 y 4.2:** EPM cambia la escritura de varias etiquetas entre meses (p. ej. «Costo compra: Gm, i» y
    «Costo Compra: Gm, i») y, sin normalizarlas, una misma serie se parte: 266 series con etiquetas originales frente a
-   200 con las equivalencias aprobadas internamente en el Hito 2 ([inventario_series_por_variante.csv](../Outputs/regla_sistemica/inventario_series_por_variante.csv)). Aquí se usan las canónicas como variante principal y las originales como sensibilidad.
+   200 con las equivalencias aprobadas internamente en el Hito 2 ([inventario_series_por_variante.csv](../Data/gold/outputs/regla_sistemica/inventario_series_por_variante.csv)). Aquí se usan las canónicas como variante principal y las originales como sensibilidad.
 
 #### 1. La regla
 
@@ -3949,7 +3949,7 @@ cuántos componentes distintos alertan:
 
 *Figura regenerable:* `python desarrollo_puntos/4.4/informe_regla_sistemica.py` crea
 `figuras/01_fraccion_mensual_epm.png`. Los valores auditables están en
-[fracciones_mensuales.csv](../Outputs/regla_sistemica/fracciones_mensuales.csv).
+[fracciones_mensuales.csv](../Data/gold/outputs/regla_sistemica/fracciones_mensuales.csv).
 
 #### 3. Calibración de X
 
@@ -3965,17 +3965,17 @@ meses es mayor o igual que el menor de los tres, la banda no existe:
 | Hito 2 (origen fijo, 83 series) | 61,4 % | 28,9 % | 21,7 % | 24,1 % | 21,7 % | no | 2 de 3 · 2 |
 
 (Valores de «X máximo» iguales a 0 % indican que algún mes del plan no tiene ninguna alerta en esa variante.) En ninguna variante la banda es factible.
-Variantes con etiquetas originales: ver [calibracion_resumen.csv](../Outputs/regla_sistemica/calibracion_resumen.csv); el X que maximiza la exactitud balanceada
+Variantes con etiquetas originales: ver [calibracion_resumen.csv](../Data/gold/outputs/regla_sistemica/calibracion_resumen.csv); el X que maximiza la exactitud balanceada
 va de 5 % a 44 % según la variante: **no es un óptimo estable**.
 
 *Figura regenerable:* `informe_regla_sistemica.py` crea `figuras/03_calibracion_X.png`; los datos
-auditables están en [calibracion_X.csv](../Outputs/regla_sistemica/calibracion_X.csv).
+auditables están en [calibracion_X.csv](../Data/gold/outputs/regla_sistemica/calibracion_X.csv).
 
 **Criterio para el valor de trabajo.** Sin etiquetas confirmadas no hay un óptimo; se propone X = 25 % porque (a) captura febrero de 2020 en las 9 variantes (su fracción mínima es 49 %)
 y 5 de 9 capturan además jul-2020; jul-2021 no se captura en ninguna;
 (b) en las variantes canónicas no marca ningún mes ajeno al plan; (c) su costo para errores individuales es bajo (siguiente sección); y (d) supera lo que aportaría un
 solo componente aunque todas sus series alertaran: como máximo 13,0 % (15 de 115 series en 2020-03;
-[tamano_componentes_epm.csv](../Outputs/regla_sistemica/tamano_componentes_epm.csv)). Con X = 10 % un solo componente ya sería «sistémico». Es un valor de arranque para revisar con el director, no una calibración cerrada.
+[tamano_componentes_epm.csv](../Data/gold/outputs/regla_sistemica/tamano_componentes_epm.csv)). Con X = 10 % un solo componente ya sería «sistémico». Es un valor de arranque para revisar con el director, no una calibración cerrada.
 
 #### 4. Efecto de X: alertas reales y costo de enmascaramiento
 
@@ -3996,7 +3996,7 @@ máxima es 14,4 % (referencia 36, ambos métodos): **con X = 25 % la regla no se
 
 *Figura regenerable:* `informe_regla_sistemica.py` crea
 `figuras/02_fraccion_mensual_chec_sspd.png`; los valores auditables están en
-[fracciones_mensuales.csv](../Outputs/regla_sistemica/fracciones_mensuales.csv).
+[fracciones_mensuales.csv](../Data/gold/outputs/regla_sistemica/fracciones_mensuales.csv).
 
 **Costo para detecciones de errores conocidos** (tomado de 4.2, inyecciones, referencia 36, cohorte común, horizonte t o t+1; fracción de detecciones que la regla enmascararía):
 
@@ -4016,7 +4016,7 @@ Por eso la regla **etiqueta**, no suprime.
 
 Se leyeron las publicaciones tarifarias de EPM de enero, febrero, junio y julio de 2020 y de junio y julio de 2021 (tabla monomia, nivel I). Su transcripción se verificó de dos maneras:
 (1) coincide con el CSV en las 108 celdas (componente × columna × mes) y (2) la suma de componentes reproduce el CU total publicado (tolerancia 0,02) —
-[verificacion_transcripcion_pdf.csv](../Outputs/regla_sistemica/verificacion_transcripcion_pdf.csv) y [verificacion_suma_componentes.csv](../Outputs/regla_sistemica/verificacion_suma_componentes.csv). De paso, esto suma evidencia de exactitud de EPM para cinco
+[verificacion_transcripcion_pdf.csv](../Data/gold/outputs/regla_sistemica/verificacion_transcripcion_pdf.csv) y [verificacion_suma_componentes.csv](../Data/gold/outputs/regla_sistemica/verificacion_suma_componentes.csv). De paso, esto suma evidencia de exactitud de EPM para cinco
 meses nuevos (feb, jun y jul de 2020; jun y jul de 2021) y otras filas de enero (EXA01 usaba seis filas de ene/dic-2020 y abr/dic-2021); la matriz OE1 de 3.1 no se modifica.
 
 **Febrero de 2020 (enero → febrero).** Las alertas «por componente» cuentan todas las series del componente (todos los niveles y tipos de tarifa); el cambio publicado es el de nivel I, columna Propiedad EPM:
@@ -4057,7 +4057,7 @@ meses nuevos (feb, jun y jul de 2020; jun y jul de 2021) y otras filas de enero 
 
 *Figura regenerable:* `informe_regla_sistemica.py` crea
 `figuras/04_contraste_publicaciones_epm.png`; los valores auditables están en
-[contraste_componentes.csv](../Outputs/regla_sistemica/contraste_componentes.csv).
+[contraste_componentes.csv](../Data/gold/outputs/regla_sistemica/contraste_componentes.csv).
 
 Lectura, acotada a lo observado:
 
@@ -4106,7 +4106,7 @@ Fuentes documentales y su estado:
 
 #### 7. Qué cierra del plan y qué queda pendiente
 
-Cierra: formalización e implementación de la regla; calibración de X con sensibilidad; catálogo de alertas sistémicas ([catalogo_alertas_sistemicas.csv](../Outputs/regla_sistemica/catalogo_alertas_sistemicas.csv),
+Cierra: formalización e implementación de la regla; calibración de X con sensibilidad; catálogo de alertas sistémicas ([catalogo_alertas_sistemicas.csv](../Data/gold/outputs/regla_sistemica/catalogo_alertas_sistemicas.csv),
 227 filas); contraste con las publicaciones de EPM de feb-2020, jul-2020 y jul-2021; lectura de las CREG 012, 058 y 104 de 2020 y lectura parcial de la 015 de 2018; verificación de las cifras 51/24/18.
 **Pendiente:** lectura completa de la CREG 015 de 2018 y de las resoluciones particulares de EPM; lectura de las CREG 152 de 2020 y 003 de 2021; consulta formal a EPM o CREG sobre la causa de cada cambio (plan, Hito 6);
 decisión del director sobre X; revisar 4.1/4.2 con etiquetas canónicas; probar la exclusión de meses sistémicos de la referencia.
@@ -4120,7 +4120,7 @@ python -m unittest discover -s desarrollo_puntos/4.4 -p test_regla_sistemica.py 
 python desarrollo_puntos/4.4/verificar_resultados.py
 ```
 
-[configuracion.json](../Outputs/regla_sistemica/configuracion.json) fija parámetros, versiones y huellas de entradas y de los PDF; [manifiesto_resultados.json](../Outputs/regla_sistemica/manifiesto_resultados.json) las de todos los archivos entregados.
+[configuracion.json](../Data/gold/outputs/regla_sistemica/configuracion.json) fija parámetros, versiones y huellas de entradas y de los PDF; [manifiesto_resultados.json](../Data/gold/outputs/regla_sistemica/manifiesto_resultados.json) las de todos los archivos entregados.
 
 
 <a id="doc-c26806ebe30e"></a>
@@ -4138,17 +4138,17 @@ Desarrolla lo que [4.2](REFERENCIA_TECNICA.md#doc-15dec98a30e1) solo exploró co
 |---|---|
 | [regla_sistemica.py](../Code/Modeling/regla_sistemica/regla_sistemica.py) | La regla (desigualdad estricta, mínimo de 10 series), el protocolo de ventana móvil sin fuga de futuro, la calibración y la carga de EPM con etiquetas canónicas. |
 | [calibrar_regla_sistemica.py](../Code/Modeling/regla_sistemica/calibrar_regla_sistemica.py), [informe_regla_sistemica.py](../Code/Modeling/regla_sistemica/informe_regla_sistemica.py) | Ejecución completa; figuras e informe generados desde las tablas. |
-| [fracciones_mensuales.csv](../Outputs/regla_sistemica/fracciones_mensuales.csv) | Series evaluadas y con alerta por mes, fuente, ventana y método, con categorías y componentes que alertan. |
-| [reproduccion_hito2.csv](../Outputs/regla_sistemica/reproduccion_hito2.csv) | Reproducción de 51/83, 24/83 y 18/83 desde los archivos del Hito 2. |
-| [calibracion_X.csv](../Outputs/regla_sistemica/calibracion_X.csv), [calibracion_resumen.csv](../Outputs/regla_sistemica/calibracion_resumen.csv) | Para X de 5 a 80 %: meses del plan capturados, otros meses marcados, banda factible y alertas reclasificadas. |
-| [catalogo_alertas_sistemicas.csv](../Outputs/regla_sistemica/catalogo_alertas_sistemicas.csv) | Catálogo de meses candidatos con su fracción, amplitud, banderas por X y estado del contraste externo. |
-| [efecto_regla_sobre_alertas_reales.csv](../Outputs/regla_sistemica/efecto_regla_sobre_alertas_reales.csv), [costo_enmascaramiento_4_2.csv](../Outputs/regla_sistemica/costo_enmascaramiento_4_2.csv) | Alertas reales reclasificadas por X; detecciones de errores inyectados que la regla enmascararía (tomado de 4.2). |
-| [composicion_alertas_meses_plan.csv](../Outputs/regla_sistemica/composicion_alertas_meses_plan.csv), [tamano_componentes_epm.csv](../Outputs/regla_sistemica/tamano_componentes_epm.csv), [inventario_series_por_variante.csv](../Outputs/regla_sistemica/inventario_series_por_variante.csv) | Componentes que alertan en los meses del plan, cuánto aportaría cada componente a la fracción y cuántas series hay por variante. |
-| [contraste_componentes.csv](../Outputs/regla_sistemica/contraste_componentes.csv) | Cambio publicado por EPM de cada componente (ene→feb y jun→jul de 2020; jun→jul de 2021) frente a las alertas de cada variante. |
-| [verificacion_transcripcion_pdf.csv](../Outputs/regla_sistemica/verificacion_transcripcion_pdf.csv), [verificacion_suma_componentes.csv](../Outputs/regla_sistemica/verificacion_suma_componentes.csv) | La transcripción de los PDF coincide con el CSV (108 celdas) y la suma de componentes reproduce el CU total. |
-| [evidencia_externa/](../Outputs/regla_sistemica/evidencia_externa) | Los seis PDF oficiales de EPM leídos (ene, feb, jun y jul de 2020; jun y jul de 2021), su transcripción y el estado de cada referencia documental (CREG 012, 058 y 104 de 2020 leídas; 015 de 2018 leída parcialmente). |
-| [test_regla_sistemica.py](../Code/Modeling/regla_sistemica/test_regla_sistemica.py), [verificar_resultados.py](../Code/Modeling/regla_sistemica/verificar_resultados.py), [verificacion.json](../Outputs/regla_sistemica/verificacion.json) | Diez pruebas de propiedades y auditoría con recálculo independiente. |
-| [configuracion.json](../Outputs/regla_sistemica/configuracion.json), [manifiesto_resultados.json](../Outputs/regla_sistemica/manifiesto_resultados.json) | Parámetros, versiones y huellas de entradas, PDF y salidas. |
+| [fracciones_mensuales.csv](../Data/gold/outputs/regla_sistemica/fracciones_mensuales.csv) | Series evaluadas y con alerta por mes, fuente, ventana y método, con categorías y componentes que alertan. |
+| [reproduccion_hito2.csv](../Data/gold/outputs/regla_sistemica/reproduccion_hito2.csv) | Reproducción de 51/83, 24/83 y 18/83 desde los archivos del Hito 2. |
+| [calibracion_X.csv](../Data/gold/outputs/regla_sistemica/calibracion_X.csv), [calibracion_resumen.csv](../Data/gold/outputs/regla_sistemica/calibracion_resumen.csv) | Para X de 5 a 80 %: meses del plan capturados, otros meses marcados, banda factible y alertas reclasificadas. |
+| [catalogo_alertas_sistemicas.csv](../Data/gold/outputs/regla_sistemica/catalogo_alertas_sistemicas.csv) | Catálogo de meses candidatos con su fracción, amplitud, banderas por X y estado del contraste externo. |
+| [efecto_regla_sobre_alertas_reales.csv](../Data/gold/outputs/regla_sistemica/efecto_regla_sobre_alertas_reales.csv), [costo_enmascaramiento_4_2.csv](../Data/gold/outputs/regla_sistemica/costo_enmascaramiento_4_2.csv) | Alertas reales reclasificadas por X; detecciones de errores inyectados que la regla enmascararía (tomado de 4.2). |
+| [composicion_alertas_meses_plan.csv](../Data/gold/outputs/regla_sistemica/composicion_alertas_meses_plan.csv), [tamano_componentes_epm.csv](../Data/gold/outputs/regla_sistemica/tamano_componentes_epm.csv), [inventario_series_por_variante.csv](../Data/gold/outputs/regla_sistemica/inventario_series_por_variante.csv) | Componentes que alertan en los meses del plan, cuánto aportaría cada componente a la fracción y cuántas series hay por variante. |
+| [contraste_componentes.csv](../Data/gold/outputs/regla_sistemica/contraste_componentes.csv) | Cambio publicado por EPM de cada componente (ene→feb y jun→jul de 2020; jun→jul de 2021) frente a las alertas de cada variante. |
+| [verificacion_transcripcion_pdf.csv](../Data/gold/outputs/regla_sistemica/verificacion_transcripcion_pdf.csv), [verificacion_suma_componentes.csv](../Data/gold/outputs/regla_sistemica/verificacion_suma_componentes.csv) | La transcripción de los PDF coincide con el CSV (108 celdas) y la suma de componentes reproduce el CU total. |
+| [evidencia_externa/](../Data/gold/outputs/regla_sistemica/evidencia_externa) | Los seis PDF oficiales de EPM leídos (ene, feb, jun y jul de 2020; jun y jul de 2021), su transcripción y el estado de cada referencia documental (CREG 012, 058 y 104 de 2020 leídas; 015 de 2018 leída parcialmente). |
+| [test_regla_sistemica.py](../Code/Modeling/regla_sistemica/test_regla_sistemica.py), [verificar_resultados.py](../Code/Modeling/regla_sistemica/verificar_resultados.py), [verificacion.json](../Data/gold/outputs/regla_sistemica/verificacion.json) | Diez pruebas de propiedades y auditoría con recálculo independiente. |
+| [configuracion.json](../Data/gold/outputs/regla_sistemica/configuracion.json), [manifiesto_resultados.json](../Data/gold/outputs/regla_sistemica/manifiesto_resultados.json) | Parámetros, versiones y huellas de entradas, PDF y salidas. |
 
 El script `informe_regla_sistemica.py` genera cuatro gráficos en `figuras/`, en PNG, SVG y PDF.
 La carpeta no se versiona porque son artefactos regenerables; se debe ejecutar el script con las
@@ -4664,12 +4664,12 @@ incorporadas para cubrir el consumo observado que a las dos primeras les falta.
 
 | Fuente | Qué aporta | CSV | Diccionario | Portal |
 |---|---|---|---|---|
-| **EPM** · 3.623 filas, 12 col. | Tarifa, forma larga | [csv](../Data/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv) | [epm.yaml](../Data/diccionarios/EPM/epm.yaml) | https://www.datos.gov.co/d/sfcd-b3ey |
-| **CHEC** · 40.609 filas, 24 col. | Tarifa, forma ancha | [csv](../Data/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv) | [chec.yaml](../Data/diccionarios/CHEC/chec.yaml) | https://www.datos.gov.co/d/c698-wqig |
+| **EPM** · 3.623 filas, 12 col. | Tarifa, forma larga | [csv](../Data/bronze/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv) | [epm.yaml](../Data/silver/diccionarios/EPM/epm.yaml) | https://www.datos.gov.co/d/sfcd-b3ey |
+| **CHEC** · 40.609 filas, 24 col. | Tarifa, forma ancha | [csv](../Data/bronze/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv) | [chec.yaml](../Data/silver/diccionarios/CHEC/chec.yaml) | https://www.datos.gov.co/d/c698-wqig |
 
 Los documentos específicos de cada fuente están agrupados en carpetas por dataset dentro de `diccionarios`, `catalogos`, `metadatos` y `verificaciones`.
-| **SSPD** · 11.905.557 filas en origen, 29 col. | Consumo y **59 meses** para las cartas | [mensual](../Data/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv) · [detalle .zip](../Data/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_detalle-compressed.zip) | [sspd.yaml](../Data/diccionarios/SSPD/sspd.yaml) | https://www.datos.gov.co/d/ebby-cjha |
-| **XM/SIMEM** · 119.928 registros crudos, 61 meses derivados | Demanda horaria y versiones de publicación | [piloto](../Data/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv) · [crudo](../Data/datos/Datos_seleccionados/XM_piloto/xm_demanda_epmc_epmd_str02_202001_202501.csv) | [xm.yaml](../Data/diccionarios/XM/xm.yaml) | https://www.simem.co/ |
+| **SSPD** · 11.905.557 filas en origen, 29 col. | Consumo y **59 meses** para las cartas | [mensual](../Data/silver/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv) · [detalle .zip](../Data/bronze/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_detalle-compressed.zip) | [sspd.yaml](../Data/silver/diccionarios/SSPD/sspd.yaml) | https://www.datos.gov.co/d/ebby-cjha |
+| **XM/SIMEM** · 119.928 registros crudos, 61 meses derivados | Demanda horaria y versiones de publicación | [piloto](../Data/silver/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv) · [crudo](../Data/bronze/datos/Datos_seleccionados/XM_piloto/xm_demanda_epmc_epmd_str02_202001_202501.csv) | [xm.yaml](../Data/silver/diccionarios/XM/xm.yaml) | https://www.simem.co/ |
 
 #### Por qué hay archivos comprimidos
 
@@ -4689,10 +4689,10 @@ idénticas antes y después de comprimir.
 Para leer los datos **en el navegador**, sin descargar nada, están estos dos, que GitHub
 renderiza como tabla:
 
-- [`sspd_bnkp-xdb7_resumen.csv`](../Data/datos/Datos_en_revision/sspd_bnkp-xdb7_resumen.csv) · 885
+- [`sspd_bnkp-xdb7_resumen.csv`](../Data/silver/datos/Datos_en_revision/sspd_bnkp-xdb7_resumen.csv) · 885
   filas: consumo, energía reactiva, facturación y tarifa promedio por empresa, período,
   sector, tipo de tarifa y porcentaje de propiedad.
-- [`sspd_bnkp-xdb7_catalogos.csv`](../Data/datos/Datos_en_revision/sspd_bnkp-xdb7_catalogos.csv) ·
+- [`sspd_bnkp-xdb7_catalogos.csv`](../Data/silver/datos/Datos_en_revision/sspd_bnkp-xdb7_catalogos.csv) ·
   569 pares código-nombre, donde se ven las siete claves con el nombre corrupto.
 
 **Las fuentes de consumo se mantienen diferenciadas.** SSPD ZNI aporta la profundidad
@@ -4712,8 +4712,8 @@ en `diccionarios/SSPD/sspd.yaml` y se repite en cada resultado que lo use.
 - **Datos:** abrir los CSV con Excel usando UTF-8 y delimitador coma, o leerlos con Python. Conservan las columnas originales. Los importes CHEC necesitan conversión y validación explícitas.
 - **Justificación:** [JUSTIFICACION_SELECCION.md](REFERENCIA_TECNICA.md#doc-49ce02ddaa81) explica la selección, las limitaciones y la cobertura prevista por dimensión.
 - **Variables:** los YAML explican todas las columnas, tipo oficial, significado, unidad o incertidumbre, rol, reglas relacionadas y uso para series.
-- **Dimensiones y reglas:** [dimensiones_reglas.yaml](../Data/diccionarios/dimensiones_reglas.yaml) distingue las doce reglas base de los controles complementarios. Es una especificación documental, no un motor ejecutado.
-- **Matriz OE1 del Hito 3:** [Markdown](REFERENCIA_TECNICA.md#doc-cd000226e09e), [CSV para Excel](../Outputs/calidad/matriz_oe1.csv) y [YAML](../Outputs/calidad/matriz_oe1.yaml). Incluye 19 indicadores por cada una de las cuatro fuentes; XM queda pendiente de medición específica.
+- **Dimensiones y reglas:** [dimensiones_reglas.yaml](../Data/silver/diccionarios/dimensiones_reglas.yaml) distingue las doce reglas base de los controles complementarios. Es una especificación documental, no un motor ejecutado.
+- **Matriz OE1 del Hito 3:** [Markdown](REFERENCIA_TECNICA.md#doc-cd000226e09e), [CSV para Excel](../Data/gold/outputs/calidad/matriz_oe1.csv) y [YAML](../Data/gold/outputs/calidad/matriz_oe1.yaml). Incluye 19 indicadores por cada una de las cuatro fuentes; XM queda pendiente de medición específica.
 - **Metadatos:** `metadatos/` contiene los esquemas y descripciones del portal.
 - **Verificaciones:** `verificaciones/` conserva cobertura y validación de CHEC, además de hashes de ambos archivos.
 - **Catálogo:** `catalogos/busqueda_tarifas_energia.json` contiene solo EPM y CHEC; es un catálogo curado, no la búsqueda íntegra original.
@@ -5059,7 +5059,7 @@ Cada punto del plan tiene su carpeta, con un README que indica qué archivo cont
   [INFORME_REGLA_SISTEMICA.md](REFERENCIA_TECNICA.md#doc-4ce62780cc42). La subcarpeta
   `evidencia_externa/` guarda los PDF oficiales de EPM que se leyeron.
 - `desarrollo_puntos/4.5/`: scorecard por fuente y dimensión. El resultado actual es provisional y está en
-  [scorecard_oe1_provisional.csv](../Outputs/scorecard/scorecard_oe1_provisional.csv).
+  [scorecard_oe1_provisional.csv](../Data/gold/outputs/scorecard/scorecard_oe1_provisional.csv).
 - `desarrollo_puntos/4.6/`: resultados separados por nivel y costos computacionales. La explicación está en
   [INFORME_NIVELES_COSTO.md](REFERENCIA_TECNICA.md#doc-9616b9e5ae82).
 

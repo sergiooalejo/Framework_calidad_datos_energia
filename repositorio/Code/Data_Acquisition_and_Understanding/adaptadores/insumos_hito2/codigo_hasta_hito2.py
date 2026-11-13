@@ -45,7 +45,7 @@ try:
 except ImportError:
     # Fuera de Colab: se lee el archivo de la carpeta del notebook.
     nombre = "epm_tarifas.csv"
-    contenido = (_PROJECT_ROOT / 'Data/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv').read_bytes()
+    contenido = (_PROJECT_ROOT / 'Data/bronze/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv').read_bytes()
 
 df = pd.read_csv(
     BytesIO(contenido),
@@ -202,7 +202,7 @@ print(
 )
 
 # 8. Reportes.
-(_PROJECT_ROOT / "Outputs/historico_hito2").mkdir(parents=True, exist_ok=True)
+(_PROJECT_ROOT / "Data/gold/outputs/historico_hito2").mkdir(parents=True, exist_ok=True)
 reporte_resumen = pd.DataFrame(resumen)
 
 reporte_incidencias = (
@@ -212,10 +212,10 @@ reporte_incidencias = (
 )
 
 reporte_resumen.to_csv(
-    (_PROJECT_ROOT / "Outputs/historico_hito2/resumen_calidad.csv"), index=False, encoding="utf-8-sig"
+    (_PROJECT_ROOT / "Data/gold/outputs/historico_hito2/resumen_calidad.csv"), index=False, encoding="utf-8-sig"
 )
 reporte_incidencias.to_csv(
-    (_PROJECT_ROOT / "Outputs/historico_hito2/incidencias_calidad.csv"), index=False, encoding="utf-8-sig"
+    (_PROJECT_ROOT / "Data/gold/outputs/historico_hito2/incidencias_calidad.csv"), index=False, encoding="utf-8-sig"
 )
 
 print(reporte_resumen.to_string(index=False))
@@ -722,8 +722,8 @@ except ImportError:          # si se ejecuta como .py
     display = print
 
 pd.set_option("display.max_colwidth", 80)
-OUT = (_PROJECT_ROOT / 'Outputs/historico_hito2/salida'); OUT.mkdir(parents=True, exist_ok=True)
-FIG = (_PROJECT_ROOT / 'Outputs/historico_hito2/figuras'); FIG.mkdir(parents=True, exist_ok=True)
+OUT = (_PROJECT_ROOT / 'Data/gold/outputs/historico_hito2/salida'); OUT.mkdir(parents=True, exist_ok=True)
+FIG = (_PROJECT_ROOT / 'Data/gold/outputs/historico_hito2/figuras'); FIG.mkdir(parents=True, exist_ok=True)
 
 SEED = 2026          # semilla fija: mismos resultados en cada ejecución
 N_REF = 36           # cambios mensuales de referencia (ene-2017 a dic-2019)

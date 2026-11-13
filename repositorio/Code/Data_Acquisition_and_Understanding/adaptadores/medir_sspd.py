@@ -19,9 +19,9 @@ import re
 
 from lector_datos import leer
 
-AQUI = (_PROJECT_ROOT / 'Outputs/adaptadores')
+AQUI = (_PROJECT_ROOT / 'Data/silver/outputs/adaptadores')
 RAIZ = _PROJECT_ROOT
-DATOS = (_PROJECT_ROOT / 'Data/datos')
+DATOS = (_PROJECT_ROOT / 'Data/bronze/datos')
 
 def dato(nombre):
     """Ruta de un CSV de datos, lo busque donde lo busque.
@@ -38,7 +38,7 @@ def dato(nombre):
 
 MENSUAL = "sspd_ebby-cjha_mensual.csv"
 DETALLE = "sspd_ebby-cjha_detalle.csv"
-CARTAS = (_PROJECT_ROOT / 'Outputs/cartas/SSPD/cartas_log_sspd.csv')
+CARTAS = (_PROJECT_ROOT / 'Data/gold/outputs/cartas/SSPD/cartas_log_sspd.csv')
 
 AUSENTES = {"", "N/A", "NA", "null", "None"}
 
@@ -272,7 +272,7 @@ def medir_sspd():
     # Denominador: las 19 variables criticas que el diccionario declara como
     # participantes en los controles. Numerador: las que traen significado, unidad y uso
     # acreditados por la fuente. Son cero: el portal no describe ninguna columna.
-    defs = (_PROJECT_ROOT / 'Data/catalogos/SSPD/sspd_definiciones_def01.yaml')
+    defs = (_PROJECT_ROOT / 'Data/silver/catalogos/SSPD/sspd_definiciones_def01.yaml')
     m["DEF01"] = _r(19, 19, "provisional_interno",
                     "Catálogo operativo documenta las 19 variables críticas; las unidades y "
                     "siglas son hipótesis metodológicas porque el portal no publica definiciones completas.") if defs.exists() else _r(0, 19, "no_medible", "Falta catálogo operativo.")

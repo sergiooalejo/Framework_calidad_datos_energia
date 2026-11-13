@@ -26,10 +26,10 @@ from pathlib import Path
 from typing import Any
 
 
-SCRIPT_DIR = (_PROJECT_ROOT / 'Outputs/calidad')
+SCRIPT_DIR = (_PROJECT_ROOT / 'Data/gold/outputs/calidad')
 PROJECT_DIR = _PROJECT_ROOT
 DEFAULT_INPUT = (
-    (_PROJECT_ROOT / 'Data/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv')
+    (_PROJECT_ROOT / 'Data/bronze/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv')
 )
 MISSING = {"", "na", "n/a", "null", "none"}
 MONTHS = {
@@ -320,13 +320,13 @@ def main() -> int:
             output_rows.append({**base, "dimension": dimension, "casos_conformes": numerator,
                                 "casos_evaluados": denominator, "indicador_pct": score, "observacion": note})
 
-    indicators_path = (_PROJECT_ROOT / 'Outputs/calidad/indicadores_calidad_chec_por_columna.csv')
+    indicators_path = (_PROJECT_ROOT / 'Data/gold/outputs/calidad/indicadores_calidad_chec_por_columna.csv')
     with indicators_path.open("w", encoding="utf-8-sig", newline="") as stream:
         writer = csv.DictWriter(stream, fieldnames=list(output_rows[0]))
         writer.writeheader()
         writer.writerows(output_rows)
 
-    incidents_path = (_PROJECT_ROOT / 'Outputs/calidad/incidencias_calidad_chec.csv')
+    incidents_path = (_PROJECT_ROOT / 'Data/gold/outputs/calidad/incidencias_calidad_chec.csv')
     with incidents_path.open("w", encoding="utf-8-sig", newline="") as stream:
         writer = csv.DictWriter(stream, fieldnames=["registro_archivo", "columna", "valor", "dimension", "motivo"])
         writer.writeheader()
@@ -366,7 +366,7 @@ def main() -> int:
         "exactitud": "medida contra referencia" if args.reference else "no evaluable sin fuente de referencia",
         "nota": "Integridad es aproximada dentro del archivo; consistencia y razonabilidad usan proxies documentados en el CSV de indicadores.",
     }
-    summary_path = (_PROJECT_ROOT / 'Outputs/calidad/resumen_calidad_chec.json')
+    summary_path = (_PROJECT_ROOT / 'Data/gold/outputs/calidad/resumen_calidad_chec.json')
     summary_path.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print(f"Registros analizados: {len(rows)}; columnas: {len(columns)}")

@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt  # noqa: E402
 import numpy as np  # noqa: E402
 import pandas as pd  # noqa: E402
 
-HERE = (_PROJECT_ROOT / 'Outputs/metricas')
+HERE = (_PROJECT_ROOT / 'Data/gold/outputs/metricas')
 sys.dont_write_bytecode = True
 sys.path.insert(0, str((_PROJECT_ROOT / 'Code/Modeling/metricas')))
 from metricas_base import ERROR_TYPES, METHODS, METHOD_LABELS  # noqa: E402
@@ -50,9 +50,9 @@ def style():
 
 
 def save(fig, name):
-    ((_PROJECT_ROOT / 'Outputs/metricas/figuras')).mkdir(exist_ok=True)
+    ((_PROJECT_ROOT / 'Data/gold/outputs/metricas/figuras')).mkdir(exist_ok=True)
     for ext in ('png', 'svg', 'pdf'):
-        fig.savefig((_PROJECT_ROOT / 'Outputs/metricas/figuras') / f'{name}.{ext}', dpi=200, bbox_inches='tight')
+        fig.savefig((_PROJECT_ROOT / 'Data/gold/outputs/metricas/figuras') / f'{name}.{ext}', dpi=200, bbox_inches='tight')
     plt.close(fig)
 
 
@@ -162,16 +162,16 @@ def md_table(header, rows):
 
 def main():
     style()
-    metrics = pd.read_csv((_PROJECT_ROOT / 'Outputs/metricas/metricas_globales.csv'))
-    by_type = pd.read_csv((_PROJECT_ROOT / 'Outputs/metricas/deteccion_por_tipo_tasa_igualada.csv'))
-    curve = pd.read_csv((_PROJECT_ROOT / 'Outputs/metricas/curva_deteccion.csv'))
-    diff = pd.read_csv((_PROJECT_ROOT / 'Outputs/metricas/diferencias_vs_IMR.csv'))
-    native = pd.read_csv((_PROJECT_ROOT / 'Outputs/metricas/puntos_operativos_nativos.csv'))
-    draw = pd.read_csv((_PROJECT_ROOT / 'Outputs/metricas/sorteo_sin_reemplazo.csv'))
-    tests = pd.read_csv((_PROJECT_ROOT / 'Outputs/metricas/pruebas_por_tipo.csv'))
-    cover = pd.read_csv((_PROJECT_ROOT / 'Outputs/metricas/cobertura_experimento.csv'))
-    thresholds = pd.read_csv((_PROJECT_ROOT / 'Outputs/metricas/umbrales_tasa_igualada.csv'))
-    omitted = pd.read_csv((_PROJECT_ROOT / 'Outputs/metricas/inyecciones_omitidas.csv'))
+    metrics = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/metricas/metricas_globales.csv'))
+    by_type = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/metricas/deteccion_por_tipo_tasa_igualada.csv'))
+    curve = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/metricas/curva_deteccion.csv'))
+    diff = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/metricas/diferencias_vs_IMR.csv'))
+    native = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/metricas/puntos_operativos_nativos.csv'))
+    draw = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/metricas/sorteo_sin_reemplazo.csv'))
+    tests = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/metricas/pruebas_por_tipo.csv'))
+    cover = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/metricas/cobertura_experimento.csv'))
+    thresholds = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/metricas/umbrales_tasa_igualada.csv'))
+    omitted = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/metricas/inyecciones_omitidas.csv'))
     figure_curves(curve)
     figure_f1(metrics)
     figure_types(by_type)
@@ -522,7 +522,7 @@ python desarrollo_puntos/4.3/verificar_resultados.py
 [configuracion.json](configuracion.json) fija semilla, versiones, definiciones y huellas de las entradas;
 [manifiesto_resultados.json](manifiesto_resultados.json) lista las huellas de todos los archivos entregados.
 """
-    ((_PROJECT_ROOT / 'Outputs/metricas/INFORME_METRICAS.txt')).write_text(text, encoding='utf-8')
+    ((_PROJECT_ROOT / 'Data/gold/outputs/metricas/INFORME_METRICAS.txt')).write_text(text, encoding='utf-8')
     print('Informe y figuras generados')
 
 

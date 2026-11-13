@@ -26,7 +26,7 @@ import numpy as np
 import pandas as pd
 from numpy.lib.stride_tricks import sliding_window_view
 
-HERE = (_PROJECT_ROOT / 'Outputs/regla_sistemica')
+HERE = (_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica')
 ROOT = _PROJECT_ROOT
 sys.dont_write_bytecode = True
 
@@ -161,11 +161,11 @@ def canonical_epm_items():
     sys.path.insert(0, str((_PROJECT_ROOT / 'Code/Modeling/sensibilidad')))
     import analisis_sensibilidad as A
     import zscore_robusto as Z
-    catalog = pd.read_csv((_PROJECT_ROOT / 'Outputs/adaptadores/insumos_hito2/02_catalogo_variantes.csv'))
+    catalog = pd.read_csv((_PROJECT_ROOT / 'Data/silver/outputs/adaptadores/insumos_hito2/02_catalogo_variantes.csv'))
     column_of = {'Tipo de Tarifa': 'tipodetarifa', 'Tipo de Dato': 'tipodedato', 'Rango de Consumo': 'rangodeconsumo'}
     mapping = {(column_of[r.columna], r.variante): r.canonico for r in catalog.itertuples()}
-    path = (_PROJECT_ROOT / 'Data/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv')
-    quarantine = {r['clave_contenido'] for r in Z.read_csv((_PROJECT_ROOT / 'Outputs/cuarentena_bootstrap/EPM/cuarentena_registros.csv'))}
+    path = (_PROJECT_ROOT / 'Data/bronze/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv')
+    quarantine = {r['clave_contenido'] for r in Z.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/cuarentena_bootstrap/EPM/cuarentena_registros.csv'))}
     months = {n: i for i, n in enumerate(('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto',
                                           'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'), 1)}
     columns = ('tipodeinformacion', 'tipodetarifa', 'tipodedato', 'rangodeconsumo', 'nivel')

@@ -5,11 +5,11 @@ from pathlib import Path
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / "project.json").is_file())
 SOURCES = ("EPM", "CHEC", "SSPD", "XM")
-OUTPUT = ROOT / "Outputs/cartas/revision_cartas_fuentes.csv"
+OUTPUT = ROOT / "Data/gold/outputs/cartas/revision_cartas_fuentes.csv"
 
 
 def inspect(source: str) -> dict[str, object]:
-    path = ROOT / f"Outputs/cartas/{source}/cartas_log_{source.lower()}.csv"
+    path = ROOT / f"Data/gold/outputs/cartas/{source}/cartas_log_{source.lower()}.csv"
     if not path.exists():
         return {"fuente": source, "estado": "sin_salida", "filas": 0, "columnas": 0, "series": 0, "periodos": 0}
     with path.open(encoding="utf-8-sig", newline="") as stream:

@@ -28,18 +28,18 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-AQUI = (_PROJECT_ROOT / 'Outputs/calidad')
+AQUI = (_PROJECT_ROOT / 'Data/gold/outputs/calidad')
 RAIZ = _PROJECT_ROOT
-DATOS = (_PROJECT_ROOT / 'Data/datos')
-ADAPTADORES = (_PROJECT_ROOT / 'Outputs/adaptadores')
+DATOS = (_PROJECT_ROOT / 'Data/bronze/datos')
+ADAPTADORES = (_PROJECT_ROOT / 'Data/silver/outputs/adaptadores')
 sys.path.insert(0, str((_PROJECT_ROOT / 'Code/Data_Acquisition_and_Understanding/adaptadores')))
 
 from lector_datos import dato, leer
 
 
-MATRIZ_CSV = (_PROJECT_ROOT / 'Outputs/calidad/matriz_oe1.csv')
-MATRIZ_YAML = (_PROJECT_ROOT / 'Outputs/calidad/matriz_oe1.yaml')
-MATRIZ_MD = (_PROJECT_ROOT / 'Outputs/calidad/matriz_oe1.txt')
+MATRIZ_CSV = (_PROJECT_ROOT / 'Data/gold/outputs/calidad/matriz_oe1.csv')
+MATRIZ_YAML = (_PROJECT_ROOT / 'Data/gold/outputs/calidad/matriz_oe1.yaml')
+MATRIZ_MD = (_PROJECT_ROOT / 'Data/gold/outputs/calidad/matriz_oe1.txt')
 
 SERIAL_EXCEL = (36526, 47483)   # intervalo heredado del Hito 2; no confirma error
 FACTOR_R12 = 10                 # factor del código actual; pendiente de sensibilidad
@@ -107,7 +107,7 @@ SSPD = dict(
 # Sus reglas se traducen en el adaptador específico de demanda.
 XM = dict(
     fuente="XM", clave="xm", dataset_id="c1b851",
-    archivo=(_PROJECT_ROOT / 'Data/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv'),
+    archivo=(_PROJECT_ROOT / 'Data/silver/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv'),
     propia=True,
 )
 
@@ -141,10 +141,10 @@ def sha256(ruta):
 # EXA01 · contraste contra una fuente de referencia de otro publicador.
 # Superservicios td8k-vhq9 publica los componentes del costo unitario por empresa.
 # nt_prop combina nivel de tensión y modalidad de propiedad de la red.
-REFERENCIA_CHEC = (_PROJECT_ROOT / 'Outputs/calidad/referencia_exa01_chec.json')
-REFERENCIA_EPM = (_PROJECT_ROOT / 'Data/verificaciones/EPM/epm_exactitud_referencias.json')
-CARTAS_EPM = (_PROJECT_ROOT / 'Outputs/cartas/EPM/cartas_log_epm.csv')
-CARTAS_CHEC = (_PROJECT_ROOT / 'Outputs/cartas/CHEC/cartas_log_chec.csv')
+REFERENCIA_CHEC = (_PROJECT_ROOT / 'Data/gold/outputs/calidad/referencia_exa01_chec.json')
+REFERENCIA_EPM = (_PROJECT_ROOT / 'Data/silver/verificaciones/EPM/epm_exactitud_referencias.json')
+CARTAS_EPM = (_PROJECT_ROOT / 'Data/gold/outputs/cartas/EPM/cartas_log_epm.csv')
+CARTAS_CHEC = (_PROJECT_ROOT / 'Data/gold/outputs/cartas/CHEC/cartas_log_chec.csv')
 NT_PROP = {"1-100": ("1", "100% OR"), "1-50": ("1", "50% OR"), "1-0": ("1", "0% OR"),
            "2": ("2", "0% OR"), "3": ("3", "0% OR"), "4": ("4", "0% OR")}
 # CREG 119 de 2007: CU = Gm + Tm + Dnm + Cvm + PRnm + Rm
@@ -526,9 +526,9 @@ def medir(cfg):
             "Equivalencias aprobadas metodológicamente por el equipo del proyecto para "
             "normalización analítica; no constituyen confirmación oficial de EPM.")
         try:
-            meta = json.loads(((_PROJECT_ROOT / 'Data/metadatos/EPM/epm_sfcd-b3ey.json')).read_text(encoding="utf-8"))
+            meta = json.loads(((_PROJECT_ROOT / 'Data/silver/metadatos/EPM/epm_sfcd-b3ey.json')).read_text(encoding="utf-8"))
             total_cols = len(meta.get("columns", [])) or cfg["columnas_esperadas"]
-            definiciones = (_PROJECT_ROOT / 'Data/catalogos/EPM/epm_definiciones_def01.yaml')
+            definiciones = (_PROJECT_ROOT / 'Data/silver/catalogos/EPM/epm_definiciones_def01.yaml')
             if definiciones.exists():
                 # El catálogo exige significado, unidad, aplicación y evidencia para cada columna.
                 descritas = total_cols
@@ -548,7 +548,7 @@ def medir(cfg):
             add("MAP01", 3, 3, "provisional_interno",
                 "Equivalencias código-nombre aprobadas metodológicamente para el proyecto; "
                 "la aprobación no sustituye un catálogo formal CHEC.")
-            defs = (_PROJECT_ROOT / 'Data/catalogos/CHEC/chec_definiciones_def01.yaml')
+            defs = (_PROJECT_ROOT / 'Data/silver/catalogos/CHEC/chec_definiciones_def01.yaml')
             if defs.exists():
                 add("DEF01", cfg["columnas_esperadas"], cfg["columnas_esperadas"], "provisional_interno",
                     "Catálogo operativo documenta las 24 columnas; unidades y siglas pendientes "

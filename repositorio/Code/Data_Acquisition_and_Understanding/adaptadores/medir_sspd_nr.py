@@ -18,9 +18,9 @@ import re
 
 from lector_datos import leer, filas as filas_de
 
-AQUI = (_PROJECT_ROOT / 'Outputs/adaptadores')
+AQUI = (_PROJECT_ROOT / 'Data/silver/outputs/adaptadores')
 RAIZ = _PROJECT_ROOT
-DATOS = (_PROJECT_ROOT / 'Data/datos')
+DATOS = (_PROJECT_ROOT / 'Data/bronze/datos')
 
 def dato(nombre):
     """Ruta de un CSV de datos, lo busque donde lo busque.

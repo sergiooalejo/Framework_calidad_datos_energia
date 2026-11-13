@@ -12,15 +12,15 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = _PROJECT_ROOT
-DATA = (_PROJECT_ROOT / 'Data/datos/Datos_seleccionados')
-OUT = (_PROJECT_ROOT / 'Data/verificaciones/trazabilidad_filas')
-MANIFEST = (_PROJECT_ROOT / 'Outputs/trazabilidad/trazabilidad/manifiesto_ejecucion.json')
+DATA = (_PROJECT_ROOT / 'Data/bronze/datos/Datos_seleccionados')
+OUT = (_PROJECT_ROOT / 'Data/silver/verificaciones/trazabilidad_filas')
+MANIFEST = (_PROJECT_ROOT / 'Data/gold/outputs/trazabilidad/trazabilidad/manifiesto_ejecucion.json')
 
 FILES = {
-    "sfcd-b3ey": (_PROJECT_ROOT / 'Data/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv'),
-    "c698-wqig": (_PROJECT_ROOT / 'Data/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv'),
-    "ebby-cjha-mensual": (_PROJECT_ROOT / 'Data/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv'),
-    "c1b851-mensual": (_PROJECT_ROOT / 'Data/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv'),
+    "sfcd-b3ey": (_PROJECT_ROOT / 'Data/bronze/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv'),
+    "c698-wqig": (_PROJECT_ROOT / 'Data/bronze/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv'),
+    "ebby-cjha-mensual": (_PROJECT_ROOT / 'Data/silver/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv'),
+    "c1b851-mensual": (_PROJECT_ROOT / 'Data/silver/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv'),
 }
 
 
@@ -40,7 +40,7 @@ def row_key(row):
 def main():
     generated = datetime.now(timezone.utc).isoformat()
     OUT.mkdir(parents=True, exist_ok=True)
-    (_PROJECT_ROOT / 'Outputs/trazabilidad/trazabilidad').mkdir(parents=True, exist_ok=True)
+    (_PROJECT_ROOT / 'Data/gold/outputs/trazabilidad/trazabilidad').mkdir(parents=True, exist_ok=True)
     manifest = {"version": "1.0", "generado_utc": generated, "algoritmo": "SHA-256",
                 "clave_contenido": "JSON UTF-8 canónico de todas las columnas, ordenadas por nombre",
                 "archivos": []}
@@ -72,11 +72,11 @@ def main():
     # Conserva los archivos históricos del Hito 2 y crea copias enriquecidas con la
     # identidad estable. `registro_original` es posición de datos sin encabezado.
     epm_map = {}
-    key_file = (_PROJECT_ROOT / 'Data/verificaciones/trazabilidad_filas/sfcd-b3ey_filas.csv')
+    key_file = (_PROJECT_ROOT / 'Data/silver/verificaciones/trazabilidad_filas/sfcd-b3ey_filas.csv')
     for r in csv.DictReader(key_file.open(encoding="utf-8")):
         epm_map[int(r["fila_posicion"]) - 2] = r["clave_contenido"]
     for nombre in ("03_hallazgos", "05_alertas_imr_reales"):
-        origen = (_PROJECT_ROOT / 'Outputs/adaptadores/insumos_hito2') / f"{nombre}.csv"
+        origen = (_PROJECT_ROOT / 'Data/silver/outputs/adaptadores/insumos_hito2') / f"{nombre}.csv"
         if not origen.exists():
             continue
         destino = OUT / f"{nombre}_trazabilidad.csv"

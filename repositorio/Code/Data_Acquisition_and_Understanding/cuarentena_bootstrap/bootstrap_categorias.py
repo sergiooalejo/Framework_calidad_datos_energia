@@ -10,13 +10,13 @@ import csv, json, random
 from pathlib import Path
 
 ROOT=_PROJECT_ROOT
-OUT=(_PROJECT_ROOT / 'Outputs/cuarentena_bootstrap/bootstrap')
+OUT=(_PROJECT_ROOT / 'Data/gold/outputs/cuarentena_bootstrap/bootstrap')
 OUT.mkdir(parents=True,exist_ok=True)
 FILES={
- 'EPM': (_PROJECT_ROOT / 'Outputs/cartas/EPM/cartas_log_epm.csv'),
- 'CHEC': (_PROJECT_ROOT / 'Outputs/cartas/CHEC/cartas_log_chec.csv'),
- 'SSPD': (_PROJECT_ROOT / 'Outputs/cartas/SSPD/cartas_log_sspd.csv'),
- 'XM': (_PROJECT_ROOT / 'Outputs/cartas/XM/cartas_log_xm.csv'),
+ 'EPM': (_PROJECT_ROOT / 'Data/gold/outputs/cartas/EPM/cartas_log_epm.csv'),
+ 'CHEC': (_PROJECT_ROOT / 'Data/gold/outputs/cartas/CHEC/cartas_log_chec.csv'),
+ 'SSPD': (_PROJECT_ROOT / 'Data/gold/outputs/cartas/SSPD/cartas_log_sspd.csv'),
+ 'XM': (_PROJECT_ROOT / 'Data/gold/outputs/cartas/XM/cartas_log_xm.csv'),
 }
 SEED=20261105; B=2000
 
@@ -45,10 +45,10 @@ for source,path in FILES.items():
         boot=[]
         for _ in range(B): boot.append(sum(rates[rng.randrange(n)] for _ in range(n))/n)
         results.append({'fuente':source,'categoria':cat,'series':n,'tasa_observada':round(100*observed,6),'ic95_inferior':round(100*percentile(boot,.025),6),'ic95_superior':round(100*percentile(boot,.975),6),'repeticiones':B,'semilla':SEED,'unidad_remuestreo':'serie'})
-with ((_PROJECT_ROOT / 'Outputs/cuarentena_bootstrap/bootstrap/bootstrap_categorias.csv')).open('w',encoding='utf-8',newline='') as f:
+with ((_PROJECT_ROOT / 'Data/gold/outputs/cuarentena_bootstrap/bootstrap/bootstrap_categorias.csv')).open('w',encoding='utf-8',newline='') as f:
     w=csv.DictWriter(f,fieldnames=list(results[0]));w.writeheader();w.writerows(results)
 summary={'semilla':SEED,'repeticiones':B,'unidad':'serie dentro de categoría y fuente','grupos':len(results),'fuentes':sorted(FILES)}
-((_PROJECT_ROOT / 'Outputs/cuarentena_bootstrap/bootstrap/README.txt')).write_text(f'''# Bootstrap por categoría
+((_PROJECT_ROOT / 'Data/gold/outputs/cuarentena_bootstrap/bootstrap/README.txt')).write_text(f'''# Bootstrap por categoría
 
 El archivo `bootstrap_categorias.csv` calcula la tasa de señales de CART01 y su IC95 % por categoría. Se remuestrean series dentro de cada categoría, sin mezclar fuentes. La semilla es {SEED} y se ejecutan {B} repeticiones.
 
@@ -67,5 +67,5 @@ python3 desarrollo_puntos/3.7/bootstrap_categorias.py
 
 El script lee las cartas generadas en las carpetas de cada fuente y reemplaza de forma determinista `bootstrap_categorias.csv`, `configuracion.json` y este resumen. La semilla fija permite comparar ejecuciones mientras no cambien las cartas de entrada.
 ''',encoding='utf-8')
-((_PROJECT_ROOT / 'Outputs/cuarentena_bootstrap/bootstrap/configuracion.json')).write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-print(f'grupos={len(results)} archivo={(_PROJECT_ROOT / 'Outputs/cuarentena_bootstrap/bootstrap/bootstrap_categorias.csv')}')
+((_PROJECT_ROOT / 'Data/gold/outputs/cuarentena_bootstrap/bootstrap/configuracion.json')).write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+print(f'grupos={len(results)} archivo={(_PROJECT_ROOT / 'Data/gold/outputs/cuarentena_bootstrap/bootstrap/bootstrap_categorias.csv')}')

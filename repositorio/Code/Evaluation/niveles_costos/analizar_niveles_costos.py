@@ -7,7 +7,7 @@ from collections import defaultdict
 from pathlib import Path
 
 ROOT = _PROJECT_ROOT
-OUT = (_PROJECT_ROOT / 'Outputs/niveles_costos')
+OUT = (_PROJECT_ROOT / 'Data/gold/outputs/niveles_costos')
 OUT.mkdir(parents=True, exist_ok=True)
 
 METHODS = {
@@ -29,7 +29,7 @@ def level(source, category):
 
 def write_level_results():
     groups = defaultdict(lambda: {"observaciones": 0, "detecciones": 0, "series": set()})
-    path = (_PROJECT_ROOT / 'Outputs/sensibilidad/alertas_reales_detalle.csv.gz')
+    path = (_PROJECT_ROOT / 'Data/gold/outputs/sensibilidad/alertas_reales_detalle.csv.gz')
     with gzip.open(path, "rt", encoding="utf-8-sig", newline="") as handle:
         for row in csv.DictReader(handle):
             if row["referencia"] != "36" or row["cohorte"] != "comun":
@@ -43,7 +43,7 @@ def write_level_results():
                 item["detecciones"] += int(row[column])
                 item["series"].add(row["sid"])
     fields = ["fuente", "nivel", "metodo", "series", "observaciones", "detecciones", "tasa_alerta", "interpretacion"]
-    with ((_PROJECT_ROOT / 'Outputs/niveles_costos/resultados_por_nivel.csv')).open("w", encoding="utf-8", newline="") as handle:
+    with ((_PROJECT_ROOT / 'Data/gold/outputs/niveles_costos/resultados_por_nivel.csv')).open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields)
         writer.writeheader()
         for (source, group, method), item in sorted(groups.items()):
@@ -61,8 +61,8 @@ def write_level_results():
 def write_costs():
     rows = []
     inputs = [
-        ("4.2_sensibilidad", (_PROJECT_ROOT / 'Outputs/sensibilidad/ejecuciones.csv')),
-        ("4.3_metricas", (_PROJECT_ROOT / 'Outputs/metricas/ejecuciones.csv')),
+        ("4.2_sensibilidad", (_PROJECT_ROOT / 'Data/gold/outputs/sensibilidad/ejecuciones.csv')),
+        ("4.3_metricas", (_PROJECT_ROOT / 'Data/gold/outputs/metricas/ejecuciones.csv')),
     ]
     for experiment, path in inputs:
         with path.open(encoding="utf-8-sig", newline="") as handle:
@@ -75,7 +75,7 @@ def write_costs():
                     for stage in ("segundos_ajuste_modelos", "segundos_puntajes", "segundos_tasa_igualada_y_bootstrap", "segundos_sorteo", "segundos_total"):
                         rows.append({"experimento": experiment, "fuente": row["fuente"], "contexto": "protocolo_4.3", "etapa": stage.replace("segundos_", ""), "segundos": row[stage], "series": row["series"], "observaciones": row["observaciones_reales"]})
     fields = ["experimento", "fuente", "contexto", "etapa", "segundos", "series", "observaciones"]
-    with ((_PROJECT_ROOT / 'Outputs/niveles_costos/costos_computacionales.csv')).open("w", encoding="utf-8", newline="") as handle:
+    with ((_PROJECT_ROOT / 'Data/gold/outputs/niveles_costos/costos_computacionales.csv')).open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields)
         writer.writeheader(); writer.writerows(rows)
     return len(rows)
@@ -123,7 +123,7 @@ relativos, no como garantía de tiempo en otro computador.
 
 Filas generadas: {level_rows} por nivel/método y {cost_rows} de costo computacional.
 '''
-    ((_PROJECT_ROOT / 'Outputs/niveles_costos/INFORME_NIVELES_COSTO.txt')).write_text(text, encoding="utf-8")
+    ((_PROJECT_ROOT / 'Data/gold/outputs/niveles_costos/INFORME_NIVELES_COSTO.txt')).write_text(text, encoding="utf-8")
 
 
 if __name__ == "__main__":

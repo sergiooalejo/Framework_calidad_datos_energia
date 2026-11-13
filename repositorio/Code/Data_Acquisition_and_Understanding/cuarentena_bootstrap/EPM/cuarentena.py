@@ -10,8 +10,8 @@ import csv
 from pathlib import Path
 
 ROOT = _PROJECT_ROOT
-src = (_PROJECT_ROOT / 'Data/verificaciones/trazabilidad_filas/03_hallazgos_trazabilidad.csv')
-out = (_PROJECT_ROOT / 'Outputs/cuarentena_bootstrap/EPM/cuarentena_registros.csv')
+src = (_PROJECT_ROOT / 'Data/silver/verificaciones/trazabilidad_filas/03_hallazgos_trazabilidad.csv')
+out = (_PROJECT_ROOT / 'Data/gold/outputs/cuarentena_bootstrap/EPM/cuarentena_registros.csv')
 reglas = {"R08", "R11", "R12"}
 rows = []
 for r in csv.DictReader(src.open(encoding="utf-8")):

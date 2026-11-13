@@ -5,7 +5,7 @@ representan dependencias de proceso; los datos originales no se modifican.
 
 ```mermaid
 flowchart LR
-    A[Fuentes energéticas\nEPM · CHEC · SSPD · XM] --> B[Data/datos\nentradas versionadas]
+    A[Fuentes energéticas\nEPM · CHEC · SSPD · XM] --> B[Bronze\nData/bronze/datos · entradas versionadas]
     B --> C[Trazabilidad\nSHA-256 y procedencia]
     B --> D[Cuarentena\nrevisión de entradas]
     D --> E[Preparación y adaptadores\nlectura por fuente]
@@ -35,7 +35,7 @@ flowchart LR
 
 ## Lectura del diagrama
 
-1. Los archivos de las fuentes se conservan en `Data/datos/` y se identifican mediante hashes.
+1. Los archivos de las fuentes pertenecen a la capa Bronze y se conservan físicamente en `Data/bronze/datos/`; se identifican mediante hashes.
 2. La cuarentena separa entradas que requieren revisión antes de analizarlas.
 3. Las cartas, la matriz y los detectores producen resultados independientes que después se
    consolidan en el scorecard.

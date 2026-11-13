@@ -37,7 +37,7 @@ docker build -t calidad-energia-streamlit .
 
 ## Evidencia generada
 
-- Manifiestos de ejecución en `Outputs/ejecuciones/`.
+- Manifiestos de ejecución en `Data/gold/outputs/ejecuciones/`.
 - Huellas SHA-256 en la migración y configuraciones de resultados.
 - Pruebas automáticas en sensibilidad, métricas y regla sistémica.
 - Imagen Docker `calidad-energia-streamlit`.

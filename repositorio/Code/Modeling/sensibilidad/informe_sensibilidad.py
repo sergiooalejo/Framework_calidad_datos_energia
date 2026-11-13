@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-HERE=(_PROJECT_ROOT / 'Outputs/sensibilidad')
+HERE=(_PROJECT_ROOT / 'Data/gold/outputs/sensibilidad')
 SOURCES=('EPM','CHEC','SSPD','XM')
 COLORS={'EPM':'#2563eb','CHEC':'#059669','SSPD':'#d97706','XM':'#7c3aed'}
 
@@ -27,7 +27,7 @@ def table(frame, columns):
 
 
 def save(fig,name):
-    target=(_PROJECT_ROOT / 'Outputs/sensibilidad/figuras');target.mkdir(exist_ok=True)
+    target=(_PROJECT_ROOT / 'Data/gold/outputs/sensibilidad/figuras');target.mkdir(exist_ok=True)
     fig.tight_layout()
     for suffix in ('png','svg','pdf'):
         fig.savefig(target/(name+'.'+suffix),dpi=180,bbox_inches='tight')
@@ -44,7 +44,7 @@ def generate():
     params=read('parametros_por_serie.csv')
     combinations=read('combinaciones_framework.csv')
     runs=read('ejecuciones.csv')
-    config=json.loads(((_PROJECT_ROOT / 'Outputs/sensibilidad/configuracion.json')).read_text(encoding='utf-8'))
+    config=json.loads(((_PROJECT_ROOT / 'Data/gold/outputs/sensibilidad/configuracion.json')).read_text(encoding='utf-8'))
     plt.rcParams.update({'font.size':9,'axes.spines.top':False,'axes.spines.right':False})
 
     fig,axes=plt.subplots(1,2,figsize=(11,4),sharey=True)
@@ -108,7 +108,7 @@ def generate():
     grouped['tasa_t_o_t1']=grouped.detecciones_t_o_t1/grouped.casos
     grouped['ganancia_pp']=100*(grouped.tasa_t_o_t1-grouped.tasa_t)
     grouped['tasa_nueva_t_o_t1']=grouped.detecciones_nuevas_t_o_t1/grouped.casos
-    grouped.to_csv((_PROJECT_ROOT / 'Outputs/sensibilidad/resumen_horizonte_36.csv'),index=False,encoding='utf-8-sig')
+    grouped.to_csv((_PROJECT_ROOT / 'Data/gold/outputs/sensibilidad/resumen_horizonte_36.csv'),index=False,encoding='utf-8-sig')
     fig,axes=plt.subplots(2,2,figsize=(12,7))
     plot_methods=('IMR_clasica','MAD_3sigma','IF_p99','IF_p99.5','R12_f10')
     for ax,source in zip(axes.flat,SOURCES):
@@ -402,8 +402,8 @@ comprimidas son CSV UTF-8 legibles con `pandas.read_csv(ruta, compression="gzip"
 La carpeta `figuras/` contiene artefactos regenerables y no se versiona; debe reconstruirse en un
 entorno que tenga las dependencias fijadas en `configuracion.json`.
 '''
-    ((_PROJECT_ROOT / 'Outputs/sensibilidad/INFORME_SENSIBILIDAD.txt')).write_text(body,encoding='utf-8')
-    ((_PROJECT_ROOT / 'Outputs/sensibilidad/README.txt')).write_text('''# 4.2 · Análisis de sensibilidad
+    ((_PROJECT_ROOT / 'Data/gold/outputs/sensibilidad/INFORME_SENSIBILIDAD.txt')).write_text(body,encoding='utf-8')
+    ((_PROJECT_ROOT / 'Data/gold/outputs/sensibilidad/README.txt')).write_text('''# 4.2 · Análisis de sensibilidad
 
 La lectura principal está en [INFORME_SENSIBILIDAD.md](INFORME_SENSIBILIDAD.md).
 El análisis se ejecutó sobre las cuatro fuentes locales y escribe todas sus salidas aquí.

@@ -1,6 +1,6 @@
 """Tablero Streamlit de calidad de datos del sector energético.
 
-Lee resultados versionados de Outputs/ y no modifica datasets ni recalcula experimentos.
+Lee resultados versionados de Data/gold/outputs/ y no modifica datasets ni recalcula experimentos.
 """
 from pathlib import Path
 import subprocess
@@ -9,9 +9,10 @@ import sys
 import pandas as pd
 import streamlit as st
 import yaml
+from pipeline import seeds_for_stage
 
 ROOT = Path(__file__).resolve().parent
-OUTPUTS = ROOT / "Outputs"
+OUTPUTS = ROOT / "Data/gold/outputs"
 RULE_CONFIG = OUTPUTS / "calidad" / "matriz_oe1.yaml"
 
 
@@ -87,7 +88,7 @@ with st.sidebar:
 
 st.sidebar.divider()
 st.sidebar.subheader("Ejecución controlada")
-st.sidebar.caption("Selecciona una etapa autorizada. La ejecución puede actualizar archivos en Outputs/.")
+st.sidebar.caption("Selecciona una etapa autorizada. La ejecución puede actualizar archivos en Data/gold/outputs/.")
 stages = {
     "1. Trazabilidad": "trazabilidad",
     "2. Cuarentena": "cuarentena",
@@ -105,13 +106,17 @@ stages = {
     "14. Niveles y costos": "niveles-costos",
 }
 stage_label = st.sidebar.selectbox("Etapa", list(stages))
-seed = st.sidebar.number_input("Semilla", min_value=0, value=42, step=1)
+stage_seeds = seeds_for_stage(stages[stage_label])
+if stage_seeds:
+    st.sidebar.caption("Semillas base fijas usadas por este método: " + ", ".join(f"{name} = {value}" for name, value in stage_seeds.items()) + ". Algunas se derivan por fuente, serie o partición.")
+else:
+    st.sidebar.caption("Esta etapa no declara una semilla base configurable.")
 confirm_stage = st.sidebar.checkbox("Confirmo ejecutar la etapa seleccionada")
 run_stage = st.sidebar.button("Ejecutar etapa", type="primary", disabled=not confirm_stage)
 
 if run_stage:
     stage = stages[stage_label]
-    command = [sys.executable, str(ROOT / "pipeline.py"), "ejecutar", stage, "--semilla", str(seed)]
+    command = [sys.executable, str(ROOT / "pipeline.py"), "ejecutar", stage]
     with st.status(f"Ejecutando {stage_label}...", expanded=True) as status:
         try:
             result = subprocess.run(
@@ -131,6 +136,8 @@ if run_stage:
             else:
                 status.update(label=f"{stage_label} terminó con error", state="error")
                 st.error(result.stderr or "El proceso no devolvió detalles del error.")
+                if "No module named" in result.stderr:
+                    st.info("Falta una biblioteca en el entorno con el que abriste el tablero. Actualiza Environment/requirements-streamlit.txt en ese entorno y reinicia Streamlit.")
         except OSError as exc:
             status.update(label="No se pudo iniciar la matriz", state="error")
             st.error(str(exc))
@@ -145,38 +152,20 @@ tab_summary, tab_dimensions, tab_alerts, tab_metrics, tab_incidents, tab_trace =
 with tab_summary:
     st.subheader("Estado general")
     if not missing("scorecard", scorecard_view):
-        avg = scorecard_view["promedio_indicadores"].mean()
-        x25 = int((alerts["sistemico_X25"] == 1).sum()) if not alerts.empty else 0
+        alerts_summary = alerts if source == "Todas" or alerts.empty else alerts[alerts["fuente"] == source]
+        x25 = int((alerts_summary["sistemico_X25"] == 1).sum()) if not alerts_summary.empty else 0
         c1, c2, c3, c4 = st.columns(4)
         c1.metric("Fuentes", scorecard_view["fuente"].nunique())
         c2.metric("Combinaciones", len(scorecard_view))
-        c3.metric("Promedio indicadores", f"{avg:.2f}%")
-        c4.metric("Candidatos sistémicos X=25%", x25)
+        c3.metric("Dimensiones registradas", scorecard_view["dimension"].nunique())
+        c4.metric("Filas de escenarios con X=25%", x25)
+        st.caption("Un mismo período puede aparecer en distintos escenarios; este conteo no representa eventos únicos.")
         st.dataframe(scorecard_view, use_container_width=True, hide_index=True)
 
 with tab_dimensions:
     st.subheader("Dimensiones DAMA-DMBOK")
     if not missing("matriz OE1", matrix_view):
-        dimensions = (
-            matrix_view.groupby("dimension", as_index=False)["resultado_valor"]
-            .mean()
-            .sort_values("resultado_valor", ascending=False)
-        )
-        dimensions = dimensions.rename(columns={"resultado_valor": "promedio_resultado"})
-        st.caption("Promedio de resultado por dimensión. La barra evita depender de Altair para mantener compatibilidad local.")
-        st.dataframe(
-            dimensions,
-            use_container_width=True,
-            hide_index=True,
-            column_config={
-                "promedio_resultado": st.column_config.ProgressColumn(
-                    "Promedio de resultado",
-                    min_value=0,
-                    max_value=100,
-                    format="%.2f",
-                )
-            },
-        )
+        st.caption("Los indicadores se muestran por separado: no se promedian porque pueden tener sentidos y poblaciones diferentes. Una agregación requiere una metodología aprobada.")
         st.dataframe(
             matrix_view[["fuente", "control", "nombre", "dimension", "estado_medicion", "resultado_valor", "resultado_nota"]],
             use_container_width=True,
@@ -237,7 +226,7 @@ with tab_incidents:
 
 with tab_trace:
     st.subheader("Trazabilidad y límites")
-    st.success("Los resultados se leen desde Outputs/ y conservan manifiestos SHA-256.")
+    st.success("Los resultados se leen desde Data/gold/outputs/ y conservan manifiestos SHA-256.")
     st.write("La aplicación no descarga datos, no modifica archivos fuente y no convierte una señal estadística en un error confirmado.")
     st.json({
         "raiz": str(ROOT),

@@ -16,7 +16,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-HERE = (_PROJECT_ROOT / 'Outputs/regla_sistemica')
+HERE = (_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica')
 ROOT = _PROJECT_ROOT
 sys.dont_write_bytecode = True
 sys.path.insert(0, str((_PROJECT_ROOT / 'Code/Modeling/regla_sistemica')))
@@ -29,8 +29,8 @@ METHODS = tuple(R.METHOD_COLUMNS)
 PRIMARY_WINDOW = 36
 EFFECT_X = (0.10, 0.20, 0.25, 0.30, 0.50, 0.75)
 FLAG_X = (0.10, 0.25, 0.50)
-H2 = (_PROJECT_ROOT / 'Outputs/adaptadores/insumos_hito2')
-EXTERNAL = (_PROJECT_ROOT / 'Outputs/regla_sistemica/evidencia_externa')
+H2 = (_PROJECT_ROOT / 'Data/silver/outputs/adaptadores/insumos_hito2')
+EXTERNAL = (_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/evidencia_externa')
 PDF_MONTHS = ('2020-01', '2020-02', '2020-06', '2020-07', '2021-06', '2021-07')
 CONTRAST_PAIRS = (('2020-01', '2020-02'), ('2020-06', '2020-07'), ('2021-06', '2021-07'))
 COMPONENT_COLUMNS = ('propiedadepm', 'compartido', 'propiedaddelcliente')
@@ -45,8 +45,8 @@ def write_table(name, frame_or_rows):
 
 def hito2_fractions():
     """Reproduce 51/83, 24/83 y 18/83 desde 05_alertas_imr_reales.csv (origen fijo, diferencia absoluta)."""
-    alerts = pd.read_csv((_PROJECT_ROOT / 'Outputs/adaptadores/insumos_hito2/05_alertas_imr_reales.csv'))
-    summary = json.loads(((_PROJECT_ROOT / 'Outputs/adaptadores/insumos_hito2/00_resumen.json')).read_text(encoding='utf-8'))
+    alerts = pd.read_csv((_PROJECT_ROOT / 'Data/silver/outputs/adaptadores/insumos_hito2/05_alertas_imr_reales.csv'))
+    summary = json.loads(((_PROJECT_ROOT / 'Data/silver/outputs/adaptadores/insumos_hito2/00_resumen.json')).read_text(encoding='utf-8'))
     total = int(summary['series_completas_49'])
     alerts['serie'] = alerts.clave + '|' + alerts.columna
     alerts['componente'] = alerts.clave.str.split(' | ', regex=False).str[2]
@@ -80,9 +80,9 @@ def month_index(label):
 
 def published_vs_csv():
     """Transcripción de los PDF de EPM frente a los valores del CSV y a la suma de componentes."""
-    published = pd.read_csv((_PROJECT_ROOT / 'Outputs/regla_sistemica/evidencia_externa/tarifas_epm_publicadas.csv'))
+    published = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/evidencia_externa/tarifas_epm_publicadas.csv'))
     items, mapping, path = R.canonical_epm_items()
-    raw = pd.read_csv((_PROJECT_ROOT / 'Data/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv'), encoding='utf-8-sig')
+    raw = pd.read_csv((_PROJECT_ROOT / 'Data/bronze/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv'), encoding='utf-8-sig')
     months = {n: i for i, n in enumerate(('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto',
                                           'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'), 1)}
     raw = raw[(raw.tipodeinformacion == 'Monomia') & (raw.tipodetarifa == 'Costo Unitario') & (raw.nivel == 'I')].copy()
@@ -114,14 +114,14 @@ def main():
     if hasattr(sys.stdout, 'reconfigure'):
         sys.stdout.reconfigure(encoding='utf-8')
     datasets, inputs = A.load_sources()
-    quarantine = (_PROJECT_ROOT / 'Outputs/cuarentena_bootstrap/EPM/cuarentena_registros.csv')
+    quarantine = (_PROJECT_ROOT / 'Data/gold/outputs/cuarentena_bootstrap/EPM/cuarentena_registros.csv')
     guarded = {ROOT / e['ruta']: e['sha256'] for e in inputs.values()}
     guarded.update({quarantine: A.sha256(quarantine)})
-    for path in ((_PROJECT_ROOT / 'Outputs/adaptadores/insumos_hito2/05_alertas_imr_reales.csv'), (_PROJECT_ROOT / 'Outputs/adaptadores/insumos_hito2/00_resumen.json'), (_PROJECT_ROOT / 'Outputs/adaptadores/insumos_hito2/02_catalogo_variantes.csv'),
-                 (_PROJECT_ROOT / 'Outputs/sensibilidad/efecto_regla_sistemica_inyecciones.csv'),
-                 (_PROJECT_ROOT / 'Outputs/sensibilidad/efecto_regla_sistemica_reales.csv'),
-                 *sorted(EXTERNAL.glob('*.pdf')), (_PROJECT_ROOT / 'Outputs/regla_sistemica/evidencia_externa/tarifas_epm_publicadas.csv'),
-                 (_PROJECT_ROOT / 'Outputs/regla_sistemica/evidencia_externa/referencias_documentales.csv')):
+    for path in ((_PROJECT_ROOT / 'Data/silver/outputs/adaptadores/insumos_hito2/05_alertas_imr_reales.csv'), (_PROJECT_ROOT / 'Data/silver/outputs/adaptadores/insumos_hito2/00_resumen.json'), (_PROJECT_ROOT / 'Data/silver/outputs/adaptadores/insumos_hito2/02_catalogo_variantes.csv'),
+                 (_PROJECT_ROOT / 'Data/gold/outputs/sensibilidad/efecto_regla_sistemica_inyecciones.csv'),
+                 (_PROJECT_ROOT / 'Data/gold/outputs/sensibilidad/efecto_regla_sistemica_reales.csv'),
+                 *sorted(EXTERNAL.glob('*.pdf')), (_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/evidencia_externa/tarifas_epm_publicadas.csv'),
+                 (_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/evidencia_externa/referencias_documentales.csv')):
         guarded[path] = A.sha256(path)
 
     canonical, mapping, _ = R.canonical_epm_items()
@@ -292,7 +292,7 @@ def main():
     write_table('contraste_componentes.csv', pd.DataFrame(rows))
 
     # ---- costo de enmascaramiento (4.2): individuales frente a colectivos
-    masking = pd.read_csv((_PROJECT_ROOT / 'Outputs/sensibilidad/efecto_regla_sistemica_inyecciones.csv'))
+    masking = pd.read_csv((_PROJECT_ROOT / 'Data/gold/outputs/sensibilidad/efecto_regla_sistemica_inyecciones.csv'))
     masking = masking[(masking.referencia == 36) & (masking.cohorte == 'comun') & masking.metodo.isin(METHODS)]
     cost = (masking.groupby(['fuente', 'clase_ensayo', 'metodo', 'umbral_fraccion'])[['casos', 'detecciones_t_o_t1', 'retenidas_t_o_t1']]
             .sum().reset_index())
@@ -316,12 +316,12 @@ def main():
         'entradas': inputs, 'cuarentena_EPM': {'ruta': quarantine.relative_to(ROOT).as_posix(), 'sha256': A.sha256(quarantine)},
         'dependencias': {p.relative_to(ROOT).as_posix(): A.sha256(p) for p in (
             (_PROJECT_ROOT / 'Docs/Antecedentes/plan_hitos_3-6_detallado.txt'),
-            (_PROJECT_ROOT / 'Outputs/adaptadores/insumos_hito2/05_alertas_imr_reales.csv'), (_PROJECT_ROOT / 'Outputs/adaptadores/insumos_hito2/00_resumen.json'), (_PROJECT_ROOT / 'Outputs/adaptadores/insumos_hito2/02_catalogo_variantes.csv'),
-            (_PROJECT_ROOT / 'Outputs/sensibilidad/efecto_regla_sistemica_inyecciones.csv'),
+            (_PROJECT_ROOT / 'Data/silver/outputs/adaptadores/insumos_hito2/05_alertas_imr_reales.csv'), (_PROJECT_ROOT / 'Data/silver/outputs/adaptadores/insumos_hito2/00_resumen.json'), (_PROJECT_ROOT / 'Data/silver/outputs/adaptadores/insumos_hito2/02_catalogo_variantes.csv'),
+            (_PROJECT_ROOT / 'Data/gold/outputs/sensibilidad/efecto_regla_sistemica_inyecciones.csv'),
             (_PROJECT_ROOT / 'Code/Modeling/sensibilidad/analisis_sensibilidad.py'), (_PROJECT_ROOT / 'Code/Modeling/detectores/zscore_robusto.py'))},
         'evidencia_externa': {p.relative_to(ROOT).as_posix(): A.sha256(p) for p in sorted(EXTERNAL.glob('*'))},
         'versiones': {'python': platform.python_version(), 'numpy': np.__version__, 'pandas': pd.__version__}}
-    ((_PROJECT_ROOT / 'Outputs/regla_sistemica/configuracion.json')).write_text(json.dumps(config, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    ((_PROJECT_ROOT / 'Data/gold/outputs/regla_sistemica/configuracion.json')).write_text(json.dumps(config, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print('Calibración, catálogo y contraste generados en', HERE)
 
 

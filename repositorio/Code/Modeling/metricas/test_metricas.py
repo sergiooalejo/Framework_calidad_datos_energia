@@ -8,7 +8,7 @@ from pathlib import Path
 
 import numpy as np
 
-HERE = (_PROJECT_ROOT / 'Outputs/metricas')
+HERE = (_PROJECT_ROOT / 'Data/gold/outputs/metricas')
 sys.dont_write_bytecode = True
 sys.path.insert(0, str((_PROJECT_ROOT / 'Code/Modeling/metricas')))
 sys.path.insert(0, str((_PROJECT_ROOT / 'Code/Modeling/sensibilidad')))

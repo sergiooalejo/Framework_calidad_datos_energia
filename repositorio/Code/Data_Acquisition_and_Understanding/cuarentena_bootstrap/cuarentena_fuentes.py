@@ -10,7 +10,7 @@ _PROJECT_ROOT = next(p for p in _ProjectPath(__file__).resolve().parents if (p /
 import csv, math, zipfile, io, json, hashlib
 from pathlib import Path
 ROOT=_PROJECT_ROOT
-OUT=(_PROJECT_ROOT / 'Data/verificaciones/trazabilidad_filas'); OUT.mkdir(parents=True,exist_ok=True)
+OUT=(_PROJECT_ROOT / 'Data/silver/verificaciones/trazabilidad_filas'); OUT.mkdir(parents=True,exist_ok=True)
 
 def key(row):
     s=json.dumps(row,ensure_ascii=False,sort_keys=True,separators=(',',':'))
@@ -27,7 +27,7 @@ def write(name, rows):
 write('c698-wqig',[])
 
 # SSPD: el consumo básico del censo de detalle no contiene negativos ni no numéricos.
-rows=[]; z=(_PROJECT_ROOT / 'Data/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_detalle-compressed.zip')
+rows=[]; z=(_PROJECT_ROOT / 'Data/bronze/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_detalle-compressed.zip')
 with zipfile.ZipFile(z) as f:
     n=next(x for x in f.namelist() if x.endswith('.csv'))
     for r in csv.DictReader(io.TextIOWrapper(f.open(n),encoding='utf-8')):
@@ -40,7 +40,7 @@ with zipfile.ZipFile(z) as f:
 write('ebby-cjha',rows)
 
 # XM: mensual seleccionado; valores negativos/no finitos contaminan cartas.
-rows=[]; p=(_PROJECT_ROOT / 'Data/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv')
+rows=[]; p=(_PROJECT_ROOT / 'Data/silver/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv')
 for r in csv.DictReader(p.open(encoding='utf-8-sig')):
     try:v=float(r['demanda_kwh'])
     except (ValueError,TypeError):

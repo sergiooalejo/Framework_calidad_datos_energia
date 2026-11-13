@@ -8,4 +8,4 @@ __pycache__/
 Thumbs.db
 # Los resultados tabulares y muestras forman parte de la entrega.
 # Las figuras se pueden regenerar con pipeline.py ejecutar figuras.
-Outputs/**/figuras/
+Data/gold/outputs/**/figuras/

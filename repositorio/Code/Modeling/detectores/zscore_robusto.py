@@ -12,7 +12,7 @@ import math
 import statistics
 from pathlib import Path
 
-HERE = (_PROJECT_ROOT / 'Outputs/detectores')
+HERE = (_PROJECT_ROOT / 'Data/gold/outputs/detectores')
 ROOT = _PROJECT_ROOT
 REF_CHANGES = 36
 WATCH_CHANGES = 12
@@ -56,12 +56,12 @@ def log_changes(period_values: dict[tuple[int, int], list[float]]) -> list[tuple
 def build_series(source: str):
     """Reuse the source, series keys and measures from the Hito 3 cards."""
     if source == "EPM":
-        path = (_PROJECT_ROOT / 'Data/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv')
+        path = (_PROJECT_ROOT / 'Data/bronze/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv')
         rows = read_csv(path)
         months = {name: number for number, name in enumerate(("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"), 1)}
         cats = ("tipodeinformacion", "tipodetarifa", "tipodedato", "rangodeconsumo", "nivel")
         measures = ("propiedadepm", "compartido", "propiedaddelcliente", "punta", "fueradepunta")
-        quarantine_file = (_PROJECT_ROOT / 'Outputs/cuarentena_bootstrap/EPM/cuarentena_registros.csv')
+        quarantine_file = (_PROJECT_ROOT / 'Data/gold/outputs/cuarentena_bootstrap/EPM/cuarentena_registros.csv')
         quarantined = {row["clave_contenido"] for row in read_csv(quarantine_file)} if quarantine_file.exists() else set()
         series = {}
         for row in rows:
@@ -79,7 +79,7 @@ def build_series(source: str):
         return path, series
 
     if source == "CHEC":
-        path = (_PROJECT_ROOT / 'Data/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv')
+        path = (_PROJECT_ROOT / 'Data/bronze/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv')
         rows = read_csv(path)
         cats = ("comercializador_codigo", "mercado_codigo", "costounitariotarifa_tipomed", "nivel_tension_codigo", "modalidadcobro_propiedad", "claseservicio_codigo", "costounitariotarifa_rangoconsumo", "costounitariotarifa_tipomercado")
         measures = ("costounitariotarifa_cu", "costounitariotarifa_valor_tarifa")
@@ -100,7 +100,7 @@ def build_series(source: str):
         return path, series
 
     if source == "SSPD":
-        path = (_PROJECT_ROOT / 'Data/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv')
+        path = (_PROJECT_ROOT / 'Data/silver/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv')
         rows = read_csv(path)
         cats = ("identificador_empresa", "estrato_sector", "ubicacion", "tipo_conexion", "tipo_lectura", "tipo_factura")
         measures = ("consumo_basico_sum", "consumo_compl_sum", "consumo_mayor800_sum", "valor_total_sum")
@@ -121,7 +121,7 @@ def build_series(source: str):
         return path, series
 
     if source == "XM":
-        path = (_PROJECT_ROOT / 'Data/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv')
+        path = (_PROJECT_ROOT / 'Data/silver/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv')
         rows = read_csv(path)
         series = {}
         for row in sorted(rows, key=lambda item: item["periodo"]):
@@ -183,10 +183,10 @@ def main() -> None:
         details.extend(detail)
         summaries.extend(summary)
         inputs[source] = {"ruta": str(input_path), "sha256": sha256(input_path)}
-    write_csv((_PROJECT_ROOT / 'Outputs/detectores/zscore_robusto_detalle.csv'), details)
-    write_csv((_PROJECT_ROOT / 'Outputs/detectores/zscore_robusto_resumen.csv'), summaries)
+    write_csv((_PROJECT_ROOT / 'Data/gold/outputs/detectores/zscore_robusto_detalle.csv'), details)
+    write_csv((_PROJECT_ROOT / 'Data/gold/outputs/detectores/zscore_robusto_resumen.csv'), summaries)
     config = {"metodo": "zscore_robusto_logaritmico", "formula": "0.6744897501960817 * (cambio_log - mediana_referencia) / MAD_referencia", "umbral": args.umbral, "cambios_referencia": REF_CHANGES, "cambios_vigilancia": WATCH_CHANGES, "fuentes": list(inputs), "entradas": inputs, "cuarentena_epm_aplicada": True, "mad_cero": "señal si el cambio es distinto de la mediana; z_robusto queda vacío"}
-    ((_PROJECT_ROOT / 'Outputs/detectores/configuracion.json')).write_text(json.dumps(config, ensure_ascii=False, indent=2), encoding="utf-8")
+    ((_PROJECT_ROOT / 'Data/gold/outputs/detectores/configuracion.json')).write_text(json.dumps(config, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"series={len(summaries)} observaciones_vigilancia={len(details)} señales={sum(int(row['señales']) for row in summaries)}")
 
 
