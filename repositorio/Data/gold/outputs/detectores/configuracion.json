@@ -12,20 +12,20 @@
   ],
   "entradas": {
     "EPM": {
-      "ruta": "Data/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv",
-      "sha256": "98acd40e8d2b92433b1dfc60422228f26f53ab331fd600631f03f830e7ba38f4"
+      "ruta": "/app/Data/bronze/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv",
+      "sha256": "b974a37a171b9178476fbd2baba21470e8845076af105ef9c178e80690f09920"
     },
     "CHEC": {
-      "ruta": "Data/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv",
-      "sha256": "05865b094a4cc4eb9f822ed2af686a11a8905d6606f40bb554f5bb5258e3c53f"
+      "ruta": "/app/Data/bronze/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv",
+      "sha256": "1f34f85ada431220a39b2bacf10a1dd09bd440b3e7eab61b61d53094508af08c"
     },
     "SSPD": {
-      "ruta": "Data/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv",
-      "sha256": "c0beb6d6800de043e91dfd0def5ee619201a579c4013fd65e9255d6e1479d625"
+      "ruta": "/app/Data/silver/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv",
+      "sha256": "cc92ffc4f89ecab6336304feace83e87b049a2e488e17d1e88c2851e784becbe"
     },
     "XM": {
-      "ruta": "Data/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv",
-      "sha256": "56db2e52a430619794277c3d0682c5e815318166541b7132834946566ab7c569"
+      "ruta": "/app/Data/silver/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv",
+      "sha256": "fe51fd1cdcbd229ef66b44e81d5312d0f3537ce237873bf52d4a25397f48e975"
     }
   },
   "cuarentena_epm_aplicada": true,

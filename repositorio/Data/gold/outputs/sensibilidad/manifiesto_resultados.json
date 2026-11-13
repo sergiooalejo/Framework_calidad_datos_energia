@@ -1,19 +1,19 @@
 {
   "entradas": {
     "EPM": {
-      "ruta": "Data/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv",
+      "ruta": "Data/bronze/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv",
       "sha256": "b974a37a171b9178476fbd2baba21470e8845076af105ef9c178e80690f09920"
     },
     "CHEC": {
-      "ruta": "Data/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv",
+      "ruta": "Data/bronze/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv",
       "sha256": "1f34f85ada431220a39b2bacf10a1dd09bd440b3e7eab61b61d53094508af08c"
     },
     "SSPD": {
-      "ruta": "Data/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv",
+      "ruta": "Data/silver/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv",
       "sha256": "cc92ffc4f89ecab6336304feace83e87b049a2e488e17d1e88c2851e784becbe"
     },
     "XM": {
-      "ruta": "Data/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv",
+      "ruta": "Data/silver/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv",
       "sha256": "fe51fd1cdcbd229ef66b44e81d5312d0f3537ce237873bf52d4a25397f48e975"
     }
   },
@@ -55,8 +55,8 @@
     },
     {
       "archivo": "configuracion.json",
-      "bytes": 3596,
-      "sha256": "e8731d3d48d4aa5f14e4aeabc1f54bc63f7fa74e9676c06d017c05c1971d08c3"
+      "bytes": 3635,
+      "sha256": "8c037bba6f44d896e41c9e705d1635ff4ab7fb1a0e6f44dfb55a48c7325b3494"
     },
     {
       "archivo": "deteccion_inyecciones.csv",
@@ -75,143 +75,143 @@
     },
     {
       "archivo": "ejecuciones.csv",
-      "bytes": 1492,
-      "sha256": "332400ff073445487b4d9ff5bf64d744d8ab3653ace934fb84fb86319ea0446d"
+      "bytes": 1490,
+      "sha256": "b3c6bfb6496599a5233cbe52aee4057311e1101fc3811bc17e4f4c8cf250e5ef"
     },
     {
       "archivo": "figuras/01_cobertura_ventanas.pdf",
-      "bytes": 18870,
-      "sha256": "4d626b6b675b0f17e84c81d55bb753132e029bb49b6fe26f86ad323e5a246661"
+      "bytes": 18864,
+      "sha256": "07be0666b5fa737ff21e405ef9c09af4fca16d003c17a51bd0951e0ced2608f6"
     },
     {
       "archivo": "figuras/01_cobertura_ventanas.png",
-      "bytes": 83236,
-      "sha256": "a7e0665d16e1f59738efcda41da2cb071cff7a1ad135800a22d709b4d3bf99e6"
+      "bytes": 89225,
+      "sha256": "0f24805e877d398da6a8dcb5712dc1c1f2d5b01f81a00349d233e40b4b769d39"
     },
     {
       "archivo": "figuras/01_cobertura_ventanas.svg",
       "bytes": 51146,
-      "sha256": "2fcd692b024240ba4ff70f2a95cc3d4e0644fc99b0bfb7b34050ddc4b202a5e0"
+      "sha256": "0af25a0736847669316ed6ef312c2194670f6c604a586b99c58db4730446f741"
     },
     {
       "archivo": "figuras/02_ventanas_cohorte_comun.pdf",
-      "bytes": 25410,
-      "sha256": "bfbb15ad95390c5941be5ea5b2e7607f32b89e184eb43fa75b5381b6de582380"
+      "bytes": 25404,
+      "sha256": "ed400d66dd80f1d27f085f23a3a821ed6228b7b42dbc0c4eec657878d56fdad8"
     },
     {
       "archivo": "figuras/02_ventanas_cohorte_comun.png",
-      "bytes": 120544,
-      "sha256": "e8454545563d603622c61e9910e2a82dd94f61d3d0aeec25024d52a73366284d"
+      "bytes": 129535,
+      "sha256": "f9d6f8a2bd6484f8124d326353ff6b5d495e17d75bca6f1a4bd1cb7c000ad495"
     },
     {
       "archivo": "figuras/02_ventanas_cohorte_comun.svg",
       "bytes": 84533,
-      "sha256": "6df66c6c634dca5c91f94494a11dba846dff96aa884d792a60bc7a90ed60c9d9"
+      "sha256": "6ba5ba4581f5ca5d7fb68bad86a3d8767db21c9e9d5bc9d30a0016ac070b4bee"
     },
     {
       "archivo": "figuras/03_constantes_y_MAD.pdf",
-      "bytes": 17111,
-      "sha256": "217ba2fcac428e80bf181c193210bc13613ae09928bcfd155d3040772065a44e"
+      "bytes": 17105,
+      "sha256": "1140b08237ea5cdc058c556350eea41c1e3ff52dc947d356d843a52ddb039a53"
     },
     {
       "archivo": "figuras/03_constantes_y_MAD.png",
-      "bytes": 105156,
-      "sha256": "fcb53ca8eee2267a869e568b1251a657442341132014adb9e8f942810c7b5285"
+      "bytes": 120162,
+      "sha256": "5a6c55d5b56902d03c83ce732f14361c7f7a4860930020437deeb6529e1369e1"
     },
     {
       "archivo": "figuras/03_constantes_y_MAD.svg",
       "bytes": 78026,
-      "sha256": "f1d7778dd73e3da0a401bbe6bf2e09e8ad59c460b7c48ab798fc6c35ba044755"
+      "sha256": "865613b3c0f15d94b922198e9e7f30a75eb367661d08982ba6260ba6c74ef656"
     },
     {
       "archivo": "figuras/04_percentiles_IF.pdf",
-      "bytes": 19726,
-      "sha256": "572cb7c66dec90fff748cf47c96bbecd2758abd2d645ff73c50f2d82065a4ddf"
+      "bytes": 19720,
+      "sha256": "fd4f3fbf87fa0c9df46bc0229ce21d8419fd966e144ea7a632daa81667fd170c"
     },
     {
       "archivo": "figuras/04_percentiles_IF.png",
-      "bytes": 75006,
-      "sha256": "0c2e50d2da8f7163c000a5ad84124d2656c2843d34f3dd8f0c83e30e62f789e4"
+      "bytes": 79805,
+      "sha256": "699d26650279656121ebf3bc8870d7514753cfea03da7fe0cd8f9ec6971266c4"
     },
     {
       "archivo": "figuras/04_percentiles_IF.svg",
       "bytes": 50684,
-      "sha256": "5767d1ef9084a00b5e4532484dea73d71947dbdef3d7d4870372793d0c743459"
+      "sha256": "ef438a0aaf2528605f167de9664e5694292468fc8ba7e6aeecb4ac568e7de419"
     },
     {
       "archivo": "figuras/05_factor_R12.pdf",
-      "bytes": 19595,
-      "sha256": "0afb9e70d0813175d79a587340454628c68580411c71f188a4bdea8096c5d103"
+      "bytes": 19589,
+      "sha256": "33d2239b18dcafc715ab433c059904a4243f19e293d71289bbb5c266b845ce91"
     },
     {
       "archivo": "figuras/05_factor_R12.png",
-      "bytes": 72205,
-      "sha256": "73f16729f02bf0b1e7bd1dcbb1b25f7c59fb86b24f016071bbbd922eec307cfa"
+      "bytes": 77592,
+      "sha256": "0f2279ff8546ebb9352d05413f29b0aadf4dc729a1a9c26780bbe562d9aaf20f"
     },
     {
       "archivo": "figuras/05_factor_R12.svg",
       "bytes": 52698,
-      "sha256": "e56b34b3bfaf396203062bd28c085e02e277abe6fcd476dda8148e469a71650c"
+      "sha256": "8df077abdf8de737602450d6838bec9188418391f7e8d2df0836a5ceafd839ce"
     },
     {
       "archivo": "figuras/06_horizonte_deteccion.pdf",
-      "bytes": 18717,
-      "sha256": "0c74bbe22c703f252fd9fecf5e6efa807474dd8f809fd47660045dbcb4d1f6b7"
+      "bytes": 18711,
+      "sha256": "34f065aae1ef840a7284afe43c9230645209e8cc0a2d45062e0c56f4e728e906"
     },
     {
       "archivo": "figuras/06_horizonte_deteccion.png",
-      "bytes": 77472,
-      "sha256": "a6355a99684e28d5c0c22f22c79b07e8f1a7349eef8167c0ec019d6f9db3a9c7"
+      "bytes": 86388,
+      "sha256": "a08771f59cdb511a7e3436449c4fad1a7cd6bdea37dbee915dba83c928db38d8"
     },
     {
       "archivo": "figuras/06_horizonte_deteccion.svg",
       "bytes": 71285,
-      "sha256": "1309e1c1dab698fd60bd191b1522ffe5884e085965e590c08d52adf50fba8cd6"
+      "sha256": "b0b0a98548362eee82196df549b04aa3521d33101318a2d7fe324204619d51e1"
     },
     {
       "archivo": "figuras/07_efecto_sistemico_reales.pdf",
-      "bytes": 27005,
-      "sha256": "97d504ccfcb1262e30bd049f5aead2e3597cb09fd711bb03d08ebe1dbb7e5163"
+      "bytes": 26999,
+      "sha256": "d58ef762c5ee75ddd7c4e711514e6b2f94e70930e22d2cf5ed9ff491c4a894ca"
     },
     {
       "archivo": "figuras/07_efecto_sistemico_reales.png",
-      "bytes": 105214,
-      "sha256": "2123b068a1ba9ae5173b02ff9697c5e9f061563b49127a3d01c95018b61c67ac"
+      "bytes": 113632,
+      "sha256": "cc44ad38f090dadfefd570bcbc98a204ff4bb98fb3f8192fa1bd8a81412de125"
     },
     {
       "archivo": "figuras/07_efecto_sistemico_reales.svg",
       "bytes": 99723,
-      "sha256": "68abbdbe052ce3c7970d72542a604a52c3836f33ff49c9c45552c527ed6c3e95"
+      "sha256": "dcb9c789301ba2bc2e82868c397ffe25cf057ae7d53d58b81c826378009110e3"
     },
     {
       "archivo": "figuras/08_riesgo_errores_masivos.pdf",
-      "bytes": 23814,
-      "sha256": "d48ea033e2c8d552dc201cd12b94be1e60c423820b449ccee3e8e0809fad8ae7"
+      "bytes": 23808,
+      "sha256": "5bf48b968905c4961276562f173883cdd217b9d52d84fd62bd7fde2f1cdaf796"
     },
     {
       "archivo": "figuras/08_riesgo_errores_masivos.png",
-      "bytes": 90080,
-      "sha256": "a57c561b54c17d045276741642fadea01b732f7439c0ec89c4ba86fa391f5685"
+      "bytes": 98789,
+      "sha256": "44cbadbdd48481eb10b40507509ed406e20d3edc45e814ae62893981298044b9"
     },
     {
       "archivo": "figuras/08_riesgo_errores_masivos.svg",
       "bytes": 94953,
-      "sha256": "f72dc6f4c861efc0053ec21eb89c80ca4dc591615d2589f60a97e83ea88c19ae"
+      "sha256": "0e64e2bb5d28f9bc239f9e76208dfda6c66a5d7698541d563f5bbfd3010be24e"
     },
     {
       "archivo": "figuras/09_interaccion_percentil_R12.pdf",
-      "bytes": 26669,
-      "sha256": "8428e0db3e1757ce0b2a29ab95e2e5905274581bfc0f0b5669b9833d4fe74b7f"
+      "bytes": 26929,
+      "sha256": "0026a6ea822764513a69982f2e1f63a5601f48568795ebe7e27c8c07bdd88a0d"
     },
     {
       "archivo": "figuras/09_interaccion_percentil_R12.png",
-      "bytes": 90118,
-      "sha256": "9047d3a9e6f251fbbf31b7c457e42c094e724c2cc4c9ee4677205681b9166ccd"
+      "bytes": 95738,
+      "sha256": "dc014210b093083c5e6bec66da6e4c3720525b94438bd95a063d6ae5cdd366f4"
     },
     {
       "archivo": "figuras/09_interaccion_percentil_R12.svg",
-      "bytes": 90049,
-      "sha256": "1e0f8c2a589073a2fe2865c594481c00c94cee7de4abfe23d3008dac600c49cc"
+      "bytes": 89381,
+      "sha256": "ff60930d38b56a646c79a020dc470462e1902c147ff6e7c0843c1f5427c4cbeb"
     },
     {
       "archivo": "inventario_series.csv",
@@ -236,7 +236,7 @@
     {
       "archivo": "parametros_por_serie.csv",
       "bytes": 1186255,
-      "sha256": "92211a18bd84574f22d621d66ad44197ab9e0ff234f029633eb7b6da643b08c2"
+      "sha256": "2b825bf080a1f22c770665b7dcb920ab6bd0cdfa578cb730369dd886f0069c3a"
     },
     {
       "archivo": "resumen_horizonte_36.csv",
