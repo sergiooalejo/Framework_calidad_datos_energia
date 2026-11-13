@@ -1,14 +1,38 @@
-[build-system]
-requires = ["setuptools>=68"]
-build-backend = "setuptools.build_meta"
-
-[project]
+[tool.poetry]
 name = "framework-calidad-datos-energia"
 version = "0.1.0"
-description = "Componentes reutilizables para calidad de datos energéticos"
-requires-python = ">=3.11"
-dependencies = ["pandas>=2.3,<3", "PyYAML>=6.0,<7"]
+description = "Componentes reproducibles para calidad de datos del sector energético"
+authors = ["Equipo de tesis"]
+packages = [{ include = "framework_calidad", from = "Code" }]
+readme = "README.md"
 
-[tool.setuptools.packages.find]
-where = ["Code"]
+[tool.poetry.dependencies]
+python = ">=3.14,<3.15"
+numpy = "2.3.5"
+pandas = "2.3.3"
+scikit-learn = "1.8.0"
+scipy = "1.17.1"
+matplotlib = "3.10.8"
+joblib = "1.5.3"
+threadpoolctl = "3.6.0"
+contourpy = "1.3.3"
+cycler = "0.12.1"
+fonttools = "4.62.1"
+kiwisolver = "1.5.0"
+packaging = "25.0"
+pillow = "11.3.0"
+pyparsing = "3.3.2"
+python-dateutil = "2.9.0.post0"
+pytz = "2025.2"
+tzdata = "2025.2"
+six = "1.17.0"
+PyYAML = "6.0.3"
+streamlit = "1.50.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3"
+
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
 

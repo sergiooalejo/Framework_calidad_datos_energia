@@ -12,11 +12,12 @@ Hay dos alternativas:
 Desde la carpeta `repositorio/`:
 
 ```bash
-python3 -m venv .venv-streamlit
-.venv-streamlit/bin/python -m pip install -r Environment/requirements-streamlit.txt
-.venv-streamlit/bin/python -m pip install -e .
-.venv-streamlit/bin/streamlit run app_streamlit.py
+poetry install
+poetry run streamlit run app_streamlit.py
 ```
+
+Poetry lee `poetry.lock`, por lo que instala las versiones fijadas. Si no se tiene Poetry,
+puede utilizarse Docker o el entorno virtual descrito en `Environment/`.
 
 Abrir `http://localhost:8501`. Si se cambia el código, pulsar **Rerun**; si se cambian
 dependencias, detener con `Ctrl+C` y volver a iniciar.
@@ -70,6 +71,7 @@ Para validar estructura y datos:
 ```
 
 Las pruebas estadísticas requieren `.venv-validacion`, no el entorno mínimo de Streamlit.
+Con Poetry también pueden ejecutarse mediante `poetry run python pipeline.py validar|pruebas|auditar`.
 
 ## 7. Archivos principales
 

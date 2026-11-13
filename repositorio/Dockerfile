@@ -7,12 +7,11 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /app
 
-COPY Environment/requirements-streamlit.txt Environment/requirements-streamlit.txt
-RUN python -m pip install --no-cache-dir -r Environment/requirements-streamlit.txt
-
-COPY pyproject.toml README.md ./
+COPY pyproject.toml poetry.lock README.md ./
 COPY Code ./Code
-RUN python -m pip install --no-cache-dir -e .
+RUN python -m pip install --no-cache-dir poetry==2.4.1 \
+    && poetry config virtualenvs.create false \
+    && poetry install --only main --no-interaction --no-ansi
 
 COPY Outputs ./Outputs
 COPY app_streamlit.py pipeline.py ./

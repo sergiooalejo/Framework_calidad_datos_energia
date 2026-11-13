@@ -94,6 +94,15 @@ en modo editable desde `repositorio/`:
 python -m pip install -e .
 ```
 
+Para instalar el entorno completo y reproducible con Poetry:
+
+```powershell
+poetry install
+```
+
+El archivo `poetry.lock` fija las versiones exactas. Docker utiliza este mismo lock durante la
+construcción de la imagen.
+
 Los scripts históricos de `Code/` se conservan como evidencia. La migración de cada experimento
 al paquete será gradual y solo se aceptará si reproduce sus salidas.
 
