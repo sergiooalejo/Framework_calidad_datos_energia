@@ -1,5 +1,38 @@
 # Registro de decisiones — Hitos 3 y 4
 
+## Actualización operativa del Hito 4 · protocolo v2
+
+Prevalecen [VERIFICACION_HITO4.md](VERIFICACION_HITO4.md) y
+[RESULTADOS_HITO4.md](RESULTADOS_HITO4.md) para la comparación vigente. La
+calibración de las seis técnicas se hace por folds temporales dentro de referencia,
+sin utilizar vigilancia para ajustar umbrales. Se adopta como política técnica
+la deduplicación exacta de rasgos de entrenamiento, igual para IF/LOF/KNN; si
+LOF no es interpretable, el banco no entra al panel común.
+
+El scorecard distingue umbral propuesto, resultado observado y decisión pendiente.
+Las figuras están incluidas. Se verifican los apartados pertinentes de CREG
+015/2018, 078/2019, 156/2019, 012/2020, 152/2020 y 003/2021, sin afirmar que
+expliquen por sí solos cada cambio. Faltan notificación/firmeza y conciliación
+LAC o respuesta del publicador para confirmar la causa concreta de los meses EPM.
+
+Estas decisiones de implementación no son aprobación académica. Continúan
+pendientes umbrales de calidad, responsables, política operativa de X/método
+principal, evidencia de dimensiones y validación externa/precisión empírica.
+
+## Actualización operativa del Hito 3 · 13 de noviembre de 2026
+
+Las dos descargas reales de EPM, CHEC y vfjy-6fka, la corrección de I-MR,
+la cuarentena por celda, el bootstrap por categorías completas y R12 como
+Advertencia están implementados. Véase [VERIFICACION_HITO3.md](VERIFICACION_HITO3.md).
+No se somete a aprobación el algoritmo anterior de remuestrear series dentro de
+categorías: se corrigió para cumplir el plan. La población elegible y las
+exclusiones quedan documentadas, sin forzar los conteos del Hito 2.
+
+Siguen pendientes evidencia temporal de oportunidad, catálogos/semántica
+autorizados, responsables nominales, aceptación de umbrales y la incorporación
+del texto preparado al anteproyecto oficial. El registro siguiente conserva la
+discusión histórica; sus propuestas no equivalen a aprobación.
+
 **Consolidación: 9 de noviembre de 2026.** Estado y plan general en [PROYECTO.md](PROYECTO.md).
 Se preservan las propuestas para revisión del profesor; ninguna se declara aprobada.
 

@@ -1,0 +1,103 @@
+{
+  "ejecucion_utc": "2026-11-14T01:05:26.472882+00:00",
+  "etapa": "hito3",
+  "version_paquete": "0.1.0",
+  "semillas_base": {
+    "bootstrap_categorias": 20261105,
+    "isolation_forest": 20261106
+  },
+  "nota_semillas": "Fijas por método; algunas se derivan por fuente, serie o partición.",
+  "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+  "archivos_entrada": [
+    {
+      "ruta": "Data\\bronze\\datos\\Datos_en_revision\\CREG_prioridad\\creg_calidad_sdl_053_2015_anexo.xlsx",
+      "sha256": "a718a31b7587a9fe9471323a0e76afd797271ca8cab957162f5cfcf1d6ca550c",
+      "bytes": 130706
+    },
+    {
+      "ruta": "Data\\bronze\\datos\\Datos_en_revision\\CREG_prioridad\\creg_calidad_sdl_053_2015_anexo2.xlsx",
+      "sha256": "55313f5ec74188e6eb4746d7c62ee66358d7f21ab59156321bdf34d6f92bca85",
+      "bytes": 119768
+    },
+    {
+      "ruta": "Data\\bronze\\datos\\Datos_en_revision\\CREG_prioridad\\creg_calidad_sdl_064_2015_anexo2.xlsx",
+      "sha256": "7f5e0f41a7c53116858b2bedf38b67e1430a8cd6866dcb20dbdd803f7f6ff3bd",
+      "bytes": 146574
+    },
+    {
+      "ruta": "Data\\bronze\\datos\\Datos_en_revision\\CREG_prioridad\\creg_calidad_sdl_064_2015_anexo3.xlsx",
+      "sha256": "607c32eb8b2b595b7f58232183bb3bf6d3cf8d8359b92880767f307a80fda2e9",
+      "bytes": 144323
+    },
+    {
+      "ruta": "Data\\bronze\\datos\\Datos_en_revision\\CREG_prioridad\\creg_panel_electrico_circular125_2025.xlsx",
+      "sha256": "a89bb88d45670f5aac247260e2512f8bf3645d1795633173f21beb29f817cff1",
+      "bytes": 24700
+    },
+    {
+      "ruta": "Data\\bronze\\datos\\Datos_en_revision\\supers_icnr-l4iw-compressed.zip",
+      "sha256": "e2728960e33f4619e51e70677ad77edb531ffddcf7bd809ddfc996842de07d2d",
+      "bytes": 15203712
+    },
+    {
+      "ruta": "Data\\bronze\\datos\\Datos_seleccionados\\CHEC\\chec_c698-wqig.csv",
+      "sha256": "1f34f85ada431220a39b2bacf10a1dd09bd440b3e7eab61b61d53094508af08c",
+      "bytes": 9586122
+    },
+    {
+      "ruta": "Data\\bronze\\datos\\Datos_seleccionados\\EPM\\epm_sfcd-b3ey.csv",
+      "sha256": "b974a37a171b9178476fbd2baba21470e8845076af105ef9c178e80690f09920",
+      "bytes": 423202
+    },
+    {
+      "ruta": "Data\\bronze\\datos\\Datos_seleccionados\\SSPD\\sspd_ebby-cjha_detalle-compressed.zip",
+      "sha256": "ac2231358b78eeadb7a2bd99b5311e8a34467130d34d246efb19cb05bbcd3257",
+      "bytes": 2681220
+    },
+    {
+      "ruta": "Data\\bronze\\datos\\Datos_seleccionados\\SSPD_PLAN\\procedencia.json",
+      "sha256": "2cf0966812bd77a4f360ca1eebe0b074ef16879fe5ae7697b55c026bd1da86dc",
+      "bytes": 334
+    },
+    {
+      "ruta": "Data\\bronze\\datos\\Datos_seleccionados\\SSPD_PLAN\\sspd_vfjy-6fka.csv",
+      "sha256": "2077441a4650b239c30d99d06c0466dd124d3e6aaa6d79aad5ede9b570c131b8",
+      "bytes": 436463
+    },
+    {
+      "ruta": "Data\\bronze\\datos\\Datos_seleccionados\\XM_piloto\\xm_demanda_epmc_epmd_str02_202001_202501.csv",
+      "sha256": "74eb26c6e93f1f04f7550d8cfc1cf506ac5e57a0c2ad85a6971d00778679c445",
+      "bytes": 8211040
+    },
+    {
+      "ruta": "Data\\bronze\\datos\\Datos_seleccionados\\XM_piloto\\xm_versiones_mensuales_202001_202501.csv",
+      "sha256": "2dcb919a4695ca970ddbc66b7d1c38c5eb20b61423b4b4024340c7428e06d4b2",
+      "bytes": 6344
+    },
+    {
+      "ruta": "Data\\silver\\datos\\Datos_en_revision\\sspd_bnkp-xdb7-compressed.zip",
+      "sha256": "80342adf79bbedd5576c9d722753ee774eb8028f774c8c9d3cdc8fbebcface7e",
+      "bytes": 17561103
+    },
+    {
+      "ruta": "Data\\silver\\datos\\Datos_en_revision\\sspd_bnkp-xdb7_catalogos.csv",
+      "sha256": "bca81d0d8a08ceff6b70026d21cfad80f2ca018dc3d7c70d5d28783f3fef2ed0",
+      "bytes": 30271
+    },
+    {
+      "ruta": "Data\\silver\\datos\\Datos_en_revision\\sspd_bnkp-xdb7_resumen.csv",
+      "sha256": "5b8b47248ad9d2c82a081a3b4731c392047a95b4789cd0242805a73475adc6f5",
+      "bytes": 49544
+    },
+    {
+      "ruta": "Data\\silver\\datos\\Datos_seleccionados\\SSPD\\sspd_ebby-cjha_mensual.csv",
+      "sha256": "cc92ffc4f89ecab6336304feace83e87b049a2e488e17d1e88c2851e784becbe",
+      "bytes": 1209834
+    },
+    {
+      "ruta": "Data\\silver\\datos\\Datos_seleccionados\\XM_piloto\\xm_demanda_mensual_piloto.csv",
+      "sha256": "fe51fd1cdcbd229ef66b44e81d5312d0f3537ce237873bf52d4a25397f48e975",
+      "bytes": 4176
+    }
+  ]
+}

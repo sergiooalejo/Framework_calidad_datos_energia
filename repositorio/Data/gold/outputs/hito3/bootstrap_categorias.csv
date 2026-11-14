@@ -1,0 +1,6 @@
+fuente,categorias,series,senales,observaciones,tasa,ic95_inferior,ic95_superior,estado,unidad_remuestreo,repeticiones,semilla
+CHEC,138,272,76,3264,0.023284313725490197,0.010948905109489052,0.0401529079057268,bootstrap_categorias,categoria_completa,2000,20261105
+EPM,22,61,113,720,0.15694444444444444,0.0969878268930523,0.2231522612488521,bootstrap_categorias,categoria_completa,2000,20261105
+SSPD,157,387,292,4442,0.06573615488518686,0.05267951626017253,0.07893636425332333,bootstrap_categorias,categoria_completa,2000,20261105
+SSPD_PLAN,0,0,0,0,,,,sin_observaciones,categoria_completa,2000,20261105
+XM,1,1,0,12,0.0,,,sin_IC_una_categoria,categoria_completa,2000,20261105

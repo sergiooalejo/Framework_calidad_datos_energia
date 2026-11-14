@@ -1,5 +1,16 @@
 # Proyecto y resultados
 
+**Actualización del Hito 4:** la comparación y el scorecard vigentes están en
+[VERIFICACION_HITO4.md](VERIFICACION_HITO4.md) y
+[RESULTADOS_HITO4.md](RESULTADOS_HITO4.md). Se conservan por separado los
+resultados históricos que calibraban con vigilancia y las nuevas salidas de CV temporal.
+
+**Actualización del Hito 3 (13 de noviembre de 2026):** prevalecen
+[VERIFICACION_HITO3.md](VERIFICACION_HITO3.md) y
+[ACTUALIZACION_ANTEPROYECTO_HITO3.md](ACTUALIZACION_ANTEPROYECTO_HITO3.md)
+para cartas, cuarentena, bootstrap, réplica vfjy-6fka y reproducibilidad entre
+descargas. Las cifras y decisiones siguientes describen la consolidación histórica.
+
 **Corte: 9 de noviembre de 2026.** Este documento reúne el alcance y el informe de estado
 que TDSP distribuye entre Project Charter y Exit Report. Es una línea base técnica; no
 declara cierre académico, aceptación del director ni despliegue en producción.

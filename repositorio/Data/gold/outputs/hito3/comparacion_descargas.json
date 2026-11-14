@@ -1,0 +1,59 @@
+{
+  "comparaciones": [
+    {
+      "fuente": "EPM",
+      "estado": "comparadas",
+      "primera": "Data\\bronze\\descargas_hito3\\EPM\\20261114T004927469739Z_289b1758",
+      "segunda": "Data\\bronze\\descargas_hito3\\EPM\\20261114T004930853643Z_5e98f9ab",
+      "sha256_primera": "7fb7b7acf01c68e03904c490c728d17cc9a4d62b13cb8b631c8867375dd7342f",
+      "sha256_segunda": "7fb7b7acf01c68e03904c490c728d17cc9a4d62b13cb8b631c8867375dd7342f",
+      "filas_primera": 3623,
+      "filas_segunda": 3623,
+      "mismos_registros": true,
+      "registros_retirados": 0,
+      "registros_agregados": 0,
+      "mismos_hallazgos_R01_R11": true,
+      "hallazgos_primera": 415,
+      "hallazgos_segunda": 415,
+      "mismas_cartas_y_claves": true,
+      "cartas_elegibles": 61
+    },
+    {
+      "fuente": "CHEC",
+      "estado": "comparadas",
+      "primera": "Data\\bronze\\descargas_hito3\\CHEC\\20261114T004934369064Z_080c2661",
+      "segunda": "Data\\bronze\\descargas_hito3\\CHEC\\20261114T005002787823Z_fc5f5735",
+      "sha256_primera": "415fba2472ee227c8d62d0a8dd3cbc6abaa828debd7848bfd862a69becc9ea26",
+      "sha256_segunda": "415fba2472ee227c8d62d0a8dd3cbc6abaa828debd7848bfd862a69becc9ea26",
+      "filas_primera": 40924,
+      "filas_segunda": 40924,
+      "mismos_registros": true,
+      "registros_retirados": 0,
+      "registros_agregados": 0,
+      "mismos_hallazgos_R01_R11": true,
+      "hallazgos_primera": 17571,
+      "hallazgos_segunda": 17571,
+      "mismas_cartas_y_claves": true,
+      "cartas_elegibles": 272
+    },
+    {
+      "fuente": "SSPD_PLAN",
+      "estado": "comparadas",
+      "primera": "Data\\bronze\\descargas_hito3\\SSPD_PLAN\\20261114T005029672016Z_a0cb974a",
+      "segunda": "Data\\bronze\\descargas_hito3\\SSPD_PLAN\\20261114T005035169111Z_2061fce5",
+      "sha256_primera": "2077441a4650b239c30d99d06c0466dd124d3e6aaa6d79aad5ede9b570c131b8",
+      "sha256_segunda": "2077441a4650b239c30d99d06c0466dd124d3e6aaa6d79aad5ede9b570c131b8",
+      "filas_primera": 5396,
+      "filas_segunda": 5396,
+      "mismos_registros": true,
+      "registros_retirados": 0,
+      "registros_agregados": 0,
+      "mismos_hallazgos_R01_R11": true,
+      "hallazgos_primera": 1321,
+      "hallazgos_segunda": 1321,
+      "mismas_cartas_y_claves": true,
+      "cartas_elegibles": 0
+    }
+  ],
+  "alcance": "Dos capturas reales consecutivas. No acreditan estabilidad futura ni publicación oportuna histórica."
+}

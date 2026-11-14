@@ -1,0 +1,54 @@
+[
+  {
+    "archivo": "Data/gold/outputs/cartas/revision_cartas_fuentes.csv",
+    "sha256": "4e5a3a0cf18e94c569f325f9648b226c2e3e2384d676b785339e027c55586ad7"
+  },
+  {
+    "archivo": "Data/gold/outputs/cartas/CHEC/cartas_log_chec.csv",
+    "sha256": "660ba4d9647def5b2c7ed84f76c1ff71f45a72eb9b5b0bc2719c002aaf1afc7e"
+  },
+  {
+    "archivo": "Data/gold/outputs/cartas/EPM/cartas_log_epm.csv",
+    "sha256": "692acbdde39bc834ee4d60adad050400eacf0948b78b733a7a0cbad9658b987e"
+  },
+  {
+    "archivo": "Data/gold/outputs/cartas/EPM/revision_senales_cartas_epm.csv",
+    "sha256": "bb908e783b5b91db7bfcb06d5933a644d10d4b93d2a2a2e8c9bfafed0f30a398"
+  },
+  {
+    "archivo": "Data/gold/outputs/cartas/SSPD/cartas_log_sspd.csv",
+    "sha256": "a7887e42b9a42534002cf102001c3856ea0709c5d12a105e97a544e7aeb29b13"
+  },
+  {
+    "archivo": "Data/gold/outputs/cartas/XM/cartas_log_xm.csv",
+    "sha256": "94fe59299dbe5a4d1aab3c610c63122d76220eea348a1d0e19dd8858d5f58938"
+  },
+  {
+    "archivo": "Data/gold/outputs/calidad/matriz_oe1.csv",
+    "sha256": "c4d6d155f03529e1e6ee52a97f5cf3381159bcc22eafba963409282b6a9019a0"
+  },
+  {
+    "archivo": "Data/gold/outputs/calidad/matriz_oe1.txt",
+    "sha256": "40b0645924532f937d5ed01f25f986b969f3abb7545e8c60f3ead456a471d398"
+  },
+  {
+    "archivo": "Data/gold/outputs/calidad/matriz_oe1.yaml",
+    "sha256": "ce0f77f3c53c5972302271eea94966614418c1d2f3221274441c9a9e97665e41"
+  },
+  {
+    "archivo": "Data/gold/outputs/scorecard/scorecard_oe1_provisional.csv",
+    "sha256": "3f7df58e855b81f8667771581e9b5607c257b34872cdae041698f42af0dc247f"
+  },
+  {
+    "archivo": "Data/gold/outputs/cuarentena_bootstrap/bootstrap/bootstrap_categorias.csv",
+    "sha256": "bfd343211be705218ef93f2a78cc2bdaea4ca3fa9e72396126867d8d36cd2f53"
+  },
+  {
+    "archivo": "Data/gold/outputs/cuarentena_bootstrap/bootstrap/configuracion.json",
+    "sha256": "3ae3c46de645a2fa0dc2583020b89bdf74c69dc487269384418700752aa5bae7"
+  },
+  {
+    "archivo": "Data/gold/outputs/cuarentena_bootstrap/bootstrap/README.txt",
+    "sha256": "349be6d5dbd05b7d8d46ac60ae7df78df9958736912ea81fee7ff92b9ae598e5"
+  }
+]

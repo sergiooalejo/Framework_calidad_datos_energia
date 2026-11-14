@@ -3,6 +3,15 @@
 El Hito 6 valida, contrasta y sustenta lo construido en los Hitos 3–5. No debe presentar una
 alerta estadística como error confirmado sin evidencia independiente.
 
+## Implementaci?n vigente
+
+El c?digo est? en `Code/hito6/`: `generar_muestra_alertas.py` selecciona la muestra y
+`run.py` permite ejecutarla como m?dulo. Desde `repositorio/`, usar
+`python pipeline.py ejecutar muestra-h6` (incluye manifiesto) o
+`python -m Code.hito6.run`. Los resultados siguen en `Data/gold/outputs/hito6/`.
+La ruta anterior en `Code/Evaluation/hito6/` conserva un acceso de compatibilidad.
+Esta organizaci?n no completa las actividades externas pendientes.
+
 ## Orden de trabajo
 
 1. **Congelar la línea base:** conservar commit, manifiestos, versión de Docker y resultados

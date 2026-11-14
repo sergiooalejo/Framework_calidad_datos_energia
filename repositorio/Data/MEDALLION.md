@@ -34,3 +34,22 @@ python pipeline.py auditar
 ```
 
 Consulte los README de cada capa y el [manifiesto medallón](medallion_manifest.json).
+
+## Protocolo corregido del Hito 4
+
+Bronze conserva seis documentos oficiales completos y sus extracciones de texto en
+`bronze/normativa_hito4/`, con URL, fecha real de captura y SHA-256. Gold contiene
+el protocolo temporal, puntajes de calibración y vigilancia, métricas, sensibilidad,
+scorecard y figuras PNG/SVG en `gold/outputs/hito4/`. Su manifiesto registra entradas,
+código, dependencias y salidas. Las salidas históricas 4.2–4.4 se conservan.
+
+Desde `repositorio/`, `python pipeline.py ejecutar hito4` regenera el análisis y
+`python pipeline.py ejecutar hito4-verificar` audita los resultados guardados.
+El [informe de verificación](../Docs/VERIFICACION_HITO4.md) distingue implementación,
+evidencia disponible y pendientes de validación externa o aprobación académica.
+
+## Ampliaci?n del Hito 3 corregido
+
+Bronze conserva dos capturas API reales por fuente en `bronze/descargas_hito3/`, con p?ginas originales, `:id`, metadatos, fecha UTC y hashes. `bronze/datos/Datos_seleccionados/SSPD_PLAN/` fija la copia de vfjy-6fka utilizada por la r?plica y registra su procedencia. Las definiciones recibidas de la API est?n en `silver/catalogos/SSPD_PLAN/`.
+
+Gold publica las cartas y hallazgos corregidos, el inventario de categor?as completas, el bootstrap y la comparaci?n de capturas en `gold/outputs/hito3/`. Las rutas hist?ricas de cartas se actualizan para el tablero; los insumos y experimentos 4.2?4.4 conservan su evidencia original. El manifiesto H3 distingue c?digo, configuraci?n, datos y salidas. V?ase `../Docs/VERIFICACION_HITO3.md` para alcance y pendientes.

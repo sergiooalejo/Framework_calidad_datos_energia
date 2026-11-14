@@ -2,7 +2,7 @@ version: '1.0'
 fecha: '2026-10-27'
 objetivo: OE1
 hito: 3, actividad 1
-estado: Especificacion documental con linea base medida sobre los CSV conservados; controles con evidencia externa pendiente siguen sin medir.
+estado: 'Hito 3 corregido: 19 controles por id; evidencia externa y aprobación pendientes.'
 fuentes:
   epm:
     id: sfcd-b3ey
@@ -96,10 +96,9 @@ fuentes:
     archivos:
     - Data/silver/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv
     - Data/bronze/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_detalle-compressed.zip
-    alcance: >-
-      El conjunto en origen supera los 9 GB. Se conservan dos censos declarados: el mensual
-      cubre las 91 empresas y los 59 períodos de forma agregada; el de detalle cubre todos
-      los registros de la empresa 28111. No son muestras aleatorias.
+    alcance: 'El conjunto en origen supera los 9 GB. Se conservan dos censos declarados: el mensual cubre las 91
+      empresas y los 59 períodos de forma agregada; el de detalle cubre todos los registros de la empresa 28111.
+      No son muestras aleatorias.'
     columnas:
     - identificador_empresa
     - anio
@@ -142,16 +141,13 @@ fuentes:
   xm:
     id: c1b851
     publicador: XM/SIMEM
-    ambito: >-
-      Piloto filtrado del Sistema Interconectado Nacional: agente EPMC, mercado EPMD y sistema STR02.
-    naturaleza: >-
-      Registro horario de demanda real con múltiples versiones de publicación. La serie mensual es derivada
+    ambito: 'Piloto filtrado del Sistema Interconectado Nacional: agente EPMC, mercado EPMD y sistema STR02.'
+    naturaleza: Registro horario de demanda real con múltiples versiones de publicación. La serie mensual es derivada
       mediante una política explícita de selección de versión y suma de horas únicas.
     archivos:
     - Data/bronze/datos/Datos_seleccionados/XM_piloto/xm_demanda_epmc_epmd_str02_202001_202501.csv
     - Data/silver/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv
-    limitacion: >-
-      La política de mayor versión TX disponible no equivale automáticamente a la versión final oficial;
+    limitacion: La política de mayor versión TX disponible no equivale automáticamente a la versión final oficial;
       la medición y adaptación de reglas quedan pendientes.
     columnas:
     - CodigoVariable
@@ -175,16 +171,15 @@ fuentes:
     medidas:
     - Valor
     pares_codigo_nombre: []
-
 marco:
   edicion_dama: DAMA-DMBOK2, segunda edición 2017, capítulo 13
-  nota_edicion: Se mantienen las ocho dimensiones exigidas. La revisión posterior de DAMA añade Currency; no se mezcla
-    con la edición 2017.
+  nota_edicion: Se mantienen las ocho dimensiones exigidas. La revisión posterior de DAMA añade Currency; no se
+    mezcla con la edición 2017.
   iso: ISO/IEC 25012:2008; relación conceptual, no certificación ni equivalencia completa.
 politica:
   requisito: Las ocho dimensiones se deben medir en EPM, CHEC, SSPD ZNI y XM; no evaluable no acredita cierre final.
-  orden: Original -> perfilamiento -> aplicación por dominio -> hallazgos -> población elegible de series; nunca borrar
-    el original.
+  orden: Original -> perfilamiento -> aplicación por dominio -> hallazgos -> población elegible de series; nunca
+    borrar el original.
   denominador_cero: valor=null, estado=sin_unidades_evaluables y motivo; nunca 0 ni 100 por defecto.
   cobertura: 100*n_evaluadas/n_elegibles, o null si n_elegibles=0; presentar junto a todo indicador.
   exclusiones: Registrar n_elegibles, n_evaluadas, n_excluidas_por_causa, n_incumplimientos y razón por fuente/control/período.
@@ -273,22 +268,23 @@ indicadores:
     operador: '>='
     valor: 100
     estado: propuesta_metodologica_no_aprobada
-    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un umbral
-      de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
+    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un
+      umbral de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
   severidad: error
   frecuencia: En cada ejecución y nueva versión de descarga; por mes de vigencia cuando corresponda.
   responsable: responsable_reglas_negocio
   responsable_nominal: null
   tendencia:
-    agregacion: Por fuente y período de vigencia; conservar también el snapshot y versión de control.
     sentido: Mayor es mejor
+    agregacion: Por fuente, período, control y versión de descarga
   precondiciones:
   - N/A no es un período válido; distinguir presencia de validez.
   aplicabilidad:
     epm: year y mes no vacíos.
     chec: costounitariotarifa_ano y costounitariotarifa_mes no vacíos.
-    sspd: 'anio y periodo no vacios en el censo de detalle.'
-    xm: Pendiente de definir el adaptador específico de XM; no transferir literalmente la regla tarifaria.
+    sspd: anio y periodo no vacios en el censo de detalle.
+    xm: 'Adaptador XM: demanda horaria/mensual, versiones y agente/mercado/sistema; no aplicar literalmente reglas
+      tarifarias.'
   estado_medicion: medido
   evidencia_requerida:
   - hash del snapshot
@@ -302,121 +298,139 @@ indicadores:
       denominador: 3623
       valor: 99.9724
       estado: medido
+      nota: ''
     chec:
       numerador: 40609
       denominador: 40609
       valor: 100.0
       estado: medido
+      nota: ''
     sspd:
       numerador: 91840
       denominador: 91840
       valor: 100.0
       estado: medido
+      nota: ''
     xm:
       numerador: 61
       denominador: 61
       valor: 100.0
       estado: medido
-    medido_utc: '2026-11-13T17:33:58Z'
-- id: R04
-  nombre: Ausencia de duplicados exactos adicionales
-  dimension: unicidad
-  tipo_principal: T09
+      nota: ''
+    medido_utc: '2026-11-14T01:12:06Z'
+  tipos_secundarios: []
+  precondiciones_por_fuente:
+    epm: N/A no es un período válido; distinguir presencia de validez.
+    chec: N/A no es un período válido; distinguir presencia de validez.
+    sspd: N/A no es un período válido; distinguir presencia de validez.
+    xm: Definir política de versión, unidad kWh, calendario horario, agente, mercado y sistema; evidencia pendiente.
+- id: R02
+  nombre: Período válido
+  dimension: validez
+  tipo_principal: T04
+  tipos_secundarios:
+  - T05
   unidad_observacion: fila
   metrica:
-    poblacion: Todas las filas originales, sin campos técnicos generados.
-    numerador: Total de filas menos duplicados exactos adicionales.
-    denominador: Número total de filas.
+    poblacion: Filas con período presente por R01.
+    numerador: Filas cuyo año es entero y cuyo mes pertenece al dominio; fecha construible.
+    denominador: Filas con período presente.
     formula: 100 * numerador / denominador
     unidad: porcentaje
   umbral:
     operador: '>='
     valor: 100
     estado: propuesta_metodologica_no_aprobada
-    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un umbral
-      de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
+    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un
+      umbral de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
   severidad: error
   frecuencia: En cada ejecución y nueva versión de descarga; por mes de vigencia cuando corresponda.
   responsable: responsable_reglas_negocio
   responsable_nominal: null
   tendencia:
-    agregacion: Por fuente y período de vigencia; conservar también el snapshot y versión de control.
     sentido: Mayor es mejor
-  precondiciones:
-  - Una clase de n filas idénticas aporta n-1 duplicados; no usar esa cifra para R05.
+    agregacion: Por fuente, período, control y versión de descarga
   aplicabilidad:
-    epm: Comparar las 12 columnas originales.
-    chec: Comparar las 24 columnas originales.
-    sspd: 'Filas identicas en las 28 columnas del censo de detalle.'
-    xm: Pendiente de definir el adaptador específico de XM; no transferir literalmente la regla tarifaria.
+    epm: Mapear nombres de mes mediante catálogo explícito; validar year como entero sin truncar.
+    chec: Validar año y mes enteros; mes de 1 a 12.
+    sspd: anio entero en rango y periodo entre 1 y 12.
+    xm: 'Adaptador XM: demanda horaria/mensual, versiones y agente/mercado/sistema; no aplicar literalmente reglas
+      tarifarias.'
+  precondiciones_por_fuente:
+    epm: No rechazar nuevas fechas solo por exceder la cobertura de la descarga previa. | Reportar excluidos por
+      ausencia en R01.
+    chec: No rechazar nuevas fechas solo por exceder la cobertura de la descarga previa. | Reportar excluidos por
+      ausencia en R01.
+    sspd: No rechazar nuevas fechas solo por exceder la cobertura de la descarga previa. | Reportar excluidos por
+      ausencia en R01.
+    xm: Definir política de versión, unidad kWh, calendario horario, agente, mercado y sistema; evidencia pendiente.
   estado_medicion: medido
-  evidencia_requerida:
-  - hash del snapshot
-  - clave de contenido y variable de cada unidad evaluada
-  - versión del control y parámetros
-  - conteos elegibles, evaluados, excluidos y fallidos
-  naturaleza: regla_base
   resultado:
     epm:
       numerador: 3622
       denominador: 3622
       valor: 100.0
       estado: medido
+      nota: ''
     chec:
       numerador: 40609
       denominador: 40609
       valor: 100.0
       estado: medido
+      nota: ''
     sspd:
       numerador: 91840
       denominador: 91840
       valor: 100.0
       estado: medido
+      nota: ''
     xm:
       numerador: 61
       denominador: 61
       valor: 100.0
       estado: medido
-    medido_utc: '2026-11-13T17:33:58Z'
-- id: R06
-  nombre: Representación canónica
-  dimension: consistencia
-  tipo_principal: T04
-  unidad_observacion: celda categórica
+      nota: ''
+    medido_utc: '2026-11-14T01:12:06Z'
+- id: R03
+  nombre: Importes numéricos y finitos
+  dimension: validez
+  tipo_principal: T03
+  tipos_secundarios: []
+  unidad_observacion: celda
   metrica:
-    poblacion: Celdas categóricas informadas con catálogo canónico aprobado.
-    numerador: Celdas cuyo valor original ya coincide con su forma canónica.
-    denominador: Celdas categóricas con catálogo aprobado.
+    poblacion: Celdas monetarias informadas en campos aplicables según concepto.
+    numerador: Celdas convertibles sin ambigüedad a número finito.
+    denominador: Celdas informadas y aplicables.
     formula: 100 * numerador / denominador
     unidad: porcentaje
   umbral:
     operador: '>='
     valor: 100
     estado: propuesta_metodologica_no_aprobada
-    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un umbral
-      de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
-  severidad: advertencia
+    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un
+      umbral de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
+  severidad: error
   frecuencia: En cada ejecución y nueva versión de descarga; por mes de vigencia cuando corresponda.
   responsable: responsable_reglas_negocio
   responsable_nominal: null
   tendencia:
-    agregacion: Por fuente y período de vigencia; conservar también el snapshot y versión de control.
     sentido: Mayor es mejor
-  precondiciones:
-  - Una variante no canónica es advertencia de estandarización, no necesariamente valor incorrecto.
-  - No convertir la moda observada en referencia oficial; medir cobertura de catálogo aparte.
+    agregacion: Por fuente, período, control y versión de descarga
   aplicabilidad:
-    epm: Tipo de tarifa, tipo de dato y rango de consumo; conservar variantes originales.
-    chec: Código/nombre, modalidad, clase, estrato y rangos según catálogo de cada campo.
-    sspd: 'Medido sobre el censo mensual, que cubre las 91 empresas; el detalle cubre una sola.'
-    xm: Pendiente de definir el adaptador específico de XM; no transferir literalmente la regla tarifaria.
+    epm: Cinco columnas monetarias; preservar texto original y evitar conversión ambigua de separadores.
+    chec: Diez medidas declaradas texto; convertir con convención explícita y conservar original.
+    sspd: Las 13 medidas numericas declaradas como number por el portal.
+    xm: 'Adaptador XM: demanda horaria/mensual, versiones y agente/mercado/sistema; no aplicar literalmente reglas
+      tarifarias.'
+  precondiciones_por_fuente:
+    epm: Matriz de aplicabilidad por concepto; nulos se reportan en completitud. | No aceptar NaN o infinito como
+      importes válidos.
+    chec: Matriz de aplicabilidad por concepto; nulos se reportan en completitud. | No aceptar NaN o infinito como
+      importes válidos.
+    sspd: Matriz de aplicabilidad por concepto; nulos se reportan en completitud. | No aceptar NaN o infinito como
+      importes válidos.
+    xm: Definir política de versión, unidad kWh, calendario horario, agente, mercado y sistema; evidencia pendiente.
   estado_medicion: provisional
-  evidencia_requerida:
-  - hash del snapshot
-  - clave de contenido y variable de cada unidad evaluada
-  - versión del control y parámetros
-  - conteos elegibles, evaluados, excluidos y fallidos
-  naturaleza: regla_base
   resultado:
     epm:
       numerador: 18110
@@ -441,39 +455,40 @@ indicadores:
       denominador: 61
       valor: 100.0
       estado: medido
-      nota: 'demanda_kwh convertible a número finito.'
-    medido_utc: '2026-11-13T17:33:58Z'
-- id: R07
-  nombre: Signo y rango por concepto
-  dimension: validez
-  tipo_principal: T05
-  unidad_observacion: celda
+      nota: demanda_kwh convertible a número finito.
+    medido_utc: '2026-11-14T01:12:06Z'
+- id: R04
+  nombre: Ausencia de duplicados exactos adicionales
+  dimension: unicidad
+  tipo_principal: T09
+  unidad_observacion: fila
   metrica:
-    poblacion: Importes numéricos aplicables con dominio documentado.
-    numerador: Importes dentro del dominio específico del concepto.
-    denominador: Importes con dominio verificable.
+    poblacion: Todas las filas originales, sin campos técnicos generados.
+    numerador: Total de filas menos duplicados exactos adicionales.
+    denominador: Número total de filas.
     formula: 100 * numerador / denominador
     unidad: porcentaje
   umbral:
     operador: '>='
     valor: 100
     estado: propuesta_metodologica_no_aprobada
-    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un umbral
-      de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
+    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un
+      umbral de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
   severidad: error
   frecuencia: En cada ejecución y nueva versión de descarga; por mes de vigencia cuando corresponda.
   responsable: responsable_reglas_negocio
   responsable_nominal: null
   tendencia:
-    agregacion: Por fuente y período de vigencia; conservar también el snapshot y versión de control.
     sentido: Mayor es mejor
+    agregacion: Por fuente, período, control y versión de descarga
   precondiciones:
-  - Excluir solo con causa explícita cuando falte el dominio; eso no aprueba el control.
+  - Una clase de n filas idénticas aporta n-1 duplicados; no usar esa cifra para R05.
   aplicabilidad:
-    epm: Revisar restricciones por separado; no aplicar no negatividad general a todos los conceptos.
-    chec: Definir dominio de cada componente; subcon y cureal requieren definición antes de evaluar.
-    sspd: 'Conceptos de dominio positivo. valor_subsidio se excluye: su convencion de signo no esta declarada y la fuente la usa negativa de forma sistematica.'
-    xm: Pendiente de definir el adaptador específico de XM; no transferir literalmente la regla tarifaria.
+    epm: Comparar las 12 columnas originales.
+    chec: Comparar las 24 columnas originales.
+    sspd: Filas identicas en las 28 columnas del censo de detalle.
+    xm: 'Adaptador XM: demanda horaria/mensual, versiones y agente/mercado/sistema; no aplicar literalmente reglas
+      tarifarias.'
   estado_medicion: medido
   evidencia_requerida:
   - hash del snapshot
@@ -487,68 +502,80 @@ indicadores:
       denominador: 3623
       valor: 99.724
       estado: medido
+      nota: ''
     chec:
       numerador: 40609
       denominador: 40609
       valor: 100.0
       estado: medido
+      nota: ''
     sspd:
       numerador: 91840
       denominador: 91840
       valor: 100.0
       estado: medido
+      nota: ''
     xm:
       numerador: 61
       denominador: 61
       valor: 100.0
       estado: medido
-    medido_utc: '2026-11-13T17:33:58Z'
-- id: R08
-  nombre: Orden entre tarifas por propiedad
-  dimension: consistencia
-  tipo_principal: T07
-  unidad_observacion: comparación de propiedad
+      nota: ''
+    medido_utc: '2026-11-14T01:12:06Z'
+  tipos_secundarios: []
+  precondiciones_por_fuente:
+    epm: Una clase de n filas idénticas aporta n-1 duplicados; no usar esa cifra para R05.
+    chec: Una clase de n filas idénticas aporta n-1 duplicados; no usar esa cifra para R05.
+    sspd: Una clase de n filas idénticas aporta n-1 duplicados; no usar esa cifra para R05.
+    xm: Definir política de versión, unidad kWh, calendario horario, agente, mercado y sistema; evidencia pendiente.
+- id: R05
+  nombre: Clave tarifaria sin multiplicidad
+  dimension: unicidad
+  tipo_principal: T09
+  tipos_secundarios: []
+  unidad_observacion: fila
   metrica:
-    poblacion: Comparaciones completas de igual período, concepto y categoría salvo propiedad; nivel 1.
-    numerador: Comparaciones que respetan el orden documentado con tolerancia de redondeo.
-    denominador: Comparaciones completas con orden autorizado.
+    poblacion: Filas con clave completa y período válido; tras identificar copias exactas y conservar una por clase.
+    numerador: Filas cuya clave candidata tiene una sola representación.
+    denominador: Filas con clave evaluable en esa etapa.
     formula: 100 * numerador / denominador
     unidad: porcentaje
   umbral:
     operador: '>='
     valor: 100
     estado: propuesta_metodologica_no_aprobada
-    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un umbral
-      de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
+    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un
+      umbral de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
   severidad: advertencia
   frecuencia: En cada ejecución y nueva versión de descarga; por mes de vigencia cuando corresponda.
   responsable: responsable_reglas_negocio
   responsable_nominal: null
   tendencia:
-    agregacion: Por fuente y período de vigencia; conservar también el snapshot y versión de control.
     sentido: Mayor es mejor
-  precondiciones:
-  - No comparar filas con estrato, modalidad o rango diferentes.
-  - Falta de un miembro de comparación se registra como falta de cobertura, no cumplimiento.
+    agregacion: Por fuente, período, control y versión de descarga
   aplicabilidad:
-    epm: Propiedad EPM >= compartida >= cliente en la misma fila del nivel I; contrastar fundamento documental.
-    chec: Alinear filas por las demás categorías y propiedad; confirmar las tres etiquetas y variable comparada antes
-      de exigir el orden.
-    sspd: 'No aplica: el conjunto no tiene eje de propiedad del activo.'
-    xm: Pendiente de definir el adaptador específico de XM; no transferir literalmente la regla tarifaria.
+    epm: Cinco categorías normalizadas + fecha mensual.
+    chec: Doce categorías originales como clave provisional + fecha; revisar dependencias código-nombre antes de
+      fijar clave final.
+    sspd: Clave provisional id_factura sobre filas unicas; pendiente de confirmar.
+    xm: 'Adaptador XM: demanda horaria/mensual, versiones y agente/mercado/sistema; no aplicar literalmente reglas
+      tarifarias.'
+  precondiciones_por_fuente:
+    epm: Versionar la clave y las equivalencias. | Todas las filas de una clave multiplicada incumplen; separar
+      redundancia semántica y valores en conflicto.
+    chec: Versionar la clave y las equivalencias. | Todas las filas de una clave multiplicada incumplen; separar
+      redundancia semántica y valores en conflicto.
+    sspd: Versionar la clave y las equivalencias. | Todas las filas de una clave multiplicada incumplen; separar
+      redundancia semántica y valores en conflicto.
+    xm: Definir política de versión, unidad kWh, calendario horario, agente, mercado y sistema; evidencia pendiente.
   estado_medicion: provisional
-  evidencia_requerida:
-  - hash del snapshot
-  - clave de contenido y variable de cada unidad evaluada
-  - versión del control y parámetros
-  - conteos elegibles, evaluados, excluidos y fallidos
-  naturaleza: regla_base
   resultado:
     epm:
       numerador: 3612
       denominador: 3612
       valor: 100.0
       estado: medido
+      nota: ''
     chec:
       numerador: 35914
       denominador: 40609
@@ -560,46 +587,47 @@ indicadores:
       denominador: 91840
       valor: 91.6310975609756
       estado: provisional
-      nota: 'Clave provisional id_factura; 7686 identificadores repetidos.'
+      nota: Clave provisional id_factura; 7686 identificadores repetidos.
     xm:
       numerador: 61
       denominador: 61
       valor: 100.0
       estado: medido
-      nota: 'Clave agente-mercado-sistema-período mensual.'
-    medido_utc: '2026-11-13T17:33:58Z'
-- id: R09
-  nombre: Estructura de importes según categoría
+      nota: Clave agente-mercado-sistema-período mensual.
+    medido_utc: '2026-11-14T01:12:06Z'
+- id: R06
+  nombre: Representación canónica
   dimension: consistencia
-  tipo_principal: T07
-  unidad_observacion: fila
+  tipo_principal: T04
+  unidad_observacion: celda categórica
   metrica:
-    poblacion: Filas con nivel/modalidad identificados y matriz de aplicabilidad documentada.
-    numerador: Filas que cumplen todas las condiciones de aplicabilidad por nivel y modalidad.
-    denominador: Filas con matriz de aplicabilidad evaluable.
+    poblacion: Celdas categóricas informadas con catálogo canónico aprobado.
+    numerador: Celdas cuyo valor original ya coincide con su forma canónica.
+    denominador: Celdas categóricas con catálogo aprobado.
     formula: 100 * numerador / denominador
     unidad: porcentaje
   umbral:
     operador: '>='
     valor: 100
     estado: propuesta_metodologica_no_aprobada
-    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un umbral
-      de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
+    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un
+      umbral de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
   severidad: advertencia
   frecuencia: En cada ejecución y nueva versión de descarga; por mes de vigencia cuando corresponda.
   responsable: responsable_reglas_negocio
   responsable_nominal: null
   tendencia:
-    agregacion: Por fuente y período de vigencia; conservar también el snapshot y versión de control.
     sentido: Mayor es mejor
+    agregacion: Por fuente, período, control y versión de descarga
   precondiciones:
-  - En CHEC este es un adaptador semántico, no una copia literal del código EPM.
+  - Una variante no canónica es advertencia de estandarización, no necesariamente valor incorrecto.
+  - No convertir la moda observada en referencia oficial; medir cobertura de catálogo aparte.
   aplicabilidad:
-    epm: 'Revisar patrón del código: nivel I usa propiedad; otros niveles usan punta/fuera de punta. Validar si cero
-      significa no aplica.'
-    chec: Comprobar combinaciones nivel-propiedad-modalidad-concepto; no exigir columnas punta/fuera de punta inexistentes.
-    sspd: 'No aplica: no hay estructura de importes por categoria tarifaria.'
-    xm: Pendiente de definir el adaptador específico de XM; no transferir literalmente la regla tarifaria.
+    epm: Tipo de tarifa, tipo de dato y rango de consumo; conservar variantes originales.
+    chec: Código/nombre, modalidad, clase, estrato y rangos según catálogo de cada campo.
+    sspd: Medido sobre el censo mensual, que cubre las 91 empresas; el detalle cubre una sola.
+    xm: 'Adaptador XM: demanda horaria/mensual, versiones y agente/mercado/sistema; no aplicar literalmente reglas
+      tarifarias.'
   estado_medicion: provisional
   evidencia_requerida:
   - hash del snapshot
@@ -625,46 +653,58 @@ indicadores:
       denominador: 59527785
       valor: 99.99997984134636
       estado: provisional
-      nota: 'Medido sobre las 91 empresas. 3 grupos con mas de una forma de escritura y 12 registros en la forma minoritaria (el porcentaje redondea a 100). tipo_conexion: ''P'' x6756922 / ''P '' x4; estrato_sector: ''1'' x9687919 / ''1 '' x4; tipo_factura: ''N'' x11900840 / ''N '' x4. Catalogo canonico no acordado.'
+      nota: 'Medido sobre las 91 empresas. 3 grupos con mas de una forma de escritura y 12 registros en la forma
+        minoritaria (el porcentaje redondea a 100). tipo_conexion: ''P'' x6756922 / ''P '' x4; estrato_sector: ''1''
+        x9687919 / ''1 '' x4; tipo_factura: ''N'' x11900840 / ''N '' x4. Catalogo canonico no acordado.'
     xm:
       numerador: 244
       denominador: 244
       valor: 100.0
       estado: provisional
-      nota: 'No hay catálogo canónico externo aprobado; solo se verificó presencia.'
-    medido_utc: '2026-11-13T17:33:58Z'
-- id: R10
-  nombre: Importes requeridos disponibles
-  dimension: completitud
-  tipo_principal: T02
-  unidad_observacion: fila
+      nota: No hay catálogo canónico externo aprobado; solo se verificó presencia.
+    medido_utc: '2026-11-14T01:12:06Z'
+  tipos_secundarios: []
+  precondiciones_por_fuente:
+    epm: Una variante no canónica es advertencia de estandarización, no necesariamente valor incorrecto. | No convertir
+      la moda observada en referencia oficial; medir cobertura de catálogo aparte.
+    chec: Una variante no canónica es advertencia de estandarización, no necesariamente valor incorrecto. | No convertir
+      la moda observada en referencia oficial; medir cobertura de catálogo aparte.
+    sspd: Una variante no canónica es advertencia de estandarización, no necesariamente valor incorrecto. | No convertir
+      la moda observada en referencia oficial; medir cobertura de catálogo aparte.
+    xm: Definir política de versión, unidad kWh, calendario horario, agente, mercado y sistema; evidencia pendiente.
+- id: R07
+  nombre: Signo y rango por concepto
+  dimension: validez
+  tipo_principal: T05
+  unidad_observacion: celda
   metrica:
-    poblacion: Filas para las que se conocen las medidas requeridas.
-    numerador: Filas con todos los importes obligatorios informados y sin marcador de ausencia documentado.
-    denominador: Filas con conjunto de medidas requeridas definido.
+    poblacion: Importes numéricos aplicables con dominio documentado.
+    numerador: Importes dentro del dominio específico del concepto.
+    denominador: Importes con dominio verificable.
     formula: 100 * numerador / denominador
     unidad: porcentaje
   umbral:
     operador: '>='
     valor: 100
     estado: propuesta_metodologica_no_aprobada
-    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un umbral
-      de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
-  severidad: advertencia
+    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un
+      umbral de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
+  severidad: error
   frecuencia: En cada ejecución y nueva versión de descarga; por mes de vigencia cuando corresponda.
   responsable: responsable_reglas_negocio
   responsable_nominal: null
   tendencia:
-    agregacion: Por fuente y período de vigencia; conservar también el snapshot y versión de control.
     sentido: Mayor es mejor
+    agregacion: Por fuente, período, control y versión de descarga
   precondiciones:
-  - 'Cambio propuesto frente al código: todos ceros no prueba incompletitud.'
-  - Un cero informado cuenta como presente salvo documentación que lo defina como ausencia.
+  - Excluir solo con causa explícita cuando falte el dominio; eso no aprueba el control.
   aplicabilidad:
-    epm: Evaluar columnas aplicables por nivel y concepto.
-    chec: Evaluar tarifa/CU y componentes requeridos por el concepto; no exigir todo campo en toda fila.
-    sspd: 'Conjunto obligatorio propuesto: consumo_basico, facturacion_consumo_basico, valor_total.'
-    xm: Pendiente de definir el adaptador específico de XM; no transferir literalmente la regla tarifaria.
+    epm: Revisar restricciones por separado; no aplicar no negatividad general a todos los conceptos.
+    chec: Definir dominio de cada componente; subcon y cureal requieren definición antes de evaluar.
+    sspd: 'Conceptos de dominio positivo. valor_subsidio se excluye: su convencion de signo no esta declarada y
+      la fuente la usa negativa de forma sistematica.'
+    xm: 'Adaptador XM: demanda horaria/mensual, versiones y agente/mercado/sistema; no aplicar literalmente reglas
+      tarifarias.'
   estado_medicion: provisional
   evidencia_requerida:
   - hash del snapshot
@@ -690,16 +730,249 @@ indicadores:
       denominador: 826560
       valor: 100.0
       estado: provisional
-      nota: 'Dominio de signo por concepto sin acordar; negativos en ninguno.'
+      nota: Dominio de signo por concepto sin acordar; negativos en ninguno.
     xm:
       numerador: 61
       denominador: 61
       valor: 100.0
       estado: provisional
-      nota: 'Dominio no negativo de demanda; confirmar con el diccionario XM.'
-    medido_utc: '2026-11-13T17:33:58Z'
+      nota: Dominio no negativo de demanda; confirmar con el diccionario XM.
+    medido_utc: '2026-11-14T01:12:06Z'
+  tipos_secundarios: []
+  precondiciones_por_fuente:
+    epm: Excluir solo con causa explícita cuando falte el dominio; eso no aprueba el control.
+    chec: Excluir solo con causa explícita cuando falte el dominio; eso no aprueba el control.
+    sspd: Excluir solo con causa explícita cuando falte el dominio; eso no aprueba el control.
+    xm: Definir política de versión, unidad kWh, calendario horario, agente, mercado y sistema; evidencia pendiente.
+- id: R08
+  nombre: Orden entre tarifas por propiedad
+  dimension: consistencia
+  tipo_principal: T07
+  unidad_observacion: comparación de propiedad
+  metrica:
+    poblacion: Comparaciones completas de igual período, concepto y categoría salvo propiedad; nivel 1.
+    numerador: Comparaciones que respetan el orden documentado con tolerancia de redondeo.
+    denominador: Comparaciones completas con orden autorizado.
+    formula: 100 * numerador / denominador
+    unidad: porcentaje
+  umbral:
+    operador: '>='
+    valor: 100
+    estado: propuesta_metodologica_no_aprobada
+    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un
+      umbral de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
+  severidad: advertencia
+  frecuencia: En cada ejecución y nueva versión de descarga; por mes de vigencia cuando corresponda.
+  responsable: responsable_reglas_negocio
+  responsable_nominal: null
+  tendencia:
+    sentido: Mayor es mejor
+    agregacion: Por fuente, período, control y versión de descarga
+  precondiciones:
+  - No comparar filas con estrato, modalidad o rango diferentes.
+  - Falta de un miembro de comparación se registra como falta de cobertura, no cumplimiento.
+  aplicabilidad:
+    epm: Propiedad EPM >= compartida >= cliente en la misma fila del nivel I; contrastar fundamento documental.
+    chec: Alinear filas por las demás categorías y propiedad; confirmar las tres etiquetas y variable comparada
+      antes de exigir el orden.
+    sspd: 'No aplica: el conjunto no tiene eje de propiedad del activo.'
+    xm: 'Adaptador XM: demanda horaria/mensual, versiones y agente/mercado/sistema; no aplicar literalmente reglas
+      tarifarias.'
+  estado_medicion: provisional
+  evidencia_requerida:
+  - hash del snapshot
+  - clave de contenido y variable de cada unidad evaluada
+  - versión del control y parámetros
+  - conteos elegibles, evaluados, excluidos y fallidos
+  naturaleza: regla_base
+  resultado:
+    epm:
+      numerador: 2146
+      denominador: 2148
+      valor: 99.9069
+      estado: provisional
+      nota: Orden del codigo del Hito 2; fundamento documental sin contrastar.
+    chec:
+      numerador: 40598
+      denominador: 40598
+      valor: 100.0
+      estado: provisional
+      nota: 'Coherencia aritmética provisional: CU frente a la suma de seis componentes; la fórmula debe confirmarse
+        con el catálogo CHEC.'
+    sspd:
+      numerador: null
+      denominador: null
+      valor: null
+      estado: no_aplica
+      nota: No existe el eje de propiedad del activo; el control es tarifario.
+    xm:
+      numerador: 61
+      denominador: 61
+      valor: 100.0
+      estado: provisional
+      nota: 'Adaptado: coherencia de agente, mercado y sistema; no es orden de tarifas por propiedad.'
+    medido_utc: '2026-11-14T01:12:06Z'
+  tipos_secundarios: []
+  precondiciones_por_fuente:
+    epm: No comparar filas con estrato, modalidad o rango diferentes. | Falta de un miembro de comparación se registra
+      como falta de cobertura, no cumplimiento.
+    chec: No comparar filas con estrato, modalidad o rango diferentes. | Falta de un miembro de comparación se registra
+      como falta de cobertura, no cumplimiento.
+    sspd: No comparar filas con estrato, modalidad o rango diferentes. | Falta de un miembro de comparación se registra
+      como falta de cobertura, no cumplimiento.
+    xm: Definir política de versión, unidad kWh, calendario horario, agente, mercado y sistema; evidencia pendiente.
+- id: R09
+  nombre: Estructura de importes según categoría
+  dimension: consistencia
+  tipo_principal: T07
+  unidad_observacion: fila
+  metrica:
+    poblacion: Filas con nivel/modalidad identificados y matriz de aplicabilidad documentada.
+    numerador: Filas que cumplen todas las condiciones de aplicabilidad por nivel y modalidad.
+    denominador: Filas con matriz de aplicabilidad evaluable.
+    formula: 100 * numerador / denominador
+    unidad: porcentaje
+  umbral:
+    operador: '>='
+    valor: 100
+    estado: propuesta_metodologica_no_aprobada
+    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un
+      umbral de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
+  severidad: advertencia
+  frecuencia: En cada ejecución y nueva versión de descarga; por mes de vigencia cuando corresponda.
+  responsable: responsable_reglas_negocio
+  responsable_nominal: null
+  tendencia:
+    sentido: Mayor es mejor
+    agregacion: Por fuente, período, control y versión de descarga
+  precondiciones:
+  - En CHEC este es un adaptador semántico, no una copia literal del código EPM.
+  aplicabilidad:
+    epm: 'Revisar patrón del código: nivel I usa propiedad; otros niveles usan punta/fuera de punta. Validar si
+      cero significa no aplica.'
+    chec: Comprobar combinaciones nivel-propiedad-modalidad-concepto; no exigir columnas punta/fuera de punta inexistentes.
+    sspd: 'No aplica: no hay estructura de importes por categoria tarifaria.'
+    xm: 'Adaptador XM: demanda horaria/mensual, versiones y agente/mercado/sistema; no aplicar literalmente reglas
+      tarifarias.'
+  estado_medicion: provisional
+  evidencia_requerida:
+  - hash del snapshot
+  - clave de contenido y variable de cada unidad evaluada
+  - versión del control y parámetros
+  - conteos elegibles, evaluados, excluidos y fallidos
+  naturaleza: regla_base
+  resultado:
+    epm:
+      numerador: 3623
+      denominador: 3623
+      valor: 100.0
+      estado: provisional
+      nota: Pendiente decidir si cero significa 'no aplica'; patron tomado del codigo.
+    chec:
+      numerador: 40609
+      denominador: 40609
+      valor: 100.0
+      estado: provisional
+      nota: Dominios observados en CHEC para tipomed, nivel de tensión y tipo de mercado; pendiente de catálogo
+        formal del publicador.
+    sspd:
+      numerador: null
+      denominador: null
+      valor: null
+      estado: no_aplica
+      nota: No hay estructura de importes por categoria tarifaria que ordenar.
+    xm:
+      numerador: 119928
+      denominador: 119928
+      valor: 100.0
+      estado: provisional
+      nota: 'Adaptado: variable, valor, unidad, versión, fecha-hora y duración compatibles.'
+    medido_utc: '2026-11-14T01:12:06Z'
+  tipos_secundarios: []
+  precondiciones_por_fuente:
+    epm: En CHEC este es un adaptador semántico, no una copia literal del código EPM.
+    chec: En CHEC este es un adaptador semántico, no una copia literal del código EPM.
+    sspd: En CHEC este es un adaptador semántico, no una copia literal del código EPM.
+    xm: Definir política de versión, unidad kWh, calendario horario, agente, mercado y sistema; evidencia pendiente.
+- id: R10
+  nombre: Importes requeridos disponibles
+  dimension: completitud
+  tipo_principal: T02
+  unidad_observacion: fila
+  metrica:
+    poblacion: Filas para las que se conocen las medidas requeridas.
+    numerador: Filas con todos los importes obligatorios informados y sin marcador de ausencia documentado.
+    denominador: Filas con conjunto de medidas requeridas definido.
+    formula: 100 * numerador / denominador
+    unidad: porcentaje
+  umbral:
+    operador: '>='
+    valor: 100
+    estado: propuesta_metodologica_no_aprobada
+    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un
+      umbral de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
+  severidad: advertencia
+  frecuencia: En cada ejecución y nueva versión de descarga; por mes de vigencia cuando corresponda.
+  responsable: responsable_reglas_negocio
+  responsable_nominal: null
+  tendencia:
+    sentido: Mayor es mejor
+    agregacion: Por fuente, período, control y versión de descarga
+  precondiciones:
+  - 'Cambio propuesto frente al código: todos ceros no prueba incompletitud.'
+  - Un cero informado cuenta como presente salvo documentación que lo defina como ausencia.
+  aplicabilidad:
+    epm: Evaluar columnas aplicables por nivel y concepto.
+    chec: Evaluar tarifa/CU y componentes requeridos por el concepto; no exigir todo campo en toda fila.
+    sspd: 'Conjunto obligatorio propuesto: consumo_basico, facturacion_consumo_basico, valor_total.'
+    xm: 'Adaptador XM: demanda horaria/mensual, versiones y agente/mercado/sistema; no aplicar literalmente reglas
+      tarifarias.'
+  estado_medicion: provisional
+  evidencia_requerida:
+  - hash del snapshot
+  - clave de contenido y variable de cada unidad evaluada
+  - versión del control y parámetros
+  - conteos elegibles, evaluados, excluidos y fallidos
+  naturaleza: regla_base
+  resultado:
+    epm:
+      numerador: 3621
+      denominador: 3623
+      valor: 99.9448
+      estado: provisional
+      nota: 'Conjunto de medidas requeridas sin definir: se exige al menos un importe distinto de cero. La unidad
+        fila no detecta columnas enteras en cero.'
+    chec:
+      numerador: 40609
+      denominador: 40609
+      valor: 100.0
+      estado: provisional
+      nota: 'Conjunto de medidas requeridas sin definir: se exige al menos un importe distinto de cero. La unidad
+        fila no detecta columnas enteras en cero.'
+    sspd:
+      numerador: 91840
+      denominador: 91840
+      valor: 100.0
+      estado: provisional
+      nota: 'Conjunto obligatorio propuesto: consumo_basico, facturacion_consumo_basico, valor_total.'
+    xm:
+      numerador: 61
+      denominador: 61
+      valor: 100.0
+      estado: medido
+      nota: Medidas requeridas del agregado mensual presentes.
+    medido_utc: '2026-11-14T01:12:06Z'
   diferencia_codigo_actual: El Hito 2 alerta filas con todos los importes en cero. Conservar ese hallazgo como sospecha,
     pero no medirlo como ausencia confirmada.
+  tipos_secundarios: []
+  precondiciones_por_fuente:
+    epm: 'Cambio propuesto frente al código: todos ceros no prueba incompletitud. | Un cero informado cuenta como
+      presente salvo documentación que lo defina como ausencia.'
+    chec: 'Cambio propuesto frente al código: todos ceros no prueba incompletitud. | Un cero informado cuenta como
+      presente salvo documentación que lo defina como ausencia.'
+    sspd: 'Cambio propuesto frente al código: todos ceros no prueba incompletitud. | Un cero informado cuenta como
+      presente salvo documentación que lo defina como ausencia.'
+    xm: Definir política de versión, unidad kWh, calendario horario, agente, mercado y sistema; evidencia pendiente.
 - id: R11
   nombre: Sospecha de serial de fecha en importe
   dimension: validez
@@ -722,231 +995,23 @@ indicadores:
   responsable: responsable_reglas_negocio
   responsable_nominal: null
   tendencia:
-    agregacion: Por fuente y período de vigencia; conservar también el snapshot y versión de control.
     sentido: Interpretar según contexto; menor no significa necesariamente mejor calidad.
+    agregacion: Por fuente, período, control y versión de descarga
   precondiciones:
   - No es indicador de exactitud confirmada ni criterio automático de cuarentena.
   aplicabilidad:
     epm: Intervalo heredado [36526, 47483]; no confirma error.
     chec: Misma heurística solo tras revisar escala y unidad; los valores legítimos pueden caer en el intervalo.
-    sspd: 'Mismo rango de serial de fecha de Excel que en las otras dos fuentes.'
-    xm: Pendiente de definir el adaptador específico de XM; no transferir literalmente la regla tarifaria.
-  estado_medicion: provisional
-  evidencia_requerida:
-  - hash del snapshot
-  - clave de contenido y variable de cada unidad evaluada
-  - versión del control y parámetros
-  - conteos elegibles, evaluados, excluidos y fallidos
-  naturaleza: regla_base
-  resultado:
-    epm:
-      numerador: 2146
-      denominador: 2148
-      valor: 99.9069
-      estado: provisional
-      nota: 'Orden del codigo del Hito 2; fundamento documental sin contrastar.'
-    chec:
-      numerador: 40598
-      denominador: 40598
-      valor: 100.0
-      estado: provisional
-      nota: 'Coherencia aritmética provisional: CU frente a la suma de seis componentes; la fórmula debe confirmarse con el catálogo CHEC.'
-    sspd:
-      numerador: null
-      denominador: null
-      valor: null
-      estado: no_aplica
-      nota: 'No existe el eje de propiedad del activo; el control es tarifario.'
-    xm:
-      numerador: 61
-      denominador: 61
-      valor: 100.0
-      estado: provisional
-      nota: 'Adaptado: coherencia de agente, mercado y sistema; no es orden de tarifas por propiedad.'
-    medido_utc: '2026-11-13T17:33:58Z'
-  parametros:
-    serial_min: 36526
-    serial_max: 47483
-  diferencia_codigo_actual: Reclasificación propuesta de Exactitud a Validez y severidad de sospecha; no se cambió el
-    motor.
-- id: R12
-  nombre: Prevalencia de magnitud atípica
-  dimension: razonabilidad
-  tipo_principal: T05
-  unidad_observacion: serie-mes
-  metrica:
-    poblacion: Observaciones numéricas en series homogéneas con referencia válida.
-    numerador: Observaciones con abs(valor) > factor * mediana(abs(referencia)).
-    denominador: Observaciones evaluables en vigilancia.
-    formula: 100 * numerador / denominador
-    unidad: porcentaje
-  umbral:
-    operador: null
-    valor: null
-    estado: pendiente_calibracion
-    justificacion: No se prescribe tasa cero ni se equiparan alertas con errores. Calibrar en referencia y validación;
-      congelar antes de vigilancia.
-  severidad: advertencia
-  frecuencia: En cada ejecución y nueva versión de descarga; por mes de vigencia cuando corresponda.
-  responsable: responsable_metricas_anomalias
-  responsable_nominal: null
-  tendencia:
-    agregacion: Por fuente y período de vigencia; conservar también el snapshot y versión de control.
-    sentido: Interpretar según contexto; menor no significa necesariamente mejor calidad.
-  precondiciones:
-  - Mediana de referencia estrictamente positiva; no estimarla con vigilancia.
-  - Factor 10 heredado, pendiente sensibilidad 5/10/20.
-  - No sustituye valoración de inflación, subsidio o cambio regulatorio.
-  aplicabilidad:
-    epm: Serie = categorías + columna monetaria.
-    chec: Serie = categorías + variable monetaria; no mezclar CU y tarifa.
-    sspd: 'Factor sobre la mediana de consumo_basico; factor pendiente de acordar.'
-    xm: Pendiente de definir el adaptador específico de XM; no transferir literalmente la regla tarifaria.
-  estado_medicion: provisional
-  evidencia_requerida:
-  - hash del snapshot
-  - clave de contenido y variable de cada unidad evaluada
-  - versión del control y parámetros
-  - conteos elegibles, evaluados, excluidos y fallidos
-  naturaleza: regla_base
-  resultado:
-    epm:
-      numerador: 3623
-      denominador: 3623
-      valor: 100.0
-      estado: provisional
-      nota: 'Pendiente decidir si cero significa ''no aplica''; patron tomado del codigo.'
-    chec:
-      numerador: 40609
-      denominador: 40609
-      valor: 100.0
-      estado: provisional
-      nota: 'Dominios observados en CHEC para tipomed, nivel de tensión y tipo de mercado; pendiente de catálogo formal del publicador.'
-    sspd:
-      numerador: null
-      denominador: null
-      valor: null
-      estado: no_aplica
-      nota: 'No hay estructura de importes por categoria tarifaria que ordenar.'
-    xm:
-      numerador: 119928
-      denominador: 119928
-      valor: 100.0
-      estado: provisional
-      nota: 'Adaptado: variable, valor, unidad, versión, fecha-hora y duración compatibles.'
-    medido_utc: '2026-11-13T17:33:58Z'
-  parametros:
-    factor: 10
-    sensibilidad:
-    - 5
-    - 10
-    - 20
-  diferencia_codigo_actual: El código usa mediana de toda la serie y severidad Error; se propone referencia temporal
-    y Advertencia.
-- id: INT01
-  nombre: Contrato estructural íntegro
-  dimension: integridad
-  tipo_principal: T07
-  unidad_observacion: columna esperada
-  metrica:
-    poblacion: Columnas y contratos de tipo declarados por versión del esquema.
-    numerador: Columnas presentes exactamente una vez con contrato de lectura compatible.
-    denominador: Columnas esperadas en el esquema versionado.
-    formula: 100 * numerador / denominador
-    unidad: porcentaje
-  umbral:
-    operador: '>='
-    valor: 100
-    estado: propuesta_metodologica_no_aprobada
-    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un umbral
-      de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
-  severidad: error
-  frecuencia: En cada ejecución y nueva versión de descarga; por mes de vigencia cuando corresponda.
-  responsable: responsable_datos
-  responsable_nominal: null
-  tendencia:
-    agregacion: Por fuente y período de vigencia; conservar también el snapshot y versión de control.
-    sentido: Mayor es mejor
-  precondiciones:
-  - Columnas extra se reportan aparte como deriva de esquema, sin suponer pérdida.
-  - Este control no demuestra integridad referencial por sí solo.
-  aplicabilidad:
-    epm: Doce columnas oficiales, con cinco medidas numéricas.
-    chec: Veinticuatro columnas oficiales; texto monetario es compatible si existe conversión definida.
-    sspd: 'Numero de columnas del censo frente al esquema declarado por el portal.'
-    xm: Pendiente de definir el adaptador específico de XM; no transferir literalmente la regla tarifaria.
-  estado_medicion: provisional
-  evidencia_requerida:
-  - hash del snapshot
-  - clave de contenido y variable de cada unidad evaluada
-  - versión del control y parámetros
-  - conteos elegibles, evaluados, excluidos y fallidos
-  naturaleza: control_complementario
-  resultado:
-    epm:
-      numerador: 3621
-      denominador: 3623
-      valor: 99.9448
-      estado: provisional
-      nota: 'Conjunto de medidas requeridas sin definir: se exige al menos un importe distinto de cero. La unidad fila no detecta columnas enteras en cero.'
-    chec:
-      numerador: 40609
-      denominador: 40609
-      valor: 100.0
-      estado: provisional
-      nota: 'Conjunto de medidas requeridas sin definir: se exige al menos un importe distinto de cero. La unidad fila no detecta columnas enteras en cero.'
-    sspd:
-      numerador: 91840
-      denominador: 91840
-      valor: 100.0
-      estado: provisional
-      nota: 'Conjunto obligatorio propuesto: consumo_basico, facturacion_consumo_basico, valor_total.'
-    xm:
-      numerador: 61
-      denominador: 61
-      valor: 100.0
-      estado: medido
-      nota: 'Medidas requeridas del agregado mensual presentes.'
-    medido_utc: '2026-11-13T17:33:58Z'
-- id: INT02
-  nombre: Referencias categóricas resolubles
-  dimension: integridad
-  tipo_principal: T07
-  unidad_observacion: referencia por fila
-  metrica:
-    poblacion: Referencias aplicables de categorías/códigos contra catálogos versionados.
-    numerador: Referencias que resuelven a una entidad y combinación vigente permitida.
-    denominador: Referencias con catálogo verificable.
-    formula: 100 * numerador / denominador
-    unidad: porcentaje
-  umbral:
-    operador: '>='
-    valor: 100
-    estado: propuesta_metodologica_no_aprobada
-    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un umbral
-      de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
-  severidad: error
-  frecuencia: En cada ejecución y nueva versión de descarga; por mes de vigencia cuando corresponda.
-  responsable: responsable_datos
-  responsable_nominal: null
-  tendencia:
-    agregacion: Por fuente y período de vigencia; conservar también el snapshot y versión de control.
-    sentido: Mayor es mejor
-  precondiciones:
-  - El catálogo debe tener referencia documental; no basta extraer todos los valores del mismo CSV.
-  - Una referencia sin clave es fallo si la clave es obligatoria; catálogo ausente es falta de evidencia.
-  aplicabilidad:
-    epm: Relacionar combinación tarifaria con catálogo de modalidades, conceptos, nivel y rangos autorizado.
-    chec: Comercializador, mercado y clase código-nombre; combinaciones permitidas de nivel/propiedad/estrato.
-    sspd: 'No aplica: el conjunto no publica pares codigo-nombre.'
-    xm: Pendiente de definir el adaptador específico de XM; no transferir literalmente la regla tarifaria.
+    sspd: Mismo rango de serial de fecha de Excel que en las otras dos fuentes.
+    xm: 'Adaptador XM: demanda horaria/mensual, versiones y agente/mercado/sistema; no aplicar literalmente reglas
+      tarifarias.'
   estado_medicion: medido
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
   - versión del control y parámetros
   - conteos elegibles, evaluados, excluidos y fallidos
-  naturaleza: control_complementario
+  naturaleza: regla_base
   resultado:
     epm:
       numerador: 3
@@ -971,8 +1036,260 @@ indicadores:
       denominador: null
       valor: null
       estado: no_aplica
-      nota: 'No hay importes tarifarios; la demanda se controla como medida energética.'
-    medido_utc: '2026-11-13T17:33:58Z'
+      nota: No hay importes tarifarios; la demanda se controla como medida energética.
+    medido_utc: '2026-11-14T01:12:06Z'
+  parametros:
+    serial_min: 36526
+    serial_max: 47483
+  diferencia_codigo_actual: Reclasificación propuesta de Exactitud a Validez y severidad de sospecha; no se cambió
+    el motor.
+  tipos_secundarios: []
+  precondiciones_por_fuente:
+    epm: No es indicador de exactitud confirmada ni criterio automático de cuarentena.
+    chec: No es indicador de exactitud confirmada ni criterio automático de cuarentena.
+    sspd: No es indicador de exactitud confirmada ni criterio automático de cuarentena.
+    xm: Definir política de versión, unidad kWh, calendario horario, agente, mercado y sistema; evidencia pendiente.
+- id: R12
+  nombre: Prevalencia de magnitud atípica
+  dimension: razonabilidad
+  tipo_principal: T05
+  unidad_observacion: serie-mes
+  metrica:
+    poblacion: Observaciones numéricas en series homogéneas con referencia válida.
+    numerador: Observaciones con abs(valor) > factor * mediana(abs(referencia)).
+    denominador: Observaciones evaluables en vigilancia.
+    formula: 100 * numerador / denominador
+    unidad: porcentaje
+  umbral:
+    operador: null
+    valor: null
+    estado: pendiente_calibracion
+    justificacion: No se prescribe tasa cero ni se equiparan alertas con errores. Calibrar en referencia y validación;
+      congelar antes de vigilancia.
+  severidad: advertencia
+  frecuencia: En cada ejecución y nueva versión de descarga; por mes de vigencia cuando corresponda.
+  responsable: responsable_metricas_anomalias
+  responsable_nominal: null
+  tendencia:
+    sentido: Interpretar según contexto; menor no significa necesariamente mejor calidad.
+    agregacion: Por fuente, período, control y versión de descarga
+  precondiciones:
+  - Mediana de referencia estrictamente positiva; no estimarla con vigilancia.
+  - Factor 10 heredado, pendiente sensibilidad 5/10/20.
+  - No sustituye valoración de inflación, subsidio o cambio regulatorio.
+  aplicabilidad:
+    epm: Serie = categorías + columna monetaria.
+    chec: Serie = categorías + variable monetaria; no mezclar CU y tarifa.
+    sspd: Factor sobre la mediana de consumo_basico; factor pendiente de acordar.
+    xm: 'Adaptador XM: demanda horaria/mensual, versiones y agente/mercado/sistema; no aplicar literalmente reglas
+      tarifarias.'
+  estado_medicion: provisional
+  evidencia_requerida:
+  - hash del snapshot
+  - clave de contenido y variable de cada unidad evaluada
+  - versión del control y parámetros
+  - conteos elegibles, evaluados, excluidos y fallidos
+  naturaleza: regla_base
+  resultado:
+    epm:
+      numerador: 0
+      denominador: 732
+      valor: 0.0
+      estado: provisional
+      nota: 'Advertencia: factor 10 sobre mediana de niveles de referencia previa; 0/732 niveles de vigilancia.
+        No usa vigilancia para estimar mediana ni confirma error.'
+    chec:
+      numerador: 0
+      denominador: 3264
+      valor: 0.0
+      estado: provisional
+      nota: 'Advertencia: factor 10 sobre mediana de niveles de referencia previa; 0/3264 niveles de vigilancia.
+        No usa vigilancia para estimar mediana ni confirma error.'
+    sspd:
+      numerador: 12
+      denominador: 4896
+      valor: 0.24509803921568626
+      estado: provisional
+      nota: 'Advertencia: factor 10 sobre mediana de niveles de referencia previa; 12/4896 niveles de vigilancia.
+        No usa vigilancia para estimar mediana ni confirma error.'
+    xm:
+      numerador: 0
+      denominador: 12
+      valor: 0.0
+      estado: provisional
+      nota: 'Advertencia: factor 10 sobre mediana de niveles de referencia previa; 0/12 niveles de vigilancia. No
+        usa vigilancia para estimar mediana ni confirma error.'
+    medido_utc: '2026-11-14T01:12:06Z'
+  parametros:
+    factor: 10
+    sensibilidad:
+    - 5
+    - 10
+    - 20
+  diferencia_codigo_actual: El código usa mediana de toda la serie y severidad Error; se propone referencia temporal
+    y Advertencia.
+  tipos_secundarios: []
+  precondiciones_por_fuente:
+    epm: Mediana de referencia estrictamente positiva; no estimarla con vigilancia. | Factor 10 heredado, pendiente
+      sensibilidad 5/10/20. | No sustituye valoración de inflación, subsidio o cambio regulatorio.
+    chec: Mediana de referencia estrictamente positiva; no estimarla con vigilancia. | Factor 10 heredado, pendiente
+      sensibilidad 5/10/20. | No sustituye valoración de inflación, subsidio o cambio regulatorio.
+    sspd: Mediana de referencia estrictamente positiva; no estimarla con vigilancia. | Factor 10 heredado, pendiente
+      sensibilidad 5/10/20. | No sustituye valoración de inflación, subsidio o cambio regulatorio.
+    xm: Definir política de versión, unidad kWh, calendario horario, agente, mercado y sistema; evidencia pendiente.
+- id: INT01
+  nombre: Contrato estructural íntegro
+  dimension: integridad
+  tipo_principal: T07
+  unidad_observacion: columna esperada
+  metrica:
+    poblacion: Columnas y contratos de tipo declarados por versión del esquema.
+    numerador: Columnas presentes exactamente una vez con contrato de lectura compatible.
+    denominador: Columnas esperadas en el esquema versionado.
+    formula: 100 * numerador / denominador
+    unidad: porcentaje
+  umbral:
+    operador: '>='
+    valor: 100
+    estado: propuesta_metodologica_no_aprobada
+    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un
+      umbral de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
+  severidad: error
+  frecuencia: En cada ejecución y nueva versión de descarga; por mes de vigencia cuando corresponda.
+  responsable: responsable_datos
+  responsable_nominal: null
+  tendencia:
+    sentido: Mayor es mejor
+    agregacion: Por fuente, período, control y versión de descarga
+  precondiciones:
+  - Columnas extra se reportan aparte como deriva de esquema, sin suponer pérdida.
+  - Este control no demuestra integridad referencial por sí solo.
+  aplicabilidad:
+    epm: Doce columnas oficiales, con cinco medidas numéricas.
+    chec: Veinticuatro columnas oficiales; texto monetario es compatible si existe conversión definida.
+    sspd: Numero de columnas del censo frente al esquema declarado por el portal.
+    xm: 'Adaptador XM: demanda horaria/mensual, versiones y agente/mercado/sistema; no aplicar literalmente reglas
+      tarifarias.'
+  estado_medicion: medido
+  evidencia_requerida:
+  - hash del snapshot
+  - clave de contenido y variable de cada unidad evaluada
+  - versión del control y parámetros
+  - conteos elegibles, evaluados, excluidos y fallidos
+  naturaleza: control_complementario
+  resultado:
+    epm:
+      numerador: 12
+      denominador: 12
+      valor: 100.0
+      estado: medido
+      nota: ''
+    chec:
+      numerador: 24
+      denominador: 24
+      valor: 100.0
+      estado: medido
+      nota: ''
+    sspd:
+      numerador: 28
+      denominador: 28
+      valor: 100.0
+      estado: medido
+      nota: El detalle trae 28 columnas; el esquema del portal declara 29. Falta 'tension', que la API omite cuando
+        no tiene valor en el subconjunto.
+    xm:
+      numerador: 9
+      denominador: 9
+      valor: 100.0
+      estado: medido
+      nota: Contrato crudo de nueve columnas presente.
+    medido_utc: '2026-11-14T01:12:06Z'
+  tipos_secundarios: []
+  precondiciones_por_fuente:
+    epm: Columnas extra se reportan aparte como deriva de esquema, sin suponer pérdida. | Este control no demuestra
+      integridad referencial por sí solo.
+    chec: Columnas extra se reportan aparte como deriva de esquema, sin suponer pérdida. | Este control no demuestra
+      integridad referencial por sí solo.
+    sspd: Columnas extra se reportan aparte como deriva de esquema, sin suponer pérdida. | Este control no demuestra
+      integridad referencial por sí solo.
+    xm: Definir política de versión, unidad kWh, calendario horario, agente, mercado y sistema; evidencia pendiente.
+- id: INT02
+  nombre: Referencias categóricas resolubles
+  dimension: integridad
+  tipo_principal: T07
+  unidad_observacion: referencia por fila
+  metrica:
+    poblacion: Referencias aplicables de categorías/códigos contra catálogos versionados.
+    numerador: Referencias que resuelven a una entidad y combinación vigente permitida.
+    denominador: Referencias con catálogo verificable.
+    formula: 100 * numerador / denominador
+    unidad: porcentaje
+  umbral:
+    operador: '>='
+    valor: 100
+    estado: propuesta_metodologica_no_aprobada
+    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un
+      umbral de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
+  severidad: error
+  frecuencia: En cada ejecución y nueva versión de descarga; por mes de vigencia cuando corresponda.
+  responsable: responsable_datos
+  responsable_nominal: null
+  tendencia:
+    sentido: Mayor es mejor
+    agregacion: Por fuente, período, control y versión de descarga
+  precondiciones:
+  - El catálogo debe tener referencia documental; no basta extraer todos los valores del mismo CSV.
+  - Una referencia sin clave es fallo si la clave es obligatoria; catálogo ausente es falta de evidencia.
+  aplicabilidad:
+    epm: Relacionar combinación tarifaria con catálogo de modalidades, conceptos, nivel y rangos autorizado.
+    chec: Comercializador, mercado y clase código-nombre; combinaciones permitidas de nivel/propiedad/estrato.
+    sspd: 'No aplica: el conjunto no publica pares codigo-nombre.'
+    xm: 'Adaptador XM: demanda horaria/mensual, versiones y agente/mercado/sistema; no aplicar literalmente reglas
+      tarifarias.'
+  estado_medicion: provisional
+  evidencia_requerida:
+  - hash del snapshot
+  - clave de contenido y variable de cada unidad evaluada
+  - versión del control y parámetros
+  - conteos elegibles, evaluados, excluidos y fallidos
+  naturaleza: control_complementario
+  resultado:
+    epm:
+      numerador: null
+      denominador: null
+      valor: null
+      estado: no_aplica
+      nota: El esquema EPM no contiene identificadores codificados con una columna nombre; la comprobación código-descripción
+        no aplica a esta fuente.
+    chec:
+      numerador: 25
+      denominador: 26
+      valor: 96.1538
+      estado: provisional
+      nota: 'Sin catalogo externo versionado: se evalua consistencia interna codigo-nombre.'
+    sspd:
+      numerador: null
+      denominador: null
+      valor: null
+      estado: no_aplica
+      nota: No hay pares codigo-nombre que resolver; el conjunto no publica catalogos.
+    xm:
+      numerador: 3
+      denominador: 3
+      valor: 100.0
+      estado: provisional_interno
+      nota: El piloto conserva tres códigos fijos (agente, mercado y sistema); la aprobación es interna porque falta
+        catálogo externo versionado.
+    medido_utc: '2026-11-14T01:12:06Z'
+  tipos_secundarios: []
+  precondiciones_por_fuente:
+    epm: El catálogo debe tener referencia documental; no basta extraer todos los valores del mismo CSV. | Una referencia
+      sin clave es fallo si la clave es obligatoria; catálogo ausente es falta de evidencia.
+    chec: El catálogo debe tener referencia documental; no basta extraer todos los valores del mismo CSV. | Una
+      referencia sin clave es fallo si la clave es obligatoria; catálogo ausente es falta de evidencia.
+    sspd: El catálogo debe tener referencia documental; no basta extraer todos los valores del mismo CSV. | Una
+      referencia sin clave es fallo si la clave es obligatoria; catálogo ausente es falta de evidencia.
+    xm: Definir política de versión, unidad kWh, calendario horario, agente, mercado y sistema; evidencia pendiente.
 - id: EXA01
   nombre: Concordancia documental de importes
   dimension: exactitud
@@ -988,26 +1305,28 @@ indicadores:
     operador: '>='
     valor: 100
     estado: propuesta_metodologica_no_aprobada
-    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un umbral
-      de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
+    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un
+      umbral de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
   severidad: error
   frecuencia: En cada ejecución y nueva versión de descarga; por mes de vigencia cuando corresponda.
   responsable: responsable_validacion
   responsable_nominal: null
   tendencia:
-    agregacion: Por fuente y período de vigencia; conservar también el snapshot y versión de control.
     sentido: Mayor es mejor
+    agregacion: Por fuente, período, control y versión de descarga
   precondiciones:
   - Seleccionar muestra antes de buscar concordancia; registrar semilla, estratos y universo.
   - Separar muestra aleatoria de alertas seleccionadas por conveniencia.
-  - Usar Decimal y regla de redondeo documentada a precisión comparable; no elegir tolerancia después de observar diferencias.
+  - Usar Decimal y regla de redondeo documentada a precisión comparable; no elegir tolerancia después de observar
+    diferencias.
   - Publicación original es referencia de concordancia, no prueba independiente de tarifa económicamente correcta.
   aplicabilidad:
     epm: Publicación tarifaria original EPM con concepto, nivel, propiedad y franja equivalentes.
     chec: Publicación CHEC con mercado, estrato, nivel, propiedad, concepto y período equivalentes.
     sspd: 'No medible: ningun otro publicador reporta el consumo de estas 91 empresas ZNI.'
-    xm: Pendiente de definir el adaptador específico de XM; no transferir literalmente la regla tarifaria.
-  estado_medicion: provisional
+    xm: 'Adaptador XM: demanda horaria/mensual, versiones y agente/mercado/sistema; no aplicar literalmente reglas
+      tarifarias.'
+  estado_medicion: medido_parcial
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
@@ -1016,30 +1335,35 @@ indicadores:
   naturaleza: control_complementario
   resultado:
     epm:
-      numerador: 4
-      denominador: 9379
-      valor: 0.0426
+      numerador: 18
+      denominador: 18
+      valor: 100.0
       estado: provisional
-      nota: 'Factor 10 sin calibrar y mediana sobre la serie completa, no sobre una ventana de referencia separada de la vigilancia.'
+      nota: 'Contraste reproducible con 6 filas de publicaciones oficiales de EPM (2020-01, 2020-12, 2021-04, 2021-12),
+        18 celdas monetarias, tolerancia 0.01 y prueba de control: 100.0 % de valores alterados rechazados. Es evidencia
+        de exactitud para la muestra, no certifica todos los períodos.'
     chec:
-      numerador: 0
-      denominador: 355289
-      valor: 0.0
+      numerador: 756
+      denominador: 756
+      valor: 100.0
       estado: provisional
-      nota: 'Factor 10 sin calibrar y mediana sobre la serie completa, no sobre una ventana de referencia separada de la vigilancia.'
+      nota: 'Contraste con Superservicios - Costo Unitario Prestacion del Servicio (td8k-vhq9), publicador distinto,
+        descargado 2026-10-28T21:59:07Z. Alcance: 756 celdas de 7 componentes en 6 combinaciones nivel-propiedad
+        del ano 2023. Tolerancia 0,1 % relativa. Prueba de control: 99.6 % de los valores falsos inyectados fueron
+        rechazados. No cubre cureal, subcon ni valor_tarifa, que no tienen contraparte en la referencia.'
     sspd:
-      numerador: 0
-      denominador: 90469
-      valor: 0.0
-      estado: provisional
-      nota: 'Prevalencia, no conformidad. Factor 10 sobre la mediana de consumo_basico; factor sin acordar.'
+      numerador: null
+      denominador: null
+      valor: null
+      estado: no_medible
+      nota: Sin segundo publicador que reporte el consumo de estas 91 empresas ZNI.
     xm:
-      numerador: 0
-      denominador: 12
-      valor: 0.0
-      estado: provisional
-      nota: 'Prevalencia provisional; factor 10 y partición temporal requieren sensibilidad.'
-    medido_utc: '2026-11-13T17:33:58Z'
+      numerador: null
+      denominador: null
+      valor: null
+      estado: no_medible
+      nota: No existe aún referencia horaria/mensual equivalente para contraste documental.
+    medido_utc: '2026-11-14T01:12:06Z'
   parametros:
     tamano_muestra_por_fuente: null
     semilla: 2026
@@ -1047,6 +1371,21 @@ indicadores:
     regla_redondeo: null
   alcance_inferencial: Reportar n, cobertura y, si procede según diseño muestral, intervalo; no atribuir el resultado
     a toda la población sin justificación.
+  tipos_secundarios: []
+  precondiciones_por_fuente:
+    epm: Seleccionar muestra antes de buscar concordancia; registrar semilla, estratos y universo. | Separar muestra
+      aleatoria de alertas seleccionadas por conveniencia. | Usar Decimal y regla de redondeo documentada a precisión
+      comparable; no elegir tolerancia después de observar diferencias. | Publicación original es referencia de
+      concordancia, no prueba independiente de tarifa económicamente correcta.
+    chec: Seleccionar muestra antes de buscar concordancia; registrar semilla, estratos y universo. | Separar muestra
+      aleatoria de alertas seleccionadas por conveniencia. | Usar Decimal y regla de redondeo documentada a precisión
+      comparable; no elegir tolerancia después de observar diferencias. | Publicación original es referencia de
+      concordancia, no prueba independiente de tarifa económicamente correcta.
+    sspd: Seleccionar muestra antes de buscar concordancia; registrar semilla, estratos y universo. | Separar muestra
+      aleatoria de alertas seleccionadas por conveniencia. | Usar Decimal y regla de redondeo documentada a precisión
+      comparable; no elegir tolerancia después de observar diferencias. | Publicación original es referencia de
+      concordancia, no prueba independiente de tarifa económicamente correcta.
+    xm: Definir política de versión, unidad kWh, calendario horario, agente, mercado y sistema; evidencia pendiente.
 - id: OPO01
   nombre: Publicaciones disponibles dentro del plazo
   dimension: oportunidad
@@ -1062,27 +1401,28 @@ indicadores:
     operador: '>='
     valor: 100
     estado: propuesta_metodologica_no_aprobada
-    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un umbral
-      de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
+    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un
+      umbral de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
   severidad: advertencia
   frecuencia: En cada ejecución y nueva versión de descarga; por mes de vigencia cuando corresponda.
   responsable: responsable_datos
   responsable_nominal: null
   tendencia:
-    agregacion: Por fuente y período de vigencia; conservar también el snapshot y versión de control.
     sentido: Mayor es mejor
+    agregacion: Por fuente, período, control y versión de descarga
   precondiciones:
   - Definir primero consumidor, obligación o plazo operativo y zona horaria.
-  - 'Primera observación en un rastreo solo acota disponibilidad: clasificar como indeterminado si el intervalo cruza
-    el plazo.'
+  - 'Primera observación en un rastreo solo acota disponibilidad: clasificar como indeterminado si el intervalo
+    cruza el plazo.'
   - Ausencia de evidencia no demuestra ni puntualidad ni retraso.
   - Un seguimiento prospectivo se declara aparte; no valida el histórico retrospectivamente.
   aplicabilidad:
     epm: Reconstruir evidencia temporal de publicaciones EPM, sin usar year/mes como fecha de publicación.
     chec: Reconstruir evidencia de publicaciones CHEC; fecha de carga del dataset no prueba cada período.
     sspd: 'No medible: el conjunto no declara fecha de disponibilidad por periodo.'
-    xm: Pendiente de definir el adaptador específico de XM; no transferir literalmente la regla tarifaria.
-  estado_medicion: medido
+    xm: 'Adaptador XM: demanda horaria/mensual, versiones y agente/mercado/sistema; no aplicar literalmente reglas
+      tarifarias.'
+  estado_medicion: no_medible
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
@@ -1091,33 +1431,58 @@ indicadores:
   naturaleza: control_complementario
   resultado:
     epm:
-      numerador: 12
-      denominador: 12
-      valor: 100.0
-      estado: medido
+      numerador: null
+      denominador: null
+      valor: null
+      estado: no_medible
+      nota: 'OPO01 con evidencia temporal: 0/0 publicaciones registradas evaluables. Sin inventario completo de
+        publicaciones esperadas no acredita toda la dimension. La presencia de meses o la fecha de descarga no sustituyen
+        disponibilidad y plazo.'
     chec:
-      numerador: 24
-      denominador: 24
-      valor: 100.0
-      estado: medido
+      numerador: null
+      denominador: null
+      valor: null
+      estado: no_medible
+      nota: 'OPO01 con evidencia temporal: 0/0 publicaciones registradas evaluables. Sin inventario completo de
+        publicaciones esperadas no acredita toda la dimension. La presencia de meses o la fecha de descarga no sustituyen
+        disponibilidad y plazo.'
     sspd:
-      numerador: 28
-      denominador: 28
-      valor: 100.0
-      estado: medido
-      nota: 'El detalle trae 28 columnas; el esquema del portal declara 29. Falta ''tension'', que la API omite cuando no tiene valor en el subconjunto.'
+      numerador: null
+      denominador: null
+      valor: null
+      estado: no_medible
+      nota: 'OPO01 con evidencia temporal: 0/0 publicaciones registradas evaluables. Sin inventario completo de
+        publicaciones esperadas no acredita toda la dimension. La presencia de meses o la fecha de descarga no sustituyen
+        disponibilidad y plazo.'
     xm:
-      numerador: 9
-      denominador: 9
-      valor: 100.0
-      estado: medido
-      nota: 'Contrato crudo de nueve columnas presente.'
-    medido_utc: '2026-11-13T17:33:58Z'
+      numerador: null
+      denominador: null
+      valor: null
+      estado: no_medible
+      nota: 'OPO01 con evidencia temporal: 0/0 publicaciones registradas evaluables. Sin inventario completo de
+        publicaciones esperadas no acredita toda la dimension. La presencia de meses o la fecha de descarga no sustituyen
+        disponibilidad y plazo.'
+    medido_utc: '2026-11-14T01:12:06Z'
   parametros:
     plazo_documentado: null
     zona_horaria: America/Bogota
     periodo_inicio: null
     periodo_fin: null
+  tipos_secundarios: []
+  precondiciones_por_fuente:
+    epm: 'Definir primero consumidor, obligación o plazo operativo y zona horaria. | Primera observación en un rastreo
+      solo acota disponibilidad: clasificar como indeterminado si el intervalo cruza el plazo. | Ausencia de evidencia
+      no demuestra ni puntualidad ni retraso. | Un seguimiento prospectivo se declara aparte; no valida el histórico
+      retrospectivamente.'
+    chec: 'Definir primero consumidor, obligación o plazo operativo y zona horaria. | Primera observación en un
+      rastreo solo acota disponibilidad: clasificar como indeterminado si el intervalo cruza el plazo. | Ausencia
+      de evidencia no demuestra ni puntualidad ni retraso. | Un seguimiento prospectivo se declara aparte; no valida
+      el histórico retrospectivamente.'
+    sspd: 'Definir primero consumidor, obligación o plazo operativo y zona horaria. | Primera observación en un
+      rastreo solo acota disponibilidad: clasificar como indeterminado si el intervalo cruza el plazo. | Ausencia
+      de evidencia no demuestra ni puntualidad ni retraso. | Un seguimiento prospectivo se declara aparte; no valida
+      el histórico retrospectivamente.'
+    xm: Definir política de versión, unidad kWh, calendario horario, agente, mercado y sistema; evidencia pendiente.
 - id: MAP01
   nombre: Equivalencias de etiquetas verificadas
   dimension: consistencia
@@ -1133,23 +1498,24 @@ indicadores:
     operador: '>='
     valor: 100
     estado: propuesta_metodologica_no_aprobada
-    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un umbral
-      de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
+    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un
+      umbral de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
   severidad: error
   frecuencia: En cada ejecución y nueva versión de descarga; por mes de vigencia cuando corresponda.
   responsable: responsable_datos
   responsable_nominal: null
   tendencia:
-    agregacion: Por fuente y período de vigencia; conservar también el snapshot y versión de control.
     sentido: Mayor es mejor
+    agregacion: Por fuente, período, control y versión de descarga
   precondiciones:
   - Sin equivalencias usadas, denominador cero se reporta sin unidades, no como 100 %.
   - R06 mide representación original; MAP01 verifica que normalizar no cambie significado.
   aplicabilidad:
     epm: Validar por escrito equivalencias como variantes de 0-CS; no asumirlas solo por similitud.
     chec: Validar etiquetas de propiedad, clase y mercado; no fusionar códigos distintos por nombre parecido.
-    sspd: 'Grupos con variantes de escritura que requieren equivalencia documentada.'
-    xm: Pendiente de definir el adaptador específico de XM; no transferir literalmente la regla tarifaria.
+    sspd: Grupos con variantes de escritura que requieren equivalencia documentada.
+    xm: 'Adaptador XM: demanda horaria/mensual, versiones y agente/mercado/sistema; no aplicar literalmente reglas
+      tarifarias.'
   estado_medicion: provisional
   evidencia_requerida:
   - hash del snapshot
@@ -1159,30 +1525,43 @@ indicadores:
   naturaleza: control_complementario
   resultado:
     epm:
-      numerador: null
-      denominador: null
-      valor: null
-      estado: no_aplica
-      nota: 'El esquema EPM no contiene identificadores codificados con una columna nombre; la comprobación código-descripción no aplica a esta fuente.'
+      numerador: 2
+      denominador: 2
+      valor: 100.0
+      estado: provisional_interno
+      nota: Equivalencias aprobadas metodológicamente por el equipo del proyecto para normalización analítica; no
+        constituyen confirmación oficial de EPM.
     chec:
-      numerador: 25
-      denominador: 26
-      valor: 96.1538
-      estado: provisional
-      nota: 'Sin catalogo externo versionado: se evalua consistencia interna codigo-nombre.'
+      numerador: 3
+      denominador: 3
+      valor: 100.0
+      estado: provisional_interno
+      nota: Equivalencias código-nombre aprobadas metodológicamente para el proyecto; la aprobación no sustituye
+        un catálogo formal CHEC.
     sspd:
-      numerador: null
-      denominador: null
-      valor: null
-      estado: no_aplica
-      nota: 'No hay pares codigo-nombre que resolver; el conjunto no publica catalogos.'
+      numerador: 3
+      denominador: 3
+      valor: 100.0
+      estado: provisional_interno
+      nota: 3 grupos con variantes normalizados mediante decisión metodológica interna; no equivale a un catálogo
+        oficial del publicador.
     xm:
       numerador: 3
       denominador: 3
       valor: 100.0
       estado: provisional_interno
-      nota: 'El piloto conserva tres códigos fijos (agente, mercado y sistema); la aprobación es interna porque falta catálogo externo versionado.'
-    medido_utc: '2026-11-13T17:33:58Z'
+      nota: Códigos EPMC/EPMD/STR02 y unidad kWh normalizados para el piloto; decisión interna, no catálogo completo
+        del mercado XM.
+    medido_utc: '2026-11-14T01:12:06Z'
+  tipos_secundarios: []
+  precondiciones_por_fuente:
+    epm: Sin equivalencias usadas, denominador cero se reporta sin unidades, no como 100 %. | R06 mide representación
+      original; MAP01 verifica que normalizar no cambie significado.
+    chec: Sin equivalencias usadas, denominador cero se reporta sin unidades, no como 100 %. | R06 mide representación
+      original; MAP01 verifica que normalizar no cambie significado.
+    sspd: Sin equivalencias usadas, denominador cero se reporta sin unidades, no como 100 %. | R06 mide representación
+      original; MAP01 verifica que normalizar no cambie significado.
+    xm: Definir política de versión, unidad kWh, calendario horario, agente, mercado y sistema; evidencia pendiente.
 - id: DEF01
   nombre: Semántica de variables críticas documentada
   dimension: consistencia
@@ -1198,24 +1577,25 @@ indicadores:
     operador: '>='
     valor: 100
     estado: propuesta_metodologica_no_aprobada
-    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un umbral
-      de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
+    justificacion: Meta de conformidad total para las unidades aplicables; es una propuesta del proyecto, no un
+      umbral de DAMA, ISO o del publicador. Reportar tasa continua aunque no alcance la meta.
   severidad: advertencia
   frecuencia: En cada ejecución y nueva versión de descarga; por mes de vigencia cuando corresponda.
   responsable: responsable_datos
   responsable_nominal: null
   tendencia:
-    agregacion: Por fuente y período de vigencia; conservar también el snapshot y versión de control.
     sentido: Mayor es mejor
+    agregacion: Por fuente, período, control y versión de descarga
   precondiciones:
   - Indicador de preparación semántica del contrato; no es exactitud de los valores.
   - No excluir del denominador una variable solo porque su significado aún no se conoce.
   aplicabilidad:
     epm: Tipo de dato y cinco importes; distinguir COP/kWh y otros cargos según concepto.
     chec: CU, tarifa, componentes; confirmar tipomed, cureal y subcon si intervienen en controles.
-    sspd: 'Columnas con descripcion en el metadato oficial, sobre el total de columnas.'
-    xm: Pendiente de definir el adaptador específico de XM; no transferir literalmente la regla tarifaria.
-  estado_medicion: medido_parcial
+    sspd: Columnas con descripcion en el metadato oficial, sobre el total de columnas.
+    xm: 'Adaptador XM: demanda horaria/mensual, versiones y agente/mercado/sistema; no aplicar literalmente reglas
+      tarifarias.'
+  estado_medicion: provisional
   evidencia_requerida:
   - hash del snapshot
   - clave de contenido y variable de cada unidad evaluada
@@ -1224,30 +1604,43 @@ indicadores:
   naturaleza: control_complementario
   resultado:
     epm:
-      numerador: 18
-      denominador: 18
+      numerador: 12
+      denominador: 12
       valor: 100.0
-      estado: provisional
-      nota: 'Contraste reproducible con 6 filas de publicaciones oficiales de EPM (2020-01, 2020-12, 2021-04, 2021-12), 18 celdas monetarias, tolerancia 0.01 y prueba de control: 100.0 % de valores alterados rechazados. Es evidencia de exactitud para la muestra, no certifica todos los períodos.'
+      estado: provisional_interno
+      nota: Catálogo DEF01 documenta 12 de 12 columnas, incluyendo unidades condicionadas por tipodedato. La aprobación
+        es metodológica del proyecto y no sustituye confirmación de EPM.
     chec:
-      numerador: 756
-      denominador: 756
+      numerador: 24
+      denominador: 24
       valor: 100.0
-      estado: provisional
-      nota: 'Contraste con Superservicios - Costo Unitario Prestacion del Servicio (td8k-vhq9), publicador distinto, descargado 2026-10-28T21:59:07Z. Alcance: 756 celdas de 7 componentes en 6 combinaciones nivel-propiedad del ano 2023. Tolerancia 0,1 % relativa. Prueba de control: 99.6 % de los valores falsos inyectados fueron rechazados. No cubre cureal, subcon ni valor_tarifa, que no tienen contraparte en la referencia.'
+      estado: provisional_interno
+      nota: Catálogo operativo documenta las 24 columnas; unidades y siglas pendientes de confirmación formal del
+        publicador.
     sspd:
-      numerador: null
-      denominador: null
-      valor: null
-      estado: no_medible
-      nota: 'Sin segundo publicador que reporte el consumo de estas 91 empresas ZNI.'
+      numerador: 19
+      denominador: 19
+      valor: 100.0
+      estado: provisional_interno
+      nota: Catálogo operativo documenta las 19 variables críticas; las unidades y siglas son hipótesis metodológicas
+        porque el portal no publica definiciones completas.
     xm:
-      numerador: null
-      denominador: null
-      valor: null
-      estado: no_medible
-      nota: 'No existe aún referencia horaria/mensual equivalente para contraste documental.'
-    medido_utc: '2026-11-13T17:33:58Z'
+      numerador: 10
+      denominador: 10
+      valor: 100.0
+      estado: provisional_interno
+      nota: Catálogo operativo documenta las variables crudas y derivadas del piloto; unidad y política de versión
+        deben congelarse metodológicamente.
+    medido_utc: '2026-11-14T01:12:06Z'
+  tipos_secundarios: []
+  precondiciones_por_fuente:
+    epm: Indicador de preparación semántica del contrato; no es exactitud de los valores. | No excluir del denominador
+      una variable solo porque su significado aún no se conoce.
+    chec: Indicador de preparación semántica del contrato; no es exactitud de los valores. | No excluir del denominador
+      una variable solo porque su significado aún no se conoce.
+    sspd: Indicador de preparación semántica del contrato; no es exactitud de los valores. | No excluir del denominador
+      una variable solo porque su significado aún no se conoce.
+    xm: Definir política de versión, unidad kWh, calendario horario, agente, mercado y sistema; evidencia pendiente.
 - id: CART01
   nombre: Tasa de alertas de cartas I-MR
   dimension: razonabilidad
@@ -1270,8 +1663,8 @@ indicadores:
   responsable: responsable_metricas_anomalias
   responsable_nominal: null
   tendencia:
-    agregacion: Por fuente y período de vigencia; conservar también el snapshot y versión de control.
     sentido: Interpretar según contexto; menor no significa necesariamente mejor calidad.
+    agregacion: Por fuente, período, control y versión de descarga
   precondiciones:
   - Solo valores positivos, únicos y meses consecutivos; no interpolar para ocultar huecos.
   - Referencia base propuesta de 36 cambios y al menos 12 de vigilancia (49 observaciones).
@@ -1281,8 +1674,9 @@ indicadores:
   aplicabilidad:
     epm: Categorías EPM y variable monetaria; agrupar dependencia por categoría en evaluación.
     chec: Categorías CHEC y CU/tarifa por separado; no sumar como réplicas independientes.
-    sspd: 'Series empresa-estrato del censo mensual que alcanzan 49 meses.'
-    xm: Pendiente de definir el adaptador específico de XM; no transferir literalmente la regla tarifaria.
+    sspd: Series empresa-estrato del censo mensual que alcanzan 49 meses.
+    xm: 'Adaptador XM: demanda horaria/mensual, versiones y agente/mercado/sistema; no aplicar literalmente reglas
+      tarifarias.'
   estado_medicion: provisional
   evidencia_requerida:
   - hash del snapshot
@@ -1292,30 +1686,34 @@ indicadores:
   naturaleza: control_complementario
   resultado:
     epm:
-      numerador: 61
-      denominador: 61
-      valor: 100.0
-      estado: provisional_proxy
-      nota: 'Proxy de disponibilidad: períodos presentes frente a períodos esperados (61/61). No mide el plazo real de publicación; year/mes es vigencia, no fecha de disponibilidad.'
+      numerador: 113
+      denominador: 720
+      valor: 15.694444444444445
+      estado: provisional
+      nota: 'I-MR H3 corregida: limites 2,66*MRmedia y 3,267*MRmedia; 113/720 señales. Calendario fijo; exclusiones
+        por celda sin interpolar. No acredita exactitud ni aprobacion del umbral.'
     chec:
-      numerador: 225
-      denominador: 225
-      valor: 100.0
-      estado: provisional_proxy
-      nota: 'Proxy de disponibilidad: períodos presentes frente a períodos esperados (225/225). No mide el plazo real de publicación; year/mes es vigencia, no fecha de disponibilidad.'
+      numerador: 76
+      denominador: 3264
+      valor: 2.3284313725490198
+      estado: provisional
+      nota: 'I-MR H3 corregida: limites 2,66*MRmedia y 3,267*MRmedia; 76/3264 señales. Calendario fijo; exclusiones
+        por celda sin interpolar. No acredita exactitud ni aprobacion del umbral.'
     sspd:
-      numerador: 59
-      denominador: 65
-      valor: 90.76923076923077
-      estado: provisional_proxy
-      nota: 'Proxy de cobertura temporal: 59/65 períodos del alcance enero de 2017 a mayo de 2022; no mide fecha ni plazo de publicación.'
+      numerador: 292
+      denominador: 4442
+      valor: 6.573615488518685
+      estado: provisional
+      nota: 'I-MR H3 corregida: limites 2,66*MRmedia y 3,267*MRmedia; 292/4442 señales. Calendario fijo; exclusiones
+        por celda sin interpolar. No acredita exactitud ni aprobacion del umbral.'
     xm:
-      numerador: 60
-      denominador: 61
-      valor: 98.3607
-      estado: provisional_proxy
-      nota: 'Proxy de trazabilidad: 60/61 meses tienen fecha declarada; no mide cumplimiento de un plazo porque falta fecha límite independiente.'
-    medido_utc: '2026-11-13T17:33:58Z'
+      numerador: 0
+      denominador: 12
+      valor: 0.0
+      estado: provisional
+      nota: 'I-MR H3 corregida: limites 2,66*MRmedia y 3,267*MRmedia; 0/12 señales. Calendario fijo; exclusiones
+        por celda sin interpolar. No acredita exactitud ni aprobacion del umbral.'
+    medido_utc: '2026-11-14T01:12:06Z'
   parametros:
     cambios_referencia_base: 36
     min_cambios_vigilancia: 12
@@ -1325,8 +1723,23 @@ indicadores:
     - 48
     constante_I: 2.66
     constante_MR: 3.267
-  condicion_temporal: N observaciones consecutivas aportan N-1 cambios; con 48 de referencia y 12 de vigilancia se necesitan
-    61 observaciones.
+  condicion_temporal: N observaciones consecutivas aportan N-1 cambios; con 48 de referencia y 12 de vigilancia
+    se necesitan 61 observaciones.
+  tipos_secundarios: []
+  precondiciones_por_fuente:
+    epm: Solo valores positivos, únicos y meses consecutivos; no interpolar para ocultar huecos. | Referencia base
+      propuesta de 36 cambios y al menos 12 de vigilancia (49 observaciones). | Excluir cambios que tocan valores
+      en cuarentena; MR exige cambios válidos adyacentes. | Contrastar alertas sistémicas con contexto; no clasificarlas
+      automáticamente como error ni como cambio regulatorio confirmado.
+    chec: Solo valores positivos, únicos y meses consecutivos; no interpolar para ocultar huecos. | Referencia base
+      propuesta de 36 cambios y al menos 12 de vigilancia (49 observaciones). | Excluir cambios que tocan valores
+      en cuarentena; MR exige cambios válidos adyacentes. | Contrastar alertas sistémicas con contexto; no clasificarlas
+      automáticamente como error ni como cambio regulatorio confirmado.
+    sspd: Solo valores positivos, únicos y meses consecutivos; no interpolar para ocultar huecos. | Referencia base
+      propuesta de 36 cambios y al menos 12 de vigilancia (49 observaciones). | Excluir cambios que tocan valores
+      en cuarentena; MR exige cambios válidos adyacentes. | Contrastar alertas sistémicas con contexto; no clasificarlas
+      automáticamente como error ni como cambio regulatorio confirmado.
+    xm: Definir política de versión, unidad kWh, calendario horario, agente, mercado y sistema; evidencia pendiente.
 referencias:
 - titulo: DAMA-DMBOK2, cap. 13, tabla de dimensiones y sección 1.3.7
   paginas_impresas: 461-462, 467-468

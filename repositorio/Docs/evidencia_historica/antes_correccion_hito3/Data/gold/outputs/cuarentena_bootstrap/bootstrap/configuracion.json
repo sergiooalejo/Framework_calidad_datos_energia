@@ -1,0 +1,12 @@
+{
+  "semilla": 20261105,
+  "repeticiones": 2000,
+  "unidad": "serie dentro de categoría y fuente",
+  "grupos": 105,
+  "fuentes": [
+    "CHEC",
+    "EPM",
+    "SSPD",
+    "XM"
+  ]
+}

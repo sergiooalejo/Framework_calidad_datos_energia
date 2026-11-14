@@ -1,0 +1,216 @@
+{
+  "ejecucion_utc": "2026-11-14T01:12:19.830076+00:00",
+  "version_protocolo": "hito3-2",
+  "semillas": {
+    "bootstrap": 20261105,
+    "isolation_forest": 20261106
+  },
+  "entradas": [
+    {
+      "archivo": "Data/bronze/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv",
+      "sha256": "b974a37a171b9178476fbd2baba21470e8845076af105ef9c178e80690f09920"
+    },
+    {
+      "archivo": "Data/bronze/datos/Datos_seleccionados/CHEC/chec_c698-wqig.csv",
+      "sha256": "1f34f85ada431220a39b2bacf10a1dd09bd440b3e7eab61b61d53094508af08c"
+    },
+    {
+      "archivo": "Data/silver/datos/Datos_seleccionados/SSPD/sspd_ebby-cjha_mensual.csv",
+      "sha256": "cc92ffc4f89ecab6336304feace83e87b049a2e488e17d1e88c2851e784becbe"
+    },
+    {
+      "archivo": "Data/silver/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv",
+      "sha256": "fe51fd1cdcbd229ef66b44e81d5312d0f3537ce237873bf52d4a25397f48e975"
+    },
+    {
+      "archivo": "Data/bronze/datos/Datos_seleccionados/SSPD_PLAN/sspd_vfjy-6fka.csv",
+      "sha256": "2077441a4650b239c30d99d06c0466dd124d3e6aaa6d79aad5ede9b570c131b8"
+    }
+  ],
+  "categorias": [
+    {
+      "fuente": "CHEC",
+      "categorias": 138,
+      "series": 272,
+      "senales": 76,
+      "observaciones": 3264,
+      "tasa": 0.023284313725490197,
+      "ic95_inferior": 0.010948905109489052,
+      "ic95_superior": 0.0401529079057268,
+      "estado": "bootstrap_categorias",
+      "unidad_remuestreo": "categoria_completa",
+      "repeticiones": 2000,
+      "semilla": 20261105
+    },
+    {
+      "fuente": "EPM",
+      "categorias": 22,
+      "series": 61,
+      "senales": 113,
+      "observaciones": 720,
+      "tasa": 0.15694444444444444,
+      "ic95_inferior": 0.0969878268930523,
+      "ic95_superior": 0.2231522612488521,
+      "estado": "bootstrap_categorias",
+      "unidad_remuestreo": "categoria_completa",
+      "repeticiones": 2000,
+      "semilla": 20261105
+    },
+    {
+      "fuente": "SSPD",
+      "categorias": 157,
+      "series": 387,
+      "senales": 292,
+      "observaciones": 4442,
+      "tasa": 0.06573615488518686,
+      "ic95_inferior": 0.05267951626017253,
+      "ic95_superior": 0.07893636425332333,
+      "estado": "bootstrap_categorias",
+      "unidad_remuestreo": "categoria_completa",
+      "repeticiones": 2000,
+      "semilla": 20261105
+    },
+    {
+      "fuente": "SSPD_PLAN",
+      "categorias": 0,
+      "series": 0,
+      "senales": 0,
+      "observaciones": 0,
+      "tasa": null,
+      "ic95_inferior": null,
+      "ic95_superior": null,
+      "estado": "sin_observaciones",
+      "unidad_remuestreo": "categoria_completa",
+      "repeticiones": 2000,
+      "semilla": 20261105
+    },
+    {
+      "fuente": "XM",
+      "categorias": 1,
+      "series": 1,
+      "senales": 0,
+      "observaciones": 12,
+      "tasa": 0.0,
+      "ic95_inferior": null,
+      "ic95_superior": null,
+      "estado": "sin_IC_una_categoria",
+      "unidad_remuestreo": "categoria_completa",
+      "repeticiones": 2000,
+      "semilla": 20261105
+    }
+  ],
+  "modelos_if": 26,
+  "comparaciones_descargas": [
+    {
+      "fuente": "EPM",
+      "estado": "comparadas",
+      "primera": "Data\\bronze\\descargas_hito3\\EPM\\20261114T004927469739Z_289b1758",
+      "segunda": "Data\\bronze\\descargas_hito3\\EPM\\20261114T004930853643Z_5e98f9ab",
+      "sha256_primera": "7fb7b7acf01c68e03904c490c728d17cc9a4d62b13cb8b631c8867375dd7342f",
+      "sha256_segunda": "7fb7b7acf01c68e03904c490c728d17cc9a4d62b13cb8b631c8867375dd7342f",
+      "filas_primera": 3623,
+      "filas_segunda": 3623,
+      "mismos_registros": true,
+      "registros_retirados": 0,
+      "registros_agregados": 0,
+      "mismos_hallazgos_R01_R11": true,
+      "hallazgos_primera": 415,
+      "hallazgos_segunda": 415,
+      "mismas_cartas_y_claves": true,
+      "cartas_elegibles": 61
+    },
+    {
+      "fuente": "CHEC",
+      "estado": "comparadas",
+      "primera": "Data\\bronze\\descargas_hito3\\CHEC\\20261114T004934369064Z_080c2661",
+      "segunda": "Data\\bronze\\descargas_hito3\\CHEC\\20261114T005002787823Z_fc5f5735",
+      "sha256_primera": "415fba2472ee227c8d62d0a8dd3cbc6abaa828debd7848bfd862a69becc9ea26",
+      "sha256_segunda": "415fba2472ee227c8d62d0a8dd3cbc6abaa828debd7848bfd862a69becc9ea26",
+      "filas_primera": 40924,
+      "filas_segunda": 40924,
+      "mismos_registros": true,
+      "registros_retirados": 0,
+      "registros_agregados": 0,
+      "mismos_hallazgos_R01_R11": true,
+      "hallazgos_primera": 17571,
+      "hallazgos_segunda": 17571,
+      "mismas_cartas_y_claves": true,
+      "cartas_elegibles": 272
+    },
+    {
+      "fuente": "SSPD_PLAN",
+      "estado": "comparadas",
+      "primera": "Data\\bronze\\descargas_hito3\\SSPD_PLAN\\20261114T005029672016Z_a0cb974a",
+      "segunda": "Data\\bronze\\descargas_hito3\\SSPD_PLAN\\20261114T005035169111Z_2061fce5",
+      "sha256_primera": "2077441a4650b239c30d99d06c0466dd124d3e6aaa6d79aad5ede9b570c131b8",
+      "sha256_segunda": "2077441a4650b239c30d99d06c0466dd124d3e6aaa6d79aad5ede9b570c131b8",
+      "filas_primera": 5396,
+      "filas_segunda": 5396,
+      "mismos_registros": true,
+      "registros_retirados": 0,
+      "registros_agregados": 0,
+      "mismos_hallazgos_R01_R11": true,
+      "hallazgos_primera": 1321,
+      "hallazgos_segunda": 1321,
+      "mismas_cartas_y_claves": true,
+      "cartas_elegibles": 0
+    }
+  ],
+  "estado": "implementacion_corregida_con_pendientes_de_evidencia_externa",
+  "pendientes": [
+    "Oportunidad histórica: disponibilidad real y plazo esperado de EPM/CHEC",
+    "Catálogos y semántica externos; umbrales y responsables nominales",
+    "Integración y aprobación del anteproyecto oficial fuera del repositorio"
+  ],
+  "nota_hito4": "Los experimentos 4.2–4.4 conservan sus datos/configuración históricos. No se declaran recalculados con el protocolo H3 corregido.",
+  "codigo": {
+    "Code\\hito3\\__init__.py": "264badef172346a3d39a94a69539ad1f96bc45741eada9c3e1a65f874488af7f",
+    "Code\\hito3\\acquisition.py": "d2e68100b48ce1cbaad25a19f5ac3b28ffd8daa589dd296d58c2bcea20aa202d",
+    "Code\\hito3\\core.py": "c9ee9dfc2478b0d0eb29c5e02d98ac6252f5e9a6b0d65e132395d022f1ffaac5",
+    "Code\\hito3\\entry.py": "6519233f7f289775c9fa0e3937ede04ca9ca147fca90065f740934eef9b07937",
+    "Code\\hito3\\opportunity.py": "392adc27692da6861c0cffb6b2f23e6ccb026719ac8d821e507ea6c28d140931",
+    "Code\\hito3\\report.py": "3b82e5aa29490bb68f3c7e5f5c671f25e0827dcd5a8a662bc0ddf95c30866216",
+    "Code\\hito3\\run.py": "254847d14b8d350d1e7ef6249a99847c7c94d7de28c8e8d9328c6023fcbe9340",
+    "Code\\hito3\\test_hito3.py": "bc492f8829056219d787098e7771bdd35b902df97f0f0dda46a59d21d9e4e86d",
+    "Code\\hito3\\verify.py": "327ea1c9cc3989264b3be25d6747d774a5a3fe7b37efdc55f47eb1903b89de74"
+  },
+  "configuraciones_y_evidencia": {
+    "Data\\silver\\catalogos\\EPM\\epm_etiquetas.yaml": "2205cdec62159b6151b36378bcd0a5b2d91b709d977953eb92f50e1ca72cc0eb",
+    "Data\\silver\\verificaciones\\trazabilidad_filas\\03_hallazgos_trazabilidad.csv": "0385bfbc8ca4b50cd9f0edaf6f7dfd30e4a06197d23aaab1d99ae81154bc45fa",
+    "Data\\gold\\outputs\\calidad\\plantilla_oportunidad.csv": "0a222117faed3c69ac540a627197da2f299a7955010b2d610d45822ff8afd388",
+    "Data\\gold\\outputs\\calidad\\matriz_oe1.csv": "fbb9e94b3786549210190c892600518df4372b7b87c2379d8f61dc0621bfd50f",
+    "Data\\gold\\outputs\\calidad\\matriz_oe1.yaml": "984e4de716a0aface9f1d634376a55b275fc4fc4de80ee0992f8308ddb9c1211",
+    "Code\\Data_Acquisition_and_Understanding\\calidad\\medir_matriz_oe1.py": "4ecede3f9dca1cf5831ef5154f3da46312841fca1e65485fb6e42b74a3ce3995"
+  },
+  "salidas": {
+    "Data\\gold\\outputs\\hito3\\bootstrap_categorias.csv": "5c203a3aae02d164df7c7ae78e3376b8ddefaa01004ec894da39ddf7b14f2c88",
+    "Data\\gold\\outputs\\hito3\\CHEC\\cartas_detalle.csv": "c1b9a9fdaff85724a0eed6ad19a6d8a54ca521692f10958ef178cdc93a448a84",
+    "Data\\gold\\outputs\\hito3\\CHEC\\cartas_resumen.csv": "5aecde5c09aab4509438ec054082b155919eb6811c00e316fcecd3b16252cdc5",
+    "Data\\gold\\outputs\\hito3\\CHEC\\hallazgos.csv": "cf75fa6a8de3ec24f7b89d1372b2c2b15dc6bc7b5fb929c059fcb43e5ba00f83",
+    "Data\\gold\\outputs\\hito3\\CHEC\\perfil.json": "43f637518dee81a3938140b17b39f51b25209f7f0ad77f76430daa8455e790d9",
+    "Data\\gold\\outputs\\hito3\\comparacion_descargas.json": "b6ffdb3bcf6ed22d4c45811dc0b9d0f8cd4104530487f7b0d7399753dd1cbdf6",
+    "Data\\gold\\outputs\\hito3\\criterios_cierre.json": "1addf4f486521a6aa3e496764276874da0b5889efc6ad1f21dfbf0b42f065430",
+    "Data\\gold\\outputs\\hito3\\cuarentena_celdas_epm.csv": "ee0ee5deea35cacbd2cbe57d9dea593dd1bf277455c384ff0621e8e6fca00832",
+    "Data\\gold\\outputs\\hito3\\EPM\\cartas_detalle.csv": "8786e70d5e1cdf453582bd6537be175e4cbd7f81e302a6a7b9306b9fa738c582",
+    "Data\\gold\\outputs\\hito3\\EPM\\cartas_resumen.csv": "43f43ed198886983a5a567261e1cf2bbb15f7ff1aabb55462f4a7f8e8449a06b",
+    "Data\\gold\\outputs\\hito3\\EPM\\hallazgos.csv": "989bae21e87c9c82e59bbab709e50415a570b01442e32486c76ddf94622eee53",
+    "Data\\gold\\outputs\\hito3\\EPM\\perfil.json": "078859dcd0d41c95f07307a561c51cd91c14fcda93297c8986117005b398c08c",
+    "Data\\gold\\outputs\\hito3\\hallazgos_epm_h2_reclasificados.csv": "0656487ee54303d2e399fa2df6d3e7ff724065c32797ec4e2e92b85435e29714",
+    "Data\\gold\\outputs\\hito3\\inventario_categorias.csv": "cf630b9c747121e2d7e5ed95163d4fd9e7d964de829389aaacf497e8808596e8",
+    "Data\\gold\\outputs\\hito3\\isolation_forest.csv": "edc52fca71c075793bde0bcc648a86d72754832297695b3803f4c940d0794edb",
+    "Data\\gold\\outputs\\hito3\\isolation_forest_modelos.json": "6036701eab59b0b2ebd14a0e2f287dba1ac9e22ee50f240ed9c3fe7a5e642fd1",
+    "Data\\gold\\outputs\\hito3\\SSPD\\cartas_detalle.csv": "ab9ee578d1ac4c52996de08e7ec12a4e5e847a4da19e25c4e061ce4d463b09a5",
+    "Data\\gold\\outputs\\hito3\\SSPD\\cartas_resumen.csv": "5752fc217b5cc8d3603d30598e2f0beb82fb2ed8aabe7e8e3829658a63913608",
+    "Data\\gold\\outputs\\hito3\\SSPD\\hallazgos.csv": "3cf34dbacc812eedddc3d5264e0200be27d7699127f7f2520fffd5d2e6cf7dc1",
+    "Data\\gold\\outputs\\hito3\\SSPD\\perfil.json": "9a1997a05b828989e81cb701012c8bc102ca920f0317218f552223e6045b6c53",
+    "Data\\gold\\outputs\\hito3\\SSPD_PLAN\\cartas_detalle.csv": "2c9d2b340f85ad138c9a299399d337e20183ef60d7cd729f3b71f8cd698ea496",
+    "Data\\gold\\outputs\\hito3\\SSPD_PLAN\\cartas_resumen.csv": "10a86ad89acc12b1bdb87c90fe4f003c4098176c4dc76873d8e4cf1b43627dfe",
+    "Data\\gold\\outputs\\hito3\\SSPD_PLAN\\hallazgos.csv": "2a1e766e8c2da3f4544cfe32037bf9ab0cd471d5815126af8ccab66ef68b1b1b",
+    "Data\\gold\\outputs\\hito3\\SSPD_PLAN\\matriz_oe1.csv": "37bbd58327895beb4c4ef8da92986fe02d947a353463bf25689c5da20a80cf64",
+    "Data\\gold\\outputs\\hito3\\SSPD_PLAN\\perfil.json": "8ba6c0735341172b789f19dd7b4834c1914f2e2823e12f6e7d5767e88967cb02",
+    "Data\\gold\\outputs\\hito3\\XM\\cartas_detalle.csv": "05dd23fe43b97601d8fd1e0dabde7f03e1ccbb6b997e397179d001d13c7d2ccd",
+    "Data\\gold\\outputs\\hito3\\XM\\cartas_resumen.csv": "c1555abf4776e8f00e161f42f7e8e8199ccea90498db32cec2c90b6797d0c207",
+    "Data\\gold\\outputs\\hito3\\XM\\hallazgos.csv": "65ca1eb73f73fb7c4529f36d2bcf6bf9a062dce923e137fefdce3eb5fe03ca3c",
+    "Data\\gold\\outputs\\hito3\\XM\\perfil.json": "12076ce043ded596d01d7842620b8f52945d6de654ea672c4823881c20fdc92f"
+  }
+}

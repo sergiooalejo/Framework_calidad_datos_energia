@@ -1,0 +1,192 @@
+Alejandría - Resolución 12 de 2020 CREG
+Gestor Normativo Alejandría 2.0
+Inicio
+Compilaciones
+Este texto que se agrega aquí es como el mensaje en caso
+de que el video no funcione sale lo que esté aquí escrito...
+Resoluciones originales
+Video no funciona...
+Proyectos de resolución
+Video no funciona...
+Conceptos
+Video no funciona...
+Circulares
+Video no funciona...
+Compilación jurídica
+Video no funciona...
+Menú
+Inicio
+Compilaciones
+Resoluciones originales
+Proyectos de resolución
+Conceptos
+Circulares
+Compilación jurídica
+keyboard_backspace
+Inicio
+Documento
+keyboard_backspace
+Inicio
+Documento
+Resolución 12 de 2020 CREG
+Ocultar anotaciones
+DESCARGAS
+BUSCAR
+search
+ÍNDICE
+developer_guide
+MEMORIA
+memory
+DESARROLLOS
+attachment
+MODIFICACIONES
+quiz
+CONCORDANCIAS
+quiz
+NOTIFICACIONES
+notifications_active
+ACTOS DE TRÁMITE
+quiz
+RESOLUCIÓN 12 DE 2020
+(febrero 6)
+Diario Oficial No. 51.230 de 17 de febrero 2020
+COMISIÓN DE REGULACIÓN DE ENERGÍA Y GAS
+Por la cual se establece una opción tarifaria para definir los costos máximos de prestación del servicio que podrán ser trasladados a los usuarios regulados del servicio público de energía eléctrica en el Sistema Interconectado Nacional.
+Resumen de Notas de Vigencia
+Concordancias CREG
+Doctrina Concordante
+LA COMISIÓN DE REGULACIÓN DE ENERGÍA Y GAS,
+en ejercicio de sus atribuciones constitucionales y legales, en especial las conferidas por las Leyes 142 y 143 de 1994, y en desarrollo de los Decretos números 1524, 2253 de 1994, 2696 de 2004 y 1260 de 2013.
+CONSIDERANDO QUE:
+El Artículo 73.11 de la Ley 142 de 1994, atribuyó a la Comisión de Regulación de Energía y Gas, la competencia para establecer las fórmulas para la fijación de las tarifas del servicio público domiciliario de energía eléctrica.
+La Ley 143 de 1994, artículo 23, asignó a la Comisión la función de aprobar las fórmulas tarifarias y las metodologías para el cálculo de las tarifas aplicables a los usuarios regulados del servicio de energía eléctrica.
+Según lo dispuesto en los artículos 87 de la Ley 142 de 1994 y 44 de la Ley 143 del mismo año, el régimen tarifario estará orientado por los criterios de eficiencia económica, suficiencia financiera, neutralidad, solidaridad y redistribución del ingreso, simplicidad y transparencia.
+Según lo dispuesto por el artículo 88.1 de la Ley 142 de 1994, la Comisión Reguladora podrá establecer topes máximos y mínimos tarifarios, de obligatorio cumplimiento por parte de las empresas.
+Según el artículo 42 de la Ley 143 de 1994 “las ventas de electricidad a usuarios finales regulados serán retribuidas, sin excepción, por medio de tarifas sujetas a regulación”.
+Según lo dispone la Ley 142 de 1994, artículo 90, las Comisiones de Regulación al definir sus tarifas pueden establecer varias alternativas y siempre podrán diseñar y hacer públicas diversas opciones tarifarias que tomen en cuenta diseños óptimos de tarifas.
+El artículo 46 de la Ley 143 de 1994 establece que la Comisión de Regulación de Energía y Gas podrá diseñar y hacer públicas diversas opciones tarifarias.
+Mediante la Resolución CREG 119 de 2007 se aprobó la fórmula general que permite a los comercializadores de electricidad establecer los costos de prestación del servicio a usuarios regulados en el Sistema Interconectado Nacional.
+La Resolución CREG 168 de 2008 estableció una opción tarifaria, la cual permitía moderar incrementos abruptos en la tarifa mediante la acumulación de saldos que son pagados por el usuario con posterioridad, a lo largo de un mayor período de tiempo.
+Mediante la Resolución CREG 057 de 2014 se definió un nuevo plazo para la aplicación de la opción tarifaria definida en la Resolución CREG 168 de 2008 el cual terminaba en mayo de 2016.
+En la Resolución CREG 158 de 2015 se amplió el plazo definido en la Resolución CREG 057 de 2014 en doce meses los cuales finalizan en mayo de 2017.
+Mediante la Resolución CREG 044 de 2017 se amplió el plazo de aplicación de la opción tarifaria definida en la Resolución CREG 168 de 2008, período que finalizó el 14 de mayo de 2019.
+Dada la modificación de los cargos de distribución como consecuencia de la aprobación de la nueva metodología de remuneración de la actividad de distribución, Resolución CREG 015 de 2018; se prevé que podrían darse aumentos relevantes en la tarifa al usuario final, por lo que se considera pertinente autorizar a las empresas a adoptar una opción tarifaria que permita reducir el impacto para los usuarios de esos posibles incrementos.
+Conforme a lo dispuesto por el artículo 8o del Código de Procedimiento Administrativo y de lo Contencioso Administrativo y el artículo 32 de la Resolución CREG 039 de 2017, la Comisión publicó, mediante la Resolución CREG 192 de 2019, el proyecto de resolución, por la cual se establece una opción tarifaria para definir los costos máximos de prestación del servicio que podrán ser trasladados a los usuarios regulados del servicio público de energía eléctrica en el Sistema Interconectado Nacional.
+Durante el período de consulta, mediante comunicaciones con Radicados CREG E-2020-000103, E-2020-000113, E-2020-000123, E-2020-000144 y E-2020-000147 se recibieron comentarios de ENEL CODENSA S. A. E.S.P., ASOCODIS, VATIA S. A. E.S.P., Comité Asesor de Comercialización y Compañía Energética de Occidente S. A. E.S.P. respectivamente, los cuales fueron analizados y considerados para la elaboración del texto de la presente resolución y cuyas respuestas se encuentran en el Documento CREG 008 de 2020.
+La Comisión de Regulación de Energía y Gas, en su Sesión número 975 del 6 de febrero de 2020, acordó expedir esta resolución.
+RESUELVE:
+ARTÍCULO 1o. OBJETO. Esta resolución tiene por objeto ofrecer una opción tarifaria que podrán aplicar los comercializadores minoristas en el Sistema Interconectado Nacional para calcular la tarifa del servicio público de electricidad a los usuarios finales regulados.
+Concordancias
+ARTÍCULO 2o. OPCIÓN TARIFARIA Y REQUISITOS PARA ACOGERSE A LA MISMA. Las empresas prestadoras del servicio público domiciliario de energía eléctrica, podrán continuar calculando la tarifa aplicable a los usuarios regulados según la fórmula tarifaria general establecida mediante la Resolución CREG 119 de 2007 o aquella que la modifique o sustituya u optar por calcular dicha tarifa de conformidad con las reglas que se definen en esta resolución.
+Para acogerse a la opción tarifaria, las empresas deberán cumplir los siguientes requisitos:
+1. La empresa deberá informar a la Comisión de Regulación de Energía y Gas, CREG, y a la Superintendencia de Servicios Públicos Domiciliarios, SSPD, mediante comunicación suscrita por el Representante Legal, la decisión de acogerse a la opción tarifaria en los términos previstos en esta resolución.
+2. La opción tarifaria de que trata esta resolución solamente podrá ser aplicada por la respectiva empresa una vez se dé cumplimiento a lo dispuesto en el artículo 125 de la Ley 142 de 1994 en relación con la actualización del Costo Unitario de Prestación del Servicio, CU, y la obligación de publicar la tarifa que resulte de aplicar la opción tarifaria. Esta publicación deberá ser remitida a la SSPD y a la CREG.
+3. El comercializador minorista que haya escogido la opción tarifaria definida en la presente resolución podrá definir su tarifa nuevamente a partir del CU. La aplicación de la tarifa será inmediata una vez se dé cumplimiento a lo dispuesto en el artículo 125 de la Ley 142 de 1994 y se haya informado a la CREG, con copia a la SSPD.
+4. En este último caso, los saldos acumulados que existiesen no podrán ser trasladados en la tarifa al usuario final.
+5. Para calcular el CU resultante de la opción tarifaria, el Comercializador i del Mercado de Comercialización j utilizará las siguientes expresiones:
+Donde:
+m: Mes para el cual se calcula el CU.
+PV: <Variable modificada por el artículo 2 de la Resolución 101-029 de 2023. El nuevo texto es el siguiente:> Porcentaje de Variación Mensual que se aplicará por el Comercializador Minorista sobre el CU. Tendrá un valor mínimo de 0,6%. Se podrán definir porcentajes mayores siempre y cuando solo tengan una cifra decimal.
+Para el cálculo de las tarifas correspondientes a los meses desde diciembre de 2023 hasta noviembre de 2024, el valor máximo de la variable PV es el 90% de la variación mensual del Índice de Precios al Consumidor (IPC) del mes anterior al del cálculo.
+Notas de Vigencia
+Legislación Anterior
+Saldo Acumulado, expresado en $, del Comercializador i para el mes m en el nivel de tensión n del mercado de comercialización j, por las diferencias entre el CU calculado y el CU aplicado A la fecha de entrada en vigencia de la presente resolución dicho valor será cero.
+Promedio de ventas de energía a usuarios regulados en el nivel de tensión n, de los últimos doce meses disponibles en el SUI y efectuadas por el Comercializador i, en el mercado de comercialización j, expresado en kWh, a quienes se les aplica la opción tarifaria.
+Componente variable del CU, expresado en $/kWh, calculado para el mes m, conforme la resolución vigente, para los usuarios conectados en el nivel de tensión n del Comercializador Minorista i, en el Mercado de Comercialización j.
+Componente variable del CU, expresado en $/kWh, aplicado en el mes m-1, para el nivel de tensión n del Comercializador Minorista i, en el Mercado de Comercialización j.
+rENm: <Variable modificada por el artículo 1 de la Resolución 101-029 de 2023. El nuevo texto es el siguiente:> Tasa de interés que se le reconoce al Comercializador Minorista por los saldos acumulados en la variable SAn,m,i,j. Esta variable, igual para todos los usuarios del comercializador i del mercado de comercialización j, es la resultante de la tasa mensual ponderada de los créditos obtenidos por este comercializador, con base en el monto obtenido para financiar los saldos de la opción tarifaria
+La tasa de interés ponderada de los créditos para financiar los saldos de la opción tarifaria debe ser menor o igual al cálculo del promedio de las tasas de interés preferencial o corporativo, de los créditos comerciales vigentes de las últimas veintiséis semanas previas al del cálculo de la tarifa a aplicar.
+La fuente de información para las tasas de interés preferencial o corporativo será la publicada por el Banco de la República.
+Con:
+rEMm: Tasa mensual a aplicar en el mes m.
+rEAm: Tasa efectiva anual para calcular la tasa mensual a aplicar en el mes m.
+Notas de Vigencia
+Legislación Anterior
+Notas de Vigencia
+Legislación Anterior
+6. Al momento de acogerse a la opción tarifaria el Comercializador Minorista deberá indicar el Porcentaje de Variación Mensual (PV) a aplicar y la tasa inicial a aplicar. Cualquier modificación en la aplicación de la opción tarifaria deberá ser informada a la CREG y a la SSPD.
+7. El comercializador minorista que se haya acogido a la opción tarifaria deberá mantener actualizada la información relativa a los saldos acumulados y el histórico de los valores que se trasladan a la tarifa del usuario final.
+8. Además de lo establecido en la regulación vigente en relación con la información que debe contener la factura, el comercializador minorista deberá incluir el costo de prestación obtenido con la opción tarifaria y la tarifa que corresponda.
+9. El comercializador minorista deberá permitir que los usuarios puedan escoger entre la aplicación del y . Para tal fin, antes de iniciar con la primera aplicación de la opción tarifaria, el comercializador deberá:
+a) Publicar en un periódico de circulación regional, en su página web y en volante anexo al recibo del servicio, información relacionada con la aplicación de la opción tarifaria con el fin de que el usuario pueda decidir si su facturación debe ser afectada por la opción tarifaria o no.
+b) Disponer, en la página web del comercializador minorista, un espacio para que, durante el mes siguiente a la fecha del último aviso de los relacionados en el literal a), cada usuario pueda escoger entre la aplicación de la opción tarifaria, o la aplicación de las tarifas calculadas con base en la variable .
+De manera general, el comercializador minorista considerará que la totalidad de los usuarios escogen la opción de aplicación de la opción tarifaria y excluirá aquellos que hayan escogido, en el término previsto para tal fin, la aplicación del costo unitario sin opción tarifaria.
+10. Una vez el comercializador minorista determine el costo máximo trasladable de prestación del servicio de electricidad con base en la opción tarifaria escogida por el usuario, aplicará las disposiciones vigentes sobre subsidios y contribuciones para efectos de determinar la tarifa.
+Concordancias
+Doctrina Concordante
+ARTÍCULO 3o. TRANSICIÓN. Los requisitos de los numerales 9 y 10 del artículo 2o serán de obligatoria aplicación para aquellas opciones tarifarias que inicien a partir del 1 de enero de 2022.
+ARTÍCULO 4o. La presente resolución rige a partir de la fecha de su publicación en el Diario Oficial y deroga las normas que le sean contrarias.
+Publíquese y cúmplase.
+Dada en Bogotá, D. C., a 6 de febrero de 2020.
+El Presidente,
+Diego Mesa Puyo,
+Viceministro de Energía Delegado de la Ministra de Minas y Energía.
+El Director Ejecutivo,
+Jorge Alberto Valencia Marín.
+Gestor Normativo Alejandría 2.0
+ISBN : 978-958-98069-4-4
+Última actualización:
+Control de versiones
+Créditos y reserva de derechos de
+autor
+Comisión de Regulación de Energía y Gas CREG -
+DRA © 2019 a 2024
+Comisión de Regulación de Energía y Gas - CREG
+Sede principal
+Av. Calle 116 No. 7-15 Edificio Cusezar Int. 2 Oficina 901,
+Bogotá
+Código postal: 110111
+Horario de Atención: Lunes a Viernes, 8:00 a.m. a 1:00 p.m. - 2:00
+p.m. a 5:00 p.m.
+Teléfono celular: 3208473254
+Teléfono conmutador: +57 (601) 6032020
+Línea gratuita: 01 8000 512734
+Línea anticorrupción: +57 (601) 6032020 Ext. 444
+Correo institucional: creg@creg.gov.co
+Correo de notificaciones judiciales: notificaciones.judiciales@creg.gov.co
+Correo de notificaciones administrativas: oficiales.creg@creg.gov.co
+Correo de seguridad digital: seguridaddigital@creg.gov.co
+@comisioncreg
+Comisión CREG
+@ComisionCREG
+Comisión de Regulación de Energía y Gas
+Mapa del sitio
+Política de privacidad y tratamiento de datos
+Términos y condiciones
+Política de seguridad de la información
+Política de derechos de autor y/o autorización de
+uso sobre los contenidos
+Certificado de Accesibilidad Web
+Inicio
+MÓDULOS
+Novedades
+Búsqueda avanzada
+Respuestas automáticas
+Compilaciones
+Resoluciones originales
+Proyectos de resolución
+Conceptos
+Circulares
+Compilación jurídica
+Notificaciones
+Actos administrativos especiales
+Preguntas frecuentes
+×
+Resolución 12 de 2020 CREG
+menu_book
+Documento .html
+Consulte el documento para más información...
+Consultarnavigate_next
+menu_book
+Documento Word de Microsoft
+Consulte el documento para más información...
+Consultarnavigate_next
+menu_book
+Documento PDF
+Consulte el documento para más información...
+Consultarnavigate_next
+Contraste | Modo oscuro
+Reducir letra (16px)
+Aumentar letra (16px)
+Centro de relevo
+Volver arriba

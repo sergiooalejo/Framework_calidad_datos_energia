@@ -39,13 +39,13 @@ entradas:
     estado: aprobado_internamente
     observacion: Equivalencia operativa aprobada por el proyecto; no confirmada oficialmente por EPM.
   - campo: tipodedato
-    etiqueta_original: Costo compra: Gm, i
-    etiqueta_canonica_candidata: Costo compra: Gm,i
+    etiqueta_original: 'Costo compra: Gm, i'
+    etiqueta_canonica_candidata: 'Costo compra: Gm,i'
     estado: aprobado_internamente
     observacion: Equivalencia ortográfica aprobada por el proyecto; conservar ambas en el archivo original.
   - campo: tipodedato
-    etiqueta_original: Costo compra: Gm,i
-    etiqueta_canonica_candidata: Costo compra: Gm,i
+    etiqueta_original: 'Costo compra: Gm,i'
+    etiqueta_canonica_candidata: 'Costo compra: Gm,i'
     estado: aprobado_internamente
     observacion: Forma de referencia para normalización textual.
 pendiente:

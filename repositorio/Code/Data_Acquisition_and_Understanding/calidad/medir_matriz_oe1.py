@@ -638,49 +638,45 @@ def estado_control(*ds):
 
 
 def escribir_yaml(med, sello):
-    txt = MATRIZ_YAML.read_text(encoding="utf-8")
-    porf = [(c["clave"], med[c["fuente"]][0]) for c in FUENTES if c["fuente"] in med]
-
-    def bloque(control):
-        out = ["  resultado:"]
-        for cfg_clave, m in porf:
-            d = m[control]
-            out.append(f"    {cfg_clave}:")
-            out.append(f"      numerador: {'null' if d['numerador'] is None else d['numerador']}")
-            out.append(f"      denominador: {'null' if d['denominador'] is None else d['denominador']}")
-            out.append(f"      valor: {'null' if d['valor'] is None else d['valor']}")
-            out.append(f"      estado: {d['estado']}")
-            if d["nota"]:
-                # Las notas llevan dos puntos; hay que entrecomillarlas o el escalar se rompe.
-                out.append("      nota: '{}'".format(d["nota"].replace("'", "''")))
-        out.append(f"    medido_utc: '{sello}'")
-        return "\n".join(out) + "\n"
-
-    # Un bloque `resultado` y un `estado_medicion` por control, en el orden de ORDEN.
-    pendientes = list(ORDEN)
-
-    def sub_resultado(_m):
-        return bloque(pendientes.pop(0))
-
-    txt = re.sub(r"^  resultado:\n(?:[ ]{4,}.*\n)*", sub_resultado, txt, flags=re.M)
-
-    pendientes_est = list(ORDEN)
-
-    def sub_estado(_m):
-        c = pendientes_est.pop(0)
-        return f"  estado_medicion: {estado_control(*[m[c] for _, m in porf])}"
-
-    txt = re.sub(r"^  estado_medicion: .*$", sub_estado, txt, flags=re.M)
-
-    txt = re.sub(r"^estado: .*$",
-                 "estado: Especificacion documental con linea base medida sobre los CSV "
-                 "conservados; controles con evidencia externa pendiente siguen sin medir.",
-                 txt, flags=re.M)
-    MATRIZ_YAML.write_text(txt, encoding="utf-8")
+    # Identificar por id, nunca por posición de un bloque de texto: la versión
+    # heredada tenía 16 fichas y desplazaba los resultados al faltar R02/R03/R05.
+    import yaml
+    document = yaml.safe_load(MATRIZ_YAML.read_text(encoding='utf-8'))
+    existing = {r['id']: r for r in document.get('indicadores', [])}
+    with MATRIZ_CSV.open(encoding='utf-8-sig', newline='') as stream:
+        specification = list(csv.DictReader(stream))
+    by_id_source = {(r['control'], r['fuente']):r for r in specification}
+    if len(by_id_source) != len(specification):
+        raise ValueError('Indicadores duplicados en la especificación CSV')
+    indicators = []
+    for control in ORDEN:
+        row = by_id_source[(control, 'EPM')]
+        indicator = existing.get(control, {'id':control})
+        indicator.update(nombre=row['nombre'], dimension=row['dimension'], tipo_principal=row['tipo_principal'],
+            tipos_secundarios=[v for v in row['tipos_secundarios'].split('|') if v],
+            unidad_observacion=row['unidad_observacion'],
+            metrica={key:row[key] for key in ('poblacion','numerador','denominador','formula','unidad')},
+            umbral=dict(operador=row['umbral_operador'] or None,
+                        valor=yaml.safe_load(row['umbral_valor']) if row['umbral_valor'] else None,
+                        estado=row['estado_umbral'], justificacion=row['justificacion_umbral']),
+            severidad=row['severidad'], frecuencia=row['frecuencia'], responsable=row['responsable'],
+            responsable_nominal=indicator.get('responsable_nominal'),
+            tendencia=dict(sentido=row['tendencia'],agregacion='Por fuente, período, control y versión de descarga'))
+        indicator['aplicabilidad'] = {cfg['clave']:by_id_source[(control,cfg['fuente'])]['aplicacion_fuente'] for cfg in FUENTES}
+        indicator['precondiciones_por_fuente'] = {cfg['clave']:by_id_source[(control,cfg['fuente'])]['precondiciones'] for cfg in FUENTES}
+        indicator['estado_medicion'] = estado_control(*(med[cfg['fuente']][0][control] for cfg in FUENTES))
+        indicator['resultado'] = {cfg['clave']:dict(med[cfg['fuente']][0][control]) for cfg in FUENTES}
+        indicator['resultado']['medido_utc'] = sello
+        indicators.append(indicator)
+    document['indicadores'] = indicators
+    document['estado'] = 'Hito 3 corregido: 19 controles por id; evidencia externa y aprobación pendientes.'
+    MATRIZ_YAML.write_text(yaml.safe_dump(document, allow_unicode=True, sort_keys=False, width=110), encoding='utf-8')
 
 
 def escribir_md(med, sello, proc):
     txt = MATRIZ_MD.read_text(encoding="utf-8")
+    txt = txt.replace('**Estado:** especificación documental elaborada. No se presentan resultados de medición ni se declara cumplida la evaluación de las ocho dimensiones.',
+        '**Estado:** especificación y mediciones por fuente actualizadas con el protocolo corregido del Hito 3. Evidencia externa y aprobación pendientes; no se declara el cierre de las ocho dimensiones. Ver Docs/VERIFICACION_HITO3.md.')
     epm, chec = med["EPM"][0], med["CHEC"][0]
     xe, xc = med["EPM"][1], med["CHEC"][1]
     nombres = [c["fuente"] for c in FUENTES if c["fuente"] in med]
@@ -853,6 +849,37 @@ def main():
         proc[cfg["fuente"]] = dict(
             archivo=str(cfg["archivo"].relative_to(RAIZ)).replace("\\", "/"),
             filas=med[cfg["fuente"]][1]["filas"], sha256=sha256(cfg["archivo"]))
+
+    # Protocolo vigente H3: una sola definición de CART01 y R12 para las cuatro
+    # fuentes. Los cálculos preliminares anteriores quedan como antecedente.
+    sys.path.insert(0, str(RAIZ))
+    from Code.hito3.opportunity import measure as medir_oportunidad
+    for cfg in FUENTES:
+        source = cfg['fuente']
+        controls = med[source][0]
+        detail_path = RAIZ / f'Data/gold/outputs/hito3/{source}/cartas_detalle.csv'
+        profile_path = detail_path.parent / 'perfil.json'
+        if detail_path.exists() and profile_path.exists():
+            perfil = json.loads(profile_path.read_text(encoding='utf-8'))
+            if perfil['sha256'] != sha256(RAIZ / perfil['archivo']):
+                raise ValueError(f'Cartas H3 desactualizadas para {source}; ejecutar hito3')
+            detail = [r for r in csv.DictReader(detail_path.open(encoding='utf-8')) if r['fase'] == 'vigilancia']
+            valid = [r for r in detail if r.get('senal_imr') != '']
+            hits = sum(int(r['senal_imr']) for r in valid)
+            n = len(valid)
+            controls['CART01'] = dict(numerador=hits if n else None, denominador=n or None,
+                valor=100*hits/n if n else None, estado='provisional' if n else 'no_medible',
+                nota=f'I-MR H3 corregida: limites 2,66*MRmedia y 3,267*MRmedia; {hits}/{n} señales. '
+                     'Calendario fijo; exclusiones por celda sin interpolar. No acredita exactitud ni aprobacion del umbral.')
+            eligible = [r for r in detail if numero(r.get('valor_actual')) is not None and numero(r.get('mediana_nivel_referencia')) is not None]
+            extreme = sum(abs(float(r['valor_actual'])) > FACTOR_R12*float(r['mediana_nivel_referencia']) for r in eligible)
+            n = len(eligible)
+            controls['R12'] = dict(numerador=extreme if n else None, denominador=n or None,
+                valor=100*extreme/n if n else None, estado='provisional' if n else 'no_medible',
+                nota=f'Advertencia: factor {FACTOR_R12} sobre mediana de niveles de referencia previa; '
+                     f'{extreme}/{n} niveles de vigilancia. No usa vigilancia para estimar mediana ni confirma error.')
+        # No se publica un porcentaje de cobertura como si fuera oportunidad.
+        controls['OPO01'], _ = medir_oportunidad(cfg['dataset_id'])
 
     escribir_csv(med, sello)
     escribir_yaml(med, sello)

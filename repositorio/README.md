@@ -1,5 +1,56 @@
 # Calidad de datos del sector energético colombiano
 
+## Hito 4 corregido · CV temporal y scorecard
+
+La comparación vigente se implementa en `Code/hito4/` y conserva el entrenamiento,
+la validación cruzada y los umbrales dentro de referencia. La vigilancia y las
+inyecciones se evalúan después, sin reajustar los umbrales. LOF, IF y KNN reciben
+la misma geometría deduplicada de entrenamiento; se auditan los casos no interpretables.
+
+```powershell
+python pipeline.py ejecutar hito4
+python pipeline.py ejecutar hito4-verificar
+python pipeline.py pruebas
+```
+
+[Verificación y pendientes](Docs/VERIFICACION_HITO4.md),
+[resultados preliminares](Docs/RESULTADOS_HITO4.md),
+[scorecard por indicador](Data/gold/outputs/hito4/scorecard_indicadores.csv) y
+[figuras PNG/SVG incluidas](Data/gold/outputs/hito4/figuras/).
+El tablero prioriza estas salidas y distingue medición, umbral propuesto y aprobación.
+`metricas` ejecuta ahora el protocolo vigente; `metricas-historicas` conserva el antecedente.
+
+El contraste regulatorio incorpora seis documentos oficiales con fecha y hash,
+la calibración exploratoria de X y el cotejo de componentes EPM. No se atribuye
+causalidad a la mera coincidencia mensual. Las aprobaciones, evidencia externa
+pendiente y precisión empírica del Hito 6 permanecen explícitas.
+
+## Hito 3 corregido · 13 de noviembre de 2026
+
+La implementación vigente del Hito 3 está en `Code/hito3/`. Corrige I-MR,
+cuarentena por celda, bootstrap por categorías completas y R12 como Advertencia;
+incluye dos capturas reales por API de EPM, CHEC y `vfjy-6fka`, y la réplica
+transversal de esta última. Desde esta carpeta:
+
+```powershell
+python pipeline.py ejecutar hito3
+python -B -m unittest discover -s Code/hito3 -p "test_*.py" -v
+```
+
+[Verificación y pendientes del Hito 3](Docs/VERIFICACION_HITO3.md),
+[texto para actualizar el anteproyecto](Docs/ACTUALIZACION_ANTEPROYECTO_HITO3.md),
+[fichas vigentes](Docs/FICHAS_FUENTES_HITO3.md),
+[diferencias entre fuentes](Docs/DIFERENCIAS_FUENTES_HITO3.md) y
+[notebook de réplica](HITO3_REPLICACION.ipynb).
+Para obtener dos capturas adicionales sin sustituir las existentes:
+`python pipeline.py ejecutar hito3-descargar`.
+
+**El cierre integral sigue pendiente de evidencia externa:** disponibilidad/plazo
+para oportunidad, catálogos/semántica autorizados, aprobación de umbrales y
+responsables, e integración del texto en el anteproyecto oficial. Los experimentos
+4.2–4.4 conservan su protocolo histórico y no se declaran recalculados con este Hito 3.
+Las secciones siguientes describen también antecedentes de la consolidación.
+
 Proyecto de ciencia de datos consolidado al **9 de noviembre de 2026**, con código,
 datos locales, experimentos, resultados y pruebas de todas las actividades 3.1–3.7 y
 4.1–4.6. Esta carpeta se puede copiar y ejecutar por separado: no necesita las carpetas
@@ -9,6 +60,30 @@ Los Hitos 3 y 4 cuentan con una línea base técnica. La aprobación metodológi
 continúa pendiente. El tablero y el contenedor están implementados; la validación externa
 del Hito 6 y las aprobaciones académicas siguen pendientes.
 
+## Organizaci?n vigente de los Hitos 5 y 6
+
+- `Code/hito5/`: tablero (`app_streamlit.py`), CLI (`run.py`) y paquete
+  reutilizable (`framework_calidad/`).
+- `Code/hito6/`: generador de la muestra de validaci?n (`generar_muestra_alertas.py`)
+  y entrada de ejecuci?n (`run.py`). El Hito 6 sigue parcialmente implementado.
+- `app_streamlit.py` y `pipeline.py` en la ra?z conservan los comandos anteriores;
+  delegan en Hito 5. `Code/framework_calidad/` mantiene los imports anteriores.
+- Dockerfile y Compose permanecen en la ra?z como configuraci?n de despliegue.
+  Los datos y documentos siguen en `Data/` y `Docs/`, como en los Hitos 3 y 4.
+
+Desde `repositorio/`:
+
+```powershell
+python -m Code.hito5.run listar
+python -m streamlit run Code/hito5/app_streamlit.py
+python -m Code.hito6.run --help
+python pipeline.py ejecutar muestra-h6
+```
+
+La ?ltima orden genera una muestra nueva y su manifiesto; conserva la muestra anterior.
+Ver [organizaci?n del Hito 5](Code/hito5/README.md) y
+[organizaci?n del Hito 6](Code/hito6/README.md).
+
 ## Estructura
 
 ```text
@@ -17,7 +92,7 @@ repositorio/
 │   ├── Data_Acquisition_and_Understanding/  # Calidad, adaptadores, trazabilidad y cuarentena
 │   ├── Modeling/                          # Cartas, detectores y experimentos
 │   └── Evaluation/                        # Scorecard, niveles y costos
-├── Code/framework_calidad/                 # API reutilizable del framework
+├── Code/hito5/framework_calidad/                 # API reutilizable del framework
 ├── Data/                                  # Capas Bronze, Silver y Gold; datos y evidencia
 │   ├── bronze/datos/                      # Copias de fuentes y candidatas en revisión
 │   ├── silver/                            # Agregados, catálogos y verificaciones
@@ -98,7 +173,7 @@ entrenamiento; pasar las auditorías locales no acredita identidad con aquellos 
 
 ## Paquete reutilizable
 
-El paquete `Code/framework_calidad` separa responsabilidades comunes para cargar datos,
+El paquete `Code/hito5/framework_calidad` separa responsabilidades comunes para cargar datos,
 perfilar columnas, evaluar reglas, aplicar detectores y escribir resultados. Se puede instalar
 en modo editable desde `repositorio/`:
 

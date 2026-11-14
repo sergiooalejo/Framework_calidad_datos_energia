@@ -1,5 +1,17 @@
 # Referencia técnica consolidada
 
+**Nota de vigencia del Hito 4:** [VERIFICACION_HITO4.md](VERIFICACION_HITO4.md)
+y [RESULTADOS_HITO4.md](RESULTADOS_HITO4.md) documentan el protocolo corregido,
+la política LOF, el scorecard, las figuras y el nuevo contraste normativo. Las
+secciones consolidadas siguientes describen sus experimentos históricos.
+
+**Nota de vigencia del Hito 3:** las secciones siguientes conservan antecedentes.
+Para la implementación corregida, descargas reales, categorías completas,
+cuarentena por celda y límites I-MR prevalece
+[VERIFICACION_HITO3.md](VERIFICACION_HITO3.md).
+El texto de integración académica está en
+[ACTUALIZACION_ANTEPROYECTO_HITO3.md](ACTUALIZACION_ANTEPROYECTO_HITO3.md).
+
 Las secciones conservan el detalle y las fechas de cada evidencia. Los estados históricos no sustituyen el estado vigente de PROYECTO.md. La numeración 3.x/4.x indica procedencia, no la estructura de ejecución.
 
 ## Índice

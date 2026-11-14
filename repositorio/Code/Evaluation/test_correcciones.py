@@ -42,7 +42,7 @@ class CorreccionesTests(unittest.TestCase):
         self.assertEqual(declared['isolation_forest_base'], declared['isolation_forest'])
 
     def test_semilla_de_muestra_coincide_con_el_generador(self):
-        tree = ast.parse((ROOT / 'Code/Evaluation/hito6/generar_muestra_alertas.py').read_text(encoding='utf-8'))
+        tree = ast.parse((ROOT / 'Code/hito6/generar_muestra_alertas.py').read_text(encoding='utf-8'))
         calls = [node for node in ast.walk(tree) if isinstance(node, ast.Call)
                  and isinstance(node.func, ast.Attribute) and isinstance(node.func.value, ast.Name)
                  and node.func.value.id == 'random' and node.func.attr == 'Random']
@@ -86,7 +86,7 @@ class CorreccionesTests(unittest.TestCase):
             self.assertIn('pendiente', row['nota'])
 
     def test_muestra_no_sobrescribe_revision_y_no_afirma_lof(self):
-        module = load_module('muestra_test', ROOT / 'Code/Evaluation/hito6/generar_muestra_alertas.py')
+        module = load_module('muestra_test', ROOT / 'Code/hito6/generar_muestra_alertas.py')
         with tempfile.TemporaryDirectory() as directory:
             source = Path(directory) / 'entrada.csv.gz'
             old = Path(directory) / 'muestra_alertas_50.csv'

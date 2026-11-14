@@ -1,0 +1,253 @@
+Alejandría - Resolución 156 de 2019 CREG
+Gestor Normativo Alejandría 2.0
+Inicio
+Compilaciones
+Este texto que se agrega aquí es como el mensaje en caso
+de que el video no funcione sale lo que esté aquí escrito...
+Resoluciones originales
+Video no funciona...
+Proyectos de resolución
+Video no funciona...
+Conceptos
+Video no funciona...
+Circulares
+Video no funciona...
+Compilación jurídica
+Video no funciona...
+Menú
+Inicio
+Compilaciones
+Resoluciones originales
+Proyectos de resolución
+Conceptos
+Circulares
+Compilación jurídica
+keyboard_backspace
+Inicio
+Documento
+keyboard_backspace
+Inicio
+Documento
+Resolución 156 de 2019 CREG
+Ocultar anotaciones
+DESCARGAS
+BUSCAR
+search
+ÍNDICE
+developer_guide
+MEMORIA
+memory
+DESARROLLOS
+attachment
+MODIFICACIONES
+quiz
+CONCORDANCIAS
+quiz
+NOTIFICACIONES
+notifications_active
+ACTOS DE TRÁMITE
+quiz
+RESOLUCIÓN 156 DE 2019
+(noviembre 27)
+Diario Oficial No. 51.184 de 2 de enero 2020
+COMISIÓN DE REGULACIÓN DE ENERGÍA Y GAS
+Por la cual se resuelve el recurso de reposición interpuesto por Empresas Públicas de Medellín E.S.P. contra la Resolución CREG 078 de 2019.
+Concordancias
+Doctrina Concordante
+LA COMISIÓN DE REGULACIÓN DE ENERGÍA Y GAS,
+en ejercicio de sus atribuciones constitucionales y legales, en especial las conferidas por las Leyes 142 y 143 de 1994, y en desarrollo de los Decretos 1524, 2253 de 1994, 2696 de 2004 y 1260 de 2013,
+CONSIDERANDO QUE:
+Mediante la Resolución CREG 078 de 2019 se aprobaron las variables necesarias para calcular los ingresos y cargos asociados con la actividad de distribución de energía eléctrica para el mercado de comercialización atendido por Empresas Públicas de Medellín E.S.P.
+En el documento 046 de 2019 se encuentra el soporte de dicha resolución donde se incluyen los criterios de revisión de la información, las bases de datos y los cálculos empleados por la Comisión para definir las variables aprobadas en la Resolución CREG 078 de 2019.
+Empresas Públicas de Medellín E.S.P., mediante comunicación con radicado CREG E-2019-008044, presentó recurso de reposición contra la Resolución CREG 078 de 2019.
+En la comunicación citada se presentan los antecedentes, las razones de inconformidad y las peticiones del recurso de reposición, estas últimas se trascriben a continuación:
+PETICIONES:
+De conformidad con lo expuesto, se solicita:
+Primero: Modificar el artículo 2o de la Resolución CREG 078 de 2019,
+1. Ajustando la asignación y valoración de la UC N4L52 en los niveles 2, 3 y 4.
+2. Incluyendo las redes de baja tensión asociadas con los transformadores de distribución con capacidades iguales o inferiores a 15KVA.
+Segundo: Modificar el artículo 3o de la Resolución 078 de 2019,
+1. Incluyendo las inversiones asociadas al sistema de gestión de activos, indicando la manera en la cual serán remuneradas estas inversiones.
+2. Incluyendo los activos en el plan de inversiones de EPM, relacionados con los proyectos de conexión PCH TZII 44 kV, con código de proyecto PEI0609TYDCE32057902022 y Colanta - SE San Pedro de los Milagros 44 kV, con código de proyecto PEI0858TYDCE32056642019.
+Tercero: Modificar los artículos 9o, 10, 11, 12 y 13, referentes a los indicadores de calidad teniendo en cuenta toda la información entregada al LAC respecto de la duración plena de todas las indisponibilidades reportadas.
+De otro lado, revisar los cálculos definidos para los indicadores de referencia y metas de SAIDI, SAIFI, DIUG y FIUG por grupo de calidad, teniendo en cuenta los reportes de información adjuntos.
+Cuarto: Modificar el artículo 7o de la Resolución CREG 078 de 2019 considerando las ventas de energía correspondientes a los mercados regulado y no regulado de otros comercializadores que atienden clientes en el mercado de comercialización de EPM.
+Quinto: Realizar los ajustes a que haya lugar, derivados de las modificaciones solicitadas.
+A continuación, se presenta el análisis de la Comisión sobre cada una de las peticiones realizadas.
+PRIMERA PETICIÓN: Modificar el artículo 2o de la Resolución CREG 078 de 2019.
+Numeral 1 de la primera solicitud
+El OR señala que: se encontró que toda la fibra óptica fue asignada y valorada en el nivel de tensión 4, sin considerar que de acuerdo con lo reportado por EPM la asignación y valoración de la UC N4L52 debe hacerse en los niveles 2, 3 y 4. Por tanto, se solicita ajustar la asignación y valoración de la UC N4L52 en los niveles 2, 3 y 4.
+En relación con los activos puestos en operación en el periodo 2008-2017 (CRIN) - Nivel de tensión 4, la unidad constructiva (UC) N4L52, correspondiente a fibra óptica del capítulo 15 de la Resolución CREG 015 de 2018, fue reportada de acuerdo con lo definido por la Comisión en sus Circulares 029 y 051 de 2018, a través de las cuales se solicitaba indicar el nivel de tensión donde estaba instalada la fibra óptica. Al respecto, EPM reportó en los formatos CREG que la fibra instalada durante el periodo 2008-2017 se encontraba en los niveles 2, 3 y 4.
+Al revisar la asignación del valor de las UC N4L52 en la base regulatoria de activos del OR, se identificó que el valor de todas las UC de este tipo fue asignado al nivel de tensión 4.
+Con base en lo anterior, se ajusta la asignación del valor de las UC N4L52, incluidas en la categoría CRIN, en función del nivel de tensión reportado por el OR en el formato de información básica de líneas.
+Al distribuir el valor de estas UC en los niveles de tensión 4, 3 y 2, se modifica el valor de las variables aprobadas en los artículos 2o, 4o, 7o y 15 de la Resolución CREG 078 de 2019.
+Numeral 2 de la primera solicitud
+El OR señala que: Los 11.643 NRNj hacen parte de la inversión puesta en operación en el periodo 2008-2017 (CRIN), calculados y valorados de acuerdo con lo definido en la metodología remuneración de los activos de nivel de tensión 1, de acuerdo con lo establecido en la resolución CREG 015 de 2018, la cual a su vez recoge las reglas definidas en su momento en la Resolución CREG 097 de 2008 y en la Circular 013 de 2007.
+En relación con lo señalado por el OR se indica lo siguiente:
+a) De acuerdo con la definición de las variables NTNj y NRNj del literal b) del numeral 3.1.1.1.4 de la Resolución CREG 015 de 2018, los transformadores y redes de conexión que atienden a un usuario se deben excluir de dichas variables y por tanto, no hacen parte de la variable CRINj,1,l.
+b) En la definición de activos de nivel de tensión 1 del artículo 3o de la Resolución CREG 015 de 2018, modificada por la Resolución CREG 036 de 2019, se hace una excepción y se incluyen únicamente los transformadores de conexión de capacidades iguales o inferiores a 15 kVA para ser remunerados en la base de activos sin incluir en dicha excepción las redes de conexión asociadas con estos transformadores. Por tal razón, en la aprobación de ingresos se incluyeron los transformadores de conexión de esta condición sin incluir las redes de conexión.
+c) La regla general de remuneración de los activos de uso establecida en el numeral 3.1.1.1.4 de la Resolución CREG 015 de 2018 es la misma empleada en las resoluciones CREG 082 de 2002 y 097 de 2008, dirigida a remunerar los activos de uso, es decir aquellos utilizados por dos o más usuarios. En la Resolución CREG 015 de 2018 se hace una excepción que incluye en la remuneración algunos transformadores de conexión, lo cual no es aplicable a las resoluciones previas.
+d) Finalmente, se indica que en la Circular CREG 013 de 2007 se solicitó la información de activos de uso de nivel de tensión 1, según lo establecido en la regulación vigente en su momento, que corresponden a aquellos con más de un usuario.
+El OR señala que: la definición de activos de Nivel de Tensión 1 de la Resolución CREG 015 de 2018, artículo 3o, incluye explícitamente los transformadores de conexión con capacidad igual o inferior a 15 kVA.
+Como se expuso anteriormente, en la definición de activos de nivel de tensión 1 del artículo 3o de la Resolución CREG 015 de 2018, modificada por la Resolución CREG 036 de 2019, se hace una excepción y se incluyen los transformadores de conexión de capacidades iguales o inferiores a 15 kVA para ser remunerados en la base de activos. Por tal razón, en la aprobación de ingresos se incluyeron los transformadores de conexión de esta condición sin la red de conexión.
+El OR señala que: para el cálculo del valor del CRIN, de acuerdo con lo establecido en la Resolución CREG 015 de 2018, numeral 3.1.1.1.4., literal b), se toma el costo medio para valorar los activos de Nivel de Tensión 1, abarcando tanto los transformadores de distribución como las redes.
+Al respecto, se indica que en el literal b) del numeral 3.1.1.1.4 de la Resolución CREG 015 de 2018 se define un costo medio para transformadores de uso y otro para redes de uso y se hace explícito que, salvo los transformadores de la excepción, no se consideran los transformadores de conexión y las redes de conexión en la valoración de la variable CRINj,l,1.
+El OR señala que: El costo medio utilizado para valorar las redes y los transformadores del Nivel de Tensión 1 entre el año 2008 y 2017, fue el mismo utilizado en la Resolución CREG 097 de 2008 y la Circular 013 de 2007, recogido, reiteramos, por la Resolución CREG 015 de 2018 y que dicho costo medio, por el método utilizado para su cálculo, refleja las condiciones de los transformadores y las redes de todo el sistema. Por ello, para la definición del costo medio en redes se consideró el número total de redes asociadas a los transformadores de uso, sin ninguna excepción salvo lo asociado exclusivamente al alumbrado público; este costo medio incluye así, los transformadores con redes extensas y los transformadores sin red.
+Al respecto se indica que las metodologías definidas en las resoluciones CREG 082 de 2002 y CREG 097 de 2008 consideran únicamente los activos de uso de nivel de tensión 1. Por lo tanto, el costo medio utilizado no refleja las condiciones de transformadores y redes de todo el sistema como se plantea en el recurso ya que no se tienen en cuenta los activos de conexión.
+El OR señala que: excluir ahora las redes de transformadores menores o iguales a 15 KVA con un usuario, implica, por lo tanto, desbalancear la remuneración de los activos del Nivel de Tensión 1, toda vez que se están excluyendo unos activos de red pero el costo medio con el que se está valorando los activos de Nivel de Tensión 1 que a juicio de la CREG deben ser remunerados, es igual al calculado considerando el universo de activos de dicho nivel. Bajo este concepto, las redes en cuestión nunca fueron consideradas acometidas.
+La Comisión considera que no existe el desbalance al que se refiere el recurrente, toda vez que, como se señaló anteriormente, la remuneración de los activos de nivel de tensión 1, en las metodologías anteriores, no consideró la inclusión de activos de conexión.
+El OR señala que: las inversiones realizadas en el Nivel de Tensión 1 entre 2008 y 2017 fueron producto de la señal regulatoria y la metodología de remuneración vigente en su momento, la cual fue ratificada en la Resolución CREG 015 de 2018, particularmente para el CRIN en el numeral 3.1.1.1.4. Destacamos que, en su mayoría, los activos en discusión corresponden a inversiones ejecutadas con el objetivo de ampliación de cobertura
+Al respecto se manifiesta que en la Resolución CREG 015 de 2018 se hizo una excepción para permitir, en adelante, la remuneración vía cargos por uso de algunos activos de conexión de nivel de tensión 1, la cual no existía en la Resolución CREG 097 de 2008 ni en la Resolución CREG 082 de 2002.
+Con base en lo anterior, no se modifica el valor de la variable BRAEj,1,0 de la tabla 1 del artículo 2o de la Resolución CREG 078 de 2019, ni las variables asociadas con la valoración de los activos de nivel de tensión 1.
+SEGUNDA PETICIÓN: Modificar el artículo 3o de la Resolución 078 de 2019
+Numeral 1 de la segunda solicitud
+El OR señala lo siguiente: De acuerdo con lo definido en el Capítulo 6 de la Resolución CREG 015 de 2018, los OR deben incluir en el plan de inversión las asociadas a la implementación y certificación del sistema de gestión de activos, de esta manera EPM en su solicitud de ingresos presentada, Anexo 4, incluyó para el periodo 2019-2023 las inversiones antes citadas desagregadas por año, recurso y valores en pesos ($); cabe anotar que por sus características estas inversiones no se clasifican en unidades constructivas.
+Al respecto, el literal p) del numeral 6.1 de la Resolución CREG 015 de 2018 establece que el OR debe incluir en el plan de inversiones los activos necesarios para la implementación y certificación de un sistema de gestión de activos acorde con la norma ISO 55001 en un plazo de cinco (5) años contados a partir de la entrada en vigencia de la presente resolución.
+De lo anterior se entiende que en la remuneración se incluyen los activos asociados con la implementación del sistema de gestión de activos sin considerar aquellos gastos asociados con su implementación, los cuales se entiende que hacen parte del AOM.
+Una vez revisada la información reportada por el OR se identificaron inversiones asociadas con sistemas de gestión de activos y otros rubros asociados con gastos para su implementación.
+Con base en lo anterior, los valores asociados con las inversiones a realizar se incluyen como UC especiales del OR definidas con base en la información reportada. Los valores aprobados serán revisados teniendo en cuenta el valor real de la inversión una vez se ejecuten los proyectos, para lo cual el OR deberá presentar los soportes correspondientes.
+Al incluir el valor de las inversiones asociadas con el sistema de gestión de activos en el plan de inversiones del OR, se modifica el valor de las variables aprobadas en los artículos 3o y 5o de la Resolución CREG 078 de 2019.
+Numeral 2 de la segunda solicitud
+El OR señala lo siguiente: De acuerdo con el documento CREG 046 de 2019, fueron retirados del plan de inversiones de EPM algunos activos asociados a proyectos de conexión de generadores; los activos que describimos a continuación corresponden a activos de uso, producto de la expansión del sistema para otorgar puntos de conexión de usuarios al Sistema de Distribución local (SDL). Aclaramos que dichos activos no son los activos de conexión de los usuarios, de igual forma nos permitimos ampliar información sobre los proyectos.
+Con base en la información adicional de los proyectos con código PEI0609TYDCE32057902022 y PEI0858TYDCE32056642019, entregada por el OR, se identifica que varios de los activos inicialmente no incluidos corresponden a activos de uso, por lo cual se ajusta la valoración del plan de inversiones incluyendo los activos de uso de estos proyectos, mencionados por el OR en su recurso.
+Al incluir el valor de las UC asociadas con estos proyectos en el plan de inversiones del OR, se modifica el valor de las variables aprobadas en los artículos 3o y 5o de la Resolución CREG 078 de 2019.
+TERCERA PETICIÓN: Modificar los artículos 9o, 10, 11, 12 y 13 de la Resolución CREG 078 de 2019.
+Primer párrafo de la tercera solicitud
+El OR señala que: al comparar la información de los eventos enviados en los reportes diarios suministrada por la Comisión y la publicada por el LAC, se evidencia que para los eventos que pasan de un día a otro, solo se consideró el tiempo correspondiente al día de inicio (hasta la hora 24), lo que implica una menor duración de cada una de estas aperturas del año 2016, afectando las metas aprobadas globales e individuales (SAIDI y DIUG).
+Se revisaron las consultas de la base de datos INDICA y se verificó que en la consolidación de la información de algunos transformadores los eventos con duración mayor a un día no fueron considerados en su totalidad, por lo cual se ajusta el cálculo de los indicadores corrigiendo dicha información.
+Segundo párrafo de la tercera solicitud
+El OR señala que: De otro lado, se encuentra que la Comisión no consideró información mensual de 142 transformadores en promedio, los cuales se entiende que no fueron encontrados en el SUI por parte de la CREG.
+En primer lugar, se aclara que los transformadores solicitados por EPM, que en total son 164 según el archivo que se adjuntó al recurso de reposición, sí fueron considerados para el cálculo de los indicadores de calidad media. Sin embargo, en la información anexada en los archivos adjuntos a la Resolución CREG 078 de 2019 solo incluyeron los transformadores utilizados para el cálculo de los indicadores de calidad individual.
+En cuanto a los indicadores de calidad individual, para su estimación se empleó la georreferenciación de los transformadores reportada al SUI y en los casos en que la georreferenciación no correspondió con los municipios pertenecientes al mercado del operador de red, según la información de facturación de usuarios por mercado de comercialización, dichos transformadores no se incluyeron en el cálculo.
+Con base en la solicitud hecha en el recurso de EPM, nuevamente se revisó la información de georreferenciación reportada por EPM al SUI para los transformadores objeto del recurso y se identificó que existían inconsistencias en las coordenadas reportadas por el OR al SUI, para un mismo activo, en diferentes periodos de tiempo.
+Para resolver este problema, se ajustó el procedimiento de consolidación de información, considerando la georreferenciación más frecuente encontrada en el año de análisis, 2016, en cada uno de los transformadores del OR.
+Como resultado de lo anterior fue posible incluir 165 transformadores adicionales. No obstante, en los transformadores incluidos solo se encuentran algunos de los solicitados por EPM dado que la georreferenciación de los no incluidos se mantuvo en municipios que no son atendidos por EPM. El ajuste realizado también generó cambios en la clasificación de los transformadores en los diferentes grupos de calidad.
+Con base en las anteriores consideraciones y al ajustar la información utilizada se modifica el valor de las variables aprobadas en los artículos 9o, 10, 11, 12 y 13 de la Resolución CREG 078 de 2019.
+CUARTA PETICIÓN: Modificar el artículo 7o de la Resolución CREG 078 de 2019.
+El OR señala lo siguiente: En los hallazgos relacionados con el reconocimiento del AOM, tratado en el numeral 2.6.2. del documento CREG 046 de 2019, cuyo efecto se refleja en el artículo 7o de la Resolución CREG 078 de 2019, se presenta una disminución en el factor de eficiencia del AOM con respecto a la solicitud, el cual obedece a diferencias de la variable de ventas en el modelo de eficiencia. (…)
+Con respecto a esta variable empleada por la CREG para el cálculo de la eficiencia, se observa que la información usada corresponde únicamente a los valores de energía del comercializador incumbente, sin considerar las ventas de energía correspondientes a los mercados regulado y no regulado de otros comercializadores que atienden clientes en el mercado de comercialización de EPM.
+Se revisó el procedimiento de consulta a la base de datos del SUI sobre las ventas reportadas por los comercializadores en el mercado de EPM y se identificó que algunos datos no se incluyeron en la información utilizada para la expedición de la Resolución CREG 078 de 2019.
+Con base en lo anterior, se incluyó la información de ventas y usuarios no empleada previamente en el cálculo del factor de eficiencia. Con este cambio se modifica el valor del factor de eficiencia y en consecuencia el valor del AOM base.
+Al ajustar la información utilizada se modifica el valor de las variables aprobadas en el artículo 7o de la Resolución CREG 078 de 2019.
+QUINTA PETICIÓN: Realizar los ajustes a que haya lugar, derivados de las modificaciones solicitadas.
+Con base en los análisis de las solicitudes presentadas previamente, se modifican las variables aprobadas en los artículos 2o, 3o, 4o, 5o, 7o, 9o, 10, 11, 12, 13 y 15 de la Resolución CREG 078 de 2019.
+Adjunto a esta resolución se entregan a Empresas Públicas de Medellín E.S.P. los archivos con las bases de datos y cálculos utilizados para establecer las variables necesarias para calcular los ingresos y cargos asociados con la actividad de distribución de energía eléctrica para su mercado de comercialización.
+La Comisión de Regulación de Energía y Gas, en su sesión 960 del 27 de noviembre de 2019, acordó expedir esta resolución,
+RESUELVE:
+ARTÍCULO 1o. MODIFICAR EL ARTÍCULO 2o DE LA RESOLUCIÓN CREG 078 DE 2019. El artículo 2o de la Resolución CREG 078 de 2019 quedará así:
+Artículo 2o. Base regulatoria de activos eléctricos al inicio del periodo tarifario. La base regulatoria de activos eléctricos al inicio del periodo tarifario, BRAEj,n,0, es el siguiente:
+Tabla 1. Base regulatoria de activos eléctricos al inicio del periodo tarifario.
+ARTÍCULO 2o. MODIFICAR EL ARTÍCULO 3o DE LA RESOLUCIÓN CREG 078 DE 2019. El artículo 3o de la Resolución CREG 078 de 2019 quedará así:
+Artículo 3o. Inversión aprobada en el plan de inversiones. El valor de las inversiones aprobadas en el plan de inversiones, INVAj,n,l,t, para cada nivel de tensión, es el siguiente:
+Tabla 2. Plan de inversiones del nivel de tensión 4, pesos de diciembre de 2017
+Tabla 3. Plan de inversiones del nivel de tensión 3, pesos de diciembre de 2017
+Tabla 4. Plan de inversiones del nivel de tensión 2, pesos de diciembre de 2017
+Tabla 5. Plan de inversiones del nivel de tensión 1, pesos de diciembre de 2017
+ARTÍCULO 3o. MODIFICAR EL ARTÍCULO 4o DE LA RESOLUCIÓN CREG 078 DE 2019. El artículo 4o de la Resolución CREG 078 de 2019 quedará así:
+Artículo 4o. Recuperación de capital de activos de la BRA inicial. El valor de la recuperación de capital reconocida para los activos incluidos en la base regulatoria inicial de activos, RCBIAj,n,1, es el siguiente:
+Tabla 6. Recuperación de capital de activos de la BRA inicial
+ARTÍCULO 4o. MODIFICAR EL ARTÍCULO 5o DE LA RESOLUCIÓN CREG 078 DE 2019. El artículo 5o de la Resolución CREG 078 de 2019 quedará así:
+Artículo 5o. Recuperación de capital de activos nuevos. El valor de la recuperación de capital reconocida para los activos que entraron en operación en el primer año, RCNAj,n,1, es el siguiente:
+Tabla 7. Recuperación de capital de activos nuevos
+ARTÍCULO 5o. MODIFICAR EL ARTÍCULO 7o DE LA RESOLUCIÓN CREG 078 DE 2019. El artículo 7o de la Resolución CREG 078 de 2019 quedará así:
+Artículo 7o. AOM base. El valor del AOM base, AOMbasej,n, para cada nivel de tensión, es el siguiente:
+Tabla 9. AOM base
+ARTÍCULO 6o. MODIFICAR EL ARTÍCULO 9o DE LA RESOLUCIÓN CREG 078 DE 2019. El artículo 9o de la Resolución CREG 078 de 2019 quedará así:
+Artículo 9o. Indicadores de referencia de calidad media. Los indicadores de referencia de la calidad media SAIDI_Rj y SAIFI_Rj, son los siguientes:
+Tabla 11. Indicadores de referencia de calidad media
+ARTÍCULO 7o. MODIFICAR EL ARTÍCULO 10 DE LA RESOLUCIÓN CREG 078 DE 2019. El artículo 10 de la Resolución CREG 078 de 2019 quedará así:
+Artículo 10. Metas anuales de calidad media para el indicador de duración de eventos. Las metas anuales de calidad media para el indicador de duración de eventos, SAIDI_Mj,t, son las siguientes:
+Tabla 12. Metas anuales de calidad media para el indicador de duración, horas
+ARTÍCULO 8o. MODIFICAR EL ARTÍCULO 11 DE LA RESOLUCIÓN CREG 078 DE 2019. El artículo 11 de la Resolución CREG 078 de 2019 quedará así:
+Artículo 11. Metas anuales de calidad media para el indicador de frecuencia de eventos. Las metas anuales de calidad media para el indicador de frecuencia de eventos, SAIFI_Mj,t, son las siguientes:
+Tabla 13. Metas anuales de calidad media para el indicador de frecuencia, veces
+ARTÍCULO 9o. MODIFICAR EL ARTÍCULO 12 DE LA RESOLUCIÓN CREG 078 DE 2019. El artículo 12 de la Resolución CREG 078 de 2019 quedará así:
+Artículo 12. Indicadores de calidad individual de duración de eventos. La duración máxima anual de los eventos percibidos por los usuarios, DIUGj,n,q, en los niveles de tensión 3, 2 y 1, es la siguiente:
+Tabla 14. DIUG niveles de tensión 2 y 3, horas
+Tabla 15. DIUG nivel de tensión 1, horas
+ARTÍCULO 10. MODIFICAR EL ARTÍCULO 13 DE LA RESOLUCIÓN CREG 078 DE 2019. El artículo 13 de la Resolución CREG 078 de 2019 quedará así:
+Artículo 13. Indicadores de calidad individual de frecuencia de eventos. La frecuencia máxima anual de los eventos percibidos por los usuarios, FIUGj,n,q, en los niveles de tensión 3, 2 y 1, es la siguiente:
+Tabla 16. FIUG niveles de tensión 2 y 3, veces
+Tabla 17. FIUG nivel de tensión 1, veces
+ARTÍCULO 11. MODIFICAR EL ARTÍCULO 15 DE LA RESOLUCIÓN CREG 078 DE 2019. El artículo 15 de la Resolución CREG 078 de 2019 quedará así:
+Artículo 15. Costo de reposición de referencia. El costo de reposición de referencia, CRRj, y los costos de reposición de referencia por nivel de tensión, Crrj,n, son los siguientes:
+Tabla 19. Costo de reposición de referencia
+ARTÍCULO 12. LA PRESENTE RESOLUCIÓN DEBERÁ NOTIFICARSE A EMPRESAS PÚBLICAS DE MEDELLÍN E.S.P. Y PUBLICARSE EN EL DIARIO OFICIAL. Contra lo dispuesto en este acto no procede recurso alguno, toda vez que se entienden agotados todos los recursos que por ley son obligatorios.
+Notifíquese, publíquese y cúmplase.
+Dada en Bogotá, D. C., a 27 de noviembre 2019.
+El Presidente,
+Diego Mesa Puyo,
+Viceministro de Energía, delegado de la Ministra de Minas y Energía.
+El Director Ejecutivo,
+Christian Jaramillo Herrera.
+Gestor Normativo Alejandría 2.0
+ISBN : 978-958-98069-4-4
+Última actualización:
+Control de versiones
+Créditos y reserva de derechos de
+autor
+Comisión de Regulación de Energía y Gas CREG -
+DRA © 2019 a 2024
+Comisión de Regulación de Energía y Gas - CREG
+Sede principal
+Av. Calle 116 No. 7-15 Edificio Cusezar Int. 2 Oficina 901,
+Bogotá
+Código postal: 110111
+Horario de Atención: Lunes a Viernes, 8:00 a.m. a 1:00 p.m. - 2:00
+p.m. a 5:00 p.m.
+Teléfono celular: 3208473254
+Teléfono conmutador: +57 (601) 6032020
+Línea gratuita: 01 8000 512734
+Línea anticorrupción: +57 (601) 6032020 Ext. 444
+Correo institucional: creg@creg.gov.co
+Correo de notificaciones judiciales: notificaciones.judiciales@creg.gov.co
+Correo de notificaciones administrativas: oficiales.creg@creg.gov.co
+Correo de seguridad digital: seguridaddigital@creg.gov.co
+@comisioncreg
+Comisión CREG
+@ComisionCREG
+Comisión de Regulación de Energía y Gas
+Mapa del sitio
+Política de privacidad y tratamiento de datos
+Términos y condiciones
+Política de seguridad de la información
+Política de derechos de autor y/o autorización de
+uso sobre los contenidos
+Certificado de Accesibilidad Web
+Inicio
+MÓDULOS
+Novedades
+Búsqueda avanzada
+Respuestas automáticas
+Compilaciones
+Resoluciones originales
+Proyectos de resolución
+Conceptos
+Circulares
+Compilación jurídica
+Notificaciones
+Actos administrativos especiales
+Preguntas frecuentes
+×
+Resolución 156 de 2019 CREG
+menu_book
+Documento .html
+Consulte el documento para más información...
+Consultarnavigate_next
+menu_book
+Documento Word de Microsoft
+Consulte el documento para más información...
+Consultarnavigate_next
+menu_book
+Documento PDF
+Consulte el documento para más información...
+Consultarnavigate_next
+menu_book
+Documento PDF
+Consulte el documento para más información...
+Consultarnavigate_next
+Contraste | Modo oscuro
+Reducir letra (16px)
+Aumentar letra (16px)
+Centro de relevo
+Volver arriba

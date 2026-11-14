@@ -8,7 +8,7 @@ y desde un selector controlado en el tablero.
 
 ## Entregables completados
 
-- Paquete Python reutilizable en `Code/framework_calidad/`.
+- Paquete Python reutilizable en `Code/hito5/framework_calidad/`.
 - Configuración YAML de reglas en `Data/gold/outputs/calidad/matriz_oe1.yaml`.
 - CLI con manifiestos, semilla y SHA-256.
 - Tablero Streamlit con filtros, descripciones de reglas, ejecución controlada e incidentes.

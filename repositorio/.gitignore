@@ -9,3 +9,6 @@ Thumbs.db
 # Los resultados tabulares y muestras forman parte de la entrega.
 # Las figuras se pueden regenerar con pipeline.py ejecutar figuras.
 Data/gold/outputs/**/figuras/
+# Las figuras del protocolo H4 corregido son entregables versionados.
+!Data/gold/outputs/hito4/figuras/
+!Data/gold/outputs/hito4/figuras/**

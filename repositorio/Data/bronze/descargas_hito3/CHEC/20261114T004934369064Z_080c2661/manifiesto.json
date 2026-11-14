@@ -1,0 +1,72 @@
+{
+  "fuente": "CHEC",
+  "dataset_id": "c698-wqig",
+  "inicio_utc": "2026-11-14T00:49:34.370035+00:00",
+  "estado": "completa",
+  "paginas": [
+    {
+      "url": "https://www.datos.gov.co/resource/c698-wqig.json?%24select=%2A%2C+%3Aid&%24order=%3Aid&%24limit=10000&%24offset=0",
+      "archivo": "pagina_000000000.json",
+      "sha256": "9d936866dd1267a8a1c8fa543540bc5feb2fcc3fa70f59d60074343ec246d21d",
+      "filas": 10000
+    },
+    {
+      "url": "https://www.datos.gov.co/resource/c698-wqig.json?%24select=%2A%2C+%3Aid&%24order=%3Aid&%24limit=10000&%24offset=10000",
+      "archivo": "pagina_000010000.json",
+      "sha256": "5fe30e3464efce834ae59f977c5a3015fe29c437cb0d46d272629378b85f6cce",
+      "filas": 10000
+    },
+    {
+      "url": "https://www.datos.gov.co/resource/c698-wqig.json?%24select=%2A%2C+%3Aid&%24order=%3Aid&%24limit=10000&%24offset=20000",
+      "archivo": "pagina_000020000.json",
+      "sha256": "8ce9bcd0a583e0a7b52df21c7ac083f2839c58f6726f1bd55101c31b89e648cd",
+      "filas": 10000
+    },
+    {
+      "url": "https://www.datos.gov.co/resource/c698-wqig.json?%24select=%2A%2C+%3Aid&%24order=%3Aid&%24limit=10000&%24offset=30000",
+      "archivo": "pagina_000030000.json",
+      "sha256": "c9e5d35021ba59656da93ca8d79c0688954111a6c073e607bc1e2b99b538e42b",
+      "filas": 10000
+    },
+    {
+      "url": "https://www.datos.gov.co/resource/c698-wqig.json?%24select=%2A%2C+%3Aid&%24order=%3Aid&%24limit=10000&%24offset=40000",
+      "archivo": "pagina_000040000.json",
+      "sha256": "8a2a721b3023afdb1dacd64dbb509da8062e5cbbeeec6e9ff0e976a2fd0d8586",
+      "filas": 924
+    }
+  ],
+  "nota": "Captura real por API; no acredita fecha histórica de publicación.",
+  "filas": 40924,
+  "columnas": [
+    "costounitariotarifa_ano",
+    "costounitariotarifa_mes",
+    "comercializador_codigo",
+    "comercializador_nombre",
+    "mercado_codigo",
+    "mercado_nombre",
+    "costounitariotarifa_tipomed",
+    "nivel_tension_codigo",
+    "modalidadcobro_propiedad",
+    "claseservicio_codigo",
+    "claseservicio_descri",
+    "claseservicio_estrato",
+    "costounitariotarifa_rangoconsumo",
+    "costounitariotarifa_tipomercado",
+    "costounitariotarifa_generacion",
+    "costounitariotarifa_transmision",
+    "costounitariotarifa_distribucion",
+    "costounitariotarifa_comercializacion",
+    "costounitariotarifa_perdidas",
+    "costounitariotarifa_restricciones",
+    "costounitariotarifa_cu",
+    "costounitariotarifa_cureal",
+    "costounitariotarifa_subcon",
+    "costounitariotarifa_valor_tarifa"
+  ],
+  "url_metadatos": "https://www.datos.gov.co/api/views/c698-wqig.json",
+  "sha256_datos": "415fba2472ee227c8d62d0a8dd3cbc6abaa828debd7848bfd862a69becc9ea26",
+  "sha256_metadatos": "26b5dbc35617b61a5c6fcebea777d37d3af53623460c8eef85aa7c6697b3fde8",
+  "sha256_identificadores": "57fbd05870236d343597d1655b318517b809320f257c38e443e78bd35bb24071",
+  "consistencia_paginacion": "conteos antes/después e identificadores únicos; API sin aislamiento transaccional",
+  "fin_utc": "2026-11-14T00:50:02.756603+00:00"
+}

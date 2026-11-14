@@ -13,7 +13,7 @@ Desde la carpeta `repositorio/`:
 
 ```bash
 poetry install
-poetry run streamlit run app_streamlit.py
+poetry run streamlit run Code/hito5/app_streamlit.py
 ```
 
 Poetry lee `poetry.lock`, por lo que instala las versiones fijadas. Si no se tiene Poetry,
@@ -85,9 +85,9 @@ Con Poetry se puede ejecutar cada comando por separado, por ejemplo
 
 ## 7. Archivos principales
 
-- `app_streamlit.py`: tablero.
+- `Code/hito5/app_streamlit.py`: implementaci?n del tablero (`app_streamlit.py` conserva el acceso anterior).
 - `pipeline.py`: línea de comandos.
-- `Code/framework_calidad/`: paquete reutilizable.
+- `Code/hito5/framework_calidad/`: paquete reutilizable.
 - `Data/gold/outputs/calidad/matriz_oe1.yaml`: reglas y umbrales.
 - `Data/gold/outputs/incidentes/bitacora_incidentes.csv`: bitácora.
 - `Docs/DIAGRAMA_COMPONENTES_HITO5.md`: arquitectura.

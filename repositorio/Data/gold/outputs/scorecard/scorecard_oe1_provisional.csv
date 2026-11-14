@@ -3,7 +3,7 @@ CHEC,completitud,2,1,1,0,0,,provisional,Sin promedio: indicadores con sentidos y
 CHEC,consistencia,5,0,5,0,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
 CHEC,exactitud,1,0,1,0,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
 CHEC,integridad,2,1,1,0,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
-CHEC,oportunidad,1,0,1,0,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
+CHEC,oportunidad,1,0,0,1,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
 CHEC,razonabilidad,2,0,2,0,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
 CHEC,unicidad,2,1,1,0,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
 CHEC,validez,4,2,2,0,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
@@ -11,7 +11,7 @@ EPM,completitud,2,1,1,0,0,,provisional,Sin promedio: indicadores con sentidos y 
 EPM,consistencia,5,0,5,0,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
 EPM,exactitud,1,0,1,0,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
 EPM,integridad,2,1,0,0,1,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
-EPM,oportunidad,1,0,1,0,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
+EPM,oportunidad,1,0,0,1,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
 EPM,razonabilidad,2,0,2,0,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
 EPM,unicidad,2,2,0,0,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
 EPM,validez,4,2,2,0,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
@@ -19,7 +19,7 @@ SSPD,completitud,2,1,1,0,0,,provisional,Sin promedio: indicadores con sentidos y
 SSPD,consistencia,5,0,3,0,2,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
 SSPD,exactitud,1,0,0,1,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
 SSPD,integridad,2,1,0,0,1,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
-SSPD,oportunidad,1,0,1,0,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
+SSPD,oportunidad,1,0,0,1,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
 SSPD,razonabilidad,2,0,2,0,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
 SSPD,unicidad,2,1,1,0,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
 SSPD,validez,4,3,1,0,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
@@ -27,7 +27,7 @@ XM,completitud,2,2,0,0,0,,provisional,Sin promedio: indicadores con sentidos y p
 XM,consistencia,5,0,5,0,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
 XM,exactitud,1,0,0,1,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
 XM,integridad,2,1,1,0,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
-XM,oportunidad,1,0,1,0,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
+XM,oportunidad,1,0,0,1,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
 XM,razonabilidad,2,0,2,0,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
 XM,unicidad,2,2,0,0,0,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.
 XM,validez,4,2,1,0,1,,provisional,Sin promedio: indicadores con sentidos y poblaciones diferentes; metodología de agregación pendiente de aprobación.

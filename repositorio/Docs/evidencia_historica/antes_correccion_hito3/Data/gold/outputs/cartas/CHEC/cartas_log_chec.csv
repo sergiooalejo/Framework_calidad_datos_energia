@@ -1,0 +1,277 @@
+serie,medida,periodos,cambios_referencia,cambios_vigilancia,limite_inferior,limite_superior,señales
+CHCC|1234|S|1|50% OR|RS|2|R,costounitariotarifa_cu,224,36,12,-0.04951720,0.06445525,0
+CHCC|1234|S|1|50% OR|RS|2|R,costounitariotarifa_valor_tarifa,224,36,12,-0.09095703,0.11376415,0
+CHCC|1234|HM|1|0% OR|RS|1|R,costounitariotarifa_cu,196,36,12,-0.08028361,0.08070434,0
+CHCC|1234|HM|1|0% OR|RS|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08028362,0.08070435,0
+CHCC|1234|S|4|0% OR|RS|2|R,costounitariotarifa_cu,141,36,12,-0.11463307,0.12942027,0
+CHCC|1234|S|4|0% OR|RS|2|R,costounitariotarifa_valor_tarifa,141,36,12,-0.06099427,0.07578147,0
+CHCC|1234|S|2|0% OR|RS|2|R,costounitariotarifa_cu,201,36,12,-0.07367020,0.07829815,0
+CHCC|1234|S|2|0% OR|RS|2|R,costounitariotarifa_valor_tarifa,201,36,12,-0.07367020,0.07829815,0
+CHCC|1234|S|4|0% OR|CE|1|R,costounitariotarifa_cu,141,36,12,-0.11463307,0.12942027,0
+CHCC|1234|S|4|0% OR|CE|1|R,costounitariotarifa_valor_tarifa,141,36,12,-0.06099427,0.07578147,0
+CHCC|1234|S|1|50% OR|RS|1|R,costounitariotarifa_cu,225,36,12,-0.04762221,0.06164783,0
+CHCC|1234|S|1|50% OR|RS|1|R,costounitariotarifa_valor_tarifa,225,36,12,-0.27562706,0.32135317,0
+CHCC|1234|S|3|0% OR|HO|1|R,costounitariotarifa_cu,193,36,12,-0.07462056,0.08319874,0
+CHCC|1234|S|3|0% OR|HO|1|R,costounitariotarifa_valor_tarifa,193,36,12,-0.07462056,0.08319874,0
+CHCC|1234|S|1|0% OR|CE|1|R,costounitariotarifa_cu,176,36,12,-0.08775910,0.08239637,0
+CHCC|1234|S|1|0% OR|CE|1|R,costounitariotarifa_valor_tarifa,176,36,12,-0.08278083,0.07741810,0
+CHCC|1234|HP|1|50% OR|CR|1|R,costounitariotarifa_cu,196,36,12,-0.08398478,0.08257358,0
+CHCC|1234|HP|1|50% OR|CR|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08398468,0.08257349,0
+CHCC|1234|HM|2|0% OR|CR|1|R,costounitariotarifa_cu,196,36,12,-0.06974563,0.07261121,0
+CHCC|1234|HM|2|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.06974576,0.07261134,0
+CHCC|1234|S|1|100% OR|RS|1|R,costounitariotarifa_cu,225,36,12,-0.04645931,0.06029123,0
+CHCC|1234|S|1|100% OR|RS|1|R,costounitariotarifa_valor_tarifa,225,36,12,-0.26882316,0.31239889,0
+CHCC|1234|HP|1|0% OR|ID|1|R,costounitariotarifa_cu,196,36,12,-0.08817518,0.08658240,0
+CHCC|1234|HP|1|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08817517,0.08658239,0
+CHCC|1234|HP|1|100% OR|RS|1|R,costounitariotarifa_cu,196,36,12,-0.08021509,0.07896746,0
+CHCC|1234|HP|1|100% OR|RS|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08021508,0.07896744,0
+CHCC|1234|HP|1|50% OR|ID|1|R,costounitariotarifa_cu,196,36,12,-0.08398478,0.08257358,0
+CHCC|1234|HP|1|50% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08398468,0.08257349,0
+CHCC|1234|S|1|0% OR|OF|1|R,costounitariotarifa_cu,224,36,12,-0.05102819,0.06621247,0
+CHCC|1234|S|1|0% OR|OF|1|R,costounitariotarifa_valor_tarifa,224,36,12,-0.09381395,0.11734395,0
+CHCC|1234|S|1|0% OR|RS|2|R,costounitariotarifa_cu,224,36,12,-0.05102819,0.06621247,0
+CHCC|1234|S|1|0% OR|RS|2|R,costounitariotarifa_valor_tarifa,224,36,12,-0.09381395,0.11734395,0
+CHCC|1234|HP|2|0% OR|RS|1|R,costounitariotarifa_cu,74,36,12,-0.12565589,0.14558302,0
+CHCC|1234|HP|2|0% OR|RS|1|R,costounitariotarifa_valor_tarifa,74,36,12,-0.12565587,0.14558300,0
+CHCC|1234|S|1|0% OR|EA|1|R,costounitariotarifa_cu,196,36,12,-0.08081035,0.08081892,0
+CHCC|1234|S|1|0% OR|EA|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08081035,0.08081892,0
+CHCC|1234|HP|2|0% OR|OO|1|R,costounitariotarifa_cu,192,36,12,-0.08227958,0.08453616,0
+CHCC|1234|HP|2|0% OR|OO|1|R,costounitariotarifa_valor_tarifa,192,36,12,-0.08227951,0.08453610,0
+CHCC|1234|HM|3|0% OR|CR|1|R,costounitariotarifa_cu,196,36,12,-0.07353900,0.08268986,0
+CHCC|1234|HM|3|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07353893,0.08268979,0
+CHCC|1234|S|3|0% OR|OH|1|R,costounitariotarifa_cu,193,36,12,-0.07462056,0.08319874,0
+CHCC|1234|S|3|0% OR|OH|1|R,costounitariotarifa_valor_tarifa,193,36,12,-0.11861782,0.11706702,0
+CHCC|1234|S|1|100% OR|RS|2|R,costounitariotarifa_cu,224,36,12,-0.04825085,0.06296736,0
+CHCC|1234|S|1|100% OR|RS|2|R,costounitariotarifa_valor_tarifa,224,36,12,-0.08842518,0.11058709,0
+CHCC|1234|S|1|0% OR|BE|1|R,costounitariotarifa_cu,167,36,12,-0.06552306,0.07694615,2
+CHCC|1234|S|1|0% OR|BE|1|R,costounitariotarifa_valor_tarifa,167,36,12,-0.05232214,0.06068948,0
+CHCC|1234|HP|1|50% OR|RS|1|R,costounitariotarifa_cu,196,36,12,-0.08398478,0.08257358,0
+CHCC|1234|HP|1|50% OR|RS|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08398468,0.08257349,0
+CHCC|1234|S|1|100% OR|OA|1|R,costounitariotarifa_cu,196,36,12,-0.07347117,0.07367038,0
+CHCC|1234|S|1|100% OR|OA|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07347117,0.07367038,0
+CHCC|1234|S|1|100% OR|EE|1|R,costounitariotarifa_cu,196,36,12,-0.07347117,0.07367038,0
+CHCC|1234|S|1|100% OR|EE|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07347117,0.07367038,0
+CHCC|1234|HM|1|50% OR|RS|1|R,costounitariotarifa_cu,196,36,12,-0.07640677,0.07690606,0
+CHCC|1234|HM|1|50% OR|RS|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07640678,0.07690608,0
+CHCC|1234|S|1|0% OR|RS|1|R,costounitariotarifa_cu,225,36,12,-0.04902327,0.06326475,0
+CHCC|1234|S|1|0% OR|RS|1|R,costounitariotarifa_valor_tarifa,225,36,12,-0.27158945,0.31762210,0
+CHCC|1234|S|2|0% OR|RS|1|R,costounitariotarifa_cu,74,36,12,-0.10220719,0.11973900,0
+CHCC|1234|S|2|0% OR|RS|1|R,costounitariotarifa_valor_tarifa,74,36,12,-0.01144870,0.02501161,8
+CHCC|1234|S|1|100% OR|ID|1|R,costounitariotarifa_cu,224,36,12,-0.04825085,0.06296736,0
+CHCC|1234|S|1|100% OR|ID|1|R,costounitariotarifa_valor_tarifa,224,36,12,-0.08842522,0.11058712,0
+CHCC|1234|S|1|0% OR|PR|1|R,costounitariotarifa_cu,224,36,12,-0.05102819,0.06621247,0
+CHCC|1234|S|1|0% OR|PR|1|R,costounitariotarifa_valor_tarifa,224,36,12,-0.09381396,0.11734396,0
+CHCC|1234|S|2|0% OR|EA|1|R,costounitariotarifa_cu,196,36,12,-0.07146297,0.07389636,0
+CHCC|1234|S|2|0% OR|EA|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07146297,0.07389636,0
+CHCC|1234|S|1|50% OR|OF|1|R,costounitariotarifa_cu,224,36,12,-0.04951720,0.06445525,0
+CHCC|1234|S|1|50% OR|OF|1|R,costounitariotarifa_valor_tarifa,224,36,12,-0.09095703,0.11376415,0
+CHCC|1234|S|3|0% OR|CR|1|R,costounitariotarifa_cu,201,36,12,-0.08066611,0.09139157,0
+CHCC|1234|S|3|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,201,36,12,-0.08066618,0.09139163,0
+CHCC|1234|S|1|100% OR|IX|1|R,costounitariotarifa_cu,176,36,12,-0.07935440,0.07472288,0
+CHCC|1234|S|1|100% OR|IX|1|R,costounitariotarifa_valor_tarifa,176,36,12,-0.07756018,0.07292865,0
+CHCC|1234|HM|1|50% OR|PR|1|R,costounitariotarifa_cu,196,36,12,-0.07640677,0.07690606,0
+CHCC|1234|HM|1|50% OR|PR|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07640678,0.07690608,0
+CHCC|1234|HP|2|0% OR|CR|1|R,costounitariotarifa_cu,196,36,12,-0.08205837,0.08274999,0
+CHCC|1234|HP|2|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08205831,0.08274994,0
+CHCC|1234|S|2|0% OR|IA|1|R,costounitariotarifa_cu,196,36,12,-0.07146297,0.07389636,0
+CHCC|1234|S|2|0% OR|IA|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07146302,0.07389641,0
+CHCC|1234|S|1|50% OR|EA|1|R,costounitariotarifa_cu,196,36,12,-0.07694130,0.07705030,0
+CHCC|1234|S|1|50% OR|EA|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07694130,0.07705030,0
+CHCC|1234|HM|1|50% OR|ID|1|R,costounitariotarifa_cu,196,36,12,-0.07640677,0.07690606,0
+CHCC|1234|HM|1|50% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07640678,0.07690608,0
+CHCC|1234|S|3|0% OR|RS|2|R,costounitariotarifa_cu,201,36,12,-0.08066611,0.09139157,0
+CHCC|1234|S|3|0% OR|RS|2|R,costounitariotarifa_valor_tarifa,201,36,12,-0.08066611,0.09139157,0
+CHCC|1234|S|1|0% OR|AP|1|R,costounitariotarifa_cu,224,36,12,-0.05102819,0.06621247,0
+CHCC|1234|S|1|0% OR|AP|1|R,costounitariotarifa_valor_tarifa,224,36,12,-0.09381395,0.11734395,0
+CHCC|1234|HM|1|100% OR|ID|1|R,costounitariotarifa_cu,196,36,12,-0.07293167,0.07350152,0
+CHCC|1234|HM|1|100% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07293176,0.07350161,0
+CHCC|1234|S|1|0% OR|EE|1|R,costounitariotarifa_cu,196,36,12,-0.08081035,0.08081892,0
+CHCC|1234|S|1|0% OR|EE|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08081035,0.08081892,0
+CHCC|1234|S|4|0% OR|ID|1|R,costounitariotarifa_cu,201,36,12,-0.08941094,0.10039806,0
+CHCC|1234|S|4|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,201,36,12,-0.08941103,0.10039815,0
+CHCC|1234|S|3|0% OR|OF|1|R,costounitariotarifa_cu,201,36,12,-0.08066611,0.09139157,0
+CHCC|1234|S|3|0% OR|OF|1|R,costounitariotarifa_valor_tarifa,201,36,12,-0.08066611,0.09139157,0
+CHCC|1234|S|1|0% OR|IX|1|R,costounitariotarifa_cu,176,36,12,-0.08775910,0.08239637,0
+CHCC|1234|S|1|0% OR|IX|1|R,costounitariotarifa_valor_tarifa,176,36,12,-0.08278083,0.07741810,0
+CHCC|1234|S|2|0% OR|IX|1|R,costounitariotarifa_cu,176,36,12,-0.07505152,0.07033491,1
+CHCC|1234|S|2|0% OR|IX|1|R,costounitariotarifa_valor_tarifa,176,36,12,-0.07206176,0.06734515,0
+CHCC|1234|HP|1|100% OR|CR|1|R,costounitariotarifa_cu,196,36,12,-0.08021509,0.07896746,0
+CHCC|1234|HP|1|100% OR|CR|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08021508,0.07896744,0
+CHCC|1234|HM|1|100% OR|PR|1|R,costounitariotarifa_cu,196,36,12,-0.07293167,0.07350152,0
+CHCC|1234|HM|1|100% OR|PR|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07293176,0.07350161,0
+CHCC|1234|S|3|0% OR|ID|1|R,costounitariotarifa_cu,201,36,12,-0.08066611,0.09139157,0
+CHCC|1234|S|3|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,201,36,12,-0.08066618,0.09139163,0
+CHCC|1234|HP|3|0% OR|PR|1|R,costounitariotarifa_cu,150,36,12,-0.09749869,0.11221983,0
+CHCC|1234|HP|3|0% OR|PR|1|R,costounitariotarifa_valor_tarifa,150,36,12,-0.09749875,0.11221989,0
+CHCC|1234|S|2|0% OR|PR|1|R,costounitariotarifa_cu,146,36,12,-0.09134660,0.10665533,0
+CHCC|1234|S|2|0% OR|PR|1|R,costounitariotarifa_valor_tarifa,146,36,12,-0.04592389,0.06123260,0
+CHCC|1234|S|1|50% OR|CE|1|R,costounitariotarifa_cu,175,36,12,-0.07735082,0.07595846,1
+CHCC|1234|S|1|50% OR|CE|1|R,costounitariotarifa_valor_tarifa,175,36,12,-0.07374711,0.07235474,0
+CHCC|1234|HP|1|100% OR|ID|1|R,costounitariotarifa_cu,196,36,12,-0.08021509,0.07896746,0
+CHCC|1234|HP|1|100% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08021508,0.07896744,0
+CHCC|1234|HM|1|0% OR|CR|1|R,costounitariotarifa_cu,196,36,12,-0.08028361,0.08070434,0
+CHCC|1234|HM|1|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08028362,0.08070435,0
+CHCC|1234|HP|3|0% OR|ID|1|R,costounitariotarifa_cu,196,36,12,-0.09074423,0.09697227,0
+CHCC|1234|HP|3|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.09074417,0.09697222,0
+CHCC|1234|S|1|0% OR|CR|1|R,costounitariotarifa_cu,224,36,12,-0.05102819,0.06621247,0
+CHCC|1234|S|1|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,224,36,12,-0.09381396,0.11734396,0
+CHCC|1234|HM|2|0% OR|RS|1|R,costounitariotarifa_cu,74,36,12,-0.09553509,0.11243394,0
+CHCC|1234|HM|2|0% OR|RS|1|R,costounitariotarifa_valor_tarifa,74,36,12,-0.09553508,0.11243392,0
+CHCC|1234|HP|4|0% OR|ID|1|R,costounitariotarifa_cu,196,36,12,-0.09899311,0.10528016,0
+CHCC|1234|HP|4|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.09899319,0.10528023,0
+CHCC|1234|S|1|50% OR|CR|1|R,costounitariotarifa_cu,224,36,12,-0.04951720,0.06445525,0
+CHCC|1234|S|1|50% OR|CR|1|R,costounitariotarifa_valor_tarifa,224,36,12,-0.09095703,0.11376416,0
+CHCC|1234|HM|1|100% OR|RS|1|R,costounitariotarifa_cu,196,36,12,-0.07293167,0.07350152,0
+CHCC|1234|HM|1|100% OR|RS|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07293176,0.07350161,0
+CHCC|1234|S|2|0% OR|OF|1|R,costounitariotarifa_cu,201,36,12,-0.07367020,0.07829815,0
+CHCC|1234|S|2|0% OR|OF|1|R,costounitariotarifa_valor_tarifa,201,36,12,-0.07367020,0.07829815,0
+CHCC|1234|S|1|50% OR|IX|1|R,costounitariotarifa_cu,176,36,12,-0.08332638,0.07834799,0
+CHCC|1234|S|1|50% OR|IX|1|R,costounitariotarifa_valor_tarifa,176,36,12,-0.07991757,0.07493919,0
+CHCC|1234|HP|2|0% OR|ID|1|R,costounitariotarifa_cu,196,36,12,-0.08205837,0.08274999,0
+CHCC|1234|HP|2|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08205831,0.08274994,0
+CHCC|1234|S|1|50% OR|ID|1|R,costounitariotarifa_cu,224,36,12,-0.04951720,0.06445525,0
+CHCC|1234|S|1|50% OR|ID|1|R,costounitariotarifa_valor_tarifa,224,36,12,-0.09095703,0.11376416,0
+CHCC|1234|HM|3|0% OR|PR|1|R,costounitariotarifa_cu,150,36,12,-0.10832430,0.12254949,0
+CHCC|1234|HM|3|0% OR|PR|1|R,costounitariotarifa_valor_tarifa,150,36,12,-0.10832423,0.12254942,0
+CHCC|1234|S|2|0% OR|BE|1|R,costounitariotarifa_cu,167,36,12,-0.05791925,0.06842531,2
+CHCC|1234|S|2|0% OR|BE|1|R,costounitariotarifa_valor_tarifa,167,36,12,-0.04713459,0.05475647,0
+CHCC|1234|S|1|100% OR|OF|1|R,costounitariotarifa_cu,224,36,12,-0.04825085,0.06296736,0
+CHCC|1234|S|1|100% OR|OF|1|R,costounitariotarifa_valor_tarifa,224,36,12,-0.08842518,0.11058709,0
+CHCC|1234|S|3|0% OR|PR|1|R,costounitariotarifa_cu,150,36,12,-0.10600230,0.12020916,0
+CHCC|1234|S|3|0% OR|PR|1|R,costounitariotarifa_valor_tarifa,150,36,12,-0.04882365,0.06303052,0
+CHCC|1234|S|3|0% OR|EE|1|R,costounitariotarifa_cu,196,36,12,-0.07597114,0.08456079,0
+CHCC|1234|S|3|0% OR|EE|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07597114,0.08456079,0
+CHCC|1234|HM|2|0% OR|ID|1|R,costounitariotarifa_cu,196,36,12,-0.06974563,0.07261121,0
+CHCC|1234|HM|2|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.06974576,0.07261134,0
+CHCC|1234|S|1|0% OR|ID|1|R,costounitariotarifa_cu,224,36,12,-0.05102819,0.06621247,0
+CHCC|1234|S|1|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,224,36,12,-0.09381396,0.11734396,0
+CHCC|1234|HM|2|0% OR|OO|1|R,costounitariotarifa_cu,192,36,12,-0.06875906,0.07240869,0
+CHCC|1234|HM|2|0% OR|OO|1|R,costounitariotarifa_valor_tarifa,192,36,12,-0.06875918,0.07240881,0
+CHCC|1234|HP|1|100% OR|PR|1|R,costounitariotarifa_cu,196,36,12,-0.08021509,0.07896746,0
+CHCC|1234|HP|1|100% OR|PR|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08021508,0.07896744,0
+CHCC|1234|S|1|100% OR|CR|1|R,costounitariotarifa_cu,224,36,12,-0.04825085,0.06296736,0
+CHCC|1234|S|1|100% OR|CR|1|R,costounitariotarifa_valor_tarifa,224,36,12,-0.08842522,0.11058712,0
+CHCC|1234|S|2|0% OR|FX|1|R,costounitariotarifa_cu,193,36,12,-0.07033782,0.07388548,0
+CHCC|1234|S|2|0% OR|FX|1|R,costounitariotarifa_valor_tarifa,193,36,12,-0.11225539,0.10567407,0
+CHCC|1234|HP|1|50% OR|PR|1|R,costounitariotarifa_cu,196,36,12,-0.08398478,0.08257358,0
+CHCC|1234|HP|1|50% OR|PR|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08398468,0.08257349,0
+CHCC|1234|S|2|0% OR|AC|1|R,costounitariotarifa_cu,196,36,12,-0.07146297,0.07389636,0
+CHCC|1234|S|2|0% OR|AC|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07146297,0.07389636,0
+CHCC|1234|HM|4|0% OR|CR|1|R,costounitariotarifa_cu,168,36,12,-0.06141253,0.06676246,4
+CHCC|1234|HM|4|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,168,36,12,-0.06141247,0.06676240,4
+CHCC|1234|S|1|50% OR|AC|1|R,costounitariotarifa_cu,196,36,12,-0.07694130,0.07705030,0
+CHCC|1234|S|1|50% OR|AC|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07694130,0.07705030,0
+CHCC|1234|HP|4|0% OR|CR|1|R,costounitariotarifa_cu,168,36,12,-0.06486896,0.06973630,3
+CHCC|1234|HP|4|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,168,36,12,-0.06486899,0.06973634,3
+CHCC|1234|S|1|100% OR|IA|1|R,costounitariotarifa_cu,196,36,12,-0.07347117,0.07367038,0
+CHCC|1234|S|1|100% OR|IA|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07347118,0.07367039,0
+CHCC|1234|S|2|0% OR|EE|1|R,costounitariotarifa_cu,196,36,12,-0.07146297,0.07389636,0
+CHCC|1234|S|2|0% OR|EE|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07146297,0.07389636,0
+CHCC|1234|S|3|0% OR|IX|1|R,costounitariotarifa_cu,176,36,12,-0.07479184,0.07390389,1
+CHCC|1234|S|3|0% OR|IX|1|R,costounitariotarifa_valor_tarifa,176,36,12,-0.07075892,0.06987097,0
+CHCC|1234|HP|2|0% OR|PR|1|R,costounitariotarifa_cu,146,36,12,-0.08874700,0.10327717,0
+CHCC|1234|HP|2|0% OR|PR|1|R,costounitariotarifa_valor_tarifa,146,36,12,-0.08874702,0.10327718,0
+CHCC|1234|HP|1|0% OR|RS|1|R,costounitariotarifa_cu,196,36,12,-0.08817518,0.08658240,0
+CHCC|1234|HP|1|0% OR|RS|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08817517,0.08658239,0
+CHCC|1234|S|1|50% OR|OB|1|R,costounitariotarifa_cu,196,36,12,-0.07694130,0.07705030,0
+CHCC|1234|S|1|50% OR|OB|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07694130,0.07705030,0
+CHCC|1234|S|1|50% OR|PR|1|R,costounitariotarifa_cu,224,36,12,-0.04951720,0.06445525,0
+CHCC|1234|S|1|50% OR|PR|1|R,costounitariotarifa_valor_tarifa,224,36,12,-0.09095703,0.11376416,0
+CHCC|1234|HM|1|0% OR|ID|1|R,costounitariotarifa_cu,196,36,12,-0.08028361,0.08070434,0
+CHCC|1234|HM|1|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08028362,0.08070435,0
+CHCC|1234|S|2|0% OR|ID|1|R,costounitariotarifa_cu,201,36,12,-0.07367020,0.07829815,0
+CHCC|1234|S|2|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,201,36,12,-0.07367010,0.07829804,0
+CHCC|1234|S|3|0% OR|EA|1|R,costounitariotarifa_cu,196,36,12,-0.07597114,0.08456079,0
+CHCC|1234|S|3|0% OR|EA|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07597114,0.08456079,0
+CHCC|1234|S|4|0% OR|CR|1|R,costounitariotarifa_cu,168,36,12,-0.05958082,0.06488339,4
+CHCC|1234|S|4|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,168,36,12,-0.05449884,0.05980141,0
+CHCC|1234|S|1|100% OR|CE|1|R,costounitariotarifa_cu,176,36,12,-0.07935440,0.07472288,0
+CHCC|1234|S|1|100% OR|CE|1|R,costounitariotarifa_valor_tarifa,176,36,12,-0.07756018,0.07292865,0
+CHCC|1234|S|1|100% OR|EA|1|R,costounitariotarifa_cu,196,36,12,-0.07347117,0.07367038,0
+CHCC|1234|S|1|100% OR|EA|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07347117,0.07367038,0
+CHCC|1234|HP|1|0% OR|PR|1|R,costounitariotarifa_cu,196,36,12,-0.08817518,0.08658240,0
+CHCC|1234|HP|1|0% OR|PR|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08817517,0.08658239,0
+CHCC|1234|S|1|50% OR|EE|1|R,costounitariotarifa_cu,196,36,12,-0.07694130,0.07705030,0
+CHCC|1234|S|1|50% OR|EE|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07694130,0.07705030,0
+CHCC|1234|S|1|0% OR|OB|1|R,costounitariotarifa_cu,191,36,12,-0.08145335,0.08213234,0
+CHCC|1234|S|1|0% OR|OB|1|R,costounitariotarifa_valor_tarifa,191,36,12,-0.08145335,0.08213234,0
+CHCC|1234|S|1|0% OR|AC|1|R,costounitariotarifa_cu,196,36,12,-0.08081035,0.08081892,0
+CHCC|1234|S|1|0% OR|AC|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08081035,0.08081892,0
+CHCC|1234|S|1|0% OR|IA|1|R,costounitariotarifa_cu,196,36,12,-0.08081035,0.08081892,0
+CHCC|1234|S|1|0% OR|IA|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08081031,0.08081888,0
+CHCC|1234|S|2|0% OR|CR|1|R,costounitariotarifa_cu,201,36,12,-0.07367020,0.07829815,0
+CHCC|1234|S|2|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,201,36,12,-0.07367010,0.07829804,0
+CHCC|1234|S|2|0% OR|IY|1|R,costounitariotarifa_cu,195,36,12,-0.07191181,0.07288544,0
+CHCC|1234|S|2|0% OR|IY|1|R,costounitariotarifa_valor_tarifa,195,36,12,-0.11317835,0.10402300,0
+CHCC|1234|HM|1|50% OR|CR|1|R,costounitariotarifa_cu,196,36,12,-0.07640677,0.07690606,0
+CHCC|1234|HM|1|50% OR|CR|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07640678,0.07690608,0
+CHCC|1234|HM|4|0% OR|ID|1|R,costounitariotarifa_cu,196,36,12,-0.08111594,0.09062775,0
+CHCC|1234|HM|4|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08111602,0.09062782,0
+CHCC|1234|S|1|50% OR|IA|1|R,costounitariotarifa_cu,196,36,12,-0.07694130,0.07705030,0
+CHCC|1234|S|1|50% OR|IA|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07694135,0.07705036,0
+CHCC|1234|S|1|100% OR|AC|1|R,costounitariotarifa_cu,196,36,12,-0.07347117,0.07367038,0
+CHCC|1234|S|1|100% OR|AC|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07347117,0.07367038,0
+CHCC|1234|HM|1|0% OR|PR|1|R,costounitariotarifa_cu,196,36,12,-0.08028361,0.08070434,0
+CHCC|1234|HM|1|0% OR|PR|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08028362,0.08070435,0
+CHCC|1234|HP|1|0% OR|CR|1|R,costounitariotarifa_cu,196,36,12,-0.08817518,0.08658240,0
+CHCC|1234|HP|1|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.08817517,0.08658239,0
+CHCC|1234|S|2|0% OR|CE|1|R,costounitariotarifa_cu,173,36,12,-0.06829459,0.06707806,2
+CHCC|1234|S|2|0% OR|CE|1|R,costounitariotarifa_valor_tarifa,173,36,12,-0.06507303,0.06385651,0
+CHCC|1234|HM|3|0% OR|ID|1|R,costounitariotarifa_cu,196,36,12,-0.07353900,0.08268986,0
+CHCC|1234|HM|3|0% OR|ID|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07353893,0.08268979,0
+CHCC|1234|HP|3|0% OR|CR|1|R,costounitariotarifa_cu,196,36,12,-0.09074423,0.09697227,0
+CHCC|1234|HP|3|0% OR|CR|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.09074417,0.09697222,0
+CHCC|1234|S|1|50% OR|AP|1|R,costounitariotarifa_cu,224,36,12,-0.04951720,0.06445525,0
+CHCC|1234|S|1|50% OR|AP|1|R,costounitariotarifa_valor_tarifa,224,36,12,-0.09095703,0.11376415,0
+CHCC|1234|S|1|100% OR|BE|1|R,costounitariotarifa_cu,167,36,12,-0.05921857,0.07009326,2
+CHCC|1234|S|1|100% OR|BE|1|R,costounitariotarifa_valor_tarifa,167,36,12,-0.05125231,0.05945909,0
+CHCC|1234|HM|2|0% OR|PR|1|R,costounitariotarifa_cu,146,36,12,-0.09242120,0.10728778,0
+CHCC|1234|HM|2|0% OR|PR|1|R,costounitariotarifa_valor_tarifa,146,36,12,-0.09242111,0.10728769,0
+CHCC|1234|S|2|0% OR|OO|1|R,costounitariotarifa_cu,192,36,12,-0.07070719,0.07396605,0
+CHCC|1234|S|2|0% OR|OO|1|R,costounitariotarifa_valor_tarifa,192,36,12,-0.07070712,0.07396598,0
+CHCC|1234|HM|1|100% OR|CR|1|R,costounitariotarifa_cu,196,36,12,-0.07293167,0.07350152,0
+CHCC|1234|HM|1|100% OR|CR|1|R,costounitariotarifa_valor_tarifa,196,36,12,-0.07293176,0.07350161,0
+CHCC|1234|S|1|100% OR|AP|1|R,costounitariotarifa_cu,224,36,12,-0.04825085,0.06296736,0
+CHCC|1234|S|1|100% OR|AP|1|R,costounitariotarifa_valor_tarifa,224,36,12,-0.08842518,0.11058709,0
+CHCC|1234|S|1|100% OR|PR|1|R,costounitariotarifa_cu,224,36,12,-0.04825085,0.06296736,0
+CHCC|1234|S|1|100% OR|PR|1|R,costounitariotarifa_valor_tarifa,224,36,12,-0.08842522,0.11058712,0
+CHCC|1234|S|1|0% OR SIN AOM|RS|2|R,costounitariotarifa_cu,161,36,12,-0.04997295,0.06331773,0
+CHCC|1234|S|1|0% OR SIN AOM|RS|2|R,costounitariotarifa_valor_tarifa,161,36,12,-0.07698797,0.09842645,0
+CHCC|1234|S|1|0% OR SIN AOM|RS|1|R,costounitariotarifa_cu,161,36,12,-0.04997295,0.06331773,0
+CHCC|1234|S|1|0% OR SIN AOM|RS|1|R,costounitariotarifa_valor_tarifa,161,36,12,-0.10043171,0.10642987,0
+CHCC|1234|S|1|0% OR SIN AOM|PR|1|R,costounitariotarifa_cu,161,36,12,-0.04997295,0.06331773,0
+CHCC|1234|S|1|0% OR SIN AOM|PR|1|R,costounitariotarifa_valor_tarifa,161,36,12,-0.07698797,0.09842646,0
+CHCC|1234|HP|1|0% OR SIN AOM|CR|1|R,costounitariotarifa_cu,133,36,12,-0.09098348,0.08982927,0
+CHCC|1234|HP|1|0% OR SIN AOM|CR|1|R,costounitariotarifa_valor_tarifa,133,36,12,-0.09098343,0.08982921,0
+CHCC|1234|HM|1|0% OR SIN AOM|RS|1|R,costounitariotarifa_cu,133,36,12,-0.08278153,0.08375238,0
+CHCC|1234|HM|1|0% OR SIN AOM|RS|1|R,costounitariotarifa_valor_tarifa,133,36,12,-0.08278158,0.08375242,0
+CHCC|1234|HP|1|0% OR SIN AOM|RS|1|R,costounitariotarifa_cu,133,36,12,-0.09098348,0.08982927,0
+CHCC|1234|HP|1|0% OR SIN AOM|RS|1|R,costounitariotarifa_valor_tarifa,133,36,12,-0.09098343,0.08982921,0
+CHCC|1234|S|1|0% OR SIN AOM|AC|1|R,costounitariotarifa_cu,133,36,12,-0.08340008,0.08393714,0
+CHCC|1234|S|1|0% OR SIN AOM|AC|1|R,costounitariotarifa_valor_tarifa,133,36,12,-0.08340008,0.08393714,0
+CHCC|1234|HM|1|0% OR SIN AOM|ID|1|R,costounitariotarifa_cu,133,36,12,-0.08278153,0.08375238,0
+CHCC|1234|HM|1|0% OR SIN AOM|ID|1|R,costounitariotarifa_valor_tarifa,133,36,12,-0.08278158,0.08375242,0
+CHCC|1234|S|1|0% OR SIN AOM|EE|1|R,costounitariotarifa_cu,133,36,12,-0.08340008,0.08393714,0
+CHCC|1234|S|1|0% OR SIN AOM|EE|1|R,costounitariotarifa_valor_tarifa,133,36,12,-0.08340008,0.08393714,0
+CHCC|1234|HM|1|0% OR SIN AOM|PR|1|R,costounitariotarifa_cu,133,36,12,-0.08278153,0.08375238,0
+CHCC|1234|HM|1|0% OR SIN AOM|PR|1|R,costounitariotarifa_valor_tarifa,133,36,12,-0.08278158,0.08375242,0
+CHCC|1234|S|1|0% OR SIN AOM|AP|1|R,costounitariotarifa_cu,161,36,12,-0.04997295,0.06331773,0
+CHCC|1234|S|1|0% OR SIN AOM|AP|1|R,costounitariotarifa_valor_tarifa,161,36,12,-0.07698797,0.09842645,0
+CHCC|1234|S|1|0% OR SIN AOM|AI|1|R,costounitariotarifa_cu,128,36,12,-0.08462810,0.08550514,0
+CHCC|1234|S|1|0% OR SIN AOM|AI|1|R,costounitariotarifa_valor_tarifa,128,36,12,-0.08462810,0.08550514,0
+CHCC|1234|S|1|0% OR SIN AOM|EA|1|R,costounitariotarifa_cu,133,36,12,-0.08340008,0.08393714,0
+CHCC|1234|S|1|0% OR SIN AOM|EA|1|R,costounitariotarifa_valor_tarifa,133,36,12,-0.08340008,0.08393714,0
+CHCC|1234|S|1|0% OR SIN AOM|OF|1|R,costounitariotarifa_cu,161,36,12,-0.04997295,0.06331773,0
+CHCC|1234|S|1|0% OR SIN AOM|OF|1|R,costounitariotarifa_valor_tarifa,161,36,12,-0.07698797,0.09842645,0
+CHCC|1234|S|1|0% OR SIN AOM|ID|1|R,costounitariotarifa_cu,161,36,12,-0.04997295,0.06331773,0
+CHCC|1234|S|1|0% OR SIN AOM|ID|1|R,costounitariotarifa_valor_tarifa,161,36,12,-0.07698797,0.09842646,0
+CHCC|1234|HM|1|0% OR SIN AOM|CR|1|R,costounitariotarifa_cu,133,36,12,-0.08278153,0.08375238,0
+CHCC|1234|HM|1|0% OR SIN AOM|CR|1|R,costounitariotarifa_valor_tarifa,133,36,12,-0.08278158,0.08375242,0
+CHCC|1234|S|1|0% OR SIN AOM|CR|1|R,costounitariotarifa_cu,161,36,12,-0.04997295,0.06331773,0
+CHCC|1234|S|1|0% OR SIN AOM|CR|1|R,costounitariotarifa_valor_tarifa,161,36,12,-0.07698797,0.09842646,0
+CHCC|1234|HP|1|0% OR SIN AOM|ID|1|R,costounitariotarifa_cu,133,36,12,-0.09098348,0.08982927,0
+CHCC|1234|HP|1|0% OR SIN AOM|ID|1|R,costounitariotarifa_valor_tarifa,133,36,12,-0.09098343,0.08982921,0
+CHCC|1234|HP|1|0% OR SIN AOM|PR|1|R,costounitariotarifa_cu,133,36,12,-0.09098348,0.08982927,0
+CHCC|1234|HP|1|0% OR SIN AOM|PR|1|R,costounitariotarifa_valor_tarifa,133,36,12,-0.09098343,0.08982921,0
+CHCC|1234|S|1|0% OR SIN AOM|IA|1|R,costounitariotarifa_cu,133,36,12,-0.08340008,0.08393714,0
+CHCC|1234|S|1|0% OR SIN AOM|IA|1|R,costounitariotarifa_valor_tarifa,133,36,12,-0.08340009,0.08393714,0

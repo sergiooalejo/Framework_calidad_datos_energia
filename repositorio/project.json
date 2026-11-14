@@ -58,7 +58,37 @@
     "4.6": {
       "codigo": "Code/Evaluation/niveles_costos",
       "resultados": "Data/gold/outputs/niveles_costos"
+    },
+    "hito4_corregido": {
+      "codigo": "Code/hito4",
+      "resultados": "Data/gold/outputs/hito4",
+      "verificacion": "Docs/VERIFICACION_HITO4.md",
+      "resultados_preliminares": "Docs/RESULTADOS_HITO4.md",
+      "comando": "python pipeline.py ejecutar hito4"
+    },
+    "hito3_corregido": {
+      "codigo": "Code/hito3",
+      "resultados": "Data/gold/outputs/hito3",
+      "notebook": "HITO3_REPLICACION.ipynb",
+      "verificacion": "Docs/VERIFICACION_HITO3.md"
+    },
+    "hito5": {
+      "codigo": "Code/hito5",
+      "tablero": "Code/hito5/app_streamlit.py",
+      "cli": "Code/hito5/run.py",
+      "paquete": "Code/hito5/framework_calidad",
+      "documentacion": "Docs/CIERRE_HITO5.md",
+      "comando": "python -m Code.hito5.run listar"
+    },
+    "hito6": {
+      "codigo": "Code/hito6",
+      "resultados": "Data/gold/outputs/hito6",
+      "documentacion": "Docs/PLAN_TRABAJO_HITO6.md",
+      "comando": "python pipeline.py ejecutar muestra-h6",
+      "estado": "parcial_validacion_externa_pendiente"
     }
   },
-  "estado": "linea_base_tecnica_pendiente_aprobacion"
+  "estado": "linea_base_tecnica_pendiente_aprobacion",
+  "estado_hito3": "implementacion_corregida_con_evidencia_externa_pendiente",
+  "estado_hito4": "protocolo_tecnico_verificado_con_validacion_externa_y_aprobacion_pendientes"
 }

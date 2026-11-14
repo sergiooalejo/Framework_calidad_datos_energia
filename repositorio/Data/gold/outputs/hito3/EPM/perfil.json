@@ -1,0 +1,42 @@
+{
+  "fuente": "EPM",
+  "dataset_id": "sfcd-b3ey",
+  "archivo": "Data/bronze/datos/Datos_seleccionados/EPM/epm_sfcd-b3ey.csv",
+  "sha256": "b974a37a171b9178476fbd2baba21470e8845076af105ef9c178e80690f09920",
+  "filas": 3623,
+  "columnas": [
+    "tipodeinformacion",
+    "tipodetarifa",
+    "tipodedato",
+    "rangodeconsumo",
+    "nivel",
+    "propiedadepm",
+    "compartido",
+    "propiedaddelcliente",
+    "punta",
+    "fueradepunta",
+    "year",
+    "mes"
+  ],
+  "ausentes_por_columna": {
+    "tipodeinformacion": 0,
+    "tipodetarifa": 0,
+    "tipodedato": 0,
+    "rangodeconsumo": 0,
+    "nivel": 0,
+    "propiedadepm": 1,
+    "compartido": 1,
+    "propiedaddelcliente": 1,
+    "punta": 1,
+    "fueradepunta": 1,
+    "year": 1,
+    "mes": 1
+  },
+  "duplicados_exactos": 10,
+  "periodos": 61,
+  "inicio": "2016-12",
+  "fin": "2021-12",
+  "series_candidatas_incluyendo_ceros": 465,
+  "series_con_valores_positivos": 230,
+  "nota": "Snapshot local conservado; no se atribuye fecha original de descarga."
+}

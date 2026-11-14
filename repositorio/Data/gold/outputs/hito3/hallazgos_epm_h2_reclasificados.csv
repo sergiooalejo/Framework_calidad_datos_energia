@@ -1,0 +1,484 @@
+registro_original,regla,dimension,severidad,columna,valor,detalle,clave_contenido
+1714,R01 Período presente,Completitud,Error,Año/Mes,,,8fd3e0f2b005b4fd8bf876b7314bac35e7fe5a538856e638b66e552e85761a38
+2038,R04 Duplicado exacto (adicional),Unicidad,Error,,,,491f06a5b587d4f7433ec375b72589c6cd483f3d129a7b6215a2c15f6960045a
+2352,R04 Duplicado exacto (adicional),Unicidad,Error,,,,faf9525088851bd59e695f96a31bca75489b6dffd45ebec9b2424235c6f6fdf5
+2428,R04 Duplicado exacto (adicional),Unicidad,Error,,,,04891db7ff1e217ea1957abd4a92ce6c470121968778a6e76a2573f5957906d2
+2520,R04 Duplicado exacto (adicional),Unicidad,Error,,,,1daa4b66129524cc41f554eabc452cbf6ebcb2f2e4150a30244e82fd9d53b78a
+2652,R04 Duplicado exacto (adicional),Unicidad,Error,,,,e5cc54840068c74a1276546dc197d1aaf26a4a1826fef7c800b8d7124ecfc2b4
+2658,R04 Duplicado exacto (adicional),Unicidad,Error,,,,c242486a78502031595f2aab4a1339b6f2a9eb5e82a2b1ec4a4009bb9b09ba78
+2668,R04 Duplicado exacto (adicional),Unicidad,Error,,,,4dbd4c856a49a44e9941d09e3abe962141a86dde57b961b8d545e755acb87b47
+2678,R04 Duplicado exacto (adicional),Unicidad,Error,,,,430eebadd44d092655d4a4ea21a14a3a56dce4c9e25e5fc78c8f37bd9871ed4c
+2916,R04 Duplicado exacto (adicional),Unicidad,Error,,,,7a7e25be5408a16d40191df7514ab13b71f4d0826e36a4666c4c000b3f6b8a41
+3623,R04 Duplicado exacto (adicional),Unicidad,Error,,,,__SIN_FILA_FISICA__
+58,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,75db40ad72972b52d49ead3970cf428e53f484e2614060d8bcb90c91aa9549d4
+59,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,f365e5143cecf88d4de02bd2e9b19094a51f06f2c50df40c591f43a4fa05898f
+210,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,e161cb4e1e32b2ecda0132f3d7fbff386bf414383d750cfdc787af53c3bc9d72
+211,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,453d7ae0424d873b44571e866b9d7db7cc2cc55c62fcdc7bb235b464eac74be1
+277,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,b1ad177d9e8c299808ca4a322e6a0cd90daa1ce1bfd4b4a867ba1c14718c0e75
+278,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,fedb4bb86f573e86e95c0ba33744fd13848b69a955620d9a332308244948ada0
+294,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,3a1c44a3a0c5854fe3e4fff867f17a8aaa2d74c6a570b6b31160e028c767192a
+295,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,0e53a03b775c891be8229303fb40ea7d5e071aa490c9fdfa8492d506bb5292dc
+362,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,439fabc7d301adb1ced1ff3986035f414b4796aa88fe121cd3a559a88c4fa55d
+363,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,4f18aeb0fa0a97076f215fe4171057b1d86ad564527d103e1c30aacadcd2251f
+464,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,1b80eb4bedf04978daeb3172e49c3988143014f168c760cad4946e583eab55fd
+465,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,d51a7dc7906983f0941938120427df83bc9bc3aace36dd1f515e7436d9d717ac
+471,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,a90a4da1e42cac6115839e5c8340446d4bb16e31d7e7797ba7ade22d46c1fb7b
+472,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,f16fbaabf351020d7b9a2f6091cb19f84f49ae0fb275a627869b2a88acd6fd91
+566,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,0c34c7d032352d7096e846eae0727b5098e4e115696fe8619f3677b90f92d2dd
+567,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,04ecbf716942ff603671589c44715080d762ffdf0081b482e4f69ff0192c956d
+625,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,2afb800dc4b3b54a8a7f2eff803ccab2b7c539f71103c253aa1110b7d0222b46
+626,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,896eeb218307750e3023ed2a8b4f2105c9b3edcb550d480508624ad250d6a312
+648,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,5d7fa866722ff7b48d8b9a8a302cb8b2388439830e4827120f8c1880fd854b7b
+649,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,266317912687934ab0d406352f5a37eb2f15ae66862c3e47283bea68610cb683
+707,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,eb904965d295404d5bf5f0a48b7fecb67b3dfdf1c392a8c6f6e4b122ef334a1c
+708,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,ef0b96492f29db5f48b50db39ee768eadcf1bb37faa61829605b302c51a39047
+807,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,9b70d11478a84d07d1c871113526cf43eacbb00999af3481375686619542f25a
+808,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,f31780105ee7d465738991e95776111895409ae9427c496973c4d16ef36d7736
+825,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,250e27e19df8d108ca19af2ed44f6c2daa136483ec6867b0dbdc957aea138273
+826,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,46daf4ae08d3f87233459f72f275a026f2fbdb9f8d6520df75330a9e2fc12204
+3268,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,45916d109f884cb0655cf91ae57500c25be5e241dd5f53ec79c3a64d6a9e6e5d
+3269,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,cbf1cb830585b8c4f053357716d72b03c61244f31377941629fb478129920f1b
+3328,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,663f732df469283c6d8fcd3676e2250072acd31cad9fc0ffda45a6056d2ebe01
+3329,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,3bcb99abdd784e1fdd448cd680891f91afe48c2f1ac2884d24453790c469d990
+3385,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,8831e93841bfbc19e4dcc3543b23a095ca459798789da1ab64c6f3bfdca2b4ce
+3386,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,a3b3c0789c7f214ed0a55c9445d922f4c9e40df2636416ba38446ec40da46c78
+3444,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,eb2938317c0677cd2da9a91e54bd72da64608f73a1bdc12eaa2fd1e4f2beb9dc
+3445,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,b7a8711290ebee9b446b4e315064da635cac068c1fb1902fd10afd05cdeb40b2
+3503,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,233b9c092b398e6c7e94811d6e187186d1541723528f4617633eaa4027f5a422
+3504,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,90597f7ed16f62aa2bc29325dbbcfed600b75a5f7d1fb56f2bd56307e1b45df6
+3562,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,be22ba3403405a019146cafd489e2e6a240d4d5d003029b48919d9ac6ad3921a
+3563,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,ffd8ef5c68c31c3db0e9bfcf90ddd33738c9b7d5eda74f618fada63ca64d4481
+3621,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,7ae88e2d585978d13cd81c732a7254eaf4832052c501c906cf4ea2bf1edf636d
+3622,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Tarifa,No residencial,→ No Residencial,ff58170e8aeca7a91ba3975de358b44f7d88cba4bf46aa8a2f55633335cdaf19
+12,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución,8ee665119cee94c3c6af4d81ec00cd9be5f98574840237c4a62a8130d745a7cd
+13,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución,66ace20cc63cd653b0cbfdc7027db8bf9a26364223ccf06cc8d0389521f9e44a
+14,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i",3a475504a3f4c6cb67550adc9190a572f1b5486d882edf0dee229ff1cf68c7fd
+16,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m",873a014e34393fd7a9f3128e4d2f57a94348aa97a55171d420bfbf0d78d3589e
+17,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j",a1e8a6ce3e558150db67a8bd8f84ae402b22d254c2c5599bae3a064bf8b7bf24
+18,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m",b37d933c8e2f3b3001b8c0425f55fe01c4d5fcc9ca551736af5e9718eea4b9b8
+22,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",b94a0d24060e8135f1f35dc874f2730db276a2d7ea7d4f6cd63e2a467cbfc0f4
+26,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",0a186a9197b2d833c8d8a7beb541fc02dea7550915bfe611fe4a83a4414b83e0
+28,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",77680d32401d7962c3524bc3355e625b46bf15644e92b616289a8e52612c43e3
+32,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",1c2a60afee9e8fc3ef206ddced8fea69efdef87ac1bd6720e43a1d5b2a2338f5
+34,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",8873bf2f0ccd6c756a4643fa9cd7849394122444335ac9017414b2c5d4ed7220
+38,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",28a318b1db7e740c5abbee5b2dafdf51e2169f5184449837ff6f2fc0a283275d
+46,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",c53eaa703e0a00a3be0b02443b525ad442a859e8c29a894d4eb8b6a484168cf8
+50,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",c0960a81bba24dfba667e2c6545cc2ad95fb57bc8423d087106d682b5d59423a
+52,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",42209d3f3ef8fb6035ce9767f3010de8ccc482f49010639505189956727d7347
+56,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",9321b90f332059bcabc4fc9794cfa80ecb6e78a1b0d4708458eb21bf48bda105
+71,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución,93906c1ffb4e3b0669c07278849fb69fb17f94e1d25ec59a9c73f0a9b89a2c37
+72,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución,cf68918287fefaffd0fc17e4413512714a000e3634d1c7ff31b61f0ddbf9c239
+73,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i",2c989d00b82bb1cce08b920dcc00274860805a541cfb70d0a12c4023df9f686b
+75,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m",b405249e6a31e7127e51a1c65e7bf0a24ef93ad2693b9a10a3a7f5a60d95ef0c
+76,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j",e51229c697b42112524dcd33c6f51edc54aa33d812bda72f327f43b560c73a7e
+77,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m",efdb3e85c7e8158cbc564aef66b949093ce45d5c1c3bb304068d08b4231da6d0
+81,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",f2ea0721ee397f9e25c80a9da8e75215c0a7fcfb5c0f52be98613ccf7f2c9d5b
+85,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",2da20b6c844f05de294a4c6e072083e8ebfa0728335534477c638025109f4e51
+87,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",d0131b21619138bfa5e8bd3999b8b9759c241ba59bc44cb607540f9d82f55e8b
+91,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",10cf18747ad6db7334c066caa58cac32b129754e71385eb2ba33b08f2e6ebc1f
+93,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",690796379e5f8a7f17a6ff5f6b2f98261a3940412c52fbe8413aec6953b95a5a
+97,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",39c86c8b4354dc2a1134357c4ef0b5d4480f95a383ff6203bf4ef3359c42ec11
+114,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución,7face63367079a5b7dcc671ca14bb2283baf0e7f352bd3463a46ed053e71839a
+115,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución,6d28458e47ac418ca9ef18f8947e81e356dbcf60245929c5a1febf44bb0aadc0
+116,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i",d8c90c0295233ae5fb918b6093e9dc0152a672add30c39af4f1b70b7b7ba73ae
+118,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m",2843a2b2ac3578ab5f8f95b753dd1a4dacd4507a8e2dd89afe5cf732ba1be069
+119,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j",b9f414ceb290b38d02790257d8da0609c1943e00a4d1bf8dcea3a4cafc8c107d
+120,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m",a174589541681d9b73001b15c7bd3b3062e902620e0605c51c4c6a1e320e1e4f
+124,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",e67bf3746bcc505d95b798992d19aff8fa712df34fe1118a8c86affdb0aeacb9
+128,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",4f15b67c68dc5c154a1f6a4f9923ef23c938ab862ec146191bb3a4a1d3664932
+130,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",12dca13e33c6cb824bbdb46e82e770a1eb02858789f9d7aa614fdca5cbd6ab37
+134,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",aa9c7ed2b4b4c65d537212b576b672220bbc7b638f3524de59a85aa1616da968
+136,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",b72599b38501a6e9e4a76a6887e5892a34160eee29d68c8262c6e0202a17b9c0
+140,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",b2b12413d110cc4e8a399ad0dcad7183d34ca5f51cabd8f9062ddd02d6ccb400
+148,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",b9563022d1083f67fbe0056333822100066a8dc63f9d2a80a00b3cfa158cd090
+152,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",e178bbadc5a7482401691856d47b8f662b929fbae19bb2fc3ae73359989b27b6
+164,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución,ae0c2ef0b3d96bb55ce40f4b9681f2cb90bb989e1a488524115646720f0ba71a
+165,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución,10f7ff1339e421006efe012807d755c2ef8a8385b07fd3b6cfd017e8516b80a6
+166,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i",b70b1b5deb3f57800acfb2e4c2fa08e7a71cbec1fb8b805ed2adb643226a207c
+168,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m",20efd4d37f9b3e3b554e3dc4c0889ac39908f22a5fcc2884358853e8dc5682fc
+169,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j",ab855e78e545da4fbf82b905c337433f2814ec709e6e5f80c72d3ef1fdf165b6
+170,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m",c4f3aa40b30b6f63e1e1735227799857968d54d334a956a142802725f8806598
+174,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",ac1739642fd4a0e91285bac4452d92390023151ffdfbf705e42f5315a49f934c
+178,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",75021d56048428c024e16afb6ed711ad7d1d5b4ed3070a68a5146b1ad56b9c3a
+180,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",64fb3a69ecce0f2a84b6e047d1ddde553c5dfc49553183b09e470f8703a940d3
+184,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",937c39a0edbbe62c224f956dfcd102dc0b45984bce3e283b5eabdb24f1cb170c
+186,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",4a8fff046aa0d5395d7bf9bf623abd484c53b3fa4a396970ba08ab5361f25cbe
+190,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",d2440c7572390353f7703e4b82b11ea50c99bb52495ab57b245b32b71b67f833
+198,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",172c19b6578c9a354e59442a74ea0179cfa43dc69cf3f249205868b11225c196
+202,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",2053c434830f530b4879e1ac2f196d26b401f45a60ca93436be00d594b753f5c
+204,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",886888ff04cc4d8c7ed29e19349bcf28c45cb1355ee0cd08532ef32112c0330e
+208,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",fb9befa1f68379cfc828e294dbcb3128f19f3bded9f31bf6aae05b82679d6cf0
+223,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución,56aa836ab53f075331e65141ebefacecdd5024c7edeeba8d2fe07f220429b6cc
+224,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución,38ef045d2c81d43b7489ae81e9d642dd57d6a08a3e54eaea446798e10a01fa91
+225,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i",380a249d3cb9592a803b7cd54c512428fbabdc3667a0c6a863217a2a4047dd5f
+227,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m",c3971984d41691a00d366a3203385ff544849d4f5a2678cbfb918fded595e203
+228,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j",572031ce68e59f7866ed71ade6c586231c09cd24fc89f81a6d8fb70c8d41f8f7
+229,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m",40bcea43741db33f01eb6a40b5910c1f9cf19e5427ca1bcca63ef0dfb6bad1ca
+233,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",a18f99754b894dc0a0dd02d3b5b7a8635bf90816a7973e947c0f98d1dfa31727
+237,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",d1d805f440b67235d2182f33d788fab21599c6f4c41d446af84fe95a69f5300d
+239,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",24182c392f1fe61e0b006749d35cd1011b0f3a504038fe0cfd17fe03aeeabea6
+243,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",7efa8cd31ae90ce1f8dca72c4fc604a92a9ff8392bd68b5f92d64be597c2c76b
+245,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",38c4b22b1dbd5d50c447475337a2ff42cf2ea91a6c261e0a9003b8021326fd41
+249,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",6c43783e200eee4c6d3eb3ebfbbf2a39bae717d202fc771a5c4633fe3be10328
+265,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",8b75ff0324b7af1b73915fc07cd2100a69e5803259b75f6a99ae2f16571a644b
+269,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",45ee7e020857b749ed9f9fe84b35c654fbef97bccde14b2fba6056412f9b05d9
+271,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",a331b9d72319fbad4186000188699ba548edf2804b4e1e1cba89ab16b14e9a36
+275,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",c559019ad03375ac063c34242013f7dda2788ecc6ef10bf5c137c3442e9fc9c0
+282,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",304977bf1feb06d42811ca9c871c214c4cc5e989f7d58d7176b44ed038de36e2
+286,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",2e7584e05b6a90b4e5f87bc664885fe617e1a23f1f2833784e2d34283537b854
+288,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",01321637f88b11a44adb709e0cb9282143e34798a92af3b8291bc3c7d19c8025
+292,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",b7768cad7e113425a4f2be6ce4542a4ba809c30d85b98f0f81314448a870e69c
+315,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución,47b85a682c027e614ff37f496afb35243640526933ca06c9f69ba3e2e44ebd3b
+316,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución,200dd34ce7b38cfa1d2db0c6d4ff8e925a94896eec10f0ef244cde5999542bd2
+317,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i",3db4585952e731397aba893d90ed684c7fa73b16a2956bfbc66f437aadfc8a36
+319,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m",2a2e36b150a47f0c9b5f6e87903ea60e119a9f28c61259cfc87c00beec20a86f
+320,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j",6d8dcb6dd05269e1a2e98a5bf4df14585f86163b3da2b3dfafe14856fea4c8ec
+321,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m",a9e0cca2e00d52de8d7b8e257804950804356dd1aa3f7b10efd4582c7b5d4347
+325,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",17dd8217bdfa973883e39026d658c3576c2ffcc313a12c33105ff1f8dc010dda
+329,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",9f7d47ba8377f25258d1004cfb36b729a678262f4d0e61d958e4aec6c88701cc
+331,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",a053571c77e3ce7e714432d7599fcbf422d7cc41be799e8465de8916c51ed8ec
+335,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",1343a95319cc55bfe4c673eff4e06c0f8c96b77f6cfefdf0d67a1a10992b437a
+337,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",af6927e16a9d468246b7875a5b1b0f2a7985f4ff6d4334e5540b65410b9ffd40
+341,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",6db89ecb38e45e9605961248a57b89b03fd03478cb104ef09f60a58eafb2af79
+349,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",09484432fbdeedc97c569978f8cb513f911b589d17dfd86c444afe4520bc1ec9
+353,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",590c7b57c3e658d4c9703d9d9d761d49f166589375abb79068368ae60dd5f3e5
+356,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",aacb7238932ebbb572ea8610b73da47a06c49a1ad6f01c6c8f9371ff28802e91
+360,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",a44d96d21d303dea9300e735bca52ffdee43ca69d6543702d2d76d35ce38b136
+366,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución,81eda0d6e0291ebac112e60517acfd67cef4db65317e32628a9fe7ac18d84eee
+367,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución,468846a4e1311d84f7072572eb21936142fb532a50b73bf024e27e5a04ffb4ba
+368,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i",526dfb01aeaa7a4fa5e48a24b5454894c2503f056dea2ae02fa17cbfef5f2440
+370,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m",4f30b3ca7c510b8697706a1c2c7572b3ced9f1994d05de7cf1fa3767d843bb52
+371,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j",c4f0580d9c39bee2e75dd09fb686c09b1f5000eb0ec8183eca02d20fd6fd6673
+372,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m",ee0d0b7a280e4a13eb197c0242aff70212e3c232ad45815dcd0128c3e56d70f5
+376,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",aae2009f995ee409894aa0ff767e4c8dbd0bfdd7af32ab3fb8da18ed349241e4
+380,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",dd2fd8e593facfa40042c9ed462a5ce1d9c3663b64a51af249141480290d8ec9
+382,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",13bc0c3831d6f93bd042c91c5677ad77958094b5508640d13ea3c5f6a13759dd
+386,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",59c50fb36cef0ec7ef0a3b8975e04d68abaff39507e42b0490358fe50b5dae15
+388,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",e3bff619fa97e41c0620d0f14579ba4165a578044a0804bc27e20ad264e82c8b
+392,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",3c9d3a10fa2c7073e036a754c77a114bfd389555417644cabebefa9948ac5da3
+400,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",45c74a05afad13a32c7718ffc6b13d122efdedebe9d798f3f1e97cf1c61146a9
+404,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",8c75004a946f9e9f692190b1dc418af05e9048dfbaff09e6030f425a3adf2100
+406,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",77a121088498342a8cae1390b0309b1f39a6fb8d84b90cffc623834ead2767b7
+418,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución,485b1af09aa89d48ddedfa993cee9a4b29202b1f6b33779793d38ede3c7c75f2
+419,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución,2ada24f75414b49b83111107f11c21f08befd514e062c91b175ea6edbfbee146
+420,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i",5f8b95b3d970533c2a5b8b8b06825a4713ee584359f0b3c6063d4f7fc1445549
+422,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m",e44c7b39eda4e7f51a2930fdb89731a36f889ef516406040c68ea4734725d265
+423,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j",f84927892c77b206d9c514e1e9a798ed8c503b7e8dd94f46023c760ba016a28e
+424,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m",a0e44a2d507d6bb77ee83002f1cfdbcab2f0523dd187ea13b53f58a66518a0f1
+428,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",99c05378818ba339f0b4a37ef5091ebeb9065bfe1e246e07bd33457cfc046fcc
+432,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",8f6069861aebd05da0028639bd5a325aa98ef302d09c759074eb4585e2e255e4
+434,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",1afdad04cce5aa822b708a028906175665938f1f65079bc78881ed5d211365c9
+438,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",9086c420410682396ee739ca3f5b4f79b524c7fa7e9786ce11cc6530c1894dc0
+440,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",56b6f907792452cd38d7915155e5a0bdcbcfdffa422ca741103dac0da815d524
+444,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",e4ecefe711a66df7174c47ad469d45d7255dbedc3217cdb7b2f243b650f70432
+452,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",a81ac2682321bab674c4e6297eca7817bfb83e48a22f458b9a5e0236fba28abf
+456,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",848048d8c73c13500045902002bd0bbb95b41ed88f99ca00ee639eb4c5e644e6
+458,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",9bcf9196612b7bcdde5eaf57e004df967f0eb3dce92a0f0bfe6f5d915f9a2f0d
+462,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",1f0737703c3dbe002959662964323ec6659955112574ed8cd6c5707178b3f27b
+469,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",e984947d0d37fd1f6bc88f65c0cdd1772198e3b0ff682b90cf5ddceeaee21e62
+484,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución,d5594e07a94bb73fbcca4f3a076b2fec124b9e46bb8140a61dd5ddfcd5c9e12e
+485,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución,3db539afc6b84889f915aeb22976a6ab79f8c0738179ba177226be1140aa917e
+486,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i",986eb4ea6ac68631c6d9f591f13fc87b7c5884f7af5a607a718afd98487a69e7
+488,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m",4da04b6c9f33337e965615c115486832aa75abc281372a214b0fb5675460c8c2
+489,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j",e845bc8b396585d747e79ab18081e44cdc825c6684396660020d4e7739c69333
+490,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m",77676eaa5929db70cb8eb272825adb434f588a5b8aef1748f8cfe6d935f99aa0
+494,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",3ff5455b6b59260dc22c01ead1fa6fa308165409f75b92a6ac65cfe85a50f2d1
+498,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",2386d30599814a8dca8faef35ba3ec8e5e001be3b66894b27fec3a6356295648
+500,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",8d1af9cae025a54c588b995c6ae66dc5105bd71c6cc881ed76b5bbf5c380091a
+504,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",e556f40ab24d0f9581207a1f45038d4efaa4bd8872f518d65626f82aaaca5260
+506,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",186e8d3d52b6c1410fcfd6a7c77b96021b2fdd9b57c2ad2154867417f41118d1
+520,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución,c5499a956c0a55fba8c71324da6abc29d008adad6b48002c1efaffabbafeafba
+521,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución,27d9dd3eb678b08fa3fc4c0670bc1dd4f8a8e946481cabedb6d17527fbf4d4ae
+522,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i",fb6c43fe43a33ea7cf28480d42014c2ab95b6d7dc937323944a6e0d7556b27e8
+524,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m",75fe3abd3184a9599a2ab3db35e40f4237dd90f7e3740cbaf47230d472b10c0b
+525,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j",270bfedb58321e79c09721ae6ac9bfa7e4b24f490de74e5a154dc4804ab2fc31
+526,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m",9e25151155d39c35fe10d7f88a4104ba0a762b47a6f7d73d908add3532e76b12
+530,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",6151eeb9d35bdb2a9deb1352addaaa7701902d4e0ae61518d08d87e8df5de254
+534,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",075b72531d55a802e95dd17751181355285caa1af2a4795effd73fbc09718aed
+536,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",af6026be5659557a6a5b2fabb366b8000e0be8d50ddd0b0510785487906e64c7
+540,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",4489efe404837581e5aecf7be492ee2b05232c3d555f06e5d7295cfe6b44572f
+542,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",228fb9afed12693ab9101f17067ab0b5255b49310b138ad4cafeaafe12fb0e0a
+546,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",34adf7d26f3d8713815971be29aa83788118f4809f144a113c0e3307f2e09bcc
+554,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",5c707376e97e07b91a73e373adb91bc20a35e4e5e3f8f4b94b70207b1e67f73f
+558,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",c79648ae17a2ca4648b1dea33fc384a8ae1234eced875119f046ee7082cb6902
+560,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",384a5f9184a21d1e15914a14aa588c4627841fa5d6d8fe722ac2d5dfed1bea18
+564,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",617479fcfd07e1dc83542dc07839076d5034ecec8d9cfbf5cf0017c921482859
+579,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución,864ceacbc778ab7eb4dc9d9acbb0144f2eeda46af5078efd0e87c1eb294729af
+580,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución,a209314f577e2ae970a8bbb165cf0a951213d1378fc404b4060345fbd01019c9
+581,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i",8168d6d02e4a554bbf9cf981ba1a5f0ec78429d6d8d2bd70419605b8316e5e5b
+583,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m",e55f7a0ffcf8358fa7c2214991a24a74997ffdf8cddb575681482216289440af
+584,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j",b34cc3c991355d20c6ed0ca23577ff9a629ca234022cb73813959470345dd71e
+585,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m",b856b64d5e17ecd43368bcadfce3b925f760158c9d518bd22a6e7624bc18a24d
+589,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",b0efbfc596cdec054bc40301de87a06bae1bf8e062f1866347bcb737be67ba0a
+593,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",97c29a91fb72179033893810187d8c17bfb7771768821b08779defe78f215e14
+595,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",4eaf9f5dafb52862241d7cbc8b0ef50c71bb93f06552ce43dcb9195e0772e5a5
+599,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",7f3f0c04108365dc6f048d3cd7edb7bb7eb95ec8c58e200846bd9d1096a2f951
+601,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",2985ff8f8c47691a134cb55761c0f6cffa0c05b530dce3bbfa844f44ec99aa09
+605,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",257a844f8e21cc8bcaec3ab90ae8da3e52ab94ed5440f93194f836b06f4906a2
+613,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",7003a461b2d7aeeba3a54579ee069671d3c26993474920d5bce9c5142d594359
+617,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",5cbd775fb7304f7a2173f7febd52e95bfe2988c719b5fb144e01e580a2a72ec2
+619,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",61caf5e4dae5b4e1c3374999405396373829acfaa8a5c2db69e0da5920fc4b40
+623,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",820deb0eac978de25472b90de50385a559de7c90304dcf185e1b44d4089ae651
+628,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",a83e8f0aff3e4dfceb8f7a18f9c1b58ccc1cd7d41a850373d26a1c22eabc030e
+636,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",6f3e6d6e80c9a52e72d5a1c82c4c7e7d14759cf141384e2507bc4b64ce2db115
+640,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",37bbc22a901458075d8dc77293af9066b433c9717ce3322ad1535dd40c171108
+642,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",92f21275679b20f497f81bcde0a795d35438249cfa7faaa847388fd562c80f19
+646,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",52ba07446925d9d4f132b0fa8acfe88da8dbb7548c09ffdbcabee433d7a82720
+661,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución,a668b3881e7a8eddfdf5fe9e2b52b69e2d4111e089bcc15ef738d5c2cc360962
+662,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución,f0fc44dd50133a2fbac53399a6909933be4aac366a8ada200fce0963690a3eca
+663,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i",daeb673b8b64db64ce4dfb3e989569fc696bd1804ce8b22fdbec3b2c112da66b
+665,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m",9eb149051d70df44cae52fa93553a7684f19d72d9a3cbe614b4dd65de5e6e923
+666,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j",3d1f7223883d91ff3065a434851e3ad17a63f9690f4f17747288baf4a4efeae9
+667,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m",df961177935fad164bd14b25584ae6d47be4bb51df3b0fc606fbd7a256b85492
+671,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",150a998a0c3c426759b638a431d5fdbb984f0083205cbdf7e692e1a230225d07
+675,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",e89b624622bfb7f45ec40038cf7a1348ab21c1f8aae8ee37549c927ee73fd88d
+677,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",9436d0728d1cc7bd461969cf7786310e11fad5af09fbf2d28bf45e1614da9565
+681,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",81763d23184de8dca5bfc9f9ebb2aee18d27b6660004bc836714cc2e18b07b21
+683,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",020a7ac473125c086b80ed9884e3a9e6937ee977963af7e1560a85afc214b9d5
+687,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",25c8c0329fb0e6a060ab6cbaed2993e139c8a276a3ea6f0d7b35bf8e8d35fab5
+695,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",be116c77440fbf52b4d5726a5917cbdb90162a40eee41e054fb53a20b3a57892
+699,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",a6c3e2f7c1831e73726fefa839eef84111bbd61436ee87de812b9319811e661b
+701,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",1b5d061261b02cd9340e41c21648e3dca8896776f8f894b8de26b2eb0d44a229
+705,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",8d425361f869280cda4abfa037ee8c8cd7a18660792d7a0c9fbaeeaa502cacd0
+720,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución,bcdabe94fe93ded3f36ac55d08eb427894231d0aa6dd278b46eda45960180182
+721,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución,f156044e0d26dbe9f93ef95c22c097947e4dd858c2d7430253a7c75b32dc5346
+722,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i",28c524aa1a58f3d15e779e75fd1065b11cdc2db5e559e08adfcc5ada93a3cf06
+724,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m",cbd940d866804d40cba64834bfa6f3d4b34927759c0e114df201a86df5a36ce9
+725,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j",9a0951de7170059611578547ac96b74fe83341d6b67e2831e40bfa90cfc7fdc6
+726,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m",b3810923a282cd318bb8dc14e46ec432cf583f8fbb010e7b80eb76cc4fd35139
+730,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",60cf7ff1529725349f1f5cf64b2e076edfb703c1ebbee2368b0f1a2aea124d05
+734,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",b25531fcea81aca1f79c4317dddb325c745243237260f7d7b9845a0a82a64ab0
+736,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",55aa85fb5051ab4bff4acf197b96bb8eddac8157ff1382c29994d62fb527aa2d
+740,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",a50299cc9bd4a15dd433a9d75743e7e5f6babad1dd5f309baed305317aecc650
+742,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",46fb07382a528859d3f02882595c0d562852908838efc09dd05f5450f6048ef2
+746,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",dab739064b04cd2a7a16eccec750755e2f3c567912883b7b0bfb62bdd23dd383
+761,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución,28b479e7b38be128b0292f803ba9666f9dea689cd574bc73ef95cd1191b45349
+762,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución,cd8fa43b3f9d482ce16339a0bdbb3ab5f322bacc56b2753cf2758a9c1b213c11
+763,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i",f92f9f4416528a4aa86f3da7885596b14064d8a3f3907621a333f1757a7c910e
+765,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m",5c24a011864e530fec6d2bb3a18ce44cbdaf1eb4c01dc5618cc63032ce53fb7e
+766,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j",3a1260d334f13919b6ae41095d0d647e2bd949d64827f20d5c884199536fc5a4
+767,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m",d458095d797a22b3fdb9c31bd20f7e9fea56f75004c15f8bbfeda0d78168b7fd
+771,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",cea39903a037a82f3411f64ea8074b9fde8e74273d429f10e2131d326772385d
+775,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",8044043d9dddba5fcf5e8de49908740bb816c039a8c61d90d667ae4fca84bfc5
+777,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",96867ef1ff0504da86b79227fc15571bffeee4a8cf2458c730be470986c98ba5
+781,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",99a368f81517d4b01b8c1c63d5930583eb6c1f6fa84bc98f018fec15b230714b
+783,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",2f73e35378031f4433ae5f244567222b3c296e0670f58f0920e7f9abe254ab2a
+787,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",0b82371973249380041aded6c4d6809a1453a705a09608c41b4eb11164e25f53
+795,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",23994029b5bfe9770e831405aed917bf2a7d219cbee62888c08f3b6105582776
+799,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",4be8d825e303dcb16cdabfa82c51ced33d074b529a9649d33ddd31237421ac5a
+801,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",fd4b64cf5573d181cb557b7e493e702e55049cd6a5ee482574cde41d76a6995b
+805,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",4fd25f90ee1a82def7c43984914ae6f520df87bc34b524d3ed145f43f0d71318
+813,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",51d7b89129520d6b93454dd5ddf751769593bb66f43b044860a917b50f832bc0
+817,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",94bdbe2129665503e140ce11f9402cb086cdfaef780d81a2cf526db6c36d7264
+819,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",bfb9e9ffecae877fea0e5e7c19264154f84beeb77ce6cb9cf1dc9f5db6ca0098
+823,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",875975444931cd3ba4ae2e2cd0fa37236a721b8171d5f363d505e7cdb86ead23
+1405,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",d329e5a852c9d07d11582d2957b3330a49cdd961d181835bfc09791ed7565058
+3266,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",3d809ebc09be744f2a5735379b0e6f25a7a3085c3a92e3f8a3b2de78b4ab0408
+3281,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución,6a99eff78e98ac768e444ad0359828f499698e2534db1f5c4df58af42e15d252
+3282,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución,5f3f0fff23f4ad44ef8726d1bc52f7e7704135bc57438089aab111ef1837e4e3
+3283,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i",11cc75b8bceee4acf0b322bf883d0b810c82de4ac7c64344e06d8007e88a85f4
+3285,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m",28120a26e8c1c4b747e6b3a16ef298a547d9bf1714cc25f09ad6bb8febe6964b
+3286,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j",b1d5da98e035c64f9e6a6771fa2e93ee9bf78b28331ab88ee008c0cec2be3f2d
+3287,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m",1403cbd375884a4deb380b9d6432f44950604627c2195c59a453d334df3b2c35
+3291,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",e1bd131936bc139541e9a834f4df71893452cadf46e1496881e3bc193146f988
+3295,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",766312507bc4883583e69508b13ab147f232c2030a21225a21eb74a2f78fcf22
+3297,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",dc488a92fbd3b59a3cb893fac362b67a61f4c0c2c9df2e07f431385cad9ed088
+3301,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",7bb1282ad881abe45044452f0cc0ae8282eda6b18fbd7ca765d5459ca9ab58b6
+3303,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",3ee19a88aeac7145deb7d68f808fa3286c6c22289e30a3655f2e097c62d22d0e
+3307,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",bb7307f2447e1f4461e9c915e71944d9f983a77b2e1b3c7563368643da529d49
+3315,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",462e82f8d1332e6f3495459675785a217db3c3497aec20d571bbc47e74372159
+3320,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",7075842a249b7553ef992831755c0e13733353e9c15013b1332c0e85c2e774d4
+3322,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",1523a3d1f2b8e9fa3d7bcff6b38febc31015e42b305040dde5a4e8fb1a1c57f3
+3326,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",26cdddcf3cd8f3ea058b6599532f538a8b78a236bbea1b1ad0afd1ec8bcafefc
+3339,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución,2524d998239109e7f5c33d8ac02ea133c6062889f9caa89aaac99a6f92e0e4f3
+3340,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución,c46dc6fe22ebbb84922d1909c48eacf047b467840ae2b2aa1a3a4c8975108476
+3341,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i",24571912d4d84c95477ee67d42c6aaa0af3cacbf15e68623b6f7b1f880f7a4d0
+3343,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m",69d21ba6e6aaa97c99090f478a2f76c11c8db166334cdc15e15f21fd2a46f79b
+3344,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j",e364e59e249f6f17887eb59f6db2281d198fad410e77abf29f42e381497b2ad3
+3345,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m",10c0194c4a20d94f10ada852bec2310ade72c46537f5e2e49f125c7d0bdba772
+3349,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",330ee83f116d0f3662832d619f531ecfd77c861dc03af56aadf7e953caffb0aa
+3353,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",8efec2876a0d386667cf32cb6e0d6bd12c042a05b66aa4cb49fc176b1a19721f
+3355,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",6720f6beaaf00844f8fb0adf596ad35f3b1e441c9021201d48f1d8abb2ce8685
+3359,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",5f0420546fd21589d880ddab66371ddf9732b0601cac1e411714cf23c90c60b7
+3361,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",d1f8dcd20b11bb26532a1a3deee4b10d6dc8a43b943d36436ae9356c808181e5
+3365,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",154edeea9bd96f79fad0086ee9960ea4ec3f5ba43b26038f05a7c4287a7bc603
+3373,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",d3f493f037a3b7cfae02b92e3d1f150c380e3c9022190417e7dd8545751bbf84
+3377,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",94a89b9dda2e98d7e9f407fb60aef187665bf8f36c59d71a1de752b796d51cdb
+3379,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",252e3d540cb78b69f193e1f1f20ec6c40d7f5b570a0a8d4f91918070b54e1c81
+3383,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",68e4df1d25700c89004ba656e6f52dcced8268f82835890176d1cb4508cb5176
+3398,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución,e02c14ec8dd2db7f7b10419d562c84a8812dc0f549f2eb01ad3b6b0e7f521242
+3399,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución,0ed5ca8933241fbe745609275744a4bda4c4ca4b7cfe0c063e0cbb259c7142e1
+3400,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i",7b61a7381f8b1b58a22597d1a755748d7b5f9a0a037b31558fea710940229041
+3402,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m",5f5885ed6f983e5f1d15a1f22dd2f8583806b2389518dff769d2eb853acb38cc
+3403,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j",64c1ee7684b3c136f120d6b26ee8c2fda9f77e9578e74cdd3ab13a928fce506e
+3404,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m",03f777efb6b9339a82794c2f25b7662b6fc4dff256a6d62e70c6e3e2adfecb1e
+3408,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",fc1d5eb5e6731eee77a06824397e45986e70474a93aa9423cfde45ce33ef6c1f
+3412,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",bc933564e00e9b4a3f65c256f14147f1fed017fb7181ff44ecb7513854f567fa
+3414,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",7aa2c9ce299a7cd93a45903ea64d4e4b912223ff777ca1dc690f1bf7f507e27d
+3418,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",3cd3815ddea4d4158c5948fd18249e3f4336e462641799cac1a971766025f9e8
+3420,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",e236855a40b1d3161bd4ca52608526db6e3df3e1273580501062713d7351974b
+3424,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",4d9fda509ab03023601df2ca79775011335b993bcbd5efe010b4d4b75c676a87
+3432,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",9486d2463d0ccb4f01b9656c6ace9fd4ebb8ba0b94365ed0bbd422912c1d6e04
+3436,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",92390f10cd72f0da4e8bd770420e6ec7e92a789e8abc5352431495b07667c698
+3438,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",0b275137cfa20a27a1efb688faaa93706dad1f34e25b2215ad863cca766c8932
+3442,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",6da9f1d09363327e7fac5e7b97b07a09074a1eb608ba0fc21f707e25e5273c4e
+3457,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución,7e043c9ba03b7cff10e210ab76806282b5a977be81d8c651ce814070130b389c
+3458,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución,1d33b822e4d53b367fe1c244a8a5cf80e288929113e92d0c765b948096ffa3f4
+3459,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i",8e6c6844c9b57f5d0d7cffe4c8911782fa3d24fa34d2f9551e5f6084d571f6e4
+3461,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m",d3d7aabe410d4e656ea80c01f0e7e0f9df694e60f6c132f76d65ab556a02b3c1
+3462,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j",993cf2e1832facd0c6203b639d72b8822b85aafac11f0e8670dc2f8153902986
+3463,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m",e34130d6f0ca92a358dbfbeaac6b998acd83a69afddad8def65eeb0edf1dce90
+3467,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",b55b288ef5d800b011d57187aed0c005691ef6d9a1d58a6972ca6152f4e75321
+3471,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",925cde4e2309a8318de4d2c4744994864bd5b320ee4d2da3cddd95590027b68d
+3473,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",d0137ed2606257c0f6d395dffb09340bca2f71588a4cf4e2f3adcf73aa2eb47a
+3477,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",bddc40e4fef768cd28eae901b0d8c895c3829c8a7f6c92298e7037a264818c8c
+3479,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",f4d72d1a5205ceb75cd4a737bda2ee266eda6fa170dc293827030b6be5ec0245
+3483,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",3f25f25627958e3abd8a66fc27a0489392e45e3e80cfbc21971e993de254a9b6
+3491,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",871f1c0f93f88e428f490183b4d9e87acc11503506836ba4099a930bc6d2b9d7
+3495,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",5ee404a12b18b5bfcc75eff1eb1b7bff373e1aff5ee074f0a08a48cf73f90a7a
+3497,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",52a63530a5f8c4d3fd461984a09a685aec1ef8de66a0978d4d963c5b99a2a2ab
+3501,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",fc341a066112bf4633abe5245e1e274640535575cd8500e0b113b455e7f8cf34
+3516,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución,456b1b9f88cd2397ca774c744c5b90f4fe22d8b32cdc875840c836ff24fa48f2
+3517,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución,3d22e9419f098f2f9b85cc4fd0a0573a3e08cf119fc5f41a6faee1eccd016fec
+3518,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i",c5b0fbf482979d7a75e8b58593ef5ac56484dea705185a96a8b109bbe6a1fdfb
+3520,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m",a3b9055348bccff1495d8060e07fc5345bcb5f4d26d8c766f9a45028b9e78155
+3521,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j",22b81deec60aa0c97980816843f56e79c1b130f05eb6e853e981d7f61546770f
+3522,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m",78d43451787c1b37d3218d9fbdecc97f0203e119ee0b75cc61e009039a98ded4
+3526,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",99d4615029168859b959cb9060431c28adfe418995fee19a3c86f97dff59dcda
+3530,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",bd6304977b18b60933d622afe33cf462c9f433802d6de493b7ec59abb582fd4f
+3532,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",4991cae22ae939847fc86ab6bf2e3ca9347ea53e647de548728b9d517d458e97
+3536,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",2899768a0b81b87c59ad43b81fe3e87287b6281115359c3132791746147da59c
+3538,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",2b42b97e48895981f112884f9f4ed0143278a78db5a02d6a0c317b11cf757cf3
+3542,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",717b23d3cd256d6fc8fafe19c16a473a7772ef7ee50bb2c8d098fbc5e9f5c3c7
+3550,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",3752741f3fbb89973abffcd4a5abfebee7cce6a35a8b4a48bbcc71b2ecd5eaee
+3554,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",b34b23c4a13b107ce13be09ddc7056d47ebb64f73cd605110e04a2c3064218cd
+3556,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",e38b0106b27f74717d8d433a90d38f915eb5e31735b4dc082fc848acb95aae26
+3560,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",2e705ba542b887c82cc8e59ac2de95dac5660ad303ff79c89e3d0bf1bae09983
+3575,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Con Contribución,→ Con contribución,fb920cea0728607f5a8d8bda89dcfceef6fbc890c37ccb1b4ffaf37d9edb6107
+3576,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,Sin Contribución,→ Sin contribución,882c0c3b6bc4ff449a7ff58d750f013db03f61f1a3937336aa67cbe00e908bc8
+3577,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo Compra: Gm, i","→ Costo compra: Gm, i",ec08b987b6aa65949c8c1e3fbaa8f8e643e62cb68a18e8bfc4ca1d496374a348
+3579,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Cargo transporte SDL: Dn, m","→ Cargo transporte SDL: Dn,m",636dbc0c34c4b72a75174b90401837e23c9f2481fc7a76bf2415fbf3f5679370
+3580,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Margen comercialización: CVm, i, j","→ Margen comercialización: CVm,i,j",4c109bd23b891ca1be1e9c96bd6aa727b454ae628e27c600d6f5fd085ab2fb8d
+3581,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn, m","→ Costo G,T, pérdidas: PRn,m",92e45d4e244cf7f97bd021a401813411aa96e9a5bdac0d3ebde399c784cc7d9d
+3585,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",67f478ae920542135f3cbd8df479da7dd9787b0ba6b5cd44417b94829151c82f
+3589,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",703359e4098ca5b80c343ec83d2d2c06bd8f987df1d0bf8d31b95522b25dcebc
+3591,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",f25c4e90e9cfad0f32017337f810785e98b18c0e77e1001d10455f9f0b1ac71c
+3595,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",84beb5f0241536ea8ebdf846463fc80d907f2c5538c7099ffdb30c7667186a5e
+3597,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",80418fec3ee667d679e64d1fbca92d2d60891d83afc81c832db093ad62f25801
+3601,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",7dc9afa3f880626b9adcef8553ca9c86c3ad2b495981b5be2b5864f89a9964ff
+3609,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",0bf0c7c2dce15f101a505d2a2d37b988806b4d95aaa1db1d798354f0df60e764
+3613,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",4f7d46d70a1f325a3a3e0cf2d4ef2942dc0bb517f28f64eacee2bbaa5d1be61b
+3615,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo compra: Gm,i","→ Costo compra: Gm, i",43dfcb720400ebb5d6aac7c10843a2c7cdd054b3c67a0eaa3510972bc2436228
+3619,R06 Etiqueta no canónica,Consistencia,Advertencia,Tipo de Dato,"Costo G, T, pérdidas: PRn,m","→ Costo G,T, pérdidas: PRn,m",03e41452f77b0a5138cef909c6643a5055752c611ba902e2e01d9de874b322bf
+1949,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,463804e50e93363a3332011f6fa02e9091b6a02fc90965d514183b4247577b28
+1952,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,b2fa8ddd41e9722c5b64841d2f77ac813256d6245f45d6acaa578b3917f876de
+1975,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,119fe4e62a713da7d599e556b24a628414850b49efbc48675e9360aca889690c
+2016,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,65af7ee410c9a5e255361c89def370137f79ae5731c125b2cca449f55ab3ffea
+2021,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,addf0045d590b4e86b0a85536f10a9856a5d815d71941e1409a341eb2d3d5f8e
+2024,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,b27feb267064ce7619c576125e453003b08f18052a0f282a59c7a8906ffe9e73
+2030,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,8ebd9cb659c2d985661765725909955b5cf588e2140a9b66a379410c4636013a
+2056,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,077e9fa0896c203565405d00dadab958fa3b1dde6e064f4ef736fea285104e56
+2073,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,324b62e6582ed650746a60595c606b71fb894f03afa131c2e7784a43f6b789dc
+2076,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,a0f3e852c3bd4227cf8f367bf345fa9d162a590d8a69354b6feb18830425248a
+2088,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,ddd20d8266b744d278fca7fed08fab8a2fbcf0ef5c713e6e7fd46c1d6916f43f
+2092,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,f2d83da344138c753f1cb4fa873eb7010293485d88ec28e47db6d261137ee389
+2095,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,b3082f8b1b4d1308d667ecb88bc04bca12bf95afc4f2322cccf00d300caf345a
+2098,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,fd9a55d8c967dccf4c8b1e8be02d677c85709840e00e010cfcff91445c2d95d1
+2100,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,0dfa623113d6d45f797e23b8b6d2f72d93693efe88f50ca2aa136721a7b940ce
+2101,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,7907225e9a088fd61b6e25f02c884d1bc70bb8ab8ffa42788123ff2e68ca9c3e
+2125,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,76d1c03dc8d3f3280b47cfc4bfa5be4b025de76f31f8e668d21b94dc9a09fb37
+2137,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,87c2fae5086af9fbb3cf79462c2d9280b2925838875b4fb117caccdc71022071
+2148,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,650347e5c22b8d6f5f0e211015625ea277470822d65e1690046eadbf1b8c2b3e
+2154,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,62c96beb46397630d1a2426cc8dcc0569b9ee8b841ec910ccf4973a2624be74f
+2157,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,5413ada80f5a2fad61c7ab8ba99f0406f0fb78d064e199a2bde30aa7ec3650c5
+2159,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,b8c61b5a43021fdd279c4297e7a3c0e3452bc6d38cba01fa5ee37adf45da87e6
+2163,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,ad16446eacfb428a536fb9abef4dbbf12a97f7f6e6905e7faef8d41e16175acb
+2167,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,942e75ec3447ed87f6bb62a6fb219d241803d8490ebc9c2a79b8cc5a9d0719e0
+2190,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,75cae6ca6b2ba4f6c37ce68af234117fa425495589bcfacb857eac5434e88fa9
+2193,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,d639a45933b30576c9431989c14321644956683bb642ec54e1ba73aa852f7e30
+2200,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,02d8f7af2d66998ac9fe03bf593f75dd40c5121d46db58919983e6a0cd1b087f
+2202,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,4f22d27d2639df1ee3f8cd2b6e304f973627b3296f3fc2c088fbd93b3737befa
+2204,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,cbf3b81b36c095db26d9ceaede8d0d88df4f48eb78f53cc620ca5e568ccced8f
+2215,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,281b53c9c577f6c200d799ca305ed62fb491e39b5efc9f927a6b3fefa78cfcad
+2223,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,77818100cb8a70da05fcb22f1cf0afd24d68ba65b96340e089a96471e09c0e04
+2237,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,2351f6be9b43be4ae337e08e677afdb80c63803b99b46c5f3152c3b81fb8fb17
+2247,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,443a58ff5a3b86fbbf69b5475f3c53cf235a5ff810cb3f894ba565c2c01b0603
+2266,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,294c60a4b55b8bf7842cb153c15f1a66d98ea1058b2a193db655b9c808a20505
+2292,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,7a1ab93be356b7d9b178bd1eb1fcc5126cca54b97e7d817de0b805f5d8b8f03c
+2315,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,d51e08db15d51cc12796a7d6016cd3f63193ecb42c1471212e63cfa34aa23c08
+2316,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,151529f3f9d1b433284d10acbe56685f65e3ac91165554f14825657b6c6f2ad1
+2328,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,60fc1f91d13d6c5c6b1536f13f8f0f7890ab49ed84815e47af38aab198564fcb
+2330,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,988453a61e6fee4d3e52d79002cd36d6daaaa1f887a475a19d1ae706336f89ae
+2343,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,3f6592c719d449df5f719fe3d9c66cd32d2907e681ea2b908abf9d8704a37e06
+2349,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,4166e1f716299ae2e8270970d8e04ce26c66e467817a295c121f2bd6cda8e03d
+2375,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,8bee8a118e31f09c3e7655053ce4760b4a9a534262ce88b79f252af658f3acf1
+2380,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,b758bb25453d0729068f7a66364fd447a9df540d58d02abaddb2689e9ccaf706
+2387,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,f40388d9c3a93491865b091bd8e771c8bbba83c7b8d0c0855635206326e7bfed
+2397,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,53e9d138f4d0c096bf0133eb04e9263543fb541703dc48c761c43d7419294b1c
+2415,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,378ddbb65f0b774aab902a614b8391826ee672b2d7c72e673bcbb8715a52e36d
+2431,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,8156b50d8cff7c85d8a01b40a48ccc639252ac1f5a9e48ed9662275e495aeb74
+2451,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,c07d275931900278692f6aabba8c186f8bf29320ff572a4f23c02a2e4f1bb77d
+2468,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,6ca94c438b4e558e1ad4b89007b47e59598be377ff3ff89b4843e4531b18e464
+2474,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,3706771e53cbd064b251fba3fd9b36bd1691459838a81ece76e5ce559d4e8263
+2486,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,ee8e35f252db41b82b4586fa1507e32630ce4e60f0a908fc8082aa130b73655d
+2494,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,8b67b4211f08cd6982856e3e663fa689d4196e7e6e263b917dad68f5455c42d5
+2517,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,a5d9122ebe63d811e50d5fd1d34d26935223025c5d04a223be57ad1c47861a73
+2547,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,e63df5ca422441ae470c3d8cf752dec3a90bf8742124ca0525161293a59a3154
+2548,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,b1ab82bfddf09f174df6d175ca11255f1a5258b7e8778cb7e774a518d60bf143
+2572,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,293121502821d6a876f117b1bb9a600fb29c7addf552c7aa0dd2cbcdd20f8ef1
+2577,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,f8bb0bb3a9ac39c92677a85908a170bafa201fa78e49e4b423067d0e49a11c71
+2585,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,fe68bc416ae109915a272c852f93d9b1f0fef9f62a4a2ade5ba56c96ccf8debd
+2620,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,f5f1e8982c7089cfcf37be6db6627c0fa52cd7e76a8c7f4b84edda274ce7b091
+2651,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,8445ce20b9c2270e748e7ccff751d037676a21044043f5fc9bf15542466f0803
+2665,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,05a3354ad0973cbb65d9dc59e1831d1f7c452cabd92eec57e0822b99c1fea5a5
+2666,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,49c0138f423ee2a243051cfa7fe6745922280680ebcb14f9a693235f8ec9174d
+2672,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,f067a665464035ca88e36f825e9375a0987108122d19c5b228b149e19fa388f8
+2674,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,5abcbdba0d368e4ba46d59c8e02d971e1d16c5f241e1b67e45f59a1b782d05ee
+2685,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,1973f601f86f2976c2f179b31c7610369cb3ba311d51baff9ca2fb4b9e768b7c
+2692,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,9dd55325471826dac2e85aa2736ad5298b4cef4aa2e65d6aa7271a25e5e60915
+2710,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,4d69614b3380fafa55b12bf6fbaadb368086ef085f40ff4634c7d80ac684416c
+2716,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,8715d4483be8d8b5ff1c278acf42e7ed2f963958458a92ebaf00f494e31e0a23
+2737,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,8428f409f4c21f52b7807da1abdaea90adc84ebc27d285426d0d91f44eed4537
+2738,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,c38a278c88564e949b75e8056d31675b3bde3987b3033ac7d10e006aaff9650f
+2742,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,f9bf19fea56b76855d5ebb0c045976988a3f3ef29756b6b7f00e54c5dbdb2641
+2750,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,3e4be113a657c38accb4a818514c627f5f9e911ee3b31df8ff714e2447180542
+2751,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,f82ea3893b1245a6cdd5816e4b5883897a26f2c123fbb36cf64e2abbf9811e66
+2767,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,ea372e0aaab8ccab9a3a1522cafc6c5dbc4434aff3084709d58adf246449e9c1
+2820,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,dca4cdad1d8b04dc230701c0ae2ce3671a4255d98bcc947d26bf38d33adfcc65
+2832,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,67485ba3d18868f5a2523e3c6b6cd8c7d2d86fae32e5a2de7d33531e6116697b
+2839,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,b927e060db57535e19d344397afc140f752fba1490b355c7f60a18d273f548b0
+2845,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,7f2f06cf43d5b58c7e8b147f4328beb88badcb1c46e94781de74b247b9863cbc
+2854,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,c1c04123fd7d856f1d0ccb651d976dd2048b9d5f48b1437b3ca2f451d625f9da
+2866,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,2c4f239cae9e5ad89e1ce7339e68d2b25ac231d33bd78d62ed188ac7d6c83b2c
+2869,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,1c10f951f844318e6b95c1462021b724636535af432e52f5ffdc5cc6b58247f2
+2876,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,0-CS,→ Rango 0 - CS,e7818bdd12f92508389f8b504d8ceb5a5616d20ce4981c95d221f5462f375c0d
+2888,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,8930b1e8f6ec853890a4b1ec93465cfe95833a868f85ceb82965b6d54e4b3273
+2893,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,38f3428771e431afe35f0e4959ecf5cc3df8835b6a22f354c28007540815a994
+2912,R06 Etiqueta no canónica,Consistencia,Advertencia,Rango de Consumo,Mayor CS,→ Rango > CS,02a3993265ac689a50012612ad3707e71ddb2ad995160e4ffba0075363933f55
+1043,R08 Orden EPM ≥ Compartido ≥ Cliente,Consistencia,Advertencia,Propiedad,213.5 / 205151.0 / 197.37,,c36da3748f66bfac7bd1704d22d440b7329d69688a33be6f498c52ff74c28a19
+1808,R11 Posible serial de fecha Excel,Exactitud,Error,Punta,43577.0,equivale a 2019-04-22,5603b48e23a30ae8a0277ed883c14c68eda8a9904a04fd6f2bdbbbedb75a2cb3
+1808,R11 Posible serial de fecha Excel,Exactitud,Error,Fuera de Punta,43577.0,equivale a 2019-04-22,5603b48e23a30ae8a0277ed883c14c68eda8a9904a04fd6f2bdbbbedb75a2cb3
+1810,R11 Posible serial de fecha Excel,Exactitud,Error,Punta,43501.0,equivale a 2019-02-05,faae658ca953ae4fb0625c92aedbdcb92ab9f3e04e7e39ffb37bc9075b9ed17c
+2103,R10 Todos los importes en cero,Completitud,Advertencia,,,,aa861b88fd27424f3a374534eb2084006814d64c3b0fe75e591a9dac784746a8
+2994,R07 No negatividad,Validez,Informativa,Punta,-1.61,Rm puede ser negativo (pendiente confirmar),ffa252c757a4943586010a76aa296aa4a494425d4d890d7c9b38a2eefd477382
+3000,R07 No negatividad,Validez,Informativa,Punta,-1.61,Rm puede ser negativo (pendiente confirmar),eec6806e9b488cca607ce3c6e11c0b1f2ea0b1bddcad36483db7199f209b0c25
+3006,R07 No negatividad,Validez,Informativa,Punta,-1.61,Rm puede ser negativo (pendiente confirmar),3b245dfc016344b2b3c8e1521a537069364abdd653062733f3117654087c470b
+3018,R07 No negatividad,Validez,Informativa,Propiedad Epm,-1.61,Rm puede ser negativo (pendiente confirmar),00fad7186b3998bf366ce62a9b0dce132d78c78ad9d2c8e41e1e9acdacbd6840
+3018,R07 No negatividad,Validez,Informativa,Compartido,-1.61,Rm puede ser negativo (pendiente confirmar),00fad7186b3998bf366ce62a9b0dce132d78c78ad9d2c8e41e1e9acdacbd6840
+3018,R07 No negatividad,Validez,Informativa,Propiedad del Cliente,-1.61,Rm puede ser negativo (pendiente confirmar),00fad7186b3998bf366ce62a9b0dce132d78c78ad9d2c8e41e1e9acdacbd6840
+3045,R07 No negatividad,Validez,Informativa,Propiedad Epm,-0.25,Rm puede ser negativo (pendiente confirmar),2c985d71fdbc1e144835f3698d7c0d7e66f52fcb0027b27c76a72e3a939e4c87
+3045,R07 No negatividad,Validez,Informativa,Compartido,-0.25,Rm puede ser negativo (pendiente confirmar),2c985d71fdbc1e144835f3698d7c0d7e66f52fcb0027b27c76a72e3a939e4c87
+3045,R07 No negatividad,Validez,Informativa,Propiedad del Cliente,-0.25,Rm puede ser negativo (pendiente confirmar),2c985d71fdbc1e144835f3698d7c0d7e66f52fcb0027b27c76a72e3a939e4c87
+3053,R07 No negatividad,Validez,Informativa,Punta,-1.12,Rm puede ser negativo (pendiente confirmar),32754750cacab96700fd848e776d5f73119e9c5beaa9a13ab740880275dde0e9
+3059,R07 No negatividad,Validez,Informativa,Punta,-1.12,Rm puede ser negativo (pendiente confirmar),f63288bbafb534a807defa15797aa1ed7d07c0239b02bd02d46bb461bb59075e
+3065,R07 No negatividad,Validez,Informativa,Punta,-1.12,Rm puede ser negativo (pendiente confirmar),cfb7a04ce7ca41f90734025db8d7a00c9397b4badf8d83376501319db601acfb
+3077,R07 No negatividad,Validez,Informativa,Propiedad Epm,-1.12,Rm puede ser negativo (pendiente confirmar),6fbe9326d0665c2e0bfcc86e700ab5977d9e2b800218b6ebf1da083176067769
+3077,R07 No negatividad,Validez,Informativa,Compartido,-1.12,Rm puede ser negativo (pendiente confirmar),6fbe9326d0665c2e0bfcc86e700ab5977d9e2b800218b6ebf1da083176067769
+3077,R07 No negatividad,Validez,Informativa,Propiedad del Cliente,-1.12,Rm puede ser negativo (pendiente confirmar),6fbe9326d0665c2e0bfcc86e700ab5977d9e2b800218b6ebf1da083176067769
+3092,R08 Orden EPM ≥ Compartido ≥ Cliente,Consistencia,Advertencia,Propiedad,520.2 / 544.3 / 521.24,,48276c73aeaf99482642ea52b8ad16e253f2a3a5ecc25699acf116466c5376b6
+2380,R05 Clave categoría+fecha repetida,Unicidad,Advertencia,,,mismos importes con etiquetas sinónimas,b758bb25453d0729068f7a66364fd447a9df540d58d02abaddb2689e9ccaf706
+2567,R05 Clave categoría+fecha repetida,Unicidad,Advertencia,,,mismos importes con etiquetas sinónimas,f897bb4382a1e1f09cd2d90f38d67847df8f6b13c081887641939562f8eb7bfb
+1808,R12 Magnitud > 10× mediana de su serie,Exactitud,Advertencia,Punta,43577.0,mediana 22.86,5603b48e23a30ae8a0277ed883c14c68eda8a9904a04fd6f2bdbbbedb75a2cb3
+1808,R12 Magnitud > 10× mediana de su serie,Exactitud,Advertencia,Fuera de Punta,43577.0,mediana 22.86,5603b48e23a30ae8a0277ed883c14c68eda8a9904a04fd6f2bdbbbedb75a2cb3
+1810,R12 Magnitud > 10× mediana de su serie,Exactitud,Advertencia,Punta,43501.0,mediana 9.59,faae658ca953ae4fb0625c92aedbdcb92ab9f3e04e7e39ffb37bc9075b9ed17c
+1043,R12 Magnitud > 10× mediana de su serie,Exactitud,Advertencia,Compartido,205151.0,mediana 212.54,c36da3748f66bfac7bd1704d22d440b7329d69688a33be6f498c52ff74c28a19

@@ -1,0 +1,30 @@
+{
+  "estado": "implementacion_tecnica_corregida_con_pendientes_externos",
+  "calibracion": "CV_solo_referencia_con_umbral_congelado",
+  "scorecard": "indicadores_con_umbral_y_estado_sin_aprobaciones_inferidas",
+  "figuras_incluidas": [
+    "Data/gold/outputs/hito4/figuras/01_comparacion_metodos.png",
+    "Data/gold/outputs/hito4/figuras/01_comparacion_metodos.svg",
+    "Data/gold/outputs/hito4/figuras/02_deteccion_vs_alerta.png",
+    "Data/gold/outputs/hito4/figuras/02_deteccion_vs_alerta.svg",
+    "Data/gold/outputs/hito4/figuras/03_sensibilidad_ventanas_pareada.png",
+    "Data/gold/outputs/hito4/figuras/03_sensibilidad_ventanas_pareada.svg",
+    "Data/gold/outputs/hito4/figuras/04_sensibilidad_constantes_percentiles_factores.png",
+    "Data/gold/outputs/hito4/figuras/04_sensibilidad_constantes_percentiles_factores.svg",
+    "Data/gold/outputs/hito4/figuras/05_sensibilidad_horizonte.png",
+    "Data/gold/outputs/hito4/figuras/05_sensibilidad_horizonte.svg",
+    "Data/gold/outputs/hito4/figuras/06_riesgo_regla_sistemica.png",
+    "Data/gold/outputs/hito4/figuras/06_riesgo_regla_sistemica.svg",
+    "Data/gold/outputs/hito4/figuras/07_scorecard_evidencia.png",
+    "Data/gold/outputs/hito4/figuras/07_scorecard_evidencia.svg",
+    "Data/gold/outputs/hito4/figuras/08_contraste_componentes_epm.png",
+    "Data/gold/outputs/hito4/figuras/08_contraste_componentes_epm.svg"
+  ],
+  "pendientes_externos": [
+    "Precisión empírica y validación externa Hito 6",
+    "Notificación/firmeza y conciliación LAC EPM o respuesta del publicador",
+    "Aprobación metodológica de umbrales/políticas/responsables",
+    "Evidencia pendiente Hito 3 e integración académica"
+  ],
+  "documento": "Docs/VERIFICACION_HITO4.md"
+}

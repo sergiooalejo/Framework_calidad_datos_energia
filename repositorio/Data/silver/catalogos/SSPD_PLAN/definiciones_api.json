@@ -1,0 +1,89 @@
+{
+  "dataset_id": "vfjy-6fka",
+  "publicador": "Superintendencia de Servicios Públicos Domiciliarios - SUPERSERVICIOS, Bogotá D.C.",
+  "titulo": "Superservicios - Subsidios, Contribuciones y FOES Energia",
+  "origen_metadatos": "Data/bronze/descargas_hito3/SSPD_PLAN/20261114T005035169111Z_2061fce5/metadatos.json",
+  "nota": "Definiciones recibidas literalmente del API; se conserva incluso cualquier car?cter de sustituci?n del publicador. No sustituye cat?logo de c?digos estra_sector.",
+  "columnas": [
+    {
+      "campo": "anio",
+      "tipo_api": "number",
+      "descripcion": "Corresponde al año en que se realiza el registro contable en la contabilidad de la empresa de las cuentas aplicadas de subsidios y/o contribuciones y/o FOES"
+    },
+    {
+      "campo": "mes",
+      "tipo_api": "number",
+      "descripcion": "Corresponde al mes en que se hace el registro contable de las cuentas aplicadas de subsidios y/o contribuciones y/o FOES."
+    },
+    {
+      "campo": "estra_sector",
+      "tipo_api": "number",
+      "descripcion": "Se refiere al estrato o sector asociado a la estructura tarifaria aplicada."
+    },
+    {
+      "campo": "subsidios",
+      "tipo_api": "number",
+      "descripcion": "Corresponde al registro contable en pesos ($) del total de subsidios incluyendo el valor de las refacturaciones del mes y estrato/sector."
+    },
+    {
+      "campo": "contribuciones",
+      "tipo_api": "number",
+      "descripcion": "Corresponde al registro contable en pesos ($) del total de contribuciones incluyendo el valor de las refacturaciones de las contribuciones en el respectivo mes y estrato/sector"
+    },
+    {
+      "campo": "cont_no_recau_a_6m",
+      "tipo_api": "number",
+      "descripcion": "Corresponde al registro contable en pesos ($) del total de las contribuciones No recaudadas, después de seis meses de facturadas para el respectivo mes y estrato/sector."
+    },
+    {
+      "campo": "cont_recau_last_conc",
+      "tipo_api": "number",
+      "descripcion": "Corresponde al registro contable en pesos ($) del total del Recaudo de Cartera por concepto de Contribución después de haberse conciliado su no recaudo en el respectivo mes y estrato/sector."
+    },
+    {
+      "campo": "g_rec_mmin_fssri_pgn",
+      "tipo_api": "number",
+      "descripcion": "Corresponde al registro contable en pesos ($) de la sumatoria de los giros recibidos por parte del Minenergía (FSSRI-PGN)."
+    },
+    {
+      "campo": "giros_recib_otros",
+      "tipo_api": "number",
+      "descripcion": "Corresponde al registro contable en pesos ($) de la sumatoria de los giros recibidos de Otros Comercializadores"
+    },
+    {
+      "campo": "giros_efect_mminas",
+      "tipo_api": "number",
+      "descripcion": "Corresponde al registro contable en pesos ($) de la sumatoria de los giros efectuados a Minenergía (FSSRI-PGN)."
+    },
+    {
+      "campo": "giros_efect_otros",
+      "tipo_api": "number",
+      "descripcion": "Corresponde al registro contable en pesos ($) de la sumatoria de los giros efectuados a otros Comercializadores"
+    },
+    {
+      "campo": "foes",
+      "tipo_api": "number",
+      "descripcion": "Corresponde al registro contable en pesos ($) del total de FOES incluyendo el valor de la refacturación aplicado en el respectivo mes y en el estrato/sector"
+    },
+    {
+      "campo": "devolucion_foes",
+      "tipo_api": "number",
+      "descripcion": "Corresponde al registro contable en pesos ($) del valor devuelto o reintegrado de Minenergía - FOES al fondo en el respectivo mes y en el estrato o sector"
+    },
+    {
+      "campo": "id_mercado",
+      "tipo_api": "number",
+      "descripcion": "Identificador del Mercado"
+    },
+    {
+      "campo": "id_empresa",
+      "tipo_api": "number",
+      "descripcion": "Identificador de la Empresa"
+    },
+    {
+      "campo": "empresa",
+      "tipo_api": "text",
+      "descripcion": "Empresa"
+    }
+  ]
+}

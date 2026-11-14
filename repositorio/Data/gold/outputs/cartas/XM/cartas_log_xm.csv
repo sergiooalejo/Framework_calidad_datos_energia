@@ -1,2 +1,2 @@
-serie,medida,periodos,cambios_referencia,cambios_vigilancia,limite_inferior,limite_superior,señales
-EPMC|EPMD|STR02,demanda_kwh,61,36,12,-0.15351127,0.15556946,0
+cambios_referencia,cambios_vigilancia,categoria,estado,excluidos_referencia,excluidos_vigilancia,fin_referencia,fin_vigilancia,fuente,inicio_referencia,inicio_vigilancia,limite_inferior,limite_mr,limite_superior,media_referencia,medida,mr_media,periodos,rangos_referencia,serie,señales,señales_i,señales_mr
+36,12,"[""EPMC"", ""EPMD"", ""STR02""]",evaluable,0,0,2023-01,2024-01,XM,2020-02,2023-02,-0.19754741140425552,0.24389076792721737,0.19960559911695552,0.0010290938563499966,demanda_kwh,0.07465282152654343,61,35,EPMC|EPMD|STR02,0,0,0

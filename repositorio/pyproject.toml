@@ -3,7 +3,7 @@ name = "framework-calidad-datos-energia"
 version = "0.1.0"
 description = "Componentes reproducibles para calidad de datos del sector energético"
 authors = ["Equipo de tesis"]
-packages = [{ include = "framework_calidad", from = "Code" }]
+packages = [{ include = "framework_calidad", from = "Code/hito5" }]
 readme = "README.md"
 
 [tool.poetry.dependencies]

@@ -1,0 +1,6 @@
+{
+  "dataset_id": "vfjy-6fka",
+  "origen": "Data/bronze/descargas_hito3/SSPD_PLAN/20261114T005035169111Z_2061fce5/datos.csv",
+  "sha256": "2077441a4650b239c30d99d06c0466dd124d3e6aaa6d79aad5ede9b570c131b8",
+  "transformacion": "Copia binaria del CSV de captura API; p?ginas originales e identificadores conservados en origen."
+}

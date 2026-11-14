@@ -1,0 +1,1314 @@
+{
+  "id" : "vfjy-6fka",
+  "name" : "Superservicios - Subsidios, Contribuciones y FOES Energia",
+  "assetType" : "dataset",
+  "attribution" : "Superintendencia de Servicios Públicos Domiciliarios - SUPERSERVICIOS, Bogotá D.C.",
+  "averageRating" : 0,
+  "category" : "Minas y Energía",
+  "createdAt" : 1716916056,
+  "description" : "Resolución: 20212200012515\nFormato: S1\nCódigo: 1681",
+  "diciBackend" : false,
+  "displayType" : "table",
+  "downloadCount" : 294,
+  "hideFromCatalog" : false,
+  "hideFromDataJson" : false,
+  "licenseId" : "CC_40_BY_SA",
+  "locked" : false,
+  "newBackend" : true,
+  "numberOfComments" : 0,
+  "oid" : 40589797,
+  "provenance" : "official",
+  "publicationAppendEnabled" : false,
+  "publicationDate" : 1716916575,
+  "publicationGroup" : 19534466,
+  "publicationStage" : "published",
+  "rowsUpdatedAt" : 1716916569,
+  "tableId" : 19534466,
+  "totalTimesRated" : 0,
+  "viewCount" : 1282,
+  "viewLastModified" : 1779132247,
+  "viewType" : "tabular",
+  "approvals" : [ {
+    "reviewedAt" : 1716926872,
+    "reviewedAutomatically" : false,
+    "state" : "approved",
+    "submissionId" : 6327677,
+    "submissionObject" : "public_audience_request",
+    "submissionOutcome" : "change_audience",
+    "submittedAt" : 1716916821,
+    "targetAudience" : "public",
+    "workflowId" : 2188,
+    "reviewer" : {
+      "id" : "vc9x-zjzh",
+      "displayName" : "soporteccc"
+    },
+    "submissionDetails" : {
+      "permissionType" : "read"
+    },
+    "submissionOutcomeApplication" : {
+      "endedAt" : 1716926872,
+      "failureCount" : 0,
+      "startedAt" : 1716926872,
+      "status" : "success"
+    },
+    "submitter" : {
+      "id" : "g6rs-w75b",
+      "displayName" : "SUPERSERVICIOS-GSEG"
+    }
+  } ],
+  "clientContext" : {
+    "clientContextVariables" : [ ],
+    "inheritedVariables" : { }
+  },
+  "columns" : [ {
+    "id" : 593019350,
+    "name" : "ANIO",
+    "dataTypeName" : "number",
+    "description" : "Corresponde al año en que se realiza el registro contable en la contabilidad de la empresa de las cuentas aplicadas de subsidios y/o contribuciones y/o FOES",
+    "fieldName" : "anio",
+    "position" : 1,
+    "renderTypeName" : "number",
+    "tableColumnId" : 152755722,
+    "cachedContents" : {
+      "non_null" : "5396",
+      "largest" : "2023",
+      "null" : "0",
+      "top" : [ {
+        "item" : "2023",
+        "count" : "5319"
+      }, {
+        "item" : "2022",
+        "count" : "77"
+      } ],
+      "smallest" : "2022",
+      "count" : "5396",
+      "cardinality" : "5396"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 593019351,
+    "name" : "MES",
+    "dataTypeName" : "number",
+    "description" : "Corresponde al mes en que se hace el registro contable de las cuentas aplicadas de subsidios y/o contribuciones y/o FOES.",
+    "fieldName" : "mes",
+    "position" : 2,
+    "renderTypeName" : "number",
+    "tableColumnId" : 152755723,
+    "cachedContents" : {
+      "non_null" : "5396",
+      "largest" : "12",
+      "null" : "0",
+      "top" : [ {
+        "item" : "5",
+        "count" : "1040"
+      }, {
+        "item" : "2",
+        "count" : "930"
+      }, {
+        "item" : "4",
+        "count" : "905"
+      }, {
+        "item" : "3",
+        "count" : "894"
+      }, {
+        "item" : "1",
+        "count" : "858"
+      }, {
+        "item" : "6",
+        "count" : "701"
+      }, {
+        "item" : "12",
+        "count" : "68"
+      } ],
+      "smallest" : "1",
+      "count" : "5396",
+      "cardinality" : "5396"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 593019352,
+    "name" : "ESTRA_SECTOR",
+    "dataTypeName" : "number",
+    "description" : "Se refiere al estrato o sector asociado a la estructura tarifaria aplicada.",
+    "fieldName" : "estra_sector",
+    "position" : 3,
+    "renderTypeName" : "number",
+    "tableColumnId" : 152755724,
+    "cachedContents" : {
+      "non_null" : "5396",
+      "largest" : "16",
+      "null" : "0",
+      "top" : [ {
+        "item" : "8",
+        "count" : "1510"
+      }, {
+        "item" : "7",
+        "count" : "1083"
+      }, {
+        "item" : "3",
+        "count" : "338"
+      }, {
+        "item" : "2",
+        "count" : "328"
+      }, {
+        "item" : "5",
+        "count" : "274"
+      }, {
+        "item" : "6",
+        "count" : "268"
+      }, {
+        "item" : "1",
+        "count" : "259"
+      }, {
+        "item" : "12",
+        "count" : "250"
+      }, {
+        "item" : "9",
+        "count" : "242"
+      }, {
+        "item" : "15",
+        "count" : "224"
+      }, {
+        "item" : "10",
+        "count" : "153"
+      }, {
+        "item" : "11",
+        "count" : "153"
+      }, {
+        "item" : "4",
+        "count" : "121"
+      }, {
+        "item" : "13",
+        "count" : "103"
+      }, {
+        "item" : "14",
+        "count" : "68"
+      }, {
+        "item" : "16",
+        "count" : "22"
+      } ],
+      "smallest" : "1",
+      "count" : "5396",
+      "cardinality" : "5396"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 593019353,
+    "name" : "SUBSIDIOS",
+    "dataTypeName" : "number",
+    "description" : "Corresponde al registro contable en pesos ($) del total de subsidios incluyendo el valor de las refacturaciones del mes y estrato/sector.",
+    "fieldName" : "subsidios",
+    "position" : 4,
+    "renderTypeName" : "number",
+    "tableColumnId" : 152755725,
+    "cachedContents" : {
+      "non_null" : "5396",
+      "largest" : "67807434637",
+      "null" : "0",
+      "top" : [ {
+        "item" : "0",
+        "count" : "4340"
+      }, {
+        "item" : "52323",
+        "count" : "2"
+      }, {
+        "item" : "20",
+        "count" : "2"
+      }, {
+        "item" : "20010881953",
+        "count" : "1"
+      }, {
+        "item" : "72078516",
+        "count" : "1"
+      }, {
+        "item" : "3311825",
+        "count" : "1"
+      }, {
+        "item" : "2616074674",
+        "count" : "1"
+      }, {
+        "item" : "43565481",
+        "count" : "1"
+      }, {
+        "item" : "42789",
+        "count" : "1"
+      }, {
+        "item" : "7949719",
+        "count" : "1"
+      }, {
+        "item" : "5164989811",
+        "count" : "1"
+      }, {
+        "item" : "70301",
+        "count" : "1"
+      }, {
+        "item" : "2958134",
+        "count" : "1"
+      }, {
+        "item" : "9400128551",
+        "count" : "1"
+      }, {
+        "item" : "3018843",
+        "count" : "1"
+      }, {
+        "item" : "41902018549",
+        "count" : "1"
+      }, {
+        "item" : "2724525",
+        "count" : "1"
+      }, {
+        "item" : "7600469461",
+        "count" : "1"
+      }, {
+        "item" : "758371",
+        "count" : "1"
+      }, {
+        "item" : "1041502549",
+        "count" : "1"
+      } ],
+      "smallest" : "0",
+      "count" : "5396",
+      "cardinality" : "5396"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 593019354,
+    "name" : "CONTRIBUCIONES",
+    "dataTypeName" : "number",
+    "description" : "Corresponde al registro contable en pesos ($) del total de contribuciones incluyendo el valor de las refacturaciones de las contribuciones en el respectivo mes y estrato/sector",
+    "fieldName" : "contribuciones",
+    "position" : 5,
+    "renderTypeName" : "number",
+    "tableColumnId" : 152755726,
+    "cachedContents" : {
+      "non_null" : "5396",
+      "largest" : "30593219036",
+      "null" : "0",
+      "top" : [ {
+        "item" : "0",
+        "count" : "1974"
+      }, {
+        "item" : "12004",
+        "count" : "4"
+      }, {
+        "item" : "3287708",
+        "count" : "2"
+      }, {
+        "item" : "3937291",
+        "count" : "2"
+      }, {
+        "item" : "536627",
+        "count" : "2"
+      }, {
+        "item" : "3280537",
+        "count" : "2"
+      }, {
+        "item" : "1360261",
+        "count" : "2"
+      }, {
+        "item" : "19742550",
+        "count" : "2"
+      }, {
+        "item" : "2082851",
+        "count" : "2"
+      }, {
+        "item" : "11179145",
+        "count" : "2"
+      }, {
+        "item" : "3012677",
+        "count" : "2"
+      }, {
+        "item" : "30395292",
+        "count" : "2"
+      }, {
+        "item" : "1076669",
+        "count" : "2"
+      }, {
+        "item" : "424161",
+        "count" : "2"
+      }, {
+        "item" : "65475608",
+        "count" : "2"
+      }, {
+        "item" : "3413909",
+        "count" : "2"
+      }, {
+        "item" : "21346584",
+        "count" : "2"
+      }, {
+        "item" : "11068954",
+        "count" : "2"
+      }, {
+        "item" : "31926878",
+        "count" : "2"
+      }, {
+        "item" : "13142364",
+        "count" : "2"
+      } ],
+      "smallest" : "-13414068",
+      "count" : "5396",
+      "cardinality" : "5396"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 593019355,
+    "name" : "CONTRIBUCIONES_NO_RECAU_A_6M",
+    "dataTypeName" : "number",
+    "description" : "Corresponde al registro contable en pesos ($) del total de las contribuciones No recaudadas, después de seis meses de facturadas para el respectivo mes y estrato/sector.",
+    "fieldName" : "cont_no_recau_a_6m",
+    "position" : 6,
+    "renderTypeName" : "number",
+    "tableColumnId" : 152755727,
+    "cachedContents" : {
+      "non_null" : "5396",
+      "largest" : "2428753892",
+      "null" : "0",
+      "top" : [ {
+        "item" : "0",
+        "count" : "4935"
+      }, {
+        "item" : "399646",
+        "count" : "3"
+      }, {
+        "item" : "870",
+        "count" : "2"
+      }, {
+        "item" : "151",
+        "count" : "2"
+      }, {
+        "item" : "290301",
+        "count" : "2"
+      }, {
+        "item" : "89241",
+        "count" : "2"
+      }, {
+        "item" : "913645",
+        "count" : "2"
+      }, {
+        "item" : "1543364",
+        "count" : "1"
+      }, {
+        "item" : "23198",
+        "count" : "1"
+      }, {
+        "item" : "70818",
+        "count" : "1"
+      }, {
+        "item" : "7754447",
+        "count" : "1"
+      }, {
+        "item" : "40489573",
+        "count" : "1"
+      }, {
+        "item" : "10705",
+        "count" : "1"
+      }, {
+        "item" : "576",
+        "count" : "1"
+      }, {
+        "item" : "68588",
+        "count" : "1"
+      }, {
+        "item" : "11206908",
+        "count" : "1"
+      }, {
+        "item" : "21803030",
+        "count" : "1"
+      }, {
+        "item" : "34775816",
+        "count" : "1"
+      }, {
+        "item" : "50466004",
+        "count" : "1"
+      }, {
+        "item" : "122805",
+        "count" : "1"
+      } ],
+      "smallest" : "0",
+      "count" : "5396",
+      "cardinality" : "5396"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 593019357,
+    "name" : "CONTRIBUCIONES_RECAU_LAST_CONC",
+    "dataTypeName" : "number",
+    "description" : "Corresponde al registro contable en pesos ($) del total del Recaudo de Cartera por concepto de Contribución después de haberse conciliado su no recaudo en el respectivo mes y estrato/sector.",
+    "fieldName" : "cont_recau_last_conc",
+    "position" : 7,
+    "renderTypeName" : "number",
+    "tableColumnId" : 152755728,
+    "cachedContents" : {
+      "non_null" : "5396",
+      "largest" : "182991551",
+      "null" : "0",
+      "top" : [ {
+        "item" : "0",
+        "count" : "4967"
+      }, {
+        "item" : "125",
+        "count" : "3"
+      }, {
+        "item" : "749340",
+        "count" : "2"
+      }, {
+        "item" : "1593795",
+        "count" : "2"
+      }, {
+        "item" : "25579",
+        "count" : "2"
+      }, {
+        "item" : "174478",
+        "count" : "2"
+      }, {
+        "item" : "246342",
+        "count" : "1"
+      }, {
+        "item" : "341617",
+        "count" : "1"
+      }, {
+        "item" : "888565",
+        "count" : "1"
+      }, {
+        "item" : "1807857",
+        "count" : "1"
+      }, {
+        "item" : "76908518",
+        "count" : "1"
+      }, {
+        "item" : "243392",
+        "count" : "1"
+      }, {
+        "item" : "414832",
+        "count" : "1"
+      }, {
+        "item" : "163779",
+        "count" : "1"
+      }, {
+        "item" : "6938892",
+        "count" : "1"
+      }, {
+        "item" : "333867",
+        "count" : "1"
+      }, {
+        "item" : "34598",
+        "count" : "1"
+      }, {
+        "item" : "169",
+        "count" : "1"
+      }, {
+        "item" : "59442",
+        "count" : "1"
+      }, {
+        "item" : "1762310",
+        "count" : "1"
+      } ],
+      "smallest" : "0",
+      "count" : "5396",
+      "cardinality" : "5396"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 593019358,
+    "name" : "GIROS_REC_MMIN_FSSRI_PGN",
+    "dataTypeName" : "number",
+    "description" : "Corresponde al registro contable en pesos ($) de la sumatoria de los giros recibidos por parte del Minenergía (FSSRI-PGN).",
+    "fieldName" : "g_rec_mmin_fssri_pgn",
+    "position" : 8,
+    "renderTypeName" : "number",
+    "tableColumnId" : 152755729,
+    "cachedContents" : {
+      "non_null" : "5396",
+      "largest" : "218361564285",
+      "null" : "0",
+      "top" : [ {
+        "item" : "0",
+        "count" : "5256"
+      }, {
+        "item" : "9698362764",
+        "count" : "1"
+      }, {
+        "item" : "5289733782",
+        "count" : "1"
+      }, {
+        "item" : "15407162340",
+        "count" : "1"
+      }, {
+        "item" : "4363356063",
+        "count" : "1"
+      }, {
+        "item" : "1668964953",
+        "count" : "1"
+      }, {
+        "item" : "2989189",
+        "count" : "1"
+      }, {
+        "item" : "14337063742",
+        "count" : "1"
+      }, {
+        "item" : "76677885",
+        "count" : "1"
+      }, {
+        "item" : "11324147946",
+        "count" : "1"
+      }, {
+        "item" : "47399357",
+        "count" : "1"
+      }, {
+        "item" : "85437256923",
+        "count" : "1"
+      }, {
+        "item" : "17802530124",
+        "count" : "1"
+      }, {
+        "item" : "44619246336",
+        "count" : "1"
+      }, {
+        "item" : "40890571746",
+        "count" : "1"
+      }, {
+        "item" : "1325429681",
+        "count" : "1"
+      }, {
+        "item" : "42249963595",
+        "count" : "1"
+      }, {
+        "item" : "79335996",
+        "count" : "1"
+      }, {
+        "item" : "528397122",
+        "count" : "1"
+      }, {
+        "item" : "3457362884",
+        "count" : "1"
+      } ],
+      "smallest" : "0",
+      "count" : "5396",
+      "cardinality" : "5396"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 593019359,
+    "name" : "GIROS_RECIB_OTROS_COMER",
+    "dataTypeName" : "number",
+    "description" : "Corresponde al registro contable en pesos ($) de la sumatoria de los giros recibidos de Otros Comercializadores",
+    "fieldName" : "giros_recib_otros",
+    "position" : 9,
+    "renderTypeName" : "number",
+    "tableColumnId" : 152755730,
+    "cachedContents" : {
+      "non_null" : "5396",
+      "largest" : "10879152395",
+      "null" : "0",
+      "top" : [ {
+        "item" : "0",
+        "count" : "5234"
+      }, {
+        "item" : "117522",
+        "count" : "1"
+      }, {
+        "item" : "2179145",
+        "count" : "1"
+      }, {
+        "item" : "119055129",
+        "count" : "1"
+      }, {
+        "item" : "5668024806",
+        "count" : "1"
+      }, {
+        "item" : "11095304",
+        "count" : "1"
+      }, {
+        "item" : "1611171948",
+        "count" : "1"
+      }, {
+        "item" : "2214390",
+        "count" : "1"
+      }, {
+        "item" : "2116745029",
+        "count" : "1"
+      }, {
+        "item" : "57702913",
+        "count" : "1"
+      }, {
+        "item" : "638398940",
+        "count" : "1"
+      }, {
+        "item" : "231505703",
+        "count" : "1"
+      }, {
+        "item" : "622053955",
+        "count" : "1"
+      }, {
+        "item" : "10783630",
+        "count" : "1"
+      }, {
+        "item" : "3283361",
+        "count" : "1"
+      }, {
+        "item" : "3453171",
+        "count" : "1"
+      }, {
+        "item" : "15546788",
+        "count" : "1"
+      }, {
+        "item" : "4249573038",
+        "count" : "1"
+      }, {
+        "item" : "1099302404",
+        "count" : "1"
+      }, {
+        "item" : "165674312",
+        "count" : "1"
+      } ],
+      "smallest" : "0",
+      "count" : "5396",
+      "cardinality" : "5396"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 593019360,
+    "name" : "GIROS_EFECT_MMINAS",
+    "dataTypeName" : "number",
+    "description" : "Corresponde al registro contable en pesos ($) de la sumatoria de los giros efectuados a Minenergía (FSSRI-PGN).",
+    "fieldName" : "giros_efect_mminas",
+    "position" : 10,
+    "renderTypeName" : "number",
+    "tableColumnId" : 152755731,
+    "cachedContents" : {
+      "non_null" : "5396",
+      "largest" : "144775365716",
+      "null" : "0",
+      "top" : [ {
+        "item" : "0",
+        "count" : "5354"
+      }, {
+        "item" : "367941885",
+        "count" : "1"
+      }, {
+        "item" : "36843217",
+        "count" : "1"
+      }, {
+        "item" : "602171343",
+        "count" : "1"
+      }, {
+        "item" : "246970549",
+        "count" : "1"
+      }, {
+        "item" : "62670934",
+        "count" : "1"
+      }, {
+        "item" : "315721235",
+        "count" : "1"
+      }, {
+        "item" : "63138242",
+        "count" : "1"
+      }, {
+        "item" : "59328607",
+        "count" : "1"
+      }, {
+        "item" : "37001580",
+        "count" : "1"
+      }, {
+        "item" : "32015135",
+        "count" : "1"
+      }, {
+        "item" : "68274909",
+        "count" : "1"
+      }, {
+        "item" : "144775365716",
+        "count" : "1"
+      }, {
+        "item" : "5233807563",
+        "count" : "1"
+      }, {
+        "item" : "605143436",
+        "count" : "1"
+      }, {
+        "item" : "3140284538",
+        "count" : "1"
+      }, {
+        "item" : "67329447",
+        "count" : "1"
+      }, {
+        "item" : "5897470",
+        "count" : "1"
+      }, {
+        "item" : "319139480",
+        "count" : "1"
+      }, {
+        "item" : "222890314",
+        "count" : "1"
+      } ],
+      "smallest" : "0",
+      "count" : "5396",
+      "cardinality" : "5396"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 593019361,
+    "name" : "GIROS_EFECT_OTROS",
+    "dataTypeName" : "number",
+    "description" : "Corresponde al registro contable en pesos ($) de la sumatoria de los giros efectuados a otros Comercializadores",
+    "fieldName" : "giros_efect_otros",
+    "position" : 11,
+    "renderTypeName" : "number",
+    "tableColumnId" : 152755732,
+    "cachedContents" : {
+      "non_null" : "5396",
+      "largest" : "5306374281",
+      "null" : "0",
+      "top" : [ {
+        "item" : "0",
+        "count" : "4126"
+      }, {
+        "item" : "55662723",
+        "count" : "2"
+      }, {
+        "item" : "4975240",
+        "count" : "2"
+      }, {
+        "item" : "3287708",
+        "count" : "2"
+      }, {
+        "item" : "1159057",
+        "count" : "2"
+      }, {
+        "item" : "22760544",
+        "count" : "2"
+      }, {
+        "item" : "3900118",
+        "count" : "2"
+      }, {
+        "item" : "4299831",
+        "count" : "2"
+      }, {
+        "item" : "1076669",
+        "count" : "2"
+      }, {
+        "item" : "6029927",
+        "count" : "2"
+      }, {
+        "item" : "26586783",
+        "count" : "2"
+      }, {
+        "item" : "135898",
+        "count" : "2"
+      }, {
+        "item" : "2680745",
+        "count" : "2"
+      }, {
+        "item" : "963061",
+        "count" : "2"
+      }, {
+        "item" : "3012677",
+        "count" : "2"
+      }, {
+        "item" : "11068954",
+        "count" : "2"
+      }, {
+        "item" : "404376",
+        "count" : "2"
+      }, {
+        "item" : "11179145",
+        "count" : "2"
+      }, {
+        "item" : "2459491",
+        "count" : "2"
+      }, {
+        "item" : "418860375",
+        "count" : "1"
+      } ],
+      "smallest" : "-13414068",
+      "count" : "5396",
+      "cardinality" : "5396"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 593019362,
+    "name" : "FOES",
+    "dataTypeName" : "number",
+    "description" : "Corresponde al registro contable en pesos ($) del total de FOES incluyendo el valor de la refacturación aplicado en el respectivo mes y en el estrato/sector",
+    "fieldName" : "foes",
+    "position" : 12,
+    "renderTypeName" : "number",
+    "tableColumnId" : 152755733,
+    "cachedContents" : {
+      "non_null" : "5396",
+      "largest" : "10596448504",
+      "null" : "0",
+      "top" : [ {
+        "item" : "0",
+        "count" : "5242"
+      }, {
+        "item" : "3960417",
+        "count" : "1"
+      }, {
+        "item" : "408802",
+        "count" : "1"
+      }, {
+        "item" : "45150027",
+        "count" : "1"
+      }, {
+        "item" : "17405519",
+        "count" : "1"
+      }, {
+        "item" : "6375136450",
+        "count" : "1"
+      }, {
+        "item" : "265138437",
+        "count" : "1"
+      }, {
+        "item" : "7620791020",
+        "count" : "1"
+      }, {
+        "item" : "81965131",
+        "count" : "1"
+      }, {
+        "item" : "10052286",
+        "count" : "1"
+      }, {
+        "item" : "14376312",
+        "count" : "1"
+      }, {
+        "item" : "92306082",
+        "count" : "1"
+      }, {
+        "item" : "128880098",
+        "count" : "1"
+      }, {
+        "item" : "56409855",
+        "count" : "1"
+      }, {
+        "item" : "145583805",
+        "count" : "1"
+      }, {
+        "item" : "31495385",
+        "count" : "1"
+      }, {
+        "item" : "13502",
+        "count" : "1"
+      }, {
+        "item" : "15916",
+        "count" : "1"
+      }, {
+        "item" : "10596448504",
+        "count" : "1"
+      }, {
+        "item" : "145046542",
+        "count" : "1"
+      } ],
+      "smallest" : "0",
+      "count" : "5396",
+      "cardinality" : "5396"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 593019364,
+    "name" : "DEVOLUCION_FOES",
+    "dataTypeName" : "number",
+    "description" : "Corresponde al registro contable en pesos ($) del valor devuelto o reintegrado de Minenergía - FOES al fondo en el respectivo mes y en el estrato o sector",
+    "fieldName" : "devolucion_foes",
+    "position" : 13,
+    "renderTypeName" : "number",
+    "tableColumnId" : 152755734,
+    "cachedContents" : {
+      "non_null" : "5396",
+      "largest" : "3365885509",
+      "null" : "0",
+      "top" : [ {
+        "item" : "0",
+        "count" : "5376"
+      }, {
+        "item" : "16651164",
+        "count" : "2"
+      }, {
+        "item" : "3637209",
+        "count" : "1"
+      }, {
+        "item" : "1481500",
+        "count" : "1"
+      }, {
+        "item" : "4508559",
+        "count" : "1"
+      }, {
+        "item" : "3715044",
+        "count" : "1"
+      }, {
+        "item" : "3166285",
+        "count" : "1"
+      }, {
+        "item" : "11186549",
+        "count" : "1"
+      }, {
+        "item" : "4531068",
+        "count" : "1"
+      }, {
+        "item" : "48923789",
+        "count" : "1"
+      }, {
+        "item" : "70846517",
+        "count" : "1"
+      }, {
+        "item" : "3365885509",
+        "count" : "1"
+      }, {
+        "item" : "11829",
+        "count" : "1"
+      }, {
+        "item" : "572411",
+        "count" : "1"
+      }, {
+        "item" : "3089466",
+        "count" : "1"
+      }, {
+        "item" : "4086188",
+        "count" : "1"
+      }, {
+        "item" : "84146532",
+        "count" : "1"
+      }, {
+        "item" : "114753",
+        "count" : "1"
+      }, {
+        "item" : "1626259",
+        "count" : "1"
+      }, {
+        "item" : "134685",
+        "count" : "1"
+      } ],
+      "smallest" : "0",
+      "count" : "5396",
+      "cardinality" : "5396"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 593019365,
+    "name" : "ID_MERCADO",
+    "dataTypeName" : "number",
+    "description" : "Identificador del Mercado",
+    "fieldName" : "id_mercado",
+    "position" : 14,
+    "renderTypeName" : "number",
+    "tableColumnId" : 152755735,
+    "cachedContents" : {
+      "non_null" : "5396",
+      "largest" : "704",
+      "null" : "0",
+      "top" : [ {
+        "item" : "176",
+        "count" : "455"
+      }, {
+        "item" : "443",
+        "count" : "361"
+      }, {
+        "item" : "165",
+        "count" : "337"
+      }, {
+        "item" : "444",
+        "count" : "316"
+      }, {
+        "item" : "704",
+        "count" : "297"
+      }, {
+        "item" : "561",
+        "count" : "273"
+      }, {
+        "item" : "160",
+        "count" : "263"
+      }, {
+        "item" : "173",
+        "count" : "262"
+      }, {
+        "item" : "158",
+        "count" : "243"
+      }, {
+        "item" : "163",
+        "count" : "221"
+      }, {
+        "item" : "162",
+        "count" : "214"
+      }, {
+        "item" : "161",
+        "count" : "210"
+      }, {
+        "item" : "169",
+        "count" : "209"
+      }, {
+        "item" : "172",
+        "count" : "208"
+      }, {
+        "item" : "170",
+        "count" : "191"
+      }, {
+        "item" : "164",
+        "count" : "188"
+      }, {
+        "item" : "175",
+        "count" : "173"
+      }, {
+        "item" : "703",
+        "count" : "140"
+      }, {
+        "item" : "166",
+        "count" : "133"
+      }, {
+        "item" : "168",
+        "count" : "132"
+      } ],
+      "smallest" : "157",
+      "count" : "5396",
+      "cardinality" : "5396"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 593019347,
+    "name" : "ID_EMPRESA",
+    "dataTypeName" : "number",
+    "description" : "Identificador de la Empresa",
+    "fieldName" : "id_empresa",
+    "position" : 15,
+    "renderTypeName" : "number",
+    "tableColumnId" : 152755720,
+    "cachedContents" : {
+      "non_null" : "5396",
+      "largest" : "62371",
+      "null" : "0",
+      "top" : [ {
+        "item" : "2322",
+        "count" : "859"
+      }, {
+        "item" : "23330",
+        "count" : "666"
+      }, {
+        "item" : "20437",
+        "count" : "321"
+      }, {
+        "item" : "597",
+        "count" : "273"
+      }, {
+        "item" : "536",
+        "count" : "225"
+      }, {
+        "item" : "27691",
+        "count" : "216"
+      }, {
+        "item" : "2020",
+        "count" : "209"
+      }, {
+        "item" : "48305",
+        "count" : "192"
+      }, {
+        "item" : "2438",
+        "count" : "138"
+      }, {
+        "item" : "2073",
+        "count" : "136"
+      }, {
+        "item" : "48307",
+        "count" : "132"
+      }, {
+        "item" : "59850",
+        "count" : "121"
+      }, {
+        "item" : "1737",
+        "count" : "112"
+      }, {
+        "item" : "2016",
+        "count" : "96"
+      }, {
+        "item" : "500",
+        "count" : "93"
+      }, {
+        "item" : "62071",
+        "count" : "87"
+      }, {
+        "item" : "2824",
+        "count" : "87"
+      }, {
+        "item" : "520",
+        "count" : "78"
+      }, {
+        "item" : "1014",
+        "count" : "76"
+      }, {
+        "item" : "523",
+        "count" : "72"
+      } ],
+      "smallest" : "480",
+      "count" : "5396",
+      "cardinality" : "5396"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 593019348,
+    "name" : "EMPRESA",
+    "dataTypeName" : "text",
+    "description" : "Empresa",
+    "fieldName" : "empresa",
+    "position" : 16,
+    "renderTypeName" : "text",
+    "tableColumnId" : 152755721,
+    "cachedContents" : {
+      "non_null" : "5396",
+      "largest" : "VATIA S.A. E.S.P.",
+      "null" : "0",
+      "top" : [ {
+        "item" : "VATIA S.A. E.S.P.",
+        "count" : "859"
+      }, {
+        "item" : "PROFESIONALES EN ENERGÍA S.A E.S.P",
+        "count" : "666"
+      }, {
+        "item" : "ENERTOTAL S.A. E.S.P.",
+        "count" : "321"
+      }, {
+        "item" : "ENEL COLOMBIA S.A. E.S.P.",
+        "count" : "273"
+      }, {
+        "item" : "CELSIA COLOMBIA S.A. E.S.P.",
+        "count" : "225"
+      }, {
+        "item" : "QI ENERGY SAS ESP",
+        "count" : "216"
+      }, {
+        "item" : "DISTRIBUIDORA Y COMERCIALIZADORA DE ENERGIA ELECTRICA S.A. E.S.P.",
+        "count" : "209"
+      }, {
+        "item" : "CARIBEMAR DE LA COSTA S.A.S. E.S.P.",
+        "count" : "192"
+      }, {
+        "item" : "EMPRESAS MUNICIPALES DE CALI   E.I.C.E  E.S.P",
+        "count" : "138"
+      }, {
+        "item" : "EMPRESA DE ENERGÍA DE PEREIRA S.A. ESP.",
+        "count" : "136"
+      }, {
+        "item" : "AIR-E S.A.S. E.S.P.",
+        "count" : "132"
+      }, {
+        "item" : "ENERBIT SAS ESP",
+        "count" : "121"
+      }, {
+        "item" : "RUITOQUE S.A. E.S.P.",
+        "count" : "112"
+      }, {
+        "item" : "EMPRESA DE ENERGIA DEL PUTUMAYO S.A. ESP",
+        "count" : "96"
+      }, {
+        "item" : "EMPRESA DE ENERGIA DE BOYACA S.A. E.S.P. EMPRESA DE SERVICIOS PUBLICOS",
+        "count" : "93"
+      }, {
+        "item" : "Enel X Colombia SAS ESP",
+        "count" : "87"
+      }, {
+        "item" : "ENERCO S.A. E.S.P.",
+        "count" : "87"
+      }, {
+        "item" : "CENTRALES ELECTRICAS DE NARIÑO S.A. E.S.P.",
+        "count" : "78"
+      }, {
+        "item" : "ELECTRIFICADORA DEL HUILA S.A. E.S.P.",
+        "count" : "76"
+      }, {
+        "item" : "EMPRESA DE ENERGIA DEL  QUINDIO S.A.E.S.P.",
+        "count" : "72"
+      } ],
+      "smallest" : "AES COLOMBIA & CIA S C A E S P",
+      "count" : "5396",
+      "cardinality" : "5396"
+    },
+    "format" : { }
+  } ],
+  "grants" : [ {
+    "inherited" : false,
+    "type" : "viewer",
+    "flags" : [ "public" ]
+  } ],
+  "license" : {
+    "name" : "Creative Commons Attribution | Share Alike 4.0 International",
+    "logoUrl" : "images/licenses/cc30bysa.png",
+    "termsLink" : "http://creativecommons.org/licenses/by-sa/4.0/legalcode"
+  },
+  "metadata" : {
+    "custom_fields" : {
+      "Información de la Entidad" : {
+        "Municipio" : "Bogotá D.C.",
+        "Nombre de la Entidad" : "Superintendencia de Servicios Públicos Domiciliarios - SUPERSERVICIOS, Bogotá D.C.",
+        "DIVIPOLA Municipio" : "11001",
+        "Orden" : "Nacional",
+        "Sector" : "Planeación",
+        "Departamento" : "Bogotá D.C."
+      },
+      "Información de Datos" : {
+        "Cobertura Geográfica" : "Nacional",
+        "Idioma" : "Español",
+        "Frecuencia de Actualización" : "Semestral"
+      }
+    }
+  },
+  "owner" : {
+    "id" : "bfay-vveq",
+    "disabledAt" : 1793895155,
+    "displayName" : "Superintendencia de Servicios Públicos Domiciliarios - Planeación",
+    "screenName" : "Superintendencia de Servicios Públicos Domiciliarios - Planeación",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "query" : { },
+  "rights" : [ "read" ],
+  "tableAuthor" : {
+    "id" : "bfay-vveq",
+    "disabledAt" : 1793895155,
+    "displayName" : "Superintendencia de Servicios Públicos Domiciliarios - Planeación",
+    "screenName" : "Superintendencia de Servicios Públicos Domiciliarios - Planeación",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+}

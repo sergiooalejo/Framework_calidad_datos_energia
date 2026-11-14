@@ -1,0 +1,40 @@
+{
+  "fuente": "SSPD_PLAN",
+  "dataset_id": "vfjy-6fka",
+  "inicio_utc": "2026-11-14T00:50:29.673414+00:00",
+  "estado": "completa",
+  "paginas": [
+    {
+      "url": "https://www.datos.gov.co/resource/vfjy-6fka.json?%24select=%2A%2C+%3Aid&%24order=%3Aid&%24limit=10000&%24offset=0",
+      "archivo": "pagina_000000000.json",
+      "sha256": "77043ce255711b8872ced92c414635f695c4fa9729b6b7a4094755fffbd97ca0",
+      "filas": 5396
+    }
+  ],
+  "nota": "Captura real por API; no acredita fecha histórica de publicación.",
+  "filas": 5396,
+  "columnas": [
+    "anio",
+    "mes",
+    "estra_sector",
+    "subsidios",
+    "contribuciones",
+    "cont_no_recau_a_6m",
+    "cont_recau_last_conc",
+    "g_rec_mmin_fssri_pgn",
+    "giros_recib_otros",
+    "giros_efect_mminas",
+    "giros_efect_otros",
+    "foes",
+    "devolucion_foes",
+    "id_mercado",
+    "id_empresa",
+    "empresa"
+  ],
+  "url_metadatos": "https://www.datos.gov.co/api/views/vfjy-6fka.json",
+  "sha256_datos": "2077441a4650b239c30d99d06c0466dd124d3e6aaa6d79aad5ede9b570c131b8",
+  "sha256_metadatos": "e55ee0711405bb26d5fc9a593a44b41c5cfa148b7a7e96aa54a19e781f6d0af0",
+  "sha256_identificadores": "0a49d39dfa7de3babd94cd5354d16978960247e008b389571cc3f86ae30577dd",
+  "consistencia_paginacion": "conteos antes/después e identificadores únicos; API sin aislamiento transaccional",
+  "fin_utc": "2026-11-14T00:50:35.163377+00:00"
+}

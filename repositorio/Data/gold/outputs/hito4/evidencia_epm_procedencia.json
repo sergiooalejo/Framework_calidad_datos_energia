@@ -1,0 +1,47 @@
+[
+  {
+    "archivo": "Data/gold/outputs/regla_sistemica/evidencia_externa/tarifas_epm_publicadas.csv",
+    "sha256": "a7c3500186dd359ba2a110bb302e246ef670c278b2265b6b055e7d22824d07a9",
+    "alcance": "Evidencia conservada del contraste de publicaciones EPM; no se presenta como nueva validación del publicador"
+  },
+  {
+    "archivo": "Data/gold/outputs/regla_sistemica/contraste_componentes.csv",
+    "sha256": "598d85735e313cd5a4ea9f45efef88747b0df8f726888b1f682d2dd54a9bd5b9",
+    "alcance": "Evidencia conservada del contraste de publicaciones EPM; no se presenta como nueva validación del publicador"
+  },
+  {
+    "archivo": "Data/gold/outputs/regla_sistemica/evidencia_externa/referencias_documentales.csv",
+    "sha256": "6bbf1325402c9ab11044dfbce1fe35375c247b5c6edc2be34492c82e2db52faa",
+    "alcance": "Evidencia conservada del contraste de publicaciones EPM; no se presenta como nueva validación del publicador"
+  },
+  {
+    "archivo": "Data/gold/outputs/regla_sistemica/evidencia_externa/epm_tarifas_energia_2020-01.pdf",
+    "sha256": "49f635522bb31f68ba5270492c835eacb5e3c0acd72d9c1d368690adc09ee4b3",
+    "alcance": "Evidencia conservada del contraste de publicaciones EPM; no se presenta como nueva validación del publicador"
+  },
+  {
+    "archivo": "Data/gold/outputs/regla_sistemica/evidencia_externa/epm_tarifas_energia_2020-02.pdf",
+    "sha256": "f6b6bf5f35444406f4c7c94614b906b638aca4f8ecf5d4261cf74715621232ff",
+    "alcance": "Evidencia conservada del contraste de publicaciones EPM; no se presenta como nueva validación del publicador"
+  },
+  {
+    "archivo": "Data/gold/outputs/regla_sistemica/evidencia_externa/epm_tarifas_energia_2020-06.pdf",
+    "sha256": "303725419a6355a3c0545e60bb642590acf87e05c4b26279b561ddec02f8d3bf",
+    "alcance": "Evidencia conservada del contraste de publicaciones EPM; no se presenta como nueva validación del publicador"
+  },
+  {
+    "archivo": "Data/gold/outputs/regla_sistemica/evidencia_externa/epm_tarifas_energia_2020-07.pdf",
+    "sha256": "ac74b07c4d569596b59cc0b67221e84d5dd10eb17213fc8790a3d3872d27efc4",
+    "alcance": "Evidencia conservada del contraste de publicaciones EPM; no se presenta como nueva validación del publicador"
+  },
+  {
+    "archivo": "Data/gold/outputs/regla_sistemica/evidencia_externa/epm_tarifas_energia_2021-06.pdf",
+    "sha256": "3259037dd1181bace641eb1c2a99d202f8004053e316c85a4688650093fa1d09",
+    "alcance": "Evidencia conservada del contraste de publicaciones EPM; no se presenta como nueva validación del publicador"
+  },
+  {
+    "archivo": "Data/gold/outputs/regla_sistemica/evidencia_externa/epm_tarifas_energia_2021-07.pdf",
+    "sha256": "0a4209952eee22281ad1c601a692ba4165fdfa84309418cb77aa210500303679",
+    "alcance": "Evidencia conservada del contraste de publicaciones EPM; no se presenta como nueva validación del publicador"
+  }
+]

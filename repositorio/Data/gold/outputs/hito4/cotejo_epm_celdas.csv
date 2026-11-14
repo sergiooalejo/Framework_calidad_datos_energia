@@ -1,0 +1,109 @@
+periodo,componente,columna,valor_publicado,valores_csv,coincide,etiquetas_csv,alcance
+2020-01,"Costo compra: Gm,i",propiedadepm,210.50,210.50,1,"Costo compra: Gm, i",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-01,"Costo compra: Gm,i",compartido,210.50,210.50,1,"Costo compra: Gm, i",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-01,"Costo compra: Gm,i",propiedaddelcliente,210.50,210.50,1,"Costo compra: Gm, i",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-01,Cargo transporte STN: Tm,propiedadepm,33.62,33.62,1,Cargo transporte STN: Tm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-01,Cargo transporte STN: Tm,compartido,33.62,33.62,1,Cargo transporte STN: Tm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-01,Cargo transporte STN: Tm,propiedaddelcliente,33.62,33.62,1,Cargo transporte STN: Tm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-01,"Cargo transporte SDL: Dn,m",propiedadepm,191.79,191.79,1,"Cargo transporte SDL: Dn,m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-01,"Cargo transporte SDL: Dn,m",compartido,172.73,172.73,1,"Cargo transporte SDL: Dn,m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-01,"Cargo transporte SDL: Dn,m",propiedaddelcliente,153.67,153.67,1,"Cargo transporte SDL: Dn,m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-01,"Margen comercialización: CVm,i,j",propiedadepm,45.60,45.60,1,"Margen comercialización: CVm,i,j",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-01,"Margen comercialización: CVm,i,j",compartido,45.60,45.60,1,"Margen comercialización: CVm,i,j",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-01,"Margen comercialización: CVm,i,j",propiedaddelcliente,45.60,45.60,1,"Margen comercialización: CVm,i,j",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-01,"Costo G,T, pérdidas: PRn,m",propiedadepm,38.93,38.93,1,"Costo G,T, pérdidas: PRn,m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-01,"Costo G,T, pérdidas: PRn,m",compartido,38.93,38.93,1,"Costo G,T, pérdidas: PRn,m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-01,"Costo G,T, pérdidas: PRn,m",propiedaddelcliente,38.93,38.93,1,"Costo G,T, pérdidas: PRn,m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-01,Restricciones: Rm,propiedadepm,-0.25,-0.25,1,Restricciones: Rm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-01,Restricciones: Rm,compartido,-0.25,-0.25,1,Restricciones: Rm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-01,Restricciones: Rm,propiedaddelcliente,-0.25,-0.25,1,Restricciones: Rm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-02,"Costo compra: Gm,i",propiedadepm,228.24,228.24,1,"Costo compra: Gm, i",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-02,"Costo compra: Gm,i",compartido,228.24,228.24,1,"Costo compra: Gm, i",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-02,"Costo compra: Gm,i",propiedaddelcliente,228.24,228.24,1,"Costo compra: Gm, i",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-02,Cargo transporte STN: Tm,propiedadepm,35.41,35.41,1,Cargo transporte STN: Tm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-02,Cargo transporte STN: Tm,compartido,35.41,35.41,1,Cargo transporte STN: Tm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-02,Cargo transporte STN: Tm,propiedaddelcliente,35.41,35.41,1,Cargo transporte STN: Tm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-02,"Cargo transporte SDL: Dn,m",propiedadepm,206.68,206.68,1,"Cargo transporte SDL: Dn,m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-02,"Cargo transporte SDL: Dn,m",compartido,183.62,183.62,1,"Cargo transporte SDL: Dn,m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-02,"Cargo transporte SDL: Dn,m",propiedaddelcliente,160.56,160.56,1,"Cargo transporte SDL: Dn,m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-02,"Margen comercialización: CVm,i,j",propiedadepm,46.02,46.02,1,"Margen comercialización: CVm,i,j",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-02,"Margen comercialización: CVm,i,j",compartido,46.02,46.02,1,"Margen comercialización: CVm,i,j",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-02,"Margen comercialización: CVm,i,j",propiedaddelcliente,46.02,46.02,1,"Margen comercialización: CVm,i,j",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-02,"Costo G,T, pérdidas: PRn,m",propiedadepm,48.98,48.98,1,"Costo G,T, pérdidas: PRn,m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-02,"Costo G,T, pérdidas: PRn,m",compartido,48.98,48.98,1,"Costo G,T, pérdidas: PRn,m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-02,"Costo G,T, pérdidas: PRn,m",propiedaddelcliente,48.98,48.98,1,"Costo G,T, pérdidas: PRn,m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-02,Restricciones: Rm,propiedadepm,2.03,2.03,1,Restricciones: Rm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-02,Restricciones: Rm,compartido,2.03,2.03,1,Restricciones: Rm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-02,Restricciones: Rm,propiedaddelcliente,2.03,2.03,1,Restricciones: Rm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-06,"Costo compra: Gm,i",propiedadepm,221.40,221.40,1,"Costo Compra: Gm, i",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-06,"Costo compra: Gm,i",compartido,221.40,221.40,1,"Costo Compra: Gm, i",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-06,"Costo compra: Gm,i",propiedaddelcliente,221.40,221.40,1,"Costo Compra: Gm, i",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-06,Cargo transporte STN: Tm,propiedadepm,43.10,43.10,1,Cargo transporte STN: Tm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-06,Cargo transporte STN: Tm,compartido,43.10,43.10,1,Cargo transporte STN: Tm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-06,Cargo transporte STN: Tm,propiedaddelcliente,43.10,43.10,1,Cargo transporte STN: Tm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-06,"Cargo transporte SDL: Dn,m",propiedadepm,206.40,206.40,1,"Cargo transporte SDL: Dn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-06,"Cargo transporte SDL: Dn,m",compartido,184.41,184.41,1,"Cargo transporte SDL: Dn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-06,"Cargo transporte SDL: Dn,m",propiedaddelcliente,162.42,162.42,1,"Cargo transporte SDL: Dn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-06,"Margen comercialización: CVm,i,j",propiedadepm,48.55,48.55,1,"Margen comercialización: CVm, i, j",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-06,"Margen comercialización: CVm,i,j",compartido,48.55,48.55,1,"Margen comercialización: CVm, i, j",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-06,"Margen comercialización: CVm,i,j",propiedaddelcliente,48.55,48.55,1,"Margen comercialización: CVm, i, j",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-06,"Costo G,T, pérdidas: PRn,m",propiedadepm,48.92,48.92,1,"Costo G, T, pérdidas: PRn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-06,"Costo G,T, pérdidas: PRn,m",compartido,48.92,48.92,1,"Costo G, T, pérdidas: PRn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-06,"Costo G,T, pérdidas: PRn,m",propiedaddelcliente,48.92,48.92,1,"Costo G, T, pérdidas: PRn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-06,Restricciones: Rm,propiedadepm,4.55,4.55,1,Restricciones: Rm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-06,Restricciones: Rm,compartido,4.55,4.55,1,Restricciones: Rm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-06,Restricciones: Rm,propiedaddelcliente,4.55,4.55,1,Restricciones: Rm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-07,"Costo compra: Gm,i",propiedadepm,222.30,222.30,1,"Costo Compra: Gm, i",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-07,"Costo compra: Gm,i",compartido,222.30,222.30,1,"Costo Compra: Gm, i",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-07,"Costo compra: Gm,i",propiedaddelcliente,222.30,222.30,1,"Costo Compra: Gm, i",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-07,Cargo transporte STN: Tm,propiedadepm,34.33,34.33,1,Cargo transporte STN: Tm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-07,Cargo transporte STN: Tm,compartido,34.33,34.33,1,Cargo transporte STN: Tm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-07,Cargo transporte STN: Tm,propiedaddelcliente,34.33,34.33,1,Cargo transporte STN: Tm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-07,"Cargo transporte SDL: Dn,m",propiedadepm,217.22,217.22,1,"Cargo transporte SDL: Dn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-07,"Cargo transporte SDL: Dn,m",compartido,195.32,195.32,1,"Cargo transporte SDL: Dn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-07,"Cargo transporte SDL: Dn,m",propiedaddelcliente,173.43,173.43,1,"Cargo transporte SDL: Dn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-07,"Margen comercialización: CVm,i,j",propiedadepm,52.03,52.03,1,"Margen comercialización: CVm, i, j",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-07,"Margen comercialización: CVm,i,j",compartido,52.03,52.03,1,"Margen comercialización: CVm, i, j",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-07,"Margen comercialización: CVm,i,j",propiedaddelcliente,52.03,52.03,1,"Margen comercialización: CVm, i, j",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-07,"Costo G,T, pérdidas: PRn,m",propiedadepm,48.93,48.93,1,"Costo G, T, pérdidas: PRn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-07,"Costo G,T, pérdidas: PRn,m",compartido,48.93,48.93,1,"Costo G, T, pérdidas: PRn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-07,"Costo G,T, pérdidas: PRn,m",propiedaddelcliente,48.93,48.93,1,"Costo G, T, pérdidas: PRn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-07,Restricciones: Rm,propiedadepm,6.41,6.41,1,Restricciones: Rm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-07,Restricciones: Rm,compartido,6.41,6.41,1,Restricciones: Rm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2020-07,Restricciones: Rm,propiedaddelcliente,6.41,6.41,1,Restricciones: Rm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-06,"Costo compra: Gm,i",propiedadepm,228.62,228.62,1,"Costo Compra: Gm, i",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-06,"Costo compra: Gm,i",compartido,228.62,228.62,1,"Costo Compra: Gm, i",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-06,"Costo compra: Gm,i",propiedaddelcliente,228.62,228.62,1,"Costo Compra: Gm, i",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-06,Cargo transporte STN: Tm,propiedadepm,47.93,47.93,1,Cargo transporte STN: Tm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-06,Cargo transporte STN: Tm,compartido,47.93,47.93,1,Cargo transporte STN: Tm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-06,Cargo transporte STN: Tm,propiedaddelcliente,47.93,47.93,1,Cargo transporte STN: Tm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-06,"Cargo transporte SDL: Dn,m",propiedadepm,236.60,236.60,1,"Cargo transporte SDL: Dn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-06,"Cargo transporte SDL: Dn,m",compartido,213.31,213.31,1,"Cargo transporte SDL: Dn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-06,"Cargo transporte SDL: Dn,m",propiedaddelcliente,190.02,190.02,1,"Cargo transporte SDL: Dn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-06,"Margen comercialización: CVm,i,j",propiedadepm,51.20,51.20,1,"Margen comercialización: CVm, i, j",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-06,"Margen comercialización: CVm,i,j",compartido,51.20,51.20,1,"Margen comercialización: CVm, i, j",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-06,"Margen comercialización: CVm,i,j",propiedaddelcliente,51.20,51.20,1,"Margen comercialización: CVm, i, j",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-06,"Costo G,T, pérdidas: PRn,m",propiedadepm,49.91,49.91,1,"Costo G, T, pérdidas: PRn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-06,"Costo G,T, pérdidas: PRn,m",compartido,49.91,49.91,1,"Costo G, T, pérdidas: PRn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-06,"Costo G,T, pérdidas: PRn,m",propiedaddelcliente,49.91,49.91,1,"Costo G, T, pérdidas: PRn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-06,Restricciones: Rm,propiedadepm,11.50,11.50,1,Restricciones: Rm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-06,Restricciones: Rm,compartido,11.50,11.50,1,Restricciones: Rm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-06,Restricciones: Rm,propiedaddelcliente,11.50,11.50,1,Restricciones: Rm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-07,"Costo compra: Gm,i",propiedadepm,221.74,221.74,1,"Costo Compra: Gm, i",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-07,"Costo compra: Gm,i",compartido,221.74,221.74,1,"Costo Compra: Gm, i",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-07,"Costo compra: Gm,i",propiedaddelcliente,221.74,221.74,1,"Costo Compra: Gm, i",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-07,Cargo transporte STN: Tm,propiedadepm,41.57,41.57,1,Cargo transporte STN: Tm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-07,Cargo transporte STN: Tm,compartido,41.57,41.57,1,Cargo transporte STN: Tm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-07,Cargo transporte STN: Tm,propiedaddelcliente,41.57,41.57,1,Cargo transporte STN: Tm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-07,"Cargo transporte SDL: Dn,m",propiedadepm,231.74,231.74,1,"Cargo transporte SDL: Dn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-07,"Cargo transporte SDL: Dn,m",compartido,208.65,208.65,1,"Cargo transporte SDL: Dn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-07,"Cargo transporte SDL: Dn,m",propiedaddelcliente,185.57,185.57,1,"Cargo transporte SDL: Dn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-07,"Margen comercialización: CVm,i,j",propiedadepm,52.72,52.72,1,"Margen comercialización: CVm, i, j",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-07,"Margen comercialización: CVm,i,j",compartido,52.72,52.72,1,"Margen comercialización: CVm, i, j",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-07,"Margen comercialización: CVm,i,j",propiedaddelcliente,52.72,52.72,1,"Margen comercialización: CVm, i, j",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-07,"Costo G,T, pérdidas: PRn,m",propiedadepm,47.80,47.80,1,"Costo G, T, pérdidas: PRn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-07,"Costo G,T, pérdidas: PRn,m",compartido,47.80,47.80,1,"Costo G, T, pérdidas: PRn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-07,"Costo G,T, pérdidas: PRn,m",propiedaddelcliente,47.80,47.80,1,"Costo G, T, pérdidas: PRn, m",Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-07,Restricciones: Rm,propiedadepm,28.40,28.40,1,Restricciones: Rm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-07,Restricciones: Rm,compartido,28.40,28.40,1,Restricciones: Rm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa
+2021-07,Restricciones: Rm,propiedaddelcliente,28.40,28.40,1,Restricciones: Rm,Concordancia numérica de componente monomio nivel I; no validación económica de cada tarifa

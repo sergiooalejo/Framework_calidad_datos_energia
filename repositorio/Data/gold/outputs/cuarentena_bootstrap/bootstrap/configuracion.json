@@ -1,12 +1,7 @@
 {
-  "semilla": 20261105,
+  "unidad": "categoria_completa",
   "repeticiones": 2000,
-  "unidad": "serie dentro de categoría y fuente",
-  "grupos": 105,
-  "fuentes": [
-    "CHEC",
-    "EPM",
-    "SSPD",
-    "XM"
-  ]
+  "semilla": 20261105,
+  "estado": "protocolo_hito3_corregido",
+  "inventario": "Data/gold/outputs/hito3/inventario_categorias.csv"
 }

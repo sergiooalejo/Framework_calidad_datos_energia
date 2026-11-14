@@ -1,0 +1,36 @@
+{
+  "fuente": "EPM",
+  "dataset_id": "sfcd-b3ey",
+  "inicio_utc": "2026-11-14T00:49:27.471325+00:00",
+  "estado": "completa",
+  "paginas": [
+    {
+      "url": "https://www.datos.gov.co/resource/sfcd-b3ey.json?%24select=%2A%2C+%3Aid&%24order=%3Aid&%24limit=10000&%24offset=0",
+      "archivo": "pagina_000000000.json",
+      "sha256": "ff9cc1874a19ea4d5ac71772d10de57bffb822e1ed0db4b4199b032e2cf92556",
+      "filas": 3623
+    }
+  ],
+  "nota": "Captura real por API; no acredita fecha histórica de publicación.",
+  "filas": 3623,
+  "columnas": [
+    "tipodeinformacion",
+    "tipodetarifa",
+    "tipodedato",
+    "rangodeconsumo",
+    "nivel",
+    "propiedadepm",
+    "compartido",
+    "propiedaddelcliente",
+    "punta",
+    "fueradepunta",
+    "year",
+    "mes"
+  ],
+  "url_metadatos": "https://www.datos.gov.co/api/views/sfcd-b3ey.json",
+  "sha256_datos": "7fb7b7acf01c68e03904c490c728d17cc9a4d62b13cb8b631c8867375dd7342f",
+  "sha256_metadatos": "4db5ff1680631d43b1692fae5e0af71cb94f8a3254f2c76366f9e68ec3ea1b2f",
+  "sha256_identificadores": "d030687aff4774447057fb6143400fa6cfe57ac374feb3428c9ed121b27a5573",
+  "consistencia_paginacion": "conteos antes/después e identificadores únicos; API sin aislamiento transaccional",
+  "fin_utc": "2026-11-14T00:49:30.849698+00:00"
+}

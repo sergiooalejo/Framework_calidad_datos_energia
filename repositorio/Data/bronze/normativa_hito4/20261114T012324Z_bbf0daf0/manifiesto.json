@@ -1,0 +1,62 @@
+[
+  {
+    "id": "0015_2018",
+    "url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0015_2018.htm",
+    "archivo": "Data/bronze/normativa_hito4/20261114T012324Z_bbf0daf0/0015_2018.htm",
+    "texto": "Data/bronze/normativa_hito4/20261114T012324Z_bbf0daf0/0015_2018.txt",
+    "sha256": "3a9402f473de4b2eb976966ba3929e72cf50f48d0b4c854ae255ff27e8ff8e39",
+    "sha256_texto": "050983653ecb1fe2b36ba02f801fd5137cb79753e6ba0a4b4afc99c6f2b8d420",
+    "fecha_captura_utc": "2026-11-14T01:23:26.240157+00:00",
+    "alcance": "HTML completo capturado; el análisis cita apartados específicos. Fórmulas en imágenes no se transcriben por inferencia. Texto consolidado puede incluir modificaciones posteriores al período analizado."
+  },
+  {
+    "id": "0078_2019",
+    "url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0078_2019.htm",
+    "archivo": "Data/bronze/normativa_hito4/20261114T012324Z_bbf0daf0/0078_2019.htm",
+    "texto": "Data/bronze/normativa_hito4/20261114T012324Z_bbf0daf0/0078_2019.txt",
+    "sha256": "71a6b3e954c4aed5c43a25e3b0e6466719457668c491c4cbe638855f76238598",
+    "sha256_texto": "c41ee345c44cacaa7b295ad3311c126da829d9a9a7d48e807d141e24a802cf0b",
+    "fecha_captura_utc": "2026-11-14T01:23:26.832957+00:00",
+    "alcance": "HTML completo capturado; el análisis cita apartados específicos. Fórmulas en imágenes no se transcriben por inferencia. Texto consolidado puede incluir modificaciones posteriores al período analizado."
+  },
+  {
+    "id": "0156_2019",
+    "url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0156_2019.htm",
+    "archivo": "Data/bronze/normativa_hito4/20261114T012324Z_bbf0daf0/0156_2019.htm",
+    "texto": "Data/bronze/normativa_hito4/20261114T012324Z_bbf0daf0/0156_2019.txt",
+    "sha256": "78c7d410052459c849a15bbd2c3dd5d9329e81ef51089f57325a08009e75e86c",
+    "sha256_texto": "fa618190e1d5f0524a48ebd357f37252f8cdb64d16621b9afbc0f52973462e8f",
+    "fecha_captura_utc": "2026-11-14T01:23:27.507883+00:00",
+    "alcance": "HTML completo capturado; el análisis cita apartados específicos. Fórmulas en imágenes no se transcriben por inferencia. Texto consolidado puede incluir modificaciones posteriores al período analizado."
+  },
+  {
+    "id": "0012_2020",
+    "url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0012_2020.htm",
+    "archivo": "Data/bronze/normativa_hito4/20261114T012324Z_bbf0daf0/0012_2020.htm",
+    "texto": "Data/bronze/normativa_hito4/20261114T012324Z_bbf0daf0/0012_2020.txt",
+    "sha256": "40a1d2083480abeddc0066b5271857040b63cbf88043a9592da3ebb57842082f",
+    "sha256_texto": "f26ba978594c21840da971e9845aeda632e329769eaf37aa5ef285c5de348835",
+    "fecha_captura_utc": "2026-11-14T01:23:28.142349+00:00",
+    "alcance": "HTML completo capturado; el análisis cita apartados específicos. Fórmulas en imágenes no se transcriben por inferencia. Texto consolidado puede incluir modificaciones posteriores al período analizado."
+  },
+  {
+    "id": "0152_2020",
+    "url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0152_2020.htm",
+    "archivo": "Data/bronze/normativa_hito4/20261114T012324Z_bbf0daf0/0152_2020.htm",
+    "texto": "Data/bronze/normativa_hito4/20261114T012324Z_bbf0daf0/0152_2020.txt",
+    "sha256": "8cfc2c6a1533c846cdabdfdaa4dfc78d7b1ce8ec73827579c3a091c1e8eed826",
+    "sha256_texto": "e56583b3d88b53573e0dc0d38840a05536a924092d95c95e4bc3c076679f0065",
+    "fecha_captura_utc": "2026-11-14T01:23:28.716152+00:00",
+    "alcance": "HTML completo capturado; el análisis cita apartados específicos. Fórmulas en imágenes no se transcriben por inferencia. Texto consolidado puede incluir modificaciones posteriores al período analizado."
+  },
+  {
+    "id": "0003_2021",
+    "url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0003_2021.htm",
+    "archivo": "Data/bronze/normativa_hito4/20261114T012324Z_bbf0daf0/0003_2021.htm",
+    "texto": "Data/bronze/normativa_hito4/20261114T012324Z_bbf0daf0/0003_2021.txt",
+    "sha256": "e9e2b7c2e2a06b92ea192740ef9155b3b85357cc08d4af1e755e1c3301d12842",
+    "sha256_texto": "c76c599de3a3ab6116af937d3d479ae2e3f21f03516d68d7a7cc31c0de13953f",
+    "fecha_captura_utc": "2026-11-14T01:23:29.391563+00:00",
+    "alcance": "HTML completo capturado; el análisis cita apartados específicos. Fórmulas en imágenes no se transcriben por inferencia. Texto consolidado puede incluir modificaciones posteriores al período analizado."
+  }
+]

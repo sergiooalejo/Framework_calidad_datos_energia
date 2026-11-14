@@ -1,0 +1,200 @@
+Alejandría - Resolución 78 de 2019 CREG
+Gestor Normativo Alejandría 2.0
+Inicio
+Compilaciones
+Este texto que se agrega aquí es como el mensaje en caso
+de que el video no funcione sale lo que esté aquí escrito...
+Resoluciones originales
+Video no funciona...
+Proyectos de resolución
+Video no funciona...
+Conceptos
+Video no funciona...
+Circulares
+Video no funciona...
+Compilación jurídica
+Video no funciona...
+Menú
+Inicio
+Compilaciones
+Resoluciones originales
+Proyectos de resolución
+Conceptos
+Circulares
+Compilación jurídica
+keyboard_backspace
+Inicio
+Documento
+keyboard_backspace
+Inicio
+Documento
+Resolución 78 de 2019 CREG
+Ocultar anotaciones
+DESCARGAS
+BUSCAR
+search
+ÍNDICE
+developer_guide
+MEMORIA
+memory
+DESARROLLOS
+attachment
+MODIFICACIONES
+quiz
+CONCORDANCIAS
+quiz
+NOTIFICACIONES
+notifications_active
+ACTOS DE TRÁMITE
+quiz
+RESOLUCIÓN 78 DE 2019
+(julio 3)
+Diario Oficial No. 51.026 de 26 de julio 2019
+COMISIÓN DE REGULACIÓN DE ENERGÍA Y GAS
+Por la cual se aprueban las variables necesarias para calcular los ingresos y cargos asociados con la actividad de distribución de energía eléctrica para el mercado de comercialización atendido por Empresas Públicas de Medellín E.S.P.
+Resumen de Notas de Vigencia
+Concordancias CREG
+Doctrina Concordante
+LA COMISIÓN DE REGULACIÓN DE ENERGÍA Y GAS,
+en ejercicio de sus atribuciones constitucionales y legales, en especial las conferidas por las Leyes 142 y 143 de 1994, y en desarrollo de los Decretos 1524, 2253 de 1994, 2696 de 2004 y 1260 de 2013,
+CONSIDERANDO QUE:
+Mediante la Resolución número CREG 015 de 2018, publicada en el Diario Oficial del 3 de febrero de 2018, se expidió la metodología para la remuneración de la actividad de distribución de energía eléctrica en el Sistema Interconectado Nacional (SIN), la cual fue aclarada y modificada por las resoluciones CREG 085 de 2018 y 036 de 2019.
+Por medio de la Resolución número CREG 015 de 2019 se modificó la tasa de retorno para la actividad de distribución de energía eléctrica, aprobada en la Resolución número CREG 016 de 2018.
+Empresas Públicas de Medellín E.S.P., mediante comunicación con radicado CREG E 2018-007909 del 8 de agosto 2018, solicitó la aprobación de los ingresos asociados con el sistema de transmisión regional y el sistema de distribución local que opera.
+Mediante Auto del 4 de septiembre de 2018 se dio inicio a la actuación administrativa, asignada al expediente 2018-0138, durante la cual se surtieron las respectivas aclaraciones y correcciones como respuesta a las etapas probatorias correspondientes.
+Dado que la Comisión se encontraba adelantando la actuación administrativa de actualización de ingresos de nivel de tensión 4 por la puesta en operación de activos en las subestaciones Amalfi, El Salto, La Sierra y Guayabal y la Línea Sierra - Cocorná, con base en la Resolución número CREG 097 de 2008, por economía procesal, se procedió a analizar dicha solicitud conjuntamente con la solicitud de aprobación de ingresos con base en la Resolución número CREG 015 de 2018.
+En el documento 046 de 2019 se encuentra el soporte de esta resolución, el cual incluye, entre otros, los criterios de revisión de la información, las diferencias identificadas, la información utilizada, los inventarios aprobados, las memorias de cálculo y demás consideraciones empleadas para calcular los valores, variables, factores, indicadores e índices que se aprueban en la presente resolución.
+Con base en lo anterior, la Comisión de Regulación de Energía y Gas, en su Sesión 928 del 3 de julio de 2019, acordó expedir esta resolución,
+RESUELVE:
+ARTÍCULO 1o. ÁMBITO DE APLICACIÓN. En esta resolución se aprueban las variables necesarias para calcular los ingresos y cargos asociados con la actividad de distribución de energía eléctrica para el mercado de comercialización atendido por Empresas Públicas de Medellín E.S.P., en aplicación de la Resolución número CREG 015 de 2018.
+ARTÍCULO 2o. BASE REGULATORIA DE ACTIVOS ELÉCTRICOS AL INICIO DEL PERIODO TARIFARIO. <Consultar resoluciones que modifican este artículo en Notas de Vigencia> La base regulatoria de activos eléctricos al inicio del periodo tarifario, BRAEj,n,0,, es el siguiente:
+Tabla 1. Base regulatoria de activos eléctricos al inicio del periodo tarifario
+Variable Pesos de diciembre de 2017
+BRAEj,4,0 1.209.334.334.388
+BRAEj,3,0 508.101.192.938
+BRAEj,2,0 3.622.387.167.923
+BRAEj,1,0 1.491.958.134.092
+Notas de Vigencia
+ARTÍCULO 3o. INVERSIÓN APROBADA EN EL PLAN DE INVERSIONES. <Consultar resoluciones que modifican este artículo en Notas de Vigencia> El valor de las inversiones aprobadas en el plan de inversiones, INVAj,n,l,t, para cada nivel de tensión, es el siguiente:
+Tabla 2. Plan de inversiones del nivel de tensión 4, pesos de diciembre de 2017
+Tabla 3. Plan de inversiones del nivel de tensión 3, pesos de diciembre de 2017
+Tabla 4. Plan de inversiones del nivel de tensión 2, pesos de diciembre de 2017
+Tabla 5. Plan de inversiones del nivel de tensión 1, pesos de diciembre de 2017
+Notas de Vigencia
+ARTÍCULO 4o. RECUPERACIÓN DE CAPITAL DE ACTIVOS DE LA BRA INICIAL. <Consultar resoluciones que modifican este artículo en Notas de Vigencia> El valor de la recuperación de capital reconocida para los activos incluidos en la base regulatoria inicial de activos activos, RCBIAj,n,1, es el siguiente:
+Tabla 6. Recuperación de capital de activos de la BRA inicial
+Notas de Vigencia
+ARTÍCULO 5o. RECUPERACIÓN DE CAPITAL DE ACTIVOS NUEVOS. <Consultar resoluciones que modifican este artículo en Notas de Vigencia> El valor de la recuperación de capital reconocida para los activos que entraron en operación en el primer año, RCNAj,n,1, es el siguiente:
+Tabla 7. Recuperación de capital de activos nuevos
+Notas de Vigencia
+ARTÍCULO 6o. BASE REGULATORIA DE TERRENOS. <Consultar resoluciones que modifican este artículo en Notas de Vigencia> El valor de la base regulatoria de terrenos, BRTj,n,1, del año 1, para los niveles de tensión 4, 3 y 2, es el siguiente:
+Tabla 8. Base regulatoria de terrenos
+Notas de Vigencia
+ARTÍCULO 7o. AOM BASE POR NIVEL DE TENSIÓN. <Consultar resoluciones que modifican este artículo en Notas de Vigencia> El valor del AOM base para cada nivel de tensión, AOMbasej,n, es el siguiente:
+Tabla 9. AOM base por nivel de tensión
+Notas de Vigencia
+ARTÍCULO 8o. FACTOR AMBIENTAL PARA LAS NUEVAS INVERSIONES. El valor del factor ambiental para las nuevas inversiones, fAMBj, es el siguiente:
+Tabla 10. Factor ambiental para nuevas inversiones
+ARTÍCULO 9o. INDICADORES DE REFERENCIA DE CALIDAD MEDIA. <Consultar resoluciones que modifican este artículo en Notas de Vigencia> Los indicadores de referencia de la calidad media SAIDI_Rj y SAIFI_Rj, son los siguientes:
+Tabla 11. Indicadores de referencia de calidad media
+Notas de Vigencia
+ARTÍCULO 10. METAS ANUALES DE CALIDAD MEDIA PARA EL INDICADOR DE DURACIÓN DE EVENTOS. <Consultar resoluciones que modifican este artículo en Notas de Vigencia> Las metas anuales de calidad media para el indicador de duración de eventos, SAIDI_Mj,t, son las siguientes:
+Tabla 12. Metas anuales de calidad media para el indicador de duración, horas
+Notas de Vigencia
+ARTÍCULO 11. METAS ANUALES DE CALIDAD MEDIA PARA EL INDICADOR DE FRECUENCIA DE EVENTOS. <Consultar resoluciones que modifican este artículo en Notas de Vigencia> Las metas anuales de calidad media para el indicador de frecuencia de eventos, SAIFI_Mj,t, son las siguientes:
+Tabla 13. Metas anuales de calidad media para el indicador de frecuencia, veces
+Notas de Vigencia
+ARTÍCULO 12. INDICADORES DE CALIDAD INDIVIDUAL DE DURACIÓN DE EVENTOS. <Consultar resoluciones que modifican este artículo en Notas de Vigencia> La duración máxima anual de los eventos percibidos por los usuarios, DIUGj,n,q, en los niveles de tensión 3, 2 y 1, es la siguiente:
+Tabla 14. DIUG niveles de tensión 2 y 3, horas
+Tabla 15. DIUG nivel de tensión 1, horas
+Notas de Vigencia
+ARTÍCULO 13. INDICADORES DE CALIDAD INDIVIDUAL DE FRECUENCIA DE EVENTOS. <Consultar resoluciones que modifican este artículo en Notas de Vigencia> La frecuencia máxima anual de los eventos percibidos por los usuarios, FIUGj,n,q, en los niveles de tensión 3, 2 y 1, es la siguiente:
+Tabla 16. FIUG niveles de tensión 2 y 3, veces
+Tabla 17. FIUG nivel de tensión 1, veces
+Notas de Vigencia
+ARTÍCULO 14. ÍNDICES DE REFERENCIA PÉRDIDAS EFICIENTES. Los índices de pérdidas eficientes, Pej,n, en los niveles de tensión 3, 2 y 1, son los siguientes:
+Tabla 18. Índice de pérdidas eficientes
+ARTÍCULO 15. COSTOS DE REPOSICIÓN DE REFERENCIA. <Consultar resoluciones que modifican este artículo en Notas de Vigencia> El costo de reposición de referencia, CRRj, y los costos de reposición de referencia por nivel de tensión, Crrj,n, son los siguientes:
+Tabla 19. Costo de reposición de referencia
+Notas de Vigencia
+ARTÍCULO 16. COSTO ANUAL DEL PLAN DE GESTIÓN DE PÉRDIDAS. El costo anual del plan de gestión de pérdidas, CAPj, es el siguiente:
+Tabla 20. Costo anual del plan de gestión de pérdidas
+ARTÍCULO 17. COSTO DE LAS INVERSIONES EN ACTIVOS QUE NO SON CLASIFICABLES COMO UC. El costo de las inversiones en activos que no son clasificables como unidades constructivas, INVNUCj, es el siguiente:
+Tabla 21. Costo anual de inversiones en activos no clasificables como UC
+ARTÍCULO 18. VALOR ANUAL POR CONCEPTO DE CONEXIONES AL SISTEMA DE OTRO OR. El valor anual por concepto de conexiones al sistema de otros OR en los niveles de tensión 3 y 2, Oj,n, es el siguiente:
+Tabla 22. Valor anual por concepto de conexiones al sistema de otro OR
+ARTÍCULO 19. LA PRESENTE RESOLUCIÓN DEBERÁ NOTIFICARSE A EMPRESAS PÚBLICAS DE MEDELLÍN E.S.P., Y PUBLICARSE EN EL DIARIO OFICIAL. Contra lo dispuesto en este acto procede el recurso de reposición, el cual se podrá interponer ante la Dirección Ejecutiva de la CREG dentro de los cinco (5) días hábiles siguientes a la fecha de su notificación.
+Notifíquese, publíquese y cúmplase.
+Dada en Bogotá, D. C., a 3 de julio de 2019.
+El Presidente,
+Diego Mesa Puyo,
+Viceministro de Energía, delegado de la Ministra de Minas y Energía.
+El Director Ejecutivo,
+Christian Jaramillo Herrera.
+Gestor Normativo Alejandría 2.0
+ISBN : 978-958-98069-4-4
+Última actualización:
+Control de versiones
+Créditos y reserva de derechos de
+autor
+Comisión de Regulación de Energía y Gas CREG -
+DRA © 2019 a 2024
+Comisión de Regulación de Energía y Gas - CREG
+Sede principal
+Av. Calle 116 No. 7-15 Edificio Cusezar Int. 2 Oficina 901,
+Bogotá
+Código postal: 110111
+Horario de Atención: Lunes a Viernes, 8:00 a.m. a 1:00 p.m. - 2:00
+p.m. a 5:00 p.m.
+Teléfono celular: 3208473254
+Teléfono conmutador: +57 (601) 6032020
+Línea gratuita: 01 8000 512734
+Línea anticorrupción: +57 (601) 6032020 Ext. 444
+Correo institucional: creg@creg.gov.co
+Correo de notificaciones judiciales: notificaciones.judiciales@creg.gov.co
+Correo de notificaciones administrativas: oficiales.creg@creg.gov.co
+Correo de seguridad digital: seguridaddigital@creg.gov.co
+@comisioncreg
+Comisión CREG
+@ComisionCREG
+Comisión de Regulación de Energía y Gas
+Mapa del sitio
+Política de privacidad y tratamiento de datos
+Términos y condiciones
+Política de seguridad de la información
+Política de derechos de autor y/o autorización de
+uso sobre los contenidos
+Certificado de Accesibilidad Web
+Inicio
+MÓDULOS
+Novedades
+Búsqueda avanzada
+Respuestas automáticas
+Compilaciones
+Resoluciones originales
+Proyectos de resolución
+Conceptos
+Circulares
+Compilación jurídica
+Notificaciones
+Actos administrativos especiales
+Preguntas frecuentes
+×
+Resolución 78 de 2019 CREG
+menu_book
+Documento .html
+Consulte el documento para más información...
+Consultarnavigate_next
+menu_book
+Documento Word de Microsoft
+Consulte el documento para más información...
+Consultarnavigate_next
+menu_book
+Documento PDF
+Consulte el documento para más información...
+Consultarnavigate_next
+Contraste | Modo oscuro
+Reducir letra (16px)
+Aumentar letra (16px)
+Centro de relevo
+Volver arriba
