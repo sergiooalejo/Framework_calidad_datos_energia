@@ -1,5 +1,5 @@
-"""Acceso compatible al tablero vigente en Code/hito5/app_streamlit.py."""
+"""Acceso compatible al tablero de apps/streamlit_app.py."""
 from pathlib import Path
 import runpy
-
-runpy.run_path(str(Path(__file__).resolve().parent / "Code/hito5/app_streamlit.py"), run_name="__main__")
+_ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'project.json').is_file())
+runpy.run_path(str(_ROOT / 'apps/streamlit_app.py'), run_name='__main__')

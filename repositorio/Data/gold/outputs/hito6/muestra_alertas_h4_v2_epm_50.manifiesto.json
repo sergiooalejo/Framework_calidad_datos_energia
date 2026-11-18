@@ -1,0 +1,93 @@
+{
+  "protocolo_muestra": "H6-H4-v2-EPM-50",
+  "generado_utc": "2026-11-18T00:11:33.660656+00:00",
+  "protocolo_origen": "H4-v2-CV-temporal",
+  "ejecucion_h4_utc": "2026-11-14T01:55:21.519206+00:00",
+  "semilla": 42,
+  "referencia": 36,
+  "tasa_objetivo_calibracion": 0.05,
+  "horizonte": "t",
+  "metodos": [
+    "IMR",
+    "Z_robusto",
+    "IF",
+    "LOF",
+    "KNN",
+    "R12"
+  ],
+  "cuotas": {
+    "EPM": 50
+  },
+  "candidatos_por_fuente": {
+    "EPM": 118
+  },
+  "unidad_revision": "observacion_unica_fuente_sid_periodo",
+  "filas": 50,
+  "entradas": {
+    "Data/gold/outputs/hito4/puntajes_reales.csv.gz": "16a4d83c8d99a6a59393b60bff0597b8081b79215c9e44a5a498e076acbc7cbf",
+    "Data/gold/outputs/hito4/calibracion.csv": "d5b10bc7f3fc51e6116260606f5598b73842737c44c81d979e2cbae5eb66a855",
+    "Data/gold/outputs/hito4/manifiesto.json": "916282fd4c0e550205f87080b056d82773df854edfc951d440032abdb7427129"
+  },
+  "codigo": {
+    "Code/hito6/generar_muestra_alertas.py": "55be5a14e00e451d6deab6fd473f1ffaa96954600910d7107d6e8738ee177db4"
+  },
+  "muestra": {
+    "archivo": "Data/gold/outputs/hito6/muestra_alertas_h4_v2_epm_50.csv",
+    "sha256": "260a23b27bbaf36a3b3cb32620389d031c234057ca179289f4f3f9b1284f2032"
+  },
+  "ids_seleccionados": [
+    "b7ea2c3eb14076fb67311a271ef1a58be605bf10ffcb437c182c7d738ae9367a",
+    "1ad8f99db60d9108d062cabe80244454041aa5c1576e9ea0fedac95d5648ed43",
+    "038f0ee59dd22cf04c5752171338310638ce0e08719d755d962075d194a38f1d",
+    "d10c01d573e00d7cc1a867f64de37f1e4a2706f59a68c89c2c646e5e60440a2c",
+    "54493ecee2fc896a38017953a2d208c18328c9ca056cd0ff9eaddaa407ac60f1",
+    "4d8e04be91c590c02bf53bf160381d917f6133ddf34433dd331359ef78b3a7fc",
+    "420b711d393192cea82aa371375068b52dd0897b933e07a0f57dfea55a516439",
+    "23b5b325cc927aa37282189e552f5755fa2516cce114bc2a1137e1337d651140",
+    "f3aa498455ca4e968a51a38fc18a8a07c5adfb00404cdbdda2d941f87c8c73ec",
+    "1a134eee02f2daaa765e5c07e403c6466218af9a9e6d517b3144c33318ebca34",
+    "c5b7264f2c32e7f7c9ad78aa5986188727c4be5d707cdfd645e7d3ca19f1f4f1",
+    "f01296305a3086ffb4b0da272d3ef105f02e2497aa90b0df09d2c9c74d67e755",
+    "9ee4ae35e8ba008680cb7165c72f41c21fcb254ea9b3816d1be65440d854f231",
+    "179f38f642446cf66490fedd5f64a6dadf40e715e8b2e7d8b9d91354ad185e9f",
+    "a7cc62b7143048b937c443c991e448c5a4f14c5b8c02e0d291c34c2580638d97",
+    "7d040749cde70ceaabc2b43f13e65ad52cf65a4174437f2bee570d48b9cbfdc1",
+    "061a3f5614aed7ae2f09bbc5de6470f26b2fdd5279f39655247b51cf5ca848d7",
+    "f6bd5d328cb70daaee87cd787030b80361948c365fbde4fd05968344371c806c",
+    "e8c2e44ad5ada16b8cdb009f668e211cfd4f3afe45e212438c69f3c3904c547a",
+    "3ec58e435264880eb303d15f48ecb5ee2f21ba693a3801122f5d9d8c44a3c994",
+    "46891175083da6aff317e2761e939e1813f95ea14a240ce77fb6039408351b93",
+    "971c8508b325d6d49aea48e8ca34db5cb952d5b20a0c49b3926c23253c54b524",
+    "b0018cb5108d20ee4d83a3e8c4ad2b4c9746ee04d742fa30873338284eb2d244",
+    "dfcd9ff6f4398d04835d67964a318f758148e320ff59dd6cb7b9e8e2e673cff3",
+    "a0f37026e177a8b94ac13fcb47421d6fa436e87c3a50404e2e3389b5a132459b",
+    "36c74735eb4bb5c6fd900774d2ecb8f294cf7e9de8a0f8f5d55fd1525c0964e7",
+    "c9f2dc374fae3cfc5f9149faee336f1b3bd5c2958c003e8378effdfdd0f9f26a",
+    "bd839b66e35b9fce0926359753bd599927248c527dce0066d4e164944966ae1c",
+    "c77b474c548eec3b75303de7998eb91c9c774e5f8994d0c637fa3c3a74982f65",
+    "e9024ea9b9ce346f9a5f23035c058a0418d209bb2035c23741b2f99e8abbfdfd",
+    "7cf93ac3e4256e39e14ceb8289613475bd27ee7155c5f9c808672910197af9e9",
+    "f062a021335f1795c06080213bfd86ffcb2c12dc326b4dbc7326bd59280336e1",
+    "7f504227f1281ea30cc8dd7408204bccf5cfb1ac362cabc4fee7c7c17d7b6f47",
+    "e666b3d02e8593c4bba19b05cdd2fc81e75c9f6f72118df31d7f296a0953ade4",
+    "f31375bd254f76b98c270a2e78bc28f5db31422c899de25644ef120abab85589",
+    "0125ff95ca0e5813aec5fe6579d4f1be6a9bad02e2de5ba73c1f8ba05986d458",
+    "2c535b314a7673b50332fd0b132e2030755121737c5ceb31deefa26d1a67f1d6",
+    "e5bdb98d1ba2230c1f0ffac7404e6edcdb01e14d912e826fb43c067d516629d0",
+    "64142770e0059b93a7f039b69781ecda25a93c80a923bb03cc3cac1049c0da03",
+    "c83dcdaccbfdbfc445313bc29575bfc9e71a1fab175ca30a37fe7bc68babd41e",
+    "2c1ee8cfdd454c42e5512f474fc5250246ddfc689d8e3568bc2f13a756c8802d",
+    "de0b739008b59d7e2c1f952cb69d9f354216a0564e59022b357877910ea83741",
+    "b3cf974913db47eedccaf9b0ee52f79e1c8b02675341b1bfa08697844454d5d6",
+    "ee61ea1832db989bc6de8e7d35be4d7d0bf6fc6d778ba4a456649ead23ac6e2b",
+    "de832314b0a19d2ae484b0aa9061b2d2fcb88b812c35ecb7ef57f50fccda9347",
+    "700b42e1fca915c4c11c4df5a20d7b516b46af7d292d34162af6122179462406",
+    "186575dde098f64d5a2e37821631572521b0d771067ec079b48cea0c04d2d4a8",
+    "69770eae2bfbfa71a4ac02ab90ef8f8853539517998c4b1bb184e83e53b64de2",
+    "6973a0dd80029a62f36b9048cb958194e167de5c3a1a7caca38e0cee84b2b0c9",
+    "4f6cba067c7dc352d599240ad6eb3d19dd5de0d3004b9c56561766a49897f842"
+  ],
+  "alcance": "50 alertas EPM del escenario principal H4; no representa todas las fuentes ni acredita errores confirmados.",
+  "inferencia": "Revisión pendiente. Precisión por método requiere sus alertas revisadas; recall necesita también casos no alertados.",
+  "politica": "Muestras históricas y revisiones conservadas. La tasa objetivo de calibración no es una tasa de error real."
+}

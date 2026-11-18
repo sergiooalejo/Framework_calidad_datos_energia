@@ -5,3 +5,9 @@ __pycache__/
 .pytest_cache/
 .DS_Store
 Data/gold/outputs/**/figuras/
+
+# H4 incluye figuras en su manifiesto de integridad.
+!Data/gold/outputs/hito4/figuras/
+!Data/gold/outputs/hito4/figuras/**
+dist/
+build/

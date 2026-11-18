@@ -1,3 +1,6 @@
+> Documento histórico. Para instalar y localizar el código actual, consulte las
+> [guías vigentes](README.md) y el [README del proyecto](../README.md).
+
 # Proyecto y resultados
 
 **Actualización del Hito 4:** la comparación y el scorecard vigentes están en
@@ -70,9 +73,9 @@ protocolo distinto. Sus tablas originales se conservan como insumos de comparaci
 
 ## Datos, métodos e interpretación
 
-La clasificación medallón está documentada en [`Data/MEDALLION.md`](../Data/MEDALLION.md). Las copias de entrada están en `Data/bronze/datos/`, incluidos ZIP y fuentes en revisión; los agregados mensuales de SSPD y XM están en `Data/silver/datos/`. Diccionarios,
-catálogos, metadatos y verificaciones acompañan a cada fuente. `Sample_Data/` contiene solo
-pequeñas muestras identificadas por su procedencia; no sirve para reproducir las series largas.
+La clasificación medallón está documentada en [`Data/README.md`](../Data/README.md). Las copias de entrada están en `Data/bronze/datos/`, incluidos ZIP y fuentes en revisión; los agregados mensuales de SSPD y XM están en `Data/silver/datos/`. Diccionarios,
+catálogos, metadatos y verificaciones acompañan a cada fuente. Los formatos se consultan
+en los diccionarios de `Data/silver/`; los experimentos usan los datos completos.
 
 La matriz aplica R01–R12 e INT01, INT02, EXA01, OPO01, MAP01, DEF01 y CART01. El YAML
 conserva la especificación documental y todavía no constituye un motor genérico de reglas.
@@ -154,5 +157,5 @@ scripts regeneran permanecen en Outputs como artefactos, separados de la documen
 
 Estructura adaptada de [Azure TDSP ProjectTemplate](https://github.com/Azure/Azure-TDSP-ProjectTemplate):
 Code y Docs se conservan; Evaluation, Data, Outputs y Environment explicitan las necesidades
-de este proyecto. Sample_Data se reserva para muestras pequeñas como indica la plantilla.
+de este proyecto. Las muestras de formato se retiraron durante la limpieza de duplicados.
 No se incorporan servicios Azure ni se declara un despliegue que todavía no existe.

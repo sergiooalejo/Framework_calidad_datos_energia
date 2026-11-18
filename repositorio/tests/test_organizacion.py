@@ -36,15 +36,15 @@ class OrganizacionTests(unittest.TestCase):
         script = (
             'from pathlib import Path; import framework_calidad as f; '
             'import framework_calidad.config as c; '
-            'assert "hito5" in Path(c.__file__).parts; '
+            'assert "src" in Path(c.__file__).parts; '
             'assert f.listar_indicadores({"indicadores": [{"id": "R01"}]}) == [{"id": "R01"}]; '
             'print(",".join(f.__all__))'
         )
         outputs = []
-        for relative in ('Code', 'Code/hito5'):
+        for relative in ('src', 'Code', 'Code/hito5'):
             env = dict(os.environ, PYTHONPATH=str(ROOT / relative))
             outputs.append(self.command(['-c', script], env=env))
-        self.assertEqual(*outputs)
+        self.assertEqual(len(set(outputs)), 1)
 
 
 if __name__ == '__main__':

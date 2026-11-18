@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "fecha": "2026-11-17",
+  "nota": "Rutas anteriores conservadas como accesos compatibles. Data y protocolos firmados no se modifican. Huellas de destino al reorganizar; no son un manifiesto científico.",
+  "archivos": [
+    {
+      "origen": "Code/hito5/framework_calidad/anomalies.py",
+      "destino": "src/framework_calidad/anomalies.py",
+      "sha256_original": "308871f4c0d3d54d5a7b28d06a2d26be64614ee46ba2a3318e0ae0f839ee498f",
+      "sha256_destino": "308871f4c0d3d54d5a7b28d06a2d26be64614ee46ba2a3318e0ae0f839ee498f"
+    },
+    {
+      "origen": "Code/hito5/framework_calidad/config.py",
+      "destino": "src/framework_calidad/config.py",
+      "sha256_original": "60aa2918a227d1175a1edf5ce3c6bf2da54c45ac86d1553d1c40ae2449f491f9",
+      "sha256_destino": "60aa2918a227d1175a1edf5ce3c6bf2da54c45ac86d1553d1c40ae2449f491f9"
+    },
+    {
+      "origen": "Code/hito5/framework_calidad/io.py",
+      "destino": "src/framework_calidad/io.py",
+      "sha256_original": "2d7ba88b7baed8cca8b3cb345e18eec434600a5f6ea41afef95f61b329cd8552",
+      "sha256_destino": "2d7ba88b7baed8cca8b3cb345e18eec434600a5f6ea41afef95f61b329cd8552"
+    },
+    {
+      "origen": "Code/hito5/framework_calidad/profiling.py",
+      "destino": "src/framework_calidad/profiling.py",
+      "sha256_original": "93988b7abb146b503cc89275b28dad430c104ed57ee48e2e31033d464bf4c62e",
+      "sha256_destino": "93988b7abb146b503cc89275b28dad430c104ed57ee48e2e31033d464bf4c62e"
+    },
+    {
+      "origen": "Code/hito5/framework_calidad/reporting.py",
+      "destino": "src/framework_calidad/reporting.py",
+      "sha256_original": "fa811df33a22e7837b66af4caa028573a76806d13476504e372bde6439f7ff44",
+      "sha256_destino": "fa811df33a22e7837b66af4caa028573a76806d13476504e372bde6439f7ff44"
+    },
+    {
+      "origen": "Code/hito5/framework_calidad/rules.py",
+      "destino": "src/framework_calidad/rules.py",
+      "sha256_original": "9f201da26d0ff5ee773105718286dab8f301259bc807419eed3ba0e95cc3f97d",
+      "sha256_destino": "9f201da26d0ff5ee773105718286dab8f301259bc807419eed3ba0e95cc3f97d"
+    },
+    {
+      "origen": "Code/hito5/framework_calidad/__init__.py",
+      "destino": "src/framework_calidad/__init__.py",
+      "sha256_original": "f4c0c2c054ece6c825e2a0dde5a7d83be76bc6f96ab2171658ccbd211e4c53c0",
+      "sha256_destino": "f4c0c2c054ece6c825e2a0dde5a7d83be76bc6f96ab2171658ccbd211e4c53c0"
+    },
+    {
+      "origen": "Code/hito5/run.py",
+      "destino": "src/framework_calidad/cli.py",
+      "sha256_original": "d1652a900319bb3ea15bda2f708f56385bfea43db1870ec9cb8e008b5805cae8",
+      "sha256_destino": "021ccab27dc634aac40528e8602229ac754e30b036f21f2bdc737f3855c68f12"
+    },
+    {
+      "origen": "Code/hito5/app_streamlit.py",
+      "destino": "apps/streamlit_app.py",
+      "sha256_original": "deef27fc01256ddb08d92daba9d4d33341e093ca71fae0ef0c21189d0430288b",
+      "sha256_destino": "e89d86396f266f7fa7ec54ade341220f6635d662c230d56e966a91cb831fcafa"
+    },
+    {
+      "origen": "Code/hito5/test_organizacion.py",
+      "destino": "tests/test_organizacion.py",
+      "sha256_original": "7dc32e529cce1daf0e569d16f6bcc2ec358722b6f03485d8bb5bab2b0f26b049",
+      "sha256_destino": "6cb821945b61ee2032754dc51ac05a69e052c12c91f596dac6bdd15ccf71032c"
+    },
+    {
+      "origen": "Code/hito6/test_muestra_alertas.py",
+      "destino": "tests/test_muestra_alertas.py",
+      "sha256_original": "ed5a5da42ace2f1794c383cd787d5d397991282b5fb04eb27620839171443809",
+      "sha256_destino": "ed5a5da42ace2f1794c383cd787d5d397991282b5fb04eb27620839171443809"
+    },
+    {
+      "origen": "Code/Evaluation/test_correcciones.py",
+      "destino": "tests/test_correcciones.py",
+      "sha256_original": "278cc89d76c22ebecb55df208f842e4bf577455b9b65b4144bd7e63fc5ae1176",
+      "sha256_destino": "278cc89d76c22ebecb55df208f842e4bf577455b9b65b4144bd7e63fc5ae1176"
+    },
+    {
+      "origen": "HITO3_REPLICACION.ipynb",
+      "destino": "notebooks/HITO3_REPLICACION.ipynb",
+      "sha256_original": "6f1832fcd4e2314b53f78d6fa05060ac277b3e6697bea86bfefd507b10ebf83e",
+      "sha256_destino": "6f1832fcd4e2314b53f78d6fa05060ac277b3e6697bea86bfefd507b10ebf83e"
+    }
+  ],
+  "limpieza_posterior": {
+    "accesos_antiguos_de_pruebas_retirados": [
+      "Code/hito5/test_organizacion.py",
+      "Code/hito6/test_muestra_alertas.py",
+      "Code/Evaluation/test_correcciones.py"
+    ],
+    "nota": "Las suites permanecen en sus destinos tests/. Los hashes registran el estado al reorganizar."
+  }
+}

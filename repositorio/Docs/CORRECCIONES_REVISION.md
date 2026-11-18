@@ -28,12 +28,17 @@ sus promedios no deben interpretarse como porcentaje global de calidad.
 
 ## Muestra y caso 43.577
 
-La muestra previa permanece intacta. Si se genera otra con `pipeline.py ejecutar muestra-h6`, el
-archivo nuevo recibe un nombre con fecha y no sobrescribe la revisión anterior. La entrada no
-incluye LOF, por lo que las nuevas muestras no muestran esa columna. La muestra existente tiene 50
-filas y 47 combinaciones distintas de fuente, serie y período; tres observaciones aparecen en
-escenarios diferentes. El plan solicita 50 alertas EPM, por lo que el diseño definitivo sigue
-pendiente de aprobación y no se presenta precisión empírica como resultado cerrado.
+La muestra histórica `muestra_alertas_50.csv` permanece intacta: tenía 50 filas,
+47 observaciones únicas y no medía LOF. Se conserva como antecedente.
+
+El generador vigente utiliza los puntajes y umbrales de H4-v2-CV-temporal y
+selecciona 50 observaciones únicas de EPM (referencia 36, horizonte t, tasa objetivo
+de calibración 5 % y semilla 42), acorde con el plan original. Incluye puntajes,
+umbrales y banderas de IMR, Z robusto, IF, LOF, KNN y R12. Genera
+`muestra_alertas_h4_v2_epm_50.csv` y su manifiesto; si existen, crea otra pareja
+con fecha. Verifica la procedencia H4, rechaza duplicados y no completa cuotas
+con fuentes o escenarios distintos. La aprobación metodológica y la revisión
+externa siguen pendientes; no se presenta precisión empírica como resultado cerrado.
 
 Se corrigió la nota del valor `43577`: verlo con formato monetario en Excel no confirma ni descarta
 una conversión previa de fecha. El caso permanece no concluyente y requiere contraste adicional.

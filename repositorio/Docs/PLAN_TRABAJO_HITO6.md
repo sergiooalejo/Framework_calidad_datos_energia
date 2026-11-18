@@ -3,14 +3,15 @@
 El Hito 6 valida, contrasta y sustenta lo construido en los Hitos 3–5. No debe presentar una
 alerta estadística como error confirmado sin evidencia independiente.
 
-## Implementaci?n vigente
+## Implementación vigente
 
-El c?digo est? en `Code/hito6/`: `generar_muestra_alertas.py` selecciona la muestra y
-`run.py` permite ejecutarla como m?dulo. Desde `repositorio/`, usar
-`python pipeline.py ejecutar muestra-h6` (incluye manifiesto) o
-`python -m Code.hito6.run`. Los resultados siguen en `Data/gold/outputs/hito6/`.
-La ruta anterior en `Code/Evaluation/hito6/` conserva un acceso de compatibilidad.
-Esta organizaci?n no completa las actividades externas pendientes.
+El código está en `Code/hito6/`. `python pipeline.py ejecutar muestra-h6` genera
+50 observaciones únicas de EPM con alerta del H4-v2 vigente, referencia 36,
+horizonte `t`, tasa objetivo de calibración 5 % y semilla 42. Conserva los seis
+métodos (IMR, Z robusto, IF, LOF, KNN y R12), sus umbrales y puntajes.
+El manifiesto específico verifica y registra la procedencia del H4. También se
+puede ejecutar `python -m Code.hito6.run`; el acceso de compatibilidad permanece.
+No se modifican las muestras anteriores ni sus revisiones.
 
 ## Orden de trabajo
 
@@ -33,17 +34,17 @@ Esta organizaci?n no completa las actividades externas pendientes.
 |---|---|---|
 | Línea base Hito 5 | Completada técnicamente | `Docs/INFORME_VALIDACION_HITO5.md` |
 | Consulta externa | Pendiente | Usar `ANEXO_VALIDACION_EXTERNA_HITO6.md` |
-| Muestra manual de 50 alertas | Preparada; pendiente de revisión | `Data/gold/outputs/hito6/muestra_alertas_50.csv` |
+| Muestra vigente de 50 alertas EPM | Generador alineado con H4-v2; revisión externa pendiente | `Data/gold/outputs/hito6/muestra_alertas_h4_v2_epm_50.csv` y su manifiesto |
 | Hipótesis H1 | Pendiente de decisión | Comparar con bootstrap y procedimientos tradicionales |
 | Reproducción en segundo ambiente | Parcial | Docker validado localmente; falta evidencia de otro equipo |
 | Documento final | Pendiente | Integrar resultados aprobados |
 | Sustentación | Pendiente | Preparar presentación y ensayo |
 
-La muestra fue seleccionada con semilla `42`: 15 alertas de EPM, 15 de CHEC y 20 de SSPD.
-XM no tiene alertas reales elegibles en este corte; se documenta como no aplicable para esta
-muestra y no se inventan registros para completar cuotas.
-El plan original solicita 50 alertas de EPM: el diseño de la muestra propuesta y el tratamiento de
-sus tres observaciones repetidas entre escenarios deben ser aprobados antes de calcular precisión.
+La muestra vigente sigue la solicitud original de 50 alertas de EPM y no duplica
+observaciones entre escenarios. La muestra anterior de 15 EPM, 15 CHEC y 20 SSPD
+permanece como antecedente histórico; no debe usarse para validar el H4 corregido.
+La aprobación metodológica y la revisión externa siguen pendientes. La muestra
+solo de alertas no basta para estimar recall ni calidad de todas las fuentes.
 
 ## Regla de interpretación
 

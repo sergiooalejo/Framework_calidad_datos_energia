@@ -1,3 +1,6 @@
+> Documento histórico. Para instalar y localizar el código actual, consulte las
+> [guías vigentes](README.md) y el [README del proyecto](../README.md).
+
 # Cierre del Hito 5
 
 ## Estado

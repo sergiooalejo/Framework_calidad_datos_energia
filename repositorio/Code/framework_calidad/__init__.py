@@ -1,8 +1,7 @@
-"""API reutilizable del framework de calidad de datos energéticos."""
-
-# Compatibilidad con PYTHONPATH=Code; la implementacion vive en Hito 5.
+"""Compatibilidad histórica; implementación única en src/framework_calidad."""
 from pathlib import Path
-__path__ = [str(Path(__file__).resolve().parents[1] / "hito5/framework_calidad")]
+__path__ = [str(Path(__file__).resolve().parents[2] / "src/framework_calidad")]
+"""API reutilizable del framework de calidad de datos energéticos."""
 
 from .io import cargar_csv, resumen_dataframe
 from .profiling import perfilar_dataframe

@@ -33,21 +33,40 @@ conversión previa desde una fecha. El detalle se conserva en
 | observaciones | Explicación de la comparación |
 | revisor y fecha | Persona y fecha de la revisión |
 
-## Muestra de 50 alertas
+## Muestra vigente de 50 alertas EPM
 
-La muestra inicial está en `Data/gold/outputs/hito6/muestra_alertas_50.csv`. Fue seleccionada con semilla
-`42` y contiene 15 alertas de EPM, 15 de CHEC y 20 de SSPD. XM no tiene alertas reales elegibles
-en este corte; por tanto queda documentado como no aplicable para la muestra, sin inventar casos.
-La tabla conserva los identificadores y deja `clasificacion=pendiente`. Sus 50 filas corresponden
-a 47 combinaciones distintas de fuente, serie y período: tres aparecen en diferentes escenarios.
-La columna LOF de esta muestra histórica está vacía porque el archivo de entrada no incluye ese
-método; no debe interpretarse como ausencia de alertas LOF. El plan del profesor pide 50 alertas
-de EPM: el cambio a tres fuentes y el tratamiento de los escenarios repetidos requieren aprobación.
-No se debe reemplazar una alerta difícil por una más conveniente.
+La muestra para revisar el protocolo vigente está en
+`Data/gold/outputs/hito6/muestra_alertas_h4_v2_epm_50.csv`, con su manifiesto
+adyacente `.manifiesto.json`. Se obtiene de los puntajes reales de **H4-v2-CV-temporal**:
+EPM, referencia 36, horizonte `t`, tasa objetivo de calibración 5 % y semilla 42.
+Son 50 observaciones únicas por fuente/serie/período, seleccionadas entre las que
+activan al menos una bandera de IMR, Z robusto, IF, LOF, KNN o R12. Se conserva
+el resultado de los seis métodos; no se fuerza que todos produzcan alertas.
+R12 utiliza el umbral CV vigente, no necesariamente el factor nativo 10.
 
-El generador ahora crea una copia nueva con fecha si la muestra anterior existe; nunca la
-sobrescribe. La copia nueva incluye las columnas de serie y categoría y no incluye LOF, que no
-está disponible en esa entrada. Esto no equivale a aprobar una nueva muestra.
+Cada fila incluye identidad estable, categoría, medida, período, banco, puntajes,
+umbrales y banderas. Los campos de revisión se inicializan pendientes. El manifiesto
+vincula la selección con las entradas y la ejecución H4 verificadas por hash.
+La misma semilla y los mismos datos producen las mismas observaciones, aunque
+se reordene la entrada. Si faltan casos no se repiten ni se sustituyen fuentes.
+
+Este diseño sigue la solicitud original de 50 alertas EPM. La evidencia externa,
+la interpretación y la aprobación del método de evaluación permanecen pendientes.
+No se debe reemplazar una alerta difícil por una más conveniente. La muestra
+no representa todas las fuentes ni acredita por sí sola precisión empírica o recall.
+La precisión por método requiere su subconjunto revisado y un denominador explícito;
+el recall necesita también observaciones no alertadas con referencia externa.
+
+## Muestra histórica conservada
+
+`Data/gold/outputs/hito6/muestra_alertas_50.csv` corresponde al protocolo histórico
+de sensibilidad: 15 EPM, 15 CHEC y 20 SSPD, con 47 combinaciones únicas y tres
+observaciones repetidas entre escenarios. Su columna LOF vacía no era una medición.
+Se conserva para trazabilidad y no valida el H4 vigente. No se sobrescriben ni se
+transfieren sus revisiones a la muestra nueva. Los casos prioritarios heredados
+siguen como evidencia complementaria, separada del sorteo vigente.
+
+El generador crea otra pareja CSV/manifiesto con fecha si la salida vigente existe.
 
 ## Limitación
 

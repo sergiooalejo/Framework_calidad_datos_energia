@@ -15,7 +15,7 @@ revisión; no equivale automáticamente a un error confirmado.
 | Nº | Decisión | Propuesta de trabajo | Por qué es necesaria | Estado |
 |---:|---|---|---|---|
 | 1 | Fuente de verdad para exactitud | Usar la publicación oficial del portal o una respuesta formal del publicador. | Sin una referencia independiente no se puede afirmar que un valor sea correcto. | Pendiente |
-| 2 | Muestra de validación | Decidir entre la muestra de 50 alertas de EPM solicitada en el plan y la propuesta existente de 15 EPM, 15 CHEC y 20 SSPD. | Son diseños distintos; la muestra existente tiene 47 combinaciones únicas fuente/serie/período porque tres se repiten en distintos escenarios. | Pendiente |
+| 2 | Muestra de validación | Revisar 50 observaciones únicas EPM del H4-v2 vigente, según el plan original. | La muestra histórica multifuente queda como antecedente; confirmar interpretación, denominadores e intervalos del diseño vigente. | Pendiente |
 | 3 | Tolerancia numérica | Definir antes de comparar si se acepta redondeo y cuál es su margen. | Las diferencias de formato o decimales no deben confundirse con errores. | Pendiente |
 | 4 | Clasificación de alertas | Usar: confirmada, descartada, no concluyente o pendiente. | Separa la evidencia observada de una conclusión definitiva. | Pendiente |
 | 5 | Falta de respuesta externa | Si EPM/CREG no responden, reportar validación interna y limitación explícita. | El silencio del publicador no demuestra que el dato sea correcto o incorrecto. | Pendiente |
@@ -26,15 +26,19 @@ revisión; no equivale automáticamente a un error confirmado.
 
 ## Decisión sobre la muestra manual
 
-El archivo `Data/gold/outputs/hito6/muestra_alertas_50.csv` contiene la muestra inicial. Para cada fila deben
-completarse la evidencia consultada, la clasificación, el revisor, la fecha y las observaciones.
-La revisión puede quedar pendiente sin invalidar la ejecución técnica, pero debe declararse como
-limitación del Hito 6.
+La muestra vigente es `Data/gold/outputs/hito6/muestra_alertas_h4_v2_epm_50.csv`,
+acompañada de su manifiesto. Reúne 50 observaciones únicas EPM, referencia 36,
+horizonte `t` y tasa objetivo de calibración 5 % del H4-v2. Registra los seis métodos,
+incluidos LOF y KNN. Cada observación aparece una vez aunque alerten varios métodos.
 
-La columna LOF de la muestra existente está vacía porque la entrada utilizada no contiene ese
-método; no representa una medición de LOF. Una nueva generación crea otro archivo y no sustituye
-las clasificaciones existentes. Debe decidirse si la unidad de revisión será la observación
-única o cada combinación de observación y escenario, y cómo se calculará el intervalo de precisión.
+Completar evidencia, clasificación, revisor, fecha y observaciones. La revisión
+pendiente limita la conclusión científica. Se debe aprobar cómo tratar los casos
+no concluyentes y calcular precisión e intervalos; la muestra por sí sola no estima
+recall ni permite generalizar a todas las fuentes.
+
+La muestra inicial `muestra_alertas_50.csv` se conserva: 15 EPM, 15 CHEC y 20 SSPD,
+47 observaciones únicas y LOF no medido. Sus revisiones no se trasladan automáticamente.
+Una nueva generación nunca sustituye clasificaciones existentes.
 
 ## Aprobación solicitada al profesor
 
@@ -58,4 +62,4 @@ Se solicita confirmar:
 - [Plan de trabajo del Hito 6](../PLAN_TRABAJO_HITO6.md)
 - [Anexo de validación externa](../ANEXO_VALIDACION_EXTERNA_HITO6.md)
 - [Registro general de decisiones](../DECISIONES.md)
-- [Muestra reproducible de alertas](../../Data/gold/outputs/hito6/muestra_alertas_50.csv)
+- [Muestra vigente de alertas](../../Data/gold/outputs/hito6/muestra_alertas_h4_v2_epm_50.csv)

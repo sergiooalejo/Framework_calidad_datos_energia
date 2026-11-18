@@ -1,3 +1,6 @@
+"""Compatibilidad histórica; implementación única en src/framework_calidad."""
+from pathlib import Path
+__path__ = [str(Path(__file__).resolve().parents[3] / "src/framework_calidad")]
 """API reutilizable del framework de calidad de datos energéticos."""
 
 from .io import cargar_csv, resumen_dataframe

@@ -2,7 +2,6 @@
 
 import csv
 import ast
-import gzip
 import importlib.util
 import json
 from pathlib import Path
@@ -85,34 +84,8 @@ class CorreccionesTests(unittest.TestCase):
             self.assertEqual(row['controles'], '2')
             self.assertIn('pendiente', row['nota'])
 
-    def test_muestra_no_sobrescribe_revision_y_no_afirma_lof(self):
-        module = load_module('muestra_test', ROOT / 'Code/hito6/generar_muestra_alertas.py')
-        with tempfile.TemporaryDirectory() as directory:
-            source = Path(directory) / 'entrada.csv.gz'
-            old = Path(directory) / 'muestra_alertas_50.csv'
-            fields = ['fuente', 'cohorte', 'referencia', 'sid', 'serie', 'medida', 'categoria', 'periodo', *module.METHODS]
-            with gzip.open(source, 'wt', encoding='utf-8', newline='') as stream:
-                writer = csv.DictWriter(stream, fieldnames=fields)
-                writer.writeheader()
-                for source_name, quota in module.QUOTAS.items():
-                    for i in range(quota):
-                        row = dict.fromkeys(fields, '0')
-                        row.update(fuente=source_name, sid=str(i), periodo='2020-01')
-                        row['I_2.66_MRmedia'] = '1'
-                        writer.writerow(row)
-            old.write_text('revision irremplazable\n', encoding='utf-8')
-            with patch.object(module, 'INPUT', source), patch.object(module, 'OUTPUT', old):
-                created = module.main([])
-                self.assertNotEqual(created, old)
-                self.assertEqual(old.read_text(encoding='utf-8'), 'revision irremplazable\n')
-                with created.open(encoding='utf-8-sig', newline='') as stream:
-                    reader = csv.DictReader(stream)
-                    self.assertNotIn('LOF', reader.fieldnames)
-                    self.assertIn('serie', reader.fieldnames)
-                    self.assertEqual(len(list(reader)), 50)
-                with self.assertRaises(FileExistsError):
-                    module.main(['--salida', str(old)])
-                self.assertEqual(old.read_text(encoding='utf-8'), 'revision irremplazable\n')
+    # La protección de revisiones se verifica con el esquema H4 vigente en
+    # Code/hito6/test_muestra_alertas.py.
 
 
 if __name__ == '__main__':

@@ -1,6 +1,6 @@
 {
   "nombre": "calidad_datos_energia",
-  "estructura": "TDSP adaptado",
+  "estructura": "Paquete src, aplicación, configuración y pruebas separadas; evidencia medallón versionada",
   "fecha_consolidacion": "2026-11-09",
   "actividades": {
     "3.1": {
@@ -69,26 +69,40 @@
     "hito3_corregido": {
       "codigo": "Code/hito3",
       "resultados": "Data/gold/outputs/hito3",
-      "notebook": "HITO3_REPLICACION.ipynb",
+      "notebook": "notebooks/HITO3_REPLICACION.ipynb",
       "verificacion": "Docs/VERIFICACION_HITO3.md"
     },
     "hito5": {
       "codigo": "Code/hito5",
-      "tablero": "Code/hito5/app_streamlit.py",
-      "cli": "Code/hito5/run.py",
-      "paquete": "Code/hito5/framework_calidad",
+      "tablero": "apps/streamlit_app.py",
+      "cli": "src/framework_calidad/cli.py",
+      "paquete": "src/framework_calidad",
       "documentacion": "Docs/CIERRE_HITO5.md",
-      "comando": "python -m Code.hito5.run listar"
+      "comando": "poetry run framework-energia listar"
     },
     "hito6": {
       "codigo": "Code/hito6",
       "resultados": "Data/gold/outputs/hito6",
       "documentacion": "Docs/PLAN_TRABAJO_HITO6.md",
       "comando": "python pipeline.py ejecutar muestra-h6",
-      "estado": "parcial_validacion_externa_pendiente"
+      "estado": "parcial_validacion_externa_pendiente",
+      "protocolo_origen_muestra": "H4-v2-CV-temporal",
+      "entrada_muestra": "Data/gold/outputs/hito4/puntajes_reales.csv.gz",
+      "muestra_vigente": "Data/gold/outputs/hito6/muestra_alertas_h4_v2_epm_50.csv",
+      "muestra_historica": "Data/gold/outputs/hito6/muestra_alertas_50.csv"
     }
   },
   "estado": "linea_base_tecnica_pendiente_aprobacion",
   "estado_hito3": "implementacion_corregida_con_evidencia_externa_pendiente",
-  "estado_hito4": "protocolo_tecnico_verificado_con_validacion_externa_y_aprobacion_pendientes"
+  "estado_hito4": "protocolo_tecnico_verificado_con_validacion_externa_y_aprobacion_pendientes",
+  "rutas": {
+    "paquete": "src/framework_calidad",
+    "aplicacion": "apps/streamlit_app.py",
+    "configuracion": "configs/pipeline.toml",
+    "pruebas": "tests",
+    "notebooks": "notebooks",
+    "documentacion": "Docs/README.md",
+    "datos": "Data",
+    "protocolos_versionados": "Code"
+  }
 }

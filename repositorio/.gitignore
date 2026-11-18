@@ -12,3 +12,9 @@ Data/gold/outputs/**/figuras/
 # Las figuras del protocolo H4 corregido son entregables versionados.
 !Data/gold/outputs/hito4/figuras/
 !Data/gold/outputs/hito4/figuras/**
+
+# Artefactos de construcción local
+dist/
+build/
+.coverage
+htmlcov/

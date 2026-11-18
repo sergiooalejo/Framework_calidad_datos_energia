@@ -1,0 +1,55 @@
+# Registro de ejecución. Las semillas reflejan las constantes de los protocolos.
+baseline = ["trazabilidad", "cuarentena", "cartas", "revision-cartas", "matriz", "bootstrap", "scorecard", "niveles-costos"]
+
+[tareas]
+"hito4" = ["-m", "Code.hito4.run"]
+"hito4-verificar" = ["-m", "Code.hito4.verify"]
+"hito4-normativa" = ["-m", "Code.hito4.regulatory_download"]
+"hito3" = ["-m", "Code.hito3.run"]
+"hito3-descargar" = ["-m", "Code.hito3.acquisition"]
+"hito3-verificar" = ["-m", "Code.hito3.verify"]
+"trazabilidad" = ["Code/Data_Acquisition_and_Understanding/trazabilidad/trazabilidad.py"]
+"cuarentena" = ["Code/Data_Acquisition_and_Understanding/cuarentena_bootstrap/EPM/cuarentena.py", "Code/Data_Acquisition_and_Understanding/cuarentena_bootstrap/cuarentena_fuentes.py"]
+"cartas" = ["Code/Modeling/cartas/EPM/cartas_log_epm.py", "Code/Modeling/cartas/CHEC/cartas_log_chec.py", "Code/Modeling/cartas/SSPD/cartas_log_sspd.py", "Code/Modeling/cartas/XM/cartas_log_xm.py"]
+"revision-cartas" = ["Code/Modeling/cartas/revision_cartas_fuentes.py", "Code/Modeling/cartas/EPM/revision_cartas_epm.py"]
+"matriz" = ["Code/Data_Acquisition_and_Understanding/calidad/medir_matriz_oe1.py"]
+"bootstrap" = ["Code/Data_Acquisition_and_Understanding/cuarentena_bootstrap/bootstrap_categorias.py"]
+"zscore" = ["Code/Modeling/detectores/zscore_robusto.py"]
+"isolation-forest" = ["Code/Modeling/detectores/isolation_forest_referencia_vigilancia.py"]
+"calibracion" = ["Code/Modeling/detectores/calibracion_cv_tasa_igualada.py"]
+"sensibilidad" = ["Code/Modeling/sensibilidad/analisis_sensibilidad.py"]
+"metricas" = ["-m", "Code.hito4.run"]
+"metricas-historicas" = ["Code/Modeling/metricas/experimento_tasa_igualada.py"]
+"sistemica" = ["Code/Modeling/regla_sistemica/calibrar_regla_sistemica.py"]
+"scorecard" = ["Code/Evaluation/scorecard/generar_scorecard_oe1.py"]
+"niveles-costos" = ["Code/Evaluation/niveles_costos/analizar_niveles_costos.py"]
+"muestra-h6" = ["-m", "Code.hito6.run"]
+"figuras" = ["Code/Modeling/sensibilidad/informe_sensibilidad.py", "Code/Modeling/metricas/informe_metricas.py", "Code/Modeling/regla_sistemica/informe_regla_sistemica.py"]
+
+[semillas."hito4"]
+hito4_cv_bootstrap_inyecciones = 20261113
+
+[semillas."hito3"]
+bootstrap_categorias = 20261105
+isolation_forest = 20261106
+
+[semillas."bootstrap"]
+bootstrap_categorias = 20261105
+
+[semillas."isolation-forest"]
+isolation_forest = 20261106
+
+[semillas."calibracion"]
+isolation_forest_base = 20261106
+
+[semillas."sensibilidad"]
+sensibilidad_base = 20261106
+
+[semillas."metricas"]
+hito4_cv_bootstrap_inyecciones = 20261113
+
+[semillas."metricas-historicas"]
+metricas_base = 20261107
+
+[semillas."muestra-h6"]
+seleccion_muestra = 42

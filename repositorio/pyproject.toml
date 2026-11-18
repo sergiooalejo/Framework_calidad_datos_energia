@@ -1,10 +1,16 @@
-[tool.poetry]
+[project]
 name = "framework-calidad-datos-energia"
 version = "0.1.0"
 description = "Componentes reproducibles para calidad de datos del sector energético"
-authors = ["Equipo de tesis"]
-packages = [{ include = "framework_calidad", from = "Code/hito5" }]
+authors = [{ name = "Equipo de tesis" }]
 readme = "README.md"
+dynamic = ["dependencies", "requires-python"]
+
+[project.scripts]
+framework-energia = "framework_calidad.cli:main"
+
+[tool.poetry]
+packages = [{ include = "framework_calidad", from = "src" }]
 
 [tool.poetry.dependencies]
 python = ">=3.14,<3.15"
@@ -33,6 +39,12 @@ streamlit = "1.50.0"
 pytest = "^8.3"
 
 [build-system]
-requires = ["poetry-core>=2.0.0"]
+requires = ["poetry-core==2.5.0"]
 build-backend = "poetry.core.masonry.api"
 
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "Code/hito3", "Code/hito4", "Code/Modeling"]
+pythonpath = [".", "src", "Code/Modeling/sensibilidad", "Code/Modeling/metricas", "Code/Modeling/regla_sistemica", "Code/Modeling"]
+addopts = "-ra --import-mode=importlib"
+norecursedirs = ["__pycache__", ".venv*", "Data", "Docs"]
