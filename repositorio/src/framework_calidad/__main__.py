@@ -1,3 +1,3 @@
 """Permite python -m framework_calidad."""
-from .cli import main
+from .consola import main
 main()

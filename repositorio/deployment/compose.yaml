@@ -1,0 +1,11 @@
+services:
+  tablero:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      - ../z_findings/results:/app/z_findings/results
+      - ../z_findings/audits:/app/z_findings/audits
+    restart: unless-stopped

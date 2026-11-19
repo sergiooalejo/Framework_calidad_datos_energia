@@ -1,0 +1,54 @@
+{
+  "fecha_cliente": "2026-11-09",
+  "zona_horaria": "America/Bogota",
+  "originales_intactos": 323,
+  "archivos_mapeados": 305,
+  "scripts_migrados": 39,
+  "pruebas_existentes_correctas": 31,
+  "baseline_scripts_correctos": 12,
+  "csv_identicos_por_registros": 93,
+  "csv_con_diferencias": [
+    "desarrollo_puntos/3.1/matriz_oe1.csv",
+    "desarrollo_puntos/4.6/costos_computacionales.csv"
+  ],
+  "enlaces_locales_revisados": 370,
+  "enlaces_rotos": [],
+  "anclas_ausentes": [],
+  "entorno_local": {
+    "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8"
+  },
+  "limites": [
+    "No se reentrenaron los experimentos completos 4.2 y 4.3 ni el notebook histórico.",
+    "No equivale a segunda descarga ni aprobación académica.",
+    "Se conservan versiones históricas de entrenamiento separadas de la validación local."
+  ],
+  "diferencias_esperadas": {
+    "matriz_oe1.csv": "Solo medido_utc cambia por la nueva ejecución; indicadores y estados coinciden.",
+    "costos_computacionales.csv": "Solo segundos cambia: el resumen original 4.6 no coincidía con los tiempos en ejecuciones.csv de 4.2/4.3. Se regenera desde esas tablas, sin nuevo entrenamiento ni benchmark."
+  },
+  "portabilidad": {
+    "resultado": "correcto",
+    "metodo": "Copia completa a directorio temporal fuera del proyecto original; comandos invocados desde otro cwd.",
+    "comprobaciones": [
+      {
+        "comando": "pipeline.py validar",
+        "codigo_salida": 0,
+        "segundos": 0.629
+      },
+      {
+        "comando": "pipeline.py ejecutar baseline",
+        "codigo_salida": 0,
+        "segundos": 12.663
+      },
+      {
+        "comando": "pipeline.py auditar",
+        "codigo_salida": 0,
+        "segundos": 22.695
+      }
+    ]
+  }
+}

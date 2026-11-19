@@ -1,0 +1,38 @@
+{
+  "fuente": "XM",
+  "dataset_id": "c1b851",
+  "archivo": "Data/silver/datos/Datos_seleccionados/XM_piloto/xm_demanda_mensual_piloto.csv",
+  "sha256": "fe51fd1cdcbd229ef66b44e81d5312d0f3537ce237873bf52d4a25397f48e975",
+  "filas": 61,
+  "columnas": [
+    "periodo",
+    "CodigoSICAgente",
+    "MercadoComercializacion",
+    "SistemaTransmision",
+    "Version_seleccionada",
+    "horas",
+    "horas_unicas",
+    "horas_esperadas",
+    "demanda_kwh",
+    "publicacion_declarada"
+  ],
+  "ausentes_por_columna": {
+    "periodo": 0,
+    "CodigoSICAgente": 0,
+    "MercadoComercializacion": 0,
+    "SistemaTransmision": 0,
+    "Version_seleccionada": 0,
+    "horas": 0,
+    "horas_unicas": 0,
+    "horas_esperadas": 0,
+    "demanda_kwh": 0,
+    "publicacion_declarada": 1
+  },
+  "duplicados_exactos": 0,
+  "periodos": 61,
+  "inicio": "2020-01",
+  "fin": "2025-01",
+  "series_candidatas_incluyendo_ceros": 1,
+  "series_con_valores_positivos": 1,
+  "nota": "SSPD y XM: tabla mensual derivada, no conteo de microdatos crudos."
+}

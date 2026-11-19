@@ -3,11 +3,11 @@ from pathlib import Path
 __path__ = [str(Path(__file__).resolve().parents[2] / "src/framework_calidad")]
 """API reutilizable del framework de calidad de datos energéticos."""
 
-from .io import cargar_csv, resumen_dataframe
-from .profiling import perfilar_dataframe
-from .rules import evaluar_regla
-from .reporting import escribir_csv
-from .config import cargar_configuracion, listar_indicadores
+from .entrada_salida import cargar_csv, resumen_dataframe
+from .perfilamiento import perfilar_dataframe
+from .reglas import evaluar_regla
+from .reportes import escribir_csv
+from .configuracion import cargar_configuracion, listar_indicadores
 
 __all__ = [
     "cargar_csv",

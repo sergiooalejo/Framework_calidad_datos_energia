@@ -7,7 +7,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-from Code.hito6 import generar_muestra_alertas as M
+from Code.external_validation import generar_muestra_alertas as M
 
 
 class MuestraTests(unittest.TestCase):
@@ -15,7 +15,7 @@ class MuestraTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
-        self.input = self.root / "Data/gold/outputs/hito4/puntajes_reales.csv.gz"
+        self.input = self.root / "z_findings/results/experiments/puntajes_reales.csv.gz"
         self.calibration = self.input.with_name("calibracion.csv")
         self.h4_manifest = self.input.with_name("manifiesto.json")
         self.output = self.root / "muestra.csv"

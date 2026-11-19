@@ -23,7 +23,7 @@ def main():
         env = dict(os.environ, PYTHONPATH=str(target), FRAMEWORK_ENERGIA_ROOT=str(ROOT),
                    PYTHONDONTWRITEBYTECODE='1', PYTHONIOENCODING='utf-8')
         code = ("from pathlib import Path; import framework_calidad as f; "
-                "import framework_calidad.config as c; "
+                "import framework_calidad.configuracion as c; "
                 "assert 'instalado' in Path(c.__file__).parts; "
                 "assert f.listar_indicadores({'indicadores': [{'id': 'R01'}]}) == [{'id': 'R01'}]; "
                 "print('API instalada: correcta')")

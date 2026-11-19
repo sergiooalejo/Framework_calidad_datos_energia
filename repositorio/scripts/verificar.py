@@ -12,10 +12,10 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--sin-pruebas', action='store_true', help='Omitir suites ya ejecutadas')
     args = parser.parse_args()
-    commands = [['pipeline.py', 'validar']]
+    commands = [['scripts/flujo_trabajo.py', 'validar']]
     if not args.sin_pruebas:
-        commands.append(['pipeline.py', 'pruebas'])
-    commands += [['-m', 'Code.hito3.verify'], ['-m', 'Code.hito4.verify']]
+        commands.append(['scripts/flujo_trabajo.py', 'pruebas'])
+    commands += [['-m', 'Code.data_quality.verificar'], ['-m', 'Code.experiments.verificar']]
     for command in commands:
         print('Verificando: ' + ' '.join(command), flush=True)
         subprocess.run([sys.executable, '-B', '-X', 'utf8', *command], cwd=ROOT, check=True,

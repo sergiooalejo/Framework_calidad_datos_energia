@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "arquitectura": "medallon_con_resultados_centralizados",
+  "capas": {
+    "bronze": [
+      "Data/bronze/datos"
+    ],
+    "silver": [
+      "Data/silver/datos",
+      "Data/silver/catalogos",
+      "Data/silver/diccionarios",
+      "Data/silver/metadatos",
+      "z_findings/audits",
+      "z_findings/preparation/adaptadores"
+    ],
+    "gold": [
+      "z_findings/results"
+    ]
+  }
+}

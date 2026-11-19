@@ -1,0 +1,364 @@
+{
+  "version": 1,
+  "date": "2026-11-18",
+  "archive": "z_findings/archive/evidence/codigo_antes_organizacion_funcional.zip",
+  "archive_sha256": "77d4f31f63e05f270f4a7ed50d16caaea364ee668534cb6111975fdffc94120e",
+  "note": "Original manifests and Data remain unchanged. This records a layout migration, not a new scientific execution.",
+  "files": {
+    "Code/README.md": {
+      "current": "Code/README.md",
+      "original_sha256": "1cb577801f79984abbddc5b25beb104a4bccdf92887f30c3849e6415a183055b",
+      "current_sha256": "bd344b826ab4c180fca95ac826732f0b99fcf5e27d9ff96a07559d526e45eb60"
+    },
+    "Code/framework_calidad/__init__.py": {
+      "current": "Code/framework_calidad/__init__.py",
+      "original_sha256": "a4197cc5ef9d457df3c294ec98e0f3611d4db1827621f096cf37d4831397a4c3",
+      "current_sha256": "4ae1088251825bf87fdad983b231d587e6d836bdcd8b001d79412e2e418efae8"
+    },
+    "Code/hito3/acquisition.py": {
+      "current": "Code/data_quality/adquisicion.py",
+      "original_sha256": "d2e68100b48ce1cbaad25a19f5ac3b28ffd8daa589dd296d58c2bcea20aa202d",
+      "current_sha256": "e71b9c642f10e2f15b38dbdde9e0c71e214ebfc6e73ec69a91dbe2bd3e4ddcf5"
+    },
+    "Code/hito3/core.py": {
+      "current": "Code/data_quality/nucleo.py",
+      "original_sha256": "c9ee9dfc2478b0d0eb29c5e02d98ac6252f5e9a6b0d65e132395d022f1ffaac5",
+      "current_sha256": "8c51bee12ff82ada187b9b1dcfb3dbc6abdcd0db525bed9d753a48a3bbb85aaa"
+    },
+    "Code/hito3/entry.py": {
+      "current": "Code/data_quality/operaciones_calidad.py",
+      "original_sha256": "6519233f7f289775c9fa0e3937ede04ca9ca147fca90065f740934eef9b07937",
+      "current_sha256": "ee51b7a8f41137d67f9f33a185f26cad16c0151cde49e422cd67fad568201974"
+    },
+    "Code/hito3/opportunity.py": {
+      "current": "Code/data_quality/oportunidad.py",
+      "original_sha256": "392adc27692da6861c0cffb6b2f23e6ccb026719ac8d821e507ea6c28d140931",
+      "current_sha256": "ac1d4db33676b621cfd892ead97a986d41a987ab4f3dab4f89876bdf278c0105"
+    },
+    "Code/hito3/report.py": {
+      "current": "Code/data_quality/informe.py",
+      "original_sha256": "3b82e5aa29490bb68f3c7e5f5c671f25e0827dcd5a8a662bc0ddf95c30866216",
+      "current_sha256": "c1c6e39f1cfe2e447fd6196e16862e486bd201e1305df132870515ca49213a33"
+    },
+    "Code/hito3/run.py": {
+      "current": "Code/data_quality/ejecutar.py",
+      "original_sha256": "254847d14b8d350d1e7ef6249a99847c7c94d7de28c8e8d9328c6023fcbe9340",
+      "current_sha256": "d4e666f3bd821032a61d1efae2096884024b2c677a77ce0f9a9c9f865745a801"
+    },
+    "Code/hito3/test_hito3.py": {
+      "current": "Code/data_quality/test_calidad.py",
+      "original_sha256": "bc492f8829056219d787098e7771bdd35b902df97f0f0dda46a59d21d9e4e86d",
+      "current_sha256": "a3ee1d118f0f350f22f8a133a3e72014172b137cca5b60fd7440b347736475f8"
+    },
+    "Code/hito3/verify.py": {
+      "current": "Code/data_quality/verificar.py",
+      "original_sha256": "327ea1c9cc3989264b3be25d6747d774a5a3fe7b37efdc55f47eb1903b89de74",
+      "current_sha256": "92f2c3a7ea64ce2d8d13edff5e0b9d93b84a850b2edcb4206b37b6bdfc9b0a6f"
+    },
+    "Code/hito3/__init__.py": {
+      "current": "Code/data_quality/__init__.py",
+      "original_sha256": "264badef172346a3d39a94a69539ad1f96bc45741eada9c3e1a65f874488af7f",
+      "current_sha256": "8bc7898744f347f8ff28c248a5937b25a35962a868b7b56759c0e28de93d92fd"
+    },
+    "Code/hito4/protocol.py": {
+      "current": "Code/experiments/protocolo.py",
+      "original_sha256": "69bcaf4c5bf2365103a766cb5286487d7f7ea7e331d1ee625239dafb7084a82d",
+      "current_sha256": "69bcaf4c5bf2365103a766cb5286487d7f7ea7e331d1ee625239dafb7084a82d"
+    },
+    "Code/hito4/regulatory_download.py": {
+      "current": "Code/experiments/descargar_normativa.py",
+      "original_sha256": "2d828c5556d1569507af7e2fbf3566bb2e2d1d7ac2c5d83960dea058ca0e6eb4",
+      "current_sha256": "ea4c85aeff464ffb7f0207ccee980c515377eb3e462a21cde6aeed32507bdc84"
+    },
+    "Code/hito4/report.py": {
+      "current": "Code/experiments/informe.py",
+      "original_sha256": "e6d6c6057f3f8e0d3c084dcb85d40dd43d5aadfbf98c63069462de48ff3935a4",
+      "current_sha256": "2b226b5383ba402349cec042aa2ef5f9ea575181faad9fb150038d8d8f375185"
+    },
+    "Code/hito4/run.py": {
+      "current": "Code/experiments/ejecutar.py",
+      "original_sha256": "d09f5964b867f7eb6d6a0c07c9b84f52a293b21dd4e08c1169eaaa1a08b2343b",
+      "current_sha256": "072a5b15019767e56491f92f1f64ef5f1733644c57fb165d091b8164fd6fe5f5"
+    },
+    "Code/hito4/systemic_review.py": {
+      "current": "Code/experiments/revision_sistemica.py",
+      "original_sha256": "c20f9c10ec8b706c57219a7f7b4280e613f3361a8126e7fb945f5bc6b9d20eaf",
+      "current_sha256": "2bbd77e98cdeab610c72b46f6c854701ffe3ff107ff19016ab2e92ee3b1687fa"
+    },
+    "Code/hito4/test_protocol.py": {
+      "current": "Code/experiments/test_protocolo.py",
+      "original_sha256": "caa7cd61ebde5858e0fd2efdfb497150b9aa4b38bb1d03a50f1e89bb8ff5ae5e",
+      "current_sha256": "cf9736e19feb9354fd5d17070252d165f4d40608b94e3c75a3293f3cde56b2ca"
+    },
+    "Code/hito4/verify.py": {
+      "current": "Code/experiments/verificar.py",
+      "original_sha256": "2046009072bd391a794216abd122d88a8ee857daa37bf2d295c625f4cb1d1bcd",
+      "current_sha256": "8e4decd5af2a307dea98092ec8e7da3823967112ae28d819a84fe89ec48622a0"
+    },
+    "Code/hito4/__init__.py": {
+      "current": "Code/experiments/__init__.py",
+      "original_sha256": "a2a978e03bdc2cd29ca74a8b1e31a5dc8460e9eac37d16d26afd1418b298d8c3",
+      "current_sha256": "f513d83650d9bb757b77184eda788606aa1de016c432859e4fc62b55587ba886"
+    },
+    "Code/hito5/app_streamlit.py": {
+      "current": "Code/interfaces/abrir_tablero.py",
+      "original_sha256": "cf9f55da2d38f5ba4ef0f24a810960436f7dcb6285e57ce6ee48114ef2a9a826",
+      "current_sha256": "a4c9902835380a6f5b727a6e752615d516731d8b513f4fa415219da4fc5f8de6"
+    },
+    "Code/hito5/run.py": {
+      "current": "Code/interfaces/ejecutar.py",
+      "original_sha256": "86e192b62c6923e6f025f0ef473e789b6f6cfd78db752201586180e54ae9eea1",
+      "current_sha256": "cd600ff84fa3e8eb79380eeb21bddc10037a231d46901ce12ab4634323b874b2"
+    },
+    "Code/hito5/__init__.py": {
+      "current": "Code/interfaces/__init__.py",
+      "original_sha256": "0d1b7fac975eb74e5dbe13d802fe9329290f4669a3ca42973b5758fb15598084",
+      "current_sha256": "ee87a0d54ef1dff293daaf5ba4cf7c53fcc8c40532e0b4f98d4fdfe41f3592ac"
+    },
+    "Code/hito6/generar_muestra_alertas.py": {
+      "current": "Code/external_validation/generar_muestra_alertas.py",
+      "original_sha256": "55be5a14e00e451d6deab6fd473f1ffaa96954600910d7107d6e8738ee177db4",
+      "current_sha256": "08a29d408cc5a0a04bc8d89295a3bfe86d0a27899017dc8177f10554ebf47419"
+    },
+    "Code/hito6/README.md": {
+      "current": "Code/external_validation/README.md",
+      "original_sha256": "a3976f1a705d94e7d9c85e63f42c413c9c8ba8cd2168733b39baf16c31cf5d83",
+      "current_sha256": "70d92204d448267c6b0647519e77fbcd5768eaa47ced9a947391ebb2ccbab5a4"
+    },
+    "Code/hito6/run.py": {
+      "current": "Code/external_validation/ejecutar.py",
+      "original_sha256": "0c99e8e5d533e23a036ce8cce6f4045aa0ccf814d0cd00dde7def5f62ec12de7",
+      "current_sha256": "0f1fb06d1763f2b99b39c330c7f9990812b1c0da5ff304d4640f248f474b2367"
+    },
+    "Code/hito6/__init__.py": {
+      "current": "Code/external_validation/__init__.py",
+      "original_sha256": "91ddf2eae66ff3dcd41cec1ec8fa64f3998a2b669cd253759de1ed2313969db2",
+      "current_sha256": "443fd5a34c0507b439eda817318f552db5c3810f70397146c1ba1f5bf8635f7b"
+    },
+    "Code/Modeling/medallon_compat.py": {
+      "current": "Code/model_development/medallon_compat.py",
+      "original_sha256": "f9aab39ed77f092c57caadf37f262a04995a5ec61ffdbbd99b2e8577508c9f1b",
+      "current_sha256": "6d5111b807f70a8887f450d44b472a07de97d2ead1f0a9d6730f1ca4c08e1a11"
+    },
+    "Code/Modeling/test_medallon_compat.py": {
+      "current": "Code/model_development/test_medallon_compat.py",
+      "original_sha256": "e1a9d3219bf146ccd0540696a7a5ffe1f8ade7980d6e2eafe8a2fa726d124343",
+      "current_sha256": "27a6bba61bcd6874145233bb6e956834d9954a981491acb088d12c0477063b78"
+    },
+    "Code/Modeling/cartas/revision_cartas_fuentes.py": {
+      "current": "Code/model_development/cartas/revision_cartas_fuentes.py",
+      "original_sha256": "e0121b9597fc6ef69348bc226d06644659f88133905299a930a0abc336b0d9e6",
+      "current_sha256": "016c055ee59f9bc4eaaf99c6a894d1a90e1cc7d64bb15e116477ac79a0819900"
+    },
+    "Code/Modeling/detectores/auditar_cuarentenas_h3.py": {
+      "current": "Code/model_development/detectores/auditar_cuarentenas_h3.py",
+      "original_sha256": "10f56d6fca360c26a228c01250cabe07e08b429c0a6a544ec5587064bbf142f1",
+      "current_sha256": "2de0977d9fc5042940dd4da2bef5d55b513fa0d4704634be60d9967746f7d959"
+    },
+    "Code/Modeling/detectores/auditar_mad_cero.py": {
+      "current": "Code/model_development/detectores/auditar_mad_cero.py",
+      "original_sha256": "09919bd75ea6fab10473f155c11589269aec6f09437e560c5e9de2accbd5205f",
+      "current_sha256": "44c4bd8d9a74ab1dd6eceb804cc1ea006b725d9b51cf7eba384a39216a4b983a"
+    },
+    "Code/Modeling/detectores/calibracion_cv_tasa_igualada.py": {
+      "current": "Code/model_development/detectores/calibracion_cv_tasa_igualada.py",
+      "original_sha256": "331b3413503db7f025e6024a10564cf1a467d70cf0400b52e1e71cf4204d9b29",
+      "current_sha256": "c210cd89a035f2cafb32675b5a9cde33edc31ff2c02ceb17b7f8398ca316a578"
+    },
+    "Code/Modeling/detectores/ejecutar_sensibilidad.py": {
+      "current": "Code/model_development/detectores/ejecutar_sensibilidad.py",
+      "original_sha256": "ec21238adf35ed8262b95d280af9b74d02dd5b6ee720bc7c9e0587ee965651e5",
+      "current_sha256": "68a049f9a1a85cfd12042aa99ef2f33236cade4c33e5ae4da956595579e066ef"
+    },
+    "Code/Modeling/detectores/isolation_forest_referencia_vigilancia.py": {
+      "current": "Code/model_development/detectores/isolation_forest_referencia_vigilancia.py",
+      "original_sha256": "69a8bd9f8bc1c5b8e4393962d3893be9840cf667b38ee3a4e414b5581eb3abba",
+      "current_sha256": "712c3ddf43ed3d0a859111c1e1df5e3b6544d58530b0bda4c1fb1b151561ac8f"
+    },
+    "Code/Modeling/detectores/zscore_robusto.py": {
+      "current": "Code/model_development/detectores/zscore_robusto.py",
+      "original_sha256": "1519af56571cf710b0ddfa6b4934503e255aa38474489e4c717df97125161f3c",
+      "current_sha256": "378c6da35b5b020898455f3347d2644c2923c750cf035f6fb99ac106d35f28d8"
+    },
+    "Code/Modeling/metricas/experimento_tasa_igualada.py": {
+      "current": "Code/model_development/metricas/experimento_tasa_igualada.py",
+      "original_sha256": "a861cea315c5097161725f13af2bc45573f12e9a7aaf8074170cfef3a55f450d",
+      "current_sha256": "696831947b72e9ac4670ce58813187051cf1512b5a473d18144f8c677bac7739"
+    },
+    "Code/Modeling/metricas/informe_metricas.py": {
+      "current": "Code/model_development/metricas/informe_metricas.py",
+      "original_sha256": "9a90e19d175b1952ecb4deafdad16fd41284aad27692500ea2dc03d63552e65b",
+      "current_sha256": "9e92024e7b002b6f7fb80ff077146627a0dd884d45a4d39622d5d154b03d1c27"
+    },
+    "Code/Modeling/metricas/metricas_base.py": {
+      "current": "Code/model_development/metricas/metricas_base.py",
+      "original_sha256": "617774143fc8f2b775c14680acd04dcf1b2230905dc5c0866f591f64d00a52b2",
+      "current_sha256": "1d7640d71ea53437407b47144d36acb7cf931f96128a13ef0cb8eb57f680b11f"
+    },
+    "Code/Modeling/metricas/test_metricas.py": {
+      "current": "Code/model_development/metricas/test_metricas.py",
+      "original_sha256": "9363d51a9b229f908921c90f31dfb0947447c263a660c73c4d5dc2dc185b5b46",
+      "current_sha256": "b46128eeb5be20adf02d4adcc5b70005b451631295fa6bc63ba9b37e90c3b4d5"
+    },
+    "Code/Modeling/metricas/verificar_resultados.py": {
+      "current": "Code/model_development/metricas/verificar_resultados.py",
+      "original_sha256": "2a2a8b9e4e998cfd5b75955b89f13251534181cb58c81cf60f7c41b56ae2b43b",
+      "current_sha256": "93248c3cdaacecb5356385ba6cec6370634b472e9cb490af8a187578401e42a4"
+    },
+    "Code/Modeling/regla_sistemica/calibrar_regla_sistemica.py": {
+      "current": "Code/model_development/regla_sistemica/calibrar_regla_sistemica.py",
+      "original_sha256": "4ec01010290d5c7ea23b523f5bac45d2e00de1733ce96eb6455730f42f464b48",
+      "current_sha256": "5dab33202dd5cc91c5c2870ba214b959c21ee6f75ce57217486859ab9f8d591d"
+    },
+    "Code/Modeling/regla_sistemica/informe_regla_sistemica.py": {
+      "current": "Code/model_development/regla_sistemica/informe_regla_sistemica.py",
+      "original_sha256": "fe73f37a97cbea88e3233d2bdfa30bda204673ab1a4424fbbff4a05aa93edbd7",
+      "current_sha256": "c88f53f2973ff4c6105c9a6d3627093d457acbb6cfd4aa357138c1d98a870e4c"
+    },
+    "Code/Modeling/regla_sistemica/regla_sistemica.py": {
+      "current": "Code/model_development/regla_sistemica/regla_sistemica.py",
+      "original_sha256": "0a2fa891e5f2128ab776d41b511c87b17ab3c65be2bdc684c6c036ebb704fb36",
+      "current_sha256": "6703bc3219776989ad09254ec794cfaf69725b307782eec4b8a8373519494f34"
+    },
+    "Code/Modeling/regla_sistemica/test_regla_sistemica.py": {
+      "current": "Code/model_development/regla_sistemica/test_regla_sistemica.py",
+      "original_sha256": "d2734f9a8e6b4ae7a8aac312f196ec652254d09482af3cd9d97cd3df05996de6",
+      "current_sha256": "f201d7777892951ec13bd00276406d4072b6be64f79d32de90c10b1363ad0683"
+    },
+    "Code/Modeling/regla_sistemica/verificar_resultados.py": {
+      "current": "Code/model_development/regla_sistemica/verificar_resultados.py",
+      "original_sha256": "720c6b7863efab06e28a8f71daa16581b07cfe938c209b95621e0401e518d6e6",
+      "current_sha256": "480abb4e39975177b848752a377fa2fd670eb966ae81266b5b0469111bcbd987"
+    },
+    "Code/Modeling/sensibilidad/analisis_sensibilidad.py": {
+      "current": "Code/model_development/sensibilidad/analisis_sensibilidad.py",
+      "original_sha256": "a762cc41d7f63cfcbe7ff52f3dcee4c95a182d33d02180ef96ee31c7d0b06596",
+      "current_sha256": "870e15742acfaf7d0d5103242bd4a8c998f883f9add138829f98b90222280107"
+    },
+    "Code/Modeling/sensibilidad/informe_sensibilidad.py": {
+      "current": "Code/model_development/sensibilidad/informe_sensibilidad.py",
+      "original_sha256": "7923284c5f1629b5659e591bb9c466a750436bc50b034775148c12f7edfde313",
+      "current_sha256": "61bb7cd0a21d6ec43d00518cd0ebca5c54262935a2407e0957653d607721e750"
+    },
+    "Code/Modeling/sensibilidad/test_sensibilidad.py": {
+      "current": "Code/model_development/sensibilidad/test_sensibilidad.py",
+      "original_sha256": "7137af24a8fd5501f1f24c1f7ae18924d49ac88c056f1875ae30d217c6bb5b1c",
+      "current_sha256": "cdd3720e14ccac993443daca2f985c146782dafe5a732578dad96073351c4d7d"
+    },
+    "Code/Modeling/sensibilidad/verificar_resultados.py": {
+      "current": "Code/model_development/sensibilidad/verificar_resultados.py",
+      "original_sha256": "cafd98537ca9a5d4ededfafbd84ecff0649937920f328a5f5b11bf1d711b49c1",
+      "current_sha256": "63d5f24ebb0b05f3c0bdbc36dd063456249d388eff84f53a970fab0964f2b37a"
+    },
+    "Code/Modeling/cartas/CHEC/cartas_log_chec.py": {
+      "current": "Code/model_development/cartas/CHEC/cartas_log_chec.py",
+      "original_sha256": "d3ace794ba8dfd874a9bd06e89e6e61f0f2fd45bbc6c6082b02449a12a3ea1e4",
+      "current_sha256": "38c85d7b63163d4b9286eaa26e55cba842a8921250080774a8cdf8aecd4e52f3"
+    },
+    "Code/Modeling/cartas/EPM/cartas_log_epm.py": {
+      "current": "Code/model_development/cartas/EPM/cartas_log_epm.py",
+      "original_sha256": "521fd222b1c0227b76d6c0186fdd499ac15dcf3eaacbeacf9189fc11a6bc0f64",
+      "current_sha256": "223e442b32518d11afd28997afb52606d753378df7c175d0465d0cbe05705998"
+    },
+    "Code/Modeling/cartas/EPM/revision_cartas_epm.py": {
+      "current": "Code/model_development/cartas/EPM/revision_cartas_epm.py",
+      "original_sha256": "122a6c2e915109b9d38802559bf75b8136eef8968906e67432d263139f808caa",
+      "current_sha256": "7bf6559010f650f2c9eec8708c65ef73d3dfadde630346f5e77dc8f21c57f91e"
+    },
+    "Code/Modeling/cartas/SSPD/cartas_log_sspd.py": {
+      "current": "Code/model_development/cartas/SSPD/cartas_log_sspd.py",
+      "original_sha256": "d26b421278bcc6dc32405e2009e18361a00ed15dc69613a94b4658946b3b053d",
+      "current_sha256": "c9b61bc29f604013ea7a124531e9bbca23dbe8472ac032b29aba13b3fdb51678"
+    },
+    "Code/Modeling/cartas/XM/cartas_log_xm.py": {
+      "current": "Code/model_development/cartas/XM/cartas_log_xm.py",
+      "original_sha256": "aa40f0927599cd0d09dd7a53b2a92cf75c76c35ba1063612e8cdef98293f7956",
+      "current_sha256": "ddb9a921dc24f0525878a9966087bed4a74f7b82153822f532f8012c0b809ebe"
+    },
+    "Code/hito5/framework_calidad/py.typed": {
+      "current": "Code/interfaces/framework_calidad/py.typed",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "Code/hito5/framework_calidad/__init__.py": {
+      "current": "Code/interfaces/framework_calidad/__init__.py",
+      "original_sha256": "d47f5e3c6dc0ace777c80f06eede2bf914045747a07fd08fed91883ae4e41f3b",
+      "current_sha256": "c6bc5f479dc8e37fb7c8b1a1ae6cc944741383805cb3df12cb1569466737b97e"
+    },
+    "Code/Evaluation/hito6/generar_muestra_alertas.py": {
+      "current": "Code/model_evaluation/external_validation/generar_muestra_alertas.py",
+      "original_sha256": "9f9e16e857a98e4855c8cf2971aa6abd7061145aea574bf0a73180d3151c57c3",
+      "current_sha256": "873bd1ddc2940e35c8124c91bb53a55b51255a47e38e45cae8c736fd131484bd"
+    },
+    "Code/Evaluation/niveles_costos/analizar_niveles_costos.py": {
+      "current": "Code/model_evaluation/niveles_costos/analizar_niveles_costos.py",
+      "original_sha256": "96150df1d87f31bf59c9e013e88846a9b7287eda7c7ab7121f0cd93fbbe91597",
+      "current_sha256": "d017b6e0f0924be5fbe6eb5bce8116c184031f1db8980b192f0619a70926f130"
+    },
+    "Code/Evaluation/scorecard/generar_scorecard_oe1.py": {
+      "current": "Code/model_evaluation/scorecard/generar_scorecard_oe1.py",
+      "original_sha256": "d04412c83ae758f02c791c22c1aae4b0b7baffb2ec5b32c1b1e247f86c662c06",
+      "current_sha256": "404084053b6ee4f4218284b791284fe2d620583128fe5141fafd16fd5b2faca4"
+    },
+    "Code/Data_Acquisition_and_Understanding/adaptadores/lector_datos.py": {
+      "current": "Code/data_preparation/adaptadores/lector_datos.py",
+      "original_sha256": "98ed12dc4db16d17f11b1246932157f9bb922c6471aa7496d2db0be3bb1eb4f5",
+      "current_sha256": "2262a9501fdb9ccc47eeb638185f9222f3fbc19269c57f227960f23ef2d61287"
+    },
+    "Code/Data_Acquisition_and_Understanding/adaptadores/medir_sspd.py": {
+      "current": "Code/data_preparation/adaptadores/medir_sspd.py",
+      "original_sha256": "f74c1268414784ffaf2b0c528526dbe380ab31ac21a0cf4823c566b87d10e6f1",
+      "current_sha256": "e4c86dc19deb2d3586243eb5812b0f2d2e63019da46b0a2415678a1686869734"
+    },
+    "Code/Data_Acquisition_and_Understanding/adaptadores/medir_sspd_nr.py": {
+      "current": "Code/data_preparation/adaptadores/medir_sspd_nr.py",
+      "original_sha256": "fc3e9f7a0c2e18e20fbc1bae48e598f86ac64b7c8f9a9137729aaeaf2d0382a9",
+      "current_sha256": "8a40db339033d562109dd8f412f3f7ed3c1050322cd6d6e3e37cca5753c6ed95"
+    },
+    "Code/Data_Acquisition_and_Understanding/adaptadores/medir_xm.py": {
+      "current": "Code/data_preparation/adaptadores/medir_xm.py",
+      "original_sha256": "5edaf195197215f5c01ca7299bd38a13c58f0f629c18dbbe603cbcc2202b6fc7",
+      "current_sha256": "516647fa2e349e6bedc2dc6f1e1a8fb224f86d02ff5c5395adccd460ec434de2"
+    },
+    "Code/Data_Acquisition_and_Understanding/calidad/matriz_dimensiones_dataset_chec.py": {
+      "current": "Code/data_preparation/calidad/matriz_dimensiones_dataset_chec.py",
+      "original_sha256": "96adf35f5bd9e4e0820a4ead246896df88c8b6c1e644d001b16f8ab2461223b7",
+      "current_sha256": "ca610ab1d5769f8ed4a407ec900633c68823654f1532d6c209461e32d8b66503"
+    },
+    "Code/Data_Acquisition_and_Understanding/calidad/matriz_dimensiones_dataset_epm.py": {
+      "current": "Code/data_preparation/calidad/matriz_dimensiones_dataset_epm.py",
+      "original_sha256": "28b910c68565994aa495118b6b9ffa89f20a48cd9d12eda647f3626b96ce6830",
+      "current_sha256": "f9512c83b22634d2405b594f3ace3626b727c41c2059ed395cf564ee91819338"
+    },
+    "Code/Data_Acquisition_and_Understanding/calidad/medir_matriz_oe1.py": {
+      "current": "Code/data_preparation/calidad/medir_matriz_oe1.py",
+      "original_sha256": "4ecede3f9dca1cf5831ef5154f3da46312841fca1e65485fb6e42b74a3ce3995",
+      "current_sha256": "1023e7dcb424a11f3e39a3d90cafe8fb6e9cb6388fef1c03be6128f3f5dd1ed6"
+    },
+    "Code/Data_Acquisition_and_Understanding/cuarentena_bootstrap/bootstrap_categorias.py": {
+      "current": "Code/data_preparation/cuarentena_bootstrap/bootstrap_categorias.py",
+      "original_sha256": "886ff609709041831b8110363c9f4abb90b6290081b2a4d4ed4d9869f5a4bc2f",
+      "current_sha256": "7dff494e4474439968e610eea8ddc123c19537d4dbaafad3f5acca39b2535781"
+    },
+    "Code/Data_Acquisition_and_Understanding/cuarentena_bootstrap/cuarentena_fuentes.py": {
+      "current": "Code/data_preparation/cuarentena_bootstrap/cuarentena_fuentes.py",
+      "original_sha256": "e92deaaae12aded167d5783efc60c853be4d912e6729387cf52f647597d3d619",
+      "current_sha256": "fe858f7d50c7edc971d9dc3f0ba58f90570fcd9c6f6ae2c4a2c31019164ffc01"
+    },
+    "Code/Data_Acquisition_and_Understanding/trazabilidad/trazabilidad.py": {
+      "current": "Code/data_preparation/trazabilidad/trazabilidad.py",
+      "original_sha256": "656a9b4ac9aa3949921cc2f4891737aed271f25fd6039ac1db10267beabaf954",
+      "current_sha256": "aae87707812d1804f391809556d2b2da7c9197a8f36b53baeb348bb5614d71be"
+    },
+    "Code/Data_Acquisition_and_Understanding/cuarentena_bootstrap/EPM/cuarentena.py": {
+      "current": "Code/data_preparation/cuarentena_bootstrap/EPM/cuarentena.py",
+      "original_sha256": "c9a3b90a3ab83d76fdb8dbc895ec067963e7c2d0a21f806b1f0636d2052291e6",
+      "current_sha256": "8c7869ea891cec15ee726a8b972b5fdda65bbfa9d85c40a58305be6a45faf108"
+    },
+    "Code/Data_Acquisition_and_Understanding/adaptadores/insumos_hito2/codigo_hasta_hito2.py": {
+      "current": "Code/data_preparation/adaptadores/baseline_inputs/flujo_historico.py",
+      "original_sha256": "f58dc244220f8867214714d89071c2f0a1485b8018c4c233108d6833c38b0b94",
+      "current_sha256": "d4eb5346066dafb4a1c8f2f4f8a6f7910acb12b729be2aae125da9cd924d784f"
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "fecha_utc": "2026-11-14T02:06:34.790712+00:00",
+  "fecha_cliente": "2026-11-13T21:06:34.790712-05:00",
+  "estado": "verificacion_tecnica_correcta_con_pendientes_externos",
+  "cierre_integral": false,
+  "auditorias": {
+    "estructura": {
+      "comando": [
+        "-X",
+        "utf8",
+        "-B",
+        "pipeline.py",
+        "validar"
+      ],
+      "codigo_salida": 0,
+      "resultado": {
+        "estado": "correcto",
+        "capas_medallon": 3,
+        "archivos_mapeados": 305,
+        "scripts_sintaxis_correcta": 69,
+        "datos_integros": 16,
+        "figuras_regenerables_ausentes": 27
+      }
+    },
+    "hito3": {
+      "comando": [
+        "-X",
+        "utf8",
+        "-B",
+        "-m",
+        "Code.hito3.verify"
+      ],
+      "codigo_salida": 0,
+      "resultado": {
+        "estado": "correcto",
+        "series_evaluadas": 742,
+        "modelos_if": 26,
+        "pares_descargas_verificados": 3,
+        "cierre_integral": false,
+        "nota": "Evidencia externa y aceptación académica pendientes; ver criterios_cierre.json"
+      }
+    },
+    "hito4": {
+      "comando": [
+        "-X",
+        "utf8",
+        "-B",
+        "-m",
+        "Code.hito4.verify"
+      ],
+      "codigo_salida": 0,
+      "resultado": {
+        "estado": "correcto",
+        "folds_temporales": 102,
+        "umbrales_auditados": 1836,
+        "observaciones_reales": 22511,
+        "casos_inyectados": 117857,
+        "filas_metricas": 1584,
+        "scorecard_indicadores": 76,
+        "figuras_incluidas": 16,
+        "conclusion": "Protocolo técnico verificado; validación externa y aprobación académica pendientes"
+      }
+    }
+  },
+  "pruebas": {
+    "comando": "python -X utf8 -B pipeline.py pruebas",
+    "codigo_salida_observado": 0,
+    "total": 61,
+    "modulos": {
+      "hito4": 9,
+      "hito3": 12,
+      "sensibilidad_historica": 9,
+      "metricas_historicas": 12,
+      "regla_sistemica_historica": 10,
+      "medallon": 3,
+      "correcciones": 6
+    }
+  },
+  "tablero": {
+    "herramienta": "streamlit.testing.v1.AppTest",
+    "version_streamlit": "1.50.0",
+    "entorno": ".venv-hito4-ui dentro de repositorio; paquetes del sistema compartidos sin modificarlos",
+    "comprobacion": "Inicio y selección del widget Fuente por etiqueta; sin excepciones y con número de fuentes esperado",
+    "filas_scorecard_observadas": {
+      "EPM": 8,
+      "CHEC": 8,
+      "SSPD": 8,
+      "XM": 8,
+      "Todas": 32
+    },
+    "limite": "Prueba de integración; no equivale a validación externa ni reproducción del contenedor Hito 5",
+    "advertencias_no_bloqueantes": [
+      "Streamlit recomienda reemplazar use_container_width por width.",
+      "El entorno UI instala packaging 25.0 y Pillow 11.3.0. virtualenv del sistema requiere otro packaging, pero no se usa para ejecutar el tablero."
+    ]
+  },
+  "figuras": {
+    "archivos_png_svg": 16,
+    "inspeccion_visual": [
+      "01_comparacion_metodos.png",
+      "08_contraste_componentes_epm.png"
+    ]
+  },
+  "evidencia_epm": {
+    "celdas_concordantes": 108,
+    "sumas_concordantes": 18,
+    "tolerancia_redondeo": 0.02,
+    "causalidad_confirmada": false
+  },
+  "advertencias": [
+    "Las 27 figuras históricas regenerables ausentes que reporta validar no son las 16 figuras nuevas incluidas del Hito 4.",
+    "Precisión y F1 son escenarios de prevalencia supuesta; la tasa sobre datos reales es un proxy sin verdad terreno."
+  ],
+  "huellas_entrega": {
+    "Data/gold/outputs/hito4/manifiesto.json": "916282fd4c0e550205f87080b056d82773df854edfc951d440032abdb7427129",
+    "app_streamlit.py": "af50fce9d3b1556c0d8b0993600bc83f856cacc95459a7308dc7ac1524710c25",
+    "pipeline.py": "1c1998f9b8ac0bdf48a442dce15dfec5bc5b4d6d439d485a0e14e46ebbbbfa28",
+    "project.json": "daf8bd64b457478e6c9b3c578333b80f7751a83ce060236a51db63ec52f27e55"
+  },
+  "pendientes": "Data/gold/outputs/hito4/criterios_cierre.json"
+}

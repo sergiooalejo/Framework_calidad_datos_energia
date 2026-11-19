@@ -6,7 +6,7 @@ import sys
 import tempfile
 import unittest
 
-ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'project.json').is_file())
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'configs/proyecto.json').is_file())
 
 
 class CliActualTests(unittest.TestCase):
@@ -18,7 +18,7 @@ class CliActualTests(unittest.TestCase):
         env = dict(os.environ, PYTHONPATH=str(ROOT / 'src'), FRAMEWORK_ENERGIA_ROOT=str(ROOT))
         with tempfile.TemporaryDirectory() as folder:
             current = self.command(['-m', 'framework_calidad', 'listar'], folder, env)
-            previous = self.command([str(ROOT / 'pipeline.py'), 'listar'], folder, env)
+            previous = self.command([str(ROOT / 'scripts/flujo_trabajo.py'), 'listar'], folder, env)
         self.assertEqual(current.returncode, 0, current.stderr)
         self.assertEqual(previous.returncode, 0, previous.stderr)
         self.assertEqual(current.stdout, previous.stdout)
@@ -28,7 +28,7 @@ class CliActualTests(unittest.TestCase):
             env = dict(os.environ, PYTHONPATH=str(ROOT / 'src'), FRAMEWORK_ENERGIA_ROOT=folder)
             result = self.command(['-m', 'framework_calidad', 'ejecutar', 'hito4'], folder, env)
         self.assertNotEqual(result.returncode, 0)
-        self.assertIn('no contiene project.json', result.stderr)
+        self.assertIn('no contiene configs/proyecto.json', result.stderr)
         self.assertNotIn('Ejecutando', result.stdout)
 
     def test_registro_configura_realmente_los_comandos(self):
@@ -37,10 +37,10 @@ class CliActualTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)
             (root / 'configs').mkdir()
-            shutil.copyfile(ROOT / 'project.json', root / 'project.json')
-            source = (ROOT / 'configs/pipeline.toml').read_text(encoding='utf-8')
+            shutil.copyfile(ROOT / 'configs/proyecto.json', root / 'configs/proyecto.json')
+            source = (ROOT / 'configs/etapas.toml').read_text(encoding='utf-8')
             source = source.replace('[tareas]', '[tareas]\nprueba_registro = ["ejemplo.py"]')
-            (root / 'configs/pipeline.toml').write_text(source, encoding='utf-8')
+            (root / 'configs/etapas.toml').write_text(source, encoding='utf-8')
             env = dict(os.environ, PYTHONPATH=str(ROOT / 'src'), FRAMEWORK_ENERGIA_ROOT=folder)
             result = self.command(['-m', 'framework_calidad', 'listar'], folder, env)
         self.assertEqual(result.returncode, 0, result.stderr)

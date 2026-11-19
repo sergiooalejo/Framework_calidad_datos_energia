@@ -22,3 +22,20 @@ figuras/
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Reglas del proyecto de energía; raíz interna sin archivos sueltos.
+/repositorio/**/__pycache__/
+/repositorio/**/*.py[cod]
+/repositorio/**/.venv*/
+/repositorio/**/*.egg-info/
+/repositorio/**/.ipynb_checkpoints/
+/repositorio/**/.pytest_cache/
+/repositorio/**/.DS_Store
+/repositorio/**/Thumbs.db
+/repositorio/z_findings/results/**/figuras/
+!/repositorio/z_findings/results/experiments/figuras/
+!/repositorio/z_findings/results/experiments/figuras/**
+/repositorio/**/dist/
+/repositorio/**/build/
+/repositorio/**/.coverage
+/repositorio/**/htmlcov/

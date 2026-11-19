@@ -1,0 +1,115 @@
+{
+  "nombre": "calidad_datos_energia",
+  "estructura": "Paquete src, aplicación, configuración y pruebas separadas; evidencia medallón versionada",
+  "fecha_consolidacion": "2026-11-09",
+  "actividades": {
+    "3.1": {
+      "codigo": "Code/data_preparation/calidad",
+      "resultados": "z_findings/results/calidad"
+    },
+    "3.2": {
+      "codigo": "Code/data_preparation/caracterizacion",
+      "resultados": "z_findings/results/caracterizacion"
+    },
+    "3.3": {
+      "codigo": "Code/data_preparation/adaptadores",
+      "resultados": "z_findings/preparation/adaptadores"
+    },
+    "3.4": {
+      "codigo": "Code/data_preparation/seleccion_fuentes",
+      "resultados": "z_findings/results/seleccion_fuentes"
+    },
+    "3.5": {
+      "codigo": "Code/model_development/cartas",
+      "resultados": "z_findings/results/cartas"
+    },
+    "3.6": {
+      "codigo": "Code/data_preparation/trazabilidad",
+      "resultados": "z_findings/results/trazabilidad"
+    },
+    "3.7": {
+      "codigo": "Code/data_preparation/cuarentena_bootstrap",
+      "resultados": "z_findings/results/cuarentena_bootstrap"
+    },
+    "3_documentacion_general": {
+      "codigo": "Code/Project/organizacion",
+      "resultados": "z_findings/results/organizacion"
+    },
+    "4.1": {
+      "codigo": "Code/model_development/detectores",
+      "resultados": "z_findings/results/detectores"
+    },
+    "4.2": {
+      "codigo": "Code/model_development/sensibilidad",
+      "resultados": "z_findings/results/sensibilidad"
+    },
+    "4.3": {
+      "codigo": "Code/model_development/metricas",
+      "resultados": "z_findings/results/metricas"
+    },
+    "4.4": {
+      "codigo": "Code/model_development/regla_sistemica",
+      "resultados": "z_findings/results/regla_sistemica"
+    },
+    "4.5": {
+      "codigo": "Code/model_evaluation/scorecard",
+      "resultados": "z_findings/results/scorecard"
+    },
+    "4.6": {
+      "codigo": "Code/model_evaluation/niveles_costos",
+      "resultados": "z_findings/results/niveles_costos"
+    },
+    "hito4_corregido": {
+      "codigo": "Code/experiments",
+      "resultados": "z_findings/results/experiments",
+      "verificacion": "z_findings/reports/experiments/verificacion.md",
+      "resultados_preliminares": "z_findings/reports/experiments/resultados.md",
+      "comando": "python scripts/flujo_trabajo.py ejecutar hito4"
+    },
+    "hito3_corregido": {
+      "codigo": "Code/data_quality",
+      "resultados": "z_findings/results/data_quality",
+      "notebook": "notebooks/replicacion_calidad_datos.ipynb",
+      "verificacion": "z_findings/reports/data_quality/verificacion.md"
+    },
+    "hito5": {
+      "codigo": "Code/interfaces",
+      "tablero": "apps/tablero_streamlit.py",
+      "cli": "src/framework_calidad/consola.py",
+      "paquete": "src/framework_calidad",
+      "documentacion": "z_findings/reports/interfaces/cierre_tecnico.md",
+      "comando": "poetry run framework-energia listar"
+    },
+    "hito6": {
+      "codigo": "Code/external_validation",
+      "resultados": "z_findings/results/external_validation",
+      "documentacion": "Docs/external_validation/plan_trabajo.md",
+      "comando": "python scripts/flujo_trabajo.py ejecutar muestra-h6",
+      "estado": "parcial_validacion_externa_pendiente",
+      "protocolo_origen_muestra": "H4-v2-CV-temporal",
+      "entrada_muestra": "z_findings/results/experiments/puntajes_reales.csv.gz",
+      "muestra_vigente": "z_findings/results/external_validation/muestra_alertas_h4_v2_epm_50.csv",
+      "muestra_historica": "z_findings/results/external_validation/muestra_alertas_50.csv"
+    }
+  },
+  "estado": "linea_base_tecnica_pendiente_aprobacion",
+  "estado_hito3": "implementacion_corregida_con_evidencia_externa_pendiente",
+  "estado_hito4": "protocolo_tecnico_verificado_con_validacion_externa_y_aprobacion_pendientes",
+  "rutas": {
+    "paquete": "src/framework_calidad",
+    "aplicacion": "apps/tablero_streamlit.py",
+    "configuracion": "configs/etapas.toml",
+    "pruebas": "tests",
+    "notebooks": "notebooks",
+    "documentacion": "Docs/README.md",
+    "datos": "Data",
+    "protocolos_versionados": "Code",
+    "entorno": "src/pyproject.toml",
+    "dependencias": "src/poetry.lock",
+    "despliegue": "deployment/compose.yaml",
+    "registro": "configs/proyecto.json",
+    "cli": "scripts/flujo_trabajo.py",
+    "resultados": "z_findings",
+    "hallazgos": "z_findings/README.md"
+  }
+}

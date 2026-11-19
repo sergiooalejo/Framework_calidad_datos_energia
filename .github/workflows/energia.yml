@@ -24,20 +24,20 @@ jobs:
       - name: Instalar entorno bloqueado
         run: |
           python -m pip install poetry==2.5.1
-          poetry check --lock
-          poetry sync --with dev --no-interaction
+          poetry --project src check --lock
+          poetry --project src sync --with dev --no-interaction
       - name: Pruebas
-        run: poetry run pytest
+        run: poetry --project src run pytest
       - name: Auditorías de datos y resultados
-        run: poetry run python scripts/verificar.py --sin-pruebas
+        run: poetry --project src run python scripts/verificar.py --sin-pruebas
       - name: Construir y comprobar wheel aislado
         shell: bash
         run: |
-          poetry build --format wheel
-          poetry run python scripts/comprobar_wheel.py dist/*.whl
+          poetry --project src build --format wheel
+          poetry --project src run python scripts/comprobar_wheel.py src/dist/*.whl
       - name: Comprobar contenedor
         if: runner.os == 'Linux'
         run: |
-          docker compose config --quiet
-          docker build -t energia-verificacion .
+          docker compose -f deployment/compose.yaml config --quiet
+          docker build -f deployment/Dockerfile -t energia-verificacion .
           docker run --rm energia-verificacion python scripts/verificar.py

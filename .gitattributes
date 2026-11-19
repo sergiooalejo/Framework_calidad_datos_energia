@@ -1,0 +1,9 @@
+repositorio/Data/** -text
+repositorio/Code/** -text
+repositorio/Docs/references/plans/** -text
+repositorio/Docs/archive/code/** -text
+repositorio/z_findings/archive/evidence/** -text
+repositorio/environments/** -text
+
+# Preservar bytes de resultados y manifiestos.
+repositorio/z_findings/** -text

@@ -11,9 +11,9 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'project.json').is_file())
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / 'configs/proyecto.json').is_file())
 sys.path.insert(0, str(ROOT))
-import pipeline
+from scripts import flujo_trabajo as pipeline
 
 
 def load_module(name, path):
@@ -26,10 +26,10 @@ def load_module(name, path):
 class CorreccionesTests(unittest.TestCase):
     def test_semillas_base_coinciden_con_los_scripts(self):
         sources = {
-            'bootstrap_categorias': 'Code/Data_Acquisition_and_Understanding/cuarentena_bootstrap/bootstrap_categorias.py',
-            'isolation_forest': 'Code/Modeling/detectores/isolation_forest_referencia_vigilancia.py',
-            'sensibilidad_base': 'Code/Modeling/sensibilidad/analisis_sensibilidad.py',
-            'metricas_base': 'Code/Modeling/metricas/experimento_tasa_igualada.py',
+            'bootstrap_categorias': 'Code/data_preparation/cuarentena_bootstrap/bootstrap_categorias.py',
+            'isolation_forest': 'Code/model_development/detectores/isolation_forest_referencia_vigilancia.py',
+            'sensibilidad_base': 'Code/model_development/sensibilidad/analisis_sensibilidad.py',
+            'metricas_base': 'Code/model_development/metricas/experimento_tasa_igualada.py',
         }
         declared = {key: value for values in pipeline.SEEDS.values() for key, value in values.items()}
         for key, relative in sources.items():
@@ -41,7 +41,7 @@ class CorreccionesTests(unittest.TestCase):
         self.assertEqual(declared['isolation_forest_base'], declared['isolation_forest'])
 
     def test_semilla_de_muestra_coincide_con_el_generador(self):
-        tree = ast.parse((ROOT / 'Code/hito6/generar_muestra_alertas.py').read_text(encoding='utf-8'))
+        tree = ast.parse((ROOT / 'Code/external_validation/generar_muestra_alertas.py').read_text(encoding='utf-8'))
         calls = [node for node in ast.walk(tree) if isinstance(node, ast.Call)
                  and isinstance(node.func, ast.Attribute) and isinstance(node.func.value, ast.Name)
                  and node.func.value.id == 'random' and node.func.attr == 'Random']
@@ -50,7 +50,7 @@ class CorreccionesTests(unittest.TestCase):
 
     def test_semilla_no_configurable_no_ejecuta_etapa(self):
         result = subprocess.run(
-            [sys.executable, str(ROOT / 'pipeline.py'), 'ejecutar', 'bootstrap', '--semilla', '17'],
+            [sys.executable, str(ROOT / 'scripts/flujo_trabajo.py'), 'ejecutar', 'bootstrap', '--semilla', '17'],
             capture_output=True, text=True, encoding='utf-8', cwd=ROOT,
         )
         self.assertNotEqual(result.returncode, 0)
@@ -66,7 +66,7 @@ class CorreccionesTests(unittest.TestCase):
             self.assertEqual(pipeline.seeds_for_stage('scorecard'), {})
 
     def test_scorecard_no_promedia_tasas_opuestas(self):
-        module = load_module('scorecard_test', ROOT / 'Code/Evaluation/scorecard/generar_scorecard_oe1.py')
+        module = load_module('scorecard_test', ROOT / 'Code/model_evaluation/scorecard/generar_scorecard_oe1.py')
         with tempfile.TemporaryDirectory() as directory:
             source, target = Path(directory) / 'matriz.csv', Path(directory) / 'scorecard.csv'
             with source.open('w', encoding='utf-8', newline='') as stream:
@@ -85,7 +85,7 @@ class CorreccionesTests(unittest.TestCase):
             self.assertIn('pendiente', row['nota'])
 
     # La protección de revisiones se verifica con el esquema H4 vigente en
-    # Code/hito6/test_muestra_alertas.py.
+    # Code/external_validation/test_muestra_alertas.py.
 
 
 if __name__ == '__main__':

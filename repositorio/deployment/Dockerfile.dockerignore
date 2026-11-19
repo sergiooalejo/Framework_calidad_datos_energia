@@ -1,0 +1,13 @@
+.venv*/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.DS_Store
+z_findings/results/**/figuras/
+
+# H4 incluye figuras en su manifiesto de integridad.
+!z_findings/results/experiments/figuras/
+!z_findings/results/experiments/figuras/**
+dist/
+build/
